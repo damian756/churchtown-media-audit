@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Loader2, CheckCircle } from "lucide-react";
 import AuditResults from "./AuditResults";
 
-type Step = "input" | "scanning" | "email-gate" | "results";
+type Step = "input" | "scanning" | "email" | "results";
 
 interface AuditResult {
   performance: number;
@@ -46,7 +46,7 @@ export default function AuditForm() {
 
       const data: AuditResult = await response.json();
       setAuditResult(data);
-      setStep("email-gate");
+      setStep("email");
     } catch (err) {
       setError(err instanceof Error ? err.message : "An error occurred");
       setStep("input");
@@ -71,7 +71,7 @@ export default function AuditForm() {
             Free AI SEO Audit
           </h2>
 
-          {step === "email-gate" && (
+          {step === "email" && (
             <div className="mt-6 flex items-center justify-center gap-2 rounded-lg bg-green-50 px-4 py-3 text-green-700">
               <CheckCircle className="h-5 w-5" />
               <p className="text-sm font-medium">Audit Ready for {url}!</p>
@@ -134,7 +134,7 @@ export default function AuditForm() {
             </form>
           )}
 
-          {step === "email-gate" && (
+          {step === "email" && (
             <form
               className="mt-6 flex flex-col gap-4"
               onSubmit={handleEmailSubmit}
