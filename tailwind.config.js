@@ -10,7 +10,7 @@ module.exports = {
       extend: {
         animation: {
           "gradient": "gradient 8s linear infinite",
-          "blob": "blob 7s infinite",
+          "blob": "blob 7s infinite", // <--- THE BLOB ANIMATION
         },
         keyframes: {
           gradient: {
