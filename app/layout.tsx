@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer"; // IMPORT FOOTER
+import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,10 +18,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      {/* THE FIX: We force the styling classes directly here.
+        - bg-slate-50: Sets the premium off-white background.
+        - text-slate-900: Sets the dark readable text.
+        - antialiased: Makes the font look crisp and expensive.
+      */}
+      <body className={`${inter.className} bg-slate-50 text-slate-900 antialiased selection:bg-blue-200 selection:text-blue-900`}>
         <Navbar />
         {children}
-        <Footer /> {/* PLACE FOOTER HERE */}
+        <Footer />
       </body>
     </html>
   );
