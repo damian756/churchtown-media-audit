@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Code2, BarChart3, Store, Zap, CheckCircle2 } from "lucide-react";
+import { ArrowRight, Code2, BarChart3, Store, Zap } from "lucide-react";
 import EnterpriseGrid from "./components/EnterpriseGrid";
 
 export const metadata = {
@@ -11,67 +11,67 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-white">
       
-      {/* 1. HERO SECTION - Modern Clean Style */}
-      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+      {/* 1. HERO SECTION - Tighter & Textured */}
+      <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-24 overflow-hidden bg-slate-50">
         
-        {/* Background Pattern (Grid + Gradient) */}
-        <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
-            <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_800px_at_100%_200px,#dbeafe,transparent)]"></div>
-        </div>
+        {/* Background: Stronger Gradient + Grid */}
+        <div className="absolute inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+        <div className="absolute top-0 left-0 right-0 h-[500px] bg-gradient-to-b from-blue-100/50 to-transparent blur-3xl -z-20"></div>
 
-        <div className="mx-auto max-w-7xl px-6 text-center">
+        <div className="mx-auto max-w-7xl px-6 text-center relative z-10">
           
           {/* Trust Badge */}
-          <div className="mx-auto mb-8 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-slate-200 bg-white/60 px-7 py-2 backdrop-blur transition-all hover:border-blue-300 hover:bg-white/90">
+          <div className="mx-auto mb-6 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-blue-200 bg-white/80 px-5 py-1.5 shadow-sm backdrop-blur transition-all hover:border-blue-400">
             <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
             </span>
-            <p className="text-sm font-semibold text-slate-600">Accepting New Clients for Q1 2026</p>
+            <p className="text-xs font-bold text-blue-700 uppercase tracking-wide">Accepting Clients Q1 2026</p>
           </div>
 
-          {/* Headline */}
-          <h1 className="mx-auto max-w-4xl text-5xl font-bold tracking-tight text-slate-900 sm:text-7xl">
+          {/* Headline - Tighter Leading */}
+          <h1 className="mx-auto max-w-4xl text-5xl font-extrabold tracking-tight text-slate-900 sm:text-7xl mb-6">
             We Build Digital <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-600">
               Revenue Engines
             </span>
           </h1>
           
-          {/* Subheadline */}
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-            Stop guessing with your marketing. We combine <strong>Next.js performance</strong> with <strong>data-driven SEO</strong> to help businesses dominate their market. Trustworthy. Scalable. Fast.
+          {/* Subheadline - More Readable */}
+          <p className="mx-auto max-w-2xl text-lg leading-relaxed text-slate-600 mb-10">
+            Stop guessing. We combine <strong>Next.js performance</strong> with <strong>data-driven SEO</strong> to help businesses dominate their market. Trustworthy. Scalable. Fast.
           </p>
 
-          {/* Buttons */}
-          <div className="mt-10 flex items-center justify-center gap-x-6">
+          {/* Buttons - High Contrast */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/contact"
-              className="rounded-full bg-slate-900 px-8 py-4 text-sm font-bold text-white shadow-lg hover:bg-slate-800 hover:-translate-y-1 transition-all"
+              className="rounded-lg bg-slate-900 px-8 py-4 text-sm font-bold text-white shadow-xl hover:bg-blue-700 hover:-translate-y-0.5 transition-all w-full sm:w-auto"
             >
               Get Free Audit
             </Link>
-            <Link href="/case-studies" className="text-sm font-bold leading-6 text-slate-900 flex items-center gap-2 hover:gap-3 transition-all">
+            <Link href="/case-studies" className="rounded-lg border border-slate-300 bg-white px-8 py-4 text-sm font-bold text-slate-700 shadow-sm hover:bg-slate-50 hover:text-slate-900 transition-all w-full sm:w-auto flex items-center justify-center gap-2">
               View Case Studies <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
 
-          {/* Social Proof / Tech Stack (Visual Interest) */}
-          <div className="mt-16 flex justify-center gap-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-             {/* You can replace these text labels with actual SVGs of logos later */}
-             <span className="text-slate-400 font-bold text-xl flex items-center gap-2"><Code2 className="h-6 w-6"/> Next.js</span>
-             <span className="text-slate-400 font-bold text-xl flex items-center gap-2"><Zap className="h-6 w-6"/> Vercel</span>
-             <span className="text-slate-400 font-bold text-xl flex items-center gap-2"><BarChart3 className="h-6 w-6"/> Google Analytics 4</span>
+          {/* Tech Stack - Tighter spacing */}
+          <div className="mt-12 pt-8 border-t border-slate-200/60 flex flex-wrap justify-center gap-6 sm:gap-12 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+             <span className="text-slate-500 font-semibold text-sm flex items-center gap-2"><Code2 className="h-5 w-5"/> Next.js</span>
+             <span className="text-slate-500 font-semibold text-sm flex items-center gap-2"><Zap className="h-5 w-5"/> Vercel Enterprise</span>
+             <span className="text-slate-500 font-semibold text-sm flex items-center gap-2"><BarChart3 className="h-5 w-5"/> Google Analytics 4</span>
           </div>
 
         </div>
       </section>
 
-      {/* 2. ENTERPRISE GRID (Light Mode) */}
-      <EnterpriseGrid /> 
+      {/* 2. ENTERPRISE GRID (Reduced Top Padding to pull it up) */}
+      <div className="-mt-12 relative z-20"> 
+        <EnterpriseGrid />
+      </div>
 
       {/* 3. SMALL BUSINESS SECTION */}
-      <section className="bg-slate-50 py-24 border-y border-slate-200">
+      <section className="bg-slate-50 py-20 border-y border-slate-200">
         <div className="mx-auto max-w-6xl px-6">
             <div className="flex flex-col md:flex-row items-center justify-between gap-12">
                 <div className="md:w-1/2">
