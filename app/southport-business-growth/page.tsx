@@ -75,7 +75,7 @@ export default function GrowthHub() {
             <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
                 <div className="p-3 bg-yellow-100 w-fit rounded-lg text-yellow-600 mb-6"><Zap className="h-6 w-6"/></div>
                 <h3 className="text-xl font-bold text-slate-900 mb-3">Speed is Currency</h3>
-                <p className="text-slate-600">Southport has 5G. If your mobile site takes >3 seconds to load, 50% of visitors leave. We build engines that capture traffic, not just look pretty.</p>
+                <p className="text-slate-600">Southport has 5G. If your mobile site takes &gt;3 seconds to load, 50% of visitors leave. We build engines that capture traffic, not just look pretty.</p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
                 <div className="p-3 bg-red-100 w-fit rounded-lg text-red-600 mb-6"><Search className="h-6 w-6"/></div>
