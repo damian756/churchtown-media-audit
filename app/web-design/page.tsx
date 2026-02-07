@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Zap, Layout, ShieldCheck, Smartphone } from "lucide-react";
+import { Zap, Layout, ShieldCheck, Smartphone, ArrowRight } from "lucide-react";
 
 export const metadata = {
   title: "Web Design Southport | SEO-First Website Development",
@@ -12,6 +12,9 @@ export default function WebDesignPage() {
       {/* Hero */}
       <section className="bg-slate-900 px-6 py-24 text-center text-white">
         <div className="mx-auto max-w-3xl">
+          <div className="mb-6 inline-flex items-center rounded-full bg-blue-900 px-3 py-1 text-sm font-medium text-blue-300">
+            For Growth-Focused Brands
+          </div>
           <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
             Web Design with an <span className="text-blue-500">SEO-First</span> Mindset
           </h1>
@@ -26,8 +29,8 @@ export default function WebDesignPage() {
         </div>
       </section>
 
-      {/* The Problem/Solution */}
-      <section className="mx-auto max-w-7xl px-6 py-24">
+      {/* The Enterprise Value Prop */}
+      <section className="mx-auto max-w-7xl px-6 py-24 border-b border-slate-100">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <div>
             <h2 className="text-3xl font-bold text-slate-900">Most agencies focus on how it looks. We focus on how it works.</h2>
@@ -63,8 +66,22 @@ export default function WebDesignPage() {
         </div>
       </section>
 
+      {/* --- NEW SECTION: Small Business Path --- */}
+      <section className="bg-slate-50 px-6 py-20">
+        <div className="mx-auto max-w-4xl rounded-2xl bg-white p-10 shadow-sm ring-1 ring-slate-200 text-center">
+            <h3 className="text-2xl font-bold text-slate-900">Just getting started?</h3>
+            <p className="mt-4 text-slate-600">
+                You might not need an enterprise-grade Next.js application just yet. We offer specialized WordPress packages for small local businesses including CMS training and setup.
+            </p>
+            <Link href="/web-design/small-business" className="mt-8 inline-flex items-center gap-2 text-blue-600 font-bold hover:gap-3 transition-all">
+                View Small Business Packages <ArrowRight className="h-5 w-5"/>
+            </Link>
+        </div>
+      </section>
+      {/* -------------------------------------- */}
+
       {/* CTA */}
-      <section className="bg-slate-50 px-6 py-24 text-center">
+      <section className="bg-white px-6 py-24 text-center">
         <h2 className="text-3xl font-bold text-slate-900">Ready to transform your digital presence?</h2>
         <p className="mt-4 text-slate-600 mb-8">We treat your website as a revenue generator, not a digital brochure.</p>
         <Link href="/contact" className="rounded-lg bg-slate-900 px-8 py-4 font-bold text-white hover:bg-slate-800 transition-all">
