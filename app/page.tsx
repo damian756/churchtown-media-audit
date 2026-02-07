@@ -57,7 +57,7 @@ export default function Home() {
         </div>
 
         <div className="grid gap-8 md:grid-cols-2">
-          {/* Card 1: Web Design */}
+          {/* Card 1: Web Design (FIXED LINK) */}
           <Link href="/web-design" className="group relative overflow-hidden rounded-3xl bg-slate-50 p-10 transition-all hover:bg-slate-100 hover:shadow-xl border border-slate-100 hover:border-slate-200">
             <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-blue-600 text-white shadow-md group-hover:scale-110 transition-transform">
               <Code2 className="h-7 w-7" />
@@ -71,7 +71,7 @@ export default function Home() {
             </div>
           </Link>
 
-          {/* Card 2: SEO */}
+          {/* Card 2: SEO (FIXED LINK) */}
           <Link href="/search-engine-optimisation" className="group relative overflow-hidden rounded-3xl bg-slate-50 p-10 transition-all hover:bg-slate-100 hover:shadow-xl border border-slate-100 hover:border-slate-200">
             <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-indigo-600 text-white shadow-md group-hover:scale-110 transition-transform">
               <BarChart3 className="h-7 w-7" />
@@ -87,7 +87,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 3. SMALL BUSINESS SECTION (New) */}
+      {/* 3. SMALL BUSINESS SECTION */}
       <section className="bg-slate-50 py-20 border-y border-slate-200">
         <div className="mx-auto max-w-6xl px-6">
             <div className="flex flex-col md:flex-row items-center justify-between gap-10">
