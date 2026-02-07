@@ -30,7 +30,7 @@ export default function AuditPage() {
     }, 2000);
 
     try {
-      // 1. CALL YOUR BACKEND (Corrected Path)
+      // 1. CALL YOUR BACKEND
       const apiRes = await fetch('/api/audit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -66,9 +66,10 @@ export default function AuditPage() {
   };
 
   return (
-    <main className="px-6 pb-24">
-      {/* HEADER */}
-      <section className="pt-20 pb-20 max-w-4xl mx-auto text-center">
+    <main className="px-6 pb-24 w-full overflow-x-hidden">
+      
+      {/* SECTION 1: HERO & INTERFACE */}
+      <section className="pt-20 pb-10 max-w-4xl mx-auto text-center relative z-20">
         <div className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-100 rounded-full px-4 py-1.5 mb-8">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
@@ -86,8 +87,8 @@ export default function AuditPage() {
           Connected to <strong>Google Lighthouse & Llama AI</strong>. Enter a URL to run a live analysis.
         </p>
 
-        {/* INTERFACE */}
-        <div className="bg-white/70 backdrop-blur-xl border border-white/60 p-2 rounded-[2rem] shadow-2xl max-w-4xl mx-auto relative z-20 min-h-[140px] flex flex-col justify-center">
+        {/* INTERFACE CARD */}
+        <div className="bg-white/70 backdrop-blur-xl border border-white/60 p-2 rounded-[2rem] shadow-2xl max-w-4xl mx-auto min-h-[140px] flex flex-col justify-center relative z-20">
             
             {status === 'idle' && (
                 <form onSubmit={handleAnalyze} className="flex flex-col md:flex-row gap-2 p-2">
@@ -105,7 +106,7 @@ export default function AuditPage() {
             )}
 
             {status === 'scanning' && (
-                <div className="flex flex-col items-center justify-center py-8 animate-in fade-in">
+                <div className="flex flex-col items-center justify-center py-12 animate-in fade-in">
                     <Loader2 className="w-10 h-10 text-blue-600 animate-spin mb-4" />
                     <h3 className="text-xl font-bold text-slate-900">Running Deep Scan...</h3>
                     <p className="text-slate-500 text-sm">Querying Google API & OpenRouter AI</p>
@@ -166,8 +167,8 @@ export default function AuditPage() {
         </div>
       </section>
 
-      {/* TERMINAL */}
-      <section className="max-w-5xl mx-auto mb-24">
+      {/* SECTION 2: TERMINAL - Increased Top Margin to mt-32 */}
+      <section className="max-w-5xl mx-auto mb-24 mt-32 relative z-10">
         <div className="bg-[#1e293b] rounded-2xl overflow-hidden shadow-2xl border border-slate-700/50">
             <div className="bg-[#0f172a] px-4 py-3 flex items-center gap-2 border-b border-slate-700">
                 <div className="w-3 h-3 rounded-full bg-red-500"></div><div className="w-3 h-3 rounded-full bg-yellow-500"></div><div className="w-3 h-3 rounded-full bg-green-500"></div>
