@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, BarChart3, Code2, MapPin, Zap } from "lucide-react";
+import { ArrowRight, BarChart3, Code2, MapPin, Zap, Store } from "lucide-react";
 
 export const metadata = {
   title: "Churchtown Media | SEO & Web Design Southport",
@@ -49,7 +49,7 @@ export default function Home() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-blue-600/20 blur-[120px] rounded-full pointer-events-none"></div>
       </section>
 
-      {/* 2. SERVICES GRID */}
+      {/* 2. SERVICES GRID (High Performance) */}
       <section className="mx-auto max-w-7xl px-6 py-24">
         <div className="mb-16 text-center">
           <h2 className="text-3xl font-bold text-slate-900">The Infrastructure of Growth</h2>
@@ -87,7 +87,34 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 3. FEATURED CONTENT PILLAR (Southport Growth) */}
+      {/* 3. SMALL BUSINESS SECTION (New) */}
+      <section className="bg-slate-50 py-20 border-y border-slate-200">
+        <div className="mx-auto max-w-6xl px-6">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-10">
+                <div className="md:w-1/2">
+                    <div className="inline-flex items-center gap-2 text-green-700 font-bold mb-4 bg-green-100 px-3 py-1 rounded-full text-sm">
+                        <Store className="h-4 w-4" /> Small Business Focus
+                    </div>
+                    <h2 className="text-3xl font-bold text-slate-900">Just Starting Out?</h2>
+                    <p className="mt-4 text-slate-600 leading-relaxed">
+                        You might not need an enterprise system yet. We offer specialized packages for startups and local trades in Southport. Get professional WordPress design and Local SEO at a price point that makes sense.
+                    </p>
+                </div>
+                <div className="md:w-1/2 flex flex-col sm:flex-row gap-4 w-full">
+                    <Link href="/web-design/small-business" className="flex-1 bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:border-green-500 hover:shadow-md transition-all text-center">
+                        <h3 className="font-bold text-slate-900">Small Business Design</h3>
+                        <span className="text-sm text-green-600 font-medium mt-2 block">View Packages &rarr;</span>
+                    </Link>
+                    <Link href="/search-engine-optimisation/local" className="flex-1 bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:border-green-500 hover:shadow-md transition-all text-center">
+                        <h3 className="font-bold text-slate-900">Local SEO Starter</h3>
+                        <span className="text-sm text-green-600 font-medium mt-2 block">View Packages &rarr;</span>
+                    </Link>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      {/* 4. FEATURED CONTENT PILLAR (Southport Growth) */}
       <section className="bg-slate-900 py-24 text-white">
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col gap-12 lg:flex-row lg:items-center">
@@ -148,7 +175,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. CTA */}
+      {/* 5. CTA */}
       <section className="mx-auto max-w-4xl px-6 py-24 text-center">
         <h2 className="text-3xl font-bold text-slate-900">Stop being the best-kept secret.</h2>
         <p className="mt-4 text-slate-600">

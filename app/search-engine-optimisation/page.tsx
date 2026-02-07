@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Target, TrendingUp, Search, Eye } from "lucide-react";
+import { Target, TrendingUp, Search, Eye, ArrowRight, MapPin } from "lucide-react";
 
 export const metadata = {
   title: "SEO Agency UK | Data-Driven Search Engine Optimisation",
@@ -13,6 +13,9 @@ export default function SEOPage() {
       {/* Hero */}
       <section className="bg-white px-6 py-24 text-center border-b border-slate-100">
         <div className="mx-auto max-w-4xl">
+          <div className="mb-6 inline-flex items-center rounded-full bg-indigo-900 px-3 py-1 text-sm font-medium text-indigo-300">
+            For Growth-Focused Brands
+          </div>
           <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-6xl">
             Results-Driven SEO for <br/> <span className="text-blue-600">Growing Businesses</span>
           </h1>
@@ -25,7 +28,6 @@ export default function SEOPage() {
       {/* The Pillars */}
       <section className="mx-auto max-w-6xl px-6 py-24">
         <div className="grid gap-12 md:grid-cols-3">
-          
           <div className="text-center">
             <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-blue-50 text-blue-600">
               <Target className="h-8 w-8" />
@@ -35,7 +37,6 @@ export default function SEOPage() {
               We don’t just "do SEO." We set clear goals tailored to your business—whether that’s increasing organic revenue, capturing local leads, or boosting phone calls.
             </p>
           </div>
-
           <div className="text-center">
             <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-purple-50 text-purple-600">
               <TrendingUp className="h-8 w-8" />
@@ -45,7 +46,6 @@ export default function SEOPage() {
               We track user intent, conversion paths, and site authority rather than just "vanity" rankings. Your investment must translate into a stronger bottom line.
             </p>
           </div>
-
           <div className="text-center">
             <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-green-50 text-green-600">
               <Eye className="h-8 w-8" />
@@ -55,7 +55,6 @@ export default function SEOPage() {
               Regular, plain-English reporting. We show you exactly what we are doing, including proof of link building and technical fixes. No secrets.
             </p>
           </div>
-
         </div>
       </section>
 
@@ -86,6 +85,23 @@ export default function SEOPage() {
           </div>
         </div>
       </section>
+
+      {/* --- NEW SECTION: Small Business Link --- */}
+      <section className="bg-indigo-50 px-6 py-20 border-t border-indigo-100">
+        <div className="mx-auto max-w-4xl rounded-2xl bg-white p-10 shadow-sm ring-1 ring-indigo-100 text-center">
+            <div className="inline-flex items-center justify-center p-3 bg-indigo-100 rounded-full text-indigo-600 mb-6">
+                <MapPin className="h-6 w-6" />
+            </div>
+            <h3 className="text-2xl font-bold text-slate-900">Local Business?</h3>
+            <p className="mt-4 text-slate-600">
+                If you primarily serve customers in your immediate neighborhood (e.g. Southport, Birkdale, Ainsdale), you might need our specialized Local SEO packages instead.
+            </p>
+            <Link href="/search-engine-optimisation/local" className="mt-8 inline-flex items-center gap-2 text-indigo-600 font-bold hover:gap-3 transition-all">
+                View Local SEO Packages <ArrowRight className="h-5 w-5"/>
+            </Link>
+        </div>
+      </section>
+      {/* -------------------------------------- */}
 
       {/* CTA */}
       <section className="mx-auto max-w-4xl px-6 py-24 text-center">
