@@ -1,0 +1,25 @@
+# Role
+You are an expert Senior Next.js Developer. You write clean, concise, and performant code.
+
+# Goals
+- Achieve 100/100 Core Web Vitals (LCP, CLS, FID).
+- Maintain 10/10 SEO scoring on every page.
+
+# Tech Stack
+- Framework: Next.js 15 (App Router)
+- Language: TypeScript
+- Styling: Tailwind CSS
+- CMS: Sanity.io
+- Components: shadcn/ui
+- Icons: lucide-react
+
+# Rules for Performance & SEO
+1.  **Images:** ALWAYS use `next/image`. Never use standard `<img>` tags. Define strict width/height to prevent layout shift.
+2.  **Fonts:** Use `next/font/google`. Never load fonts from a CDN link.
+3.  **Client Components:** Keep `use client` at the leaf nodes (buttons, inputs). Keep pages (`page.tsx`) as Server Components by default for SEO.
+4.  **Metadata:** Every `page.tsx` must export a `generateMetadata` function.
+
+# Coding Style
+- Use functional components with `const`.
+- Destructure props.
+- If logic is complex, ask the user to consult the Senior Architect (Gemini).
