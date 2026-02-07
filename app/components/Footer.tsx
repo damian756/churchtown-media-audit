@@ -5,14 +5,9 @@ import { Twitter, Linkedin, Instagram, Youtube, Mail, MapPin } from "lucide-reac
 
 export default function Footer() {
   return (
-    /* THE VISUAL FIX:
-       1. bg-gradient-to-b: Creates the smooth top-to-bottom fade (Lighter Slate -> Deep Black).
-       2. border-t border-white/5: Adds that super-subtle, premium hairline at the top.
-       3. backdrop-blur-xl: Ensures it feels part of the glass ecosystem.
-    */
     <footer className="w-full bg-gradient-to-b from-slate-900 via-slate-900 to-black text-slate-400 py-20 border-t border-white/5 mt-auto relative overflow-hidden">
       
-      {/* Optional: A subtle glow effect behind the text for depth */}
+      {/* Background Glow */}
       <div className="absolute top-[-20%] left-[10%] w-[500px] h-[500px] bg-blue-900/10 blur-[120px] rounded-full pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20 relative z-10">
@@ -28,7 +23,7 @@ export default function Footer() {
                 We build revenue engines, not just websites. Data-driven SEO and high-performance development for Southport businesses.
             </p>
             
-            {/* SOCIALS: Minimalist style (No background circles, just icons) */}
+            {/* SOCIALS */}
             <div className="flex gap-5 pt-2">
                 <a href="#" className="text-slate-500 hover:text-white transition-colors"><Twitter className="w-5 h-5" /></a>
                 <a href="#" className="text-slate-500 hover:text-white transition-colors"><Linkedin className="w-5 h-5" /></a>
@@ -52,7 +47,7 @@ export default function Footer() {
         <div>
             <h4 className="text-slate-200 font-bold mb-6 text-sm uppercase tracking-wider">Agency</h4>
             <ul className="space-y-4 text-sm font-medium text-slate-500">
-                <li><Link href="/work" className="hover:text-blue-400 transition-colors">Case Studies</Link></li>
+                <li><Link href="/work" className="hover:text-blue-400 transition-colors">Industry Frameworks</Link></li>
                 <li><Link href="/about" className="hover:text-blue-400 transition-colors">Knowledge Base</Link></li>
                 <li><Link href="/contact" className="hover:text-blue-400 transition-colors">Southport Growth Hub</Link></li>
                 <li><Link href="/audit" className="text-blue-500 font-bold hover:text-white transition-colors">Get Free Audit</Link></li>
@@ -76,10 +71,15 @@ export default function Footer() {
 
       </div>
 
-      {/* COPYRIGHT BAR */}
+      {/* COPYRIGHT BAR - NOW WITH LINKS */}
       <div className="max-w-7xl mx-auto px-6 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium text-slate-600 relative z-10">
-        <p>&copy; {new Date().getFullYear()} Churchtown Media Ltd. All rights reserved. Company No: 1596</p>
-        <p className="opacity-50">Built with Next.js & Tailwind.</p>
+        <p>&copy; {new Date().getFullYear()} Churchtown Media Ltd. All rights reserved.</p>
+        
+        {/* RESTORED LEGAL LINKS */}
+        <div className="flex gap-6">
+            <Link href="/privacy" className="hover:text-slate-400 transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-slate-400 transition-colors">Terms of Service</Link>
+        </div>
       </div>
     </footer>
   );
