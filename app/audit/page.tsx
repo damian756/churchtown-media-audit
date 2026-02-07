@@ -12,7 +12,6 @@ export default function AuditPage() {
   const handleScan = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!url) return;
-    
     setLoading(true);
     setError("");
     setResult(null);
@@ -23,13 +22,8 @@ export default function AuditPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ url }),
       });
-
       const data = await res.json();
-
-      if (!res.ok) {
-        throw new Error(data.error || "Failed to scan website");
-      }
-
+      if (!res.ok) throw new Error(data.error || "Failed to scan website");
       setResult(data);
     } catch (err: any) {
       setError(err.message || "Something went wrong. Please try again.");
@@ -41,30 +35,30 @@ export default function AuditPage() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden px-6 py-24">
       
-      {/* 1. MATCHING DEEP OMBRE BACKGROUND (Slate-400) */}
-      <div className="absolute inset-0 -z-20 h-full w-full bg-gradient-to-b from-slate-400 via-slate-100 to-white"></div>
+      {/* 1. MATCHING GRADIENT: #ACBABF (Top) -> #373737 (Bottom) */}
+      <div className="absolute inset-0 -z-20 h-full w-full bg-gradient-to-b from-slate-300 via-slate-600 to-slate-900"></div>
       
-      {/* Darker Grid Texture */}
+      {/* Texture */}
       <div className="absolute inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,#0000001a_1px,transparent_1px),linear-gradient(to_bottom,#0000001a_1px,transparent_1px)] bg-[size:40px_40px]"></div>
 
       <div className="w-full max-w-2xl text-center relative z-10">
         
         {/* Header */}
         <div className="mb-10">
-          <div className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white/80 backdrop-blur px-3 py-1 text-sm font-medium text-blue-700 mb-6 shadow-sm">
+          <div className="inline-flex items-center gap-2 rounded-full border border-slate-500 bg-white/80 backdrop-blur px-3 py-1 text-sm font-medium text-slate-900 mb-6 shadow-md">
             <span className="flex h-2 w-2 rounded-full bg-blue-600 animate-pulse"></span>
             Free Technical Analysis
           </div>
           <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl mb-4 drop-shadow-sm">
             How healthy is your website?
           </h1>
-          <p className="text-lg text-slate-800 leading-relaxed font-medium">
+          <p className="text-lg text-slate-900 font-semibold leading-relaxed">
             Get a 24-point technical SEO audit in seconds. Check speed, Core Web Vitals, and on-page factors instantly.
           </p>
         </div>
 
-        {/* 2. THE GLASS CARD */}
-        <div className="bg-white/70 backdrop-blur-xl rounded-3xl p-2 shadow-2xl border border-white/50 ring-1 ring-slate-400/50">
+        {/* 2. THE GLASS CARD - White Pop */}
+        <div className="bg-white/90 backdrop-blur-xl rounded-3xl p-2 shadow-2xl border border-white/50 ring-1 ring-slate-400/50">
           <div className="bg-white rounded-2xl p-8 border border-slate-100 shadow-inner">
             
             <form onSubmit={handleScan} className="space-y-4">
@@ -88,7 +82,7 @@ export default function AuditPage() {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full rounded-xl bg-slate-900 px-3.5 py-4 text-lg font-bold text-white shadow-lg hover:bg-blue-800 hover:shadow-blue-900/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-all disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2 transform active:scale-[0.99]"
+                className="w-full rounded-xl bg-slate-900 px-3.5 py-4 text-lg font-bold text-white shadow-lg hover:bg-black hover:shadow-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900 transition-all disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2 transform active:scale-[0.99]"
               >
                 {loading ? (
                   <>

@@ -9,22 +9,21 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-white">
+    <main className="flex min-h-screen flex-col bg-slate-900">
       
-      {/* 1. HERO SECTION - Deep Contrast Ombre */}
-      <section className="relative pt-24 pb-20 lg:pt-36 lg:pb-32 overflow-hidden">
+      {/* 1. HERO SECTION - The "Upside Down" Palette */}
+      <section className="relative pt-24 pb-32 lg:pt-36 lg:pb-48 overflow-hidden">
         
-        {/* BACKGROUND: Heavy Grey Top -> White Bottom */}
-        {/* starting at slate-400 ensures it is visibly 'dark' at the top */}
-        <div className="absolute inset-0 -z-20 h-full w-full bg-gradient-to-b from-slate-400 via-slate-100 to-white"></div>
+        {/* BACKGROUND: #ACBABF (Slate-300) -> #373737 (Slate-800) */}
+        <div className="absolute inset-0 -z-20 h-full w-full bg-gradient-to-b from-slate-300 via-slate-600 to-slate-900"></div>
         
-        {/* Texture: Made darker to stand out against the grey */}
+        {/* Texture: Dark grid to add industrial feel */}
         <div className="absolute inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,#0000001a_1px,transparent_1px),linear-gradient(to_bottom,#0000001a_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_100%,transparent_100%)]"></div>
 
         <div className="mx-auto max-w-7xl px-6 text-center relative z-10">
           
-          {/* Trust Badge - White background to pop against the grey */}
-          <div className="mx-auto mb-8 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-slate-500/30 bg-white/90 backdrop-blur px-5 py-2 shadow-sm transition-all hover:scale-105">
+          {/* Trust Badge - White card to pop on grey */}
+          <div className="mx-auto mb-8 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-slate-500 bg-white/90 backdrop-blur px-5 py-2 shadow-lg transition-all hover:scale-105">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-600 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
@@ -32,34 +31,34 @@ export default function Home() {
             <p className="text-xs font-bold text-slate-900 uppercase tracking-wide">Accepting Clients Q1 2026</p>
           </div>
 
-          {/* Headline - Added distinct shadow to ensure readability on grey */}
+          {/* Headline - Deep Black for max contrast on the light top */}
           <h1 className="mx-auto max-w-4xl text-5xl font-extrabold tracking-tight text-slate-900 sm:text-7xl mb-6 drop-shadow-sm">
             We Build Digital <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-800">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-indigo-900">
               Revenue Engines
             </span>
           </h1>
           
-          {/* Subheadline - Darker text color for contrast */}
-          <p className="mx-auto max-w-2xl text-lg leading-relaxed text-slate-800 mb-10 font-medium">
+          {/* Subheadline - Dark Grey to withstand the mid-gradient fade */}
+          <p className="mx-auto max-w-2xl text-lg leading-relaxed text-slate-900 mb-10 font-semibold">
             Stop guessing. We combine <strong>Next.js performance</strong> with <strong>data-driven SEO</strong> to help businesses dominate their market. Trustworthy. Scalable. Fast.
           </p>
 
-          {/* Buttons */}
+          {/* Buttons - High Visibility */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/audit"
-              className="rounded-lg bg-slate-900 px-8 py-4 text-sm font-bold text-white shadow-2xl hover:bg-blue-900 hover:-translate-y-0.5 transition-all w-full sm:w-auto ring-1 ring-white/20"
+              className="rounded-lg bg-slate-900 px-8 py-4 text-sm font-bold text-white shadow-2xl hover:bg-black hover:-translate-y-0.5 transition-all w-full sm:w-auto ring-1 ring-white/30"
             >
               Get Free Audit
             </Link>
-            <Link href="/case-studies" className="rounded-lg border border-slate-300 bg-white px-8 py-4 text-sm font-bold text-slate-900 shadow-sm hover:bg-slate-50 transition-all w-full sm:w-auto flex items-center justify-center gap-2">
+            <Link href="/case-studies" className="rounded-lg border border-slate-900 bg-white px-8 py-4 text-sm font-bold text-slate-900 shadow-xl hover:bg-slate-100 transition-all w-full sm:w-auto flex items-center justify-center gap-2">
               View Case Studies <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
 
-          {/* Tech Stack - Darker icons */}
-          <div className="mt-16 flex flex-wrap justify-center gap-8 sm:gap-16 opacity-80 grayscale hover:grayscale-0 transition-all duration-500">
+          {/* Tech Stack - Black to stand out */}
+          <div className="mt-16 flex flex-wrap justify-center gap-8 sm:gap-16 opacity-90 transition-all duration-500">
              <span className="text-slate-900 font-bold text-lg flex items-center gap-2"><Code2 className="h-6 w-6"/> Next.js</span>
              <span className="text-slate-900 font-bold text-lg flex items-center gap-2"><Zap className="h-6 w-6"/> Vercel</span>
              <span className="text-slate-900 font-bold text-lg flex items-center gap-2"><BarChart3 className="h-6 w-6"/> Google Analytics 4</span>
@@ -68,13 +67,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 2. ENTERPRISE GRID (Deep Overlap) */}
-      <div className="-mt-20 relative z-20 px-4 sm:px-0"> 
+      {/* 2. ENTERPRISE GRID */}
+      {/* Background is now DARK (from main) so the White Cards will pop beautifully */}
+      <div className="-mt-24 relative z-20 px-4 sm:px-0 pb-24"> 
         <EnterpriseGrid />
       </div>
 
       {/* 3. SMALL BUSINESS SECTION */}
-      <section className="bg-slate-50 py-24 border-y border-slate-200">
+      <section className="bg-slate-50 py-24 border-t border-slate-200">
         <div className="mx-auto max-w-6xl px-6">
             <div className="flex flex-col md:flex-row items-center justify-between gap-12">
                 <div className="md:w-1/2">
