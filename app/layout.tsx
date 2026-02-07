@@ -1,21 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Churchtown Media | Data-Driven Digital Growth",
-  description:
-    "We migrate businesses from WordPress to high-performance custom platforms.",
+  title: "Churchtown Media | Data-Driven SEO Agency Southport",
+  description: "SEO for businesses that build things. We specialize in Technical SEO and high-value lead generation for industrial & B2B firms.",
 };
 
 export default function RootLayout({
@@ -25,10 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${inter.className} min-h-screen bg-slate-50 text-slate-900`}>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
