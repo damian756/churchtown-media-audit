@@ -11,25 +11,28 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-white">
       
-      {/* 1. HERO SECTION - Tighter & Textured */}
-      <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-24 overflow-hidden bg-slate-50">
+      {/* 1. HERO SECTION - Ombre Effect */}
+      <section className="relative pt-24 pb-20 lg:pt-36 lg:pb-32 overflow-hidden">
         
-        {/* Background: Stronger Gradient + Grid */}
-        <div className="absolute inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
-        <div className="absolute top-0 left-0 right-0 h-[500px] bg-gradient-to-b from-blue-100/50 to-transparent blur-3xl -z-20"></div>
+        {/* THE OMBRE BACKGROUND */}
+        {/* 1. Solid Gradient Base (Slate -> Blue tint -> White) */}
+        <div className="absolute inset-0 -z-20 h-full w-full bg-gradient-to-b from-slate-200 via-slate-50 to-white"></div>
+        
+        {/* 2. Grid Texture Overlay (Made slightly darker to sit on top of the grey) */}
+        <div className="absolute inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_100%,transparent_100%)]"></div>
 
         <div className="mx-auto max-w-7xl px-6 text-center relative z-10">
           
-          {/* Trust Badge */}
-          <div className="mx-auto mb-6 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-blue-200 bg-white/80 px-5 py-1.5 shadow-sm backdrop-blur transition-all hover:border-blue-400">
+          {/* Trust Badge - Updated for contrast against darker background */}
+          <div className="mx-auto mb-8 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-slate-300 bg-white px-5 py-2 shadow-sm transition-all hover:border-blue-400 hover:shadow-md">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
             </span>
-            <p className="text-xs font-bold text-blue-700 uppercase tracking-wide">Accepting Clients Q1 2026</p>
+            <p className="text-xs font-bold text-slate-700 uppercase tracking-wide">Accepting Clients Q1 2026</p>
           </div>
 
-          {/* Headline - Tighter Leading */}
+          {/* Headline */}
           <h1 className="mx-auto max-w-4xl text-5xl font-extrabold tracking-tight text-slate-900 sm:text-7xl mb-6">
             We Build Digital <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-600">
@@ -37,12 +40,12 @@ export default function Home() {
             </span>
           </h1>
           
-          {/* Subheadline - More Readable */}
-          <p className="mx-auto max-w-2xl text-lg leading-relaxed text-slate-600 mb-10">
+          {/* Subheadline */}
+          <p className="mx-auto max-w-2xl text-lg leading-relaxed text-slate-600 mb-10 font-medium">
             Stop guessing. We combine <strong>Next.js performance</strong> with <strong>data-driven SEO</strong> to help businesses dominate their market. Trustworthy. Scalable. Fast.
           </p>
 
-          {/* Buttons - High Contrast */}
+          {/* Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/contact"
@@ -55,23 +58,23 @@ export default function Home() {
             </Link>
           </div>
 
-          {/* Tech Stack - Tighter spacing */}
-          <div className="mt-12 pt-8 border-t border-slate-200/60 flex flex-wrap justify-center gap-6 sm:gap-12 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
-             <span className="text-slate-500 font-semibold text-sm flex items-center gap-2"><Code2 className="h-5 w-5"/> Next.js</span>
-             <span className="text-slate-500 font-semibold text-sm flex items-center gap-2"><Zap className="h-5 w-5"/> Vercel Enterprise</span>
-             <span className="text-slate-500 font-semibold text-sm flex items-center gap-2"><BarChart3 className="h-5 w-5"/> Google Analytics 4</span>
+          {/* Tech Stack */}
+          <div className="mt-16 flex flex-wrap justify-center gap-8 sm:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+             <span className="text-slate-600 font-bold text-lg flex items-center gap-2"><Code2 className="h-6 w-6"/> Next.js</span>
+             <span className="text-slate-600 font-bold text-lg flex items-center gap-2"><Zap className="h-6 w-6"/> Vercel</span>
+             <span className="text-slate-600 font-bold text-lg flex items-center gap-2"><BarChart3 className="h-6 w-6"/> Google Analytics 4</span>
           </div>
 
         </div>
       </section>
 
-      {/* 2. ENTERPRISE GRID (Reduced Top Padding to pull it up) */}
-      <div className="-mt-12 relative z-20"> 
+      {/* 2. ENTERPRISE GRID (Overlapping pull-up) */}
+      <div className="-mt-20 relative z-20 px-4 sm:px-0"> 
         <EnterpriseGrid />
       </div>
 
       {/* 3. SMALL BUSINESS SECTION */}
-      <section className="bg-slate-50 py-20 border-y border-slate-200">
+      <section className="bg-slate-50 py-24 border-y border-slate-200">
         <div className="mx-auto max-w-6xl px-6">
             <div className="flex flex-col md:flex-row items-center justify-between gap-12">
                 <div className="md:w-1/2">
