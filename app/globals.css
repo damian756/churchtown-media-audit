@@ -1,26 +1,101 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* AGENCY TYPOGRAPHY SYSTEM
+   Standard CSS Implementation (Build-Safe)
+*/
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer components {
+  .blog-content h2 {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem;
+    font-weight: 700;
+    color: #0f172a; /* Slate 900 */
+    letter-spacing: -0.025em;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  .blog-content h3 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem;
+    font-weight: 700;
+    color: #0f172a;
+  }
+
+  .blog-content h4 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem;
+    font-weight: 700;
+    color: #0f172a;
+  }
+
+  .blog-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.75;
+    color: #475569; /* Slate 600 */
+  }
+
+  .blog-content ul {
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    list-style-type: disc;
+    color: #475569;
+  }
+
+  .blog-content ol {
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    list-style-type: decimal;
+    color: #475569;
+  }
+
+  .blog-content li {
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+    line-height: 1.75;
+  }
+
+  .blog-content a {
+    font-weight: 600;
+    color: #2563eb; /* Blue 600 */
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  
+  .blog-content a:hover {
+    color: #1e40af; /* Blue 800 */
+  }
+
+  .blog-content strong {
+    font-weight: 700;
+    color: #0f172a;
+  }
+
+  .blog-content blockquote {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-left-width: 4px;
+    border-left-color: #2563eb;
+    background-color: #f8fafc; /* Slate 50 */
+    padding: 1rem 1rem 1rem 1.5rem;
+    font-style: italic;
+    color: #334155;
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+
+  .blog-content img {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    width: 100%;
+    border-radius: 0.75rem;
+    border-width: 1px;
+    border-color: #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
   }
 }
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+ 
