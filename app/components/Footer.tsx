@@ -5,32 +5,42 @@ import { Twitter, Linkedin, Instagram, Youtube, Mail, MapPin } from "lucide-reac
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0f172a] text-slate-400 py-20 border-t border-slate-800">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+    /* THE VISUAL FIX:
+       1. bg-gradient-to-b: Creates the smooth top-to-bottom fade (Lighter Slate -> Deep Black).
+       2. border-t border-white/5: Adds that super-subtle, premium hairline at the top.
+       3. backdrop-blur-xl: Ensures it feels part of the glass ecosystem.
+    */
+    <footer className="w-full bg-gradient-to-b from-slate-900 via-slate-900 to-black text-slate-400 py-20 border-t border-white/5 mt-auto relative overflow-hidden">
+      
+      {/* Optional: A subtle glow effect behind the text for depth */}
+      <div className="absolute top-[-20%] left-[10%] w-[500px] h-[500px] bg-blue-900/10 blur-[120px] rounded-full pointer-events-none"></div>
+
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20 relative z-10">
         
         {/* COL 1: BRAND */}
-        <div>
-            <Link href="/" className="flex items-center gap-2 mb-6 text-white">
-                <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
-                    C
-                </div>
-                <span className="font-bold text-lg tracking-tight">Churchtown<span className="text-blue-500">Media</span></span>
+        <div className="space-y-6">
+            <Link href="/" className="block">
+                <span className="font-bold text-2xl text-white tracking-tight">
+                    Churchtown<span className="text-blue-500">Media</span>
+                </span>
             </Link>
-            <p className="text-sm leading-relaxed mb-6 max-w-xs">
+            <p className="text-sm leading-relaxed max-w-xs text-slate-500 font-medium">
                 We build revenue engines, not just websites. Data-driven SEO and high-performance development for Southport businesses.
             </p>
-            <div className="flex gap-4">
-                <a href="#" className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all"><Twitter className="w-4 h-4" /></a>
-                <a href="#" className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all"><Linkedin className="w-4 h-4" /></a>
-                <a href="#" className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all"><Instagram className="w-4 h-4" /></a>
-                <a href="#" className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all"><Youtube className="w-4 h-4" /></a>
+            
+            {/* SOCIALS: Minimalist style (No background circles, just icons) */}
+            <div className="flex gap-5 pt-2">
+                <a href="#" className="text-slate-500 hover:text-white transition-colors"><Twitter className="w-5 h-5" /></a>
+                <a href="#" className="text-slate-500 hover:text-white transition-colors"><Linkedin className="w-5 h-5" /></a>
+                <a href="#" className="text-slate-500 hover:text-white transition-colors"><Instagram className="w-5 h-5" /></a>
+                <a href="#" className="text-slate-500 hover:text-white transition-colors"><Youtube className="w-5 h-5" /></a>
             </div>
         </div>
 
         {/* COL 2: SERVICES */}
         <div>
-            <h4 className="text-white font-bold mb-6">Services</h4>
-            <ul className="space-y-4 text-sm">
+            <h4 className="text-slate-200 font-bold mb-6 text-sm uppercase tracking-wider">Services</h4>
+            <ul className="space-y-4 text-sm font-medium text-slate-500">
                 <li><Link href="/services" className="hover:text-blue-400 transition-colors">Enterprise Web Design</Link></li>
                 <li><Link href="/services" className="hover:text-blue-400 transition-colors">Data-Driven SEO</Link></li>
                 <li><Link href="/services" className="hover:text-blue-400 transition-colors">Small Business Websites</Link></li>
@@ -40,21 +50,21 @@ export default function Footer() {
 
         {/* COL 3: AGENCY */}
         <div>
-            <h4 className="text-white font-bold mb-6">Agency</h4>
-            <ul className="space-y-4 text-sm">
+            <h4 className="text-slate-200 font-bold mb-6 text-sm uppercase tracking-wider">Agency</h4>
+            <ul className="space-y-4 text-sm font-medium text-slate-500">
                 <li><Link href="/work" className="hover:text-blue-400 transition-colors">Case Studies</Link></li>
                 <li><Link href="/about" className="hover:text-blue-400 transition-colors">Knowledge Base</Link></li>
                 <li><Link href="/contact" className="hover:text-blue-400 transition-colors">Southport Growth Hub</Link></li>
-                <li><Link href="/audit" className="text-blue-400 font-bold hover:text-white transition-colors">Get Free Audit</Link></li>
+                <li><Link href="/audit" className="text-blue-500 font-bold hover:text-white transition-colors">Get Free Audit</Link></li>
             </ul>
         </div>
 
         {/* COL 4: CONTACT */}
         <div>
-            <h4 className="text-white font-bold mb-6">Contact</h4>
-            <ul className="space-y-4 text-sm">
+            <h4 className="text-slate-200 font-bold mb-6 text-sm uppercase tracking-wider">Contact</h4>
+            <ul className="space-y-5 text-sm font-medium text-slate-500">
                 <li className="flex items-start gap-3">
-                    <MapPin className="w-5 h-5 text-blue-500 shrink-0" />
+                    <MapPin className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
                     <span>Cambridge Avenue,<br/>Southport, PR9 9SA</span>
                 </li>
                 <li className="flex items-center gap-3">
@@ -66,13 +76,10 @@ export default function Footer() {
 
       </div>
 
-      {/* COPYRIGHT */}
-      <div className="max-w-7xl mx-auto px-6 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
-        <p>&copy; 2026 Churchtown Media Ltd. All rights reserved.</p>
-        <div className="flex gap-6">
-            <Link href="/privacy" className="hover:text-white">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-white">Terms of Service</Link>
-        </div>
+      {/* COPYRIGHT BAR */}
+      <div className="max-w-7xl mx-auto px-6 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium text-slate-600 relative z-10">
+        <p>&copy; {new Date().getFullYear()} Churchtown Media Ltd. All rights reserved. Company No: 1596</p>
+        <p className="opacity-50">Built with Next.js & Tailwind.</p>
       </div>
     </footer>
   );
