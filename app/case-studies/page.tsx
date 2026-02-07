@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, BarChart, Trophy, TrendingUp } from "lucide-react";
+import { ArrowRight, Trophy, TrendingUp } from "lucide-react";
 
 export default function CaseStudies() {
   return (
@@ -8,11 +8,11 @@ export default function CaseStudies() {
       <section className="bg-slate-900 px-6 py-24 text-center text-white">
         <h1 className="text-4xl font-bold tracking-tight">Engineering Growth</h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-300">
-          We don't hide behind "brand awareness" metrics. Here is exactly how we drive revenue for industrial clients.
+          We don't hide behind "brand awareness" metrics. Here is exactly how we drive revenue for industrial clients using code and data.
         </p>
       </section>
 
-      {/* Case Study: Alotek */}
+      {/* Case Study 1: Alotek (The Featured Story) */}
       <section className="mx-auto max-w-7xl px-6 py-24">
         <div className="overflow-hidden rounded-3xl bg-slate-50 shadow-sm ring-1 ring-slate-200 lg:grid lg:grid-cols-2">
           
@@ -42,13 +42,13 @@ export default function CaseStudies() {
             </dl>
 
             <div className="mt-10">
-              <Link href="/audit" className="inline-flex items-center gap-2 font-semibold text-blue-600 hover:text-blue-500">
-                See how we did it <ArrowRight className="h-4 w-4" />
+              <Link href="/case-studies/alotek-shelters" className="inline-flex items-center gap-2 font-semibold text-blue-600 hover:text-blue-500 hover:underline">
+                Read Full Case Study <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
           </div>
 
-          {/* Visual Side (Placeholder for Graph/Screenshot) */}
+          {/* Visual Side (Graph Placeholder) */}
           <div className="bg-blue-600 p-8 lg:p-16 flex items-center justify-center">
              <div className="relative w-full max-w-md rounded-xl bg-white/10 p-6 text-white backdrop-blur-sm ring-1 ring-white/20">
                 <h3 className="flex items-center gap-2 text-sm font-semibold text-blue-100">
@@ -66,6 +66,10 @@ export default function CaseStudies() {
                   <div className="flex items-center justify-between border-b border-white/10 pb-2">
                     <span>Bike Stores</span>
                     <span className="font-mono font-bold text-green-300">#2</span>
+                  </div>
+                  <div className="flex items-center justify-between border-b border-white/10 pb-2">
+                    <span>School Canopies</span>
+                    <span className="font-mono font-bold text-green-300">#1</span>
                   </div>
                 </div>
              </div>
