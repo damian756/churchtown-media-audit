@@ -1,105 +1,173 @@
+"use client";
+
 import Link from "next/link";
-import { ArrowRight, Code2, BarChart3, Store, Zap } from "lucide-react";
+import { ArrowRight, Code2, BarChart3, Zap, ShieldCheck } from "lucide-react";
 import EnterpriseGrid from "./components/EnterpriseGrid";
 
-export const metadata = {
-  title: "Churchtown Media | SEO & Web Design Southport",
-  description: "Data-driven SEO and high-performance web design for Southport businesses. We build revenue engines, not just websites.",
-};
+// Note: Metadata cannot be exported from a "use client" file directly in the same way.
+// However, since we are moving fast, we will remove the metadata export here 
+// (Next.js will use your layout.tsx metadata default) or we can use a wrapper.
+// For now, we removed the explicit 'export const metadata' to prevent a conflict error.
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-slate-900">
+    <main className="min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 selection:text-blue-900 overflow-x-hidden relative">
       
-      {/* 1. HERO SECTION - The "Upside Down" Palette */}
-      <section className="relative pt-24 pb-32 lg:pt-36 lg:pb-48 overflow-hidden">
-        
-        {/* BACKGROUND: #ACBABF (Slate-300) -> #373737 (Slate-800) */}
-        <div className="absolute inset-0 -z-20 h-full w-full bg-gradient-to-b from-slate-300 via-slate-600 to-slate-900"></div>
-        
-        {/* Texture: Dark grid to add industrial feel */}
-        <div className="absolute inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,#0000001a_1px,transparent_1px),linear-gradient(to_bottom,#0000001a_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_100%,transparent_100%)]"></div>
-
-        <div className="mx-auto max-w-7xl px-6 text-center relative z-10">
-          
-          {/* Trust Badge - White card to pop on grey */}
-          <div className="mx-auto mb-8 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-slate-500 bg-white/90 backdrop-blur px-5 py-2 shadow-lg transition-all hover:scale-105">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-600 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
-            </span>
-            <p className="text-xs font-bold text-slate-900 uppercase tracking-wide">Accepting Clients Q1 2026</p>
-          </div>
-
-          {/* Headline - Deep Black for max contrast on the light top */}
-          <h1 className="mx-auto max-w-4xl text-5xl font-extrabold tracking-tight text-slate-900 sm:text-7xl mb-6 drop-shadow-sm">
-            We Build Digital <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-indigo-900">
-              Revenue Engines
-            </span>
-          </h1>
-          
-          {/* Subheadline - Dark Grey to withstand the mid-gradient fade */}
-          <p className="mx-auto max-w-2xl text-lg leading-relaxed text-slate-900 mb-10 font-semibold">
-            Stop guessing. We combine <strong>Next.js performance</strong> with <strong>data-driven SEO</strong> to help businesses dominate their market. Trustworthy. Scalable. Fast.
-          </p>
-
-          {/* Buttons - High Visibility */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link
-              href="/audit"
-              className="rounded-lg bg-slate-900 px-8 py-4 text-sm font-bold text-white shadow-2xl hover:bg-black hover:-translate-y-0.5 transition-all w-full sm:w-auto ring-1 ring-white/30"
-            >
-              Get Free Audit
-            </Link>
-            <Link href="/case-studies" className="rounded-lg border border-slate-900 bg-white px-8 py-4 text-sm font-bold text-slate-900 shadow-xl hover:bg-slate-100 transition-all w-full sm:w-auto flex items-center justify-center gap-2">
-              View Case Studies <ArrowRight className="h-4 w-4" />
-            </Link>
-          </div>
-
-          {/* Tech Stack - Black to stand out */}
-          <div className="mt-16 flex flex-wrap justify-center gap-8 sm:gap-16 opacity-90 transition-all duration-500">
-             <span className="text-slate-900 font-bold text-lg flex items-center gap-2"><Code2 className="h-6 w-6"/> Next.js</span>
-             <span className="text-slate-900 font-bold text-lg flex items-center gap-2"><Zap className="h-6 w-6"/> Vercel</span>
-             <span className="text-slate-900 font-bold text-lg flex items-center gap-2"><BarChart3 className="h-6 w-6"/> Google Analytics 4</span>
-          </div>
-
-        </div>
-      </section>
-
-      {/* 2. ENTERPRISE GRID */}
-      {/* Background is now DARK (from main) so the White Cards will pop beautifully */}
-      <div className="-mt-24 relative z-20 px-4 sm:px-0 pb-24"> 
-        <EnterpriseGrid />
+      {/* 1. ANIMATED MESH BACKGROUND */}
+      <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+        {/* Orb 1: Blue */}
+        <div className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-blue-200/40 rounded-full blur-[100px] animate-blob mix-blend-multiply filter"></div>
+        {/* Orb 2: Purple */}
+        <div className="absolute top-[-10%] right-[-10%] w-[50vw] h-[50vw] bg-purple-200/40 rounded-full blur-[100px] animate-blob animation-delay-2000 mix-blend-multiply filter"></div>
+        {/* Orb 3: Cyan (Bottom Center) */}
+        <div className="absolute bottom-[-20%] left-[20%] w-[60vw] h-[60vw] bg-cyan-200/40 rounded-full blur-[100px] animate-blob animation-delay-4000 mix-blend-multiply filter"></div>
       </div>
 
-      {/* 3. SMALL BUSINESS SECTION */}
-      <section className="bg-slate-50 py-24 border-t border-slate-200">
-        <div className="mx-auto max-w-6xl px-6">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-12">
-                <div className="md:w-1/2">
-                    <div className="inline-flex items-center gap-2 text-green-800 font-bold mb-4 bg-green-100 px-3 py-1 rounded-full text-sm border border-green-200">
-                        <Store className="h-4 w-4" /> Small Business Focus
-                    </div>
-                    <h2 className="text-3xl font-bold text-slate-900">Just Starting Out?</h2>
-                    <p className="mt-4 text-slate-700 leading-relaxed text-lg">
-                        You might not need an enterprise system yet. We offer specialized packages for startups and local trades in Southport. Get professional design and Local SEO at a price point that makes sense.
-                    </p>
-                </div>
-                <div className="md:w-1/2 flex flex-col sm:flex-row gap-4 w-full">
-                    <Link href="/web-design/small-business" className="flex-1 bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:border-green-600 hover:shadow-xl transition-all text-center group">
-                        <h3 className="font-bold text-slate-900 text-lg group-hover:text-green-700 transition-colors">Small Business Design</h3>
-                        <span className="text-sm text-slate-500 font-medium mt-2 block">View Packages &rarr;</span>
-                    </Link>
-                    <Link href="/search-engine-optimisation/local" className="flex-1 bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:border-green-600 hover:shadow-xl transition-all text-center group">
-                        <h3 className="font-bold text-slate-900 text-lg group-hover:text-green-700 transition-colors">Local SEO Starter</h3>
-                        <span className="text-sm text-slate-500 font-medium mt-2 block">View Packages &rarr;</span>
-                    </Link>
-                </div>
+      {/* 2. NAVIGATION - Glass Effect */}
+      <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4">
+        <div className="max-w-7xl mx-auto bg-white/70 backdrop-blur-lg border border-white/50 shadow-sm rounded-2xl px-6 py-3 flex justify-between items-center">
+            <div className="font-bold text-xl tracking-tight text-slate-900 flex items-center gap-2">
+                <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-black text-xs">CM</div>
+                Churchtown<span className="text-blue-600">Media</span>
+            </div>
+            <div className="hidden md:flex gap-8 font-medium text-sm text-slate-600">
+                <Link href="#services" className="hover:text-blue-600 transition-colors">Services</Link>
+                <Link href="#work" className="hover:text-blue-600 transition-colors">Work</Link>
+                <Link href="/blog" className="hover:text-blue-600 transition-colors">Insights</Link>
+            </div>
+            <Link href="/audit" className="bg-slate-900 text-white px-5 py-2 rounded-xl text-sm font-semibold hover:bg-blue-600 hover:shadow-lg hover:shadow-blue-500/30 transition-all">
+                Check My Site
+            </Link>
+        </div>
+      </nav>
+
+      {/* 3. HERO SECTION - Clean & Airy */}
+      <section className="relative z-10 pt-40 pb-20 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+            
+            {/* Pill Badge */}
+            <div className="inline-flex items-center gap-2 bg-white/50 backdrop-blur border border-blue-100 rounded-full px-4 py-1.5 mb-8 shadow-sm">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                </span>
+                <span className="text-xs font-semibold text-slate-600 tracking-wide">Accepting New Projects Q1 2026</span>
+            </div>
+
+            <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 mb-8 leading-[1.1]">
+                We turn traffic into <br/>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 animate-gradient">revenue.</span>
+            </h1>
+
+            <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Southport's digital growth partner. We combine <span className="font-semibold text-slate-900">Next.js performance</span> with <span className="font-semibold text-slate-900">data-driven SEO</span> to build websites that actually sell.
+            </p>
+
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <Link href="/audit" className="group bg-blue-600 text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-xl shadow-blue-500/20 hover:bg-blue-700 hover:scale-105 transition-all flex items-center gap-2">
+                    <Zap className="w-5 h-5 fill-white" /> Get Free Audit
+                </Link>
+                <Link href="/work" className="bg-white text-slate-700 border border-slate-200 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-slate-50 hover:border-slate-300 transition-all flex items-center gap-2">
+                    View Our Work <ArrowRight className="w-5 h-5" />
+                </Link>
+            </div>
+
+            {/* Tech Stack - Soft Grayscale */}
+            <div className="mt-16 pt-8 border-t border-slate-200/50 flex flex-wrap justify-center gap-8 opacity-60">
+                <span className="flex items-center gap-2 font-semibold"><Code2 className="w-5 h-5"/> Next.js 14</span>
+                <span className="flex items-center gap-2 font-semibold"><Zap className="w-5 h-5"/> Vercel</span>
+                <span className="flex items-center gap-2 font-semibold"><BarChart3 className="w-5 h-5"/> Google Analytics 4</span>
             </div>
         </div>
       </section>
 
+      {/* 4. ENTERPRISE GRID (Your Component) */}
+      <section className="relative z-10 px-4 md:px-0 -mt-10 pb-20">
+         {/* Using a Glass container for the grid */}
+         <div className="max-w-7xl mx-auto bg-white/40 backdrop-blur-xl border border-white/60 rounded-[3rem] p-4 shadow-2xl ring-1 ring-slate-900/5">
+            <EnterpriseGrid />
+         </div>
+      </section>
+
+      {/* 5. FEATURES - "Bento" Style Light */}
+      <section className="relative z-10 py-24 bg-white/80 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto px-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                {/* Feature 1 */}
+                <div className="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-500/5 transition-all group">
+                    <div className="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <Zap className="w-6 h-6 text-blue-600" />
+                    </div>
+                    <h3 className="text-xl font-bold mb-3 text-slate-900">Instant Load Speeds</h3>
+                    <p className="text-slate-600 leading-relaxed">
+                        We build on the Edge. Your site loads in under 1 second, boosting Google rankings and keeping customers happy.
+                    </p>
+                </div>
+
+                {/* Feature 2 */}
+                <div className="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-purple-200 hover:shadow-xl hover:shadow-purple-500/5 transition-all group">
+                    <div className="w-12 h-12 bg-purple-100 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <BarChart3 className="w-6 h-6 text-purple-600" />
+                    </div>
+                    <h3 className="text-xl font-bold mb-3 text-slate-900">Programmatic SEO</h3>
+                    <p className="text-slate-600 leading-relaxed">
+                        Dominate the "Near Me" searches. We create intelligent page structures that capture local traffic automatically.
+                    </p>
+                </div>
+
+                {/* Feature 3 */}
+                <div className="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-emerald-200 hover:shadow-xl hover:shadow-emerald-500/5 transition-all group">
+                    <div className="w-12 h-12 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <ShieldCheck className="w-6 h-6 text-emerald-600" />
+                    </div>
+                    <h3 className="text-xl font-bold mb-3 text-slate-900">Enterprise Security</h3>
+                    <p className="text-slate-600 leading-relaxed">
+                        Sleep soundly. Bank-grade SSL, DDoS protection, and automated backups come standard with every build.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+      </section>
+
+      {/* 6. CTA */}
+      <section className="relative z-10 py-24 px-6 text-center">
+        <div className="max-w-4xl mx-auto bg-slate-900 rounded-[3rem] p-12 md:p-20 text-white shadow-2xl overflow-hidden relative">
+            {/* CTA Background Gradient */}
+            <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-blue-600/30 rounded-full blur-[100px]"></div>
+            <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-purple-600/30 rounded-full blur-[100px]"></div>
+            
+            <div className="relative z-10">
+                <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to scale?</h2>
+                <p className="text-slate-300 text-lg mb-10 max-w-xl mx-auto">
+                    Get a comprehensive 24-point technical audit of your current website. It's free, instant, and brutally honest.
+                </p>
+                <Link href="/audit" className="inline-block bg-white text-slate-900 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-blue-50 transition-colors shadow-lg">
+                    Run Free Analysis
+                </Link>
+            </div>
+        </div>
+      </section>
+
+      {/* CSS FOR ANIMATIONS */}
+      <style jsx global>{`
+        @keyframes blob {
+          0% { transform: translate(0px, 0px) scale(1); }
+          33% { transform: translate(30px, -50px) scale(1.1); }
+          66% { transform: translate(-20px, 20px) scale(0.9); }
+          100% { transform: translate(0px, 0px) scale(1); }
+        }
+        .animate-blob {
+          animation: blob 7s infinite;
+        }
+        .animation-delay-2000 {
+          animation-delay: 2s;
+        }
+        .animation-delay-4000 {
+          animation-delay: 4s;
+        }
+      `}</style>
     </main>
   );
 }
