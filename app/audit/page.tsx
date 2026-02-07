@@ -1,8 +1,7 @@
 "use client";
 
-import { useState } from "next/link"; // Note: useState is from 'react' usually, fixed below
 import React, { useState } from "react";
-import { ArrowRight, Search, Zap, ShieldCheck, BarChart3, Smartphone, Loader2, Terminal } from "lucide-react";
+import { Search, Zap, ShieldCheck, BarChart3, Smartphone, Loader2 } from "lucide-react";
 
 export default function AuditPage() {
   const [isAnalyzing, setIsAnalyzing] = useState(false);
@@ -91,11 +90,12 @@ export default function AuditPage() {
             {/* Terminal Content */}
             <div className="p-6 font-mono text-sm md:text-base">
                 <div className="text-emerald-400 mb-2">$ init_analysis --target=user_site</div>
-                <div className="text-slate-300 mb-1">> Connecting to Lighthouse API... <span className="text-emerald-500">Done</span></div>
-                <div className="text-slate-300 mb-1">> Checking First Contentful Paint (FCP)... <span className="text-yellow-500">Pending</span></div>
-                <div className="text-slate-300 mb-1">> Analyzing DOM Structure depth...</div>
-                <div className="text-slate-300 mb-1">> Verifying SSL & Security Headers...</div>
-                <div className="text-slate-300 mb-1">> Crawling for Broken Links (404)...</div>
+                {/* FIXED: Replaced '>' with '{'>'}' to fix parser error */}
+                <div className="text-slate-300 mb-1">{'>'} Connecting to Lighthouse API... <span className="text-emerald-500">Done</span></div>
+                <div className="text-slate-300 mb-1">{'>'} Checking First Contentful Paint (FCP)... <span className="text-yellow-500">Pending</span></div>
+                <div className="text-slate-300 mb-1">{'>'} Analyzing DOM Structure depth...</div>
+                <div className="text-slate-300 mb-1">{'>'} Verifying SSL & Security Headers...</div>
+                <div className="text-slate-300 mb-1">{'>'} Crawling for Broken Links (404)...</div>
                 <div className="text-blue-400 mt-4 animate-pulse">_ Waiting for input...</div>
             </div>
         </div>
