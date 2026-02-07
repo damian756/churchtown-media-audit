@@ -1,175 +1,167 @@
 import Link from "next/link";
-import { CheckCircle2, Factory, LineChart, ShieldCheck } from "lucide-react";
-import AuditForm from "./components/AuditForm";
+import { ArrowRight, BarChart3, Code2, MapPin, Zap } from "lucide-react";
+
+export const metadata = {
+  title: "Churchtown Media | SEO & Web Design Southport",
+  description: "Data-driven SEO and high-performance web design for Southport businesses. We build revenue engines, not just websites.",
+};
 
 export default function Home() {
   return (
-    <main className="flex flex-col">
-      {/* HERO SECTION */}
-      <section className="relative overflow-hidden bg-slate-900 px-6 py-24 sm:py-32 lg:px-8">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop')] bg-cover bg-center opacity-10"></div>
-        <div className="relative mx-auto max-w-3xl text-center">
-          <div className="inline-flex items-center rounded-full bg-blue-500/10 px-3 py-1 text-sm font-medium text-blue-400 ring-1 ring-inset ring-blue-500/20">
-            Radical Transparency. Zero Fluff.
+    <main className="flex min-h-screen flex-col bg-white">
+      
+      {/* 1. HERO SECTION */}
+      <section className="relative overflow-hidden bg-slate-900 px-6 py-32 text-center text-white sm:py-40">
+        <div className="mx-auto max-w-4xl relative z-10">
+          <div className="mb-6 inline-flex items-center rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-sm font-medium text-blue-300">
+            <span className="mr-2 flex h-2 w-2 relative">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+            </span>
+            Accepting New Clients for Q1 2026
           </div>
-          <h1 className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            SEO for Businesses That <span className="text-blue-500">Build Things</span>
+          <h1 className="text-5xl font-bold tracking-tight sm:text-7xl">
+            We Build Digital <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">
+              Revenue Engines
+            </span>
           </h1>
-          <p className="mt-6 text-lg leading-8 text-slate-300">
-            We don't sell "viral content." We build technical infrastructure that puts your products in front of procurement managers and decision-makers.
+          <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-400 leading-relaxed">
+            Stop guessing with your marketing. Churchtown Media combines <strong>Next.js performance</strong> with <strong>data-driven SEO</strong> to help Southport businesses dominate their local market.
           </p>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
+          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
-              href="/audit"
-              className="rounded-lg bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+              href="/contact"
+              className="rounded-full bg-blue-600 px-8 py-4 text-lg font-bold text-white shadow-lg hover:bg-blue-700 transition-all hover:scale-105"
             >
               Get Free Audit
             </Link>
-            <Link href="/case-studies" className="text-sm font-semibold leading-6 text-white hover:text-blue-400">
-              View Case Studies <span aria-hidden="true">→</span>
+            <Link
+              href="/case-studies"
+              className="group flex items-center gap-2 rounded-full border border-slate-700 bg-slate-800/50 px-8 py-4 text-lg font-semibold text-white hover:bg-slate-800 transition-all"
+            >
+              View Case Studies <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Link>
           </div>
         </div>
+        
+        {/* Abstract Background Element */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-blue-600/20 blur-[120px] rounded-full pointer-events-none"></div>
       </section>
 
-      {/* LEAD MAGNET SECTION (Your Audit Tool) */}
-      <section className="bg-white px-6 py-20 lg:px-8">
-        <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-slate-900">
-            Is Your Website Invisible to Google?
-          </h2>
-          <p className="mt-4 text-slate-600">
-            Enter your URL below. Our AI will analyze your technical SEO, speed, and ranking gaps in 10 seconds.
-          </p>
-          <div className="mt-10">
-            <AuditForm />
-          </div>
+      {/* 2. SERVICES GRID */}
+      <section className="mx-auto max-w-7xl px-6 py-24">
+        <div className="mb-16 text-center">
+          <h2 className="text-3xl font-bold text-slate-900">The Infrastructure of Growth</h2>
+          <p className="mt-4 text-slate-600">We don't do "jack of all trades." We master two things.</p>
+        </div>
+
+        <div className="grid gap-8 md:grid-cols-2">
+          {/* Card 1: Web Design */}
+          <Link href="/web-design" className="group relative overflow-hidden rounded-3xl bg-slate-50 p-10 transition-all hover:bg-slate-100 hover:shadow-xl border border-slate-100 hover:border-slate-200">
+            <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-blue-600 text-white shadow-md group-hover:scale-110 transition-transform">
+              <Code2 className="h-7 w-7" />
+            </div>
+            <h3 className="text-2xl font-bold text-slate-900">High-Performance Web Design</h3>
+            <p className="mt-4 text-slate-600 leading-relaxed">
+              We ditched slow WordPress themes for <strong>Next.js</strong>. We build sites that load instantly, pass Core Web Vitals, and convert visitors into leads.
+            </p>
+            <div className="mt-8 flex items-center text-blue-600 font-semibold">
+              Explore Design <ArrowRight className="ml-2 h-4 w-4" />
+            </div>
+          </Link>
+
+          {/* Card 2: SEO */}
+          <Link href="/search-engine-optimisation" className="group relative overflow-hidden rounded-3xl bg-slate-50 p-10 transition-all hover:bg-slate-100 hover:shadow-xl border border-slate-100 hover:border-slate-200">
+            <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-indigo-600 text-white shadow-md group-hover:scale-110 transition-transform">
+              <BarChart3 className="h-7 w-7" />
+            </div>
+            <h3 className="text-2xl font-bold text-slate-900">Data-Driven Local SEO</h3>
+            <p className="mt-4 text-slate-600 leading-relaxed">
+              Dominate the "Map Pack" in Southport. We use reverse-engineering and local schema data to put your business in front of high-intent buyers.
+            </p>
+            <div className="mt-8 flex items-center text-indigo-600 font-semibold">
+              Explore SEO <ArrowRight className="ml-2 h-4 w-4" />
+            </div>
+          </Link>
         </div>
       </section>
 
-      {/* FEATURES / USP */}
-      <section className="bg-slate-50 px-6 py-24 sm:py-32 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-base font-semibold leading-7 text-blue-600">Why Churchtown Media?</h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-              We Don't Hide Behind Jargon
-            </p>
-            <p className="mt-6 text-lg leading-8 text-slate-600">
-              Most agencies send you a PDF once a month. We give you live dashboard access and fix technical problems that actually block revenue.
-            </p>
-          </div>
-          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-              <div className="flex flex-col">
-                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-slate-900">
-                  <Factory className="h-5 w-5 flex-none text-blue-600" />
-                  Industrial Specialization
-                </dt>
-                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-slate-600">
-                  <p className="flex-auto">We understand specs, catalogs, and B2B procurement cycles. We write content for engineers, not influencers.</p>
-                </dd>
+      {/* 3. FEATURED CONTENT PILLAR (Southport Growth) */}
+      <section className="bg-slate-900 py-24 text-white">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="flex flex-col gap-12 lg:flex-row lg:items-center">
+            <div className="lg:w-1/2">
+              <div className="inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-900/30 px-3 py-1 text-sm font-medium text-blue-300">
+                <MapPin className="h-4 w-4" /> Local Intelligence
               </div>
-              <div className="flex flex-col">
-                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-slate-900">
-                  <LineChart className="h-5 w-5 flex-none text-blue-600" />
-                  Live Data Access
-                </dt>
-                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-slate-600">
-                  <p className="flex-auto">You own your data. We give you full access to live dashboards so you can watch your rankings climb in real-time.</p>
-                </dd>
-              </div>
-              <div className="flex flex-col">
-                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-slate-900">
-                  <ShieldCheck className="h-5 w-5 flex-none text-blue-600" />
-                  Technical Triage
-                </dt>
-                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-slate-600">
-                  <p className="flex-auto">We fix the broken code that other agencies miss. Like the 359-page error log we fixed for EuroChems in 24 hours.</p>
-                </dd>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </section>
-
-      {/* CASE STUDY TEASER */}
-      <section className="bg-white px-6 py-24 sm:py-32 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-x-16 lg:items-center">
-            <div>
-              <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-                Case Study: Alotek Shelters
+              <h2 className="mt-6 text-3xl font-bold sm:text-4xl">
+                The Southport 2026 Playbook
               </h2>
-              <p className="mt-6 text-lg text-slate-600">
-                A local manufacturing business stuck with flat traffic. We implemented our "Sector Silo" strategy and technical fixes.
+              <p className="mt-6 text-lg text-slate-400 leading-relaxed">
+                The Marine Lake Events Centre is bringing 500,000 new visitors. Is your business ready? We've compiled the ultimate guide to local grants, networking, and digital readiness.
               </p>
-              <ul className="mt-8 space-y-4 text-slate-600">
-                <li className="flex gap-x-3">
-                  <CheckCircle2 className="mt-1 h-5 w-5 flex-none text-green-600" />
-                  <span><strong>+85% Traffic Increase</strong> in first 30 days.</span>
-                </li>
-                <li className="flex gap-x-3">
-                  <CheckCircle2 className="mt-1 h-5 w-5 flex-none text-green-600" />
-                  <span><strong>#1 Rankings</strong> for commercial keywords like "Parish Council Bus Shelters".</span>
-                </li>
-                <li className="flex gap-x-3">
-                  <CheckCircle2 className="mt-1 h-5 w-5 flex-none text-green-600" />
-                  <span><strong>Zero Ad Spend</strong>. Pure organic growth.</span>
-                </li>
-              </ul>
+              <div className="mt-8 grid gap-4 sm:grid-cols-2">
+                <div className="flex items-center gap-3">
+                  <Zap className="h-5 w-5 text-yellow-400" /> <span>InvestSefton Grants</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Zap className="h-5 w-5 text-yellow-400" /> <span>Networking Groups</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Zap className="h-5 w-5 text-yellow-400" /> <span>MLEC Strategy</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Zap className="h-5 w-5 text-yellow-400" /> <span>Town Deal Funding</span>
+                </div>
+              </div>
               <div className="mt-10">
-                <Link href="/case-studies" className="text-blue-600 font-semibold hover:underline">
-                  Read full case study →
+                <Link
+                  href="/southport-business-growth"
+                  className="inline-block rounded-lg bg-white px-8 py-3 font-bold text-slate-900 hover:bg-slate-100 transition-colors"
+                >
+                  Read the Guide
                 </Link>
               </div>
             </div>
-            <div className="relative rounded-2xl bg-slate-100 p-8 shadow-sm ring-1 ring-slate-200">
-               {/* Visual Placeholder for a graph */}
-               <div className="flex flex-col gap-4">
-                 <div className="h-64 w-full rounded-lg bg-white p-4 shadow-sm">
-                   <div className="flex items-end justify-between gap-2 h-full pt-8">
-                      <div className="w-full bg-blue-100 rounded-t-sm h-[20%]"></div>
-                      <div className="w-full bg-blue-100 rounded-t-sm h-[25%]"></div>
-                      <div className="w-full bg-blue-200 rounded-t-sm h-[40%]"></div>
-                      <div className="w-full bg-blue-300 rounded-t-sm h-[55%]"></div>
-                      <div className="w-full bg-blue-400 rounded-t-sm h-[75%]"></div>
-                      <div className="w-full bg-blue-500 rounded-t-sm h-[85%] relative group">
-                        <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-slate-900 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity">
-                          +85%
+            
+            {/* Visual Representation of Growth */}
+            <div className="relative lg:w-1/2">
+              <div className="rounded-2xl border border-slate-700 bg-slate-800 p-8 shadow-2xl">
+                <div className="space-y-6">
+                  <div className="h-2 w-1/3 rounded bg-slate-600"></div>
+                  <div className="h-2 w-2/3 rounded bg-slate-700"></div>
+                  <div className="h-2 w-1/2 rounded bg-slate-700"></div>
+                  <div className="mt-8 flex items-end gap-4 h-32">
+                    <div className="w-full bg-blue-900/50 rounded-t-sm h-[40%]"></div>
+                    <div className="w-full bg-blue-800/50 rounded-t-sm h-[60%]"></div>
+                    <div className="w-full bg-blue-600 rounded-t-sm h-[85%] relative group cursor-pointer">
+                        <div className="absolute -top-10 left-1/2 -translate-x-1/2 bg-white text-slate-900 text-xs font-bold px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">
+                            You
                         </div>
-                      </div>
-                   </div>
-                 </div>
-                 <p className="text-center text-sm font-medium text-slate-500">Organic Traffic Growth (Month 1)</p>
-               </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA SECTION */}
-      <section className="bg-blue-600 px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Ready to fix your SEO engine?
-          </h2>
-          <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-blue-100">
-            Get a comprehensive 24-point audit of your current website. No obligation, just data.
-          </p>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Link
-              href="/audit"
-              className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-blue-600 shadow-sm hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-            >
-              Start Free Audit
-            </Link>
-            <Link href="/contact" className="text-sm font-semibold leading-6 text-white hover:text-blue-100">
-              Contact Sales <span aria-hidden="true">→</span>
-            </Link>
-          </div>
-        </div>
+      {/* 4. CTA */}
+      <section className="mx-auto max-w-4xl px-6 py-24 text-center">
+        <h2 className="text-3xl font-bold text-slate-900">Stop being the best-kept secret.</h2>
+        <p className="mt-4 text-slate-600">
+          Get a free, 5-minute video audit of your current digital presence. We'll show you exactly what's broken and how to fix it.
+        </p>
+        <Link
+          href="/contact"
+          className="mt-8 inline-block rounded-full bg-blue-600 px-10 py-4 font-bold text-white shadow-xl hover:bg-blue-700 hover:shadow-2xl transition-all"
+        >
+          Claim Your Free Audit
+        </Link>
       </section>
+
     </main>
   );
 }

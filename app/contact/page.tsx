@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, MapPin, Phone, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Mail, MapPin, ArrowRight, CheckCircle2 } from "lucide-react";
 
 export const metadata = {
   title: "Contact Us | Churchtown Media",
@@ -132,4 +132,29 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <label htmlFor="message" className="block
+              <label htmlFor="message" className="block text-sm font-semibold leading-6 text-slate-900">
+                How can we help?
+              </label>
+              <textarea
+                name="message"
+                id="message"
+                rows={4}
+                className="mt-2.5 block w-full rounded-md border-0 px-3.5 py-2 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+              />
+            </div>
+
+            <button
+              type="submit"
+              className="flex w-full items-center justify-center gap-2 rounded-md bg-blue-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+            >
+              Get Free Audit <ArrowRight className="h-4 w-4" />
+            </button>
+            <p className="text-center text-xs text-slate-500">
+              Zero obligation. We usually reply with your video audit within 24 hours.
+            </p>
+          </form>
+        </div>
+      </div>
+    </main>
+  );
+}
