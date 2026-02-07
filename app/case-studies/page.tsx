@@ -8,7 +8,7 @@ export const metadata = {
 };
 
 export default function CaseStudies() {
-  // Filter only posts categorized as Case Studies
+  // Automatically filter only posts marked as 'Case Studies'
   const caseStudies = posts.filter((post) => post.category === "Case Studies");
 
   return (
