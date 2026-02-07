@@ -1,14 +1,13 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "./components/Navbar"; // <--- 1. Import the Navbar
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Churchtown Media | Data-Driven SEO Agency Southport",
-  description: "SEO for businesses that build things. We specialize in Technical SEO and high-value lead generation for industrial & B2B firms.",
+  title: "Churchtown Media | SEO & Web Design Southport",
+  description: "Data-driven SEO and high-performance web design for Southport businesses.",
 };
 
 export default function RootLayout({
@@ -18,10 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} min-h-screen bg-slate-50 text-slate-900`}>
-        <Navbar />
+      <body className={inter.className}>
+        <Navbar /> {/* <--- 2. Add Navbar here so it shows on every page */}
         {children}
-        <Footer />
       </body>
     </html>
   );
