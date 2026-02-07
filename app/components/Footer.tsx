@@ -1,74 +1,123 @@
 import Link from "next/link";
-import { BarChart3, Mail, MapPin } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Instagram, MapPin, Mail } from "lucide-react";
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="bg-slate-900 text-slate-300">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
+    <footer className="bg-slate-900 text-slate-300 border-t border-slate-800">
+      <div className="mx-auto max-w-7xl px-6 py-12 lg:py-16">
+        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           
-          {/* Brand Column */}
-          <div className="space-y-4">
-            <div className="flex items-center gap-2 text-white">
-              <BarChart3 className="h-6 w-6" />
-              <span className="text-xl font-bold">Churchtown Media</span>
-            </div>
-            <p className="text-sm leading-relaxed text-slate-400">
-              Data-driven SEO for businesses that build things. No retainers for "effort"—only results.
+          {/* Column 1: Brand & Bio */}
+          <div className="space-y-8">
+            <Link href="/" className="text-2xl font-bold text-white">
+              Churchtown<span className="text-blue-500">Media</span>
+            </Link>
+            <p className="text-sm leading-6 text-slate-400 max-w-sm">
+              We build revenue engines, not just websites. Data-driven SEO and high-performance development for Southport businesses.
             </p>
-            <div className="pt-4">
-              <p className="flex items-center gap-2 text-sm">
-                <MapPin className="h-4 w-4 text-blue-500" />
-                Southport, UK
-              </p>
-              <p className="mt-2 flex items-center gap-2 text-sm">
-                <Mail className="h-4 w-4 text-blue-500" />
-                hello@churchtownmedia.co.uk
-              </p>
+            <div className="flex space-x-6">
+              <a href="#" className="text-slate-400 hover:text-white transition-colors">
+                <span className="sr-only">Facebook</span>
+                <Facebook className="h-6 w-6" />
+              </a>
+              <a href="#" className="text-slate-400 hover:text-white transition-colors">
+                <span className="sr-only">LinkedIn</span>
+                <Linkedin className="h-6 w-6" />
+              </a>
+              <a href="#" className="text-slate-400 hover:text-white transition-colors">
+                <span className="sr-only">Twitter</span>
+                <Twitter className="h-6 w-6" />
+              </a>
             </div>
           </div>
 
-          {/* Services */}
-          <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
-              Services
-            </h3>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/services" className="hover:text-blue-400">Technical SEO</Link></li>
-              <li><Link href="/services" className="hover:text-blue-400">Industrial Content</Link></li>
-              <li><Link href="/locations/southport" className="hover:text-blue-400">Local Domination</Link></li>
-              <li><Link href="/audit" className="hover:text-blue-400">Free SEO Audit</Link></li>
-            </ul>
-          </div>
-
-          {/* Locations */}
-          <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
-              Areas Served
-            </h3>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/locations/southport" className="hover:text-blue-400">SEO Southport</Link></li>
-              <li><Link href="/locations/preston" className="hover:text-blue-400">SEO Preston</Link></li>
-              <li><Link href="/locations/liverpool" className="hover:text-blue-400">SEO Liverpool</Link></li>
-              <li><Link href="/locations/manchester" className="hover:text-blue-400">SEO Manchester</Link></li>
-            </ul>
-          </div>
-
-          {/* Company */}
-          <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
-              Company
-            </h3>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/about" className="hover:text-blue-400">About Us</Link></li>
-              <li><Link href="/case-studies" className="hover:text-blue-400">Case Studies</Link></li>
-              <li><Link href="/contact" className="hover:text-blue-400">Contact</Link></li>
-            </ul>
+          {/* Column 2 & 3: Links Grid */}
+          <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+            <div className="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3 className="text-sm font-semibold leading-6 text-white">Services</h3>
+                <ul role="list" className="mt-6 space-y-4">
+                  <li>
+                    <Link href="/web-design" className="text-sm leading-6 hover:text-blue-400 transition-colors">
+                      Enterprise Web Design
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/search-engine-optimisation" className="text-sm leading-6 hover:text-blue-400 transition-colors">
+                      Data-Driven SEO
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/web-design/small-business" className="text-sm leading-6 hover:text-green-400 transition-colors">
+                      Small Business Websites
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/search-engine-optimisation/local" className="text-sm leading-6 hover:text-green-400 transition-colors">
+                      Local SEO Starter
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="mt-10 md:mt-0">
+                <h3 className="text-sm font-semibold leading-6 text-white">Agency</h3>
+                <ul role="list" className="mt-6 space-y-4">
+                  <li>
+                    <Link href="/case-studies" className="text-sm leading-6 hover:text-white transition-colors">
+                      Case Studies
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/blog" className="text-sm leading-6 hover:text-white transition-colors">
+                      Knowledge Base
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/southport-business-growth" className="text-sm leading-6 hover:text-yellow-400 transition-colors">
+                      Southport Growth Hub
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/contact" className="text-sm leading-6 hover:text-white transition-colors">
+                      Get Free Audit
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            {/* Contact Info */}
+            <div className="md:grid md:grid-cols-1 md:gap-8">
+              <div>
+                <h3 className="text-sm font-semibold leading-6 text-white">Contact</h3>
+                <ul role="list" className="mt-6 space-y-4">
+                  <li className="flex items-start gap-3">
+                    <MapPin className="h-5 w-5 text-blue-500 shrink-0" />
+                    <span className="text-sm leading-6">
+                      5 Cambridge Avenue,<br/>Southport, PR9 9SA
+                    </span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <Mail className="h-5 w-5 text-blue-500 shrink-0" />
+                    <a href="mailto:damian@churchtownmedia.co.uk" className="text-sm leading-6 hover:text-white">
+                      damian@churchtownmedia.co.uk
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div className="mt-12 border-t border-slate-800 pt-8 text-center text-xs text-slate-500">
-          &copy; {new Date().getFullYear()} Churchtown Media Ltd. Built with Next.js & Radical Transparency.
+        
+        <div className="mt-16 border-t border-slate-800 pt-8 sm:mt-20 lg:mt-24 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-xs leading-5 text-slate-500">
+            &copy; {currentYear} Churchtown Media Ltd. All rights reserved. Company No: 16960442.
+          </p>
+          <p className="text-xs leading-5 text-slate-600">
+            Built with Next.js & Tailwind.
+          </p>
         </div>
       </div>
     </footer>
