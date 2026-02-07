@@ -1,19 +1,50 @@
 "use client";
 
 import React, { useState } from "react";
-import { Search, Zap, ShieldCheck, BarChart3, Smartphone, Loader2 } from "lucide-react";
+import { Search, Zap, ShieldCheck, BarChart3, Smartphone, Loader2, CheckCircle2 } from "lucide-react";
 
 export default function AuditPage() {
-  const [isAnalyzing, setIsAnalyzing] = useState(false);
+  // PASTE YOUR FORMSPREE ID HERE (Get it from formspree.io)
+  const FORMSPREE_ID = "mpqjzyby"; 
 
-  const handleAnalyze = (e: React.FormEvent) => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [url, setUrl] = useState("");
+  const [email, setEmail] = useState("");
+
+  const handleAnalyze = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsAnalyzing(true);
-    // Simulate a scan for 3 seconds before "submitting"
-    setTimeout(() => {
-      alert("This is where you would connect Formspree or your API!");
-      setIsAnalyzing(false);
-    }, 3000);
+    setIsLoading(true);
+
+    // 1. Simulate the "Scanning" effect for 2 seconds (Adds perceived value)
+    await new Promise(resolve => setTimeout(resolve, 2000));
+
+    // 2. Send data to Formspree
+    try {
+      const response = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          url: url,
+          email: email,
+          message: "New Technical Audit Request from Website",
+        }),
+      });
+
+      if (response.ok) {
+        setIsSuccess(true);
+        setUrl("");
+        setEmail("");
+      } else {
+        alert("Oops! Something went wrong. Please email us directly.");
+      }
+    } catch (error) {
+      alert("Error submitting form. Please check your connection.");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -42,38 +73,60 @@ export default function AuditPage() {
 
         {/* GLASS FORM CARD */}
         <div className="bg-white/70 backdrop-blur-xl border border-white/60 p-2 rounded-[2rem] shadow-2xl shadow-blue-900/10 max-w-2xl mx-auto relative z-20">
-            <form onSubmit={handleAnalyze} className="flex flex-col md:flex-row gap-2">
-                <div className="flex-grow relative">
-                    <div className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
-                        <Search className="w-5 h-5" />
+            
+            {isSuccess ? (
+                // SUCCESS STATE
+                <div className="h-40 flex flex-col items-center justify-center text-center animate-in fade-in zoom-in duration-500">
+                    <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mb-4">
+                        <CheckCircle2 className="w-6 h-6 text-emerald-600" />
                     </div>
-                    <input 
-                        type="url" 
-                        placeholder="https://yourwebsite.com" 
-                        required
-                        className="w-full h-14 pl-12 pr-4 rounded-xl bg-slate-50 border border-transparent focus:bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all text-slate-900 placeholder:text-slate-400 font-medium"
-                    />
+                    <h3 className="text-xl font-bold text-slate-900">Scan Initiated!</h3>
+                    <p className="text-slate-500">We are processing your audit. Check your inbox shortly.</p>
+                    <button onClick={() => setIsSuccess(false)} className="mt-4 text-sm text-blue-600 font-bold hover:underline">
+                        Run another audit
+                    </button>
                 </div>
-                <div className="md:w-1/3">
-                    <input 
-                        type="email" 
-                        placeholder="Your Email" 
-                        required
-                        className="w-full h-14 px-4 rounded-xl bg-slate-50 border border-transparent focus:bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all text-slate-900 placeholder:text-slate-400 font-medium mb-2 md:mb-0"
-                    />
-                </div>
-                <button 
-                    type="submit" 
-                    disabled={isAnalyzing}
-                    className="h-14 px-8 rounded-xl bg-slate-900 text-white font-bold hover:bg-blue-600 transition-all shadow-lg hover:shadow-blue-500/25 disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2 whitespace-nowrap"
-                >
-                    {isAnalyzing ? (
-                        <><Loader2 className="w-5 h-5 animate-spin" /> Scanning...</>
-                    ) : (
-                        <><Zap className="w-5 h-5 fill-white" /> Run Audit</>
-                    )}
-                </button>
-            </form>
+            ) : (
+                // FORM STATE
+                <form onSubmit={handleAnalyze} className="flex flex-col md:flex-row gap-2">
+                    <div className="flex-grow relative">
+                        <div className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
+                            <Search className="w-5 h-5" />
+                        </div>
+                        <input 
+                            type="url" 
+                            name="url"
+                            value={url}
+                            onChange={(e) => setUrl(e.target.value)}
+                            placeholder="https://yourwebsite.com" 
+                            required
+                            className="w-full h-14 pl-12 pr-4 rounded-xl bg-slate-50 border border-transparent focus:bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all text-slate-900 placeholder:text-slate-400 font-medium"
+                        />
+                    </div>
+                    <div className="md:w-1/3">
+                        <input 
+                            type="email" 
+                            name="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            placeholder="Your Email" 
+                            required
+                            className="w-full h-14 px-4 rounded-xl bg-slate-50 border border-transparent focus:bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all text-slate-900 placeholder:text-slate-400 font-medium mb-2 md:mb-0"
+                        />
+                    </div>
+                    <button 
+                        type="submit" 
+                        disabled={isLoading}
+                        className="h-14 px-8 rounded-xl bg-slate-900 text-white font-bold hover:bg-blue-600 transition-all shadow-lg hover:shadow-blue-500/25 disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2 whitespace-nowrap min-w-[140px]"
+                    >
+                        {isLoading ? (
+                            <><Loader2 className="w-5 h-5 animate-spin" /> Scanning...</>
+                        ) : (
+                            <><Zap className="w-5 h-5 fill-white" /> Run Audit</>
+                        )}
+                    </button>
+                </form>
+            )}
         </div>
       </section>
 
@@ -90,7 +143,6 @@ export default function AuditPage() {
             {/* Terminal Content */}
             <div className="p-6 font-mono text-sm md:text-base">
                 <div className="text-emerald-400 mb-2">$ init_analysis --target=user_site</div>
-                {/* FIXED: Replaced '>' with '{'>'}' to fix parser error */}
                 <div className="text-slate-300 mb-1">{'>'} Connecting to Lighthouse API... <span className="text-emerald-500">Done</span></div>
                 <div className="text-slate-300 mb-1">{'>'} Checking First Contentful Paint (FCP)... <span className="text-yellow-500">Pending</span></div>
                 <div className="text-slate-300 mb-1">{'>'} Analyzing DOM Structure depth...</div>
