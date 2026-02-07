@@ -42,35 +42,21 @@ export default async function BlogPost({ params }: Props) {
          </div>
       </section>
 
+      {/* HERO IMAGE ADDED HERE */}
+      <div className="mx-auto max-w-4xl -mt-12 px-6">
+        <img 
+          src={post.image} 
+          alt={post.title} 
+          className="w-full rounded-2xl shadow-2xl border-4 border-white"
+        />
+      </div>
+
       {/* Article Content */}
-      <article className="mx-auto max-w-3xl px-6 py-24">
-        {/* TYPOGRAPHY ENGINE 
-            This styles the raw HTML from WordPress to look clean and professional.
-        */}
+      <article className="mx-auto max-w-3xl px-6 py-16">
+        
+        {/* WE USE THE 'blog-content' CLASS FROM GLOBALS.CSS HERE */}
         <div 
-          className="
-            max-w-none 
-            text-lg leading-8 text-slate-600
-            
-            /* HEADINGS */
-            [&_h2]:mt-12 [&_h2]:mb-6 [&_h2]:text-3xl [&_h2]:font-bold [&_h2]:tracking-tight [&_h2]:text-slate-900
-            [&_h3]:mt-10 [&_h3]:mb-4 [&_h3]:text-2xl [&_h3]:font-bold [&_h3]:text-slate-900
-            [&_h4]:mt-8 [&_h4]:mb-4 [&_h4]:text-xl [&_h4]:font-bold [&_h4]:text-slate-900
-            
-            /* PARAGRAPHS & LISTS */
-            [&_p]:mb-6 [&_p]:leading-loose
-            [&_ul]:mb-8 [&_ul]:pl-6 [&_ul]:list-disc
-            [&_ol]:mb-8 [&_ol]:pl-6 [&_ol]:list-decimal
-            [&_li]:mb-3 [&_li]:pl-2
-            
-            /* LINKS & BOLD */
-            [&_a]:font-semibold [&_a]:text-blue-600 [&_a]:underline [&_a]:underline-offset-4 hover:[&_a]:text-blue-800
-            [&_strong]:font-bold [&_strong]:text-slate-900
-            
-            /* BLOCKQUOTES & EXTRAS */
-            [&_blockquote]:border-l-4 [&_blockquote]:border-blue-600 [&_blockquote]:pl-6 [&_blockquote]:italic [&_blockquote]:text-slate-700 [&_blockquote]:my-8
-            [&_img]:rounded-xl [&_img]:my-10 [&_img]:shadow-md
-          "
+          className="blog-content"
           dangerouslySetInnerHTML={{ __html: post.content }} 
         />
         

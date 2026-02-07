@@ -8,12 +8,10 @@ export const metadata = {
 };
 
 export default function CaseStudies() {
-  // Automatically filter only posts marked as 'Case Studies'
   const caseStudies = posts.filter((post) => post.category === "Case Studies");
 
   return (
     <main className="min-h-screen bg-slate-50">
-      {/* Header */}
       <section className="bg-white border-b border-slate-200 px-6 py-20 text-center">
         <div className="mx-auto max-w-3xl">
           <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
@@ -25,7 +23,6 @@ export default function CaseStudies() {
         </div>
       </section>
 
-      {/* Case Study Grid */}
       <section className="mx-auto max-w-5xl px-6 py-20">
         <div className="grid gap-10 sm:grid-cols-2">
           {caseStudies.map((study) => (
@@ -34,6 +31,15 @@ export default function CaseStudies() {
               href={`/blog/${study.slug}`}
               className="group relative flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200 transition-all hover:shadow-xl hover:ring-blue-500"
             >
+              {/* IMAGE ADDED HERE */}
+              <div className="h-48 w-full overflow-hidden border-b border-slate-100 bg-slate-100">
+                <img 
+                  src={study.image} 
+                  alt={study.title} 
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+
               <div className="flex flex-1 flex-col p-8">
                 <div className="flex items-center gap-3 text-sm font-medium text-blue-600">
                   <TrendingUp className="h-4 w-4" />
@@ -53,7 +59,6 @@ export default function CaseStudies() {
           ))}
         </div>
 
-        {/* Empty State Handling */}
         {caseStudies.length === 0 && (
           <div className="text-center py-20">
             <p className="text-slate-500">More case studies are being written...</p>
@@ -61,7 +66,6 @@ export default function CaseStudies() {
         )}
       </section>
 
-      {/* CTA */}
       <section className="bg-slate-900 px-6 py-24 text-center text-white">
         <h2 className="text-3xl font-bold">Want results like this?</h2>
         <p className="mt-4 text-slate-400">Let's audit your current setup and find the gaps.</p>

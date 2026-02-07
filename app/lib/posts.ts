@@ -4,6 +4,7 @@ export interface BlogPost {
     date: string;
     category: string;
     excerpt: string;
+    image: string; // <--- New Field
     content: string;
   }
   
@@ -13,6 +14,7 @@ export interface BlogPost {
       title: "Invisible on Lord Street? Why Local SEO is Your New Shop Window",
       date: "Jan 26, 2026",
       category: "Southport Business Growth",
+      image: "https://churchtownmedia.co.uk/wp-content/uploads/2026/01/southport-near-me-scaled.png",
       excerpt: "Are customers walking right past your door? Discover why 'Near Me' searches and the Google Map Pack are the new shop window for Southport businesses.",
       content: `
         <p>Walk down Lord Street on a busy Saturday afternoon. Look at the people—the tourists, the day-trippers, the locals. What are they doing?</p>
@@ -60,6 +62,7 @@ export interface BlogPost {
       title: "The MLEC Effect: Is Your Southport Business Ready for 500,000 New Visitors?",
       date: "Jan 21, 2026",
       category: "Southport Business Growth",
+      image: "https://churchtownmedia.co.uk/wp-content/uploads/2026/01/mlec-scaled.png",
       excerpt: "The Marine Lake Events Centre is bringing 500,000 visitors to Southport. Here is the digital strategy local businesses need to capture this new economy in 2026.",
       content: `
         <p>The demolition is done. The steel is rising. The <strong>Marine Lake Events Centre (MLEC)</strong> is no longer just a &#8220;Town Deal proposal&#8221;—it is the new reality of Southport’s skyline.</p>
@@ -90,6 +93,7 @@ export interface BlogPost {
       title: "Why a New Local SEO Company is Your Business’s Best Friend",
       date: "Jan 14, 2026",
       category: "SEO Demystified",
+      image: "https://churchtownmedia.co.uk/wp-content/uploads/2026/01/Gemini_Generated_Image_rgzk28rgzk28rgzk-e1768408045486.png",
       excerpt: "Unlock Your Local Potential: Why a New Local SEO Company is Your Business's Best Friend In today's digital age, simply having a website isn't enough.",
       content: `
         <h2>Unlock Your Local Potential: Why a New Local SEO Company is Your Business&#8217;s Best Friend</h2>
@@ -106,6 +110,7 @@ export interface BlogPost {
       title: "The £20,000 SEO Mistake: How We Tripled Traffic in 6 Weeks",
       date: "Feb 02, 2026",
       category: "Case Studies",
+      image: "https://churchtownmedia.co.uk/wp-content/uploads/2026/02/Screenshot-of-GSC-showing-from-when-churchtown-media-took-over-scaled.png",
       excerpt: "Alotek Shelters spent £20k for zero growth. See the exact strategy Churchtown Media used to fix their 'zombie' site and capture #1 AI rankings in under 45 days.",
       content: `
         <p>Our client, <strong>Alotek Shelters</strong>, invested a significant amount in SEO with their previous agency over the last 12 months. For that price, you’d expect market dominance. You’d expect the phone to be ringing off the hook.</p>
@@ -157,6 +162,7 @@ export interface BlogPost {
       title: "Eating Our Own Dog Food: Why We Ignored Google’s Advice on Our New Ad Campaign",
       date: "Jan 29, 2026",
       category: "Agency Life",
+      image: "https://churchtownmedia.co.uk/wp-content/uploads/2026/01/google-ads-scaled.png",
       excerpt: "We ignored Google’s advice and launched a £15/day ad campaign. See the exact settings, keywords, and strategy Churchtown Media uses to get local leads.",
       content: `
         <p>It’s a strange feeling for a digital marketer to press &#8220;Publish&#8221; on their <em>own</em> ad campaign.</p>
