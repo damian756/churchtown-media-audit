@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Facebook, Twitter, Linkedin, Instagram, MapPin, Mail } from "lucide-react";
+import { Facebook, Twitter, Instagram, Youtube, MapPin, Mail } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -18,17 +18,41 @@ export default function Footer() {
               We build revenue engines, not just websites. Data-driven SEO and high-performance development for Southport businesses.
             </p>
             <div className="flex space-x-6">
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
+              <a 
+                href="https://www.facebook.com/profile.php?id=61586286397102" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-white transition-colors"
+              >
                 <span className="sr-only">Facebook</span>
                 <Facebook className="h-6 w-6" />
               </a>
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
-                <span className="sr-only">LinkedIn</span>
-                <Linkedin className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
-                <span className="sr-only">Twitter</span>
+              <a 
+                href="https://x.com/churchtownmedia" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-white transition-colors"
+              >
+                <span className="sr-only">X (Twitter)</span>
                 <Twitter className="h-6 w-6" />
+              </a>
+              <a 
+                href="https://www.instagram.com/churchtownmedia/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-white transition-colors"
+              >
+                <span className="sr-only">Instagram</span>
+                <Instagram className="h-6 w-6" />
+              </a>
+              <a 
+                href="https://www.youtube.com/@ChurchtownMedia" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-white transition-colors"
+              >
+                <span className="sr-only">YouTube</span>
+                <Youtube className="h-6 w-6" />
               </a>
             </div>
           </div>
