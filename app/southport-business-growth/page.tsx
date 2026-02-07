@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Users, Coins, ExternalLink, Calendar, MapPin, CheckCircle2 } from "lucide-react";
+import { Users, Coins, ExternalLink, Calendar, MapPin, CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata = {
   title: "Southport Business Growth Hub | 2026 Playbook",
@@ -55,74 +55,77 @@ export default function GrowthHub() {
             <div className="p-3 bg-blue-100 rounded-lg text-blue-600">
               <Users className="h-8 w-8" />
             </div>
-            <h2 className="text-3xl font-bold text-slate-900">Local Networking & Community</h2>
+            <div>
+                <h2 className="text-3xl font-bold text-slate-900">Local Networking & Community</h2>
+                <p className="text-slate-500 mt-1">Growth doesn't happen in a silo. Connect with the best.</p>
+            </div>
           </div>
 
           <div className="grid gap-8 md:grid-cols-3">
             {/* Card 1: Sandgrounders */}
-            <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all group">
-              <div className="h-48 overflow-hidden bg-slate-100">
+            <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all group h-full">
+              <div className="h-56 overflow-hidden bg-slate-100">
                 <img 
                     src="https://churchtownmedia.co.uk/wp-content/uploads/2026/01/sandgrounders-business-club-scaled.png" 
                     alt="Sandgrounders Business Club"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="p-6 flex flex-col flex-1">
+              <div className="p-8 flex flex-col flex-1">
                 <h3 className="text-xl font-bold text-slate-900">Sandgrounders Business Club</h3>
                 <p className="mt-2 text-sm font-semibold text-blue-600">Casual Connection</p>
-                <ul className="mt-6 space-y-3 flex-1 text-slate-600 text-sm">
-                    <li className="flex gap-2"><Calendar className="h-4 w-4 shrink-0 text-slate-400"/> 2nd Thursday of Month (5pm)</li>
-                    <li className="flex gap-2"><MapPin className="h-4 w-4 shrink-0 text-slate-400"/> Southport FC, Haig Ave</li>
-                    <li className="text-slate-500">Free to attend. No pressure. Hosted by Southport FC and Stand Up For Southport.</li>
+                <ul className="mt-6 space-y-4 flex-1 text-slate-600 text-sm">
+                    <li className="flex gap-3"><Calendar className="h-5 w-5 shrink-0 text-slate-400"/> <span>2nd Thursday of Month (5pm)</span></li>
+                    <li className="flex gap-3"><MapPin className="h-5 w-5 shrink-0 text-slate-400"/> <span>Southport FC, Haig Ave</span></li>
+                    <li className="text-slate-500 leading-relaxed border-t border-slate-100 pt-4">Free to attend. No pressure. Hosted by Southport FC and Stand Up For Southport.</li>
                 </ul>
-                <a href="https://www.facebook.com/SandgroundersBusinessClub/" target="_blank" className="mt-6 w-full flex items-center justify-center gap-2 rounded-lg border border-slate-200 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 transition-colors">
-                    Visit Website <ExternalLink className="h-3 w-3" />
+                <a href="https://www.facebook.com/SandgroundersBusinessClub/" target="_blank" className="mt-8 w-full flex items-center justify-center gap-2 rounded-lg border border-slate-200 bg-slate-50 py-3 text-sm font-bold text-slate-700 hover:bg-slate-100 hover:text-slate-900 transition-colors">
+                    Visit Website <ExternalLink className="h-4 w-4" />
                 </a>
               </div>
             </div>
 
             {/* Card 2: Southport BID */}
-            <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all group">
-              <div className="h-48 overflow-hidden bg-slate-100">
+            <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all group h-full">
+              <div className="h-56 overflow-hidden bg-slate-100">
                 <img 
                     src="https://churchtownmedia.co.uk/wp-content/uploads/2026/01/Southport-BID-scaled.png" 
                     alt="Southport BID"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="p-6 flex flex-col flex-1">
+              <div className="p-8 flex flex-col flex-1">
                 <h3 className="text-xl font-bold text-slate-900">Southport BID</h3>
                 <p className="mt-2 text-sm font-semibold text-blue-600">Retail & Hospitality Focus</p>
-                <ul className="mt-6 space-y-3 flex-1 text-slate-600 text-sm">
-                    <li className="flex gap-2"><CheckCircle2 className="h-4 w-4 shrink-0 text-green-600"/> Town Centre Security</li>
-                    <li className="flex gap-2"><CheckCircle2 className="h-4 w-4 shrink-0 text-green-600"/> Seasonal Events</li>
-                    <li className="text-slate-500">Access to "Your Southport Stars" awards to boost profile. Essential for Lord St businesses.</li>
+                <ul className="mt-6 space-y-4 flex-1 text-slate-600 text-sm">
+                    <li className="flex gap-3"><CheckCircle2 className="h-5 w-5 shrink-0 text-green-600"/> <span>Town Centre Security</span></li>
+                    <li className="flex gap-3"><CheckCircle2 className="h-5 w-5 shrink-0 text-green-600"/> <span>Seasonal Events & Lights</span></li>
+                    <li className="text-slate-500 leading-relaxed border-t border-slate-100 pt-4">Access to "Your Southport Stars" awards to boost profile. Essential for Lord St businesses.</li>
                 </ul>
-                <a href="https://southportbid.com/" target="_blank" className="mt-6 w-full flex items-center justify-center gap-2 rounded-lg border border-slate-200 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 transition-colors">
-                    View Initiatives <ExternalLink className="h-3 w-3" />
+                <a href="https://southportbid.com/" target="_blank" className="mt-8 w-full flex items-center justify-center gap-2 rounded-lg border border-slate-200 bg-slate-50 py-3 text-sm font-bold text-slate-700 hover:bg-slate-100 hover:text-slate-900 transition-colors">
+                    View Initiatives <ExternalLink className="h-4 w-4" />
                 </a>
               </div>
             </div>
 
             {/* Card 3: Real5 */}
-            <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all group">
-              <div className="h-48 overflow-hidden bg-slate-100">
+            <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all group h-full">
+              <div className="h-56 overflow-hidden bg-slate-100">
                 <img 
                     src="https://churchtownmedia.co.uk/wp-content/uploads/2026/01/real5-networking-2-scaled.png" 
                     alt="Real5 Networking"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="p-6 flex flex-col flex-1">
+              <div className="p-8 flex flex-col flex-1">
                 <h3 className="text-xl font-bold text-slate-900">Real5 Networking</h3>
                 <p className="mt-2 text-sm font-semibold text-blue-600">Structured Referrals</p>
-                <ul className="mt-6 space-y-3 flex-1 text-slate-600 text-sm">
-                    <li className="flex gap-2"><MapPin className="h-4 w-4 shrink-0 text-slate-400"/> The Grand / Lord St Hotel</li>
-                    <li className="text-slate-500">"Single Seat" model (lock out your competition). Focus on high-level profit sharing and genuine leads.</li>
+                <ul className="mt-6 space-y-4 flex-1 text-slate-600 text-sm">
+                    <li className="flex gap-3"><MapPin className="h-5 w-5 shrink-0 text-slate-400"/> <span>The Grand / Lord St Hotel</span></li>
+                    <li className="text-slate-500 leading-relaxed border-t border-slate-100 pt-4">"Single Seat" model (lock out your competition). Focus on high-level profit sharing and genuine leads.</li>
                 </ul>
-                <a href="https://real5networking.com/" target="_blank" className="mt-6 w-full flex items-center justify-center gap-2 rounded-lg border border-slate-200 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 transition-colors">
-                    Check Availability <ExternalLink className="h-3 w-3" />
+                <a href="https://real5networking.com/" target="_blank" className="mt-8 w-full flex items-center justify-center gap-2 rounded-lg border border-slate-200 bg-slate-50 py-3 text-sm font-bold text-slate-700 hover:bg-slate-100 hover:text-slate-900 transition-colors">
+                    Check Availability <ExternalLink className="h-4 w-4" />
                 </a>
               </div>
             </div>
@@ -137,59 +140,71 @@ export default function GrowthHub() {
             <div className="p-3 bg-green-100 rounded-lg text-green-700">
               <Coins className="h-8 w-8" />
             </div>
-            <h2 className="text-3xl font-bold text-slate-900">Fueling Growth: Grants & Funding</h2>
+            <div>
+                <h2 className="text-3xl font-bold text-slate-900">Fueling Growth: Grants & Funding</h2>
+                <p className="text-slate-500 mt-1">Capital is the fuel for growth. Here is what's available in Sefton right now.</p>
+            </div>
           </div>
 
           <div className="grid gap-8 md:grid-cols-3">
             {/* Grant 1 */}
-            <div className="flex flex-col rounded-2xl bg-white p-8 shadow-sm border border-slate-100">
-              <div className="mb-6 h-16 w-full flex items-center justify-start">
-                 <img src="https://churchtownmedia.co.uk/wp-content/uploads/2026/01/InvestSefton.png" alt="Invest Sefton" className="h-12 object-contain" />
+            <div className="flex flex-col rounded-2xl bg-white p-8 shadow-sm border border-slate-200 h-full hover:shadow-md transition-shadow">
+              <div className="mb-8 h-20 w-full flex items-center justify-start border-b border-slate-100 pb-6">
+                 <img src="https://churchtownmedia.co.uk/wp-content/uploads/2026/01/InvestSefton.png" alt="Invest Sefton" className="h-full object-contain max-w-[80%]" />
               </div>
               <h3 className="text-xl font-bold text-slate-900">InvestSefton</h3>
-              <p className="mt-1 text-sm text-slate-500">The Growth Hub</p>
+              <p className="mt-1 text-sm text-slate-500 font-medium">The Growth Hub</p>
               <p className="mt-4 text-slate-600 text-sm leading-relaxed flex-1">
                 The "Gatekeepers" to government funds. They provide full business diagnostics and access to LCR High Growth funds.
               </p>
-              <div className="mt-6 pt-6 border-t border-slate-100">
-                <span className="inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800">
+              <div className="mt-6 mb-6">
+                <span className="inline-flex items-center rounded-full bg-green-100 px-3 py-1 text-xs font-bold text-green-800">
                   Priority: MLEC Services
                 </span>
               </div>
+              <a href="mailto:investsefton@sefton.gov.uk" className="w-full flex items-center justify-center gap-2 rounded-lg bg-slate-900 py-3 text-sm font-bold text-white hover:bg-slate-800 transition-colors">
+                Contact Hub <ArrowRight className="h-4 w-4" />
+              </a>
             </div>
 
             {/* Grant 2 */}
-            <div className="flex flex-col rounded-2xl bg-white p-8 shadow-sm border border-slate-100">
-              <div className="mb-6 h-16 w-full flex items-center justify-start">
-                 <img src="https://churchtownmedia.co.uk/wp-content/uploads/2026/01/Merseyside-Police-Cashback-Fund.png" alt="Police Fund" className="h-16 object-contain" />
+            <div className="flex flex-col rounded-2xl bg-white p-8 shadow-sm border border-slate-200 h-full hover:shadow-md transition-shadow">
+              <div className="mb-8 h-20 w-full flex items-center justify-start border-b border-slate-100 pb-6">
+                 <img src="https://churchtownmedia.co.uk/wp-content/uploads/2026/01/Merseyside-Police-Cashback-Fund.png" alt="Police Fund" className="h-full object-contain max-w-[80%]" />
               </div>
               <h3 className="text-xl font-bold text-slate-900">Police Cashback Fund</h3>
-              <p className="mt-1 text-sm text-slate-500">Community Safety</p>
+              <p className="mt-1 text-sm text-slate-500 font-medium">Community Safety</p>
               <p className="mt-4 text-slate-600 text-sm leading-relaxed flex-1">
                 Grants up to <strong>£5,000</strong> derived from seized assets. Ideal for CICs and social enterprises in Southport/Birkdale focusing on youth or safety.
               </p>
-              <div className="mt-6 pt-6 border-t border-slate-100">
-                <span className="inline-flex items-center rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-800">
-                  Max: £5,000
+              <div className="mt-6 mb-6">
+                <span className="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 text-xs font-bold text-blue-800">
+                  Max Grant: £5,000
                 </span>
               </div>
+              <a href="https://cfmerseyside.org.uk/grants/merseyside-police-community-cashback-fund" target="_blank" className="w-full flex items-center justify-center gap-2 rounded-lg bg-slate-900 py-3 text-sm font-bold text-white hover:bg-slate-800 transition-colors">
+                Check Criteria <ExternalLink className="h-4 w-4" />
+              </a>
             </div>
 
             {/* Grant 3 */}
-            <div className="flex flex-col rounded-2xl bg-white p-8 shadow-sm border border-slate-100">
-              <div className="mb-6 h-16 w-full flex items-center justify-start">
-                 <img src="https://churchtownmedia.co.uk/wp-content/uploads/2026/01/kingstrust.png" alt="Kings Trust" className="h-14 object-contain" />
+            <div className="flex flex-col rounded-2xl bg-white p-8 shadow-sm border border-slate-200 h-full hover:shadow-md transition-shadow">
+              <div className="mb-8 h-20 w-full flex items-center justify-start border-b border-slate-100 pb-6">
+                 <img src="https://churchtownmedia.co.uk/wp-content/uploads/2026/01/kingstrust.png" alt="Kings Trust" className="h-full object-contain max-w-[80%]" />
               </div>
               <h3 className="text-xl font-bold text-slate-900">King’s Trust</h3>
-              <p className="mt-1 text-sm text-slate-500">Young Entrepreneurs (18-30)</p>
+              <p className="mt-1 text-sm text-slate-500 font-medium">Young Entrepreneurs</p>
               <p className="mt-4 text-slate-600 text-sm leading-relaxed flex-1">
                 Low-interest loans up to <strong>£25,000</strong> per partner. Includes a dedicated business mentor for 12 months (often worth more than the cash).
               </p>
-              <div className="mt-6 pt-6 border-t border-slate-100">
-                <span className="inline-flex items-center rounded-full bg-red-100 px-2.5 py-0.5 text-xs font-medium text-red-800">
+              <div className="mt-6 mb-6">
+                <span className="inline-flex items-center rounded-full bg-red-100 px-3 py-1 text-xs font-bold text-red-800">
                   Ages 18-30
                 </span>
               </div>
+              <a href="https://www.kingstrust.org.uk/help-for-young-people/programmes/enterprise/" target="_blank" className="w-full flex items-center justify-center gap-2 rounded-lg bg-slate-900 py-3 text-sm font-bold text-white hover:bg-slate-800 transition-colors">
+                Start Application <ExternalLink className="h-4 w-4" />
+              </a>
             </div>
           </div>
         </div>
@@ -199,7 +214,7 @@ export default function GrowthHub() {
       <section className="bg-blue-600 px-6 py-20 text-center text-white">
         <h2 className="text-3xl font-bold">Ready to dominate the Southport search results?</h2>
         <p className="mt-4 text-blue-100 mb-8">Stop being the town's best-kept secret. Get a free, no-nonsense audit today.</p>
-        <Link href="/contact" className="rounded-full bg-white px-8 py-4 font-bold text-blue-600 hover:bg-blue-50 transition-colors shadow-xl">
+        <Link href="/contact" className="rounded-full bg-white px-8 py-4 font-bold text-blue-600 hover:bg-blue-50 transition-colors shadow-xl inline-block">
           Get Your Free Audit
         </Link>
       </section>
