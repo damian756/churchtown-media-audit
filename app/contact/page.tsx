@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { Mail, MapPin, Phone, Send, CheckCircle2, ArrowRight } from "lucide-react";
 
 export default function ContactPage() {
-  const FORMSPREE_ID = "mpqjzyby"; // Using your existing ID
+  const FORMSPREE_ID = "mpqjzyby"; 
 
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
 
@@ -76,8 +76,8 @@ export default function ContactPage() {
                             </div>
                             <div>
                                 <p className="text-sm font-bold text-slate-400 uppercase tracking-wide mb-1">Email</p>
-                                <a href="mailto:damian@churchtownmedia.co.uk" className="text-lg font-medium text-slate-900 hover:text-blue-600 transition-colors">
-                                    damian@churchtownmedia.co.uk
+                                <a href="mailto:hello@churchtownmedia.co.uk" className="text-lg font-medium text-slate-900 hover:text-blue-600 transition-colors">
+                                    hello@churchtownmedia.co.uk
                                 </a>
                             </div>
                         </div>
@@ -89,7 +89,7 @@ export default function ContactPage() {
                             <div>
                                 <p className="text-sm font-bold text-slate-400 uppercase tracking-wide mb-1">HQ</p>
                                 <p className="text-lg font-medium text-slate-900">
-                                    5 Cambridge Avenue<br/>
+                                    Cambridge Avenue<br/>
                                     Southport, PR9 9SA
                                 </p>
                             </div>
@@ -126,7 +126,7 @@ export default function ContactPage() {
                         </div>
                         <h3 className="text-3xl font-bold text-slate-900 mb-2">Message Received</h3>
                         <p className="text-slate-600 mb-8 max-w-xs mx-auto">
-                            Thank you for reaching out. Damian will review your project and get back to you within 24 hours.
+                            Thank you for reaching out. We will review your project and get back to you within 24 hours.
                         </p>
                         <button onClick={() => setStatus('idle')} className="text-blue-600 font-bold hover:underline">
                             Send another message

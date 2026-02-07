@@ -60,11 +60,6 @@ export default function AuditPage() {
   };
 
   return (
-    /* THE EXCELLENCE FIX:
-       - 'block': Standard top-to-bottom document flow.
-       - 'min-h-screen': Ensures the page fills the view.
-       - 'pb-60': Massive padding to physically push the footer away.
-    */
     <main className="block min-h-screen h-auto w-full bg-slate-50/50 pt-24 pb-60 overflow-x-hidden">
       
       <div className="max-w-5xl mx-auto px-6">
@@ -150,7 +145,7 @@ export default function AuditPage() {
                         </div>
                         <div className="bg-blue-600 rounded-2xl p-6 text-center shadow-xl shadow-blue-500/20">
                             <h3 className="font-bold text-lg text-white mb-4">Want to fix these scores?</h3>
-                            <button onClick={() => window.location.href = `mailto:damian@churchtownmedia.co.uk?subject=Audit Results`} className="inline-flex items-center gap-2 bg-white text-blue-600 font-bold py-3 px-8 rounded-xl transition-all hover:scale-105 active:scale-95">
+                            <button onClick={() => window.location.href = `mailto:hello@churchtownmedia.co.uk?subject=Audit Results`} className="inline-flex items-center gap-2 bg-white text-blue-600 font-bold py-3 px-8 rounded-xl transition-all hover:scale-105 active:scale-95">
                                 Book Strategy Call <ArrowRight className="w-4 h-4" />
                             </button>
                         </div>
@@ -158,10 +153,7 @@ export default function AuditPage() {
                 )}
           </div>
 
-          {/* 3. PHYSICAL SPACER 
-              By putting an empty block with a fixed height here, we create a 
-              physical "no-man's land" that the terminal cannot cross.
-          */}
+          {/* 3. PHYSICAL SPACER */}
           <div className="w-full h-24 block shrink-0" aria-hidden="true"></div>
 
           {/* 4. THE TERMINAL SECTION */}
