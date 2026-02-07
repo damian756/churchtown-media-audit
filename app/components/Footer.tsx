@@ -25,11 +25,11 @@ export default function Footer() {
                 We build revenue engines, not just websites. Data-driven SEO and high-performance development for Southport businesses.
             </p>
             
-            {/* 2. SOCIAL ICONS (Update the hrefs below with your real links) */}
+            {/* 2. SOCIAL ICONS */}
             <div className="flex gap-5 pt-4">
                 {/* Twitter / X */}
                 <a 
-                    href="https://twitter.com/churchtownmedia" // <--- UPDATE THIS
+                    href="https://twitter.com/churchtownmedia" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="text-slate-400 hover:text-white hover:scale-110 transition-all"
@@ -40,7 +40,7 @@ export default function Footer() {
 
                 {/* LinkedIn */}
                 <a 
-                    href="https://linkedin.com/company/churchtownmedia" // <--- UPDATE THIS
+                    href="https://linkedin.com/company/churchtownmedia" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="text-slate-400 hover:text-white hover:scale-110 transition-all"
@@ -51,7 +51,7 @@ export default function Footer() {
 
                 {/* Instagram */}
                 <a 
-                    href="https://instagram.com/churchtownmedia" // <--- UPDATE THIS
+                    href="https://instagram.com/churchtownmedia" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="text-slate-400 hover:text-white hover:scale-110 transition-all"
@@ -62,7 +62,7 @@ export default function Footer() {
 
                 {/* YouTube */}
                 <a 
-                    href="https://youtube.com/@churchtownmedia" // <--- UPDATE THIS
+                    href="https://youtube.com/@churchtownmedia" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="text-slate-400 hover:text-white hover:scale-110 transition-all"
@@ -106,7 +106,10 @@ export default function Footer() {
             <ul className="space-y-4 text-sm font-medium text-slate-500">
                 <li><Link href="/work" className="hover:text-blue-400 transition-colors">Industry Frameworks</Link></li>
                 <li><Link href="/blog" className="hover:text-blue-400 transition-colors">Knowledge Base</Link></li>
-                <li><Link href="/contact" className="hover:text-blue-400 transition-colors">Southport Growth Hub</Link></li>
+                
+                {/* --- FIX: Updated Link to point to the correct page --- */}
+                <li><Link href="/southport-growth" className="hover:text-blue-400 transition-colors">Southport Growth Hub</Link></li>
+                
                 <li><Link href="/audit" className="text-blue-500 font-bold hover:text-white transition-colors">Get Free Audit</Link></li>
             </ul>
         </div>
