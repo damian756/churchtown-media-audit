@@ -1,159 +1,191 @@
-import Link from "next/link";
-import { Mail, MapPin, ArrowRight, CheckCircle2 } from "lucide-react";
+"use client";
 
-export const metadata = {
-  title: "Contact Us | Churchtown Media",
-  description: "Get your free local SEO audit. Contact Southport's leading digital agency for web design and growth strategies.",
-};
+import React, { useState } from "react";
+import { Mail, MapPin, Phone, Send, CheckCircle2, ArrowRight } from "lucide-react";
 
 export default function ContactPage() {
+  const FORMSPREE_ID = "mpqjzyby"; // Using your existing ID
+
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus('submitting');
+    
+    const formData = new FormData(e.currentTarget);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setStatus('success');
+      } else {
+        alert("Something went wrong. Please try again.");
+        setStatus('idle');
+      }
+    } catch (error) {
+      alert("Error connecting to server.");
+      setStatus('idle');
+    }
+  };
+
   return (
-    <main className="min-h-screen bg-slate-50">
+    <main className="min-h-screen h-auto w-full bg-slate-50/50 pt-32 pb-40 overflow-x-hidden">
       
-      {/* Header */}
-      <section className="bg-slate-900 px-6 py-20 text-center text-white">
-        <div className="mx-auto max-w-3xl">
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-            Let's Talk Growth
-          </h1>
-          <p className="mt-4 text-xl text-slate-400">
-            Ready to upgrade? Fill out the form below for a <strong>Free Video Audit</strong> of your current website and SEO rankings.
-          </p>
-        </div>
-      </section>
-
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 py-20 lg:grid-cols-2">
+      <div className="max-w-6xl mx-auto px-6">
         
-        {/* Left Column: Contact Info & Value Prop */}
-        <div className="flex flex-col justify-between">
-          <div>
-            <h2 className="text-2xl font-bold text-slate-900">Contact Details</h2>
-            <p className="mt-4 text-slate-600">
-              Based in Southport (Churchtown), serving businesses across the North West.
-            </p>
-
-            <div className="mt-8 space-y-6">
-              <div className="flex items-center gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-100 text-blue-600">
-                  <Mail className="h-6 w-6" />
-                </div>
-                <div>
-                  <p className="text-sm font-medium text-slate-500">Email Us</p>
-                  <a href="mailto:damian@churchtownmedia.co.uk" className="text-lg font-semibold text-slate-900 hover:text-blue-600">
-                    damian@churchtownmedia.co.uk
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-100 text-blue-600">
-                  <MapPin className="h-6 w-6" />
-                </div>
-                <div>
-                  <p className="text-sm font-medium text-slate-500">Location</p>
-                  <p className="text-lg font-semibold text-slate-900">
-                    Southport, PR9 9SA
-                  </p>
-                </div>
-              </div>
+        {/* 1. HEADER */}
+        <div className="text-center mb-20">
+            <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 rounded-full px-4 py-1.5 mb-8">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                </span>
+                <span className="text-xs font-bold text-blue-700 uppercase tracking-wide">
+                  Open for new projects
+                </span>
             </div>
-          </div>
-
-          {/* Trust Indicators */}
-          <div className="mt-12 rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200">
-            <h3 className="font-bold text-slate-900">What you get in your Free Audit:</h3>
-            <ul className="mt-4 space-y-3">
-              {[
-                "Competitor Analysis (Who is outranking you?)",
-                "Speed & Performance Score",
-                "Missing Keyword Opportunities",
-                "Actionable 'Quick Wins' Plan"
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-3 text-slate-600">
-                  <CheckCircle2 className="h-5 w-5 shrink-0 text-green-600" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
+            <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 mb-6">
+              Let's build the <br/>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 animate-gradient">impossible.</span>
+            </h1>
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+              Ready to scale? Whether it's an Enterprise Web App or a high-performance Marketing Site, we engineer revenue.
+            </p>
         </div>
 
-        {/* Right Column: The Form */}
-        <div className="rounded-3xl bg-white p-8 shadow-lg ring-1 ring-slate-200 sm:p-12">
-          <form className="space-y-6">
-            <div className="grid gap-6 sm:grid-cols-2">
-              <div>
-                <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-slate-900">
-                  First name
-                </label>
-                <input
-                  type="text"
-                  name="first-name"
-                  id="first-name"
-                  className="mt-2.5 block w-full rounded-md border-0 px-3.5 py-2 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
-                />
-              </div>
-              <div>
-                <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-slate-900">
-                  Last name
-                </label>
-                <input
-                  type="text"
-                  name="last-name"
-                  id="last-name"
-                  className="mt-2.5 block w-full rounded-md border-0 px-3.5 py-2 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
-                />
-              </div>
+        {/* 2. MAIN GRID (Info Left, Form Right) */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            
+            {/* LEFT COL: Contact Info & Map */}
+            <div className="flex flex-col gap-8">
+                
+                {/* Info Card */}
+                <div className="bg-white/80 backdrop-blur-xl border border-white/60 p-8 rounded-[2rem] shadow-xl">
+                    <h3 className="text-2xl font-bold text-slate-900 mb-6">Contact Details</h3>
+                    
+                    <div className="space-y-6">
+                        <div className="flex items-start gap-4">
+                            <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
+                                <Mail className="w-6 h-6" />
+                            </div>
+                            <div>
+                                <p className="text-sm font-bold text-slate-400 uppercase tracking-wide mb-1">Email</p>
+                                <a href="mailto:damian@churchtownmedia.co.uk" className="text-lg font-medium text-slate-900 hover:text-blue-600 transition-colors">
+                                    damian@churchtownmedia.co.uk
+                                </a>
+                            </div>
+                        </div>
+
+                        <div className="flex items-start gap-4">
+                            <div className="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 shrink-0">
+                                <MapPin className="w-6 h-6" />
+                            </div>
+                            <div>
+                                <p className="text-sm font-bold text-slate-400 uppercase tracking-wide mb-1">HQ</p>
+                                <p className="text-lg font-medium text-slate-900">
+                                    5 Cambridge Avenue<br/>
+                                    Southport, PR9 9SA
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Map Card */}
+                <div className="bg-white/80 backdrop-blur-xl border border-white/60 p-2 rounded-[2rem] shadow-xl h-80 overflow-hidden relative group">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37450.56947672722!2d-3.0360824636952445!3d53.64998793096238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b3ee60500746d%3A0x67341855a954497a!2sSouthport!5e0!3m2!1sen!2suk!4v1707500000000!5m2!1sen!2suk" 
+                        width="100%" 
+                        height="100%" 
+                        style={{ border: 0, filter: 'grayscale(100%) opacity(0.8)' }} 
+                        allowFullScreen 
+                        loading="lazy" 
+                        referrerPolicy="no-referrer-when-downgrade"
+                        className="rounded-[1.5rem] group-hover:filter-none transition-all duration-500"
+                    ></iframe>
+                    <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur px-4 py-2 rounded-lg text-xs font-bold text-slate-900 shadow-lg pointer-events-none">
+                        📍 Based in Southport, Serving the UK
+                    </div>
+                </div>
+
             </div>
 
-            <div>
-              <label htmlFor="email" className="block text-sm font-semibold leading-6 text-slate-900">
-                Email
-              </label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                className="mt-2.5 block w-full rounded-md border-0 px-3.5 py-2 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
-              />
+            {/* RIGHT COL: The Form */}
+            <div className="bg-white/80 backdrop-blur-xl border border-white/60 p-8 md:p-10 rounded-[2rem] shadow-2xl relative">
+                
+                {status === 'success' ? (
+                    <div className="h-full min-h-[400px] flex flex-col items-center justify-center text-center animate-in zoom-in duration-300">
+                        <div className="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600 mb-6">
+                            <CheckCircle2 className="w-10 h-10" />
+                        </div>
+                        <h3 className="text-3xl font-bold text-slate-900 mb-2">Message Received</h3>
+                        <p className="text-slate-600 mb-8 max-w-xs mx-auto">
+                            Thank you for reaching out. Damian will review your project and get back to you within 24 hours.
+                        </p>
+                        <button onClick={() => setStatus('idle')} className="text-blue-600 font-bold hover:underline">
+                            Send another message
+                        </button>
+                    </div>
+                ) : (
+                    <form onSubmit={handleSubmit} className="space-y-6">
+                        <div className="space-y-2">
+                            <label className="text-sm font-bold text-slate-900 ml-1">Your Name</label>
+                            <input 
+                                name="name" type="text" required placeholder="John Doe"
+                                className="w-full h-14 px-4 rounded-xl bg-slate-50 border-transparent focus:bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all text-slate-900 font-medium"
+                            />
+                        </div>
+
+                        <div className="space-y-2">
+                            <label className="text-sm font-bold text-slate-900 ml-1">Email Address</label>
+                            <input 
+                                name="email" type="email" required placeholder="john@company.com"
+                                className="w-full h-14 px-4 rounded-xl bg-slate-50 border-transparent focus:bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all text-slate-900 font-medium"
+                            />
+                        </div>
+
+                        <div className="space-y-2">
+                            <label className="text-sm font-bold text-slate-900 ml-1">Project Type</label>
+                            <select name="service" className="w-full h-14 px-4 rounded-xl bg-slate-50 border-transparent focus:bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all text-slate-900 font-medium">
+                                <option>Custom Website Development</option>
+                                <option>SEO & Performance Audit</option>
+                                <option>E-Commerce / Shopify</option>
+                                <option>Software / SaaS Dev</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div className="space-y-2">
+                            <label className="text-sm font-bold text-slate-900 ml-1">Tell us about the project</label>
+                            <textarea 
+                                name="message" required rows={4} placeholder="We need a new website that converts..."
+                                className="w-full p-4 rounded-xl bg-slate-50 border-transparent focus:bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all text-slate-900 font-medium resize-none"
+                            ></textarea>
+                        </div>
+
+                        <button 
+                            type="submit" 
+                            disabled={status === 'submitting'}
+                            className="w-full h-14 bg-slate-900 text-white font-bold rounded-xl hover:bg-blue-600 transition-all shadow-lg flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                        >
+                            {status === 'submitting' ? (
+                                <>Sending...</>
+                            ) : (
+                                <>Send Message <ArrowRight className="w-5 h-5" /></>
+                            )}
+                        </button>
+                    </form>
+                )}
             </div>
 
-            <div>
-              <label htmlFor="website" className="block text-sm font-semibold leading-6 text-slate-900">
-                Website URL (So we can audit it)
-              </label>
-              <input
-                type="url"
-                name="website"
-                id="website"
-                placeholder="https://example.com"
-                className="mt-2.5 block w-full rounded-md border-0 px-3.5 py-2 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="message" className="block text-sm font-semibold leading-6 text-slate-900">
-                How can we help?
-              </label>
-              <textarea
-                name="message"
-                id="message"
-                rows={4}
-                className="mt-2.5 block w-full rounded-md border-0 px-3.5 py-2 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
-              />
-            </div>
-
-            <button
-              type="submit"
-              className="flex w-full items-center justify-center gap-2 rounded-md bg-blue-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
-            >
-              Get Free Audit <ArrowRight className="h-4 w-4" />
-            </button>
-            <p className="text-center text-xs text-slate-500">
-              Zero obligation. We usually reply with your video audit within 24 hours.
-            </p>
-          </form>
         </div>
+
       </div>
     </main>
   );
