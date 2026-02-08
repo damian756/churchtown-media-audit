@@ -1,6 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Users, Coins, ExternalLink, Calendar, MapPin, CheckCircle2, ArrowRight, Zap, Search, Layout, HelpCircle } from "lucide-react";
-import { posts } from "../lib/posts"; // Ensure this path is correct based on your folder structure
+import { posts } from "../lib/posts"; // Ensure this path is correct
 
 // UPDATED METADATA BLOCK
 export const metadata = {
@@ -17,10 +18,13 @@ export default function GrowthHub() {
       {/* 1. Hero Section */}
       <section className="relative bg-slate-900 px-6 py-24 text-center text-white overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-            <img 
-                src="https://churchtownmedia.co.uk/wp-content/uploads/2026/01/Southport-Growth-1024x559.png" 
+            {/* UPDATED: Local Image */}
+            <Image 
+                src="/southport-hero.png" 
                 alt="Southport Lord Street Growth" 
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                priority
             />
         </div>
         <div className="relative z-10 mx-auto max-w-4xl">
@@ -56,11 +60,14 @@ export default function GrowthHub() {
                     </p>
                 </div>
             </div>
-            <div className="lg:w-1/2">
-                <img 
-                    src="https://churchtownmedia.co.uk/wp-content/uploads/2026/01/img1-1.png" 
+            <div className="lg:w-1/2 relative">
+                {/* UPDATED: Local Image */}
+                <Image 
+                    src="/map-pack.png" 
                     alt="Southport Local Search Map Pack" 
-                    className="rounded-2xl shadow-2xl border border-slate-200 w-full"
+                    width={600}
+                    height={400}
+                    className="rounded-2xl shadow-2xl border border-slate-200 w-full h-auto"
                 />
             </div>
         </div>
@@ -102,10 +109,12 @@ export default function GrowthHub() {
             {/* Sandgrounders */}
             <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
               <div className="h-56 overflow-hidden bg-slate-100 relative border-b border-slate-100">
-                <img 
-                    src="https://churchtownmedia.co.uk/wp-content/uploads/2026/01/sandgrounders-business-club-scaled.png" 
+                {/* UPDATED: Local Image */}
+                <Image 
+                    src="/sandgrounders.png" 
                     alt="Sandgrounders" 
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
               <div className="p-8 flex flex-col flex-1">
@@ -124,10 +133,12 @@ export default function GrowthHub() {
             {/* Southport BID */}
             <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
               <div className="h-56 overflow-hidden bg-slate-100 relative border-b border-slate-100">
-                <img 
-                    src="https://churchtownmedia.co.uk/wp-content/uploads/2026/01/Southport-BID-scaled.png" 
+                {/* UPDATED: Local Image */}
+                <Image 
+                    src="/southport-bid.png" 
                     alt="Southport BID" 
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
               <div className="p-8 flex flex-col flex-1">
@@ -146,10 +157,12 @@ export default function GrowthHub() {
             {/* Real5 */}
             <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
               <div className="h-56 overflow-hidden bg-slate-100 relative border-b border-slate-100">
-                <img 
-                    src="https://churchtownmedia.co.uk/wp-content/uploads/2026/01/real5-networking-2-scaled.png" 
+                {/* UPDATED: Local Image */}
+                <Image 
+                    src="/real5.png" 
                     alt="Real5 Networking" 
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
               <div className="p-8 flex flex-col flex-1">
@@ -184,11 +197,14 @@ export default function GrowthHub() {
                     <p className="text-green-700 mt-1">Many of these grants can be used to fund <strong>40% to 100%</strong> of consultancy, training, or digital infrastructure projects.</p>
                 </div>
             </div>
-            <div className="lg:w-1/2">
-                <img 
-                    src="https://churchtownmedia.co.uk/wp-content/uploads/2026/01/Fueling-Growth-Grants-Funding-1024x559.png" 
+            <div className="lg:w-1/2 relative">
+                {/* UPDATED: Local Image */}
+                <Image 
+                    src="/grants-dashboard.png" 
                     alt="Sefton Grants Dashboard" 
-                    className="rounded-2xl shadow-xl border border-slate-200 w-full"
+                    width={800}
+                    height={600}
+                    className="rounded-2xl shadow-xl border border-slate-200 w-full h-auto"
                 />
             </div>
         </div>
@@ -198,11 +214,15 @@ export default function GrowthHub() {
             {/* Grant 1 */}
             <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
               <div className="h-56 bg-slate-50 relative border-b border-slate-100 flex items-center justify-center p-6">
-                 <img 
-                    src="https://churchtownmedia.co.uk/wp-content/uploads/2026/01/InvestSefton.png" 
-                    alt="Invest Sefton" 
-                    className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" 
-                 />
+                 {/* UPDATED: Local Image */}
+                 <div className="relative w-full h-full">
+                    <Image 
+                        src="/invest-sefton.png" 
+                        alt="Invest Sefton" 
+                        fill
+                        className="object-contain transition-transform duration-500 group-hover:scale-105" 
+                    />
+                 </div>
               </div>
               <div className="p-8 flex flex-col flex-1">
                 <h3 className="text-xl font-bold text-slate-900">InvestSefton</h3>
@@ -224,11 +244,15 @@ export default function GrowthHub() {
             {/* Grant 2 */}
             <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
               <div className="h-56 bg-slate-50 relative border-b border-slate-100 flex items-center justify-center p-6">
-                 <img 
-                    src="https://churchtownmedia.co.uk/wp-content/uploads/2026/01/Merseyside-Police-Cashback-Fund.png" 
-                    alt="Police Fund" 
-                    className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" 
-                 />
+                 {/* UPDATED: Local Image */}
+                 <div className="relative w-full h-full">
+                    <Image 
+                        src="/police-fund.png" 
+                        alt="Police Fund" 
+                        fill
+                        className="object-contain transition-transform duration-500 group-hover:scale-105" 
+                    />
+                 </div>
               </div>
               <div className="p-8 flex flex-col flex-1">
                 <h3 className="text-xl font-bold text-slate-900">Police Cashback Fund</h3>
@@ -250,11 +274,15 @@ export default function GrowthHub() {
             {/* Grant 3 */}
             <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
               <div className="h-56 bg-slate-50 relative border-b border-slate-100 flex items-center justify-center p-6">
-                 <img 
-                    src="https://churchtownmedia.co.uk/wp-content/uploads/2026/01/kingstrust.png" 
-                    alt="Kings Trust" 
-                    className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" 
-                 />
+                 {/* UPDATED: Local Image */}
+                 <div className="relative w-full h-full">
+                    <Image 
+                        src="/kings-trust.png" 
+                        alt="Kings Trust" 
+                        fill
+                        className="object-contain transition-transform duration-500 group-hover:scale-105" 
+                    />
+                 </div>
               </div>
               <div className="p-8 flex flex-col flex-1">
                 <h3 className="text-xl font-bold text-slate-900">King’s Trust</h3>
@@ -312,11 +340,14 @@ export default function GrowthHub() {
                         </div>
                     </div>
                 </div>
-                <div className="lg:w-1/2">
-                    <img 
-                        src="https://churchtownmedia.co.uk/wp-content/uploads/2026/01/Results-1024x559.png" 
+                <div className="lg:w-1/2 relative">
+                    {/* UPDATED: Local Image */}
+                    <Image 
+                        src="/analytics.png" 
                         alt="Performance Analytics" 
-                        className="rounded-2xl shadow-xl border border-slate-200 w-full"
+                        width={800}
+                        height={600}
+                        className="rounded-2xl shadow-xl border border-slate-200 w-full h-auto"
                     />
                 </div>
             </div>
@@ -343,7 +374,7 @@ export default function GrowthHub() {
         </div>
       </section>
 
-      {/* 8. FAQ - 6 Items Grid */}
+      {/* 8. FAQ Section (Identical to previous) */}
       <section className="bg-slate-50 py-24">
         <div className="mx-auto max-w-7xl px-6">
             <h2 className="text-3xl font-bold text-slate-900 mb-12 text-center">Frequently Asked Questions</h2>
@@ -398,7 +429,7 @@ export default function GrowthHub() {
                         Southport now benefits from widespread 5G coverage, setting a new standard for mobile browsing. Data shows that if your mobile site takes longer than 3 seconds to load, over 50% of potential visitors will abandon it before seeing your content. Speed isn't just technical—it's customer service.
                     </p>
                 </div>
-                {/* 6 - Added to balance grid */}
+                {/* 6 */}
                 <div className="bg-white p-8 rounded-xl border border-slate-200 shadow-sm h-full hover:shadow-md transition-shadow">
                     <h3 className="font-bold text-slate-900 flex items-start gap-3 text-lg">
                         <HelpCircle className="h-6 w-6 text-blue-600 shrink-0 mt-1"/> 
