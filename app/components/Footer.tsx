@@ -1,143 +1,150 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Link from "next/link";
-import { Menu, X, ArrowRight } from "lucide-react";
-import { usePathname } from "next/navigation";
+import { Twitter, Linkedin, Instagram, Youtube, Mail, MapPin, Phone, Facebook } from "lucide-react";
 
-export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-  const pathname = usePathname();
-
-  // PAGES WITH DARK BACKGROUNDS
-  // Added "/testimonials" so the text is white on the dark hero section
-  const isDarkPage = pathname === "/southport-growth" || pathname === "/testimonials";
-
-  // 1. LOCK BODY SCROLL WHEN MENU IS OPEN
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-    // Cleanup function to ensure scroll is restored if component unmounts
-    return () => {
-      document.body.style.overflow = 'unset';
-    };
-  }, [isOpen]);
-
-  // Handle scroll effect
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  // Close mobile menu on route change
-  useEffect(() => {
-    setIsOpen(false);
-  }, [pathname]);
-
-  const links = [
-    { name: "Home", href: "/" },
-    { name: "Web Design", href: "/services/web-design" },
-    { name: "SEO", href: "/services/seo" },
-    { name: "Work", href: "/work" },
-    { name: "Reviews", href: "/testimonials" }, // ADDED HERE
-    { name: "Contact", href: "/contact" },
-  ];
-
-  // LOGIC: Use white text ONLY if:
-  // 1. We are on a dark page
-  // 2. We haven't scrolled yet
-  // 3. The menu is CLOSED (If menu is open, text must be black to match white menu)
-  const useWhiteText = isDarkPage && !scrolled && !isOpen;
-
-  // NAVBAR STYLE LOGIC:
-  // If menu is OPEN: Force transparent bg (blends with white menu) and large padding
-  // If menu is CLOSED: Use standard scroll logic
-  const navClasses = isOpen
-    ? "bg-transparent py-6"
-    : scrolled
-        ? "bg-white/80 backdrop-blur-md border-b border-slate-200 py-4 shadow-sm"
-        : "bg-transparent py-6";
+export default function Footer() {
+  const currentYear = new Date().getFullYear();
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${navClasses}`}>
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        
-        {/* LOGO */}
-        <Link href="/" className="relative z-50" onClick={() => setIsOpen(false)}>
-          <span className={`font-bold text-2xl tracking-tight transition-colors ${
-             useWhiteText ? "text-white" : "text-slate-900"
-          }`}>
-            Churchtown<span className="text-blue-600">Media</span>
-          </span>
-        </Link>
+    <footer className="w-full bg-gradient-to-b from-slate-900 via-slate-900 to-black text-slate-400 py-20 border-t border-white/5 mt-auto relative overflow-hidden">
+      
+      {/* Background Glow */}
+      <div className="absolute top-[-20%] left-[10%] w-[500px] h-[500px] bg-blue-900/10 blur-[120px] rounded-full pointer-events-none"></div>
 
-        {/* DESKTOP NAV */}
-        <div className="hidden md:flex items-center gap-8">
-          {links.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className={`text-sm font-medium transition-colors hover:text-blue-600 ${
-                useWhiteText 
-                  ? "text-slate-300 hover:text-white" 
-                  : pathname === link.href 
-                      ? "text-blue-600" 
-                      : "text-slate-600"
-              }`}
-            >
-              {link.name}
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20 relative z-10">
+        
+        {/* COL 1: BRAND & SOCIALS */}
+        <div className="space-y-6">
+            <Link href="/" className="block">
+                <span className="font-bold text-2xl text-white tracking-tight">
+                    Churchtown<span className="text-blue-500">Media</span>
+                </span>
             </Link>
-          ))}
-          <Link
-            href="/audit"
-            className={`px-5 py-2.5 rounded-full text-sm font-bold transition-all hover:scale-105 shadow-lg flex items-center gap-2 ${
-                useWhiteText
-                    ? "bg-white text-slate-900 hover:bg-slate-100"
-                    : "bg-slate-900 text-white hover:bg-slate-800 shadow-slate-900/20"
-            }`}
-          >
-            Get Audit <ArrowRight className="w-4 h-4" />
-          </Link>
+            <p className="text-sm leading-relaxed max-w-xs text-slate-500 font-medium">
+                We build revenue engines, not just websites. Data-driven SEO and high-performance development for Southport businesses.
+            </p>
+            
+            {/* SOCIAL ICONS */}
+            <div className="flex gap-5 pt-4">
+                <a 
+                    href="https://www.facebook.com/ChurchtownMedia/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-slate-400 hover:text-white hover:scale-110 transition-all"
+                    aria-label="Facebook"
+                >
+                    <Facebook className="w-5 h-5" />
+                </a>
+                <a 
+                    href="https://twitter.com/churchtownmedia" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-slate-400 hover:text-white hover:scale-110 transition-all"
+                    aria-label="Twitter"
+                >
+                    <Twitter className="w-5 h-5" />
+                </a>
+                <a 
+                    href="https://linkedin.com/company/churchtownmedia" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-slate-400 hover:text-white hover:scale-110 transition-all"
+                    aria-label="LinkedIn"
+                >
+                    <Linkedin className="w-5 h-5" />
+                </a>
+                <a 
+                    href="https://instagram.com/churchtownmedia" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-slate-400 hover:text-white hover:scale-110 transition-all"
+                    aria-label="Instagram"
+                >
+                    <Instagram className="w-5 h-5" />
+                </a>
+                <a 
+                    href="https://youtube.com/@churchtownmedia" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-slate-400 hover:text-white hover:scale-110 transition-all"
+                    aria-label="YouTube"
+                >
+                    <Youtube className="w-5 h-5" />
+                </a>
+            </div>
         </div>
 
-        {/* MOBILE TOGGLE */}
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className={`md:hidden relative z-50 p-2 transition-colors ${
-            useWhiteText ? "text-white" : "text-slate-800"
-          }`}
-        >
-          {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
+        {/* COL 2: SERVICES */}
+        <div>
+            <h4 className="text-slate-200 font-bold mb-6 text-sm uppercase tracking-wider">Services</h4>
+            <ul className="space-y-4 text-sm font-medium text-slate-500">
+                <li>
+                    <Link href="/services/web-design" className="hover:text-blue-400 transition-colors">
+                        Enterprise Web Design
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/services/seo" className="hover:text-blue-400 transition-colors">
+                        Data-Driven SEO
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/services/small-business" className="hover:text-blue-400 transition-colors">
+                        Small Business Websites
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/audit" className="hover:text-blue-400 transition-colors">
+                        Free SEO Audit
+                    </Link>
+                </li>
+            </ul>
+        </div>
 
-        {/* MOBILE MENU */}
-        <div
-          className={`fixed inset-0 bg-white z-40 flex flex-col items-center justify-center gap-8 transition-all duration-300 ${
-            isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
-          }`}
-        >
-          {links.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className="text-2xl font-bold text-slate-900 hover:text-blue-600 transition-colors"
-            >
-              {link.name}
-            </Link>
-          ))}
-          <Link
-            href="/audit"
-            className="bg-blue-600 text-white px-8 py-4 rounded-full text-xl font-bold hover:bg-blue-700 transition-all shadow-xl shadow-blue-600/20"
-          >
-            Get Free Audit
-          </Link>
+        {/* COL 3: AGENCY */}
+        <div>
+            <h4 className="text-slate-200 font-bold mb-6 text-sm uppercase tracking-wider">Agency</h4>
+            <ul className="space-y-4 text-sm font-medium text-slate-500">
+                <li><Link href="/work" className="hover:text-blue-400 transition-colors">Industry Frameworks</Link></li>
+                <li><Link href="/blog" className="hover:text-blue-400 transition-colors">Knowledge Base</Link></li>
+                <li><Link href="/southport-growth" className="hover:text-blue-400 transition-colors">Southport Growth Hub</Link></li>
+                <li><Link href="/testimonials" className="hover:text-blue-400 transition-colors">Client Reviews</Link></li> {/* ADDED */}
+                <li><Link href="/audit" className="text-blue-500 font-bold hover:text-white transition-colors">Get Free Audit</Link></li>
+            </ul>
+        </div>
+
+        {/* COL 4: CONTACT */}
+        <div>
+            <h4 className="text-slate-200 font-bold mb-6 text-sm uppercase tracking-wider">Contact</h4>
+            <ul className="space-y-5 text-sm font-medium text-slate-500">
+                <li className="flex items-start gap-3">
+                    <MapPin className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
+                    <span>Cambridge Avenue,<br/>Southport, PR9 9SA</span>
+                </li>
+                <li className="flex items-center gap-3">
+                    <Mail className="w-5 h-5 text-blue-500 shrink-0" />
+                    <a href="mailto:hello@churchtownmedia.co.uk" className="hover:text-white transition-colors">hello@churchtownmedia.co.uk</a>
+                </li>
+                <li className="flex items-center gap-3">
+                    <Phone className="w-5 h-5 text-blue-500 shrink-0" />
+                    <a href="tel:01704635785" className="hover:text-white transition-colors">01704 635785</a>
+                </li>
+            </ul>
+        </div>
+
+      </div>
+
+      {/* COPYRIGHT BAR */}
+      <div className="max-w-7xl mx-auto px-6 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium text-slate-600 relative z-10">
+        <p>&copy; {currentYear} Churchtown Media Ltd. Company No. 16960442. All rights reserved.</p>
+        
+        <div className="flex gap-6">
+            <Link href="/privacy" className="hover:text-slate-400 transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-slate-400 transition-colors">Terms of Service</Link>
         </div>
       </div>
-    </nav>
+    </footer>
   );
 }

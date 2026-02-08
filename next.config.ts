@@ -1,21 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* React Strict Mode:
-    Helps identify potential problems in an application. 
-    Good for development and performance.
-  */
   reactStrictMode: true,
 
-  /* Redirects:
-    This section maps your OLD WordPress URLs to your NEW Next.js routes.
-    permanent: true = 301 Redirect (Transfers SEO Ranking Power)
-  */
   async redirects() {
     return [
       // ----------------------------------------
       // 1. HIGH-VALUE BLOG POSTS (1:1 MAPPING)
-      // Preserves rankings for your specific articles
       // ----------------------------------------
       {
         source: '/seo-recovery-alotek-shelters',
@@ -39,39 +30,36 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/why-a-new-local-seo-company-is-your-businesss-best-friend',
-        destination: '/blog', // Fallback to index if 1:1 post isn't ready
+        destination: '/blog',
         permanent: true,
       },
 
       // ----------------------------------------
-      // 2. SERVICE & LANDING PAGES
+      // 2. SERVICE & LANDING PAGES (UPDATED)
       // ----------------------------------------
-      /* NOTE: Once you build dedicated pages for SEO and Web Design,
-         change the destination from '/services' to '/services/seo' etc.
-      */
       {
         source: '/seo-southport',
-        destination: '/services', 
+        destination: '/services/seo', // Updated to specific page
         permanent: true,
       },
       {
         source: '/seo-liverpool',
-        destination: '/services',
+        destination: '/services/seo', // Updated to specific page
         permanent: true,
       },
       {
         source: '/web-design',
-        destination: '/services',
+        destination: '/services/web-design', // Updated to specific page
         permanent: true,
       },
       {
         source: '/search-engine-optimisation',
-        destination: '/services',
+        destination: '/services/seo', // Updated to specific page
         permanent: true,
       },
       {
         source: '/southport-business-growth',
-        destination: '/services',
+        destination: '/southport-growth', // Updated to Growth Hub
         permanent: true,
       },
 
@@ -100,7 +88,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/shop',
-        destination: '/services', // Converting intent to Service inquiry
+        destination: '/services', 
         permanent: true,
       },
       {
@@ -111,7 +99,6 @@ const nextConfig: NextConfig = {
 
       // ----------------------------------------
       // 4. CLEANUP (Catch-Alls)
-      // Handles WordPress Tags, Categories, and Plugin links
       // ----------------------------------------
       {
         source: '/category/:slug*',
@@ -120,12 +107,12 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/tag/:slug*',
-        destination: '/services', // Tags usually indicate service intent
+        destination: '/services', 
         permanent: true,
       },
       {
         source: '/ufaq/:slug*',
-        destination: '/services', // FAQ plugin links
+        destination: '/services', 
         permanent: true,
       },
       {
@@ -133,14 +120,12 @@ const nextConfig: NextConfig = {
         destination: '/services',
         permanent: true,
       },
-      {
-        source: '/testimonials',
-        destination: '/work',
-        permanent: true,
-      },
+      
+      // REMOVED: The redirect for /testimonials -> /work
+      // This allows the new page at /testimonials to actually load.
       {
         source: '/testimonials-category/:slug*',
-        destination: '/work',
+        destination: '/testimonials', // Changed to point to the new page
         permanent: true,
       },
     ];
