@@ -1,48 +1,63 @@
-import type { Metadata } from 'next';
 import React from "react";
 import Link from "next/link";
-import { TrendingUp, Users, Target, ArrowRight, ShieldCheck } from "lucide-react";
+import { Rocket, MapPin, MousePointer2, CheckCircle2, ArrowRight, TrendingUp, ShieldCheck, Zap } from "lucide-react";
+import type { Metadata } from "next";
 
-// 1. AGENCY-GRADE METADATA
+// 1. HIGH-INTENT METADATA
 export const metadata: Metadata = {
-  title: 'Small Business Growth Southport: Digital Marketing That Pays',
-  description: 'Enterprise-grade marketing for Southport small businesses. We turn limited budgets into unlimited growth with high-impact SEO and Web Design strategies.',
+  title: 'Small Business Web Design & Marketing Packages | Southport',
+  description: 'Affordable, high-performance websites and Local SEO for Southport trades, shops, and startups. Stop relying on word of mouth.',
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk/services/small-business',
   },
-}
+  openGraph: {
+    title: 'Small Business Growth Packages | Churchtown Media',
+    description: 'Enterprise-grade tech, priced for local business. Dominate your postcode.',
+    url: 'https://www.churchtownmedia.co.uk/services/small-business',
+    type: 'website',
+  }
+};
 
-// 2. JSON-LD SCHEMA
+// 2. SERVICE PRODUCT SCHEMA
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
-  'name': 'Small Business Digital Growth',
+  'name': 'Small Business Digital Growth Package',
   'provider': {
     '@type': 'LocalBusiness',
     'name': 'Churchtown Media',
-    'address': {
-      '@type': 'PostalAddress',
-      'addressLocality': 'Southport',
-      'addressRegion': 'Merseyside',
-      'addressCountry': 'UK'
-    }
+    'image': 'https://www.churchtownmedia.co.uk/icon.png'
   },
+  'description': 'A complete digital starter kit for local businesses including 5-page website, Google Business Profile optimization, and local citation building.',
   'areaServed': {
     '@type': 'City',
     'name': 'Southport'
   },
-  'description': 'Cost-effective digital marketing and growth strategies specifically designed for small businesses in Southport.',
-  'offers': {
-    '@type': 'Offer',
-    'priceCurrency': 'GBP',
-    'availability': 'https://schema.org/InStock'
+  'hasOfferCatalog': {
+    '@type': 'OfferCatalog',
+    'name': 'Growth Tiers',
+    'itemListElement': [
+      {
+        '@type': 'Offer',
+        'itemOffered': {
+          '@type': 'Service',
+          'name': 'Local Starter Website'
+        }
+      },
+      {
+        '@type': 'Offer',
+        'itemOffered': {
+          '@type': 'Service',
+          'name': 'Local Domination SEO'
+        }
+      }
+    ]
   }
 };
 
-// 3. MAIN COMPONENT
 export default function SmallBusinessPage() {
   return (
-    <main className="min-h-screen pt-32 pb-20 bg-slate-50">
+    <main className="min-h-screen bg-slate-50">
       
       {/* INJECT SCHEMA */}
       <script
@@ -50,87 +65,173 @@ export default function SmallBusinessPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <div className="max-w-7xl mx-auto px-6 mb-20">
-        <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 rounded-full px-4 py-1.5 mb-8">
-            <span className="text-xs font-bold text-blue-700 uppercase tracking-wide">Growth Strategy</span>
-        </div>
-        <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 mb-8 tracking-tight">
-          Punch above <br/> <span className="text-blue-600">your weight.</span>
-        </h1>
-        <p className="text-xl text-slate-600 max-w-2xl leading-relaxed">
-          You don't need a corporate budget to beat corporate competitors. We give Southport small businesses the same "Enterprise-Grade" weapons used by the big players—at a fraction of the cost.
-        </p>
-      </div>
+      {/* 1. HERO SECTION */}
+      <section className="relative pt-40 pb-20 px-6 overflow-hidden bg-slate-900 border-b border-slate-800">
+        
+        {/* Background Gradients */}
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/20 rounded-full blur-[120px] pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-[100px] pointer-events-none"></div>
 
-      {/* STRATEGY GRID */}
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 mb-32">
-        {[
-            { icon: <Target className="w-6 h-6"/>, title: "Laser Targeting", desc: "Stop wasting money on broad ads. We target the exact customers in Southport searching for your service right now." },
-            { icon: <TrendingUp className="w-6 h-6"/>, title: "Scalable Systems", desc: "We build revenue engines that grow with you. Start small, validate the ROI, then scale up." },
-            { icon: <ShieldCheck className="w-6 h-6"/>, title: "No Vanity Metrics", desc: "Likes don't pay bills. We focus entirely on leads, calls, and booked appointments." }
-        ].map((feat, i) => (
-            <div key={i} className="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 mb-6">{feat.icon}</div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">{feat.title}</h3>
-                <p className="text-slate-600">{feat.desc}</p>
-            </div>
-        ))}
-      </div>
-
-      {/* NEW SECTION: The "Twin Engine" Cross-Sell */}
-      <div className="bg-white py-20 border-y border-slate-100 mb-20">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
-            <div className="flex-1">
-                <div className="inline-flex items-center gap-2 text-blue-600 font-bold mb-4">
-                    <Users className="w-5 h-5" />
-                    <span>Your Digital Department</span>
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center relative z-10">
+            <div>
+                <div className="inline-flex items-center gap-2 rounded-full bg-blue-900/50 border border-blue-800 px-4 py-1.5 text-sm font-bold text-blue-400 mb-8">
+                    <Rocket className="h-4 w-4" />
+                    For Trades, Shops & Startups
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
-                    The Two Pillars of Growth
-                </h2>
-                <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                    Most small businesses fail because they only do one thing. They have a nice website but no traffic, or traffic but a bad website. We fix both simultaneously.
+                <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-8">
+                    Punch above <br/>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
+                        your weight.
+                    </span>
+                </h1>
+                <p className="text-xl text-slate-300 leading-relaxed mb-10 max-w-xl">
+                    You don't need a corporate budget to beat corporate competitors. We give Southport small businesses the same "Enterprise-Grade" weapons used by the big players—at a fraction of the cost.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                    <Link href="/services/web-design" className="px-6 py-3 bg-slate-100 rounded-lg font-bold text-slate-900 hover:bg-slate-200 transition-colors text-center">
-                        1. High-Speed Website
+                    <Link href="/audit" className="inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-500 transition-all hover:-translate-y-1 shadow-lg shadow-blue-600/20">
+                        Get Your Growth Plan
                     </Link>
-                    <Link href="/services/seo" className="px-6 py-3 bg-slate-100 rounded-lg font-bold text-slate-900 hover:bg-slate-200 transition-colors text-center">
-                        2. Local SEO Strategy
+                    <Link href="/work" className="inline-flex items-center justify-center gap-2 bg-slate-800 text-white px-8 py-4 rounded-xl font-bold hover:bg-slate-700 transition-all border border-slate-700">
+                        View Examples
                     </Link>
                 </div>
             </div>
-            <div className="flex-1 bg-slate-50 rounded-2xl p-8 border border-slate-100">
-                <div className="space-y-4">
-                    <div className="p-6 bg-white rounded-xl shadow-sm border border-slate-100">
-                        <h4 className="font-bold text-slate-900 mb-2">The "Local Hero" Strategy</h4>
-                        <p className="text-sm text-slate-600">
-                            We optimize your Google Business Profile to capture "Near Me" searches, making you the obvious choice in your postcode.
-                        </p>
+            
+            {/* Hero Visual - Simulated "Local Hero" Dashboard */}
+            <div className="relative">
+                <div className="bg-slate-800/50 backdrop-blur-xl border border-slate-700 p-6 rounded-3xl shadow-2xl transform rotate-3 hover:rotate-0 transition-all duration-500">
+                    <div className="flex items-center gap-4 mb-6 pb-6 border-b border-slate-700/50">
+                        <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center text-green-400">
+                            <TrendingUp className="w-6 h-6" />
+                        </div>
+                        <div>
+                            <div className="text-white font-bold">Monthly Growth Report</div>
+                            <div className="text-slate-400 text-sm">Southport Area • Last 30 Days</div>
+                        </div>
                     </div>
-                    <div className="p-6 bg-white rounded-xl shadow-sm border border-slate-100">
-                        <h4 className="font-bold text-slate-900 mb-2">The "Conversion" Strategy</h4>
-                        <p className="text-sm text-slate-600">
-                            We streamline your website so every visitor is guided towards a "Call Now" or "Book Appointment" button.
-                        </p>
+                    <div className="space-y-4">
+                        {[
+                            { label: "Google Map Views", val: "1,240", change: "+124%" },
+                            { label: "Website Clicks", val: "485", change: "+85%" },
+                            { label: "Phone Calls", val: "62", change: "+40%" },
+                        ].map((stat, i) => (
+                            <div key={i} className="flex justify-between items-center p-4 bg-slate-900/50 rounded-xl border border-slate-700/50">
+                                <span className="text-slate-300 font-medium">{stat.label}</span>
+                                <div className="text-right">
+                                    <div className="text-white font-bold text-lg">{stat.val}</div>
+                                    <div className="text-green-400 text-xs font-bold">{stat.change}</div>
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
         </div>
-      </div>
+      </section>
 
-      {/* CTA SECTION */}
-      <div className="max-w-4xl mx-auto px-6 text-center">
-        <h2 className="text-3xl font-bold text-slate-900 mb-6">Small budget? Big ambition? Let's talk.</h2>
-        <p className="text-slate-600 mb-10 max-w-lg mx-auto">
-            Get a free roadmap that shows you exactly how to get your first 100 customers online.
-        </p>
-        <div className="flex justify-center gap-4">
-            <Link href="/audit" className="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-500 transition-all shadow-lg hover:shadow-xl inline-flex items-center gap-2">
-                Get Your Growth Plan <ArrowRight className="w-4 h-4" />
-            </Link>
+      {/* 2. THE PROBLEM (Agitation) */}
+      <section className="py-24 px-6 bg-white">
+        <div className="max-w-4xl mx-auto text-center mb-16">
+            <h2 className="text-3xl font-bold text-slate-900 mb-6">Why most small business websites fail</h2>
+            <p className="text-lg text-slate-600">
+                Most local businesses make one of two mistakes: they buy a "cheap" DIY site that nobody can find, or they overpay for a "fancy" agency site that looks pretty but generates zero leads.
+            </p>
         </div>
-      </div>
+        
+        <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+            <div className="p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-lg transition-all group">
+                <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center text-red-600 mb-6 group-hover:scale-110 transition-transform">
+                    <MousePointer2 className="w-6 h-6" />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">Invisible on Google</h3>
+                <p className="text-slate-600">If you aren't in the "Map Pack" (the top 3 local results), you don't exist. We fix your N.A.P. data to get you ranked.</p>
+            </div>
+            <div className="p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-lg transition-all group">
+                <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-orange-600 mb-6 group-hover:scale-110 transition-transform">
+                    <Zap className="w-6 h-6" />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">Too Slow on Mobile</h3>
+                {/* FIXED: Changed >3 to &gt;3 to escape the character for JSX */}
+                <p className="text-slate-600">Customers in Southport are searching on 4G/5G. If your site takes &gt;3 seconds to load, they leave. Ours load in under 1s.</p>
+            </div>
+            <div className="p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-lg transition-all group">
+                <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-6 group-hover:scale-110 transition-transform">
+                    <ShieldCheck className="w-6 h-6" />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">Broken Trust</h3>
+                <p className="text-slate-600">Broken links, old copyright dates, and generic templates scream "amateur." We build trust instantly with premium design.</p>
+            </div>
+        </div>
+      </section>
+
+      {/* 3. THE SOLUTION (What You Get) */}
+      <section className="py-24 px-6 bg-slate-900 text-white border-y border-slate-800">
+        <div className="max-w-7xl mx-auto">
+            <div className="flex flex-col md:flex-row gap-16 items-start">
+                <div className="md:w-1/2 sticky top-24">
+                    <div className="inline-flex items-center gap-2 rounded-full bg-emerald-500/10 border border-emerald-500/20 px-4 py-1.5 text-sm font-bold text-emerald-400 mb-6">
+                        <CheckCircle2 className="h-4 w-4" />
+                        The Local Growth System
+                    </div>
+                    <h2 className="text-4xl font-bold mb-6">Everything you need to look huge.</h2>
+                    <p className="text-lg text-slate-400 mb-8 leading-relaxed">
+                        We don't just "build a website." We build a digital branch of your business that works 24/7.
+                    </p>
+                    <ul className="space-y-4">
+                        {[
+                            "Custom 5-Page Website (Home, About, Services, Gallery, Contact)",
+                            "Google Business Profile Optimization",
+                            "Local Schema Markup (So Google knows where you are)",
+                            "Review Generation Strategy",
+                            "Hosting & Maintenance Included"
+                        ].map((item, i) => (
+                            <li key={i} className="flex items-center gap-3 text-slate-300">
+                                <div className="w-6 h-6 rounded-full bg-blue-600/20 flex items-center justify-center text-blue-400 shrink-0">
+                                    <CheckCircle2 className="w-4 h-4" />
+                                </div>
+                                {item}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                
+                <div className="md:w-1/2 grid gap-6">
+                    {/* Feature Cards */}
+                    <div className="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-blue-500/50 transition-colors">
+                        <h3 className="text-xl font-bold mb-2 text-white">1. The "Local Hero" Strategy</h3>
+                        <p className="text-slate-400 text-sm">We optimize your Google Business Profile to capture "Near Me" searches, making you the obvious choice in your postcode.</p>
+                    </div>
+                    <div className="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-purple-500/50 transition-colors">
+                        <h3 className="text-xl font-bold mb-2 text-white">2. Conversion-First Design</h3>
+                        <p className="text-slate-400 text-sm">We streamline your website so every visitor is guided towards a "Call Now" or "Book Appointment" button. No dead ends.</p>
+                    </div>
+                    <div className="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-emerald-500/50 transition-colors">
+                        <h3 className="text-xl font-bold mb-2 text-white">3. Technical Velocity</h3>
+                        <p className="text-slate-400 text-sm">Built on Next.js (the same tech used by Netflix & TikTok). It loads instantly, boosting your SEO score automatically.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      {/* 4. CTA SECTION */}
+      <section className="bg-white py-24 px-6 text-center">
+        <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold text-slate-900 mb-6">Small budget? Big ambition?</h2>
+            <p className="text-lg text-slate-600 mb-10">
+                Stop guessing. Get a free digital roadmap that shows you exactly how to get your first 100 customers online.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link href="/audit" className="inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+                    Get Free Growth Plan <ArrowRight className="w-4 h-4" />
+                </Link>
+                <Link href="/contact" className="inline-flex items-center justify-center gap-2 bg-white text-slate-900 px-8 py-4 rounded-xl font-bold hover:bg-slate-50 transition-all border border-slate-200">
+                    Book a Chat
+                </Link>
+            </div>
+        </div>
+      </section>
+
     </main>
   );
 }

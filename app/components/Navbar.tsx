@@ -15,7 +15,8 @@ export default function Navbar() {
   const isDarkPage = [
     "/southport-growth", 
     "/testimonials", 
-    "/audit" 
+    "/audit",
+    "/services/small-business" // <--- ADDED: Fixes the contrast issue
   ].includes(pathname);
 
   useEffect(() => {
@@ -37,7 +38,7 @@ export default function Navbar() {
     { name: "Web Design", href: "/services/web-design" },
     { name: "SEO", href: "/services/seo" },
     { name: "Work", href: "/work" },
-    { name: "Insights", href: "/blog" }, // <--- ADDED: Proves Authority
+    { name: "Insights", href: "/blog" },
     { name: "Reviews", href: "/testimonials" },
     { name: "Contact", href: "/contact" },
   ];

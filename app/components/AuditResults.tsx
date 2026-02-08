@@ -1,4 +1,5 @@
-import { Download, Gauge, Activity, Sparkles } from "lucide-react";
+import { Download, Gauge, Activity, Sparkles, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 interface AuditResultsProps {
   data: {
@@ -26,7 +27,7 @@ function getScoreColorRing(score: number): string {
 
 export default function AuditResults({ data, url }: AuditResultsProps) {
   return (
-    <div className="w-full space-y-6">
+    <div className="w-full space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
       {/* Header */}
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
@@ -137,14 +138,14 @@ export default function AuditResults({ data, url }: AuditResultsProps) {
         <p className="leading-relaxed text-slate-700">{data.analysis}</p>
       </div>
 
-      {/* CTA */}
+      {/* CTA - FIXED BUTTON */}
       <div className="flex justify-center pt-4">
-        <button
-          type="button"
-          className="rounded-lg bg-blue-600 px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+        <Link
+          href="/contact?subject=Fix+My+Audit+Scores"
+          className="flex items-center gap-2 rounded-lg bg-blue-600 px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-blue-700 hover:-translate-y-1 shadow-lg shadow-blue-600/20 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
         >
-          Fix My Scores
-        </button>
+          Fix My Scores <ArrowRight className="h-5 w-5" />
+        </Link>
       </div>
     </div>
   );

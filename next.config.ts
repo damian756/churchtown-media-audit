@@ -6,16 +6,23 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       // ----------------------------------------
-      // 1. HIGH-VALUE BLOG POSTS (1:1 MAPPING)
+      // 1. HIGH-VALUE BLOG POSTS (Exact Match)
       // ----------------------------------------
       {
         source: '/seo-recovery-alotek-shelters',
         destination: '/blog/seo-recovery-alotek-shelters',
         permanent: true,
       },
+      // Variation 1 (Long slug)
       {
         source: '/the-mlec-effect-is-your-southport-business-ready-for-500000-new-visitors',
-        destination: '/blog/the-mlec-effect-southport',
+        destination: '/blog/mlec-effect-southport',
+        permanent: true,
+      },
+      // Variation 2 (Likely WordPress truncated slug)
+      {
+        source: '/the-mlec-effect-is-your-southport-business-ready',
+        destination: '/blog/mlec-effect-southport',
         permanent: true,
       },
       {
@@ -30,36 +37,51 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/why-a-new-local-seo-company-is-your-businesss-best-friend',
-        destination: '/blog',
+        destination: '/blog/why-new-local-seo-company-is-your-business-best-friend',
         permanent: true,
       },
 
       // ----------------------------------------
-      // 2. SERVICE & LANDING PAGES (UPDATED)
+      // 2. SERVICE & LANDING PAGES (Legacy SEO)
       // ----------------------------------------
       {
         source: '/seo-southport',
-        destination: '/services/seo', // Updated to specific page
+        destination: '/services/seo',
+        permanent: true,
+      },
+      {
+        source: '/seo-company-southport', // Found in index
+        destination: '/services/seo',
         permanent: true,
       },
       {
         source: '/seo-liverpool',
-        destination: '/services/seo', // Updated to specific page
-        permanent: true,
-      },
-      {
-        source: '/web-design',
-        destination: '/services/web-design', // Updated to specific page
+        destination: '/services/seo',
         permanent: true,
       },
       {
         source: '/search-engine-optimisation',
-        destination: '/services/seo', // Updated to specific page
+        destination: '/services/seo',
+        permanent: true,
+      },
+      {
+        source: '/web-design',
+        destination: '/services/web-design',
+        permanent: true,
+      },
+      {
+        source: '/web-design-southport', // Found in index
+        destination: '/services/web-design',
+        permanent: true,
+      },
+      {
+        source: '/website-designers-southport', // Common variation
+        destination: '/services/web-design',
         permanent: true,
       },
       {
         source: '/southport-business-growth',
-        destination: '/southport-growth', // Updated to Growth Hub
+        destination: '/southport-growth',
         permanent: true,
       },
 
@@ -91,14 +113,9 @@ const nextConfig: NextConfig = {
         destination: '/services', 
         permanent: true,
       },
-      {
-        source: '/404-layout',
-        destination: '/',
-        permanent: true,
-      },
-
+      
       // ----------------------------------------
-      // 4. CLEANUP (Catch-Alls)
+      // 4. WORDPRESS CLEANUP (Catch-Alls)
       // ----------------------------------------
       {
         source: '/category/:slug*',
@@ -106,8 +123,18 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/author/:slug*', // Hides old "admin" user pages
+        destination: '/about', 
+        permanent: true,
+      },
+      {
         source: '/tag/:slug*',
-        destination: '/services', 
+        destination: '/blog', 
+        permanent: true,
+      },
+      {
+        source: '/feed', // Common RSS feed 404
+        destination: '/blog', 
         permanent: true,
       },
       {
@@ -120,12 +147,15 @@ const nextConfig: NextConfig = {
         destination: '/services',
         permanent: true,
       },
-      
-      // REMOVED: The redirect for /testimonials -> /work
-      // This allows the new page at /testimonials to actually load.
       {
         source: '/testimonials-category/:slug*',
-        destination: '/testimonials', // Changed to point to the new page
+        destination: '/testimonials',
+        permanent: true,
+      },
+      // Catch random 404 pages layout
+      {
+        source: '/404-layout',
+        destination: '/',
         permanent: true,
       },
     ];
