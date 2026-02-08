@@ -13,13 +13,11 @@ const nextConfig: NextConfig = {
         destination: '/blog/seo-recovery-alotek-shelters',
         permanent: true,
       },
-      // Variation 1 (Long slug)
       {
         source: '/the-mlec-effect-is-your-southport-business-ready-for-500000-new-visitors',
         destination: '/blog/mlec-effect-southport',
         permanent: true,
       },
-      // Variation 2 (Likely WordPress truncated slug)
       {
         source: '/the-mlec-effect-is-your-southport-business-ready',
         destination: '/blog/mlec-effect-southport',
@@ -42,30 +40,35 @@ const nextConfig: NextConfig = {
       },
 
       // ----------------------------------------
-      // 2. SERVICE & LANDING PAGES (Legacy SEO)
+      // 2. LOCATION PAGES (The "City" Redirects)
       // ----------------------------------------
+      // SOUTHPORT
       {
         source: '/seo-southport',
-        destination: '/services/seo',
+        destination: '/locations/southport',
         permanent: true,
       },
       {
         source: '/seo-company-southport',
-        destination: '/services/seo',
+        destination: '/locations/southport',
         permanent: true,
       },
+      // LIVERPOOL
       {
         source: '/seo-liverpool',
-        destination: '/services/seo',
+        destination: '/locations/liverpool',
         permanent: true,
       },
-      // --- ADDED PRESTON REDIRECT HERE ---
+      // PRESTON
       {
         source: '/seo-preston',
-        destination: '/services/seo',
+        destination: '/locations/preston',
         permanent: true,
       },
-      // -----------------------------------
+
+      // ----------------------------------------
+      // 3. GENERIC SERVICE PAGES
+      // ----------------------------------------
       {
         source: '/search-engine-optimisation',
         destination: '/services/seo',
@@ -78,7 +81,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/web-design-southport',
-        destination: '/services/web-design',
+        destination: '/services/web-design', // Keeping this generic unless you have a design-specific location page
         permanent: true,
       },
       {
@@ -93,7 +96,7 @@ const nextConfig: NextConfig = {
       },
 
       // ----------------------------------------
-      // 3. CORE PAGES
+      // 4. CORE PAGES
       // ----------------------------------------
       {
         source: '/contacts',
@@ -122,7 +125,7 @@ const nextConfig: NextConfig = {
       },
       
       // ----------------------------------------
-      // 4. WORDPRESS CLEANUP (Catch-Alls)
+      // 5. WORDPRESS CLEANUP (Catch-Alls)
       // ----------------------------------------
       {
         source: '/category/:slug*',
