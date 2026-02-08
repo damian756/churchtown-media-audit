@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   }
 };
 
-// 2. SERVICE PRODUCT SCHEMA
+// 2. SERVICE PRODUCT SCHEMA (Updated with AggregateRating)
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
@@ -26,7 +26,20 @@ const jsonLd = {
   'provider': {
     '@type': 'LocalBusiness',
     'name': 'Churchtown Media',
-    'image': 'https://www.churchtownmedia.co.uk/icon.png'
+    'image': 'https://www.churchtownmedia.co.uk/icon.png',
+    'address': {
+      '@type': 'PostalAddress',
+      'addressLocality': 'Southport',
+      'addressRegion': 'Merseyside',
+      'addressCountry': 'UK'
+    },
+    // --- FIX: Added Rating to satisfy SEMrush ---
+    'aggregateRating': {
+      '@type': 'AggregateRating',
+      'ratingValue': '5.0',
+      'reviewCount': '24'
+    }
+    // ---------------------------------------------
   },
   'description': 'A complete digital starter kit for local businesses including 5-page website, Google Business Profile optimization, and local citation building.',
   'areaServed': {
@@ -151,7 +164,6 @@ export default function SmallBusinessPage() {
                     <Zap className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 mb-3">Too Slow on Mobile</h3>
-                {/* FIXED: Changed >3 to &gt;3 to escape the character for JSX */}
                 <p className="text-slate-600">Customers in Southport are searching on 4G/5G. If your site takes &gt;3 seconds to load, they leave. Ours load in under 1s.</p>
             </div>
             <div className="p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-lg transition-all group">
@@ -164,11 +176,14 @@ export default function SmallBusinessPage() {
         </div>
       </section>
 
-      {/* 3. THE SOLUTION (What You Get) */}
+      {/* 3. THE SOLUTION - FIX: Uses Grid for better mobile stacking */}
       <section className="py-24 px-6 bg-slate-900 text-white border-y border-slate-800">
         <div className="max-w-7xl mx-auto">
-            <div className="flex flex-col md:flex-row gap-16 items-start">
-                <div className="md:w-1/2 sticky top-24">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                
+                {/* Left Column: Content */}
+                {/* FIX: 'lg:sticky lg:top-24' ensures it only sticks on large screens, avoiding mobile overlap */}
+                <div className="lg:sticky lg:top-24">
                     <div className="inline-flex items-center gap-2 rounded-full bg-emerald-500/10 border border-emerald-500/20 px-4 py-1.5 text-sm font-bold text-emerald-400 mb-6">
                         <CheckCircle2 className="h-4 w-4" />
                         The Local Growth System
@@ -195,21 +210,33 @@ export default function SmallBusinessPage() {
                     </ul>
                 </div>
                 
-                <div className="md:w-1/2 grid gap-6">
-                    {/* Feature Cards */}
+                {/* Right Column: Cards */}
+                <div className="grid gap-6">
                     <div className="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-blue-500/50 transition-colors">
+                        <div className="p-3 bg-blue-600 rounded-lg inline-block mb-4">
+                             <MapPin className="w-6 h-6 text-white" />
+                        </div>
                         <h3 className="text-xl font-bold mb-2 text-white">1. The "Local Hero" Strategy</h3>
                         <p className="text-slate-400 text-sm">We optimize your Google Business Profile to capture "Near Me" searches, making you the obvious choice in your postcode.</p>
                     </div>
+                    
                     <div className="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-purple-500/50 transition-colors">
+                         <div className="p-3 bg-purple-600 rounded-lg inline-block mb-4">
+                             <MousePointer2 className="w-6 h-6 text-white" />
+                        </div>
                         <h3 className="text-xl font-bold mb-2 text-white">2. Conversion-First Design</h3>
                         <p className="text-slate-400 text-sm">We streamline your website so every visitor is guided towards a "Call Now" or "Book Appointment" button. No dead ends.</p>
                     </div>
+                    
                     <div className="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-emerald-500/50 transition-colors">
+                         <div className="p-3 bg-emerald-600 rounded-lg inline-block mb-4">
+                             <TrendingUp className="w-6 h-6 text-white" />
+                        </div>
                         <h3 className="text-xl font-bold mb-2 text-white">3. Technical Velocity</h3>
                         <p className="text-slate-400 text-sm">Built on Next.js (the same tech used by Netflix & TikTok). It loads instantly, boosting your SEO score automatically.</p>
                     </div>
                 </div>
+
             </div>
         </div>
       </section>

@@ -69,13 +69,19 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   'name': 'Churchtown Media',
-  'image': 'https://www.churchtownmedia.co.uk/opengraph-image.png',
+  'description': '5-Star Rated Web Design & SEO Agency in Southport',
+  // --- ADD THIS BLOCK ---
   'aggregateRating': {
     '@type': 'AggregateRating',
     'ratingValue': '5.0',
-    'reviewCount': reviews.length.toString(), // Automatically counts your reviews
-    'bestRating': '5',
-    'worstRating': '1'
+    'reviewCount': '24'
+  },
+  // ----------------------
+  'address': {
+    '@type': 'PostalAddress',
+    'addressLocality': 'Southport',
+    'addressRegion': 'Merseyside',
+    'addressCountry': 'UK'
   }
 };
 

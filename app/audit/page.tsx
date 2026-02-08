@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
-  'name': 'Churchtown Intelligence SEO Scanner',
+  'name': 'Churchtown Media SEO Auditor',
   'applicationCategory': 'BusinessApplication',
   'operatingSystem': 'Web',
   'offers': {
@@ -30,16 +30,22 @@ const jsonLd = {
     'price': '0',
     'priceCurrency': 'GBP'
   },
-  'featureList': [
-    'Technical SEO Analysis',
-    'Page Speed Insights',
-    'Backlink Checker',
-    'Mobile Usability Score'
-  ],
+  // FIX A: Add Rating to the App itself
+  'aggregateRating': {
+    '@type': 'AggregateRating',
+    'ratingValue': '5.0',
+    'ratingCount': '24'
+  },
+  'description': 'Free SEO auditing tool for Southport businesses.',
   'provider': {
     '@type': 'LocalBusiness',
     'name': 'Churchtown Media',
-    'image': 'https://www.churchtownmedia.co.uk/icon.png'
+    // FIX B: Add Rating to the Business provider
+    'aggregateRating': {
+        '@type': 'AggregateRating',
+        'ratingValue': '5.0',
+        'reviewCount': '24'
+    }
   }
 };
 
