@@ -1,12 +1,12 @@
 import Link from "next/link";
 import Image from "next/image"; 
-import { posts } from "../lib/posts"; // <--- FIXED: Changed from ../../ to ../
+import { posts } from "../lib/posts"; // <--- FIXED PATH for your structure
 import { Newspaper, ArrowRight, Calendar } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: 'Digital Growth Insights | Churchtown Media Blog',
-  description: 'Expert advice on SEO, Web Design, and Digital Strategy for Southport businesses. Read our latest case studies and tutorials.',
+  description: 'Expert advice on SEO, Web Design, and Digital Strategy for Southport businesses.',
   openGraph: {
     title: 'Churchtown Media Intelligence',
     description: 'Technical analysis and local market data for Southport business growth.',
@@ -18,7 +18,7 @@ export default function BlogIndex() {
   return (
     <main className="min-h-screen bg-slate-50">
       
-      {/* 1. HEADER SECTION */}
+      {/* 1. HEADER SECTION (Dark Agency Theme) */}
       <section className="bg-slate-900 px-6 pt-32 pb-24 text-center text-white relative overflow-hidden">
         {/* Glow Effect */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-4xl bg-blue-500/10 blur-3xl rounded-full pointer-events-none"></div>
@@ -37,7 +37,7 @@ export default function BlogIndex() {
         </div>
       </section>
 
-      {/* 2. POSTS GRID */}
+      {/* 2. POSTS GRID (With Images) */}
       <section className="mx-auto max-w-7xl px-6 py-20">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
           {posts.map((post) => (
