@@ -1,25 +1,28 @@
-"use client";
-
+import type { Metadata } from 'next'
 import React from "react";
 import Link from "next/link";
 import { ArrowRight, Zap, BarChart3, Globe, TrendingUp } from "lucide-react";
 
+// 1. THIS IS THE METADATA BLOCK
+export const metadata: Metadata = {
+  title: 'Web Design & SEO Agency in Southport | Churchtown Media',
+  description: 'Helping Southport businesses grow with data-driven Web Design and SEO. We turn traffic into revenue. Get your free digital audit today.',
+}
+
+// 2. MAIN COMPONENT (Now a Server Component, which is faster!)
 export default function Home() {
   return (
     <main className="min-h-screen overflow-x-hidden bg-slate-50 selection:bg-blue-100 selection:text-blue-900">
       
       {/* 1. HERO SECTION */}
-      {/* ADDED 'isolate' to create a new stacking context */}
       <div className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden isolate">
         
         {/* ANIMATED BACKGROUND BLOBS */}
-        {/* CHANGED: Removed '-z-10'. Now using default z-index (0) so they sit ON TOP of the white background */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-purple-300/40 rounded-full blur-[100px] animate-blob mix-blend-multiply filter opacity-70"></div>
         <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-blue-300/40 rounded-full blur-[100px] animate-blob animation-delay-2000 mix-blend-multiply filter opacity-70"></div>
         <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-emerald-300/40 rounded-full blur-[100px] animate-blob animation-delay-4000 mix-blend-multiply filter opacity-70"></div>
 
         {/* Content Container */}
-        {/* KEEP: 'relative z-10' ensures text sits ON TOP of the blobs */}
         <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
             
             {/* STATUS BADGE */}

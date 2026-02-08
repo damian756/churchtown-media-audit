@@ -1,9 +1,15 @@
-"use client";
-
+import type { Metadata } from 'next';
 import React from "react";
 import Link from "next/link";
 import { MapPin, Target, BarChart3, ArrowRight } from "lucide-react";
 
+// 1. ADD METADATA BLOCK
+export const metadata: Metadata = {
+  title: 'SEO Services Southport | Rank #1 on Google',
+  description: 'Technical SEO and Local SEO strategies that actually work. Dominate the search results in Southport, Formby, and Ormskirk.',
+}
+
+// 2. MAIN COMPONENT (Server Component)
 export default function SEOPage() {
   return (
     <main className="min-h-screen pt-32 pb-20 bg-slate-50">

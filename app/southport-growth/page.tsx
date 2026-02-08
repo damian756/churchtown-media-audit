@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { Users, Coins, ExternalLink, Calendar, MapPin, CheckCircle2, ArrowRight, Zap, Search, Layout, HelpCircle } from "lucide-react";
-import { posts } from "../lib/posts";
+import { posts } from "../lib/posts"; // Ensure this path is correct based on your folder structure
 
+// UPDATED METADATA BLOCK
 export const metadata = {
-  title: "Southport Business Growth Hub | 2026 Playbook",
-  description: "The ultimate guide to growing your business in Southport. Local grants, networking events, and digital strategies for the MLEC economy.",
+  title: 'Southport Business Growth Hub | Free Digital Audit',
+  description: 'Exclusive for Southport businesses: Claim your free 15-point digital performance audit. Identify wasted ad spend and missed SEO opportunities.',
 };
 
 export default function GrowthHub() {

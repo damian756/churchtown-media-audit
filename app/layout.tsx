@@ -6,11 +6,29 @@ import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
+// 1. NEW SEO METADATA BLOCK
 export const metadata: Metadata = {
-  title: "Churchtown Media | Digital Growth Agency",
-  description: "We build revenue engines. Enterprise Web Design & SEO.",
+  metadataBase: new URL('https://www.churchtownmedia.co.uk'),
+  title: {
+    default: 'Churchtown Media | Digital Growth for Southport Businesses',
+    template: '%s | Churchtown Media'
+  },
+  description: 'We build high-performance revenue engines for businesses in Southport, Merseyside, and West Lancashire. Web Design, SEO, and Digital Strategy.',
+  openGraph: {
+    title: 'Churchtown Media | Digital Growth Experts',
+    description: 'Stop burning money on ads. Start building a revenue engine.',
+    url: 'https://www.churchtownmedia.co.uk',
+    siteName: 'Churchtown Media',
+    locale: 'en_GB',
+    type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
+// 2. ROOT LAYOUT (Keeps your styling and Navbar/Footer)
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -18,8 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* THE FIX: We force the styling classes directly here.
-        - bg-slate-50: Sets the premium off-white background.
+      {/* - bg-slate-50: Sets the premium off-white background.
         - text-slate-900: Sets the dark readable text.
         - antialiased: Makes the font look crisp and expensive.
       */}

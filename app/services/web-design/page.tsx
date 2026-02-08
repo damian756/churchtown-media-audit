@@ -1,9 +1,15 @@
-"use client";
-
+import type { Metadata } from 'next';
 import React from "react";
 import Link from "next/link";
 import { Zap, Smartphone, Code2, ArrowRight } from "lucide-react";
 
+// 1. ADD METADATA BLOCK HERE
+export const metadata: Metadata = {
+  title: 'Web Design Southport | Fast, High-Converting Websites',
+  description: 'Custom Next.js web design for Southport businesses. We build sites that load instantly and convert visitors into customers.',
+}
+
+// 2. MAIN COMPONENT (Server Component)
 export default function WebDesignPage() {
   return (
     <main className="min-h-screen pt-32 pb-20 bg-slate-50">
