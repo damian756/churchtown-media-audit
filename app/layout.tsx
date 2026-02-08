@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
-import Script from "next/script"; // <--- NEW: For CookieYes
-import { GoogleAnalytics } from "@next/third-parties/google"; // <--- NEW: For GA4
+import Script from "next/script";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'Churchtown Media Team', url: 'https://www.churchtownmedia.co.uk' }],
   generator: 'Next.js',
   keywords: ['Web Design Southport', 'SEO Southport', 'Digital Agency North West', 'Next.js Developer'],
-  alternates: { canonical: '/' },
+  // ❌ DELETED: alternates: { canonical: '/' }, <-- This was the bug!
   openGraph: {
     title: 'Churchtown Media | Digital Growth Experts',
     description: 'Stop burning money on ads. Start building a revenue engine.',
@@ -64,10 +64,10 @@ export default function RootLayout({
       <body className={`${inter.className} bg-slate-50 text-slate-900 antialiased selection:bg-blue-200 selection:text-blue-900`}>
         
         {/* --- 1. COOKIEYES BANNER --- */}
-        {/* IMPORTANT: Replace the src URL below with the one from your CookieYes dashboard */}
         <Script
           id="cookieyes"
-          src="https://cdn-cookieyes.com/client_data/d800a0412ec550532ec1984546b7231c/script.js"
+          // I see you found your real code! This looks correct.
+          src="https://cdn-cookieyes.com/client_data/d800a0412ec550532ec1984546b7231c/script.js" 
           strategy="beforeInteractive" 
         />
 
@@ -78,7 +78,6 @@ export default function RootLayout({
         <Footer />
 
         {/* --- 2. GOOGLE ANALYTICS --- */}
-        {/* Replace 'G-XXXXXXXXXX' with your actual Google Analytics Measurement ID */}
         <GoogleAnalytics gaId="G-WZM6ZEYTBL" />
 
       </body>
