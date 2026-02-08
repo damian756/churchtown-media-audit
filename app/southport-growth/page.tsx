@@ -13,7 +13,8 @@ export const metadata: Metadata = {
     description: 'Access £37.5m Town Deal opportunities, local grants, and digital strategies.',
     url: 'https://www.churchtownmedia.co.uk/southport-growth',
     type: 'website',
-    images: [{ url: '/images/mlec.png', width: 1200, height: 630, alt: 'Southport Growth Hub' }],
+    // UPDATED: .png -> .jpg
+    images: [{ url: '/images/mlec.jpg', width: 1200, height: 630, alt: 'Southport Growth Hub' }],
   },
 };
 
@@ -64,8 +65,9 @@ export default function GrowthHub() {
       {/* 1. Hero Section */}
       <section className="relative bg-slate-900 px-6 py-24 text-center text-white overflow-hidden">
         <div className="absolute inset-0 opacity-20">
+            {/* UPDATED: .png -> .jpg */}
             <Image 
-                src="/images/mlec.png" 
+                src="/images/mlec.jpg" 
                 alt="Southport Marine Lake Events Centre Growth" 
                 fill
                 className="object-cover"
@@ -106,8 +108,9 @@ export default function GrowthHub() {
                 </div>
             </div>
             <div className="lg:w-1/2 relative">
+                {/* UPDATED: .png -> .jpg (assuming img1-1 was optimized) */}
                 <Image 
-                    src="/images/img1-1.png" 
+                    src="/images/img1-1.jpg" 
                     alt="Southport Local Search Map Pack Strategy" 
                     width={600}
                     height={400}
@@ -153,8 +156,9 @@ export default function GrowthHub() {
             {/* Sandgrounders */}
             <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
               <div className="h-56 overflow-hidden bg-slate-100 relative border-b border-slate-100">
+                {/* UPDATED: .png -> .jpg */}
                 <Image 
-                    src="/images/sandgrounders.png" 
+                    src="/images/sandgrounders.jpg" 
                     alt="Sandgrounders Business Club Southport" 
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -176,8 +180,9 @@ export default function GrowthHub() {
             {/* Southport BID */}
             <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
               <div className="h-56 overflow-hidden bg-slate-100 relative border-b border-slate-100">
+                {/* UPDATED: .png -> .jpg */}
                 <Image 
-                    src="/images/southport-bid.png" 
+                    src="/images/southport-bid.jpg" 
                     alt="Southport BID Business Improvement District" 
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -199,8 +204,9 @@ export default function GrowthHub() {
             {/* Real5 */}
             <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
               <div className="h-56 overflow-hidden bg-slate-100 relative border-b border-slate-100">
+                {/* UPDATED: .png -> .jpg */}
                 <Image 
-                    src="/images/real5.png" 
+                    src="/images/real5.jpg" 
                     alt="Real5 Networking Southport" 
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -239,8 +245,9 @@ export default function GrowthHub() {
                 </div>
             </div>
             <div className="lg:w-1/2 relative">
+                {/* UPDATED: .png -> .jpg */}
                 <Image 
-                    src="/images/grants-dashboard.png" 
+                    src="/images/grants-dashboard.jpg" 
                     alt="Sefton Business Grants Dashboard" 
                     width={800}
                     height={600}
@@ -255,8 +262,9 @@ export default function GrowthHub() {
             <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
               <div className="h-56 bg-slate-50 relative border-b border-slate-100 flex items-center justify-center p-6">
                  <div className="relative w-full h-full">
+                    {/* UPDATED: .png -> .jpg */}
                     <Image 
-                        src="/images/invest-sefton.png" 
+                        src="/images/invest-sefton.jpg" 
                         alt="Invest Sefton Business Support" 
                         fill
                         className="object-contain transition-transform duration-500 group-hover:scale-105" 
@@ -284,8 +292,9 @@ export default function GrowthHub() {
             <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
               <div className="h-56 bg-slate-50 relative border-b border-slate-100 flex items-center justify-center p-6">
                  <div className="relative w-full h-full">
+                    {/* UPDATED: .png -> .jpg */}
                     <Image 
-                        src="/images/police-fund.png" 
+                        src="/images/police-fund.jpg" 
                         alt="Merseyside Police Cashback Fund" 
                         fill
                         className="object-contain transition-transform duration-500 group-hover:scale-105" 
@@ -313,8 +322,9 @@ export default function GrowthHub() {
             <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
               <div className="h-56 bg-slate-50 relative border-b border-slate-100 flex items-center justify-center p-6">
                  <div className="relative w-full h-full">
+                    {/* UPDATED: .png -> .jpg */}
                     <Image 
-                        src="/images/kings-trust.png" 
+                        src="/images/kings-trust.jpg" 
                         alt="Kings Trust Enterprise Programme" 
                         fill
                         className="object-contain transition-transform duration-500 group-hover:scale-105" 
@@ -378,8 +388,9 @@ export default function GrowthHub() {
                     </div>
                 </div>
                 <div className="lg:w-1/2 relative">
+                    {/* UPDATED: .png -> .jpg */}
                     <Image 
-                        src="/images/analytics.png" 
+                        src="/images/analytics.jpg" 
                         alt="Digital Performance Analytics for Southport Businesses" 
                         width={800}
                         height={600}

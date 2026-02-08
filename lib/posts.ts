@@ -14,7 +14,8 @@ export const posts: BlogPost[] = [
     title: "Invisible on Lord Street? Why Local SEO is Your New Shop Window",
     date: "Jan 26, 2026",
     category: "Southport Business Growth",
-    image: "/images/southport.png",
+    // UPDATED: .png -> .jpg
+    image: "/images/southport.jpg", 
     excerpt: "Are customers walking right past your door? Discover why 'Near Me' searches and the Google Map Pack are the new shop window for Southport businesses.",
     content: `
       <p>Walk down Lord Street on a busy Saturday afternoon. Look at the people—the tourists, the day-trippers, the locals. What are they doing?</p>
@@ -62,7 +63,8 @@ export const posts: BlogPost[] = [
     title: "The MLEC Effect: Is Your Southport Business Ready for 500,000 New Visitors?",
     date: "Jan 21, 2026",
     category: "Southport Business Growth",
-    image: "/images/mlec.png",
+    // UPDATED: .png -> .jpg
+    image: "/images/mlec.jpg",
     excerpt: "The Marine Lake Events Centre is bringing 500,000 visitors to Southport. Here is the digital strategy local businesses need to capture this new economy in 2026.",
     content: `
       <p>The demolition is done. The steel is rising. The <strong>Marine Lake Events Centre (MLEC)</strong> is no longer just a &#8220;Town Deal proposal&#8221;—it is the new reality of Southport’s skyline.</p>
@@ -93,7 +95,8 @@ export const posts: BlogPost[] = [
     title: "Why a New Local SEO Company is Your Business’s Best Friend",
     date: "Jan 14, 2026",
     category: "SEO Demystified",
-    image: "/images/seo-robot.png",
+    // UPDATED: .png -> .jpg
+    image: "/images/seo-robot.jpg",
     excerpt: "Unlock Your Local Potential: Why a New Local SEO Company is Your Business's Best Friend In today's digital age, simply having a website isn't enough.",
     content: `
       <h2>Unlock Your Local Potential: Why a New Local SEO Company is Your Business&#8217;s Best Friend</h2>
@@ -110,7 +113,8 @@ export const posts: BlogPost[] = [
     title: "The £20,000 SEO Mistake: How We Tripled Traffic in 6 Weeks",
     date: "Feb 02, 2026",
     category: "Case Studies",
-    image: "/images/alotek-cover.png",
+    // UPDATED: .png -> .jpg
+    image: "/images/alotek-cover.jpg",
     excerpt: "Alotek Shelters spent £20k for zero growth. See the exact strategy Churchtown Media used to fix their 'zombie' site and capture #1 AI rankings in under 45 days.",
     content: `
       <p>Our client, <strong>Alotek Shelters</strong>, invested a significant amount in SEO with their previous agency over the last 12 months. For that price, you’d expect market dominance. You’d expect the phone to be ringing off the hook.</p>
@@ -125,7 +129,7 @@ export const posts: BlogPost[] = [
       <p>This was the shocker. We found that <strong>52% of the website was not indexed.</strong> Effectively, for every two pages Alotek paid for, Google only saw one. The previous agency had left 28 pages blocked by technical errors—broken redirects, 404 dead ends, and messy canonical tags. The site was trying to run a marathon with one leg tied behind its back.</p>
       
       <h4><strong>2. The &#8220;Ghost Town&#8221; Keywords</strong></h4>
-      <p>They were ranking, sure—but for terms nobody used. They were on Page 1 for technical jargon, but invisible for the words buyers actually type into Google.</p>
+      <p>They were ranking, sure—but for terms nobody used. They were ranking on Page 1 for technical jargon, but invisible for the words buyers actually type into Google.</p>
       <hr />
       <h3><strong>The Fix: Engineering the Hockey Stick</strong></h3>
       
@@ -138,7 +142,7 @@ export const posts: BlogPost[] = [
       <p>We don&#8217;t do &#8220;fluff&#8221; reports. Here is the raw data from Google Search Console and Semrush, comparing November (The Old Agency) to January (Churchtown Media).</p>
       
       <figure>
-        <img src="/images/alotek-graph-1.png" alt="Google Search Console data showing 86% increase in impressions" width="800" height="400" />
+        <img src="/images/alotek-graph-1.jpg" alt="Google Search Console data showing 86% increase in impressions" width="800" height="400" />
         <figcaption class="text-sm text-slate-500 text-center mt-2">Figure 1: The visibility explosion after fixing technical indexation errors.</figcaption>
       </figure>
 
@@ -171,7 +175,8 @@ export const posts: BlogPost[] = [
     title: "Eating Our Own Dog Food: Why We Ignored Google’s Advice on Our New Ad Campaign",
     date: "Jan 29, 2026",
     category: "Agency Life",
-    image: "/images/google-ads.png",
+    // UPDATED: .png -> .jpg
+    image: "/images/google-ads.jpg",
     excerpt: "We ignored Google’s advice and launched a £15/day ad campaign. See the exact settings, keywords, and strategy Churchtown Media uses to get local leads.",
     content: `
       <p>It’s a strange feeling for a digital marketer to press &#8220;Publish&#8221; on their <em>own</em> ad campaign.</p>
@@ -203,7 +208,7 @@ export const posts: BlogPost[] = [
       <p>We are using &#8220;Phrase Match&#8221; keywords. This means if we target <strong>&#8220;Web Design Southport&#8221;</strong>, someone has to type that exact phrase (or a very close variation) to see us. We won&#8217;t show up for loosely related terms like &#8220;graphic design.&#8221;</p>
       <p>This makes Google’s algorithm nervous because it can&#8217;t spend our money as fast as it wants to. But it makes <em>us</em> sleep better.</p>
       <h3>The Numbers: £15 a Day</h3>
-      <figure><img decoding="async" width="1024" height="576" src="/images/google-ads.png" alt="Churchtown Media Google Ads dashboard showing the active 'MLEC Readiness Audit' campaign with a strict £15 daily budget and manual bidding strategy." /></figure>
+      <figure><img decoding="async" width="1024" height="576" src="/images/google-ads.jpg" alt="Churchtown Media Google Ads dashboard showing the active 'MLEC Readiness Audit' campaign with a strict £15 daily budget and manual bidding strategy." /></figure>
       <p>We set our initial budget to exactly £15.00 per day.</p>
       <p>Why? In the Southport market for our niche, a good click costs between £3 and £5. This budget guarantees us about 3 to 5 highly qualified visitors to our site every single day.</p>
       <p>That is enough data to know if our message is resonating, but not so much that we burn money while testing.</p>
