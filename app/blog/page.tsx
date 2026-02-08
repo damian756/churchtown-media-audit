@@ -1,7 +1,20 @@
 import Link from "next/link";
 import { posts } from "../lib/posts";
 import { Newspaper, ArrowRight } from "lucide-react";
+import type { Metadata } from "next";
 
+// 1. THIS IS THE NEW METADATA BLOCK
+export const metadata: Metadata = {
+  title: 'Digital Growth Insights | Churchtown Media Blog',
+  description: 'Expert advice on SEO, Web Design, and Digital Strategy for Southport businesses. Read our latest case studies and tutorials.',
+  openGraph: {
+    title: 'Churchtown Media Intelligence',
+    description: 'Technical analysis and local market data for Southport business growth.',
+    type: 'website',
+  },
+}
+
+// 2. YOUR EXACT EXISTING COMPONENT (Unchanged)
 export default function BlogIndex() {
   return (
     <main className="min-h-screen bg-white">
@@ -44,7 +57,7 @@ export default function BlogIndex() {
                 </div>
               </div>
               <div className="mt-8 flex items-center gap-2 text-sm font-bold text-blue-600">
-                 Read Article <ArrowRight className="h-4 w-4" />
+                  Read Article <ArrowRight className="h-4 w-4" />
               </div>
             </article>
           ))}
