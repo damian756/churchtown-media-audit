@@ -1,16 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Users, Coins, ExternalLink, Calendar, MapPin, CheckCircle2, ArrowRight, Zap, Search, Layout, HelpCircle } from "lucide-react";
-import { posts } from "../lib/posts"; // Ensure this path is correct
+import { posts } from "../lib/posts"; 
 
-// UPDATED METADATA BLOCK
 export const metadata = {
   title: 'Southport Business Growth Hub | Free Digital Audit',
   description: 'Exclusive for Southport businesses: Claim your free 15-point digital performance audit. Identify wasted ad spend and missed SEO opportunities.',
 };
 
 export default function GrowthHub() {
-  const recentPosts = posts.slice(0, 2);
+  const recentPosts = posts ? posts.slice(0, 2) : [];
 
   return (
     <main className="min-h-screen bg-slate-50">
@@ -18,9 +17,9 @@ export default function GrowthHub() {
       {/* 1. Hero Section */}
       <section className="relative bg-slate-900 px-6 py-24 text-center text-white overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-            {/* UPDATED: Local Image */}
+            {/* Using mlec.png or southport-hero.png if you have it */}
             <Image 
-                src="/southport-hero.png" 
+                src="/images/mlec.png" // Switched to mlec.png as I saw it in your list
                 alt="Southport Lord Street Growth" 
                 fill
                 className="object-cover"
@@ -61,9 +60,9 @@ export default function GrowthHub() {
                 </div>
             </div>
             <div className="lg:w-1/2 relative">
-                {/* UPDATED: Local Image */}
+                {/* Mapped to img1-1.png based on your file list */}
                 <Image 
-                    src="/map-pack.png" 
+                    src="/images/img1-1.png" 
                     alt="Southport Local Search Map Pack" 
                     width={600}
                     height={400}
@@ -72,7 +71,7 @@ export default function GrowthHub() {
             </div>
         </div>
 
-        {/* 3 Pillars of Digital Reality */}
+        {/* 3 Pillars */}
         <div className="grid gap-8 md:grid-cols-3 mt-20">
             <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
                 <div className="p-3 bg-blue-100 w-fit rounded-lg text-blue-600 mb-6"><MapPin className="h-6 w-6"/></div>
@@ -109,9 +108,8 @@ export default function GrowthHub() {
             {/* Sandgrounders */}
             <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
               <div className="h-56 overflow-hidden bg-slate-100 relative border-b border-slate-100">
-                {/* UPDATED: Local Image */}
                 <Image 
-                    src="/sandgrounders.png" 
+                    src="/images/sandgrounders.png" 
                     alt="Sandgrounders" 
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -133,9 +131,10 @@ export default function GrowthHub() {
             {/* Southport BID */}
             <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
               <div className="h-56 overflow-hidden bg-slate-100 relative border-b border-slate-100">
-                {/* UPDATED: Local Image */}
+                {/* NOTE: I did not see 'southport-bid.png' in your screenshot list. 
+                    If this image is broken, please ensure 'southport-bid.png' is inside the 'public/images' folder. */}
                 <Image 
-                    src="/southport-bid.png" 
+                    src="/images/southport-bid.png" 
                     alt="Southport BID" 
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -157,9 +156,8 @@ export default function GrowthHub() {
             {/* Real5 */}
             <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
               <div className="h-56 overflow-hidden bg-slate-100 relative border-b border-slate-100">
-                {/* UPDATED: Local Image */}
                 <Image 
-                    src="/real5.png" 
+                    src="/images/real5.png" 
                     alt="Real5 Networking" 
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -198,9 +196,8 @@ export default function GrowthHub() {
                 </div>
             </div>
             <div className="lg:w-1/2 relative">
-                {/* UPDATED: Local Image */}
                 <Image 
-                    src="/grants-dashboard.png" 
+                    src="/images/grants-dashboard.png" 
                     alt="Sefton Grants Dashboard" 
                     width={800}
                     height={600}
@@ -214,10 +211,9 @@ export default function GrowthHub() {
             {/* Grant 1 */}
             <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
               <div className="h-56 bg-slate-50 relative border-b border-slate-100 flex items-center justify-center p-6">
-                 {/* UPDATED: Local Image */}
                  <div className="relative w-full h-full">
                     <Image 
-                        src="/invest-sefton.png" 
+                        src="/images/invest-sefton.png" 
                         alt="Invest Sefton" 
                         fill
                         className="object-contain transition-transform duration-500 group-hover:scale-105" 
@@ -244,10 +240,9 @@ export default function GrowthHub() {
             {/* Grant 2 */}
             <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
               <div className="h-56 bg-slate-50 relative border-b border-slate-100 flex items-center justify-center p-6">
-                 {/* UPDATED: Local Image */}
                  <div className="relative w-full h-full">
                     <Image 
-                        src="/police-fund.png" 
+                        src="/images/police-fund.png" 
                         alt="Police Fund" 
                         fill
                         className="object-contain transition-transform duration-500 group-hover:scale-105" 
@@ -274,10 +269,9 @@ export default function GrowthHub() {
             {/* Grant 3 */}
             <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
               <div className="h-56 bg-slate-50 relative border-b border-slate-100 flex items-center justify-center p-6">
-                 {/* UPDATED: Local Image */}
                  <div className="relative w-full h-full">
                     <Image 
-                        src="/kings-trust.png" 
+                        src="/images/kings-trust.png" 
                         alt="Kings Trust" 
                         fill
                         className="object-contain transition-transform duration-500 group-hover:scale-105" 
@@ -341,9 +335,8 @@ export default function GrowthHub() {
                     </div>
                 </div>
                 <div className="lg:w-1/2 relative">
-                    {/* UPDATED: Local Image */}
                     <Image 
-                        src="/analytics.png" 
+                        src="/images/analytics.png" 
                         alt="Performance Analytics" 
                         width={800}
                         height={600}
@@ -374,7 +367,7 @@ export default function GrowthHub() {
         </div>
       </section>
 
-      {/* 8. FAQ Section (Identical to previous) */}
+      {/* 8. FAQ Section */}
       <section className="bg-slate-50 py-24">
         <div className="mx-auto max-w-7xl px-6">
             <h2 className="text-3xl font-bold text-slate-900 mb-12 text-center">Frequently Asked Questions</h2>
