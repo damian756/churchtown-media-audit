@@ -11,7 +11,8 @@ export default function Navbar() {
   const pathname = usePathname();
 
   // PAGES WITH DARK BACKGROUNDS
-  const isDarkPage = pathname === "/southport-growth";
+  // Added "/testimonials" so the text is white on the dark hero section
+  const isDarkPage = pathname === "/southport-growth" || pathname === "/testimonials";
 
   // 1. LOCK BODY SCROLL WHEN MENU IS OPEN
   useEffect(() => {
@@ -43,6 +44,7 @@ export default function Navbar() {
     { name: "Web Design", href: "/services/web-design" },
     { name: "SEO", href: "/services/seo" },
     { name: "Work", href: "/work" },
+    { name: "Reviews", href: "/testimonials" }, // ADDED LINK
     { name: "Contact", href: "/contact" },
   ];
 
