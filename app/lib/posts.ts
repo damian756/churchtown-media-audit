@@ -4,8 +4,8 @@ export interface BlogPost {
     date: string;
     category: string;
     excerpt: string;
-    image: string; // <--- New Field
-    content: string;
+    image: string; // The cover image for the card
+    content: string; // The HTML content
   }
   
   export const posts: BlogPost[] = [
@@ -14,7 +14,7 @@ export interface BlogPost {
       title: "Invisible on Lord Street? Why Local SEO is Your New Shop Window",
       date: "Jan 26, 2026",
       category: "Southport Business Growth",
-      image: "https://churchtownmedia.co.uk/wp-content/uploads/2026/01/southport-near-me-scaled.png",
+      image: "/images/southport.png", // UPDATED: Points to local file
       excerpt: "Are customers walking right past your door? Discover why 'Near Me' searches and the Google Map Pack are the new shop window for Southport businesses.",
       content: `
         <p>Walk down Lord Street on a busy Saturday afternoon. Look at the people—the tourists, the day-trippers, the locals. What are they doing?</p>
@@ -62,7 +62,7 @@ export interface BlogPost {
       title: "The MLEC Effect: Is Your Southport Business Ready for 500,000 New Visitors?",
       date: "Jan 21, 2026",
       category: "Southport Business Growth",
-      image: "https://churchtownmedia.co.uk/wp-content/uploads/2026/01/mlec-scaled.png",
+      image: "/images/mlec.png", // UPDATED: Points to local file
       excerpt: "The Marine Lake Events Centre is bringing 500,000 visitors to Southport. Here is the digital strategy local businesses need to capture this new economy in 2026.",
       content: `
         <p>The demolition is done. The steel is rising. The <strong>Marine Lake Events Centre (MLEC)</strong> is no longer just a &#8220;Town Deal proposal&#8221;—it is the new reality of Southport’s skyline.</p>
@@ -89,11 +89,11 @@ export interface BlogPost {
       `
     },
     {
-      slug: "why-new-local-seo-company-is-your-businesss-best-friend",
+      slug: "why-new-local-seo-company-is-your-business-best-friend",
       title: "Why a New Local SEO Company is Your Business’s Best Friend",
       date: "Jan 14, 2026",
       category: "SEO Demystified",
-      image: "https://churchtownmedia.co.uk/wp-content/uploads/2026/01/Gemini_Generated_Image_rgzk28rgzk28rgzk-e1768408045486.png",
+      image: "/images/seo-robot.png", // UPDATED: Points to local file
       excerpt: "Unlock Your Local Potential: Why a New Local SEO Company is Your Business's Best Friend In today's digital age, simply having a website isn't enough.",
       content: `
         <h2>Unlock Your Local Potential: Why a New Local SEO Company is Your Business&#8217;s Best Friend</h2>
@@ -110,7 +110,7 @@ export interface BlogPost {
       title: "The £20,000 SEO Mistake: How We Tripled Traffic in 6 Weeks",
       date: "Feb 02, 2026",
       category: "Case Studies",
-      image: "https://churchtownmedia.co.uk/wp-content/uploads/2026/02/Screenshot-of-GSC-showing-from-when-churchtown-media-took-over-scaled.png",
+      image: "/images/alotek-cover.png", // UPDATED: Points to local file
       excerpt: "Alotek Shelters spent £20k for zero growth. See the exact strategy Churchtown Media used to fix their 'zombie' site and capture #1 AI rankings in under 45 days.",
       content: `
         <p>Our client, <strong>Alotek Shelters</strong>, invested a significant amount in SEO with their previous agency over the last 12 months. For that price, you’d expect market dominance. You’d expect the phone to be ringing off the hook.</p>
@@ -120,15 +120,15 @@ export interface BlogPost {
         <hr />
         <h3><strong>The Audit: Why Money Doesn&#8217;t Buy Rankings</strong></h3>
         <p>When we took over, we didn’t just want to &#8220;do better.&#8221; We wanted to know <em>why</em> the previous budget had failed. We opened the hood and found three smoking guns that explained the flatline:</p>
-        <figure><img decoding="async" width="1024" height="594" src="https://churchtownmedia.co.uk/wp-content/uploads/2026/02/Indexed-pages1-1024x594.png" alt="Google Search Console coverage graph for Alotek Shelters showing a sharp increase in indexed pages from 26 to 41 between November 2025 and January 2026, following Churchtown Media's technical SEO fixes." /></figure>
+        
         <h4><strong>1. The &#8220;50% Invisible&#8221; Problem</strong></h4>
         <p>This was the shocker. We found that <strong>52% of the website was not indexed.</strong> Effectively, for every two pages Alotek paid for, Google only saw one. The previous agency had left 28 pages blocked by technical errors—broken redirects, 404 dead ends, and messy canonical tags. The site was trying to run a marathon with one leg tied behind its back.</p>
-        <figure><img decoding="async" width="1024" height="499" src="https://churchtownmedia.co.uk/wp-content/uploads/2026/02/indexed-pages2-1024x499.png" alt="Site audit data comparing indexed versus non-indexed pages, illustrating how Churchtown Media resolved technical errors (404s and redirects) to reduce the percentage of invisible pages and unlock 52% more visibility for the client." /></figure>
+        
         <h4><strong>2. The &#8220;Ghost Town&#8221; Keywords</strong></h4>
         <p>They were ranking, sure—but for terms nobody used. They were on Page 1 for technical jargon, but invisible for the words buyers actually type into Google.</p>
         <hr />
         <h3><strong>The Fix: Engineering the Hockey Stick</strong></h3>
-        <figure><img loading="lazy" decoding="async" width="1024" height="559" src="https://churchtownmedia.co.uk/wp-content/uploads/2026/02/hockey-stick.png" alt="" /></figure>
+        
         <p>We didn&#8217;t start with a magic wand. We started with a wrench.</p>
         <p><strong>Phase 1</strong> was purely mechanical. We went into the code and fixed the indexation blocks. We cleared the 404 errors, fixed the redirect loops, and submitted the sitemap.</p>
         <ul><li><strong>Result:</strong> We increased the number of indexed pages from <strong>26 to 41</strong>.</li><li><strong>Impact:</strong> By simply letting Google see the rest of the website, we instantly doubled the opportunities for the site to rank.</li></ul>
@@ -136,16 +136,16 @@ export interface BlogPost {
         <hr />
         <h3><strong>The Data: Dominating the &#8220;AI Future&#8221;</strong></h3>
         <p>We don&#8217;t do &#8220;fluff&#8221; reports. Here is the raw data from Google Search Console and Semrush, comparing November (The Old Agency) to January (Churchtown Media).</p>
-        <figure><img loading="lazy" decoding="async" width="1024" height="519" src="https://churchtownmedia.co.uk/wp-content/uploads/2026/02/Screenshot-of-GSC-showing-from-when-churchtown-media-took-over-1-1024x519.png" alt="Semrush position tracking table showing Alotek Shelters ranking #1 and securing the Google AI Overview for key terms like 'Bus Shelter Manufacturers' and 'Outdoor Pram Storage' in January 2026." /></figure>
+        
         <h4><strong>1. The Visibility Explosion</strong></h4>
         <p>We effectively shocked the patient back to life.</p>
         <ul><li><strong>Daily Impressions:</strong> Up <strong>86%</strong> (From 238/day to 442/day).</li><li><strong>Average Position:</strong> Improved from <strong>50 (Page 5)</strong> to <strong>37 (Page 4)</strong> across the entire site.</li><li><strong>Peak Visibility:</strong> On Jan 11th, the site hit nearly <strong>600 impressions</strong> in a single day—a 3x increase from the November baseline.</li></ul>
         <h4><strong>2. The &#8220;New Google&#8221; Wins (AI Overviews)</strong></h4>
         <p>This is the most exciting part. We aren&#8217;t just ranking in the traditional &#8220;blue links.&#8221; Our data shows Alotek is now triggering and <strong>owning the AI Overviews (AI Snapshots)</strong> for their biggest terms.</p>
-        <figure><img loading="lazy" decoding="async" width="1024" height="599" src="https://churchtownmedia.co.uk/wp-content/uploads/2026/02/SEM-rush-position-tracking-1024x599.png" alt="Semrush position tracking table showing Alotek Shelters ranking #1 and securing the Google AI Overview for commercial keywords like 'Bus Shelter Manufacturers' and 'Outdoor Pram Storage'." /></figure>
+        
         <p>This means when a user asks a question, Google&#8217;s AI is recommending <em>Alotek</em> as the direct answer at the very top of the page.</p>
         <ul><li><strong>&#8220;Bus Shelter Manufacturers&#8221;</strong><ul><li><strong>Then:</strong> Position 8 (Buried at bottom of Page 1)</li><li><strong>Now:</strong> <strong>AI Overview Winner</strong> (Position 1)</li><li><em>Why it matters:</em> We have replaced the &#8220;search result&#8221; with the &#8220;answer.&#8221; Google AI now presents Alotek as the primary manufacturer to check.</li></ul></li><li><strong>&#8220;Outdoor Pram Storage&#8221;</strong><ul><li><strong>Then:</strong> Position 11 (The &#8220;Graveyard&#8221; of Page 2)</li><li><strong>Now:</strong> <strong>AI Overview Winner</strong> (Position 1)</li><li><em>Why it matters:</em> We jumped 10 spots to become the default recommendation.</li></ul></li><li><strong>&#8220;Bus Shelters for Parish Councils&#8221;</strong><ul><li><strong>Then:</strong> Not Ranked (100+)</li><li><strong>Now:</strong> <strong>Position #1</strong></li><li><em>Why it matters:</em> This is a specific B2B contract term. We took Alotek from &#8220;Who?&#8221; to the <strong>#1 option in the UK</strong> for local government buyers.</li></ul></li></ul>
-        <figure><img loading="lazy" decoding="async" width="1024" height="691" src="https://churchtownmedia.co.uk/wp-content/uploads/2026/02/parish-bus-shelters-search-1024x691.png" alt="" /></figure>
+        
         <hr />
         <h3><strong>What&#8217;s Next? (The &#8220;Striking Distance&#8221; Plan)</strong></h3>
         <p>This is <strong>Phase 1</strong>. We have successfully turned the lights on and secured the top spot in Google&#8217;s AI results for key terms.</p>
@@ -162,7 +162,7 @@ export interface BlogPost {
       title: "Eating Our Own Dog Food: Why We Ignored Google’s Advice on Our New Ad Campaign",
       date: "Jan 29, 2026",
       category: "Agency Life",
-      image: "https://churchtownmedia.co.uk/wp-content/uploads/2026/01/google-ads-scaled.png",
+      image: "/images/google-ads.png", // UPDATED: Points to local file
       excerpt: "We ignored Google’s advice and launched a £15/day ad campaign. See the exact settings, keywords, and strategy Churchtown Media uses to get local leads.",
       content: `
         <p>It’s a strange feeling for a digital marketer to press &#8220;Publish&#8221; on their <em>own</em> ad campaign.</p>
@@ -194,7 +194,7 @@ export interface BlogPost {
         <p>We are using &#8220;Phrase Match&#8221; keywords. This means if we target <strong>&#8220;Web Design Southport&#8221;</strong>, someone has to type that exact phrase (or a very close variation) to see us. We won&#8217;t show up for loosely related terms like &#8220;graphic design.&#8221;</p>
         <p>This makes Google’s algorithm nervous because it can&#8217;t spend our money as fast as it wants to. But it makes <em>us</em> sleep better.</p>
         <h3>The Numbers: £15 a Day</h3>
-        <figure><img decoding="async" width="1024" height="576" src="https://churchtownmedia.co.uk/wp-content/uploads/2026/01/google-ads-1-1024x576.png" alt="Churchtown Media Google Ads dashboard showing the active 'MLEC Readiness Audit' campaign with a strict £15 daily budget and manual bidding strategy." /></figure>
+        <figure><img decoding="async" width="1024" height="576" src="/images/google-ads.png" alt="Churchtown Media Google Ads dashboard showing the active 'MLEC Readiness Audit' campaign with a strict £15 daily budget and manual bidding strategy." /></figure>
         <p>We set our initial budget to exactly £15.00 per day.</p>
         <p>Why? In the Southport market for our niche, a good click costs between £3 and £5. This budget guarantees us about 3 to 5 highly qualified visitors to our site every single day.</p>
         <p>That is enough data to know if our message is resonating, but not so much that we burn money while testing.</p>
