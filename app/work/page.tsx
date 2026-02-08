@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { ArrowRight, Box, Shield, Zap, TrendingUp, Layout } from "lucide-react";
+import { ArrowRight, Box, Shield, Zap, TrendingUp, Layout, Plus, CheckCircle2 } from "lucide-react";
 import type { Metadata } from "next";
 
 // 1. STRATEGIC METADATA
@@ -18,7 +18,27 @@ export const metadata: Metadata = {
   }
 };
 
-// 2. JSON-LD SCHEMA (Service Offerings)
+// 2. WORK / FRAMEWORK FAQS
+const faqs = [
+  {
+    question: "Are these just templates?",
+    answer: "No. Think of them as 'architectural blueprints'. We have pre-built the core engines (the database structures, the SEO schema, the lead capture flows) for specific industries, but the design/branding is 100% custom to you."
+  },
+  {
+    question: "How much faster is this method?",
+    answer: "Building from scratch usually takes 8-12 weeks. Because we start with a proven industry framework, we can typically launch a fully custom, high-performance site in 3-5 weeks."
+  },
+  {
+    question: "Can I migrate my existing content?",
+    answer: "Yes. We can import your existing blog posts, case studies, and images into our framework, instantly upgrading them with better SEO structure and faster load speeds."
+  },
+  {
+    question: "Do you have a framework for my industry?",
+    answer: "The four listed above are our specialties, but the 'Revenue Engine' principles apply to any business. We have successfully adapted these frameworks for Healthcare, Education, and Non-Profits."
+  }
+];
+
+// 3. JSON-LD SCHEMA (Collection + FAQ)
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
@@ -39,7 +59,16 @@ const jsonLd = {
     { '@type': 'Service', 'name': 'The Trust Authority Platform', 'audience': 'Legal & Financial' },
     { '@type': 'Service', 'name': 'The SaaS Dashboard', 'audience': 'Logistics & Operations' },
     { '@type': 'Service', 'name': 'The Booking Accelerator', 'audience': 'Retail & Aesthetics' }
-  ]
+  ],
+  // --- FAQ SCHEMA ---
+  'mainEntity': faqs.map(faq => ({
+    '@type': 'Question',
+    'name': faq.question,
+    'acceptedAnswer': {
+      '@type': 'Answer',
+      'text': faq.answer
+    }
+  }))
 };
 
 export default function WorkPage() {
@@ -96,7 +125,6 @@ export default function WorkPage() {
         <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 rounded-full px-4 py-1.5 mb-8">
             <span className="text-xs font-bold text-blue-700 uppercase tracking-wide">Proven Industry Frameworks</span>
         </div>
-        {/* Optimized H1 for SEO + Impact */}
         <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 mb-8 tracking-tight">
           We don't guess. <br/> <span className="text-blue-600">We deploy what works.</span>
         </h1>
@@ -160,6 +188,29 @@ export default function WorkPage() {
 
             </article>
         ))}
+      </div>
+
+      {/* --- FAQ SECTION --- */}
+      <div className="max-w-4xl mx-auto px-6 mb-32">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-slate-900 mb-4">Framework Questions</h2>
+          <p className="text-slate-600">How our model differs from standard web design.</p>
+        </div>
+        <div className="space-y-4">
+          {faqs.map((faq, i) => (
+            <details key={i} className="group border border-slate-200 rounded-2xl bg-white open:shadow-lg transition-all duration-300">
+              <summary className="flex items-center justify-between p-6 cursor-pointer list-none text-lg font-bold text-slate-900">
+                {faq.question}
+                <span className="transition-transform group-open:rotate-45">
+                  <Plus className="w-5 h-5 text-blue-600" />
+                </span>
+              </summary>
+              <div className="px-6 pb-6 text-slate-600 leading-relaxed">
+                {faq.answer}
+              </div>
+            </details>
+          ))}
+        </div>
       </div>
 
       {/* CTA SECTION */}

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import React from "react";
 import Link from "next/link";
-import { Zap, Smartphone, Code2, ArrowRight, BarChart3, CheckCircle2 } from "lucide-react";
+import { Zap, Smartphone, Code2, ArrowRight, BarChart3, CheckCircle2, Plus } from "lucide-react";
 
 // 1. REGIONAL ENTERPRISE METADATA
 export const metadata: Metadata = {
@@ -18,7 +18,31 @@ export const metadata: Metadata = {
   }
 };
 
-// 2. JSON-LD SCHEMA (Regional Focus)
+// 2. FAQ DATA (Centralized for easy editing)
+const faqs = [
+  {
+    question: "Why shouldn't I just use WordPress or Wix?",
+    answer: "WordPress and Wix rely on heavy plugins and generic templates that slow down your site. A slow site (over 3 seconds) loses 53% of visitors instantly. We build custom Next.js websites that load instantly and are unhackable."
+  },
+  {
+    question: "Will I be able to edit the text myself?",
+    answer: "Yes! We can connect your site to a 'Headless CMS'. This gives you a simple dashboard—easier than Facebook—where you can update text, upload blog posts, and change images without touching code."
+  },
+  {
+    question: "How long does it take to build?",
+    answer: "For a standard 5-page small business website, we typically launch within 2-4 weeks. Larger projects with complex functionality take 6-8 weeks."
+  },
+  {
+    question: "Do you work with businesses outside of Southport?",
+    answer: "Absolutely. While we specialize in North West growth, we work with clients across the UK and globally via Zoom and Slack."
+  },
+  {
+    question: "What if I need help after the site is live?",
+    answer: "We offer optional monthly maintenance packages that include hosting, domain renewal, and 24/7 monitoring. Or, we can hand over the keys and train you to manage it yourself."
+  }
+];
+
+// 3. JSON-LD SCHEMA (Service + FAQ Combined)
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
@@ -44,10 +68,19 @@ const jsonLd = {
     '@type': 'Offer',
     'priceCurrency': 'GBP',
     'availability': 'https://schema.org/InStock'
-  }
+  },
+  // --- NEW: FAQ SCHEMA AUTOMATION ---
+  'mainEntity': faqs.map(faq => ({
+    '@type': 'Question',
+    'name': faq.question,
+    'acceptedAnswer': {
+      '@type': 'Answer',
+      'text': faq.answer
+    }
+  }))
 };
 
-// 3. MAIN COMPONENT
+// 4. MAIN COMPONENT
 export default function WebDesignPage() {
   
   const features = [
@@ -70,7 +103,6 @@ export default function WebDesignPage() {
         <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 rounded-full px-4 py-1.5 mb-8">
             <span className="text-xs font-bold text-blue-700 uppercase tracking-wide">Enterprise Web Design</span>
         </div>
-        {/* H1 Optimized for SEO ("Web Design" included) */}
         <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 mb-8 tracking-tight leading-tight">
           Next.js Web Design <br/> <span className="text-blue-600">that prints money.</span>
         </h1>
@@ -90,7 +122,7 @@ export default function WebDesignPage() {
         ))}
       </div>
 
-      {/* NEW SECTION: The SEO Cross-Sell (Internal Linking Strategy) */}
+      {/* SEO CROSS-SELL */}
       <div className="bg-white py-20 border-y border-slate-100 mb-20">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
             <div className="flex-1">
@@ -110,20 +142,41 @@ export default function WebDesignPage() {
             </div>
             <div className="flex-1 w-full bg-slate-50 rounded-2xl p-8 border border-slate-100">
                 <div className="space-y-4">
-                    <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm border border-slate-100">
-                        <CheckCircle2 className="w-5 h-5 text-emerald-500" />
-                        <span className="font-mono text-sm text-slate-600">Perfect Core Web Vitals</span>
-                    </div>
-                    <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm border border-slate-100">
-                        <CheckCircle2 className="w-5 h-5 text-emerald-500" />
-                        <span className="font-mono text-sm text-slate-600">Schema.org Structured Data</span>
-                    </div>
-                    <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm border border-slate-100">
-                        <CheckCircle2 className="w-5 h-5 text-emerald-500" />
-                        <span className="font-mono text-sm text-slate-600">Semantic HTML5 Architecture</span>
-                    </div>
+                    {[
+                      "Perfect Core Web Vitals", 
+                      "Schema.org Structured Data", 
+                      "Semantic HTML5 Architecture"
+                    ].map((item, i) => (
+                      <div key={i} className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm border border-slate-100">
+                          <CheckCircle2 className="w-5 h-5 text-emerald-500" />
+                          <span className="font-mono text-sm text-slate-600">{item}</span>
+                      </div>
+                    ))}
                 </div>
             </div>
+        </div>
+      </div>
+
+      {/* --- NEW: FAQ SECTION --- */}
+      <div className="max-w-4xl mx-auto px-6 mb-32">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-slate-900 mb-4">Common Questions</h2>
+          <p className="text-slate-600">Everything you need to know about our process.</p>
+        </div>
+        <div className="space-y-4">
+          {faqs.map((faq, i) => (
+            <details key={i} className="group border border-slate-200 rounded-2xl bg-white open:shadow-lg transition-all duration-300">
+              <summary className="flex items-center justify-between p-6 cursor-pointer list-none text-lg font-bold text-slate-900">
+                {faq.question}
+                <span className="transition-transform group-open:rotate-45">
+                  <Plus className="w-5 h-5 text-blue-600" />
+                </span>
+              </summary>
+              <div className="px-6 pb-6 text-slate-600 leading-relaxed">
+                {faq.answer}
+              </div>
+            </details>
+          ))}
         </div>
       </div>
 

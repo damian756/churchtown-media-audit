@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import React from "react";
 import Link from "next/link";
-import { Search, MapPin, BarChart, ArrowRight, Laptop, CheckCircle2 } from "lucide-react";
+import { Search, MapPin, BarChart, ArrowRight, Laptop, CheckCircle2, Plus } from "lucide-react";
 
 // 1. REGIONAL STRATEGY METADATA
 export const metadata: Metadata = {
@@ -18,7 +18,31 @@ export const metadata: Metadata = {
   }
 };
 
-// 2. JSON-LD SCHEMA (Regional Focus)
+// 2. SEO FAQs (Centralized Data)
+const faqs = [
+  {
+    question: "How long does it take to see results?",
+    answer: "SEO is a compound effect. While technical fixes can improve rankings in weeks, significant revenue growth typically kicks in around months 3-6. We build long-term assets, not quick hacks."
+  },
+  {
+    question: "Do you guarantee #1 rankings?",
+    answer: "No ethical agency can guarantee a specific ranking because Google's algorithm changes daily. We guarantee a data-driven process, transparent reporting, and measurable improvements in traffic and leads."
+  },
+  {
+    question: "Why is my competitor ranking higher than me?",
+    answer: "It's usually a combination of three things: they have more 'Authority' (backlinks), their site is faster/better optimized, or their content answers the user's question better. We run a 'Gap Analysis' to find exactly how to beat them."
+  },
+  {
+    question: "Do I need a new website for SEO?",
+    answer: "Not always. We can optimize most existing sites. However, if your current site is built on a slow platform (like Wix or an old WordPress theme) that is hurting your ability to rank, we might recommend a migration to Next.js."
+  },
+  {
+    question: "What is 'Technical SEO'?",
+    answer: "Think of it as the foundation of a house. It involves optimizing site speed, mobile usability, and code structure so Google's bots can easily read and index your content. Without it, your keywords don't matter."
+  }
+];
+
+// 3. JSON-LD SCHEMA (Service + FAQ)
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
@@ -44,10 +68,19 @@ const jsonLd = {
     '@type': 'Offer',
     'priceCurrency': 'GBP',
     'availability': 'https://schema.org/InStock'
-  }
+  },
+  // --- FAQ SCHEMA ---
+  'mainEntity': faqs.map(faq => ({
+    '@type': 'Question',
+    'name': faq.question,
+    'acceptedAnswer': {
+      '@type': 'Answer',
+      'text': faq.answer
+    }
+  }))
 };
 
-// 3. MAIN COMPONENT
+// 4. MAIN COMPONENT
 export default function SEOPage() {
   
   const strategies = [
@@ -70,7 +103,6 @@ export default function SEOPage() {
         <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 rounded-full px-4 py-1.5 mb-8">
             <span className="text-xs font-bold text-blue-700 uppercase tracking-wide">Data-Driven Growth</span>
         </div>
-        {/* H1 Optimized for SEO Keyword "Data-Driven SEO" */}
         <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 mb-8 tracking-tight leading-tight">
           Data-Driven SEO <br/> <span className="text-blue-600">that dominates Google.</span>
         </h1>
@@ -90,7 +122,7 @@ export default function SEOPage() {
         ))}
       </div>
 
-      {/* NEW SECTION: The Web Design Cross-Sell (Closing the Loop) */}
+      {/* WEB DESIGN CROSS-SELL */}
       <div className="bg-white py-20 border-y border-slate-100 mb-20">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
             <div className="flex-1 bg-slate-50 rounded-2xl p-8 border border-slate-100 w-full">
@@ -124,6 +156,29 @@ export default function SEOPage() {
                     See our Web Design Standards <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
             </div>
+        </div>
+      </div>
+
+      {/* --- NEW: FAQ SECTION --- */}
+      <div className="max-w-4xl mx-auto px-6 mb-32">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-slate-900 mb-4">Common Questions</h2>
+          <p className="text-slate-600">Straight answers to your SEO concerns.</p>
+        </div>
+        <div className="space-y-4">
+          {faqs.map((faq, i) => (
+            <details key={i} className="group border border-slate-200 rounded-2xl bg-white open:shadow-lg transition-all duration-300">
+              <summary className="flex items-center justify-between p-6 cursor-pointer list-none text-lg font-bold text-slate-900">
+                {faq.question}
+                <span className="transition-transform group-open:rotate-45">
+                  <Plus className="w-5 h-5 text-blue-600" />
+                </span>
+              </summary>
+              <div className="px-6 pb-6 text-slate-600 leading-relaxed">
+                {faq.answer}
+              </div>
+            </details>
+          ))}
         </div>
       </div>
 

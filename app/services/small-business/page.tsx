@@ -1,12 +1,12 @@
 import React from "react";
 import Link from "next/link";
-import { Rocket, MapPin, MousePointer2, CheckCircle2, ArrowRight, TrendingUp, ShieldCheck, Zap } from "lucide-react";
+import { Rocket, MapPin, MousePointer2, CheckCircle2, ArrowRight, TrendingUp, ShieldCheck, Zap, AlertTriangle, Plus } from "lucide-react";
 import type { Metadata } from "next";
 
 // 1. HIGH-INTENT METADATA
 export const metadata: Metadata = {
   title: 'Small Business Web Design & Marketing Packages | Southport',
-  description: 'Affordable, high-performance websites and Local SEO for Southport trades, shops, and startups. Stop relying on word of mouth.',
+  description: 'Affordable, high-performance websites and Local SEO for Southport trades, shops, and startups. Better than WordPress. Stop relying on word of mouth.',
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk/services/small-business',
   },
@@ -18,7 +18,27 @@ export const metadata: Metadata = {
   }
 };
 
-// 2. SERVICE PRODUCT SCHEMA (Updated with AggregateRating)
+// 2. FAQS
+const faqs = [
+  {
+    question: "Do you use WordPress or Elementor?",
+    answer: "No. We build with Next.js (the same tech used by Netflix). WordPress sites often rely on heavy plugins like Elementor or WPBakery which slow down your site and get hacked easily. Our sites are faster, more secure, and rank better."
+  },
+  {
+    question: "Can I still edit the text myself?",
+    answer: "Yes! We connect your high-tech site to a simple dashboard. You can update your prices, upload gallery photos, and write blog posts just as easily as you would on WordPress, but without the headache of software updates."
+  },
+  {
+    question: "How much does it cost?",
+    answer: "Our Small Business Packages start from just £499 or affordable monthly plans. We believe every local business deserves a website that actually generates leads, not just a digital brochure."
+  },
+  {
+    question: "My current WordPress site is broken. Can you fix it?",
+    answer: "We typically recommend a 'Rescue & Rebuild'. Instead of patching a slow, broken WordPress site, we can import your content into our high-performance framework in as little as 1 week."
+  }
+];
+
+// 3. SERVICE PRODUCT SCHEMA
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
@@ -33,39 +53,25 @@ const jsonLd = {
       'addressRegion': 'Merseyside',
       'addressCountry': 'UK'
     },
-    // --- FIX: Added Rating to satisfy SEMrush ---
     'aggregateRating': {
       '@type': 'AggregateRating',
       'ratingValue': '5.0',
       'reviewCount': '24'
     }
-    // ---------------------------------------------
   },
   'description': 'A complete digital starter kit for local businesses including 5-page website, Google Business Profile optimization, and local citation building.',
   'areaServed': {
     '@type': 'City',
     'name': 'Southport'
   },
-  'hasOfferCatalog': {
-    '@type': 'OfferCatalog',
-    'name': 'Growth Tiers',
-    'itemListElement': [
-      {
-        '@type': 'Offer',
-        'itemOffered': {
-          '@type': 'Service',
-          'name': 'Local Starter Website'
-        }
-      },
-      {
-        '@type': 'Offer',
-        'itemOffered': {
-          '@type': 'Service',
-          'name': 'Local Domination SEO'
-        }
-      }
-    ]
-  }
+  'mainEntity': faqs.map(faq => ({
+    '@type': 'Question',
+    'name': faq.question,
+    'acceptedAnswer': {
+      '@type': 'Answer',
+      'text': faq.answer
+    }
+  }))
 };
 
 export default function SmallBusinessPage() {
@@ -110,7 +116,7 @@ export default function SmallBusinessPage() {
                 </div>
             </div>
             
-            {/* Hero Visual - Simulated "Local Hero" Dashboard */}
+            {/* Hero Visual */}
             <div className="relative">
                 <div className="bg-slate-800/50 backdrop-blur-xl border border-slate-700 p-6 rounded-3xl shadow-2xl transform rotate-3 hover:rotate-0 transition-all duration-500">
                     <div className="flex items-center gap-4 mb-6 pb-6 border-b border-slate-700/50">
@@ -142,12 +148,12 @@ export default function SmallBusinessPage() {
         </div>
       </section>
 
-      {/* 2. THE PROBLEM (Agitation) */}
+      {/* 2. THE PROBLEM (Why DIY/WordPress Fails) */}
       <section className="py-24 px-6 bg-white">
         <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-6">Why most small business websites fail</h2>
             <p className="text-lg text-slate-600">
-                Most local businesses make one of two mistakes: they buy a "cheap" DIY site that nobody can find, or they overpay for a "fancy" agency site that looks pretty but generates zero leads.
+                Most local businesses make one of two mistakes: they buy a "cheap" DIY site that nobody can find, or they struggle with a slow <strong>WordPress</strong> site full of broken plugins.
             </p>
         </div>
         
@@ -163,26 +169,57 @@ export default function SmallBusinessPage() {
                 <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-orange-600 mb-6 group-hover:scale-110 transition-transform">
                     <Zap className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">Too Slow on Mobile</h3>
-                <p className="text-slate-600">Customers in Southport are searching on 4G/5G. If your site takes &gt;3 seconds to load, they leave. Ours load in under 1s.</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">Too Slow (Plugin Bloat)</h3>
+                <p className="text-slate-600">WordPress sites using <strong>Elementor or Divi</strong> are heavy. They load slowly on mobile, causing 53% of customers to leave instantly.</p>
             </div>
             <div className="p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-lg transition-all group">
                 <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-6 group-hover:scale-110 transition-transform">
                     <ShieldCheck className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">Broken Trust</h3>
-                <p className="text-slate-600">Broken links, old copyright dates, and generic templates scream "amateur." We build trust instantly with premium design.</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">Hacked & Broken</h3>
+                <p className="text-slate-600">Missed a plugin update? Your site breaks. We build static, secure sites that cannot be hacked by bots.</p>
             </div>
         </div>
       </section>
 
-      {/* 3. THE SOLUTION - FIX: Uses Grid for better mobile stacking */}
+      {/* 3. COMPARISON TABLE */}
+      <section className="py-20 px-6 bg-slate-50 border-y border-slate-200">
+        <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+                <h2 className="text-3xl font-bold text-slate-900 mb-4">The "New Way" vs. The "Old Way"</h2>
+                <p className="text-slate-600">Why switching from WordPress to Next.js is the best investment you'll make.</p>
+            </div>
+            <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-200">
+                <div className="grid grid-cols-3 bg-slate-900 text-white p-6 font-bold text-sm md:text-lg">
+                    <div className="col-span-1">Feature</div>
+                    <div className="col-span-1 text-center text-slate-400">WordPress / Wix</div>
+                    <div className="col-span-1 text-center text-blue-400">Churchtown Media</div>
+                </div>
+                {[
+                    { feat: "Load Speed", bad: "3-6 Seconds", good: "0.4 Seconds (Instant)" },
+                    { feat: "Security", bad: "Vulnerable Plugins", good: "Bank-Grade Static" },
+                    { feat: "Google Ranking", bad: "Average", good: "Superior (Core Web Vitals)" },
+                    { feat: "Maintenance", bad: "Constant Updates", good: "Zero Maintenance" },
+                    { feat: "Cost", bad: "Hidden Plugin Fees", good: "Flat Rate" },
+                ].map((row, i) => (
+                    <div key={i} className="grid grid-cols-3 p-6 border-b border-slate-100 hover:bg-slate-50 transition-colors items-center">
+                        <div className="col-span-1 font-bold text-slate-900">{row.feat}</div>
+                        <div className="col-span-1 text-center text-slate-500">{row.bad}</div>
+                        <div className="col-span-1 text-center font-bold text-blue-600 flex justify-center gap-2 items-center">
+                            <CheckCircle2 className="w-4 h-4" /> {row.good}
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+      </section>
+
+      {/* 4. THE SOLUTION */}
       <section className="py-24 px-6 bg-slate-900 text-white border-y border-slate-800">
         <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                 
                 {/* Left Column: Content */}
-                {/* FIX: 'lg:sticky lg:top-24' ensures it only sticks on large screens, avoiding mobile overlap */}
                 <div className="lg:sticky lg:top-24">
                     <div className="inline-flex items-center gap-2 rounded-full bg-emerald-500/10 border border-emerald-500/20 px-4 py-1.5 text-sm font-bold text-emerald-400 mb-6">
                         <CheckCircle2 className="h-4 w-4" />
@@ -241,8 +278,30 @@ export default function SmallBusinessPage() {
         </div>
       </section>
 
-      {/* 4. CTA SECTION */}
-      <section className="bg-white py-24 px-6 text-center">
+      {/* 5. FAQ SECTION */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-12">Common Questions</h2>
+            <div className="space-y-4">
+                {faqs.map((faq, i) => (
+                    <details key={i} className="group border border-slate-200 rounded-2xl bg-slate-50 open:bg-white open:shadow-lg transition-all duration-300">
+                        <summary className="flex items-center justify-between p-6 cursor-pointer list-none text-lg font-bold text-slate-900">
+                            {faq.question}
+                            <span className="transition-transform group-open:rotate-45">
+                                <Plus className="w-5 h-5 text-blue-600" />
+                            </span>
+                        </summary>
+                        <div className="px-6 pb-6 text-slate-600 leading-relaxed">
+                            {faq.answer}
+                        </div>
+                    </details>
+                ))}
+            </div>
+        </div>
+      </section>
+
+      {/* 6. CTA SECTION */}
+      <section className="bg-slate-50 py-24 px-6 text-center border-t border-slate-200">
         <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-6">Small budget? Big ambition?</h2>
             <p className="text-lg text-slate-600 mb-10">
