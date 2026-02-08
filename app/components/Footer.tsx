@@ -28,51 +28,11 @@ export default function Footer() {
             
             {/* SOCIAL ICONS */}
             <div className="flex gap-5 pt-4">
-                <a 
-                    href="https://www.facebook.com/ChurchtownMedia/" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="text-slate-400 hover:text-white hover:scale-110 transition-all"
-                    aria-label="Facebook"
-                >
-                    <Facebook className="w-5 h-5" />
-                </a>
-                <a 
-                    href="https://twitter.com/churchtownmedia" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="text-slate-400 hover:text-white hover:scale-110 transition-all"
-                    aria-label="Twitter"
-                >
-                    <Twitter className="w-5 h-5" />
-                </a>
-                <a 
-                    href="https://linkedin.com/company/churchtownmedia" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="text-slate-400 hover:text-white hover:scale-110 transition-all"
-                    aria-label="LinkedIn"
-                >
-                    <Linkedin className="w-5 h-5" />
-                </a>
-                <a 
-                    href="https://instagram.com/churchtownmedia" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="text-slate-400 hover:text-white hover:scale-110 transition-all"
-                    aria-label="Instagram"
-                >
-                    <Instagram className="w-5 h-5" />
-                </a>
-                <a 
-                    href="https://youtube.com/@churchtownmedia" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="text-slate-400 hover:text-white hover:scale-110 transition-all"
-                    aria-label="YouTube"
-                >
-                    <Youtube className="w-5 h-5" />
-                </a>
+                <a href="https://www.facebook.com/ChurchtownMedia/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white hover:scale-110 transition-all" aria-label="Facebook"><Facebook className="w-5 h-5" /></a>
+                <a href="https://twitter.com/churchtownmedia" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white hover:scale-110 transition-all" aria-label="Twitter"><Twitter className="w-5 h-5" /></a>
+                <a href="https://linkedin.com/company/churchtownmedia" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white hover:scale-110 transition-all" aria-label="LinkedIn"><Linkedin className="w-5 h-5" /></a>
+                <a href="https://instagram.com/churchtownmedia" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white hover:scale-110 transition-all" aria-label="Instagram"><Instagram className="w-5 h-5" /></a>
+                <a href="https://youtube.com/@churchtownmedia" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white hover:scale-110 transition-all" aria-label="YouTube"><Youtube className="w-5 h-5" /></a>
             </div>
         </div>
 
@@ -80,38 +40,28 @@ export default function Footer() {
         <div>
             <h4 className="text-slate-200 font-bold mb-6 text-sm uppercase tracking-wider">Services</h4>
             <ul className="space-y-4 text-sm font-medium text-slate-500">
-                <li>
-                    <Link href="/services/web-design" className="hover:text-blue-400 transition-colors">
-                        Enterprise Web Design
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/services/seo" className="hover:text-blue-400 transition-colors">
-                        Data-Driven SEO
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/services/small-business" className="hover:text-blue-400 transition-colors">
-                        Small Business Websites
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/audit" className="hover:text-blue-400 transition-colors">
-                        Free SEO Audit
-                    </Link>
-                </li>
+                <li><Link href="/services/web-design" className="hover:text-blue-400 transition-colors">Enterprise Web Design</Link></li>
+                <li><Link href="/services/seo" className="hover:text-blue-400 transition-colors">Data-Driven SEO</Link></li>
+                <li><Link href="/services/small-business" className="hover:text-blue-400 transition-colors">Small Business Websites</Link></li>
+                <li><Link href="/audit" className="hover:text-blue-400 transition-colors">Free SEO Audit</Link></li>
             </ul>
         </div>
 
-        {/* COL 3: AGENCY */}
+        {/* COL 3: AREAS SERVED (Updated with Big 5) */}
         <div>
-            <h4 className="text-slate-200 font-bold mb-6 text-sm uppercase tracking-wider">Agency</h4>
+            <h4 className="text-slate-200 font-bold mb-6 text-sm uppercase tracking-wider">Areas Served</h4>
             <ul className="space-y-4 text-sm font-medium text-slate-500">
-                <li><Link href="/work" className="hover:text-blue-400 transition-colors">Industry Frameworks</Link></li>
-                <li><Link href="/blog" className="hover:text-blue-400 transition-colors">Knowledge Base</Link></li>
                 <li><Link href="/southport-growth" className="hover:text-blue-400 transition-colors">Southport Growth Hub</Link></li>
-                <li><Link href="/testimonials" className="hover:text-blue-400 transition-colors">Client Reviews</Link></li> {/* ADDED */}
-                <li><Link href="/audit" className="text-blue-500 font-bold hover:text-white transition-colors">Get Free Audit</Link></li>
+                <li><Link href="/locations/manchester" className="hover:text-blue-400 transition-colors">Web Design Manchester</Link></li>
+                <li><Link href="/locations/liverpool" className="hover:text-blue-400 transition-colors">Web Design Liverpool</Link></li>
+                <li><Link href="/locations/preston" className="hover:text-blue-400 transition-colors">Web Design Preston</Link></li>
+                <li><Link href="/locations/blackpool" className="hover:text-blue-400 transition-colors">Web Design Blackpool</Link></li>
+                
+                <li className="pt-2 border-t border-white/5 mt-2">
+                    <Link href="/locations" className="text-blue-500 font-bold hover:text-white transition-colors flex items-center gap-1">
+                        View All Locations →
+                    </Link>
+                </li>
             </ul>
         </div>
 
