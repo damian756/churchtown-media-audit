@@ -50,7 +50,7 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: '/seo-company-southport', // Found in index
+        source: '/seo-company-southport',
         destination: '/services/seo',
         permanent: true,
       },
@@ -59,6 +59,13 @@ const nextConfig: NextConfig = {
         destination: '/services/seo',
         permanent: true,
       },
+      // --- ADDED PRESTON REDIRECT HERE ---
+      {
+        source: '/seo-preston',
+        destination: '/services/seo',
+        permanent: true,
+      },
+      // -----------------------------------
       {
         source: '/search-engine-optimisation',
         destination: '/services/seo',
@@ -70,12 +77,12 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: '/web-design-southport', // Found in index
+        source: '/web-design-southport',
         destination: '/services/web-design',
         permanent: true,
       },
       {
-        source: '/website-designers-southport', // Common variation
+        source: '/website-designers-southport',
         destination: '/services/web-design',
         permanent: true,
       },
@@ -123,7 +130,7 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: '/author/:slug*', // Hides old "admin" user pages
+        source: '/author/:slug*',
         destination: '/about', 
         permanent: true,
       },
@@ -133,7 +140,7 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: '/feed', // Common RSS feed 404
+        source: '/feed',
         destination: '/blog', 
         permanent: true,
       },
@@ -152,7 +159,6 @@ const nextConfig: NextConfig = {
         destination: '/testimonials',
         permanent: true,
       },
-      // Catch random 404 pages layout
       {
         source: '/404-layout',
         destination: '/',
