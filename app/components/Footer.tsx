@@ -3,9 +3,11 @@
 import React from "react";
 import Link from "next/link";
 // 1. VERIFY IMPORTS: Ensure all social icons are imported here
-import { Twitter, Linkedin, Instagram, Youtube, Mail, MapPin } from "lucide-react";
+import { Twitter, Linkedin, Instagram, Youtube, Mail, MapPin, Phone, Facebook } from "lucide-react";
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="w-full bg-gradient-to-b from-slate-900 via-slate-900 to-black text-slate-400 py-20 border-t border-white/5 mt-auto relative overflow-hidden">
       
@@ -27,6 +29,17 @@ export default function Footer() {
             
             {/* 2. SOCIAL ICONS */}
             <div className="flex gap-5 pt-4">
+                {/* Facebook (NEW) */}
+                <a 
+                    href="https://www.facebook.com/ChurchtownMedia/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-slate-400 hover:text-white hover:scale-110 transition-all"
+                    aria-label="Facebook"
+                >
+                    <Facebook className="w-5 h-5" />
+                </a>
+
                 {/* Twitter / X */}
                 <a 
                     href="https://twitter.com/churchtownmedia" 
@@ -51,7 +64,7 @@ export default function Footer() {
 
                 {/* Instagram */}
                 <a 
-                    href="https://instagram.com/churchtownmedia" 
+                    href="https://www.linkedin.com/in/damian-roche-7ba8293a5/" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="text-slate-400 hover:text-white hover:scale-110 transition-all"
@@ -107,7 +120,7 @@ export default function Footer() {
                 <li><Link href="/work" className="hover:text-blue-400 transition-colors">Industry Frameworks</Link></li>
                 <li><Link href="/blog" className="hover:text-blue-400 transition-colors">Knowledge Base</Link></li>
                 
-                {/* --- FIX: Updated Link to point to the correct page --- */}
+                {/* --- Updated Link to point to the correct page --- */}
                 <li><Link href="/southport-growth" className="hover:text-blue-400 transition-colors">Southport Growth Hub</Link></li>
                 
                 <li><Link href="/audit" className="text-blue-500 font-bold hover:text-white transition-colors">Get Free Audit</Link></li>
@@ -126,6 +139,11 @@ export default function Footer() {
                     <Mail className="w-5 h-5 text-blue-500 shrink-0" />
                     <a href="mailto:hello@churchtownmedia.co.uk" className="hover:text-white transition-colors">hello@churchtownmedia.co.uk</a>
                 </li>
+                {/* Phone Number (NEW) */}
+                <li className="flex items-center gap-3">
+                    <Phone className="w-5 h-5 text-blue-500 shrink-0" />
+                    <a href="tel:01704635785" className="hover:text-white transition-colors">01704 635785</a>
+                </li>
             </ul>
         </div>
 
@@ -133,7 +151,8 @@ export default function Footer() {
 
       {/* COPYRIGHT BAR */}
       <div className="max-w-7xl mx-auto px-6 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium text-slate-600 relative z-10">
-        <p>&copy; {new Date().getFullYear()} Churchtown Media Ltd. All rights reserved.</p>
+        {/* Company Number Added Here */}
+        <p>&copy; {currentYear} Churchtown Media Ltd. Company No. 16960442. All rights reserved.</p>
         
         <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-slate-400 transition-colors">Privacy Policy</Link>

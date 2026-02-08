@@ -70,6 +70,8 @@ export default function ContactPage() {
                     <h3 className="text-2xl font-bold text-slate-900 mb-6">Contact Details</h3>
                     
                     <div className="space-y-6">
+                        
+                        {/* EMAIL */}
                         <div className="flex items-start gap-4">
                             <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
                                 <Mail className="w-6 h-6" />
@@ -82,6 +84,21 @@ export default function ContactPage() {
                             </div>
                         </div>
 
+                        {/* PHONE (NEW ADDITION) */}
+                        <div className="flex items-start gap-4">
+                            <div className="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 shrink-0">
+                                <Phone className="w-6 h-6" />
+                            </div>
+                            <div>
+                                <p className="text-sm font-bold text-slate-400 uppercase tracking-wide mb-1">Phone</p>
+                                <a href="tel:01704635785" className="text-lg font-medium text-slate-900 hover:text-blue-600 transition-colors">
+                                    01704 635785
+                                </a>
+                                <p className="text-xs text-slate-400 mt-1">Mon-Fri, 9am - 5pm</p>
+                            </div>
+                        </div>
+
+                        {/* ADDRESS */}
                         <div className="flex items-start gap-4">
                             <div className="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 shrink-0">
                                 <MapPin className="w-6 h-6" />
