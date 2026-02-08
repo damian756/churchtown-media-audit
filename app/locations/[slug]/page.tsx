@@ -2,15 +2,13 @@ import React from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MapPin, Trophy, ArrowRight, CheckCircle2, Zap, BarChart } from "lucide-react";
-import { locations, getLocation } from "@/lib/locations"; // Updated to use cleaner @ alias
+import { locations, getLocation } from "@/lib/locations";
 import type { Metadata } from "next";
 
-// 1. Define Props (Next.js 15/16 Style)
 type Props = {
   params: Promise<{ slug: string }>;
 };
 
-// 2. Dynamic Metadata
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const resolvedParams = await params;
   const location = getLocation(resolvedParams.slug);
@@ -18,12 +16,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!location) return {};
 
   return {
-    title: `Web Design & SEO Agency ${location.name} | Churchtown Media`,
+    // FIXED: Removed suffix to prevent double branding
+    title: `Web Design & SEO Agency ${location.name}`,
     description: location.metaDesc,
   };
 }
 
-// 3. Static Generation (Crucial for Speed/SEO)
 export async function generateStaticParams() {
   return locations.map((loc) => ({
     slug: loc.slug,
@@ -44,7 +42,6 @@ export default async function LocationPage({ params }: Props) {
       {/* HERO SECTION */}
       <section className="px-6 mb-20">
         <div className="max-w-7xl mx-auto bg-slate-900 rounded-3xl p-8 md:p-16 text-white relative overflow-hidden shadow-2xl">
-            {/* Abstract bg pattern */}
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/20 blur-[100px] rounded-full pointer-events-none"></div>
             
             <div className="relative z-10 max-w-3xl">
@@ -104,7 +101,6 @@ export default async function LocationPage({ params }: Props) {
                 </ul>
             </div>
             
-            {/* "Map" Placeholder / Image Area */}
             <div className="relative h-[400px] w-full bg-slate-900 rounded-3xl overflow-hidden shadow-2xl flex items-center justify-center group">
                  <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-950 opacity-90"></div>
                  <div className="relative z-10 text-center p-8">
@@ -127,7 +123,6 @@ export default async function LocationPage({ params }: Props) {
             </div>
             
             <div className="grid md:grid-cols-3 gap-8">
-                {/* Card 1 */}
                 <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:border-blue-500 hover:shadow-lg transition-all group">
                     <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-6 group-hover:rotate-6 transition-transform">
                         <Zap className="w-6 h-6" />
@@ -141,7 +136,6 @@ export default async function LocationPage({ params }: Props) {
                     </Link>
                 </div>
 
-                {/* Card 2 */}
                 <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:border-emerald-500 hover:shadow-lg transition-all group">
                     <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-emerald-600 mb-6 group-hover:rotate-6 transition-transform">
                         <BarChart className="w-6 h-6" />
@@ -155,7 +149,6 @@ export default async function LocationPage({ params }: Props) {
                     </Link>
                 </div>
 
-                {/* Card 3 */}
                 <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:border-purple-500 hover:shadow-lg transition-all group">
                     <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 mb-6 group-hover:rotate-6 transition-transform">
                         <Trophy className="w-6 h-6" />

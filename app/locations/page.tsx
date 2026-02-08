@@ -1,18 +1,28 @@
 import React from "react";
 import Link from "next/link";
-import { MapPin, ArrowRight, Clock } from "lucide-react";
-import { locations } from "@/lib/locations"; // This @ alias now works perfectly
+import { MapPin, ArrowRight, Clock, Home } from "lucide-react";
+import { locations } from "@/lib/locations";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Areas We Serve | Churchtown Media',
+  // FIXED: Removed "| Churchtown Media" to prevent duplication by Root Layout
+  title: 'Areas We Serve', 
   description: 'Web Design & SEO services across the North West. From Liverpool to Preston, see our local case studies and travel times.',
 };
 
 export default function LocationsIndex() {
   return (
-    <main className="min-h-screen bg-slate-50 pt-40 pb-24 px-6">
+    <main className="min-h-screen bg-slate-50 pt-32 pb-24 px-6">
       
+      {/* BREADCRUMBS (SEO Structure) */}
+      <div className="max-w-5xl mx-auto mb-12 flex items-center gap-2 text-sm text-slate-500">
+        <Link href="/" className="hover:text-blue-600 flex items-center gap-1">
+            <Home className="w-3 h-3" /> Home
+        </Link>
+        <span className="text-slate-300">/</span>
+        <span className="text-slate-900 font-medium">Locations</span>
+      </div>
+
       <div className="max-w-4xl mx-auto text-center mb-20">
         <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 rounded-full px-4 py-1.5 mb-6">
             <span className="relative flex h-2 w-2">
@@ -36,7 +46,8 @@ export default function LocationsIndex() {
             <Link 
                 key={loc.slug} 
                 href={`/locations/${loc.slug}`}
-                className="group bg-white p-6 rounded-2xl border border-slate-200 hover:border-blue-500 hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-48"
+                // ADDED: Hover BG effect for premium feel
+                className="group bg-white p-6 rounded-2xl border border-slate-200 hover:border-blue-500 hover:bg-blue-50/30 hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-48"
             >
                 <div className="flex items-start justify-between">
                     <div className="w-10 h-10 bg-slate-50 rounded-xl flex items-center justify-center text-slate-400 group-hover:bg-blue-600 group-hover:text-white transition-colors">
@@ -51,7 +62,10 @@ export default function LocationsIndex() {
                     </h3>
                     <div className="flex items-center gap-2 text-sm text-slate-500">
                         <Clock className="w-3 h-3" />
-                        <span>{loc.travelTime} from HQ</span>
+                        {/* FIXED: Logic to handle Southport HQ text cleanly */}
+                        <span className="font-medium">
+                            {loc.slug === "southport" ? "Headquarters" : `${loc.travelTime} from HQ`}
+                        </span>
                     </div>
                 </div>
             </Link>
