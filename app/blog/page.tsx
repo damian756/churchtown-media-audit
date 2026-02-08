@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { posts } from "../lib/posts";
-import { Newspaper, ArrowRight } from "lucide-react";
+import Image from "next/image"; 
+import { posts } from "../lib/posts"; // <--- FIXED: Changed from ../../ to ../
+import { Newspaper, ArrowRight, Calendar } from "lucide-react";
 import type { Metadata } from "next";
 
-// 1. THIS IS THE NEW METADATA BLOCK
 export const metadata: Metadata = {
   title: 'Digital Growth Insights | Churchtown Media Blog',
   description: 'Expert advice on SEO, Web Design, and Digital Strategy for Southport businesses. Read our latest case studies and tutorials.',
@@ -14,55 +14,75 @@ export const metadata: Metadata = {
   },
 }
 
-// 2. YOUR EXACT EXISTING COMPONENT (Unchanged)
 export default function BlogIndex() {
   return (
-    <main className="min-h-screen bg-white">
-      <section className="bg-slate-900 px-6 py-24 text-center text-white">
-        <div className="mx-auto max-w-3xl">
-          <div className="inline-flex items-center gap-2 rounded-full bg-blue-500/10 px-3 py-1 text-sm font-medium text-blue-400 ring-1 ring-inset ring-blue-500/20">
+    <main className="min-h-screen bg-slate-50">
+      
+      {/* 1. HEADER SECTION */}
+      <section className="bg-slate-900 px-6 pt-32 pb-24 text-center text-white relative overflow-hidden">
+        {/* Glow Effect */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-4xl bg-blue-500/10 blur-3xl rounded-full pointer-events-none"></div>
+        
+        <div className="mx-auto max-w-3xl relative z-10">
+          <div className="inline-flex items-center gap-2 rounded-full bg-blue-500/10 px-3 py-1 text-sm font-medium text-blue-400 ring-1 ring-inset ring-blue-500/20 mb-6">
             <Newspaper className="h-4 w-4" />
             Intelligence
           </div>
-          <h1 className="mt-6 text-4xl font-bold tracking-tight sm:text-5xl">
+          <h1 className="text-4xl font-extrabold tracking-tight sm:text-6xl mb-6">
             The Knowledge Base
           </h1>
-          <p className="mt-6 text-lg text-slate-300">
-            Technical analysis, local market data, and transparent reports on what is working in SEO right now.
+          <p className="text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
+            Technical analysis, local market data, and transparent reports on what is working in Southport SEO right now.
           </p>
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-24">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
+      {/* 2. POSTS GRID */}
+      <section className="mx-auto max-w-7xl px-6 py-20">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
           {posts.map((post) => (
-            <article key={post.slug} className="flex flex-col justify-between rounded-2xl border border-slate-200 p-8 shadow-sm transition-all hover:border-blue-600 hover:shadow-md">
-              <div>
-                <div className="flex items-center gap-x-4 text-xs">
-                  <time className="text-slate-500">{post.date}</time>
-                  <span className="relative z-10 rounded-full bg-slate-50 px-3 py-1.5 font-medium text-slate-600 hover:bg-slate-100">
+            <Link 
+              key={post.slug} 
+              href={`/blog/${post.slug}`}
+              className="group flex flex-col bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+            >
+              {/* Card Image */}
+              <div className="h-56 bg-slate-100 relative overflow-hidden">
+                 <Image 
+                    src={post.image} 
+                    alt={post.title} 
+                    fill
+                    className="object-cover transform group-hover:scale-105 transition-transform duration-500"
+                 />
+                 <div className="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-xs font-bold text-blue-700 shadow-sm z-10">
                     {post.category}
-                  </span>
+                 </div>
+              </div>
+              
+              {/* Card Content */}
+              <div className="p-8 flex flex-col flex-1">
+                <div className="flex items-center gap-2 text-xs font-medium text-slate-400 mb-4">
+                    <Calendar className="w-3 h-3" />
+                    <span>{post.date}</span>
                 </div>
-                <div className="group relative">
-                  <h3 className="mt-3 text-lg font-semibold leading-6 text-slate-900 group-hover:text-blue-600">
-                    <Link href={`/blog/${post.slug}`}>
-                      <span className="absolute inset-0" />
-                      {post.title}
-                    </Link>
-                  </h3>
-                  <p className="mt-5 line-clamp-3 text-sm leading-6 text-slate-600">
+                
+                <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors leading-tight">
+                    {post.title}
+                </h3>
+                
+                <p className="text-slate-600 line-clamp-3 text-sm leading-relaxed mb-6 flex-1">
                     {post.excerpt}
-                  </p>
+                </p>
+
+                <div className="flex items-center gap-2 text-blue-600 font-bold text-sm mt-auto group-hover:gap-3 transition-all">
+                    Read Article <ArrowRight className="w-4 h-4" />
                 </div>
               </div>
-              <div className="mt-8 flex items-center gap-2 text-sm font-bold text-blue-600">
-                  Read Article <ArrowRight className="h-4 w-4" />
-              </div>
-            </article>
+            </Link>
           ))}
         </div>
       </section>
+
     </main>
   );
 }
