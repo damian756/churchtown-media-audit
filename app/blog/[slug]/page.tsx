@@ -2,6 +2,7 @@ import Link from "next/link";
 import { posts } from "../../lib/posts";
 import { ArrowLeft } from "lucide-react";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 
 // 1. Generate Static Params
 export async function generateStaticParams() {
@@ -10,11 +11,43 @@ export async function generateStaticParams() {
   }));
 }
 
-// 2. The Page Component
+// 2. Define Props
 type Props = {
   params: Promise<{ slug: string }>;
 };
 
+// 3. THIS IS NEW: Dynamic Metadata for Google
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const post = posts.find((p) => p.slug === slug);
+
+  if (!post) {
+    return {
+      title: "Post Not Found",
+    };
+  }
+
+  return {
+    title: `${post.title} | Churchtown Media`,
+    description: post.excerpt,
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      type: "article",
+      url: `https://www.churchtownmedia.co.uk/blog/${post.slug}`,
+      images: [
+        {
+          url: post.image,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
+    },
+  };
+}
+
+// 4. The Page Component (YOUR EXACT DESIGN PRESERVED)
 export default async function BlogPost({ params }: Props) {
   const { slug } = await params;
   const post = posts.find((p) => p.slug === slug);
@@ -42,7 +75,7 @@ export default async function BlogPost({ params }: Props) {
          </div>
       </section>
 
-      {/* HERO IMAGE ADDED HERE */}
+      {/* HERO IMAGE */}
       <div className="mx-auto max-w-4xl -mt-12 px-6">
         <img 
           src={post.image} 
