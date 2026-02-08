@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image"; 
-import { posts } from "../lib/posts"; 
+import { posts } from "../../lib/posts"; 
 import { Newspaper, ArrowRight, Calendar } from "lucide-react";
 import type { Metadata } from "next";
 

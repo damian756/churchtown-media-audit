@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { posts } from "../../lib/posts"; 
+import { posts } from "../../../lib/posts"; 
 import { ArrowLeft, Calendar, Tag } from "lucide-react";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";

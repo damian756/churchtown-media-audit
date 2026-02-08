@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Users, Coins, ExternalLink, Calendar, MapPin, CheckCircle2, ArrowRight, Zap, Search, Layout, HelpCircle } from "lucide-react";
-import { posts } from "../lib/posts"; 
+import { posts } from "../../lib/posts"; 
 
 export const metadata = {
   title: 'Southport Business Growth Hub | Free Digital Audit',

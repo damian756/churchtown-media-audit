@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { posts } from './lib/posts'; // <--- FIXED: Points to app/lib/posts
+import { posts } from '../lib/posts'; // <--- FIXED: Points to app/lib/posts
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.churchtownmedia.co.uk';

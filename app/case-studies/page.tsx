@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { posts } from "../lib/posts";
+import { posts } from "../../lib/posts";
 import { ArrowRight, TrendingUp } from "lucide-react";
 
 export const metadata = {
