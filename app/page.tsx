@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { ArrowRight, Zap, BarChart3, Globe, TrendingUp, Code2, Rocket } from "lucide-react";
+import { ArrowRight, Zap, BarChart3, Globe, TrendingUp, Code2 } from "lucide-react";
 import type { Metadata } from "next";
 
-// 1. THE "FLAGSHIP" METADATA (Upgraded for Maximum CTR)
+// 1. REGIONAL STRATEGY METADATA
 export const metadata: Metadata = {
-  title: 'Digital Marketing Agency Southport | Web Design & SEO | Churchtown Media',
-  description: 'We build high-performance revenue engines for Southport businesses. Specialist Web Design, SEO, and Digital Strategy. Stop guessing and start growing. Get a free audit.',
+  title: 'Digital Growth Partner North West | Revenue Engines & Strategy',
+  description: 'We build revenue engines, not just websites. The North West\'s leading digital growth partner. Data-driven SEO and high-performance development.',
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk',
   },
@@ -13,14 +13,19 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_GB',
     url: 'https://www.churchtownmedia.co.uk',
-    title: 'Churchtown Media | The #1 Digital Growth Partner in Southport',
-    description: 'We turn local businesses into market leaders with data-driven SEO and enterprise-grade Web Design.',
+    title: 'Digital Growth Partner North West | Revenue Engines & Strategy',
+    description: 'We build revenue engines, not just websites. The North West\'s leading digital growth partner.',
     siteName: 'Churchtown Media',
+    images: [{
+      url: 'https://www.churchtownmedia.co.uk/opengraph-image.png',
+      width: 1200,
+      height: 630,
+      alt: 'Churchtown Media - Digital Growth Partner',
+    }],
   },
-}
+};
 
 // 2. THE KNOWLEDGE GRAPH (JSON-LD)
-// This tells Google: "We are a legitimate agency in Southport."
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
@@ -28,7 +33,7 @@ const jsonLd = {
   'url': 'https://www.churchtownmedia.co.uk',
   'logo': 'https://www.churchtownmedia.co.uk/icon.png',
   'image': 'https://www.churchtownmedia.co.uk/opengraph-image.png',
-  'description': 'Churchtown Media is Southport\'s leading digital growth agency, specializing in Next.js Web Design and Data-Driven SEO.',
+  'description': 'Churchtown Media is the North West\'s leading digital growth agency, specializing in Next.js Web Design and Data-Driven SEO.',
   'address': {
     '@type': 'PostalAddress',
     'streetAddress': '5 Cambridge Avenue',
@@ -42,11 +47,18 @@ const jsonLd = {
     'latitude': 53.6567,
     'longitude': -2.9772
   },
+  'sameAs': [
+    'https://www.facebook.com/ChurchtownMedia/',
+    'https://twitter.com/churchtownmedia',
+    'https://www.linkedin.com/company/churchtownmedia'
+  ],
   'areaServed': [
     { '@type': 'City', 'name': 'Southport' },
     { '@type': 'City', 'name': 'Liverpool' },
+    { '@type': 'City', 'name': 'Manchester' },
     { '@type': 'City', 'name': 'Preston' },
-    { '@type': 'City', 'name': 'Merseyside' }
+    { '@type': 'City', 'name': 'Merseyside' },
+    { '@type': 'City', 'name': 'Lancashire' }
   ],
   'priceRange': '££',
   'telephone': '+447545934360',
@@ -63,8 +75,8 @@ const jsonLd = {
     'name': 'Digital Growth Services',
     'itemListElement': [
       { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'Enterprise Web Design' } },
-      { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'Local SEO' } },
-      { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'Technical SEO Audits' } }
+      { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'Regional SEO Strategy' } },
+      { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'Technical Audits' } }
     ]
   }
 };
@@ -111,7 +123,7 @@ export default function Home() {
 
             {/* SUBHEAD */}
             <p className="text-xl md:text-2xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
-              Southport's digital growth partner. We combine <strong>Next.js performance</strong> with <strong>data-driven SEO</strong> to turn traffic into profit.
+              The North West's digital growth partner. We combine <strong>Next.js performance</strong> with <strong>data-driven SEO</strong> to turn traffic into profit.
             </p>
 
             {/* CTA BUTTONS */}
@@ -164,7 +176,7 @@ export default function Home() {
                     </div>
                     <h3 className="text-2xl font-bold text-slate-900 mb-3">Data-Driven SEO</h3>
                     <p className="text-slate-600 mb-6 leading-relaxed">
-                        Dominate the "Map Pack" in Southport. We use data, not guesswork, to rank you #1.
+                        Dominate the "Map Pack" in the North West. We use data, not guesswork, to rank you #1.
                     </p>
                     <Link href="/services/seo" className="inline-flex items-center gap-2 text-emerald-600 font-bold hover:gap-3 transition-all">
                         Explore SEO <ArrowRight className="w-4 h-4" />

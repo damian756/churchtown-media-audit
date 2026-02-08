@@ -3,11 +3,22 @@ import Link from "next/link";
 import { Star, Quote, ArrowRight, CheckCircle2 } from "lucide-react";
 import type { Metadata } from "next";
 
+// 1. STRATEGIC METADATA (Social Proof Strategy)
 export const metadata: Metadata = {
-  title: 'Client Reviews & Testimonials | Churchtown Media',
-  description: 'See what Southport and Liverpool businesses are saying about our SEO and Web Design services. 5-Star rated on Google.',
+  title: '5-Star Web Design & SEO Reviews | Churchtown Media',
+  description: 'Don’t just take our word for it. See why Southport & North West businesses rate us 5 stars for Web Design, SEO, and Digital Growth. Read client success stories.',
+  alternates: {
+    canonical: 'https://www.churchtownmedia.co.uk/testimonials',
+  },
+  openGraph: {
+    title: '5-Star Web Design & SEO Reviews | Churchtown Media',
+    description: 'See why businesses across the North West trust us to build their revenue engines.',
+    url: 'https://www.churchtownmedia.co.uk/testimonials',
+    type: 'website',
+  }
 };
 
+// 2. REVIEWS DATA (Centralized for easy updating)
 const reviews = [
   {
     name: "Matthew Brown",
@@ -53,9 +64,30 @@ const reviews = [
   }
 ];
 
+// 3. JSON-LD SCHEMA (The "Yellow Stars" Trigger)
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  'name': 'Churchtown Media',
+  'image': 'https://www.churchtownmedia.co.uk/opengraph-image.png',
+  'aggregateRating': {
+    '@type': 'AggregateRating',
+    'ratingValue': '5.0',
+    'reviewCount': reviews.length.toString(), // Automatically counts your reviews
+    'bestRating': '5',
+    'worstRating': '1'
+  }
+};
+
 export default function TestimonialsPage() {
   return (
     <main className="min-h-screen bg-slate-50">
+      
+      {/* INJECT SCHEMA */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       
       {/* 1. HERO SECTION */}
       <section className="bg-slate-950 pt-40 pb-24 px-6 text-center border-b border-slate-800">
@@ -84,10 +116,10 @@ export default function TestimonialsPage() {
       <section className="py-24 px-6">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {reviews.map((review, index) => (
-                <div key={index} className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-lg transition-all hover:-translate-y-1 relative group">
+                <div key={index} className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-lg transition-all hover:-translate-y-1 relative group flex flex-col h-full">
                     
                     {/* Google Icon Badge */}
-                    <div className="absolute top-8 right-8">
+                    <div className="absolute top-8 right-8 pointer-events-none">
                         <svg viewBox="0 0 24 24" className="w-6 h-6 opacity-20 group-hover:opacity-100 transition-opacity">
                             <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
                             <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
@@ -102,12 +134,12 @@ export default function TestimonialsPage() {
                         ))}
                     </div>
 
-                    <p className="text-slate-700 leading-relaxed mb-8 text-sm relative z-10">
+                    <p className="text-slate-700 leading-relaxed mb-8 text-sm relative z-10 flex-grow">
                         "{review.text}"
                     </p>
 
                     <div className="flex items-center gap-4 mt-auto pt-6 border-t border-slate-100">
-                        <div className={`w-10 h-10 ${review.color} rounded-full flex items-center justify-center text-white font-bold text-sm`}>
+                        <div className={`w-10 h-10 ${review.color} rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0`}>
                             {review.initial}
                         </div>
                         <div>

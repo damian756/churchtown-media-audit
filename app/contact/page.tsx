@@ -2,6 +2,13 @@
 
 import React, { useState } from "react";
 import { Mail, MapPin, Phone, Send, CheckCircle2, ArrowRight } from "lucide-react";
+import Script from "next/script";
+
+// NOTE: Since this is a "use client" component, we cannot export 'metadata' directly here.
+// In Next.js 13+, you usually keep the page server-side and put the form in a client component.
+// HOWEVER, for simplicity in your current setup, we will use a workaround or you should move this logic to layout if possible.
+// BETTER APPROACH: We will treat this as the client component and assume you might have a wrapper layout or accept that metadata might need to be in a separate layout.tsx for this route.
+// FOR NOW: I will provide the schema script which works in client components.
 
 export default function ContactPage() {
   const FORMSPREE_ID = "mpqjzyby"; 
@@ -34,9 +41,44 @@ export default function ContactPage() {
     }
   };
 
+  // 1. JSON-LD SCHEMA (Contact & LocalBusiness)
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    'mainEntity': {
+      '@type': 'LocalBusiness',
+      'name': 'Churchtown Media',
+      'image': 'https://www.churchtownmedia.co.uk/opengraph-image.png',
+      'telephone': '+447545934360',
+      'email': 'hello@churchtownmedia.co.uk',
+      'address': {
+        '@type': 'PostalAddress',
+        'streetAddress': 'Cambridge Avenue',
+        'addressLocality': 'Southport',
+        'addressRegion': 'Merseyside',
+        'postalCode': 'PR9 9SA',
+        'addressCountry': 'UK'
+      },
+      'openingHoursSpecification': {
+        '@type': 'OpeningHoursSpecification',
+        'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        'opens': '09:00',
+        'closes': '17:30'
+      }
+    }
+  };
+
   return (
     <main className="min-h-screen h-auto w-full bg-slate-50/50 pt-32 pb-40 overflow-x-hidden">
       
+      {/* INJECT SCHEMA */}
+      <Script
+        id="contact-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      
+      {/* HEADER */}
       <div className="max-w-6xl mx-auto px-6">
         
         {/* 1. HEADER */}
@@ -84,7 +126,7 @@ export default function ContactPage() {
                             </div>
                         </div>
 
-                        {/* PHONE (NEW ADDITION) */}
+                        {/* PHONE */}
                         <div className="flex items-start gap-4">
                             <div className="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 shrink-0">
                                 <Phone className="w-6 h-6" />
@@ -117,7 +159,8 @@ export default function ContactPage() {
                 {/* Map Card */}
                 <div className="bg-white/80 backdrop-blur-xl border border-white/60 p-2 rounded-[2rem] shadow-xl h-80 overflow-hidden relative group">
                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37450.56947672722!2d-3.0360824636952445!3d53.64998793096238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b3ee60500746d%3A0x67341855a954497a!2sSouthport!5e0!3m2!1sen!2suk!4v1707500000000!5m2!1sen!2suk" 
+                        title="Churchtown Media HQ Location Map"
+                        src="https://maps.google.com/maps?q=Cambridge%20Avenue%20Southport&t=&z=15&ie=UTF8&iwloc=&output=embed" 
                         width="100%" 
                         height="100%" 
                         style={{ border: 0, filter: 'grayscale(100%) opacity(0.8)' }} 

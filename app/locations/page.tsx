@@ -1,21 +1,34 @@
 import React from "react";
 import Link from "next/link";
-import { MapPin, ArrowRight, Clock, Home } from "lucide-react";
+import { MapPin, ArrowRight, Clock, Home, Star } from "lucide-react";
 import { locations } from "@/lib/locations";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  // FIXED: Removed "| Churchtown Media" to prevent duplication by Root Layout
-  title: 'Areas We Serve', 
+  title: 'Areas We Serve',
   description: 'Web Design & SEO services across the North West. From Liverpool to Preston, see our local case studies and travel times.',
 };
 
 export default function LocationsIndex() {
+  
+  // 1. STRATEGIC SPLIT
+  // We manually pick the "Heroes" to show first
+  const heroSlugs = ["southport", "liverpool", "manchester", "preston"];
+  
+  const heroLocations = heroSlugs
+    .map(slug => locations.find(l => l.slug === slug))
+    .filter(Boolean) as typeof locations;
+
+  // 2. AUTOMATIC ALPHABETICAL SORT FOR THE REST
+  const otherLocations = locations
+    .filter(l => !heroSlugs.includes(l.slug))
+    .sort((a, b) => a.name.localeCompare(b.name));
+
   return (
     <main className="min-h-screen bg-slate-50 pt-32 pb-24 px-6">
       
-      {/* BREADCRUMBS (SEO Structure) */}
-      <div className="max-w-5xl mx-auto mb-12 flex items-center gap-2 text-sm text-slate-500">
+      {/* BREADCRUMBS */}
+      <div className="max-w-6xl mx-auto mb-12 flex items-center gap-2 text-sm text-slate-500">
         <Link href="/" className="hover:text-blue-600 flex items-center gap-1">
             <Home className="w-3 h-3" /> Home
         </Link>
@@ -37,41 +50,57 @@ export default function LocationsIndex() {
             Local Experts. <span className="text-blue-600">Regional Reach.</span>
         </h1>
         <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-            We don't outsource. Our team is based in Churchtown and serves businesses across the North West. Select your area below.
+            Select your area below to see our local case studies and travel times.
         </p>
       </div>
 
-      <div className="max-w-5xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {locations.map((loc) => (
-            <Link 
-                key={loc.slug} 
-                href={`/locations/${loc.slug}`}
-                // ADDED: Hover BG effect for premium feel
-                className="group bg-white p-6 rounded-2xl border border-slate-200 hover:border-blue-500 hover:bg-blue-50/30 hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-48"
-            >
-                <div className="flex items-start justify-between">
-                    <div className="w-10 h-10 bg-slate-50 rounded-xl flex items-center justify-center text-slate-400 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                        <MapPin className="w-5 h-5" />
+      {/* GRID CONTAINER */}
+      <div className="max-w-6xl mx-auto">
+        
+        {/* SECTION 1: KEY CITIES (Highlighted) */}
+        <h3 className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">Key Service Hubs</h3>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+            {heroLocations.map((loc) => (
+                <Link 
+                    key={loc.slug} 
+                    href={`/locations/${loc.slug}`}
+                    className="group bg-white p-6 rounded-2xl border border-blue-100 shadow-sm hover:border-blue-500 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative overflow-hidden"
+                >
+                    <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-100 transition-opacity">
+                        <Star className="w-12 h-12 text-blue-500 fill-blue-50" />
                     </div>
-                    <ArrowRight className="w-5 h-5 text-slate-300 group-hover:text-blue-600 group-hover:-rotate-45 transition-all duration-300" />
-                </div>
-
-                <div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-1 group-hover:text-blue-600 transition-colors">
-                        {loc.name}
-                    </h3>
-                    <div className="flex items-center gap-2 text-sm text-slate-500">
-                        <Clock className="w-3 h-3" />
-                        {/* FIXED: Logic to handle Southport HQ text cleanly */}
-                        <span className="font-medium">
+                    <div className="relative z-10">
+                        <div className="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 mb-4 group-hover:scale-110 transition-transform">
+                            <MapPin className="w-5 h-5" />
+                        </div>
+                        <h3 className="text-xl font-bold text-slate-900 mb-1">{loc.name}</h3>
+                        <p className="text-xs text-slate-500 font-medium">
                             {loc.slug === "southport" ? "Headquarters" : `${loc.travelTime} from HQ`}
-                        </span>
+                        </p>
                     </div>
-                </div>
-            </Link>
-        ))}
-      </div>
+                </Link>
+            ))}
+        </div>
 
+        {/* SECTION 2: ALL LOCATIONS (Alphabetical) */}
+        <h3 className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">All Locations (A-Z)</h3>
+        <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {otherLocations.map((loc) => (
+                <Link 
+                    key={loc.slug} 
+                    href={`/locations/${loc.slug}`}
+                    className="group flex items-center justify-between p-4 bg-white rounded-xl border border-slate-200 hover:border-blue-500 hover:bg-blue-50/50 transition-all"
+                >
+                    <div className="flex items-center gap-3">
+                        <div className="w-2 h-2 rounded-full bg-slate-300 group-hover:bg-blue-500 transition-colors"></div>
+                        <span className="font-bold text-slate-700 group-hover:text-blue-700">{loc.name}</span>
+                    </div>
+                    <ArrowRight className="w-4 h-4 text-slate-300 group-hover:text-blue-500 -rotate-45 group-hover:rotate-0 transition-transform" />
+                </Link>
+            ))}
+        </div>
+
+      </div>
     </main>
   );
 }

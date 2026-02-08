@@ -1,8 +1,46 @@
-"use client";
-
 import React from "react";
 import Link from "next/link";
-import { ArrowRight, Box, Shield, Zap, TrendingUp, BarChart3, Users, Layout, Lock } from "lucide-react";
+import { ArrowRight, Box, Shield, Zap, TrendingUp, Layout } from "lucide-react";
+import type { Metadata } from "next";
+
+// 1. STRATEGIC METADATA
+export const metadata: Metadata = {
+  title: 'Proven Digital Growth Frameworks | Industry-Specific Web Design',
+  description: 'Stop guessing. We deploy battle-tested revenue engines for Trades, Legal, SaaS, and Retail. High-performance web design tailored to your industry.',
+  alternates: {
+    canonical: 'https://www.churchtownmedia.co.uk/work',
+  },
+  openGraph: {
+    title: 'Proven Digital Growth Frameworks | Churchtown Media',
+    description: 'We don\'t guess. We use what works. Explore our battle-tested digital architectures for high-growth industries.',
+    url: 'https://www.churchtownmedia.co.uk/work',
+    type: 'website',
+  }
+};
+
+// 2. JSON-LD SCHEMA (Service Offerings)
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  'name': 'Digital Growth Frameworks',
+  'description': 'Industry-specific web design and SEO frameworks.',
+  'provider': {
+    '@type': 'ProfessionalService',
+    'name': 'Churchtown Media',
+    'address': {
+      '@type': 'PostalAddress',
+      'addressLocality': 'Southport',
+      'addressRegion': 'Merseyside',
+      'addressCountry': 'UK'
+    }
+  },
+  'hasPart': [
+    { '@type': 'Service', 'name': 'The Lead Generation Engine', 'audience': 'Trade & Construction' },
+    { '@type': 'Service', 'name': 'The Trust Authority Platform', 'audience': 'Legal & Financial' },
+    { '@type': 'Service', 'name': 'The SaaS Dashboard', 'audience': 'Logistics & Operations' },
+    { '@type': 'Service', 'name': 'The Booking Accelerator', 'audience': 'Retail & Aesthetics' }
+  ]
+};
 
 export default function WorkPage() {
   const frameworks = [
@@ -47,33 +85,40 @@ export default function WorkPage() {
   return (
     <main className="min-h-screen pt-32 pb-20 bg-slate-50">
       
+      {/* INJECT SCHEMA */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* HEADER */}
       <div className="max-w-7xl mx-auto px-6 mb-20">
         <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 rounded-full px-4 py-1.5 mb-8">
             <span className="text-xs font-bold text-blue-700 uppercase tracking-wide">Proven Industry Frameworks</span>
         </div>
+        {/* Optimized H1 for SEO + Impact */}
         <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 mb-8 tracking-tight">
-          We don't guess. <br/> <span className="text-blue-600">We use what works.</span>
+          We don't guess. <br/> <span className="text-blue-600">We deploy what works.</span>
         </h1>
         <p className="text-xl text-slate-600 max-w-2xl leading-relaxed">
-          Instead of reinventing the wheel, we deploy battle-tested digital architectures designed for specific industries. Choose your growth engine.
+          Instead of reinventing the wheel, we use battle-tested <strong>digital growth frameworks</strong> designed for specific industries. Choose your engine below.
         </p>
       </div>
 
       {/* FRAMEWORKS GRID */}
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 mb-32">
         {frameworks.map((fw, i) => (
-            <div key={i} className="bg-white rounded-3xl p-8 border border-slate-200 hover:border-blue-300 hover:shadow-xl transition-all duration-300 flex flex-col">
+            <article key={fw.id} className="bg-white rounded-3xl p-8 border border-slate-200 hover:border-blue-300 hover:shadow-xl transition-all duration-300 flex flex-col group h-full">
                 
                 {/* CARD HEADER */}
                 <div className="flex justify-between items-start mb-6">
                     <div>
                         <span className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2 block">{fw.industry}</span>
-                        <div className="flex items-center gap-3">
-                            <span className="text-sm font-mono text-blue-600 bg-blue-50 px-2 py-1 rounded">Growth Model #{i+1}</span>
+                        <div className="inline-block bg-blue-50 px-2 py-1 rounded">
+                             <span className="text-sm font-mono text-blue-600">Model_0{i+1}</span>
                         </div>
                     </div>
-                    <div className="p-3 bg-slate-50 rounded-xl">
+                    <div className="p-3 bg-slate-50 rounded-xl group-hover:bg-blue-50 transition-colors">
                         {fw.icon}
                     </div>
                 </div>
@@ -104,16 +149,16 @@ export default function WorkPage() {
                         ))}
                     </div>
                     
-                    {/* ACTION BUTTON - The Fix */}
+                    {/* ACTION BUTTON */}
                     <Link 
                         href="/contact" 
-                        className="w-full block text-center bg-slate-900 text-white font-bold py-4 rounded-xl hover:bg-blue-600 transition-colors group"
+                        className="w-full flex items-center justify-center gap-2 bg-slate-900 text-white font-bold py-4 rounded-xl hover:bg-blue-600 transition-colors group-hover:shadow-lg"
                     >
-                        Deploy This Framework <ArrowRight className="w-4 h-4 inline ml-2 group-hover:translate-x-1 transition-transform" />
+                        Deploy This Framework <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </Link>
                 </div>
 
-            </div>
+            </article>
         ))}
       </div>
 
@@ -122,7 +167,7 @@ export default function WorkPage() {
         <h2 className="text-3xl font-bold text-slate-900 mb-6">Which model fits your business?</h2>
         <p className="text-slate-600 mb-8 text-lg">Stop guessing with generic web design. Deploy a proven revenue engine tailored to your industry.</p>
         <div className="flex justify-center gap-4">
-            <Link href="/audit" className="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-500 transition-colors">
+            <Link href="/audit" className="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-500 transition-colors shadow-lg hover:shadow-xl hover:-translate-y-1">
                 Get Free Audit
             </Link>
             <Link href="/contact" className="bg-white text-slate-900 border border-slate-200 px-8 py-4 rounded-xl font-bold hover:bg-slate-50 transition-colors">

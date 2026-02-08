@@ -1,24 +1,30 @@
 import type { Metadata } from 'next';
 import React from "react";
 import Link from "next/link";
-import { Zap, Smartphone, Code2, ArrowRight, BarChart3 } from "lucide-react";
+import { Zap, Smartphone, Code2, ArrowRight, BarChart3, CheckCircle2 } from "lucide-react";
 
-// 1. AGENCY-GRADE METADATA (Targeting "Web Design Southport")
+// 1. REGIONAL ENTERPRISE METADATA
 export const metadata: Metadata = {
-  title: 'Web Design Southport: Fast, SEO-First Websites | Churchtown Media',
-  description: 'Stop losing customers to slow sites. We build high-speed Next.js websites for Southport businesses that rank on Google and convert. Book a free demo.',
+  title: 'Enterprise Web Design Agency North West | High-Performance Next.js',
+  description: 'We build revenue-generating websites for North West businesses. Custom React & Next.js development that outperforms WordPress. Speed, security, and scalability.',
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk/services/web-design',
   },
-}
+  openGraph: {
+    title: 'Enterprise Web Design Agency North West | High-Performance Next.js',
+    description: 'We build revenue-generating websites for North West businesses.',
+    url: 'https://www.churchtownmedia.co.uk/services/web-design',
+    type: 'website',
+  }
+};
 
-// 2. JSON-LD SCHEMA (The "Secret Sauce" for Local Ranking)
+// 2. JSON-LD SCHEMA (Regional Focus)
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
-  'name': 'Web Design Southport',
+  'name': 'Enterprise Web Design',
   'provider': {
-    '@type': 'LocalBusiness',
+    '@type': 'ProfessionalService',
     'name': 'Churchtown Media',
     'address': {
       '@type': 'PostalAddress',
@@ -27,11 +33,13 @@ const jsonLd = {
       'addressCountry': 'UK'
     }
   },
-  'areaServed': {
-    '@type': 'City',
-    'name': 'Southport'
-  },
-  'description': 'Enterprise-grade web design using Next.js and React for local businesses in Southport.',
+  'areaServed': [
+    { '@type': 'AdministrativeArea', 'name': 'North West England' },
+    { '@type': 'City', 'name': 'Liverpool' },
+    { '@type': 'City', 'name': 'Manchester' },
+    { '@type': 'City', 'name': 'Preston' }
+  ],
+  'description': 'Enterprise-grade web design using Next.js and React for high-growth businesses in the North West.',
   'offers': {
     '@type': 'Offer',
     'priceCurrency': 'GBP',
@@ -41,6 +49,13 @@ const jsonLd = {
 
 // 3. MAIN COMPONENT
 export default function WebDesignPage() {
+  
+  const features = [
+    { icon: <Zap className="w-6 h-6"/>, title: "0.4s Load Speeds", desc: "Google loves fast sites. We build on the edge for instant interactions." },
+    { icon: <Smartphone className="w-6 h-6"/>, title: "Mobile First", desc: "60% of traffic is mobile. We design for the thumb, not just the mouse." },
+    { icon: <Code2 className="w-6 h-6"/>, title: "Clean Code", desc: "No bloated plugins. Just pure, semantic React code that scales." }
+  ];
+
   return (
     <main className="min-h-screen pt-32 pb-20 bg-slate-50">
       
@@ -50,29 +65,27 @@ export default function WebDesignPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
+      {/* HERO SECTION */}
       <div className="max-w-7xl mx-auto px-6 mb-20">
         <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 rounded-full px-4 py-1.5 mb-8">
             <span className="text-xs font-bold text-blue-700 uppercase tracking-wide">Enterprise Web Design</span>
         </div>
-        <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 mb-8 tracking-tight">
-          Websites that <br/> <span className="text-blue-600">print money.</span>
+        {/* H1 Optimized for SEO ("Web Design" included) */}
+        <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 mb-8 tracking-tight leading-tight">
+          Next.js Web Design <br/> <span className="text-blue-600">that prints money.</span>
         </h1>
         <p className="text-xl text-slate-600 max-w-2xl leading-relaxed">
-          Most agencies sell you a brochure. We build revenue engines. Ultra-fast Next.js architecture designed to convert Southport traffic into paying customers.
+          Most agencies sell you a brochure. We build revenue engines. Ultra-fast architecture designed to convert North West traffic into paying customers.
         </p>
       </div>
 
       {/* CORE BENEFITS GRID */}
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 mb-32">
-        {[
-            { icon: <Zap className="w-6 h-6"/>, title: "0.4s Load Speeds", desc: "Google loves fast sites. We build on the edge for instant interactions." },
-            { icon: <Smartphone className="w-6 h-6"/>, title: "Mobile First", desc: "60% of traffic is mobile. We design for the thumb, not just the mouse." },
-            { icon: <Code2 className="w-6 h-6"/>, title: "Clean Code", desc: "No bloated plugins. Just pure, semantic React code that scales." }
-        ].map((feat, i) => (
-            <div key={i} className="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 mb-6">{feat.icon}</div>
+        {features.map((feat, i) => (
+            <div key={i} className="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow group">
+                <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 mb-6 group-hover:scale-110 transition-transform">{feat.icon}</div>
                 <h3 className="text-xl font-bold text-slate-900 mb-3">{feat.title}</h3>
-                <p className="text-slate-600">{feat.desc}</p>
+                <p className="text-slate-600 leading-relaxed">{feat.desc}</p>
             </div>
         ))}
       </div>
@@ -89,24 +102,24 @@ export default function WebDesignPage() {
                     A beautiful site is useless if nobody sees it.
                 </h2>
                 <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                    We don't just design pixels; we design for rankings. Every website we build comes with a technical SEO foundation that puts you ahead of 90% of Southport competitors.
+                    We don't just design pixels; we design for rankings. Every website we build comes with a technical SEO foundation that puts you ahead of 90% of competitors.
                 </p>
-                <Link href="/services/seo" className="text-blue-600 font-bold hover:text-blue-800 inline-flex items-center gap-2">
-                    Explore our SEO Services <ArrowRight className="w-4 h-4" />
+                <Link href="/services/seo" className="text-blue-600 font-bold hover:text-blue-800 inline-flex items-center gap-2 group">
+                    Explore our SEO Services <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
             </div>
-            <div className="flex-1 bg-slate-50 rounded-2xl p-8 border border-slate-100">
+            <div className="flex-1 w-full bg-slate-50 rounded-2xl p-8 border border-slate-100">
                 <div className="space-y-4">
                     <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm border border-slate-100">
-                        <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                        <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                         <span className="font-mono text-sm text-slate-600">Perfect Core Web Vitals</span>
                     </div>
                     <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm border border-slate-100">
-                        <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                        <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                         <span className="font-mono text-sm text-slate-600">Schema.org Structured Data</span>
                     </div>
                     <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm border border-slate-100">
-                        <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                        <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                         <span className="font-mono text-sm text-slate-600">Semantic HTML5 Architecture</span>
                     </div>
                 </div>
@@ -121,7 +134,7 @@ export default function WebDesignPage() {
             Get a free technical breakdown of your current site and a roadmap to market dominance.
         </p>
         <div className="flex justify-center gap-4">
-            <Link href="/audit" className="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-500 transition-all shadow-lg hover:shadow-xl inline-flex items-center gap-2">
+            <Link href="/audit" className="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-700 transition-all shadow-lg hover:shadow-blue-500/20 inline-flex items-center gap-2 hover:-translate-y-1">
                 Get a Free Site Audit <ArrowRight className="w-4 h-4" />
             </Link>
         </div>
