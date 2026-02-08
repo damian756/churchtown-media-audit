@@ -1,18 +1,83 @@
-import type { Metadata } from 'next'
-import React from "react";
 import Link from "next/link";
-import { ArrowRight, Zap, BarChart3, Globe, TrendingUp } from "lucide-react";
+import { ArrowRight, Zap, BarChart3, Globe, TrendingUp, Code2, Rocket } from "lucide-react";
+import type { Metadata } from "next";
 
-// 1. THIS IS THE METADATA BLOCK
+// 1. THE "FLAGSHIP" METADATA (Upgraded for Maximum CTR)
 export const metadata: Metadata = {
-  title: 'Web Design & SEO Agency in Southport | Churchtown Media',
-  description: 'Helping Southport businesses grow with data-driven Web Design and SEO. We turn traffic into revenue. Get your free digital audit today.',
+  title: 'Digital Marketing Agency Southport | Web Design & SEO | Churchtown Media',
+  description: 'We build high-performance revenue engines for Southport businesses. Specialist Web Design, SEO, and Digital Strategy. Stop guessing and start growing. Get a free audit.',
+  alternates: {
+    canonical: 'https://www.churchtownmedia.co.uk',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_GB',
+    url: 'https://www.churchtownmedia.co.uk',
+    title: 'Churchtown Media | The #1 Digital Growth Partner in Southport',
+    description: 'We turn local businesses into market leaders with data-driven SEO and enterprise-grade Web Design.',
+    siteName: 'Churchtown Media',
+  },
 }
 
-// 2. MAIN COMPONENT (Now a Server Component, which is faster!)
+// 2. THE KNOWLEDGE GRAPH (JSON-LD)
+// This tells Google: "We are a legitimate agency in Southport."
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  'name': 'Churchtown Media',
+  'url': 'https://www.churchtownmedia.co.uk',
+  'logo': 'https://www.churchtownmedia.co.uk/icon.png',
+  'image': 'https://www.churchtownmedia.co.uk/opengraph-image.png',
+  'description': 'Churchtown Media is Southport\'s leading digital growth agency, specializing in Next.js Web Design and Data-Driven SEO.',
+  'address': {
+    '@type': 'PostalAddress',
+    'streetAddress': '5 Cambridge Avenue',
+    'addressLocality': 'Southport',
+    'addressRegion': 'Merseyside',
+    'postalCode': 'PR9 9SA',
+    'addressCountry': 'UK'
+  },
+  'geo': {
+    '@type': 'GeoCoordinates',
+    'latitude': 53.6567,
+    'longitude': -2.9772
+  },
+  'areaServed': [
+    { '@type': 'City', 'name': 'Southport' },
+    { '@type': 'City', 'name': 'Liverpool' },
+    { '@type': 'City', 'name': 'Preston' },
+    { '@type': 'City', 'name': 'Merseyside' }
+  ],
+  'priceRange': '££',
+  'telephone': '+447545934360',
+  'openingHoursSpecification': [
+    {
+      '@type': 'OpeningHoursSpecification',
+      'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      'opens': '09:00',
+      'closes': '17:30'
+    }
+  ],
+  'hasOfferCatalog': {
+    '@type': 'OfferCatalog',
+    'name': 'Digital Growth Services',
+    'itemListElement': [
+      { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'Enterprise Web Design' } },
+      { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'Local SEO' } },
+      { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'Technical SEO Audits' } }
+    ]
+  }
+};
+
 export default function Home() {
   return (
     <main className="min-h-screen overflow-x-hidden bg-slate-50 selection:bg-blue-100 selection:text-blue-900">
+      
+      {/* INJECT SCHEMA */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       
       {/* 1. HERO SECTION */}
       <div className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden isolate">
@@ -61,7 +126,7 @@ export default function Home() {
 
             {/* TRUST INDICATORS */}
             <div className="mt-12 flex items-center justify-center gap-6 text-xs font-bold text-slate-400 uppercase tracking-widest">
-                <span className="flex items-center gap-1.5 bg-white/50 px-3 py-1 rounded-full"><code className="font-bold text-blue-600">&lt;/&gt;</code> Next.js 14</span>
+                <span className="flex items-center gap-1.5 bg-white/50 px-3 py-1 rounded-full"><Code2 className="w-4 h-4 text-blue-600" /> Next.js 14</span>
                 <span className="flex items-center gap-1.5 bg-white/50 px-3 py-1 rounded-full"><Zap className="w-3 h-3 text-yellow-500 fill-yellow-500" /> Vercel</span>
                 <span className="flex items-center gap-1.5 bg-white/50 px-3 py-1 rounded-full"><TrendingUp className="w-3 h-3 text-emerald-500" /> Google Analytics 4</span>
             </div>
