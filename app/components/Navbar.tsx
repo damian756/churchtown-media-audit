@@ -15,41 +15,34 @@ export default function Navbar() {
   const isDarkPage = [
     "/southport-growth", 
     "/testimonials", 
-    "/audit" // <--- CRITICAL FIX: Added Audit page
+    "/audit" 
   ].includes(pathname);
 
-  // 2. SCROLL LISTENER (Performance Optimized)
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // 3. LOCK BODY SCROLL WHEN MOBILE MENU IS OPEN
   useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
+    if (isOpen) { document.body.style.overflow = 'hidden'; } 
+    else { document.body.style.overflow = 'unset'; }
   }, [isOpen]);
 
-  // 4. AUTO-CLOSE MENU ON ROUTE CHANGE
-  useEffect(() => {
-    setIsOpen(false);
-  }, [pathname]);
+  useEffect(() => { setIsOpen(false); }, [pathname]);
 
+  // UPDATED LINKS ARRAY
   const links = [
     { name: "Home", href: "/" },
     { name: "Web Design", href: "/services/web-design" },
     { name: "SEO", href: "/services/seo" },
     { name: "Work", href: "/work" },
+    { name: "Insights", href: "/blog" }, // <--- ADDED: Proves Authority
     { name: "Reviews", href: "/testimonials" },
     { name: "Contact", href: "/contact" },
   ];
 
   // Logic: Text is white ONLY if we are on a dark page AND haven't scrolled down yet.
-  // Once we scroll, the navbar turns white/glass, so text must turn black.
   const useWhiteText = isDarkPage && !scrolled && !isOpen;
 
   return (
@@ -70,7 +63,7 @@ export default function Navbar() {
         </Link>
 
         {/* DESKTOP NAV */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8">
           {links.map((link) => (
             <Link 
                 key={link.name} 
@@ -78,7 +71,7 @@ export default function Navbar() {
                 className={`text-sm font-bold transition-colors hover:-translate-y-0.5 transform duration-200 ${
                     useWhiteText 
                     ? "text-slate-200 hover:text-white" 
-                    : pathname === link.href 
+                    : pathname.startsWith(link.href) && link.href !== "/" // Active state logic
                         ? "text-blue-600" 
                         : "text-slate-600 hover:text-blue-600"
                 }`}
@@ -104,7 +97,7 @@ export default function Navbar() {
         <button 
             onClick={() => setIsOpen(!isOpen)} 
             aria-label="Toggle Menu"
-            className={`md:hidden relative z-50 p-2 transition-colors ${useWhiteText ? "text-white" : "text-slate-900"}`}
+            className={`lg:hidden relative z-50 p-2 transition-colors ${useWhiteText ? "text-white" : "text-slate-900"}`}
         >
           {isOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
         </button>
