@@ -62,7 +62,7 @@ export default function GrowthHub() {
       />
 
       {/* 1. Hero Section */}
-      <section className="relative bg-slate-900 px-6 py-24 text-center text-white overflow-hidden">
+      <section className="relative bg-slate-900 px-6 py-16 text-center text-white overflow-hidden">
         <div className="absolute inset-0 opacity-20">
             <Image 
                 src="/images/mlec.jpg" 
@@ -77,7 +77,7 @@ export default function GrowthHub() {
             The 2026 Playbook
           </span>
           <h1 className="text-4xl font-bold tracking-tight sm:text-6xl mb-6">
-            Growing Your Business in <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Southport</span>
+            Growing Your Business in <span className="text-blue-400">Southport</span>
           </h1>
           <p className="mt-6 text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">
             From Churchtown Village to the Marine Lake. We've curated the essential grants, networks, and digital strategies you need to dominate the local Sefton market.
@@ -86,8 +86,8 @@ export default function GrowthHub() {
       </section>
 
       {/* 2. Intro & Digital First Reality */}
-      <section className="mx-auto max-w-7xl px-6 py-24">
-        <div className="flex flex-col lg:flex-row gap-16 items-center">
+      <section className="mx-auto max-w-7xl px-6 py-16">
+        <div className="flex flex-col lg:flex-row gap-12 items-center">
             <div className="lg:w-1/2">
                 <h2 className="text-3xl font-bold text-white mb-6">The "Digital First" Reality for Southport</h2>
                 <div className="prose prose-lg text-slate-300 space-y-6">
@@ -117,18 +117,18 @@ export default function GrowthHub() {
         </div>
 
         {/* 3 Pillars */}
-        <div className="grid gap-8 md:grid-cols-3 mt-20">
-            <div className="bg-slate-900 p-8 rounded-2xl shadow-sm border border-slate-700 hover:shadow-md transition-shadow">
+        <div className="grid gap-8 md:grid-cols-3 mt-16">
+            <div className="bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-700 hover:shadow-md transition-shadow">
                 <div className="p-3 bg-blue-500/20 w-fit rounded-lg text-blue-400 mb-6"><MapPin className="h-6 w-6"/></div>
                 <h3 className="text-xl font-bold text-white mb-3">The "Near Me" Explosion</h3>
                 <p className="text-slate-300">Local search has shifted. "Web design near me" or "Roofers in Southport" are now the primary way customers find you. You need to dominate the Map Pack.</p>
             </div>
-            <div className="bg-slate-900 p-8 rounded-2xl shadow-sm border border-slate-700 hover:shadow-md transition-shadow">
+            <div className="bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-700 hover:shadow-md transition-shadow">
                 <div className="p-3 bg-yellow-500/20 w-fit rounded-lg text-yellow-400 mb-6"><Zap className="h-6 w-6"/></div>
                 <h3 className="text-xl font-bold text-white mb-3">Speed is Currency</h3>
                 <p className="text-slate-300">Southport has 5G. If your mobile site takes &gt;3 seconds to load, 50% of visitors leave. We build engines that capture traffic, not just look pretty.</p>
             </div>
-            <div className="bg-slate-900 p-8 rounded-2xl shadow-sm border border-slate-700 hover:shadow-md transition-shadow">
+            <div className="bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-700 hover:shadow-md transition-shadow">
                 <div className="p-3 bg-red-500/20 w-fit rounded-lg text-red-400 mb-6"><Search className="h-6 w-6"/></div>
                 <h3 className="text-xl font-bold text-white mb-3">The Invisible Competitor</h3>
                 <p className="text-slate-300">Your biggest rival isn't the shop next door—it's the digital-first business that optimized last month. Don't let them steal your leads.</p>
@@ -137,9 +137,9 @@ export default function GrowthHub() {
       </section>
 
       {/* 3. Networking Section (Row 1 Style) */}
-      <section className="py-20 bg-slate-900 border-y border-slate-700">
+      <section className="py-16 bg-slate-900 border-y border-slate-700">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="flex items-center gap-4 mb-12">
+          <div className="flex items-center gap-4 mb-8">
             <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
               <Users className="h-8 w-8" />
             </div>
@@ -160,7 +160,7 @@ export default function GrowthHub() {
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="p-8 flex flex-col flex-1">
+              <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-xl font-bold text-white">Sandgrounders Business Club</h3>
                 <p className="mt-2 text-sm font-semibold text-blue-400">Casual Connection</p>
                 <ul className="mt-6 space-y-4 flex-1 text-slate-300 text-sm">
@@ -183,7 +183,7 @@ export default function GrowthHub() {
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="p-8 flex flex-col flex-1">
+              <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-xl font-bold text-white">Southport BID</h3>
                 <p className="mt-2 text-sm font-semibold text-blue-400">Retail & Hospitality</p>
                 <ul className="mt-6 space-y-4 flex-1 text-slate-300 text-sm">
@@ -206,7 +206,7 @@ export default function GrowthHub() {
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="p-8 flex flex-col flex-1">
+              <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-xl font-bold text-white">Real5 Networking</h3>
                 <p className="mt-2 text-sm font-semibold text-blue-400">Structured Referrals</p>
                 <ul className="mt-6 space-y-4 flex-1 text-slate-300 text-sm">
@@ -223,8 +223,8 @@ export default function GrowthHub() {
       </section>
 
       {/* 4. Fueling Growth (Middle Section) */}
-      <section className="mx-auto max-w-7xl px-6 py-24">
-        <div className="flex flex-col lg:flex-row-reverse gap-16 items-center">
+      <section className="mx-auto max-w-7xl px-6 py-16">
+        <div className="flex flex-col lg:flex-row-reverse gap-12 items-center">
             <div className="lg:w-1/2">
                 <div className="flex items-center gap-3 mb-6">
                     <div className="p-2 bg-green-500/20 rounded-lg text-green-400"><Coins className="h-6 w-6" /></div>
@@ -250,7 +250,7 @@ export default function GrowthHub() {
         </div>
 
         {/* 5. Grants Cards (UPDATED to match Row 1) */}
-        <div className="grid gap-8 md:grid-cols-3 mt-16">
+        <div className="grid gap-8 md:grid-cols-3 mt-12">
             {/* Grant 1 */}
             <div className="flex flex-col rounded-2xl border border-slate-700 bg-slate-900 overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
               {/* Changed class to overflow-hidden and removed padding/flex to match row 1 */}
@@ -263,7 +263,7 @@ export default function GrowthHub() {
                     className="object-cover transition-transform duration-500 group-hover:scale-105" 
                 />
               </div>
-              <div className="p-8 flex flex-col flex-1">
+              <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-xl font-bold text-white">InvestSefton</h3>
                 <p className="mt-1 text-sm text-slate-400 font-medium">The Growth Hub</p>
                 <p className="mt-4 text-slate-300 text-sm leading-relaxed flex-1">
@@ -290,7 +290,7 @@ export default function GrowthHub() {
                     className="object-cover transition-transform duration-500 group-hover:scale-105" 
                 />
               </div>
-              <div className="p-8 flex flex-col flex-1">
+              <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-xl font-bold text-white">Police Cashback Fund</h3>
                 <p className="mt-1 text-sm text-slate-400 font-medium">Community Safety</p>
                 <p className="mt-4 text-slate-300 text-sm leading-relaxed flex-1">
@@ -317,7 +317,7 @@ export default function GrowthHub() {
                     className="object-cover transition-transform duration-500 group-hover:scale-105" 
                 />
               </div>
-              <div className="p-8 flex flex-col flex-1">
+              <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-xl font-bold text-white">King’s Trust</h3>
                 <p className="mt-1 text-sm text-slate-400 font-medium">Entrepreneurs (18-30)</p>
                 <p className="mt-4 text-slate-300 text-sm leading-relaxed flex-1">
@@ -337,14 +337,14 @@ export default function GrowthHub() {
       </section>
 
       {/* 6. Performance-First Strategy */}
-      <section className="bg-slate-950 py-24 border-t border-slate-700">
+      <section className="bg-slate-950 py-16 border-t border-slate-700">
         <div className="mx-auto max-w-7xl px-6">
-            <div className="text-center mb-16">
+            <div className="text-center mb-12">
                 <h2 className="text-3xl font-bold text-white">The Performance-First Strategy</h2>
                 <p className="mt-4 text-lg text-slate-300">Most agencies focus on how a website looks. We focus on how it works.</p>
             </div>
 
-            <div className="flex flex-col lg:flex-row gap-16 items-center">
+            <div className="flex flex-col lg:flex-row gap-12 items-center">
                 <div className="lg:w-1/2">
                     <p className="text-lg text-slate-300 leading-relaxed mb-6">
                         In 2026, a beautiful website that nobody visits is a liability. We build high-performance digital engines designed to capture the existing demand in Southport and convert it into revenue.
@@ -387,12 +387,12 @@ export default function GrowthHub() {
       </section>
 
       {/* 7. Latest Insights */}
-      <section className="bg-slate-900 py-24 border-y border-slate-700">
+      <section className="bg-slate-900 py-16 border-y border-slate-700">
         <div className="mx-auto max-w-7xl px-6">
             <h2 className="text-3xl font-bold text-white mb-12 text-center">Latest Insights</h2>
             <div className="grid gap-8 md:grid-cols-2">
                 {recentPosts.map((post) => (
-                    <Link key={post.slug} href={`/blog/${post.slug}`} className="group block bg-slate-950 rounded-2xl p-8 hover:bg-slate-900 transition-colors border border-slate-700">
+                    <Link key={post.slug} href={`/blog/${post.slug}`} className="group block bg-slate-950 rounded-2xl p-6 hover:bg-slate-900 transition-colors border border-slate-700">
                         <div className="flex items-center gap-3 mb-4 text-sm text-slate-400">
                             <span>{post.date}</span>
                             <span className="w-1 h-1 bg-slate-500 rounded-full"></span>
@@ -407,12 +407,12 @@ export default function GrowthHub() {
       </section>
 
       {/* 8. FAQ Section */}
-      <section className="bg-slate-950 py-24">
+      <section className="bg-slate-950 py-16">
         <div className="mx-auto max-w-7xl px-6">
             <h2 className="text-3xl font-bold text-white mb-12 text-center">Frequently Asked Questions</h2>
             <div className="grid gap-6 md:grid-cols-2">
                 {/* 1 */}
-                <div className="bg-slate-900 p-8 rounded-xl border border-slate-700 shadow-sm h-full hover:shadow-md transition-shadow">
+                <div className="bg-slate-900 p-6 rounded-xl border border-slate-700 shadow-sm h-full hover:shadow-md transition-shadow">
                     <h3 className="font-bold text-white flex items-start gap-3 text-lg">
                         <HelpCircle className="h-6 w-6 text-blue-400 shrink-0 mt-1"/> 
                         What funding is available for businesses in Southport?
@@ -422,7 +422,7 @@ export default function GrowthHub() {
                     </p>
                 </div>
                 {/* 2 */}
-                <div className="bg-slate-900 p-8 rounded-xl border border-slate-700 shadow-sm h-full hover:shadow-md transition-shadow">
+                <div className="bg-slate-900 p-6 rounded-xl border border-slate-700 shadow-sm h-full hover:shadow-md transition-shadow">
                     <h3 className="font-bold text-white flex items-start gap-3 text-lg">
                         <HelpCircle className="h-6 w-6 text-blue-400 shrink-0 mt-1"/> 
                         How can I improve my local SEO in Southport?
@@ -432,7 +432,7 @@ export default function GrowthHub() {
                     </p>
                 </div>
                 {/* 3 */}
-                <div className="bg-slate-900 p-8 rounded-xl border border-slate-700 shadow-sm h-full hover:shadow-md transition-shadow">
+                <div className="bg-slate-900 p-6 rounded-xl border border-slate-700 shadow-sm h-full hover:shadow-md transition-shadow">
                     <h3 className="font-bold text-white flex items-start gap-3 text-lg">
                         <HelpCircle className="h-6 w-6 text-blue-400 shrink-0 mt-1"/> 
                         What are the best business networking groups in Southport?
@@ -442,7 +442,7 @@ export default function GrowthHub() {
                     </p>
                 </div>
                 {/* 4 */}
-                <div className="bg-slate-900 p-8 rounded-xl border border-slate-700 shadow-sm h-full hover:shadow-md transition-shadow">
+                <div className="bg-slate-900 p-6 rounded-xl border border-slate-700 shadow-sm h-full hover:shadow-md transition-shadow">
                     <h3 className="font-bold text-white flex items-start gap-3 text-lg">
                         <HelpCircle className="h-6 w-6 text-blue-400 shrink-0 mt-1"/> 
                         How will the Marine Lake Events Centre benefit local businesses?
@@ -456,7 +456,7 @@ export default function GrowthHub() {
       </section>
 
       {/* 9. CTA */}
-      <section className="bg-slate-900 px-6 py-24 text-center text-white">
+      <section className="bg-slate-900 px-6 py-16 text-center text-white">
         <h2 className="text-3xl font-bold">Ready to dominate the Southport search results?</h2>
         <p className="mt-4 text-slate-400 mb-8 max-w-2xl mx-auto">Stop being the town's best-kept secret. Get a free, no-nonsense audit of your digital presence today.</p>
         <Link href="/audit" className="rounded-full bg-blue-500 px-8 py-4 font-bold text-white hover:bg-blue-400 transition-colors shadow-xl inline-block hover:-translate-y-1">

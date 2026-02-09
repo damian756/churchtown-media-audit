@@ -10,7 +10,7 @@ export default function LocalSEO() {
   return (
     <main className="min-h-screen bg-slate-950">
       {/* Hero */}
-      <section className="bg-slate-900 border-b border-slate-700 px-6 py-20 text-center">
+      <section className="bg-slate-900 border-b border-slate-700 px-6 py-16 text-center">
         <div className="mx-auto max-w-3xl">
           <h1 className="text-3xl font-bold tracking-tight text-white sm:text-5xl">
             Results-Driven SEO for <span className="text-blue-400">Growing Businesses</span>
@@ -22,8 +22,8 @@ export default function LocalSEO() {
       </section>
 
       {/* The Pillars (Original Content) */}
-      <section className="mx-auto max-w-5xl px-6 py-20">
-        <div className="grid gap-12 md:grid-cols-3">
+      <section className="mx-auto max-w-5xl px-6 py-16">
+        <div className="grid gap-8 md:grid-cols-3">
           <div className="text-center">
             <div className="mx-auto mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-blue-950/50 text-blue-400">
               <BarChart className="h-6 w-6" />
@@ -55,7 +55,7 @@ export default function LocalSEO() {
       </section>
 
       {/* CTA */}
-      <section className="bg-slate-900 px-6 py-20 text-center border-t border-slate-700">
+      <section className="bg-slate-900 px-6 py-16 text-center border-t border-slate-700">
         <h2 className="text-2xl font-bold text-white">Looking for a local specialist?</h2>
         <p className="mt-4 text-slate-300 mb-8">We have dedicated campaigns for:</p>
         <div className="flex flex-wrap justify-center gap-4 text-blue-400 font-semibold">

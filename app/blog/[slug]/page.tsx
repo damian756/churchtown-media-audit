@@ -51,7 +51,7 @@ export default async function BlogPost({ params }: Props) {
     <main className="min-h-screen bg-slate-950">
       
       {/* HEADER SECTION (Dark Theme) */}
-      <section className="bg-slate-950 px-6 pt-32 pb-24 text-center border-b border-slate-800">
+      <section className="bg-slate-950 px-6 pt-32 pb-16 text-center border-b border-slate-800">
          <div className="mx-auto max-w-3xl">
             <Link href="/blog" className="mb-8 inline-flex items-center gap-2 text-sm font-bold text-slate-400 hover:text-blue-400 transition-colors bg-slate-900 px-4 py-2 rounded-full">
                 <ArrowLeft className="h-4 w-4" /> Back to Knowledge Base
@@ -85,14 +85,14 @@ export default async function BlogPost({ params }: Props) {
       </div>
 
       {/* CONTENT */}
-      <article className="mx-auto max-w-3xl px-6 py-16">
+      <article className="mx-auto max-w-3xl px-6 py-12">
         <div 
           className="blog-content prose prose-lg prose-invert prose-slate max-w-none prose-headings:font-bold prose-headings:text-white prose-a:text-blue-400 prose-a:no-underline hover:prose-a:text-blue-400 prose-img:rounded-xl prose-p:text-slate-300 prose-li:text-slate-300"
           dangerouslySetInnerHTML={{ __html: post.content }} 
         />
 
         {/* CTA Box */}
-        <div className="mt-20 rounded-2xl bg-slate-900 p-10 text-center ring-1 ring-slate-700">
+        <div className="mt-12 rounded-2xl bg-slate-900 p-6 text-center ring-1 ring-slate-700">
             <h3 className="text-xl font-bold text-white">Need help implementing this?</h3>
             <p className="mt-2 text-slate-400 mb-6">We help Southport businesses turn these strategies into revenue.</p>
             <Link href="/contact" className="inline-block rounded-lg bg-blue-500 px-8 py-4 font-bold text-white hover:bg-blue-400 transition-all shadow-lg hover:shadow-xl">

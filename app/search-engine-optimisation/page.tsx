@@ -11,7 +11,7 @@ export default function SEOPage() {
     <main className="min-h-screen bg-slate-950">
       
       {/* Hero */}
-      <section className="bg-slate-900 px-6 py-24 text-center border-b border-slate-700">
+      <section className="bg-slate-900 px-6 py-16 text-center border-b border-slate-700">
         <div className="mx-auto max-w-4xl">
           <div className="mb-6 inline-flex items-center rounded-full bg-indigo-900 px-3 py-1 text-sm font-medium text-indigo-400">
             For Growth-Focused Brands
@@ -26,8 +26,8 @@ export default function SEOPage() {
       </section>
 
       {/* The Pillars */}
-      <section className="mx-auto max-w-6xl px-6 py-24">
-        <div className="grid gap-12 md:grid-cols-3">
+      <section className="mx-auto max-w-6xl px-6 py-16">
+        <div className="grid gap-8 md:grid-cols-3">
           <div className="text-center">
             <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-blue-950/50 text-blue-400">
               <Target className="h-8 w-8" />
@@ -59,14 +59,14 @@ export default function SEOPage() {
       </section>
 
       {/* Local Strategy */}
-      <section className="bg-slate-900 px-6 py-24 text-white">
+      <section className="bg-slate-900 px-6 py-16 text-white">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-bold">Dominate the Local Pack</h2>
           <p className="mt-4 text-slate-400 text-lg">
             One of the most valuable pieces of digital real estate is the "Map Pack"—the top 3 map results.
           </p>
           <div className="mt-12 grid gap-8 sm:grid-cols-2 text-left">
-            <div className="bg-slate-800 p-8 rounded-xl border border-slate-700">
+            <div className="bg-slate-800 p-6 rounded-xl border border-slate-700">
               <h3 className="font-bold text-xl mb-4 flex items-center gap-2">
                 <Search className="h-5 w-5 text-blue-400" /> Precision Targeting
               </h3>
@@ -74,7 +74,7 @@ export default function SEOPage() {
                 We optimize for specific searches like "Emergency Plumber Churchtown" or "Best Coffee Southport," ensuring you capture high-intent local traffic.
               </p>
             </div>
-            <div className="bg-slate-800 p-8 rounded-xl border border-slate-700">
+            <div className="bg-slate-800 p-6 rounded-xl border border-slate-700">
               <h3 className="font-bold text-xl mb-4 flex items-center gap-2">
                 <Target className="h-5 w-5 text-blue-400" /> Google Business Profile
               </h3>
@@ -87,8 +87,8 @@ export default function SEOPage() {
       </section>
 
       {/* --- NEW SECTION: Small Business Link --- */}
-      <section className="bg-indigo-50 px-6 py-20 border-t border-indigo-100">
-        <div className="mx-auto max-w-4xl rounded-2xl bg-slate-900 p-10 shadow-sm ring-1 ring-slate-700 text-center">
+      <section className="bg-indigo-50 px-6 py-16 border-t border-indigo-100">
+        <div className="mx-auto max-w-4xl rounded-2xl bg-slate-900 p-6 shadow-sm ring-1 ring-slate-700 text-center">
             <div className="inline-flex items-center justify-center p-3 bg-indigo-100 rounded-full text-indigo-600 mb-6">
                 <MapPin className="h-6 w-6" />
             </div>
@@ -104,7 +104,7 @@ export default function SEOPage() {
       {/* -------------------------------------- */}
 
       {/* CTA */}
-      <section className="mx-auto max-w-4xl px-6 py-24 text-center">
+      <section className="mx-auto max-w-4xl px-6 py-16 text-center">
         <h2 className="text-3xl font-bold text-slate-900">Ready for an SEO partner you can trust?</h2>
         <p className="mt-4 text-lg text-slate-600">
           Stop guessing. Start growing. Let's look at your data.

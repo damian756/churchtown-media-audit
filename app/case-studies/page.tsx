@@ -12,7 +12,7 @@ export default function CaseStudies() {
 
   return (
     <main className="min-h-screen bg-slate-950">
-      <section className="bg-slate-900 border-b border-slate-700 px-6 py-20 text-center">
+      <section className="bg-slate-900 border-b border-slate-700 px-6 py-16 text-center">
         <div className="mx-auto max-w-3xl">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
             Our Work
@@ -23,8 +23,8 @@ export default function CaseStudies() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-5xl px-6 py-20">
-        <div className="grid gap-10 sm:grid-cols-2">
+      <section className="mx-auto max-w-5xl px-6 py-16">
+        <div className="grid gap-8 sm:grid-cols-2">
           {caseStudies.map((study) => (
             <Link
               key={study.slug}
@@ -40,7 +40,7 @@ export default function CaseStudies() {
                 />
               </div>
 
-              <div className="flex flex-1 flex-col p-8">
+              <div className="flex flex-1 flex-col p-6">
                 <div className="flex items-center gap-3 text-sm font-medium text-blue-400">
                   <TrendingUp className="h-4 w-4" />
                   <span>Result Delivered</span>
@@ -66,7 +66,7 @@ export default function CaseStudies() {
         )}
       </section>
 
-      <section className="bg-slate-900 px-6 py-24 text-center text-white">
+      <section className="bg-slate-900 px-6 py-16 text-center text-white">
         <h2 className="text-3xl font-bold">Want results like this?</h2>
         <p className="mt-4 text-slate-400">Let's audit your current setup and find the gaps.</p>
         <Link
