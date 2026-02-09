@@ -343,12 +343,7 @@ export const posts: BlogPost[] = [
       <p><strong>Watch this space.</strong> In our next update (Month 3), we won&#8217;t just be showing you graphs of <em>rankings</em> going up. We’ll be showing you the <strong>Clicks</strong>—and the leads that follow.</p>
       <hr />
       <p><em>Has your agency spent 12 months sending you reports that say &#8220;work done&#8221; while your traffic stays flat? Let’s check under the hood. It might be a quick fix.</em></p>
-      <div style="margin-top: 2rem;">
-        <a href="/audit" class="inline-flex items-center justify-center rounded-xl bg-blue-600 px-8 py-4 font-bold text-white shadow-lg transition-all hover:bg-blue-700 hover:-translate-y-1">
-            Book a Free &#8220;No-Nonsense&#8221; Audit
-        </a>
-      </div>
-    `
+`
   },
   {
     slug: "eating-our-own-dog-food",
