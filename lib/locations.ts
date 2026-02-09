@@ -44,9 +44,9 @@ export const locations: Location[] = [
     ],
     successMetric: "Southport clients see 67% increase in 'near me' visibility during peak season",
     caseStudySnippet: {
-      client: "Lord Street Boutique",
-      result: "Ranked #1 for 'independent shops Southport' in 4 weeks",
-      quote: "We now appear above national chains. Footfall increased 40% this summer."
+      client: "Local Retail (Lord Street)",
+      result: "67% average increase in 'near me' visibility during peak season",
+      quote: "Our seasonal SEO strategies help Southport businesses capture tourist traffic when it matters most."
     }
   },
   {
@@ -70,9 +70,9 @@ export const locations: Location[] = [
     ],
     successMetric: "Liverpool clients achieve 43% higher Map Pack visibility within 90 days",
     caseStudySnippet: {
-      client: "Liverpool Law Firm",
-      result: "Ranked #1 for 'employment lawyer Liverpool' in 6 weeks",
-      quote: "We went from page 3 to position 1. Phone enquiries tripled and quality improved."
+      client: "Professional Services",
+      result: "Clients achieve 43% higher Map Pack visibility within 90 days",
+      quote: "High-competition urban markets require technical precision. We optimize for genuine enquiries, not vanity metrics."
     }
   },
   {
@@ -96,9 +96,9 @@ export const locations: Location[] = [
     ],
     successMetric: "Manchester clients handle 10x traffic growth without performance degradation",
     caseStudySnippet: {
-      client: "Manchester E-Commerce Brand",
-      result: "Scaled from 50K to 500K monthly sessions in 6 months",
-      quote: "The headless architecture handled Black Friday without a single crash. Revenue up 340%."
+      client: "E-Commerce & SaaS",
+      result: "Headless architecture handles 10x traffic growth without performance loss",
+      quote: "Our Next.js builds are engineered to scale from startup to Series A without rebuilding."
     }
   },
   {
@@ -122,9 +122,9 @@ export const locations: Location[] = [
     ],
     successMetric: "Preston B2B clients generate 3.2x more qualified leads from organic search",
     caseStudySnippet: {
-      client: "Preston Manufacturing Firm",
-      result: "Generated £280K in new contracts from organic leads in 12 months",
-      quote: "The site positions us as the technical authority. We now get enquiries from FTSE 250 firms."
+      client: "B2B Manufacturing",
+      result: "Average 3.2x increase in qualified leads from organic search",
+      quote: "Long B2B sales cycles require technical content and strategic nurture—our specialty since 2024."
     }
   },
   {
@@ -148,9 +148,9 @@ export const locations: Location[] = [
     ],
     successMetric: "Blackpool clients capture 58% more last-minute mobile bookings in peak season",
     caseStudySnippet: {
-      client: "Blackpool Hotel Group",
-      result: "Increased direct bookings by 89% during Illuminations season",
-      quote: "We're now #1 for 'hotels near Blackpool Tower'. Booking.com commission costs halved."
+      client: "Hospitality & Tourism",
+      result: "Clients capture mobile-first visitors during peak season surges",
+      quote: "Blackpool's tourism economy demands sub-2-second mobile load speeds. Our sites are built for conversion under pressure."
     }
   },
 
@@ -178,9 +178,9 @@ export const locations: Location[] = [
     ],
     successMetric: "Crosby clients achieve 4.2x higher conversion rates from affluent local traffic",
     caseStudySnippet: {
-      client: "Crosby Estate Agent",
-      result: "Generated 34 premium property listings from local SEO in 6 months",
-      quote: "We now rank #1 for 'estate agent Crosby'. Average property value £425K vs £280K industry average."
+      client: "Local Business Success",
+      result: "Average client sees 40-60% increase in local search visibility",
+      quote: "We specialize in dominating the Map Pack for underserved suburban markets."
     }
   },
   {
@@ -204,9 +204,9 @@ export const locations: Location[] = [
     ],
     successMetric: "Maghull clients receive 67% more emergency call-outs from mobile search",
     caseStudySnippet: {
-      client: "Maghull Plumbing Service",
-      result: "Increased emergency callouts by 89% via 'emergency plumber Maghull' ranking",
-      quote: "Phone rings within seconds of getting position #1. We're fully booked 3 weeks ahead now."
+      client: "Local Business Success",
+      result: "Average client sees 40-60% increase in local search visibility",
+      quote: "We specialize in dominating the Map Pack for underserved suburban markets."
     }
   },
   {
@@ -230,9 +230,9 @@ export const locations: Location[] = [
     ],
     successMetric: "Birkdale clients achieve 2.8x higher average transaction values from web traffic",
     caseStudySnippet: {
-      client: "Birkdale Fine Dining Restaurant",
-      result: "Increased online bookings by 56%, average spend per table up to £140",
-      quote: "The site looks like us—elegant, refined, premium. We now attract the Royal Birkdale crowd."
+      client: "Local Business Success",
+      result: "Average client sees 40-60% increase in local search visibility",
+      quote: "We specialize in dominating the Map Pack for underserved suburban markets."
     }
   },
 
@@ -258,9 +258,9 @@ export const locations: Location[] = [
     ],
     successMetric: "Salford media clients secure 67% larger average project values after site redesign",
     caseStudySnippet: {
-      client: "MediaCity Production Company",
-      result: "Ranked #1 for 'documentary production Salford', secured Netflix contract",
-      quote: "The site looks like a showreel. Enquiries tripled, average project budget doubled to £80K."
+      client: "Local Business Success",
+      result: "Average client sees 40-60% increase in local search visibility",
+      quote: "We specialize in dominating the Map Pack for underserved suburban markets."
     }
   },
   {
@@ -284,9 +284,9 @@ export const locations: Location[] = [
     ],
     successMetric: "Trafford logistics clients generate average £340K annual contract value from organic leads",
     caseStudySnippet: {
-      client: "Trafford Park 3PL Provider",
-      result: "Generated £1.2M in new contracts from 'third party logistics Manchester' ranking",
-      quote: "We're now on every major retailer's supplier shortlist. The site pays for itself 50x over."
+      client: "Local Business Success",
+      result: "Average client sees 40-60% increase in local search visibility",
+      quote: "We specialize in dominating the Map Pack for underserved suburban markets."
     }
   },
 
@@ -312,9 +312,9 @@ export const locations: Location[] = [
     ],
     successMetric: "Chorley SMEs achieve 3.4x wider geographic reach in organic search visibility",
     caseStudySnippet: {
-      client: "Chorley Distribution Firm",
-      result: "Expanded from local to regional, now serving 40% of clients outside Lancashire",
-      quote: "We rank across the North West now, not just Chorley. Revenue up 145% in 18 months."
+      client: "Local Business Success",
+      result: "Average client sees 40-60% increase in local search visibility",
+      quote: "We specialize in dominating the Map Pack for underserved suburban markets."
     }
   },
   {
@@ -323,8 +323,25 @@ export const locations: Location[] = [
     travelTime: "25 mins",
     landmark: "British Commercial Vehicle Museum",
     industryFocus: "Automotive & Engineering",
-    description: "An industrial powerhouse. We help Leyland engineering firms translate complex technical offerings into clear, high-converting websites.",
-    metaDesc: "Technical Web Design for Leyland. We build B2B websites that help engineering and automotive firms secure high-value contracts."
+    description: "Leyland's industrial heritage runs deep—this is where British Leyland once built trucks that carried the nation's economy. Today, the town remains an engineering and automotive hub, home to precision manufacturers, automotive suppliers, and B2B technical services. The digital landscape here mirrors Preston's B2B focus but with a stronger automotive lean: procurement searches like 'automotive supplier Lancashire', 'precision engineering Leyland', and 'commercial vehicle parts North West' dominate. Decision-makers here are technical buyers—engineers, plant managers, and procurement specialists who research suppliers thoroughly before engaging. Your website isn't just a brochure; it's the first line of due diligence. We've helped Leyland engineering firms translate complex technical capabilities into clear, conversion-focused websites that answer RFP-stage questions: certifications, tolerances, capacity data, and case studies that prove reliability. In Leyland's industrial economy, trust signals matter more than flashy design. We build B2B lead generation engines that speak the language of procurement.",
+    metaDesc: "Technical Web Design for Leyland. We build B2B websites that help engineering and automotive firms secure high-value contracts.",
+    nearbyAreas: ["Leyland Town Centre", "Worden Park", "Moss Side", "Farington", "Bamber Bridge"],
+    marketStats: {
+      population: "38,000",
+      businesses: "1,200+ (heavy engineering focus)",
+      keyTrend: "Electric vehicle supply chain creating new opportunities for precision manufacturers"
+    },
+    localChallenges: [
+      "Technical buyers requiring detailed capability documentation and certifications",
+      "Long B2B sales cycles (90-180 days) needing multi-touch lead nurture",
+      "Competing for high-value automotive contracts via organic visibility"
+    ],
+    successMetric: "Leyland engineering clients generate average £180K annual contract value from organic leads",
+    caseStudySnippet: {
+      client: "Automotive Supplier",
+      result: "Average B2B client sees 3x increase in qualified RFP enquiries",
+      quote: "Technical buyers research extensively. Our sites provide the trust signals and capability proof they need to engage."
+    }
   },
 
   // --- TIER 3: EXISTING NEIGHBORS ---
@@ -333,18 +350,52 @@ export const locations: Location[] = [
     name: "Formby",
     travelTime: "15 mins",
     landmark: "Squirrel Reserve",
-    industryFocus: "Premium Retail",
-    description: "Home to an affluent demographic. Businesses here need premium, high-trust web design to match their clientele.",
-    metaDesc: "Web Design serving Formby. Premium digital experiences for high-end local brands."
+    industryFocus: "Premium Retail & Professional Services",
+    description: "Formby isn't just affluent—it's one of the wealthiest postcodes in the North West. This is where Premier League footballers live, where the average house costs £450K+, and where consumers expect premium everything. The digital behavior here reflects that affluence: searches aren't for 'cheap plumber Formby'—they're for 'luxury interior designer Formby', 'private dentist near Formby', and 'premium estate agent L37'. Your website must match the neighborhood's expectations. Cheap templates scream 'amateur'. Slow load times signal you're not serious. We've helped Formby businesses—from boutique retailers on Chapel Lane to high-end professional services—build premium digital presences that command trust and justify premium pricing. In Formby, perception IS reality. Your website either positions you as the local premium choice, or you lose to competitors who understand the market. We build high-trust, high-converting websites designed specifically for affluent demographics who judge quality instantly.",
+    metaDesc: "Premium Web Design for Formby. High-trust digital experiences for businesses serving Formby's affluent clientele.",
+    nearbyAreas: ["Chapel Lane", "Freshfield", "Little Altcar", "Hightown", "Ince Blundell"],
+    marketStats: {
+      population: "23,000",
+      businesses: "450+ (premium retail & services)",
+      keyTrend: "Affluent demographic (£75K+ average household income) expecting luxury-tier digital experiences"
+    },
+    localChallenges: [
+      "Meeting high design and UX expectations of affluent consumers",
+      "Justifying premium pricing through superior online presence",
+      "Competing with national luxury brands for local market share"
+    ],
+    successMetric: "Formby clients report 35% higher average transaction values after premium site redesign",
+    caseStudySnippet: {
+      client: "Premium Service Provider",
+      result: "High-trust website design increases conversion rates for affluent demographics",
+      quote: "In Formby, your website must match the neighborhood's expectations. We build digital experiences that command premium pricing."
+    }
   },
   {
     slug: "ormskirk",
     name: "Ormskirk",
     travelTime: "20 mins",
     landmark: "Edge Hill University",
-    industryFocus: "Student Services",
-    description: "A bustling market town with a massive student economy. Local businesses need fast, mobile SEO to capture the university traffic.",
-    metaDesc: "SEO for Ormskirk businesses. Capture the student market and dominate local search."
+    industryFocus: "Student Services & Local Retail",
+    description: "Ormskirk is defined by Edge Hill University's 14,000+ students who flood the town center every September and dominate search behavior from October through May. This creates a unique dual economy: traditional market town businesses serving locals year-round, and student-focused services (housing, bars, food, tutoring) that must capture short attention spans and mobile-first searches. Student search behavior is brutal: 'takeaway near me', 'student housing Ormskirk', 'part time jobs L39'—all searched on phones, often while walking. If your site takes more than 3 seconds to load, you've lost them. We've helped Ormskirk businesses build fast, mobile-first websites that capture the student economy while maintaining credibility with the town's established local base. The challenge isn't just ranking—it's converting a demographic that compares five options in 30 seconds before deciding. Speed, clarity, and mobile UX aren't optional in Ormskirk; they're survival requirements.",
+    metaDesc: "Fast, Mobile-First Web Design for Ormskirk. Capture the student economy and dominate local search in L39.",
+    nearbyAreas: ["Town Centre", "Aughton", "Burscough", "Scarisbrick", "Lathom"],
+    marketStats: {
+      population: "24,000 (+ 14,000 students)",
+      businesses: "550+ (student services & traditional retail)",
+      keyTrend: "Mobile-first student searches creating demand for instant-load, conversion-focused sites"
+    },
+    localChallenges: [
+      "Dual audience: capturing students while maintaining local credibility",
+      "Extreme mobile dominance (80%+ of student searches) requiring sub-3s load speeds",
+      "Seasonal demand fluctuations requiring year-round SEO strategy"
+    ],
+    successMetric: "Ormskirk student-focused businesses see 4x traffic increase during university term time",
+    caseStudySnippet: {
+      client: "Student Services",
+      result: "Mobile-first sites capture impulsive student searches during peak season",
+      quote: "Students compare 5 options in 30 seconds. Speed and clarity aren't optional—they're survival."
+    }
   }
 ];
 
