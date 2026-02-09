@@ -123,7 +123,15 @@ export default function Home() {
 
             {/* SUBHEAD */}
             <p className="text-xl md:text-2xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
-              The North West's digital growth partner. We combine <strong className="text-white">Next.js performance</strong> with <strong className="text-white">data-driven SEO</strong> to turn traffic into profit.
+              The North West's digital growth partner. We combine{" "}
+              <Link href="/services/web-design" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2 font-bold">
+                Next.js performance
+              </Link>{" "}
+              with{" "}
+              <Link href="/services/seo" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2 font-bold">
+                data-driven SEO
+              </Link>{" "}
+              to turn traffic into profit.
             </p>
 
             {/* CTA BUTTONS */}
@@ -162,7 +170,11 @@ export default function Home() {
                     </div>
                     <h3 className="text-2xl font-bold text-white mb-3">Enterprise Web Design</h3>
                     <p className="text-slate-300 mb-6 leading-relaxed">
-                        Blazing fast Next.js websites. No plugins, no bloat—just pure code designed to convert.
+                        Blazing fast{" "}
+                        <Link href="/services/web-design" className="text-blue-400 hover:text-blue-300">
+                          Next.js websites
+                        </Link>
+                        . No plugins, no bloat—just pure code designed to convert.
                     </p>
                     <Link href="/services/web-design" className="inline-flex items-center gap-2 text-blue-400 font-bold hover:gap-3 transition-all">
                         Explore Design <ArrowRight className="w-4 h-4" />
@@ -176,7 +188,11 @@ export default function Home() {
                     </div>
                     <h3 className="text-2xl font-bold text-white mb-3">Data-Driven SEO</h3>
                     <p className="text-slate-300 mb-6 leading-relaxed">
-                        Dominate the "Map Pack" in the North West. We use data, not guesswork, to rank you #1.
+                        Dominate the{" "}
+                        <Link href="/services/seo" className="text-emerald-400 hover:text-emerald-300">
+                          Google Map Pack
+                        </Link>{" "}
+                        in the North West. We use data, not guesswork, to rank you #1.
                     </p>
                     <Link href="/services/seo" className="inline-flex items-center gap-2 text-emerald-400 font-bold hover:gap-3 transition-all">
                         Explore SEO <ArrowRight className="w-4 h-4" />

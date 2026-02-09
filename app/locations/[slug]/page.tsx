@@ -79,9 +79,14 @@ export default async function LocationPage({ params }: Props) {
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div>
                 <h2 className="text-3xl font-bold text-white mb-6">Why {location.name} Businesses Choose Us</h2>
-                <p className="text-slate-300 mb-6 text-lg leading-relaxed">
-                    {location.description}
-                </p>
+                <div className="text-slate-300 mb-6 text-lg leading-relaxed prose prose-invert max-w-none">
+                    <p dangerouslySetInnerHTML={{ 
+                      __html: location.description
+                        .replace(/\bSEO\b/g, '<a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">SEO</a>')
+                        .replace(/basic website/gi, '<a href="/services/web-design" class="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">$&</a>')
+                        .replace(/Map Pack/g, '<a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Map Pack</a>')
+                    }} />
+                </div>
                 
                 <div className="bg-blue-500/10 p-6 rounded-2xl border border-blue-500/30 mb-8">
                     <h4 className="font-bold text-blue-400 mb-2 flex items-center gap-2">
