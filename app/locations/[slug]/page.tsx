@@ -37,7 +37,7 @@ export default async function LocationPage({ params }: Props) {
   }
 
   return (
-    <main className="min-h-screen bg-slate-50 pt-32">
+    <main className="min-h-screen bg-slate-950 pt-32">
       
       {/* HERO SECTION */}
       <section className="px-6 mb-20">
@@ -75,51 +75,51 @@ export default async function LocationPage({ params }: Props) {
       </section>
 
       {/* LOCAL INSIGHT SECTION */}
-      <section className="px-6 py-20 bg-white border-y border-slate-200">
+      <section className="px-6 py-20 bg-slate-900 border-y border-slate-800">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
             <div>
-                <h2 className="text-3xl font-bold text-slate-900 mb-6">Why {location.name} Businesses Choose Us</h2>
-                <p className="text-slate-600 mb-6 text-lg leading-relaxed">
+                <h2 className="text-3xl font-bold text-white mb-6">Why {location.name} Businesses Choose Us</h2>
+                <p className="text-slate-300 mb-6 text-lg leading-relaxed">
                     {location.description}
                 </p>
                 
-                <div className="bg-blue-50 p-6 rounded-2xl border border-blue-100 mb-8">
-                    <h4 className="font-bold text-blue-900 mb-2 flex items-center gap-2">
-                        <Trophy className="w-5 h-5 text-blue-600" />
+                <div className="bg-blue-500/10 p-6 rounded-2xl border border-blue-500/30 mb-8">
+                    <h4 className="font-bold text-blue-400 mb-2 flex items-center gap-2">
+                        <Trophy className="w-5 h-5 text-blue-400" />
                         Local Strategy Focus:
                     </h4>
-                    <p className="text-blue-800">{location.industryFocus}</p>
+                    <p className="text-blue-300">{location.industryFocus}</p>
                 </div>
 
                 <ul className="space-y-4 mb-8">
                     <li className="flex items-start gap-3">
-                        <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-1" />
-                        <span className="text-slate-700 font-medium">We know the local market (e.g., competitors near {location.landmark}).</span>
+                        <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-1" />
+                        <span className="text-slate-300 font-medium">We know the local market (e.g., competitors near {location.landmark}).</span>
                     </li>
                     <li className="flex items-start gap-3">
-                        <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-1" />
-                        <span className="text-slate-700 font-medium">Face-to-face meetings available (We are only {location.travelTime} away).</span>
+                        <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-1" />
+                        <span className="text-slate-300 font-medium">Face-to-face meetings available (We are only {location.travelTime} away).</span>
                     </li>
                     <li className="flex items-start gap-3">
-                        <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-1" />
-                        <span className="text-slate-700 font-medium">No outsourcing. All code written in-house in Sefton.</span>
+                        <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-1" />
+                        <span className="text-slate-300 font-medium">No outsourcing. All code written in-house in Sefton.</span>
                     </li>
                 </ul>
 
                 {location.caseStudySnippet && (
-                  <div className="bg-slate-50 p-6 rounded-xl border-l-4 border-blue-600">
+                  <div className="bg-slate-800 p-6 rounded-xl border-l-4 border-blue-500">
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xl shrink-0">
                         ✓
                       </div>
                       <div>
-                        <h4 className="font-bold text-slate-900 mb-2">
+                        <h4 className="font-bold text-white mb-2">
                           {location.caseStudySnippet.client}
                         </h4>
-                        <p className="text-emerald-600 font-bold mb-2">
+                        <p className="text-emerald-400 font-bold mb-2">
                           {location.caseStudySnippet.result}
                         </p>
-                        <p className="text-slate-600 italic">
+                        <p className="text-slate-300 italic">
                           &ldquo;{location.caseStudySnippet.quote}&rdquo;
                         </p>
                       </div>
@@ -128,10 +128,10 @@ export default async function LocationPage({ params }: Props) {
                 )}
             </div>
             
-            <div className="relative h-[400px] w-full bg-slate-900 rounded-3xl overflow-hidden shadow-2xl flex items-center justify-center group">
-                 <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-950 opacity-90"></div>
+            <div className="relative h-[400px] w-full bg-slate-800 rounded-3xl overflow-hidden shadow-2xl flex items-center justify-center group border border-slate-700">
+                 <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-900 opacity-90"></div>
                  <div className="relative z-10 text-center p-8">
-                    <MapPin className="w-12 h-12 text-blue-500 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
+                    <MapPin className="w-12 h-12 text-blue-400 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
                     <h3 className="text-2xl font-bold text-white mb-2">{location.name} Operations</h3>
                     <p className="text-slate-400">Serviced directly from our Southport HQ</p>
                  </div>
@@ -141,41 +141,41 @@ export default async function LocationPage({ params }: Props) {
 
       {/* LOCAL MARKET INSIGHTS */}
       {location.marketStats && location.localChallenges && (
-        <section className="py-24 px-6 bg-slate-50">
+        <section className="py-24 px-6 bg-slate-900">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 mb-6 text-center">
+            <h2 className="text-3xl font-bold text-white mb-6 text-center">
               Understanding the {location.name} Digital Market
             </h2>
-            <p className="text-slate-600 text-center mb-12 max-w-2xl mx-auto">
+            <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
               Data-driven insights that inform our {location.name} SEO and web design strategies.
             </p>
             
             {/* Market Stats */}
             <div className="grid md:grid-cols-3 gap-6 mb-12">
-              <div className="bg-white p-6 rounded-xl border border-slate-200 text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">{location.marketStats.population}</div>
-                <div className="text-sm text-slate-600 font-medium">Population</div>
+              <div className="bg-slate-800 p-6 rounded-xl border border-slate-700 text-center">
+                <div className="text-3xl font-bold text-blue-400 mb-2">{location.marketStats.population}</div>
+                <div className="text-sm text-slate-400 font-medium">Population</div>
               </div>
-              <div className="bg-white p-6 rounded-xl border border-slate-200 text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">{location.marketStats.businesses}</div>
-                <div className="text-sm text-slate-600 font-medium">Businesses</div>
+              <div className="bg-slate-800 p-6 rounded-xl border border-slate-700 text-center">
+                <div className="text-3xl font-bold text-blue-400 mb-2">{location.marketStats.businesses}</div>
+                <div className="text-sm text-slate-400 font-medium">Businesses</div>
               </div>
-              <div className="bg-white p-6 rounded-xl border border-slate-200 text-center">
-                <div className="text-sm font-bold text-blue-600 mb-2">Key Trend</div>
-                <div className="text-sm text-slate-600 leading-relaxed">{location.marketStats.keyTrend}</div>
+              <div className="bg-slate-800 p-6 rounded-xl border border-slate-700 text-center">
+                <div className="text-sm font-bold text-blue-400 mb-2">Key Trend</div>
+                <div className="text-sm text-slate-300 leading-relaxed">{location.marketStats.keyTrend}</div>
               </div>
             </div>
             
             {/* Local Challenges */}
             <div className="mb-8">
-              <h3 className="text-xl font-bold text-slate-900 mb-4">
+              <h3 className="text-xl font-bold text-white mb-4">
                 Common Challenges for {location.name} Businesses:
               </h3>
               <ul className="space-y-3">
                 {location.localChallenges.map((challenge, i) => (
                   <li key={i} className="flex gap-3 items-start">
-                    <span className="text-blue-600 text-xl shrink-0">→</span>
-                    <span className="text-slate-700">{challenge}</span>
+                    <span className="text-blue-400 text-xl shrink-0">→</span>
+                    <span className="text-slate-300">{challenge}</span>
                   </li>
                 ))}
               </ul>
@@ -183,10 +183,10 @@ export default async function LocationPage({ params }: Props) {
             
             {/* Success Metric */}
             {location.successMetric && (
-              <div className="bg-gradient-to-r from-blue-50 to-emerald-50 p-6 rounded-xl border border-blue-200">
+              <div className="bg-gradient-to-r from-blue-500/10 to-emerald-500/10 p-6 rounded-xl border border-blue-500/30">
                 <div className="flex items-center gap-3">
-                  <Trophy className="w-6 h-6 text-blue-600 shrink-0" />
-                  <p className="text-blue-900 font-bold">{location.successMetric}</p>
+                  <Trophy className="w-6 h-6 text-blue-400 shrink-0" />
+                  <p className="text-blue-300 font-bold">{location.successMetric}</p>
                 </div>
               </div>
             )}
@@ -195,51 +195,51 @@ export default async function LocationPage({ params }: Props) {
       )}
 
       {/* SERVICES GRID */}
-      <section className="py-24 px-6 bg-slate-50">
+      <section className="py-24 px-6 bg-slate-950">
         <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-                <h2 className="text-3xl font-bold text-slate-900 mb-4">Complete Digital Domination</h2>
-                <p className="text-slate-600 max-w-2xl mx-auto">
+                <h2 className="text-3xl font-bold text-white mb-4">Complete Digital Domination</h2>
+                <p className="text-slate-400 max-w-2xl mx-auto">
                     We don't just build websites; we build revenue engines tailored for the {location.name} economy.
                 </p>
             </div>
             
             <div className="grid md:grid-cols-3 gap-8">
-                <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:border-blue-500 hover:shadow-lg transition-all group">
-                    <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-6 group-hover:rotate-6 transition-transform">
+                <div className="bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-700 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/10 transition-all group">
+                    <div className="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center text-blue-400 mb-6 group-hover:rotate-6 transition-transform">
                         <Zap className="w-6 h-6" />
                     </div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-3">High-Speed Web Design</h3>
-                    <p className="text-slate-600 mb-6 text-sm">
+                    <h3 className="text-xl font-bold text-white mb-3">High-Speed Web Design</h3>
+                    <p className="text-slate-300 mb-6 text-sm">
                         We build websites that load in under 1 second. Essential for capturing {location.name}'s mobile users on the go.
                     </p>
-                    <Link href="/services/web-design" className="text-blue-600 font-bold hover:underline flex items-center gap-1 text-sm">
+                    <Link href="/services/web-design" className="text-blue-400 font-bold hover:underline flex items-center gap-1 text-sm">
                         Explore Design <ArrowRight className="w-4 h-4"/>
                     </Link>
                 </div>
 
-                <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:border-emerald-500 hover:shadow-lg transition-all group">
-                    <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-emerald-600 mb-6 group-hover:rotate-6 transition-transform">
+                <div className="bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-700 hover:border-emerald-500 hover:shadow-lg hover:shadow-emerald-500/10 transition-all group">
+                    <div className="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-400 mb-6 group-hover:rotate-6 transition-transform">
                         <BarChart className="w-6 h-6" />
                     </div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-3">Local SEO ({location.name})</h3>
-                    <p className="text-slate-600 mb-6 text-sm">
+                    <h3 className="text-xl font-bold text-white mb-3">Local SEO ({location.name})</h3>
+                    <p className="text-slate-300 mb-6 text-sm">
                         Dominate the Google Map Pack for searches like "Service in {location.name}" or "Near {location.landmark}".
                     </p>
-                    <Link href="/services/seo" className="text-emerald-600 font-bold hover:underline flex items-center gap-1 text-sm">
+                    <Link href="/services/seo" className="text-emerald-400 font-bold hover:underline flex items-center gap-1 text-sm">
                         Dominate Local Search <ArrowRight className="w-4 h-4"/>
                     </Link>
                 </div>
 
-                <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:border-purple-500 hover:shadow-lg transition-all group">
-                    <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 mb-6 group-hover:rotate-6 transition-transform">
+                <div className="bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-700 hover:border-purple-500 hover:shadow-lg hover:shadow-purple-500/10 transition-all group">
+                    <div className="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-400 mb-6 group-hover:rotate-6 transition-transform">
                         <Trophy className="w-6 h-6" />
                     </div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-3">Reputation Management</h3>
-                    <p className="text-slate-600 mb-6 text-sm">
+                    <h3 className="text-xl font-bold text-white mb-3">Reputation Management</h3>
+                    <p className="text-slate-300 mb-6 text-sm">
                         Automated systems to capture 5-star reviews from your satisfied {location.name} customers.
                     </p>
-                    <Link href="/audit" className="text-purple-600 font-bold hover:underline flex items-center gap-1 text-sm">
+                    <Link href="/audit" className="text-purple-400 font-bold hover:underline flex items-center gap-1 text-sm">
                         Get Started <ArrowRight className="w-4 h-4"/>
                     </Link>
                 </div>
@@ -248,7 +248,7 @@ export default async function LocationPage({ params }: Props) {
       </section>
 
        {/* CTA */}
-       <section className="bg-slate-900 py-24 px-6 text-center text-white border-t border-slate-800">
+       <section className="bg-gradient-to-b from-slate-900 to-slate-950 py-24 px-6 text-center text-white border-t border-slate-800">
         <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">Ready to grow your {location.name} business?</h2>
             <p className="text-slate-400 mb-10 text-lg">
@@ -261,15 +261,15 @@ export default async function LocationPage({ params }: Props) {
       </section>
 
       {/* Internal Links Footer */}
-      <section className="bg-white py-12 border-t border-slate-200">
+      <section className="bg-slate-950 py-12 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-6">
-            <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">Other Areas We Serve</p>
+            <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-6">Other Areas We Serve</p>
             <div className="flex flex-wrap gap-x-8 gap-y-3">
                 {locations.filter(l => l.slug !== location.slug).map((loc) => (
                     <Link 
                         key={loc.slug} 
                         href={`/locations/${loc.slug}`}
-                        className="text-sm text-slate-600 hover:text-blue-600 hover:underline transition-colors"
+                        className="text-sm text-slate-400 hover:text-blue-400 hover:underline transition-colors"
                     >
                         Web Design {loc.name}
                     </Link>
