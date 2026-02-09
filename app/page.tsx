@@ -103,7 +103,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
             
             {/* STATUS BADGE */}
-            <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md border border-emerald-100 rounded-full px-4 py-1.5 mb-8 shadow-sm ring-1 ring-emerald-50">
+            <div className="inline-flex items-center gap-2 bg-white/90 border border-emerald-100 rounded-full px-4 py-1.5 mb-8 shadow-sm ring-1 ring-emerald-50">
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
@@ -116,7 +116,7 @@ export default function Home() {
             {/* HEADLINE */}
             <h1 className="text-6xl md:text-8xl font-extrabold tracking-tight text-slate-900 mb-8 leading-[1.1]">
               We build revenue engines. <br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 animate-gradient">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600">
                 Not just websites.
               </span>
             </h1>
@@ -131,7 +131,7 @@ export default function Home() {
                 <Link href="/audit" className="w-full sm:w-auto px-8 py-4 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-700 transition-all shadow-xl shadow-blue-500/20 flex items-center justify-center gap-2 group transform hover:-translate-y-1">
                     <Zap className="w-5 h-5 fill-white group-hover:scale-110 transition-transform" /> Get Free Audit
                 </Link>
-                <Link href="/work" className="w-full sm:w-auto px-8 py-4 bg-white/60 backdrop-blur text-slate-900 font-bold border border-slate-200 rounded-xl hover:bg-white transition-all flex items-center justify-center gap-2 transform hover:-translate-y-1 shadow-sm">
+                <Link href="/work" className="w-full sm:w-auto px-8 py-4 bg-white/90 text-slate-900 font-bold border border-slate-200 rounded-xl hover:bg-white transition-all flex items-center justify-center gap-2 transform hover:-translate-y-1 shadow-sm">
                     View Our Work <ArrowRight className="w-4 h-4" />
                 </Link>
             </div>
