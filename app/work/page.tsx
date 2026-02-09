@@ -78,7 +78,7 @@ export default function WorkPage() {
         title: "The Lead Generation Engine",
         industry: "Trade & Construction",
         desc: "Our blueprint for tradespeople. We replace generic brochure sites with aggressive lead-capture systems designed to rank #1 in local search results.",
-        icon: <Zap className="w-6 h-6 text-yellow-500" />,
+        icon: <Zap className="w-6 h-6 text-yellow-400" />,
         features: ["High-Converting Forms", "Local SEO Domination", "Instant Load Speeds"],
         tech: ["Next.js SSR", "Schema Markup", "Geo-Targeting"]
     },
@@ -87,7 +87,7 @@ export default function WorkPage() {
         title: "The Trust Authority Platform",
         industry: "Legal & Financial",
         desc: "For firms that need absolute credibility. We build secure, compliant, and authoritative digital presences that establish immediate trust with high-net-worth clients.",
-        icon: <Shield className="w-6 h-6 text-blue-500" />,
+        icon: <Shield className="w-6 h-6 text-blue-400" />,
         features: ["Security First", "Client Portals", "Thought Leadership"],
         tech: ["TypeScript", "Security Headers", "CMS Integration"]
     },
@@ -96,7 +96,7 @@ export default function WorkPage() {
         title: "The SaaS Dashboard",
         industry: "Logistics & Operations",
         desc: "We build internal tools that save time. From fleet tracking to automated invoicing, we turn manual spreadsheets into secure, web-based software.",
-        icon: <Layout className="w-6 h-6 text-purple-500" />,
+        icon: <Layout className="w-6 h-6 text-purple-400" />,
         features: ["Real-time Tracking", "Automated Workflows", "Data Visualization"],
         tech: ["React", "PostgreSQL", "API Integration"]
     },
@@ -105,14 +105,14 @@ export default function WorkPage() {
         title: "The Booking Accelerator",
         industry: "Retail & Aesthetics",
         desc: "A high-end visual experience for luxury brands. We integrate custom booking engines and payment flows that reduce drop-offs and increase average order value.",
-        icon: <TrendingUp className="w-6 h-6 text-pink-500" />,
+        icon: <TrendingUp className="w-6 h-6 text-pink-400" />,
         features: ["Zero-Friction Checkout", "Social Sync", "Visual storytelling"],
         tech: ["Stripe Payments", "Image Optimization", "Mobile First"]
     }
   ];
 
   return (
-    <main className="min-h-screen pt-32 pb-20 bg-slate-50">
+    <main className="min-h-screen pt-32 pb-20 bg-slate-950">
       
       {/* INJECT SCHEMA */}
       <script
@@ -122,13 +122,13 @@ export default function WorkPage() {
 
       {/* HEADER */}
       <div className="max-w-7xl mx-auto px-6 mb-20">
-        <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 rounded-full px-4 py-1.5 mb-8">
-            <span className="text-xs font-bold text-blue-700 uppercase tracking-wide">Proven Industry Frameworks</span>
+        <div className="inline-flex items-center gap-2 bg-slate-900 border border-slate-800 rounded-full px-4 py-1.5 mb-8">
+            <span className="text-xs font-bold text-slate-300 uppercase tracking-wide">Proven Industry Frameworks</span>
         </div>
-        <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 mb-8 tracking-tight">
-          We don't guess. <br/> <span className="text-blue-600">We deploy what works.</span>
+        <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-8 tracking-tight">
+          We don't guess. <br/> <span className="text-blue-400">We deploy what works.</span>
         </h1>
-        <p className="text-xl text-slate-600 max-w-2xl leading-relaxed">
+        <p className="text-xl text-slate-400 max-w-2xl leading-relaxed">
           Instead of reinventing the wheel, we use battle-tested <strong>digital growth frameworks</strong> designed for specific industries. Choose your engine below.
         </p>
       </div>
@@ -136,40 +136,40 @@ export default function WorkPage() {
       {/* FRAMEWORKS GRID */}
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 mb-32">
         {frameworks.map((fw, i) => (
-            <article key={fw.id} className="bg-white rounded-3xl p-8 border border-slate-200 hover:border-blue-300 hover:shadow-xl transition-all duration-300 flex flex-col group h-full">
+            <article key={fw.id} className="bg-slate-900 rounded-3xl p-8 border border-slate-800 hover:border-blue-400 hover:shadow-xl transition-all duration-300 flex flex-col group h-full">
                 
                 {/* CARD HEADER */}
                 <div className="flex justify-between items-start mb-6">
                     <div>
                         <span className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2 block">{fw.industry}</span>
-                        <div className="inline-block bg-blue-50 px-2 py-1 rounded">
-                             <span className="text-sm font-mono text-blue-600">Model_0{i+1}</span>
+                        <div className="inline-block bg-slate-800 px-2 py-1 rounded">
+                             <span className="text-sm font-mono text-blue-400">Model_0{i+1}</span>
                         </div>
                     </div>
-                    <div className="p-3 bg-slate-50 rounded-xl group-hover:bg-blue-50 transition-colors">
+                    <div className="p-3 bg-slate-800 rounded-xl group-hover:bg-slate-700 transition-colors">
                         {fw.icon}
                     </div>
                 </div>
 
                 {/* CONTENT */}
-                <h3 className="text-2xl font-bold text-slate-900 mb-4">{fw.title}</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">{fw.title}</h3>
                 
                 {/* FEATURES PILLS */}
                 <div className="flex flex-wrap gap-2 mb-6">
                     {fw.features.map((feat, j) => (
-                        <span key={j} className="text-xs font-bold text-slate-600 bg-slate-100 px-3 py-1 rounded-full border border-slate-200">
+                        <span key={j} className="text-xs font-bold text-slate-400 bg-slate-800 px-3 py-1 rounded-full border border-slate-700">
                             {feat}
                         </span>
                     ))}
                 </div>
 
-                <p className="text-slate-600 mb-8 leading-relaxed flex-grow">
+                <p className="text-slate-400 mb-8 leading-relaxed flex-grow">
                     {fw.desc}
                 </p>
 
                 {/* TECH STACK FOOTER */}
-                <div className="border-t border-slate-100 pt-6 mt-auto">
-                    <div className="flex flex-wrap gap-4 text-xs font-medium text-slate-400 mb-6">
+                <div className="border-t border-slate-800 pt-6 mt-auto">
+                    <div className="flex flex-wrap gap-4 text-xs font-medium text-slate-500 mb-6">
                         {fw.tech.map((t, k) => (
                             <span key={k} className="flex items-center gap-1">
                                 <Box className="w-3 h-3" /> {t}
@@ -180,7 +180,7 @@ export default function WorkPage() {
                     {/* ACTION BUTTON */}
                     <Link 
                         href="/contact" 
-                        className="w-full flex items-center justify-center gap-2 bg-slate-900 text-white font-bold py-4 rounded-xl hover:bg-blue-600 transition-colors group-hover:shadow-lg"
+                        className="w-full flex items-center justify-center gap-2 bg-slate-800 text-white font-bold py-4 rounded-xl hover:bg-blue-500 transition-colors group-hover:shadow-lg"
                     >
                         Deploy This Framework <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </Link>
@@ -193,19 +193,19 @@ export default function WorkPage() {
       {/* --- FAQ SECTION --- */}
       <div className="max-w-4xl mx-auto px-6 mb-32">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-4">Framework Questions</h2>
-          <p className="text-slate-600">How our model differs from standard web design.</p>
+          <h2 className="text-3xl font-bold text-white mb-4">Framework Questions</h2>
+          <p className="text-slate-400">How our model differs from standard web design.</p>
         </div>
         <div className="space-y-4">
           {faqs.map((faq, i) => (
-            <details key={i} className="group border border-slate-200 rounded-2xl bg-white open:shadow-lg transition-all duration-300">
-              <summary className="flex items-center justify-between p-6 cursor-pointer list-none text-lg font-bold text-slate-900">
+            <details key={i} className="group border border-slate-800 rounded-2xl bg-slate-900 open:shadow-lg transition-all duration-300">
+              <summary className="flex items-center justify-between p-6 cursor-pointer list-none text-lg font-bold text-white">
                 {faq.question}
                 <span className="transition-transform group-open:rotate-45">
-                  <Plus className="w-5 h-5 text-blue-600" />
+                  <Plus className="w-5 h-5 text-blue-400" />
                 </span>
               </summary>
-              <div className="px-6 pb-6 text-slate-600 leading-relaxed">
+              <div className="px-6 pb-6 text-slate-400 leading-relaxed">
                 {faq.answer}
               </div>
             </details>
