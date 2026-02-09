@@ -133,7 +133,23 @@ export default async function LocationPage({ params }: Props) {
                  <div className="relative z-10 text-center p-8">
                     <MapPin className="w-12 h-12 text-blue-400 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
                     <h3 className="text-2xl font-bold text-white mb-2">{location.name} Operations</h3>
-                    <p className="text-slate-400">Serviced directly from our Southport HQ</p>
+                    <p className="text-slate-400 mb-6">Serviced directly from our Southport HQ</p>
+                    
+                    {/* Enhanced contact details */}
+                    <div className="space-y-3 pt-4 border-t border-slate-700">
+                      <div className="flex items-center justify-center gap-2 text-slate-300 text-sm">
+                        <div className="w-8 h-8 bg-blue-500/10 rounded-lg flex items-center justify-center">
+                          <Zap className="w-4 h-4 text-blue-400" />
+                        </div>
+                        <span><strong className="text-white">{location.travelTime}</strong> travel time</span>
+                      </div>
+                      <div className="flex items-center justify-center gap-2 text-slate-300 text-sm">
+                        <div className="w-8 h-8 bg-emerald-500/10 rounded-lg flex items-center justify-center">
+                          <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+                        </div>
+                        <span>Same-day response available</span>
+                      </div>
+                    </div>
                  </div>
             </div>
         </div>

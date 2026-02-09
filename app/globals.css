@@ -40,7 +40,16 @@
   /* LCP Optimization: Delayed Blob Rendering */
   .animated-blob {
     opacity: 0;
-    animation: fadeInBlob 1s ease-in 0.5s forwards, blob 7s infinite 0.5s;
+    animation: fadeInBlob 1s ease-in 1s forwards, blob 7s infinite 1s;
+  }
+
+  @keyframes fadeInBlob {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0.7;
+    }
   }
 
   /* Rich Text Styles for Blog Content (Dark Theme) */

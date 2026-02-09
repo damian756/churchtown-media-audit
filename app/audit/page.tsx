@@ -79,7 +79,7 @@ export default function AuditPage() {
             
             <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight">
                 See exactly why your competitors <br/>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
+                <span className="text-blue-400">
                     rank higher than you.
                 </span>
             </h1>

@@ -95,9 +95,9 @@ export default function Home() {
       <div className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden isolate">
         
         {/* ANIMATED BACKGROUND BLOBS - Delayed for LCP optimization */}
-        <div className="animated-blob absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-purple-300/40 rounded-full blur-[100px] animate-blob mix-blend-multiply filter"></div>
-        <div className="animated-blob absolute top-0 right-1/4 w-[500px] h-[500px] bg-blue-300/40 rounded-full blur-[100px] animate-blob animation-delay-2000 mix-blend-multiply filter"></div>
-        <div className="animated-blob absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-emerald-300/40 rounded-full blur-[100px] animate-blob animation-delay-4000 mix-blend-multiply filter"></div>
+        <div className="animated-blob absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-purple-300/40 rounded-full blur-[100px] animate-blob"></div>
+        <div className="animated-blob absolute top-0 right-1/4 w-[500px] h-[500px] bg-blue-300/40 rounded-full blur-[100px] animate-blob animation-delay-2000"></div>
+        <div className="animated-blob absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-emerald-300/40 rounded-full blur-[100px] animate-blob animation-delay-4000"></div>
 
         {/* Content Container */}
         <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
@@ -116,7 +116,7 @@ export default function Home() {
             {/* HEADLINE */}
             <h1 className="text-6xl md:text-8xl font-extrabold tracking-tight text-white mb-8 leading-[1.1]">
               We build revenue engines. <br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400">
+              <span className="text-blue-400">
                 Not just websites.
               </span>
             </h1>
