@@ -11,13 +11,12 @@ export default function Navbar() {
   const pathname = usePathname();
 
   // 1. SMART DARK MODE DETECTION
-  // Add any page path here that uses a dark background to automatically switch text to white.
-  const isDarkPage = [
-    "/southport-growth", 
-    "/testimonials", 
-    "/audit",
-    "/services/small-business" // <--- ADDED: Fixes the contrast issue
-  ].includes(pathname);
+  // Site-wide dark theme: all pages use dark background by default
+  // Add any LIGHT background pages here (if you create them in the future)
+  const lightPages: string[] = [
+    // Currently no light pages - entire site is dark theme
+  ];
+  const isLightPage = lightPages.includes(pathname);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -43,14 +42,14 @@ export default function Navbar() {
     { name: "Contact", href: "/contact" },
   ];
 
-  // Logic: Text is white ONLY if we are on a dark page AND haven't scrolled down yet.
-  const useWhiteText = isDarkPage && !scrolled && !isOpen;
+  // Logic: Text is white by default (dark theme), dark only on light pages when scrolled
+  const useWhiteText = !isLightPage || (!scrolled && !isOpen);
 
   return (
     <nav 
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${
             scrolled 
-            ? "bg-white/90 backdrop-blur-md border-b border-slate-200 py-4 shadow-sm" 
+            ? "bg-slate-900/90 backdrop-blur-md border-b border-slate-800 py-4 shadow-sm" 
             : "bg-transparent py-6"
         }`}
     >
@@ -86,7 +85,7 @@ export default function Navbar() {
             href="/audit" 
             className={`px-6 py-2.5 rounded-full text-sm font-bold transition-all hover:scale-105 shadow-lg flex items-center gap-2 ${
                 useWhiteText 
-                ? "bg-white text-slate-900 hover:bg-blue-50" 
+                ? "bg-blue-600 text-white hover:bg-blue-700 shadow-blue-600/20" 
                 : "bg-slate-900 text-white hover:bg-blue-600 shadow-slate-900/20"
             }`}
           >
@@ -104,12 +103,12 @@ export default function Navbar() {
         </button>
 
         {/* MOBILE MENU OVERLAY */}
-        <div className={`fixed inset-0 bg-white z-40 flex flex-col items-center justify-center gap-8 transition-all duration-300 ${isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"}`}>
+        <div className={`fixed inset-0 bg-slate-950 z-40 flex flex-col items-center justify-center gap-8 transition-all duration-300 ${isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"}`}>
           {links.map((link) => (
             <Link 
                 key={link.name} 
                 href={link.href} 
-                className="text-3xl font-bold text-slate-900 hover:text-blue-600 transition-colors"
+                className="text-3xl font-bold text-white hover:text-blue-400 transition-colors"
             >
               {link.name}
             </Link>
