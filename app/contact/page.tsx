@@ -69,7 +69,7 @@ export default function ContactPage() {
   };
 
   return (
-    <main className="min-h-screen h-auto w-full bg-slate-50/50 pt-32 pb-40 overflow-x-hidden">
+    <main className="min-h-screen h-auto w-full bg-slate-950 pt-32 pb-40 overflow-x-hidden">
       
       {/* INJECT SCHEMA */}
       <Script
@@ -83,20 +83,20 @@ export default function ContactPage() {
         
         {/* 1. HEADER */}
         <div className="text-center mb-20">
-            <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 rounded-full px-4 py-1.5 mb-8">
+            <div className="inline-flex items-center gap-2 bg-slate-900 border border-slate-800 rounded-full px-4 py-1.5 mb-8 shadow-lg">
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
                 </span>
-                <span className="text-xs font-bold text-blue-700 uppercase tracking-wide">
+                <span className="text-xs font-bold text-slate-300 uppercase tracking-wide">
                   Open for new projects
                 </span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 mb-6">
+            <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-6">
               Let's build the <br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 animate-gradient">impossible.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 animate-gradient">impossible.</span>
             </h1>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+            <p className="text-xl text-slate-400 max-w-2xl mx-auto">
               Ready to scale? Whether it's an Enterprise Web App or a high-performance Marketing Site, we engineer revenue.
             </p>
         </div>
@@ -108,19 +108,19 @@ export default function ContactPage() {
             <div className="flex flex-col gap-8">
                 
                 {/* Info Card */}
-                <div className="bg-white/80 backdrop-blur-xl border border-white/60 p-8 rounded-[2rem] shadow-xl">
-                    <h3 className="text-2xl font-bold text-slate-900 mb-6">Contact Details</h3>
+                <div className="bg-slate-900/50 backdrop-blur-xl border border-slate-800 p-8 rounded-[2rem] shadow-xl">
+                    <h3 className="text-2xl font-bold text-white mb-6">Contact Details</h3>
                     
                     <div className="space-y-6">
                         
                         {/* EMAIL */}
                         <div className="flex items-start gap-4">
-                            <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
+                            <div className="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-blue-400 shrink-0">
                                 <Mail className="w-6 h-6" />
                             </div>
                             <div>
                                 <p className="text-sm font-bold text-slate-400 uppercase tracking-wide mb-1">Email</p>
-                                <a href="mailto:hello@churchtownmedia.co.uk" className="text-lg font-medium text-slate-900 hover:text-blue-600 transition-colors">
+                                <a href="mailto:hello@churchtownmedia.co.uk" className="text-lg font-medium text-white hover:text-blue-400 transition-colors">
                                     hello@churchtownmedia.co.uk
                                 </a>
                             </div>
@@ -128,12 +128,12 @@ export default function ContactPage() {
 
                         {/* PHONE */}
                         <div className="flex items-start gap-4">
-                            <div className="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 shrink-0">
+                            <div className="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-indigo-400 shrink-0">
                                 <Phone className="w-6 h-6" />
                             </div>
                             <div>
                                 <p className="text-sm font-bold text-slate-400 uppercase tracking-wide mb-1">Phone</p>
-                                <a href="tel:01704635785" className="text-lg font-medium text-slate-900 hover:text-blue-600 transition-colors">
+                                <a href="tel:01704635785" className="text-lg font-medium text-white hover:text-blue-400 transition-colors">
                                     01704 635785
                                 </a>
                                 <p className="text-xs text-slate-400 mt-1">Mon-Fri, 9am - 5pm</p>
@@ -142,12 +142,12 @@ export default function ContactPage() {
 
                         {/* ADDRESS */}
                         <div className="flex items-start gap-4">
-                            <div className="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 shrink-0">
+                            <div className="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-emerald-400 shrink-0">
                                 <MapPin className="w-6 h-6" />
                             </div>
                             <div>
                                 <p className="text-sm font-bold text-slate-400 uppercase tracking-wide mb-1">HQ</p>
-                                <p className="text-lg font-medium text-slate-900">
+                                <p className="text-lg font-medium text-white">
                                     Cambridge Avenue<br/>
                                     Southport, PR9 9SA
                                 </p>
@@ -157,7 +157,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* Map Card */}
-                <div className="bg-white/80 backdrop-blur-xl border border-white/60 p-2 rounded-[2rem] shadow-xl h-80 overflow-hidden relative group">
+                <div className="bg-slate-900/50 backdrop-blur-xl border border-slate-800 p-2 rounded-[2rem] shadow-xl h-80 overflow-hidden relative group">
                     <iframe 
                         title="Churchtown Media HQ Location Map"
                         src="https://maps.google.com/maps?q=Cambridge%20Avenue%20Southport&t=&z=15&ie=UTF8&iwloc=&output=embed" 
@@ -169,7 +169,7 @@ export default function ContactPage() {
                         referrerPolicy="no-referrer-when-downgrade"
                         className="rounded-[1.5rem] group-hover:filter-none transition-all duration-500"
                     ></iframe>
-                    <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur px-4 py-2 rounded-lg text-xs font-bold text-slate-900 shadow-lg pointer-events-none">
+                    <div className="absolute bottom-6 left-6 bg-slate-800/90 backdrop-blur px-4 py-2 rounded-lg text-xs font-bold text-white shadow-lg pointer-events-none border border-slate-700">
                         📍 Based in Southport, Serving the UK
                     </div>
                 </div>
@@ -177,42 +177,42 @@ export default function ContactPage() {
             </div>
 
             {/* RIGHT COL: The Form */}
-            <div className="bg-white/80 backdrop-blur-xl border border-white/60 p-8 md:p-10 rounded-[2rem] shadow-2xl relative">
+            <div className="bg-slate-900/50 backdrop-blur-xl border border-slate-800 p-8 md:p-10 rounded-[2rem] shadow-2xl relative">
                 
                 {status === 'success' ? (
                     <div className="h-full min-h-[400px] flex flex-col items-center justify-center text-center animate-in zoom-in duration-300">
-                        <div className="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600 mb-6">
+                        <div className="w-20 h-20 bg-emerald-900/50 border border-emerald-800 rounded-full flex items-center justify-center text-emerald-400 mb-6">
                             <CheckCircle2 className="w-10 h-10" />
                         </div>
-                        <h3 className="text-3xl font-bold text-slate-900 mb-2">Message Received</h3>
-                        <p className="text-slate-600 mb-8 max-w-xs mx-auto">
+                        <h3 className="text-3xl font-bold text-white mb-2">Message Received</h3>
+                        <p className="text-slate-400 mb-8 max-w-xs mx-auto">
                             Thank you for reaching out. We will review your project and get back to you within 24 hours.
                         </p>
-                        <button onClick={() => setStatus('idle')} className="text-blue-600 font-bold hover:underline">
+                        <button onClick={() => setStatus('idle')} className="text-blue-400 font-bold hover:underline">
                             Send another message
                         </button>
                     </div>
                 ) : (
                     <form onSubmit={handleSubmit} className="space-y-6">
                         <div className="space-y-2">
-                            <label className="text-sm font-bold text-slate-900 ml-1">Your Name</label>
+                            <label className="text-sm font-bold text-white ml-1">Your Name</label>
                             <input 
                                 name="name" type="text" required placeholder="John Doe"
-                                className="w-full h-14 px-4 rounded-xl bg-slate-50 border-transparent focus:bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all text-slate-900 font-medium"
+                                className="w-full h-14 px-4 rounded-xl bg-slate-800 border border-slate-700 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 outline-none transition-all text-white font-medium placeholder:text-slate-500"
                             />
                         </div>
 
                         <div className="space-y-2">
-                            <label className="text-sm font-bold text-slate-900 ml-1">Email Address</label>
+                            <label className="text-sm font-bold text-white ml-1">Email Address</label>
                             <input 
                                 name="email" type="email" required placeholder="john@company.com"
-                                className="w-full h-14 px-4 rounded-xl bg-slate-50 border-transparent focus:bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all text-slate-900 font-medium"
+                                className="w-full h-14 px-4 rounded-xl bg-slate-800 border border-slate-700 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 outline-none transition-all text-white font-medium placeholder:text-slate-500"
                             />
                         </div>
 
                         <div className="space-y-2">
-                            <label className="text-sm font-bold text-slate-900 ml-1">Project Type</label>
-                            <select name="service" className="w-full h-14 px-4 rounded-xl bg-slate-50 border-transparent focus:bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all text-slate-900 font-medium">
+                            <label className="text-sm font-bold text-white ml-1">Project Type</label>
+                            <select name="service" className="w-full h-14 px-4 rounded-xl bg-slate-800 border border-slate-700 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 outline-none transition-all text-white font-medium">
                                 <option>Custom Website Development</option>
                                 <option>SEO & Performance Audit</option>
                                 <option>E-Commerce / Shopify</option>
@@ -222,17 +222,17 @@ export default function ContactPage() {
                         </div>
 
                         <div className="space-y-2">
-                            <label className="text-sm font-bold text-slate-900 ml-1">Tell us about the project</label>
+                            <label className="text-sm font-bold text-white ml-1">Tell us about the project</label>
                             <textarea 
                                 name="message" required rows={4} placeholder="We need a new website that converts..."
-                                className="w-full p-4 rounded-xl bg-slate-50 border-transparent focus:bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all text-slate-900 font-medium resize-none"
+                                className="w-full p-4 rounded-xl bg-slate-800 border border-slate-700 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 outline-none transition-all text-white font-medium placeholder:text-slate-500 resize-none"
                             ></textarea>
                         </div>
 
                         <button 
                             type="submit" 
                             disabled={status === 'submitting'}
-                            className="w-full h-14 bg-slate-900 text-white font-bold rounded-xl hover:bg-blue-600 transition-all shadow-lg flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                            className="w-full h-14 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-500 transition-all shadow-lg flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
                         >
                             {status === 'submitting' ? (
                                 <>Sending...</>
