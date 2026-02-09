@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { ArrowRight, Box, Shield, Zap, TrendingUp, Layout, Plus, CheckCircle2 } from "lucide-react";
+import { ArrowRight, Box, Shield, Zap, TrendingUp, Layout, Plus } from "lucide-react";
 import type { Metadata } from "next";
 
 // 1. STRATEGIC METADATA
@@ -112,7 +112,7 @@ export default function WorkPage() {
   ];
 
   return (
-    <main className="min-h-screen pt-32 pb-20 bg-slate-950">
+    <main className="min-h-screen pt-28 pb-16 bg-slate-950">
       
       {/* INJECT SCHEMA */}
       <script
@@ -121,11 +121,11 @@ export default function WorkPage() {
       />
 
       {/* HEADER */}
-      <div className="max-w-7xl mx-auto px-6 mb-20">
-        <div className="inline-flex items-center gap-2 bg-slate-900 border border-slate-800 rounded-full px-4 py-1.5 mb-8">
+      <div className="max-w-7xl mx-auto px-6 mb-14">
+        <div className="inline-flex items-center gap-2 bg-slate-900 border border-slate-800 rounded-full px-4 py-1.5 mb-6">
             <span className="text-xs font-bold text-slate-300 uppercase tracking-wide">Proven Industry Frameworks</span>
         </div>
-        <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-8 tracking-tight">
+        <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight">
           We don't guess. <br/> <span className="text-blue-400">We deploy what works.</span>
         </h1>
         <p className="text-xl text-slate-400 max-w-2xl leading-relaxed">
@@ -134,7 +134,7 @@ export default function WorkPage() {
       </div>
 
       {/* FRAMEWORKS GRID */}
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 mb-32">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-6 mb-20">
         {frameworks.map((fw, i) => (
             <article key={fw.id} className="bg-slate-900 rounded-3xl p-8 border border-slate-800 hover:border-blue-400 hover:shadow-xl transition-all duration-300 flex flex-col group h-full">
                 
