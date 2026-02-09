@@ -8,24 +8,24 @@ export const metadata = {
 
 export default function ServicesPage() {
   return (
-    <main className="px-6 pb-24">
+    <main className="px-6 pb-24 bg-slate-950">
       
       {/* 1. HERO SECTION */}
-      <section className="pt-20 pb-24 max-w-4xl mx-auto text-center">
-        <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 rounded-full px-4 py-1.5 mb-8">
-            <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
-            <span className="text-xs font-bold text-blue-700 uppercase tracking-wide">
+      <section className="pt-32 pb-24 max-w-4xl mx-auto text-center">
+        <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/30 rounded-full px-4 py-1.5 mb-8">
+            <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
+            <span className="text-xs font-bold text-blue-400 uppercase tracking-wide">
               Engineering First, Design Second
             </span>
         </div>
         
-        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 mb-8 leading-[1.1]">
+        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-8 leading-[1.1]">
           We build systems that <br/>
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 animate-gradient">print revenue.</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400">print revenue.</span>
         </h1>
         
-        <p className="text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto">
-          Most agencies build "brochure" websites. We engineer <strong>digital assets</strong> that reduce customer acquisition costs and automate growth.
+        <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">
+          Most agencies build "brochure" websites. We engineer <strong className="text-white">digital assets</strong> that reduce customer acquisition costs and automate growth.
         </p>
       </section>
 
@@ -34,18 +34,18 @@ export default function ServicesPage() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             
             {/* PILLAR 1: VELOCITY (Headless) */}
-            <div className="group relative p-8 rounded-[2.5rem] bg-white/60 backdrop-blur-xl border border-white/60 shadow-xl hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className="group relative p-8 rounded-[2.5rem] bg-slate-800 border border-slate-700 shadow-xl hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 {/* BIG NUMBER WATERMARK */}
-                <div className="absolute -right-4 -top-4 text-9xl font-black text-slate-100 opacity-50 select-none pointer-events-none group-hover:text-blue-50/80 transition-colors">01</div>
+                <div className="absolute -right-4 -top-4 text-9xl font-black text-slate-700 opacity-50 select-none pointer-events-none group-hover:text-slate-600 transition-colors">01</div>
                 
                 <div className="relative z-10">
                     <div className="w-14 h-14 bg-blue-600 rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform duration-500">
                         <Code2 className="w-7 h-7 text-white" />
                     </div>
                     
-                    <h3 className="text-2xl font-bold text-slate-900 mb-4">Velocity Infrastructure</h3>
-                    <p className="text-slate-600 leading-relaxed mb-8 relative z-20">
+                    <h3 className="text-2xl font-bold text-white mb-4">Velocity Infrastructure</h3>
+                    <p className="text-slate-300 leading-relaxed mb-8 relative z-20">
                         Stop fighting WordPress. We build <strong>Headless Next.js</strong> systems that decouple your content from your code. 
                     </p>
                     
@@ -71,10 +71,10 @@ export default function ServicesPage() {
             </div>
 
             {/* PILLAR 2: MONOPOLY (Programmatic SEO) */}
-            <div className="group relative p-8 rounded-[2.5rem] bg-white/60 backdrop-blur-xl border border-white/60 shadow-xl hover:shadow-2xl hover:shadow-purple-500/10 transition-all duration-500 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className="group relative p-8 rounded-[2.5rem] bg-slate-800 border border-slate-700 shadow-xl hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-500 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 {/* BIG NUMBER WATERMARK */}
-                <div className="absolute -right-4 -top-4 text-9xl font-black text-slate-100 opacity-50 select-none pointer-events-none group-hover:text-purple-50/80 transition-colors">02</div>
+                <div className="absolute -right-4 -top-4 text-9xl font-black text-slate-700 opacity-50 select-none pointer-events-none group-hover:text-slate-600 transition-colors">02</div>
                 
                 <div className="relative z-10">
                     <div className="w-14 h-14 bg-purple-600 rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-purple-500/30 group-hover:scale-110 transition-transform duration-500">
