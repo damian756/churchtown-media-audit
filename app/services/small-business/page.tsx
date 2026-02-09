@@ -87,9 +87,9 @@ export default function SmallBusinessPage() {
       {/* 1. HERO SECTION */}
       <section className="relative pt-40 pb-20 px-6 overflow-hidden bg-slate-900 border-b border-slate-800">
         
-        {/* Background Gradients */}
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/20 rounded-full blur-[120px] pointer-events-none"></div>
-        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+        {/* Background Gradients - LCP Optimized */}
+        <div className="animated-blob absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/20 rounded-full blur-[120px] pointer-events-none"></div>
+        <div className="animated-blob absolute bottom-0 left-0 w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-[100px] pointer-events-none"></div>
 
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center relative z-10">
             <div>

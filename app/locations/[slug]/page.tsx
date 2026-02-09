@@ -42,7 +42,7 @@ export default async function LocationPage({ params }: Props) {
       {/* HERO SECTION */}
       <section className="px-6 mb-20">
         <div className="max-w-7xl mx-auto bg-slate-900 rounded-3xl p-8 md:p-16 text-white relative overflow-hidden shadow-2xl">
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/20 blur-[100px] rounded-full pointer-events-none"></div>
+            <div className="animated-blob absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/20 blur-[100px] rounded-full pointer-events-none"></div>
             
             <div className="relative z-10 max-w-3xl">
                 <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/10 rounded-full px-4 py-1.5 mb-6 text-sm font-medium">

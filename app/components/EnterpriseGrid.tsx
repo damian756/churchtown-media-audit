@@ -115,7 +115,7 @@ import {
   
             {/* Card 5: Speed (Wide) */}
             <div className="group relative col-span-1 md:col-span-2 md:row-span-1 rounded-3xl border border-slate-200 bg-gradient-to-r from-slate-900 to-slate-800 p-8 flex items-center justify-between overflow-hidden shadow-md">
-              <div className="absolute -left-10 top-0 w-64 h-64 bg-blue-500/20 blur-[100px] rounded-full pointer-events-none"></div>
+              <div className="animated-blob absolute -left-10 top-0 w-64 h-64 bg-blue-500/20 blur-[100px] rounded-full pointer-events-none"></div>
               <div className="relative z-10">
                 <div className="flex items-center gap-3 mb-2">
                   <Zap className="w-6 h-6 text-yellow-400 fill-yellow-400" />

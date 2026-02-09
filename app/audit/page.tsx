@@ -59,9 +59,9 @@ export default function AuditPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* BACKGROUND EFFECTS (The Premium Polish) */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-blue-600/20 rounded-full blur-[120px] pointer-events-none"></div>
-      <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+      {/* BACKGROUND EFFECTS (The Premium Polish) - LCP Optimized */}
+      <div className="animated-blob absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-blue-600/20 rounded-full blur-[120px] pointer-events-none"></div>
+      <div className="animated-blob absolute bottom-0 right-0 w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[100px] pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         

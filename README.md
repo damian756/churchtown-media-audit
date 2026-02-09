@@ -1,36 +1,178 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Churchtown Media Website
 
-## Getting Started
+Official website for Churchtown Media - Digital Growth Partner for Southport & North West businesses.
 
-First, run the development server:
+## 🚀 Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Hosting**: Vercel
+- **Analytics**: Google Analytics 4
+- **Cookie Consent**: CookieYes
+
+## 📋 Prerequisites
+
+- Node.js 20+ (LTS recommended)
+- npm or yarn
+- Git
+
+## 🛠️ Environment Setup
+
+1. Clone the repository:
+```bash
+git clone https://github.com/your-org/churchtown-media.git
+cd churchtown-media
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Create a `.env.local` file in the root directory:
+```bash
+cp .env.example .env.local
+```
+
+4. Add your API keys to `.env.local`:
+```env
+OPENROUTER_API_KEY=your_openrouter_api_key_here
+GOOGLE_API_KEY=your_google_api_key_here
+```
+
+### Required API Keys
+
+- **OpenRouter API Key**: Used for AI-powered audit analysis
+  - Get yours at: https://openrouter.ai/
+  
+- **Google PageSpeed Insights API Key**: Used for website performance audits
+  - Get yours at: https://console.cloud.google.com/apis/credentials
+
+## 🏃‍♂️ Development
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🏗️ Build & Deploy
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Build for production:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Start the production server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The site is automatically deployed to Vercel on push to the `main` branch.
 
-## Deploy on Vercel
+## 📁 Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+churchtown-media/
+├── app/
+│   ├── api/              # API routes (audit)
+│   ├── audit/            # Free SEO audit tool
+│   ├── blog/             # Blog posts & articles
+│   ├── components/       # Reusable components
+│   ├── contact/          # Contact page
+│   ├── locations/        # Location-specific pages
+│   ├── services/         # Service pages (SEO, Web Design, etc.)
+│   ├── work/             # Portfolio/case studies
+│   ├── layout.tsx        # Root layout
+│   ├── page.tsx          # Homepage
+│   ├── opengraph-image.tsx  # Dynamic OG image
+│   ├── icon.tsx          # Dynamic favicon
+│   └── not-found.tsx     # Custom 404 page
+├── lib/
+│   ├── locations.ts      # Location data
+│   └── posts.ts          # Blog post data
+├── public/
+│   └── images/           # Static images
+├── .env.example          # Environment variables template
+├── next.config.ts        # Next.js configuration
+├── tailwind.config.js    # Tailwind CSS configuration
+└── tsconfig.json         # TypeScript configuration
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔧 Key Features
+
+- **AI-Powered SEO Audits**: Free website analysis using OpenAI and Google PageSpeed Insights
+- **Dynamic Location Pages**: Automated SEO-optimized pages for 15+ locations
+- **Blog System**: Built-in blog with TypeScript-based content management
+- **Schema.org Markup**: Full JSON-LD structured data for better SEO
+- **Performance Optimized**: Server-side rendering, image optimization, and route prefetching
+- **Mobile-First Design**: Responsive design with Tailwind CSS
+
+## 📝 Content Management
+
+### Adding Blog Posts
+
+Edit `lib/posts.ts` and add a new entry to the `posts` array:
+
+```typescript
+{
+  slug: "your-post-slug",
+  title: "Your Post Title",
+  date: "Feb 10, 2026",
+  category: "Category Name",
+  image: "/images/your-image.jpg",
+  excerpt: "Short description...",
+  content: `<p>Your HTML content here...</p>`
+}
+```
+
+### Adding Location Pages
+
+Edit `lib/locations.ts` and add a new location to the `locations` array.
+
+## 🔍 SEO Features
+
+- Dynamic sitemaps (`/sitemap.xml`)
+- robots.txt configuration (`/robots.txt`)
+- Automatic canonical URLs
+- OpenGraph & Twitter Card metadata
+- Schema.org structured data
+- 301 redirects for legacy URLs (see `next.config.ts`)
+
+## 🧪 Testing
+
+Run the linter:
+
+```bash
+npm run lint
+```
+
+## 📊 Analytics & Tracking
+
+- **Google Analytics 4**: Tracking ID configured in `app/layout.tsx`
+- **CookieYes**: GDPR-compliant cookie consent banner
+
+## 🔐 Security
+
+- No database (static site = fewer vulnerabilities)
+- Environment variables for sensitive data
+- HTTPS enforced via Vercel
+- CSP headers recommended for production
+
+## 📞 Contact
+
+**Churchtown Media**
+- Website: https://www.churchtownmedia.co.uk
+- Email: hello@churchtownmedia.co.uk
+- Phone: 07545 934360
+- Address: Cambridge Avenue, Southport, PR9 9SA
+
+## 📄 License
+
+© 2026 Churchtown Media Ltd. Company No. 16960442. All rights reserved.

@@ -37,6 +37,12 @@
     animation: blob 7s infinite;
   }
 
+  /* LCP Optimization: Delayed Blob Rendering */
+  .animated-blob {
+    opacity: 0;
+    animation: fadeInBlob 1s ease-in 0.5s forwards, blob 7s infinite 0.5s;
+  }
+
   /* Rich Text Styles for AI Audit Results */
   .blog-content h2 {
     @apply mt-12 mb-6 text-3xl font-bold text-slate-900 tracking-tight leading-tight;
@@ -85,6 +91,11 @@
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeInBlob {
+  from { opacity: 0; }
+  to { opacity: 0.7; }
 }
 
 @layer utilities {

@@ -94,10 +94,10 @@ export default function Home() {
       {/* 1. HERO SECTION */}
       <div className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden isolate">
         
-        {/* ANIMATED BACKGROUND BLOBS */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-purple-300/40 rounded-full blur-[100px] animate-blob mix-blend-multiply filter opacity-70"></div>
-        <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-blue-300/40 rounded-full blur-[100px] animate-blob animation-delay-2000 mix-blend-multiply filter opacity-70"></div>
-        <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-emerald-300/40 rounded-full blur-[100px] animate-blob animation-delay-4000 mix-blend-multiply filter opacity-70"></div>
+        {/* ANIMATED BACKGROUND BLOBS - Delayed for LCP optimization */}
+        <div className="animated-blob absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-purple-300/40 rounded-full blur-[100px] animate-blob mix-blend-multiply filter"></div>
+        <div className="animated-blob absolute top-0 right-1/4 w-[500px] h-[500px] bg-blue-300/40 rounded-full blur-[100px] animate-blob animation-delay-2000 mix-blend-multiply filter"></div>
+        <div className="animated-blob absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-emerald-300/40 rounded-full blur-[100px] animate-blob animation-delay-4000 mix-blend-multiply filter"></div>
 
         {/* Content Container */}
         <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
@@ -109,7 +109,7 @@ export default function Home() {
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                 </span>
                 <span className="text-[10px] font-bold text-emerald-700 uppercase tracking-wide">
-                  Now accepting clients for Q1 2026
+                  Now accepting clients for 2026
                 </span>
             </div>
 
@@ -138,7 +138,7 @@ export default function Home() {
 
             {/* TRUST INDICATORS */}
             <div className="mt-12 flex items-center justify-center gap-6 text-xs font-bold text-slate-400 uppercase tracking-widest">
-                <span className="flex items-center gap-1.5 bg-white/50 px-3 py-1 rounded-full"><Code2 className="w-4 h-4 text-blue-600" /> Next.js 14</span>
+                <span className="flex items-center gap-1.5 bg-white/50 px-3 py-1 rounded-full"><Code2 className="w-4 h-4 text-blue-600" /> Next.js 16</span>
                 <span className="flex items-center gap-1.5 bg-white/50 px-3 py-1 rounded-full"><Zap className="w-3 h-3 text-yellow-500 fill-yellow-500" /> Vercel</span>
                 <span className="flex items-center gap-1.5 bg-white/50 px-3 py-1 rounded-full"><TrendingUp className="w-3 h-3 text-emerald-500" /> Google Analytics 4</span>
             </div>
