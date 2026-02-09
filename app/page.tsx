@@ -146,17 +146,17 @@ export default function Home() {
       </div>
 
       {/* 2. SERVICE SILOS */}
-      <section className="py-24 bg-slate-900/50 backdrop-blur-3xl relative z-10 border-t border-slate-800">
+      <section className="py-16 bg-slate-900/50 backdrop-blur-3xl relative z-10 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-6">
-            <div className="text-center mb-16">
+            <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Choose Your Growth Engine</h2>
                 <p className="text-slate-400 text-lg">Specialized strategies for every stage of business.</p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 
                 {/* CARD 1: WEB DESIGN SILO */}
-                <div className="group p-8 rounded-[2rem] bg-slate-800 border border-slate-700 hover:border-blue-500/50 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300">
+                <div className="group p-6 rounded-[2rem] bg-slate-800 border border-slate-700 hover:border-blue-500/50 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300">
                     <div className="w-14 h-14 bg-blue-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <Globe className="w-7 h-7 text-blue-400" />
                     </div>
@@ -170,7 +170,7 @@ export default function Home() {
                 </div>
 
                 {/* CARD 2: SEO SILO */}
-                <div className="group p-8 rounded-[2rem] bg-slate-800 border border-slate-700 hover:border-emerald-500/50 hover:shadow-xl hover:shadow-emerald-500/10 transition-all duration-300">
+                <div className="group p-6 rounded-[2rem] bg-slate-800 border border-slate-700 hover:border-emerald-500/50 hover:shadow-xl hover:shadow-emerald-500/10 transition-all duration-300">
                     <div className="w-14 h-14 bg-emerald-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <BarChart3 className="w-7 h-7 text-emerald-400" />
                     </div>
@@ -184,7 +184,7 @@ export default function Home() {
                 </div>
 
                 {/* CARD 3: AUDIT LEAD MAGNET */}
-                <div className="group p-8 rounded-[2rem] bg-gradient-to-br from-blue-600 to-blue-700 text-white hover:shadow-2xl hover:shadow-blue-600/30 transition-all duration-300 relative overflow-hidden">
+                <div className="group p-6 rounded-[2rem] bg-gradient-to-br from-blue-600 to-blue-700 text-white hover:shadow-2xl hover:shadow-blue-600/30 transition-all duration-300 relative overflow-hidden">
                     <div className="absolute top-0 right-0 w-64 h-64 bg-blue-400/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
                     <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center mb-6 backdrop-blur-sm relative z-10">
                         <Zap className="w-7 h-7 text-yellow-400 fill-yellow-400" />
