@@ -3,7 +3,7 @@ import { CheckCircle2, Search, Terminal, AlertTriangle } from "lucide-react";
 
 export default function TechnicalSEO() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-slate-950">
       {/* Hero */}
       <section className="bg-slate-900 px-6 py-24 text-center text-white">
         <div className="mx-auto max-w-3xl">
@@ -23,41 +23,41 @@ export default function TechnicalSEO() {
       {/* The Problem / Solution */}
       <section className="mx-auto max-w-7xl px-6 py-24 lg:grid lg:grid-cols-2 lg:gap-16">
         <div>
-          <h2 className="text-3xl font-bold text-slate-900">Why your rankings are stuck</h2>
-          <p className="mt-4 text-slate-600">
+          <h2 className="text-3xl font-bold text-white">Why your rankings are stuck</h2>
+          <p className="mt-4 text-slate-300">
             Most agencies focus on "content" while ignoring the foundation. If Googlebot cannot crawl your site efficiently, no amount of blogging will help you.
           </p>
           
           <div className="mt-8 space-y-6">
             <div className="flex gap-4">
-              <div className="flex-none rounded-lg bg-red-50 p-3">
-                <AlertTriangle className="h-6 w-6 text-red-600" />
+              <div className="flex-none rounded-lg bg-red-950/50 p-3">
+                <AlertTriangle className="h-6 w-6 text-red-400" />
               </div>
               <div>
-                <h3 className="font-bold text-slate-900">JavaScript Bloat</h3>
-                <p className="text-sm text-slate-600">Heavy themes and plugins hide your content from search engines. We implement Server-Side Rendering (SSR) to ensure instant indexing.</p>
+                <h3 className="font-bold text-white">JavaScript Bloat</h3>
+                <p className="text-sm text-slate-300">Heavy themes and plugins hide your content from search engines. We implement Server-Side Rendering (SSR) to ensure instant indexing.</p>
               </div>
             </div>
             <div className="flex gap-4">
-              <div className="flex-none rounded-lg bg-red-50 p-3">
-                <AlertTriangle className="h-6 w-6 text-red-600" />
+              <div className="flex-none rounded-lg bg-red-950/50 p-3">
+                <AlertTriangle className="h-6 w-6 text-red-400" />
               </div>
               <div>
-                <h3 className="font-bold text-slate-900">Crawl Budget Waste</h3>
-                <p className="text-sm text-slate-600">If you have 1,000 low-quality pages, Google stops looking for the good ones. We prune and consolidate your architecture.</p>
+                <h3 className="font-bold text-white">Crawl Budget Waste</h3>
+                <p className="text-sm text-slate-300">If you have 1,000 low-quality pages, Google stops looking for the good ones. We prune and consolidate your architecture.</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="mt-12 lg:mt-0 rounded-2xl bg-slate-50 p-8 ring-1 ring-slate-200">
-          <h3 className="text-xl font-bold text-slate-900">Our 24-Point Audit Protocol</h3>
-          <ul className="mt-6 space-y-4 text-slate-600">
-            <li className="flex gap-3"><CheckCircle2 className="h-5 w-5 text-blue-600" /> Log File Analysis</li>
-            <li className="flex gap-3"><CheckCircle2 className="h-5 w-5 text-blue-600" /> Core Web Vitals Optimization</li>
-            <li className="flex gap-3"><CheckCircle2 className="h-5 w-5 text-blue-600" /> Schema / Structured Data Implementation</li>
-            <li className="flex gap-3"><CheckCircle2 className="h-5 w-5 text-blue-600" /> Canonicalization Strategy</li>
-            <li className="flex gap-3"><CheckCircle2 className="h-5 w-5 text-blue-600" /> Internal Link Graph Logic</li>
+        <div className="mt-12 lg:mt-0 rounded-2xl bg-slate-900 p-8 ring-1 ring-slate-700 border border-slate-700">
+          <h3 className="text-xl font-bold text-white">Our 24-Point Audit Protocol</h3>
+          <ul className="mt-6 space-y-4 text-slate-300">
+            <li className="flex gap-3"><CheckCircle2 className="h-5 w-5 text-blue-400" /> Log File Analysis</li>
+            <li className="flex gap-3"><CheckCircle2 className="h-5 w-5 text-blue-400" /> Core Web Vitals Optimization</li>
+            <li className="flex gap-3"><CheckCircle2 className="h-5 w-5 text-blue-400" /> Schema / Structured Data Implementation</li>
+            <li className="flex gap-3"><CheckCircle2 className="h-5 w-5 text-blue-400" /> Canonicalization Strategy</li>
+            <li className="flex gap-3"><CheckCircle2 className="h-5 w-5 text-blue-400" /> Internal Link Graph Logic</li>
           </ul>
           <div className="mt-8">
             <Link href="/audit" className="block w-full rounded-lg bg-blue-600 px-4 py-3 text-center font-bold text-white hover:bg-blue-500">

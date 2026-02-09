@@ -8,18 +8,18 @@ export const metadata = {
 
 export default function SEOPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-slate-950">
       
       {/* Hero */}
-      <section className="bg-white px-6 py-24 text-center border-b border-slate-100">
+      <section className="bg-slate-900 px-6 py-24 text-center border-b border-slate-700">
         <div className="mx-auto max-w-4xl">
-          <div className="mb-6 inline-flex items-center rounded-full bg-indigo-900 px-3 py-1 text-sm font-medium text-indigo-300">
+          <div className="mb-6 inline-flex items-center rounded-full bg-indigo-900 px-3 py-1 text-sm font-medium text-indigo-400">
             For Growth-Focused Brands
           </div>
-          <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-6xl">
-            Results-Driven SEO for <br/> <span className="text-blue-600">Growing Businesses</span>
+          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+            Results-Driven SEO for <br/> <span className="text-blue-400">Growing Businesses</span>
           </h1>
-          <p className="mt-6 text-xl text-slate-600 leading-relaxed">
+          <p className="mt-6 text-xl text-slate-300 leading-relaxed">
             Many agencies hide behind technical jargon and "vague progress." We don't. We provide a local partnership built on clarity, modern data, and total transparency.
           </p>
         </div>
@@ -29,29 +29,29 @@ export default function SEOPage() {
       <section className="mx-auto max-w-6xl px-6 py-24">
         <div className="grid gap-12 md:grid-cols-3">
           <div className="text-center">
-            <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-blue-50 text-blue-600">
+            <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-blue-950/50 text-blue-400">
               <Target className="h-8 w-8" />
             </div>
-            <h3 className="text-xl font-bold text-slate-900">Defined KPIs</h3>
-            <p className="mt-4 text-slate-600">
+            <h3 className="text-xl font-bold text-white">Defined KPIs</h3>
+            <p className="mt-4 text-slate-300">
               We don’t just "do SEO." We set clear goals tailored to your business—whether that’s increasing organic revenue, capturing local leads, or boosting phone calls.
             </p>
           </div>
           <div className="text-center">
-            <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-purple-50 text-purple-600">
+            <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-purple-950/50 text-purple-400">
               <TrendingUp className="h-8 w-8" />
             </div>
-            <h3 className="text-xl font-bold text-slate-900">Modern Metrics</h3>
-            <p className="mt-4 text-slate-600">
+            <h3 className="text-xl font-bold text-white">Modern Metrics</h3>
+            <p className="mt-4 text-slate-300">
               We track user intent, conversion paths, and site authority rather than just "vanity" rankings. Your investment must translate into a stronger bottom line.
             </p>
           </div>
           <div className="text-center">
-            <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-green-50 text-green-600">
+            <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-green-950/50 text-green-400">
               <Eye className="h-8 w-8" />
             </div>
-            <h3 className="text-xl font-bold text-slate-900">Radical Transparency</h3>
-            <p className="mt-4 text-slate-600">
+            <h3 className="text-xl font-bold text-white">Radical Transparency</h3>
+            <p className="mt-4 text-slate-300">
               Regular, plain-English reporting. We show you exactly what we are doing, including proof of link building and technical fixes. No secrets.
             </p>
           </div>
