@@ -50,7 +50,7 @@ export default function HeadlessDev() {
         <div className="mt-16 rounded-3xl bg-slate-900 px-6 py-12 text-center border border-slate-700">
             <h2 className="text-2xl font-bold text-white">Is your current site slowing you down?</h2>
             <div className="mt-8 flex justify-center gap-4">
-                <Link href="/audit" className="rounded-lg bg-white px-6 py-3 font-bold text-slate-900 hover:bg-slate-100">
+                <Link href="/audit" className="rounded-lg bg-slate-800 px-6 py-3 font-bold text-white hover:bg-slate-700">
                     Test My Site Speed
                 </Link>
                 <Link href="/contact" className="rounded-lg border border-slate-600 px-6 py-3 font-bold text-white hover:bg-slate-800">

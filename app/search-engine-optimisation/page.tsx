@@ -88,7 +88,7 @@ export default function SEOPage() {
 
       {/* --- NEW SECTION: Small Business Link --- */}
       <section className="bg-indigo-50 px-6 py-20 border-t border-indigo-100">
-        <div className="mx-auto max-w-4xl rounded-2xl bg-white p-10 shadow-sm ring-1 ring-indigo-100 text-center">
+        <div className="mx-auto max-w-4xl rounded-2xl bg-slate-900 p-10 shadow-sm ring-1 ring-slate-700 text-center">
             <div className="inline-flex items-center justify-center p-3 bg-indigo-100 rounded-full text-indigo-600 mb-6">
                 <MapPin className="h-6 w-6" />
             </div>

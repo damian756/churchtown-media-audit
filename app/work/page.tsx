@@ -221,7 +221,7 @@ export default function WorkPage() {
             <Link href="/audit" className="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-500 transition-colors shadow-lg hover:shadow-xl hover:-translate-y-1">
                 Get Free Audit
             </Link>
-            <Link href="/contact" className="bg-white text-slate-900 border border-slate-200 px-8 py-4 rounded-xl font-bold hover:bg-slate-50 transition-colors">
+            <Link href="/contact" className="bg-slate-800 text-white border border-slate-700 px-8 py-4 rounded-xl font-bold hover:bg-slate-700 transition-colors">
                 Book Strategy Call
             </Link>
         </div>
