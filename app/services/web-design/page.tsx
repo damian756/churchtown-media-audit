@@ -84,13 +84,13 @@ const jsonLd = {
 export default function WebDesignPage() {
   
   const features = [
-    { icon: <Zap className="w-6 h-6"/>, title: "0.4s Load Speeds", desc: "Google loves fast sites. We build on the edge for instant interactions." },
-    { icon: <Smartphone className="w-6 h-6"/>, title: "Mobile First", desc: "60% of traffic is mobile. We design for the thumb, not just the mouse." },
-    { icon: <Code2 className="w-6 h-6"/>, title: "Clean Code", desc: "No bloated plugins. Just pure, semantic React code that scales." }
+    { icon: <Zap className="w-6 h-6 text-blue-400"/>, title: "0.4s Load Speeds", desc: "Google loves fast sites. We build on the edge for instant interactions." },
+    { icon: <Smartphone className="w-6 h-6 text-blue-400"/>, title: "Mobile First", desc: "60% of traffic is mobile. We design for the thumb, not just the mouse." },
+    { icon: <Code2 className="w-6 h-6 text-blue-400"/>, title: "Clean Code", desc: "No bloated plugins. Just pure, semantic React code that scales." }
   ];
 
   return (
-    <main className="min-h-screen pt-32 pb-20 bg-slate-50">
+    <main className="min-h-screen pt-32 pb-20 bg-slate-950">
       
       {/* INJECT SCHEMA FOR GOOGLE */}
       <script
@@ -100,13 +100,13 @@ export default function WebDesignPage() {
 
       {/* HERO SECTION */}
       <div className="max-w-7xl mx-auto px-6 mb-20">
-        <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 rounded-full px-4 py-1.5 mb-8">
-            <span className="text-xs font-bold text-blue-700 uppercase tracking-wide">Enterprise Web Design</span>
+        <div className="inline-flex items-center gap-2 bg-slate-900 border border-slate-800 rounded-full px-4 py-1.5 mb-8">
+            <span className="text-xs font-bold text-slate-300 uppercase tracking-wide">Enterprise Web Design</span>
         </div>
-        <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 mb-8 tracking-tight leading-tight">
-          Next.js Web Design <br/> <span className="text-blue-600">that prints money.</span>
+        <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-8 tracking-tight leading-tight">
+          Next.js Web Design <br/> <span className="text-blue-400">that prints money.</span>
         </h1>
-        <p className="text-xl text-slate-600 max-w-2xl leading-relaxed">
+        <p className="text-xl text-slate-400 max-w-2xl leading-relaxed">
           Most agencies sell you a brochure. We build revenue engines. Ultra-fast architecture designed to convert North West traffic into paying customers.
         </p>
       </div>
@@ -114,42 +114,42 @@ export default function WebDesignPage() {
       {/* CORE BENEFITS GRID */}
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 mb-32">
         {features.map((feat, i) => (
-            <div key={i} className="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow group">
-                <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 mb-6 group-hover:scale-110 transition-transform">{feat.icon}</div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">{feat.title}</h3>
-                <p className="text-slate-600 leading-relaxed">{feat.desc}</p>
+            <div key={i} className="bg-slate-800 p-8 rounded-2xl border border-slate-700 shadow-sm hover:shadow-md transition-shadow group">
+                <div className="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center border border-slate-700 mb-6 group-hover:scale-110 transition-transform">{feat.icon}</div>
+                <h3 className="text-xl font-bold text-white mb-3">{feat.title}</h3>
+                <p className="text-slate-400 leading-relaxed">{feat.desc}</p>
             </div>
         ))}
       </div>
 
       {/* SEO CROSS-SELL */}
-      <div className="bg-white py-20 border-y border-slate-100 mb-20">
+      <div className="bg-slate-900 py-20 border-y border-slate-800 mb-20">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
             <div className="flex-1">
-                <div className="inline-flex items-center gap-2 text-blue-600 font-bold mb-4">
+                <div className="inline-flex items-center gap-2 text-blue-400 font-bold mb-4">
                     <BarChart3 className="w-5 h-5" />
                     <span>Built for Growth</span>
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                     A beautiful site is useless if nobody sees it.
                 </h2>
-                <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                <p className="text-lg text-slate-400 mb-8 leading-relaxed">
                     We don't just design pixels; we design for rankings. Every website we build comes with a technical SEO foundation that puts you ahead of 90% of competitors.
                 </p>
-                <Link href="/services/seo" className="text-blue-600 font-bold hover:text-blue-800 inline-flex items-center gap-2 group">
+                <Link href="/services/seo" className="text-blue-400 font-bold hover:text-blue-300 inline-flex items-center gap-2 group">
                     Explore our SEO Services <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
             </div>
-            <div className="flex-1 w-full bg-slate-50 rounded-2xl p-8 border border-slate-100">
+            <div className="flex-1 w-full bg-slate-800 rounded-2xl p-8 border border-slate-700">
                 <div className="space-y-4">
                     {[
                       "Perfect Core Web Vitals", 
                       "Schema.org Structured Data", 
                       "Semantic HTML5 Architecture"
                     ].map((item, i) => (
-                      <div key={i} className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm border border-slate-100">
-                          <CheckCircle2 className="w-5 h-5 text-emerald-500" />
-                          <span className="font-mono text-sm text-slate-600">{item}</span>
+                      <div key={i} className="flex items-center gap-4 p-4 bg-slate-900 rounded-lg shadow-sm border border-slate-700">
+                          <CheckCircle2 className="w-5 h-5 text-emerald-400" />
+                          <span className="font-mono text-sm text-slate-300">{item}</span>
                       </div>
                     ))}
                 </div>
@@ -160,19 +160,19 @@ export default function WebDesignPage() {
       {/* --- NEW: FAQ SECTION --- */}
       <div className="max-w-4xl mx-auto px-6 mb-32">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-4">Common Questions</h2>
-          <p className="text-slate-600">Everything you need to know about our process.</p>
+          <h2 className="text-3xl font-bold text-white mb-4">Common Questions</h2>
+          <p className="text-slate-400">Everything you need to know about our process.</p>
         </div>
         <div className="space-y-4">
           {faqs.map((faq, i) => (
-            <details key={i} className="group border border-slate-200 rounded-2xl bg-white open:shadow-lg transition-all duration-300">
-              <summary className="flex items-center justify-between p-6 cursor-pointer list-none text-lg font-bold text-slate-900">
+            <details key={i} className="group border border-slate-700 rounded-2xl bg-slate-800 open:shadow-lg transition-all duration-300">
+              <summary className="flex items-center justify-between p-6 cursor-pointer list-none text-lg font-bold text-white">
                 {faq.question}
                 <span className="transition-transform group-open:rotate-45">
-                  <Plus className="w-5 h-5 text-blue-600" />
+                  <Plus className="w-5 h-5 text-blue-400" />
                 </span>
               </summary>
-              <div className="px-6 pb-6 text-slate-600 leading-relaxed">
+              <div className="px-6 pb-6 text-slate-300 leading-relaxed">
                 {faq.answer}
               </div>
             </details>
@@ -182,12 +182,12 @@ export default function WebDesignPage() {
 
       {/* CTA SECTION */}
       <div className="max-w-4xl mx-auto px-6 text-center">
-        <h2 className="text-3xl font-bold text-slate-900 mb-6">Stop losing customers to slow websites.</h2>
-        <p className="text-slate-600 mb-10 max-w-lg mx-auto">
+        <h2 className="text-3xl font-bold text-white mb-6">Stop losing customers to slow websites.</h2>
+        <p className="text-slate-400 mb-10 max-w-lg mx-auto">
             Get a free technical breakdown of your current site and a roadmap to market dominance.
         </p>
         <div className="flex justify-center gap-4">
-            <Link href="/audit" className="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-700 transition-all shadow-lg hover:shadow-blue-500/20 inline-flex items-center gap-2 hover:-translate-y-1">
+            <Link href="/audit" className="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-500 transition-all shadow-lg hover:shadow-blue-500/20 inline-flex items-center gap-2 hover:-translate-y-1">
                 Get a Free Site Audit <ArrowRight className="w-4 h-4" />
             </Link>
         </div>
