@@ -55,6 +55,12 @@ export default async function LocationPage({ params }: Props) {
                 </h1>
                 <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
                     Stop searching for "agencies near me". We are based in Southport, just <strong>{location.travelTime}</strong> from {location.name}. We deliver enterprise-grade SEO and Development without the city-center price tag.
+                    
+                    {location.nearbyAreas && (
+                      <span className="block mt-4 text-sm text-slate-400">
+                        Serving: {location.nearbyAreas.join(" • ")}
+                      </span>
+                    )}
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <Link href="/audit" className="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-700 transition-all inline-flex items-center gap-2 shadow-lg hover:shadow-blue-600/20">
@@ -85,7 +91,7 @@ export default async function LocationPage({ params }: Props) {
                     <p className="text-blue-800">{location.industryFocus}</p>
                 </div>
 
-                <ul className="space-y-4">
+                <ul className="space-y-4 mb-8">
                     <li className="flex items-start gap-3">
                         <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-1" />
                         <span className="text-slate-700 font-medium">We know the local market (e.g., competitors near {location.landmark}).</span>
@@ -99,6 +105,27 @@ export default async function LocationPage({ params }: Props) {
                         <span className="text-slate-700 font-medium">No outsourcing. All code written in-house in Sefton.</span>
                     </li>
                 </ul>
+
+                {location.caseStudySnippet && (
+                  <div className="bg-slate-50 p-6 rounded-xl border-l-4 border-blue-600">
+                    <div className="flex items-start gap-4">
+                      <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xl shrink-0">
+                        ✓
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-slate-900 mb-2">
+                          {location.caseStudySnippet.client}
+                        </h4>
+                        <p className="text-emerald-600 font-bold mb-2">
+                          {location.caseStudySnippet.result}
+                        </p>
+                        <p className="text-slate-600 italic">
+                          &ldquo;{location.caseStudySnippet.quote}&rdquo;
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                )}
             </div>
             
             <div className="relative h-[400px] w-full bg-slate-900 rounded-3xl overflow-hidden shadow-2xl flex items-center justify-center group">
@@ -111,6 +138,61 @@ export default async function LocationPage({ params }: Props) {
             </div>
         </div>
       </section>
+
+      {/* LOCAL MARKET INSIGHTS */}
+      {location.marketStats && location.localChallenges && (
+        <section className="py-24 px-6 bg-slate-50">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-slate-900 mb-6 text-center">
+              Understanding the {location.name} Digital Market
+            </h2>
+            <p className="text-slate-600 text-center mb-12 max-w-2xl mx-auto">
+              Data-driven insights that inform our {location.name} SEO and web design strategies.
+            </p>
+            
+            {/* Market Stats */}
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
+              <div className="bg-white p-6 rounded-xl border border-slate-200 text-center">
+                <div className="text-3xl font-bold text-blue-600 mb-2">{location.marketStats.population}</div>
+                <div className="text-sm text-slate-600 font-medium">Population</div>
+              </div>
+              <div className="bg-white p-6 rounded-xl border border-slate-200 text-center">
+                <div className="text-3xl font-bold text-blue-600 mb-2">{location.marketStats.businesses}</div>
+                <div className="text-sm text-slate-600 font-medium">Businesses</div>
+              </div>
+              <div className="bg-white p-6 rounded-xl border border-slate-200 text-center">
+                <div className="text-sm font-bold text-blue-600 mb-2">Key Trend</div>
+                <div className="text-sm text-slate-600 leading-relaxed">{location.marketStats.keyTrend}</div>
+              </div>
+            </div>
+            
+            {/* Local Challenges */}
+            <div className="mb-8">
+              <h3 className="text-xl font-bold text-slate-900 mb-4">
+                Common Challenges for {location.name} Businesses:
+              </h3>
+              <ul className="space-y-3">
+                {location.localChallenges.map((challenge, i) => (
+                  <li key={i} className="flex gap-3 items-start">
+                    <span className="text-blue-600 text-xl shrink-0">→</span>
+                    <span className="text-slate-700">{challenge}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            
+            {/* Success Metric */}
+            {location.successMetric && (
+              <div className="bg-gradient-to-r from-blue-50 to-emerald-50 p-6 rounded-xl border border-blue-200">
+                <div className="flex items-center gap-3">
+                  <Trophy className="w-6 h-6 text-blue-600 shrink-0" />
+                  <p className="text-blue-900 font-bold">{location.successMetric}</p>
+                </div>
+              </div>
+            )}
+          </div>
+        </section>
+      )}
 
       {/* SERVICES GRID */}
       <section className="py-24 px-6 bg-slate-50">
