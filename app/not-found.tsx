@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
   return (
-    <main className="min-h-screen bg-slate-50 flex items-center justify-center px-6 py-20">
+    <main className="min-h-screen bg-slate-950 flex items-center justify-center px-6 py-20">
       <div className="max-w-2xl mx-auto text-center">
         
         {/* Animated Background Blob */}
@@ -21,12 +21,12 @@ export default function NotFound() {
         </div>
 
         {/* Heading */}
-        <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight">
+        <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
           Page Not Found
         </h1>
 
         {/* Description */}
-        <p className="text-xl text-slate-600 mb-12 leading-relaxed max-w-lg mx-auto">
+        <p className="text-xl text-slate-300 mb-12 leading-relaxed max-w-lg mx-auto">
           Looks like this page has been moved, deleted, or never existed. 
           Let's get you back on track.
         </p>
@@ -42,31 +42,31 @@ export default function NotFound() {
           </Link>
           <Link 
             href="/audit" 
-            className="w-full sm:w-auto px-8 py-4 bg-white text-slate-900 font-bold border border-slate-200 rounded-xl hover:bg-slate-50 transition-all flex items-center justify-center gap-2 transform hover:-translate-y-1 shadow-sm"
+            className="w-full sm:w-auto px-8 py-4 bg-slate-800 text-white font-bold border border-slate-700 rounded-xl hover:bg-slate-700 transition-all flex items-center justify-center gap-2 transform hover:-translate-y-1 shadow-sm"
           >
             Get Free Audit <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
 
         {/* Popular Links */}
-        <div className="mt-16 pt-12 border-t border-slate-200">
-          <p className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-6">
+        <div className="mt-16 pt-12 border-t border-slate-800">
+          <p className="text-sm font-bold text-slate-500 uppercase tracking-widest mb-6">
             Popular Pages
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
-            <Link href="/services/web-design" className="text-slate-600 hover:text-blue-600 hover:underline transition-colors font-medium">
+            <Link href="/services/web-design" className="text-slate-400 hover:text-blue-400 hover:underline transition-colors font-medium">
               Web Design
             </Link>
-            <span className="text-slate-300">•</span>
-            <Link href="/services/seo" className="text-slate-600 hover:text-blue-600 hover:underline transition-colors font-medium">
+            <span className="text-slate-700">•</span>
+            <Link href="/services/seo" className="text-slate-400 hover:text-blue-400 hover:underline transition-colors font-medium">
               SEO Services
             </Link>
-            <span className="text-slate-300">•</span>
-            <Link href="/blog" className="text-slate-600 hover:text-blue-600 hover:underline transition-colors font-medium">
+            <span className="text-slate-700">•</span>
+            <Link href="/blog" className="text-slate-400 hover:text-blue-400 hover:underline transition-colors font-medium">
               Blog
             </Link>
-            <span className="text-slate-300">•</span>
-            <Link href="/contact" className="text-slate-600 hover:text-blue-600 hover:underline transition-colors font-medium">
+            <span className="text-slate-700">•</span>
+            <Link href="/contact" className="text-slate-400 hover:text-blue-400 hover:underline transition-colors font-medium">
               Contact Us
             </Link>
           </div>
