@@ -11,13 +11,13 @@ export default function CaseStudies() {
   const caseStudies = posts.filter((post) => post.category === "Case Studies");
 
   return (
-    <main className="min-h-screen bg-slate-50">
-      <section className="bg-white border-b border-slate-200 px-6 py-20 text-center">
+    <main className="min-h-screen bg-slate-950">
+      <section className="bg-slate-900 border-b border-slate-700 px-6 py-20 text-center">
         <div className="mx-auto max-w-3xl">
-          <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
             Our Work
           </h1>
-          <p className="mt-4 text-lg text-slate-600">
+          <p className="mt-4 text-lg text-slate-300">
             We don't sell promises. We sell results. Here is the data to prove it.
           </p>
         </div>
@@ -29,10 +29,10 @@ export default function CaseStudies() {
             <Link
               key={study.slug}
               href={`/blog/${study.slug}`}
-              className="group relative flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200 transition-all hover:shadow-xl hover:ring-blue-500"
+              className="group relative flex flex-col overflow-hidden rounded-2xl bg-slate-900 shadow-sm ring-1 ring-slate-700 transition-all hover:shadow-xl hover:ring-blue-400"
             >
               {/* IMAGE ADDED HERE */}
-              <div className="h-48 w-full overflow-hidden border-b border-slate-100 bg-slate-100">
+              <div className="h-48 w-full overflow-hidden border-b border-slate-700 bg-slate-800">
                 <img 
                   src={study.image} 
                   alt={study.title} 
@@ -41,17 +41,17 @@ export default function CaseStudies() {
               </div>
 
               <div className="flex flex-1 flex-col p-8">
-                <div className="flex items-center gap-3 text-sm font-medium text-blue-600">
+                <div className="flex items-center gap-3 text-sm font-medium text-blue-400">
                   <TrendingUp className="h-4 w-4" />
                   <span>Result Delivered</span>
                 </div>
-                <h3 className="mt-4 text-2xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+                <h3 className="mt-4 text-2xl font-bold text-white group-hover:text-blue-400 transition-colors">
                   {study.title}
                 </h3>
-                <p className="mt-4 flex-1 text-slate-600 leading-relaxed">
+                <p className="mt-4 flex-1 text-slate-300 leading-relaxed">
                   {study.excerpt}
                 </p>
-                <div className="mt-8 flex items-center gap-2 font-semibold text-blue-600">
+                <div className="mt-8 flex items-center gap-2 font-semibold text-blue-400">
                   Read the full breakdown <ArrowRight className="h-4 w-4" />
                 </div>
               </div>
@@ -61,7 +61,7 @@ export default function CaseStudies() {
 
         {caseStudies.length === 0 && (
           <div className="text-center py-20">
-            <p className="text-slate-500">More case studies are being written...</p>
+            <p className="text-slate-400">More case studies are being written...</p>
           </div>
         )}
       </section>
@@ -71,7 +71,7 @@ export default function CaseStudies() {
         <p className="mt-4 text-slate-400">Let's audit your current setup and find the gaps.</p>
         <Link
           href="/contact"
-          className="mt-8 inline-block rounded-lg bg-blue-600 px-8 py-4 font-bold text-white hover:bg-blue-700 transition-all"
+          className="mt-8 inline-block rounded-lg bg-blue-500 px-8 py-4 font-bold text-white hover:bg-blue-400 transition-all"
         >
           Get Your Free Audit
         </Link>

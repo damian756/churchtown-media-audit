@@ -53,7 +53,7 @@ export default function GrowthHub() {
   const recentPosts = posts ? posts.slice(0, 2) : [];
 
   return (
-    <main className="min-h-screen bg-slate-50">
+    <main className="min-h-screen bg-slate-950">
       
       {/* INJECT SCHEMA */}
       <script
@@ -73,7 +73,7 @@ export default function GrowthHub() {
             />
         </div>
         <div className="relative z-10 mx-auto max-w-4xl">
-          <span className="mb-4 inline-block rounded-full bg-blue-600/20 px-4 py-1.5 text-sm font-semibold text-blue-400 border border-blue-500/30">
+          <span className="mb-4 inline-block rounded-full bg-blue-500/20 px-4 py-1.5 text-sm font-semibold text-blue-400 border border-blue-400/30">
             The 2026 Playbook
           </span>
           <h1 className="text-4xl font-bold tracking-tight sm:text-6xl mb-6">
@@ -89,9 +89,9 @@ export default function GrowthHub() {
       <section className="mx-auto max-w-7xl px-6 py-24">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
             <div className="lg:w-1/2">
-                <h2 className="text-3xl font-bold text-slate-900 mb-6">The "Digital First" Reality for Southport</h2>
-                <div className="prose prose-lg text-slate-600 space-y-6">
-                    <p className="text-xl font-medium text-slate-900">
+                <h2 className="text-3xl font-bold text-white mb-6">The "Digital First" Reality for Southport</h2>
+                <div className="prose prose-lg text-slate-300 space-y-6">
+                    <p className="text-xl font-medium text-white">
                         The days of "word of mouth" are over. Today, word of mouth happens on Google Maps.
                     </p>
                     <p>
@@ -111,48 +111,48 @@ export default function GrowthHub() {
                     alt="Southport Local Search Map Pack Strategy" 
                     width={600}
                     height={400}
-                    className="rounded-2xl shadow-2xl border border-slate-200 w-full h-auto"
+                    className="rounded-2xl shadow-2xl border border-slate-700 w-full h-auto"
                 />
             </div>
         </div>
 
         {/* 3 Pillars */}
         <div className="grid gap-8 md:grid-cols-3 mt-20">
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
-                <div className="p-3 bg-blue-100 w-fit rounded-lg text-blue-600 mb-6"><MapPin className="h-6 w-6"/></div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">The "Near Me" Explosion</h3>
-                <p className="text-slate-600">Local search has shifted. "Web design near me" or "Roofers in Southport" are now the primary way customers find you. You need to dominate the Map Pack.</p>
+            <div className="bg-slate-900 p-8 rounded-2xl shadow-sm border border-slate-700 hover:shadow-md transition-shadow">
+                <div className="p-3 bg-blue-500/20 w-fit rounded-lg text-blue-400 mb-6"><MapPin className="h-6 w-6"/></div>
+                <h3 className="text-xl font-bold text-white mb-3">The "Near Me" Explosion</h3>
+                <p className="text-slate-300">Local search has shifted. "Web design near me" or "Roofers in Southport" are now the primary way customers find you. You need to dominate the Map Pack.</p>
             </div>
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
-                <div className="p-3 bg-yellow-100 w-fit rounded-lg text-yellow-600 mb-6"><Zap className="h-6 w-6"/></div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">Speed is Currency</h3>
-                <p className="text-slate-600">Southport has 5G. If your mobile site takes &gt;3 seconds to load, 50% of visitors leave. We build engines that capture traffic, not just look pretty.</p>
+            <div className="bg-slate-900 p-8 rounded-2xl shadow-sm border border-slate-700 hover:shadow-md transition-shadow">
+                <div className="p-3 bg-yellow-500/20 w-fit rounded-lg text-yellow-400 mb-6"><Zap className="h-6 w-6"/></div>
+                <h3 className="text-xl font-bold text-white mb-3">Speed is Currency</h3>
+                <p className="text-slate-300">Southport has 5G. If your mobile site takes &gt;3 seconds to load, 50% of visitors leave. We build engines that capture traffic, not just look pretty.</p>
             </div>
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
-                <div className="p-3 bg-red-100 w-fit rounded-lg text-red-600 mb-6"><Search className="h-6 w-6"/></div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">The Invisible Competitor</h3>
-                <p className="text-slate-600">Your biggest rival isn't the shop next door—it's the digital-first business that optimized last month. Don't let them steal your leads.</p>
+            <div className="bg-slate-900 p-8 rounded-2xl shadow-sm border border-slate-700 hover:shadow-md transition-shadow">
+                <div className="p-3 bg-red-500/20 w-fit rounded-lg text-red-400 mb-6"><Search className="h-6 w-6"/></div>
+                <h3 className="text-xl font-bold text-white mb-3">The Invisible Competitor</h3>
+                <p className="text-slate-300">Your biggest rival isn't the shop next door—it's the digital-first business that optimized last month. Don't let them steal your leads.</p>
             </div>
         </div>
       </section>
 
       {/* 3. Networking Section (Row 1 Style) */}
-      <section className="py-20 bg-white border-y border-slate-200">
+      <section className="py-20 bg-slate-900 border-y border-slate-700">
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex items-center gap-4 mb-12">
-            <div className="p-3 bg-blue-100 rounded-lg text-blue-600">
+            <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
               <Users className="h-8 w-8" />
             </div>
             <div>
-                <h2 className="text-3xl font-bold text-slate-900">Local Networking & Community</h2>
-                <p className="text-slate-500 mt-1">Growth doesn't happen in a silo. Connect with the best in Sefton.</p>
+                <h2 className="text-3xl font-bold text-white">Local Networking & Community</h2>
+                <p className="text-slate-400 mt-1">Growth doesn't happen in a silo. Connect with the best in Sefton.</p>
             </div>
           </div>
 
           <div className="grid gap-8 md:grid-cols-3">
             {/* Sandgrounders */}
-            <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
-              <div className="h-56 overflow-hidden bg-slate-100 relative border-b border-slate-100">
+            <div className="flex flex-col rounded-2xl border border-slate-700 bg-slate-900 overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
+              <div className="h-56 overflow-hidden bg-slate-800 relative border-b border-slate-700">
                 <Image 
                     src="/images/sandgrounders.jpg" 
                     alt="Sandgrounders Business Club Southport" 
@@ -161,11 +161,11 @@ export default function GrowthHub() {
                 />
               </div>
               <div className="p-8 flex flex-col flex-1">
-                <h3 className="text-xl font-bold text-slate-900">Sandgrounders Business Club</h3>
-                <p className="mt-2 text-sm font-semibold text-blue-600">Casual Connection</p>
-                <ul className="mt-6 space-y-4 flex-1 text-slate-600 text-sm">
-                    <li className="flex gap-3"><Calendar className="h-5 w-5 shrink-0 text-slate-400"/> <span>2nd Thursday (5pm)</span></li>
-                    <li className="flex gap-3"><MapPin className="h-5 w-5 shrink-0 text-slate-400"/> <span>Southport FC, Haig Ave</span></li>
+                <h3 className="text-xl font-bold text-white">Sandgrounders Business Club</h3>
+                <p className="mt-2 text-sm font-semibold text-blue-400">Casual Connection</p>
+                <ul className="mt-6 space-y-4 flex-1 text-slate-300 text-sm">
+                    <li className="flex gap-3"><Calendar className="h-5 w-5 shrink-0 text-slate-500"/> <span>2nd Thursday (5pm)</span></li>
+                    <li className="flex gap-3"><MapPin className="h-5 w-5 shrink-0 text-slate-500"/> <span>Southport FC, Haig Ave</span></li>
                 </ul>
                 <a href="https://www.facebook.com/SandgroundersBusinessClub/" target="_blank" className="mt-8 w-full flex items-center justify-center gap-2 rounded-lg bg-slate-900 py-3 text-sm font-bold text-white hover:bg-slate-700 transition-colors shadow-md">
                     Visit Website <ExternalLink className="h-4 w-4" />
@@ -174,8 +174,8 @@ export default function GrowthHub() {
             </div>
 
             {/* Southport BID */}
-            <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
-              <div className="h-56 overflow-hidden bg-slate-100 relative border-b border-slate-100">
+            <div className="flex flex-col rounded-2xl border border-slate-700 bg-slate-900 overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
+              <div className="h-56 overflow-hidden bg-slate-800 relative border-b border-slate-700">
                 <Image 
                     src="/images/southport-bid.jpg" 
                     alt="Southport BID Business Improvement District" 
@@ -184,11 +184,11 @@ export default function GrowthHub() {
                 />
               </div>
               <div className="p-8 flex flex-col flex-1">
-                <h3 className="text-xl font-bold text-slate-900">Southport BID</h3>
-                <p className="mt-2 text-sm font-semibold text-blue-600">Retail & Hospitality</p>
-                <ul className="mt-6 space-y-4 flex-1 text-slate-600 text-sm">
-                    <li className="flex gap-3"><CheckCircle2 className="h-5 w-5 shrink-0 text-green-600"/> <span>Town Centre Security</span></li>
-                    <li className="flex gap-3"><CheckCircle2 className="h-5 w-5 shrink-0 text-green-600"/> <span>Seasonal Events</span></li>
+                <h3 className="text-xl font-bold text-white">Southport BID</h3>
+                <p className="mt-2 text-sm font-semibold text-blue-400">Retail & Hospitality</p>
+                <ul className="mt-6 space-y-4 flex-1 text-slate-300 text-sm">
+                    <li className="flex gap-3"><CheckCircle2 className="h-5 w-5 shrink-0 text-green-400"/> <span>Town Centre Security</span></li>
+                    <li className="flex gap-3"><CheckCircle2 className="h-5 w-5 shrink-0 text-green-400"/> <span>Seasonal Events</span></li>
                 </ul>
                 <a href="https://southportbid.com/" target="_blank" className="mt-8 w-full flex items-center justify-center gap-2 rounded-lg bg-slate-900 py-3 text-sm font-bold text-white hover:bg-slate-700 transition-colors shadow-md">
                     Explore Initiatives <ExternalLink className="h-4 w-4" />
@@ -197,8 +197,8 @@ export default function GrowthHub() {
             </div>
 
             {/* Real5 */}
-            <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
-              <div className="h-56 overflow-hidden bg-slate-100 relative border-b border-slate-100">
+            <div className="flex flex-col rounded-2xl border border-slate-700 bg-slate-900 overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
+              <div className="h-56 overflow-hidden bg-slate-800 relative border-b border-slate-700">
                 <Image 
                     src="/images/real5.jpg" 
                     alt="Real5 Networking Southport" 
@@ -207,11 +207,11 @@ export default function GrowthHub() {
                 />
               </div>
               <div className="p-8 flex flex-col flex-1">
-                <h3 className="text-xl font-bold text-slate-900">Real5 Networking</h3>
-                <p className="mt-2 text-sm font-semibold text-blue-600">Structured Referrals</p>
-                <ul className="mt-6 space-y-4 flex-1 text-slate-600 text-sm">
-                    <li className="flex gap-3"><MapPin className="h-5 w-5 shrink-0 text-slate-400"/> <span>The Grand / Lord St Hotel</span></li>
-                    <li className="text-slate-500 text-xs">"Single Seat" model. Lock out your competition.</li>
+                <h3 className="text-xl font-bold text-white">Real5 Networking</h3>
+                <p className="mt-2 text-sm font-semibold text-blue-400">Structured Referrals</p>
+                <ul className="mt-6 space-y-4 flex-1 text-slate-300 text-sm">
+                    <li className="flex gap-3"><MapPin className="h-5 w-5 shrink-0 text-slate-500"/> <span>The Grand / Lord St Hotel</span></li>
+                    <li className="text-slate-400 text-xs">"Single Seat" model. Lock out your competition.</li>
                 </ul>
                 <a href="https://real5networking.com/" target="_blank" className="mt-8 w-full flex items-center justify-center gap-2 rounded-lg bg-slate-900 py-3 text-sm font-bold text-white hover:bg-slate-700 transition-colors shadow-md">
                     Check Seats <ExternalLink className="h-4 w-4" />
@@ -227,15 +227,15 @@ export default function GrowthHub() {
         <div className="flex flex-col lg:flex-row-reverse gap-16 items-center">
             <div className="lg:w-1/2">
                 <div className="flex items-center gap-3 mb-6">
-                    <div className="p-2 bg-green-100 rounded-lg text-green-700"><Coins className="h-6 w-6" /></div>
-                    <h2 className="text-3xl font-bold text-slate-900">Fueling Growth: Grants & Funding</h2>
+                    <div className="p-2 bg-green-500/20 rounded-lg text-green-400"><Coins className="h-6 w-6" /></div>
+                    <h2 className="text-3xl font-bold text-white">Fueling Growth: Grants & Funding</h2>
                 </div>
-                <p className="text-lg text-slate-600 mb-6 leading-relaxed">
+                <p className="text-lg text-slate-300 mb-6 leading-relaxed">
                     Scaling a business requires more than just a great website; it requires capital. With the MLEC now active, Southport businesses have access to specific <strong>Sefton Council</strong> and <strong>Liverpool City Region</strong> funding streams designed to boost the visitor economy.
                 </p>
-                <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-lg">
-                    <p className="font-bold text-green-800">Agency Tip:</p>
-                    <p className="text-green-700 mt-1">Many of these grants can be used to fund <strong>40% to 100%</strong> of consultancy, training, or digital infrastructure projects.</p>
+                <div className="bg-green-500/10 border-l-4 border-green-400 p-6 rounded-r-lg">
+                    <p className="font-bold text-green-400">Agency Tip:</p>
+                    <p className="text-green-300 mt-1">Many of these grants can be used to fund <strong>40% to 100%</strong> of consultancy, training, or digital infrastructure projects.</p>
                 </div>
             </div>
             <div className="lg:w-1/2 relative">
@@ -244,7 +244,7 @@ export default function GrowthHub() {
                     alt="Sefton Business Grants Dashboard" 
                     width={800}
                     height={600}
-                    className="rounded-2xl shadow-xl border border-slate-200 w-full h-auto"
+                    className="rounded-2xl shadow-xl border border-slate-700 w-full h-auto"
                 />
             </div>
         </div>
@@ -252,9 +252,9 @@ export default function GrowthHub() {
         {/* 5. Grants Cards (UPDATED to match Row 1) */}
         <div className="grid gap-8 md:grid-cols-3 mt-16">
             {/* Grant 1 */}
-            <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
+            <div className="flex flex-col rounded-2xl border border-slate-700 bg-slate-900 overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
               {/* Changed class to overflow-hidden and removed padding/flex to match row 1 */}
-              <div className="h-56 overflow-hidden bg-slate-100 relative border-b border-slate-100">
+              <div className="h-56 overflow-hidden bg-slate-800 relative border-b border-slate-700">
                 {/* Changed object-contain to object-cover */}
                 <Image 
                     src="/images/invest-sefton.jpg" 
@@ -264,13 +264,13 @@ export default function GrowthHub() {
                 />
               </div>
               <div className="p-8 flex flex-col flex-1">
-                <h3 className="text-xl font-bold text-slate-900">InvestSefton</h3>
-                <p className="mt-1 text-sm text-slate-500 font-medium">The Growth Hub</p>
-                <p className="mt-4 text-slate-600 text-sm leading-relaxed flex-1">
+                <h3 className="text-xl font-bold text-white">InvestSefton</h3>
+                <p className="mt-1 text-sm text-slate-400 font-medium">The Growth Hub</p>
+                <p className="mt-4 text-slate-300 text-sm leading-relaxed flex-1">
                   The "Gatekeepers" to government funds. Full business diagnostics and access to LCR High Growth funds.
                 </p>
                 <div className="mt-4 mb-4">
-                    <span className="inline-flex items-center rounded-full bg-green-100 px-3 py-1 text-xs font-bold text-green-800">
+                    <span className="inline-flex items-center rounded-full bg-green-500/20 px-3 py-1 text-xs font-bold text-green-400">
                     Priority: MLEC Services
                     </span>
                 </div>
@@ -281,8 +281,8 @@ export default function GrowthHub() {
             </div>
 
             {/* Grant 2 */}
-            <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
-              <div className="h-56 overflow-hidden bg-slate-100 relative border-b border-slate-100">
+            <div className="flex flex-col rounded-2xl border border-slate-700 bg-slate-900 overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
+              <div className="h-56 overflow-hidden bg-slate-800 relative border-b border-slate-700">
                 <Image 
                     src="/images/police-fund.jpg" 
                     alt="Merseyside Police Cashback Fund" 
@@ -291,13 +291,13 @@ export default function GrowthHub() {
                 />
               </div>
               <div className="p-8 flex flex-col flex-1">
-                <h3 className="text-xl font-bold text-slate-900">Police Cashback Fund</h3>
-                <p className="mt-1 text-sm text-slate-500 font-medium">Community Safety</p>
-                <p className="mt-4 text-slate-600 text-sm leading-relaxed flex-1">
+                <h3 className="text-xl font-bold text-white">Police Cashback Fund</h3>
+                <p className="mt-1 text-sm text-slate-400 font-medium">Community Safety</p>
+                <p className="mt-4 text-slate-300 text-sm leading-relaxed flex-1">
                   Grants up to <strong>£5,000</strong> from seized assets. Ideal for local CICs focusing on youth or safety.
                 </p>
                 <div className="mt-4 mb-4">
-                    <span className="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 text-xs font-bold text-blue-800">
+                    <span className="inline-flex items-center rounded-full bg-blue-500/20 px-3 py-1 text-xs font-bold text-blue-400">
                     Max Grant: £5,000
                     </span>
                 </div>
@@ -308,8 +308,8 @@ export default function GrowthHub() {
             </div>
 
             {/* Grant 3 */}
-            <div className="flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
-              <div className="h-56 overflow-hidden bg-slate-100 relative border-b border-slate-100">
+            <div className="flex flex-col rounded-2xl border border-slate-700 bg-slate-900 overflow-hidden shadow-sm hover:shadow-xl transition-all h-full group">
+              <div className="h-56 overflow-hidden bg-slate-800 relative border-b border-slate-700">
                 <Image 
                     src="/images/kings-trust.jpg" 
                     alt="Kings Trust Enterprise Programme" 
@@ -318,13 +318,13 @@ export default function GrowthHub() {
                 />
               </div>
               <div className="p-8 flex flex-col flex-1">
-                <h3 className="text-xl font-bold text-slate-900">King’s Trust</h3>
-                <p className="mt-1 text-sm text-slate-500 font-medium">Entrepreneurs (18-30)</p>
-                <p className="mt-4 text-slate-600 text-sm leading-relaxed flex-1">
+                <h3 className="text-xl font-bold text-white">King’s Trust</h3>
+                <p className="mt-1 text-sm text-slate-400 font-medium">Entrepreneurs (18-30)</p>
+                <p className="mt-4 text-slate-300 text-sm leading-relaxed flex-1">
                   Low-interest loans up to <strong>£25,000</strong>. Includes a dedicated business mentor for 12 months.
                 </p>
                 <div className="mt-4 mb-4">
-                    <span className="inline-flex items-center rounded-full bg-red-100 px-3 py-1 text-xs font-bold text-red-800">
+                    <span className="inline-flex items-center rounded-full bg-red-500/20 px-3 py-1 text-xs font-bold text-red-400">
                     Ages 18-30
                     </span>
                 </div>
@@ -337,38 +337,38 @@ export default function GrowthHub() {
       </section>
 
       {/* 6. Performance-First Strategy */}
-      <section className="bg-slate-50 py-24 border-t border-slate-200">
+      <section className="bg-slate-950 py-24 border-t border-slate-700">
         <div className="mx-auto max-w-7xl px-6">
             <div className="text-center mb-16">
-                <h2 className="text-3xl font-bold text-slate-900">The Performance-First Strategy</h2>
-                <p className="mt-4 text-lg text-slate-600">Most agencies focus on how a website looks. We focus on how it works.</p>
+                <h2 className="text-3xl font-bold text-white">The Performance-First Strategy</h2>
+                <p className="mt-4 text-lg text-slate-300">Most agencies focus on how a website looks. We focus on how it works.</p>
             </div>
 
             <div className="flex flex-col lg:flex-row gap-16 items-center">
                 <div className="lg:w-1/2">
-                    <p className="text-lg text-slate-600 leading-relaxed mb-6">
+                    <p className="text-lg text-slate-300 leading-relaxed mb-6">
                         In 2026, a beautiful website that nobody visits is a liability. We build high-performance digital engines designed to capture the existing demand in Southport and convert it into revenue.
                     </p>
                     <div className="space-y-8">
                         <div className="flex gap-4">
-                            <div className="p-3 bg-white rounded-lg shadow-sm h-fit"><Zap className="h-6 w-6 text-blue-600"/></div>
+                            <div className="p-3 bg-slate-900 rounded-lg shadow-sm h-fit border border-slate-700"><Zap className="h-6 w-6 text-blue-400"/></div>
                             <div>
-                                <h4 className="font-bold text-slate-900">Technical Velocity</h4>
-                                <p className="text-sm text-slate-600 mt-1">We code for raw speed. Fast sites rank higher on Google and sell more.</p>
+                                <h4 className="font-bold text-white">Technical Velocity</h4>
+                                <p className="text-sm text-slate-300 mt-1">We code for raw speed. Fast sites rank higher on Google and sell more.</p>
                             </div>
                         </div>
                         <div className="flex gap-4">
-                            <div className="p-3 bg-white rounded-lg shadow-sm h-fit"><MapPin className="h-6 w-6 text-blue-600"/></div>
+                            <div className="p-3 bg-slate-900 rounded-lg shadow-sm h-fit border border-slate-700"><MapPin className="h-6 w-6 text-blue-400"/></div>
                             <div>
-                                <h4 className="font-bold text-slate-900">Hyper-Local SEO</h4>
-                                <p className="text-sm text-slate-600 mt-1">We optimize your digital footprint to signal that <em>you</em> are the authority in Southport.</p>
+                                <h4 className="font-bold text-white">Hyper-Local SEO</h4>
+                                <p className="text-sm text-slate-300 mt-1">We optimize your digital footprint to signal that <em>you</em> are the authority in Southport.</p>
                             </div>
                         </div>
                         <div className="flex gap-4">
-                            <div className="p-3 bg-white rounded-lg shadow-sm h-fit"><Layout className="h-6 w-6 text-blue-600"/></div>
+                            <div className="p-3 bg-slate-900 rounded-lg shadow-sm h-fit border border-slate-700"><Layout className="h-6 w-6 text-blue-400"/></div>
                             <div>
-                                <h4 className="font-bold text-slate-900">Design that Sells</h4>
-                                <p className="text-sm text-slate-600 mt-1">Psychology-driven layouts that guide visitors exactly where you want them.</p>
+                                <h4 className="font-bold text-white">Design that Sells</h4>
+                                <p className="text-sm text-slate-300 mt-1">Psychology-driven layouts that guide visitors exactly where you want them.</p>
                             </div>
                         </div>
                     </div>
@@ -379,7 +379,7 @@ export default function GrowthHub() {
                         alt="Digital Performance Analytics for Southport Businesses" 
                         width={800}
                         height={600}
-                        className="rounded-2xl shadow-xl border border-slate-200 w-full h-auto"
+                        className="rounded-2xl shadow-xl border border-slate-700 w-full h-auto"
                     />
                 </div>
             </div>
@@ -387,19 +387,19 @@ export default function GrowthHub() {
       </section>
 
       {/* 7. Latest Insights */}
-      <section className="bg-white py-24 border-y border-slate-200">
+      <section className="bg-slate-900 py-24 border-y border-slate-700">
         <div className="mx-auto max-w-7xl px-6">
-            <h2 className="text-3xl font-bold text-slate-900 mb-12 text-center">Latest Insights</h2>
+            <h2 className="text-3xl font-bold text-white mb-12 text-center">Latest Insights</h2>
             <div className="grid gap-8 md:grid-cols-2">
                 {recentPosts.map((post) => (
-                    <Link key={post.slug} href={`/blog/${post.slug}`} className="group block bg-slate-50 rounded-2xl p-8 hover:bg-slate-100 transition-colors">
-                        <div className="flex items-center gap-3 mb-4 text-sm text-slate-500">
+                    <Link key={post.slug} href={`/blog/${post.slug}`} className="group block bg-slate-950 rounded-2xl p-8 hover:bg-slate-900 transition-colors border border-slate-700">
+                        <div className="flex items-center gap-3 mb-4 text-sm text-slate-400">
                             <span>{post.date}</span>
-                            <span className="w-1 h-1 bg-slate-400 rounded-full"></span>
-                            <span className="text-blue-600 font-medium">{post.category}</span>
+                            <span className="w-1 h-1 bg-slate-500 rounded-full"></span>
+                            <span className="text-blue-400 font-medium">{post.category}</span>
                         </div>
-                        <h3 className="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">{post.title}</h3>
-                        <p className="mt-2 text-slate-600 line-clamp-2">{post.excerpt}</p>
+                        <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">{post.title}</h3>
+                        <p className="mt-2 text-slate-300 line-clamp-2">{post.excerpt}</p>
                     </Link>
                 ))}
             </div>
@@ -407,47 +407,47 @@ export default function GrowthHub() {
       </section>
 
       {/* 8. FAQ Section */}
-      <section className="bg-slate-50 py-24">
+      <section className="bg-slate-950 py-24">
         <div className="mx-auto max-w-7xl px-6">
-            <h2 className="text-3xl font-bold text-slate-900 mb-12 text-center">Frequently Asked Questions</h2>
+            <h2 className="text-3xl font-bold text-white mb-12 text-center">Frequently Asked Questions</h2>
             <div className="grid gap-6 md:grid-cols-2">
                 {/* 1 */}
-                <div className="bg-white p-8 rounded-xl border border-slate-200 shadow-sm h-full hover:shadow-md transition-shadow">
-                    <h3 className="font-bold text-slate-900 flex items-start gap-3 text-lg">
-                        <HelpCircle className="h-6 w-6 text-blue-600 shrink-0 mt-1"/> 
+                <div className="bg-slate-900 p-8 rounded-xl border border-slate-700 shadow-sm h-full hover:shadow-md transition-shadow">
+                    <h3 className="font-bold text-white flex items-start gap-3 text-lg">
+                        <HelpCircle className="h-6 w-6 text-blue-400 shrink-0 mt-1"/> 
                         What funding is available for businesses in Southport?
                     </h3>
-                    <p className="mt-4 text-slate-600 leading-relaxed">
+                    <p className="mt-4 text-slate-300 leading-relaxed">
                         Southport businesses can access several funding streams in 2026, including the <strong>InvestSefton Growth Hub</strong> for general business support, the <strong>Merseyside Police Cashback Fund</strong> for community projects, and <strong>The King’s Trust Enterprise Programme</strong> for young entrepreneurs aged 18-30. Additionally, specific digital transformation grants are often available to help local businesses prepare for the Marine Lake Events Centre visitor influx.
                     </p>
                 </div>
                 {/* 2 */}
-                <div className="bg-white p-8 rounded-xl border border-slate-200 shadow-sm h-full hover:shadow-md transition-shadow">
-                    <h3 className="font-bold text-slate-900 flex items-start gap-3 text-lg">
-                        <HelpCircle className="h-6 w-6 text-blue-600 shrink-0 mt-1"/> 
+                <div className="bg-slate-900 p-8 rounded-xl border border-slate-700 shadow-sm h-full hover:shadow-md transition-shadow">
+                    <h3 className="font-bold text-white flex items-start gap-3 text-lg">
+                        <HelpCircle className="h-6 w-6 text-blue-400 shrink-0 mt-1"/> 
                         How can I improve my local SEO in Southport?
                     </h3>
-                    <p className="mt-4 text-slate-600 leading-relaxed">
+                    <p className="mt-4 text-slate-300 leading-relaxed">
                         To dominate local search in Southport, focus on three pillars: 1) Claim and optimize your <strong>Google Business Profile</strong> with accurate categories and local photos. 2) Ensure your website loads in under 3 seconds to satisfy mobile users. 3) Build local authority by getting listed in reputable Sefton directories and networking groups like the <strong>Sandgrounders Business Club</strong> or <strong>Southport BID</strong>.
                     </p>
                 </div>
                 {/* 3 */}
-                <div className="bg-white p-8 rounded-xl border border-slate-200 shadow-sm h-full hover:shadow-md transition-shadow">
-                    <h3 className="font-bold text-slate-900 flex items-start gap-3 text-lg">
-                        <HelpCircle className="h-6 w-6 text-blue-600 shrink-0 mt-1"/> 
+                <div className="bg-slate-900 p-8 rounded-xl border border-slate-700 shadow-sm h-full hover:shadow-md transition-shadow">
+                    <h3 className="font-bold text-white flex items-start gap-3 text-lg">
+                        <HelpCircle className="h-6 w-6 text-blue-400 shrink-0 mt-1"/> 
                         What are the best business networking groups in Southport?
                     </h3>
-                    <p className="mt-4 text-slate-600 leading-relaxed">
+                    <p className="mt-4 text-slate-300 leading-relaxed">
                         Southport offers diverse networking options. <strong>Sandgrounders Business Club</strong> is excellent for casual, pressure-free connections. <strong>Real5 Networking (Southport & Formby)</strong> is ideal for established B2B companies looking for a structured referral model. For retail and hospitality, <strong>Southport BID</strong> offers crucial advocacy and town center support.
                     </p>
                 </div>
                 {/* 4 */}
-                <div className="bg-white p-8 rounded-xl border border-slate-200 shadow-sm h-full hover:shadow-md transition-shadow">
-                    <h3 className="font-bold text-slate-900 flex items-start gap-3 text-lg">
-                        <HelpCircle className="h-6 w-6 text-blue-600 shrink-0 mt-1"/> 
+                <div className="bg-slate-900 p-8 rounded-xl border border-slate-700 shadow-sm h-full hover:shadow-md transition-shadow">
+                    <h3 className="font-bold text-white flex items-start gap-3 text-lg">
+                        <HelpCircle className="h-6 w-6 text-blue-400 shrink-0 mt-1"/> 
                         How will the Marine Lake Events Centre benefit local businesses?
                     </h3>
-                    <p className="mt-4 text-slate-600 leading-relaxed">
+                    <p className="mt-4 text-slate-300 leading-relaxed">
                         The new <strong>Marine Lake Events Centre (MLEC)</strong> is projected to bring over 500,000 additional visitors to Southport annually. This creates a massive opportunity for hospitality, retail, and service businesses to capture 'digital tourist' traffic. Businesses that optimize their online presence for 'near me' searches stand to gain the most from this £19 million economic boost.
                     </p>
                 </div>
@@ -459,7 +459,7 @@ export default function GrowthHub() {
       <section className="bg-slate-900 px-6 py-24 text-center text-white">
         <h2 className="text-3xl font-bold">Ready to dominate the Southport search results?</h2>
         <p className="mt-4 text-slate-400 mb-8 max-w-2xl mx-auto">Stop being the town's best-kept secret. Get a free, no-nonsense audit of your digital presence today.</p>
-        <Link href="/audit" className="rounded-full bg-blue-600 px-8 py-4 font-bold text-white hover:bg-blue-700 transition-colors shadow-xl inline-block hover:-translate-y-1">
+        <Link href="/audit" className="rounded-full bg-blue-500 px-8 py-4 font-bold text-white hover:bg-blue-400 transition-colors shadow-xl inline-block hover:-translate-y-1">
           Claim Your Free Audit
         </Link>
       </section>

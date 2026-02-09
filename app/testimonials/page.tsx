@@ -87,7 +87,7 @@ const jsonLd = {
 
 export default function TestimonialsPage() {
   return (
-    <main className="min-h-screen bg-slate-50">
+    <main className="min-h-screen bg-slate-950">
       
       {/* INJECT SCHEMA */}
       <script
@@ -110,7 +110,7 @@ export default function TestimonialsPage() {
             </div>
             
             <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">
-                Trusted by <span className="text-blue-500">Local Leaders.</span>
+                Trusted by <span className="text-blue-400">Local Leaders.</span>
             </h1>
             <p className="text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
                 We don't hide behind jargon. We deliver measurable results that Southport and Liverpool business owners love.
@@ -122,7 +122,7 @@ export default function TestimonialsPage() {
       <section className="py-24 px-6">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {reviews.map((review, index) => (
-                <div key={index} className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-lg transition-all hover:-translate-y-1 relative group flex flex-col h-full">
+                <div key={index} className="bg-slate-900 p-8 rounded-2xl shadow-sm border border-slate-700 hover:shadow-lg transition-all hover:-translate-y-1 relative group flex flex-col h-full">
                     
                     {/* Google Icon Badge */}
                     <div className="absolute top-8 right-8 pointer-events-none">
@@ -140,17 +140,17 @@ export default function TestimonialsPage() {
                         ))}
                     </div>
 
-                    <p className="text-slate-700 leading-relaxed mb-8 text-sm relative z-10 flex-grow">
+                    <p className="text-slate-300 leading-relaxed mb-8 text-sm relative z-10 flex-grow">
                         "{review.text}"
                     </p>
 
-                    <div className="flex items-center gap-4 mt-auto pt-6 border-t border-slate-100">
+                    <div className="flex items-center gap-4 mt-auto pt-6 border-t border-slate-700">
                         <div className={`w-10 h-10 ${review.color} rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0`}>
                             {review.initial}
                         </div>
                         <div>
-                            <div className="font-bold text-slate-900 text-sm">{review.name}</div>
-                            <div className="text-xs text-slate-500 font-medium">{review.service}</div>
+                            <div className="font-bold text-white text-sm">{review.name}</div>
+                            <div className="text-xs text-slate-400 font-medium">{review.service}</div>
                         </div>
                     </div>
                 </div>
@@ -159,13 +159,13 @@ export default function TestimonialsPage() {
       </section>
 
       {/* 3. CTA */}
-      <section className="bg-white border-t border-slate-200 py-24 px-6 text-center">
+      <section className="bg-slate-900 border-t border-slate-700 py-24 px-6 text-center">
         <div className="max-w-2xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 mb-6">Ready to become our next success story?</h2>
-            <p className="text-slate-600 mb-10">
+            <h2 className="text-3xl font-bold text-white mb-6">Ready to become our next success story?</h2>
+            <p className="text-slate-300 mb-10">
                 Join businesses like Alotek, The MLEC Group, and Matthew Brown who trust us to handle their digital growth.
             </p>
-            <Link href="/audit" className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
+            <Link href="/audit" className="inline-flex items-center gap-2 bg-blue-500 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-400 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
                 Start with a Free Audit <ArrowRight className="w-4 h-4" />
             </Link>
         </div>

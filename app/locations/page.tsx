@@ -25,31 +25,31 @@ export default function LocationsIndex() {
     .sort((a, b) => a.name.localeCompare(b.name));
 
   return (
-    <main className="min-h-screen bg-slate-50 pt-32 pb-24 px-6">
+    <main className="min-h-screen bg-slate-950 pt-32 pb-24 px-6">
       
       {/* BREADCRUMBS */}
-      <div className="max-w-6xl mx-auto mb-12 flex items-center gap-2 text-sm text-slate-500">
-        <Link href="/" className="hover:text-blue-600 flex items-center gap-1">
+      <div className="max-w-6xl mx-auto mb-12 flex items-center gap-2 text-sm text-slate-400">
+        <Link href="/" className="hover:text-blue-400 flex items-center gap-1">
             <Home className="w-3 h-3" /> Home
         </Link>
         <span className="text-slate-300">/</span>
-        <span className="text-slate-900 font-medium">Locations</span>
+        <span className="text-white font-medium">Locations</span>
       </div>
 
       <div className="max-w-4xl mx-auto text-center mb-20">
-        <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 rounded-full px-4 py-1.5 mb-6">
+        <div className="inline-flex items-center gap-2 bg-blue-500/20 border border-blue-400/30 rounded-full px-4 py-1.5 mb-6">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
             </span>
-            <span className="text-xs font-bold text-blue-700 uppercase tracking-wide">
+            <span className="text-xs font-bold text-blue-400 uppercase tracking-wide">
               Based in Southport
             </span>
         </div>
-        <h1 className="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6 tracking-tight">
-            Local Experts. <span className="text-blue-600">Regional Reach.</span>
+        <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">
+            Local Experts. <span className="text-blue-400">Regional Reach.</span>
         </h1>
-        <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+        <p className="text-xl text-slate-300 max-w-2xl mx-auto">
             Select your area below to see our local case studies and travel times.
         </p>
       </div>
@@ -64,17 +64,17 @@ export default function LocationsIndex() {
                 <Link 
                     key={loc.slug} 
                     href={`/locations/${loc.slug}`}
-                    className="group bg-white p-6 rounded-2xl border border-blue-100 shadow-sm hover:border-blue-500 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative overflow-hidden"
+                    className="group bg-slate-900 p-6 rounded-2xl border border-slate-700 shadow-sm hover:border-blue-400 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative overflow-hidden"
                 >
                     <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-100 transition-opacity">
-                        <Star className="w-12 h-12 text-blue-500 fill-blue-50" />
+                        <Star className="w-12 h-12 text-blue-400 fill-blue-400/20" />
                     </div>
                     <div className="relative z-10">
-                        <div className="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 mb-4 group-hover:scale-110 transition-transform">
+                        <div className="w-10 h-10 bg-blue-500/20 rounded-xl flex items-center justify-center text-blue-400 mb-4 group-hover:scale-110 transition-transform">
                             <MapPin className="w-5 h-5" />
                         </div>
-                        <h3 className="text-xl font-bold text-slate-900 mb-1">{loc.name}</h3>
-                        <p className="text-xs text-slate-500 font-medium">
+                        <h3 className="text-xl font-bold text-white mb-1">{loc.name}</h3>
+                        <p className="text-xs text-slate-400 font-medium">
                             {loc.slug === "southport" ? "Headquarters" : `${loc.travelTime} from HQ`}
                         </p>
                     </div>
@@ -89,13 +89,13 @@ export default function LocationsIndex() {
                 <Link 
                     key={loc.slug} 
                     href={`/locations/${loc.slug}`}
-                    className="group flex items-center justify-between p-4 bg-white rounded-xl border border-slate-200 hover:border-blue-500 hover:bg-blue-50/50 transition-all"
+                    className="group flex items-center justify-between p-4 bg-slate-900 rounded-xl border border-slate-700 hover:border-blue-400 hover:bg-blue-500/10 transition-all"
                 >
                     <div className="flex items-center gap-3">
-                        <div className="w-2 h-2 rounded-full bg-slate-300 group-hover:bg-blue-500 transition-colors"></div>
-                        <span className="font-bold text-slate-700 group-hover:text-blue-700">{loc.name}</span>
+                        <div className="w-2 h-2 rounded-full bg-slate-500 group-hover:bg-blue-400 transition-colors"></div>
+                        <span className="font-bold text-slate-300 group-hover:text-blue-400">{loc.name}</span>
                     </div>
-                    <ArrowRight className="w-4 h-4 text-slate-300 group-hover:text-blue-500 -rotate-45 group-hover:rotate-0 transition-transform" />
+                    <ArrowRight className="w-4 h-4 text-slate-500 group-hover:text-blue-400 -rotate-45 group-hover:rotate-0 transition-transform" />
                 </Link>
             ))}
         </div>
