@@ -75,8 +75,8 @@ export default async function LocationPage({ params }: Props) {
       </section>
 
       {/* LOCAL INSIGHT SECTION */}
-      <section className="px-6 py-20 bg-slate-900 border-y border-slate-800">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+      <section className="px-6 py-16 bg-slate-900 border-y border-slate-800">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div>
                 <h2 className="text-3xl font-bold text-white mb-6">Why {location.name} Businesses Choose Us</h2>
                 <p className="text-slate-300 mb-6 text-lg leading-relaxed">
@@ -128,7 +128,7 @@ export default async function LocationPage({ params }: Props) {
                 )}
             </div>
             
-            <div className="relative h-[400px] w-full bg-slate-800 rounded-3xl overflow-hidden shadow-2xl flex items-center justify-center group border border-slate-700">
+            <div className="relative h-80 w-full bg-slate-800 rounded-3xl overflow-hidden shadow-2xl flex items-center justify-center group border border-slate-700">
                  <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-900 opacity-90"></div>
                  <div className="relative z-10 text-center p-8">
                     <MapPin className="w-12 h-12 text-blue-400 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
