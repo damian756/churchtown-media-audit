@@ -81,27 +81,27 @@ export default function ServicesPage() {
                         <Database className="w-7 h-7 text-white" />
                     </div>
                     
-                    <h3 className="text-2xl font-bold text-slate-900 mb-4">Monopoly Engine</h3>
-                    <p className="text-slate-600 leading-relaxed mb-8 relative z-20">
-                        Dominate local search. We use <strong>Programmatic SEO</strong> to generate thousands of high-quality landing pages instantly.
+                    <h3 className="text-2xl font-bold text-white mb-4">Monopoly Engine</h3>
+                    <p className="text-slate-300 leading-relaxed mb-8 relative z-20">
+                        Dominate local search. We use <strong className="text-white">Programmatic SEO</strong> to generate thousands of high-quality landing pages instantly.
                     </p>
                     
                     <ul className="space-y-4 mb-8 relative z-20">
-                        <li className="flex items-start gap-3 text-sm font-medium text-slate-700">
-                            <Search className="w-5 h-5 text-purple-500 shrink-0" />
-                            <span><strong>Capture "Near Me"</strong> searches across 50+ locations.</span>
+                        <li className="flex items-start gap-3 text-sm font-medium text-slate-300">
+                            <Search className="w-5 h-5 text-purple-400 shrink-0" />
+                            <span><strong className="text-white">Capture "Near Me"</strong> searches across 50+ locations.</span>
                         </li>
-                        <li className="flex items-start gap-3 text-sm font-medium text-slate-700">
-                            <BarChart3 className="w-5 h-5 text-purple-500 shrink-0" />
-                            <span><strong>Automated Content</strong> that ranks on Google Day 1.</span>
+                        <li className="flex items-start gap-3 text-sm font-medium text-slate-300">
+                            <BarChart3 className="w-5 h-5 text-purple-400 shrink-0" />
+                            <span><strong className="text-white">Automated Content</strong> that ranks on Google Day 1.</span>
                         </li>
-                        <li className="flex items-start gap-3 text-sm font-medium text-slate-700">
-                            <Zap className="w-5 h-5 text-purple-500 shrink-0" />
-                            <span><strong>Dynamic Data</strong> injection for real-time relevance.</span>
+                        <li className="flex items-start gap-3 text-sm font-medium text-slate-300">
+                            <Zap className="w-5 h-5 text-purple-400 shrink-0" />
+                            <span><strong className="text-white">Dynamic Data</strong> injection for real-time relevance.</span>
                         </li>
                     </ul>
 
-                    <Link href="/contact" className="inline-flex items-center gap-2 text-purple-600 font-bold hover:gap-4 transition-all relative z-20">
+                    <Link href="/contact" className="inline-flex items-center gap-2 text-purple-400 font-bold hover:gap-4 transition-all relative z-20">
                         See Demo <ArrowRight className="w-4 h-4" />
                     </Link>
                 </div>
@@ -118,27 +118,27 @@ export default function ServicesPage() {
                         <BarChart3 className="w-7 h-7 text-white" />
                     </div>
                     
-                    <h3 className="text-2xl font-bold text-slate-900 mb-4">Revenue Audit</h3>
-                    <p className="text-slate-600 leading-relaxed mb-8 relative z-20">
-                        Traffic is vanity. Revenue is sanity. We fix the <strong>technical leaks</strong> in your funnel that are costing you money.
+                    <h3 className="text-2xl font-bold text-white mb-4">Revenue Audit</h3>
+                    <p className="text-slate-300 leading-relaxed mb-8 relative z-20">
+                        Traffic is vanity. Revenue is sanity. We fix the <strong className="text-white">technical leaks</strong> in your funnel that are costing you money.
                     </p>
                     
                     <ul className="space-y-4 mb-8 relative z-20">
-                        <li className="flex items-start gap-3 text-sm font-medium text-slate-700">
-                            <Search className="w-5 h-5 text-emerald-500 shrink-0" />
-                            <span><strong>Core Web Vitals</strong> assessment & remediation.</span>
+                        <li className="flex items-start gap-3 text-sm font-medium text-slate-300">
+                            <Search className="w-5 h-5 text-emerald-400 shrink-0" />
+                            <span><strong className="text-white">Core Web Vitals</strong> assessment & remediation.</span>
                         </li>
-                        <li className="flex items-start gap-3 text-sm font-medium text-slate-700">
-                            <Zap className="w-5 h-5 text-emerald-500 shrink-0" />
-                            <span><strong>User Flow Analysis</strong> to remove friction points.</span>
+                        <li className="flex items-start gap-3 text-sm font-medium text-slate-300">
+                            <Zap className="w-5 h-5 text-emerald-400 shrink-0" />
+                            <span><strong className="text-white">User Flow Analysis</strong> to remove friction points.</span>
                         </li>
-                        <li className="flex items-start gap-3 text-sm font-medium text-slate-700">
-                            <ShieldAlert className="w-5 h-5 text-emerald-500 shrink-0" />
-                            <span><strong>Accessibility Compliance</strong> to mitigate legal risk.</span>
+                        <li className="flex items-start gap-3 text-sm font-medium text-slate-300">
+                            <ShieldAlert className="w-5 h-5 text-emerald-400 shrink-0" />
+                            <span><strong className="text-white">Accessibility Compliance</strong> to mitigate legal risk.</span>
                         </li>
                     </ul>
 
-                    <Link href="/audit" className="inline-flex items-center gap-2 text-emerald-600 font-bold hover:gap-4 transition-all relative z-20">
+                    <Link href="/audit" className="inline-flex items-center gap-2 text-emerald-400 font-bold hover:gap-4 transition-all relative z-20">
                         Get Audit <ArrowRight className="w-4 h-4" />
                     </Link>
                 </div>
@@ -171,14 +171,14 @@ export default function ServicesPage() {
                 </div>
 
                 <div className="md:w-1/3 w-full flex flex-col items-center">
-                    <Link href="/contact" className="block w-full bg-white text-slate-900 text-center py-6 rounded-2xl font-bold text-xl hover:bg-emerald-400 transition-all shadow-lg hover:scale-[1.02] active:scale-[0.98]">
+                    <Link href="/contact" className="block w-full bg-blue-600 text-white text-center py-6 rounded-2xl font-bold text-xl hover:bg-blue-700 transition-all shadow-lg hover:scale-[1.02] active:scale-[0.98]">
                         View Starter Packages
                     </Link>
                     
                     {/* Visual Price Tag */}
                     <div className="mt-6 flex items-center justify-center gap-2">
-                        <span className="text-slate-500 text-sm font-medium uppercase tracking-wide">Packages from</span>
-                        <span className="bg-slate-800 text-white px-3 py-1 rounded-lg font-bold border border-slate-700">£1,500</span>
+                        <span className="text-slate-400 text-sm font-medium uppercase tracking-wide">Packages from</span>
+                        <span className="bg-slate-950 text-emerald-400 px-3 py-1 rounded-lg font-bold border border-slate-700">£1,500</span>
                     </div>
                 </div>
             </div>
