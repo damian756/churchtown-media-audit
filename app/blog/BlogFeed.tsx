@@ -28,13 +28,20 @@ export default function BlogFeed({ posts }: { posts: BlogPost[] }) {
   // CATEGORIES
   const categories = ["All Insights", "Southport Business Growth", "SEO Demystified", "Case Studies", "Agency Life"];
 
+  // SORT POSTS BY DATE (newest first)
+  const sortedPosts = [...posts].sort((a, b) => {
+    const dateA = new Date(a.date);
+    const dateB = new Date(b.date);
+    return dateB.getTime() - dateA.getTime();
+  });
+
   // FILTER LOGIC
   const filteredPosts = activeCategory === "All Insights" 
-    ? posts 
-    : posts.filter(post => post.category === activeCategory);
+    ? sortedPosts 
+    : sortedPosts.filter(post => post.category === activeCategory);
 
   // HERO POST
-  const heroPost = posts[0];
+  const heroPost = sortedPosts[0];
   const gridPosts = filteredPosts.filter(p => p.slug !== heroPost.slug);
 
   // --- NEW: FORMSPREE SUBMISSION HANDLER ---
