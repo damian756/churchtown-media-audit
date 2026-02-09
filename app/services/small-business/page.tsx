@@ -85,13 +85,13 @@ export default function SmallBusinessPage() {
       />
 
       {/* 1. HERO SECTION */}
-      <section className="relative pt-40 pb-20 px-6 overflow-hidden bg-slate-900 border-b border-slate-800">
+      <section className="relative pt-32 pb-16 px-6 overflow-hidden bg-slate-900 border-b border-slate-800">
         
         {/* Background Gradients - LCP Optimized */}
         <div className="animated-blob absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/20 rounded-full blur-[120px] pointer-events-none"></div>
         <div className="animated-blob absolute bottom-0 left-0 w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-[100px] pointer-events-none"></div>
 
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center relative z-10">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
             <div>
                 <div className="inline-flex items-center gap-2 rounded-full bg-blue-900/50 border border-blue-800 px-4 py-1.5 text-sm font-bold text-blue-400 mb-8">
                     <Rocket className="h-4 w-4" />
@@ -99,7 +99,7 @@ export default function SmallBusinessPage() {
                 </div>
                 <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-8">
                     Punch above <br/>
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
+                    <span className="text-blue-400">
                         your weight.
                     </span>
                 </h1>
@@ -149,30 +149,30 @@ export default function SmallBusinessPage() {
       </section>
 
       {/* 2. THE PROBLEM (Why DIY/WordPress Fails) */}
-      <section className="py-24 px-6 bg-slate-900">
-        <div className="max-w-4xl mx-auto text-center mb-16">
+      <section className="py-16 px-6 bg-slate-900">
+        <div className="max-w-4xl mx-auto text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-6">Why most small business websites fail</h2>
             <p className="text-lg text-slate-400">
                 Most local businesses make one of two mistakes: they buy a "cheap" DIY site that nobody can find, or they struggle with a slow <strong>WordPress</strong> site full of broken plugins.
             </p>
         </div>
         
-        <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
-            <div className="p-8 bg-slate-800 rounded-2xl border border-slate-700 hover:border-slate-600 hover:shadow-lg transition-all group">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-6">
+            <div className="p-6 bg-slate-800 rounded-2xl border border-slate-700 hover:border-slate-600 hover:shadow-lg transition-all group">
                 <div className="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center text-red-400 mb-6 group-hover:scale-110 transition-transform">
                     <MousePointer2 className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">Invisible on Google</h3>
                 <p className="text-slate-400">If you aren't in the "Map Pack" (the top 3 local results), you don't exist. We fix your N.A.P. data to get you ranked.</p>
             </div>
-            <div className="p-8 bg-slate-800 rounded-2xl border border-slate-700 hover:border-slate-600 hover:shadow-lg transition-all group">
+            <div className="p-6 bg-slate-800 rounded-2xl border border-slate-700 hover:border-slate-600 hover:shadow-lg transition-all group">
                 <div className="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center text-orange-400 mb-6 group-hover:scale-110 transition-transform">
                     <Zap className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">Too Slow (Plugin Bloat)</h3>
                 <p className="text-slate-400">WordPress sites using <strong>Elementor or Divi</strong> are heavy. They load slowly on mobile, causing 53% of customers to leave instantly.</p>
             </div>
-            <div className="p-8 bg-slate-800 rounded-2xl border border-slate-700 hover:border-slate-600 hover:shadow-lg transition-all group">
+            <div className="p-6 bg-slate-800 rounded-2xl border border-slate-700 hover:border-slate-600 hover:shadow-lg transition-all group">
                 <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center text-blue-400 mb-6 group-hover:scale-110 transition-transform">
                     <ShieldCheck className="w-6 h-6" />
                 </div>
@@ -183,14 +183,14 @@ export default function SmallBusinessPage() {
       </section>
 
       {/* 3. COMPARISON TABLE */}
-      <section className="py-20 px-6 bg-slate-950 border-y border-slate-800">
+      <section className="py-16 px-6 bg-slate-950 border-y border-slate-800">
         <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-12">
+            <div className="text-center mb-8">
                 <h2 className="text-3xl font-bold text-white mb-4">The "New Way" vs. The "Old Way"</h2>
                 <p className="text-slate-400">Why switching from WordPress to Next.js is the best investment you'll make.</p>
             </div>
             <div className="bg-slate-900 rounded-3xl shadow-xl overflow-hidden border border-slate-700">
-                <div className="grid grid-cols-3 bg-slate-800 text-white p-6 font-bold text-sm md:text-lg border-b border-slate-700">
+                <div className="grid grid-cols-3 bg-slate-800 text-white p-5 font-bold text-sm md:text-lg border-b border-slate-700">
                     <div className="col-span-1">Feature</div>
                     <div className="col-span-1 text-center text-slate-400">WordPress / Wix</div>
                     <div className="col-span-1 text-center text-blue-400">Churchtown Media</div>
@@ -202,7 +202,7 @@ export default function SmallBusinessPage() {
                     { feat: "Maintenance", bad: "Constant Updates", good: "Zero Maintenance" },
                     { feat: "Cost", bad: "Hidden Plugin Fees", good: "Flat Rate" },
                 ].map((row, i) => (
-                    <div key={i} className="grid grid-cols-3 p-6 border-b border-slate-700 last:border-b-0 hover:bg-slate-800/50 transition-colors items-center">
+                    <div key={i} className="grid grid-cols-3 p-5 border-b border-slate-700 last:border-b-0 hover:bg-slate-800/50 transition-colors items-center">
                         <div className="col-span-1 font-bold text-white">{row.feat}</div>
                         <div className="col-span-1 text-center text-slate-400">{row.bad}</div>
                         <div className="col-span-1 text-center font-bold text-blue-400 flex justify-center gap-2 items-center">
@@ -215,9 +215,9 @@ export default function SmallBusinessPage() {
       </section>
 
       {/* 4. THE SOLUTION */}
-      <section className="py-24 px-6 bg-slate-900 text-white border-y border-slate-800">
+      <section className="py-16 px-6 bg-slate-900 text-white border-y border-slate-800">
         <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                 
                 {/* Left Column: Content */}
                 <div className="lg:sticky lg:top-24">
@@ -248,8 +248,8 @@ export default function SmallBusinessPage() {
                 </div>
                 
                 {/* Right Column: Cards */}
-                <div className="grid gap-6">
-                    <div className="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-blue-500/50 transition-colors">
+                <div className="grid gap-5">
+                    <div className="bg-slate-800 p-6 rounded-2xl border border-slate-700 hover:border-blue-500/50 transition-colors">
                         <div className="p-3 bg-blue-600 rounded-lg inline-block mb-4">
                              <MapPin className="w-6 h-6 text-white" />
                         </div>
@@ -257,7 +257,7 @@ export default function SmallBusinessPage() {
                         <p className="text-slate-400 text-sm">We optimize your Google Business Profile to capture "Near Me" searches, making you the obvious choice in your postcode.</p>
                     </div>
                     
-                    <div className="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-purple-500/50 transition-colors">
+                    <div className="bg-slate-800 p-6 rounded-2xl border border-slate-700 hover:border-purple-500/50 transition-colors">
                          <div className="p-3 bg-purple-600 rounded-lg inline-block mb-4">
                              <MousePointer2 className="w-6 h-6 text-white" />
                         </div>
@@ -265,7 +265,7 @@ export default function SmallBusinessPage() {
                         <p className="text-slate-400 text-sm">We streamline your website so every visitor is guided towards a "Call Now" or "Book Appointment" button. No dead ends.</p>
                     </div>
                     
-                    <div className="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-emerald-500/50 transition-colors">
+                    <div className="bg-slate-800 p-6 rounded-2xl border border-slate-700 hover:border-emerald-500/50 transition-colors">
                          <div className="p-3 bg-emerald-600 rounded-lg inline-block mb-4">
                              <TrendingUp className="w-6 h-6 text-white" />
                         </div>
@@ -279,19 +279,19 @@ export default function SmallBusinessPage() {
       </section>
 
       {/* 5. FAQ SECTION */}
-      <section className="py-20 px-6 bg-slate-900">
+      <section className="py-16 px-6 bg-slate-900">
         <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12 text-white">Common Questions</h2>
+            <h2 className="text-3xl font-bold text-center mb-8 text-white">Common Questions</h2>
             <div className="space-y-4">
                 {faqs.map((faq, i) => (
                     <details key={i} className="group border border-slate-700 rounded-2xl bg-slate-800 open:bg-slate-800 open:shadow-lg open:border-slate-600 transition-all duration-300">
-                        <summary className="flex items-center justify-between p-6 cursor-pointer list-none text-lg font-bold text-white">
+                        <summary className="flex items-center justify-between p-5 cursor-pointer list-none text-lg font-bold text-white">
                             {faq.question}
                             <span className="transition-transform group-open:rotate-45">
                                 <Plus className="w-5 h-5 text-blue-400" />
                             </span>
                         </summary>
-                        <div className="px-6 pb-6 text-slate-400 leading-relaxed">
+                        <div className="px-5 pb-5 text-slate-400 leading-relaxed">
                             {faq.answer}
                         </div>
                     </details>
@@ -301,10 +301,10 @@ export default function SmallBusinessPage() {
       </section>
 
       {/* 6. CTA SECTION */}
-      <section className="bg-slate-950 py-24 px-6 text-center border-t border-slate-800">
+      <section className="bg-slate-950 py-16 px-6 text-center border-t border-slate-800">
         <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold text-white mb-6">Small budget? Big ambition?</h2>
-            <p className="text-lg text-slate-400 mb-10">
+            <p className="text-lg text-slate-400 mb-8">
                 Stop guessing. Get a free digital roadmap that shows you exactly how to get your first 100 customers online.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

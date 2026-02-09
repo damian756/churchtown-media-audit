@@ -5,7 +5,7 @@ export default function TechnicalSEO() {
   return (
     <main className="min-h-screen bg-slate-950">
       {/* Hero */}
-      <section className="bg-slate-900 px-6 py-24 text-center text-white">
+      <section className="bg-slate-900 px-6 py-16 text-center text-white">
         <div className="mx-auto max-w-3xl">
           <div className="inline-flex items-center gap-2 rounded-full bg-blue-500/10 px-3 py-1 text-sm font-medium text-blue-400 ring-1 ring-inset ring-blue-500/20">
             <Terminal className="h-4 w-4" />
@@ -21,7 +21,7 @@ export default function TechnicalSEO() {
       </section>
 
       {/* The Problem / Solution */}
-      <section className="mx-auto max-w-7xl px-6 py-24 lg:grid lg:grid-cols-2 lg:gap-16">
+      <section className="mx-auto max-w-7xl px-6 py-16 lg:grid lg:grid-cols-2 lg:gap-12">
         <div>
           <h2 className="text-3xl font-bold text-white">Why your rankings are stuck</h2>
           <p className="mt-4 text-slate-300">
@@ -50,7 +50,7 @@ export default function TechnicalSEO() {
           </div>
         </div>
 
-        <div className="mt-12 lg:mt-0 rounded-2xl bg-slate-900 p-8 ring-1 ring-slate-700 border border-slate-700">
+        <div className="mt-12 lg:mt-0 rounded-2xl bg-slate-900 p-6 ring-1 ring-slate-700 border border-slate-700">
           <h3 className="text-xl font-bold text-white">Our 24-Point Audit Protocol</h3>
           <ul className="mt-6 space-y-4 text-slate-300">
             <li className="flex gap-3"><CheckCircle2 className="h-5 w-5 text-blue-400" /> Log File Analysis</li>

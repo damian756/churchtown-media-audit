@@ -90,7 +90,7 @@ export default function SEOPage() {
   ];
 
   return (
-    <main className="min-h-screen pt-32 pb-20 bg-slate-950">
+    <main className="min-h-screen pt-32 pb-16 bg-slate-950">
       
       {/* INJECT SCHEMA */}
       <script
@@ -99,7 +99,7 @@ export default function SEOPage() {
       />
 
       {/* HERO SECTION */}
-      <div className="max-w-7xl mx-auto px-6 mb-20">
+      <div className="max-w-7xl mx-auto px-6 mb-16">
         <div className="inline-flex items-center gap-2 bg-slate-900 border border-slate-800 rounded-full px-4 py-1.5 mb-8">
             <span className="text-xs font-bold text-blue-400 uppercase tracking-wide">Data-Driven Growth</span>
         </div>
@@ -112,9 +112,9 @@ export default function SEOPage() {
       </div>
 
       {/* STRATEGY GRID */}
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 mb-32">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
         {strategies.map((feat, i) => (
-            <div key={i} className="bg-slate-800 p-8 rounded-2xl border border-slate-700 shadow-sm hover:bg-slate-800/80 hover:border-slate-600 transition-all group">
+            <div key={i} className="bg-slate-800 p-6 rounded-2xl border border-slate-700 shadow-sm hover:bg-slate-800/80 hover:border-slate-600 transition-all group">
                 <div className="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center text-blue-400 mb-6 group-hover:scale-110 transition-transform">{feat.icon}</div>
                 <h3 className="text-xl font-bold text-white mb-3">{feat.title}</h3>
                 <p className="text-slate-400 leading-relaxed">{feat.desc}</p>
@@ -123,9 +123,9 @@ export default function SEOPage() {
       </div>
 
       {/* WEB DESIGN CROSS-SELL */}
-      <div className="bg-slate-900 py-20 border-y border-slate-800 mb-20">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
-            <div className="flex-1 bg-slate-900/50 rounded-2xl p-8 border border-slate-700 w-full">
+      <div className="bg-slate-900 py-16 border-y border-slate-800 mb-16">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-8">
+            <div className="flex-1 bg-slate-900/50 rounded-2xl p-6 border border-slate-700 w-full">
                 <div className="space-y-4">
                       <div className="flex items-center gap-4 p-4 bg-slate-800 rounded-lg border border-slate-700">
                         <div className="w-3 h-3 bg-red-400 rounded-full"></div>
@@ -160,21 +160,21 @@ export default function SEOPage() {
       </div>
 
       {/* --- NEW: FAQ SECTION --- */}
-      <div className="max-w-4xl mx-auto px-6 mb-32">
-        <div className="text-center mb-12">
+      <div className="max-w-4xl mx-auto px-6 mb-24">
+        <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-white mb-4">Common Questions</h2>
           <p className="text-slate-400">Straight answers to your SEO concerns.</p>
         </div>
         <div className="space-y-4">
           {faqs.map((faq, i) => (
             <details key={i} className="group border border-slate-700 rounded-2xl bg-slate-800 open:shadow-lg transition-all duration-300 hover:border-slate-600">
-              <summary className="flex items-center justify-between p-6 cursor-pointer list-none text-lg font-bold text-white">
+              <summary className="flex items-center justify-between p-5 cursor-pointer list-none text-lg font-bold text-white">
                 {faq.question}
                 <span className="transition-transform group-open:rotate-45">
                   <Plus className="w-5 h-5 text-blue-400" />
                 </span>
               </summary>
-              <div className="px-6 pb-6 text-slate-400 leading-relaxed">
+              <div className="px-5 pb-5 text-slate-400 leading-relaxed">
                 {faq.answer}
               </div>
             </details>
@@ -185,7 +185,7 @@ export default function SEOPage() {
       {/* CTA SECTION */}
       <div className="max-w-4xl mx-auto px-6 text-center">
         <h2 className="text-3xl font-bold text-white mb-6">See exactly why you aren't ranking #1.</h2>
-        <p className="text-slate-400 mb-10 max-w-lg mx-auto">
+        <p className="text-slate-400 mb-8 max-w-lg mx-auto">
             Our automated audit tool scans your site for 50+ ranking factors and gives you a plain-English report in seconds.
         </p>
         <div className="flex justify-center gap-4">

@@ -99,7 +99,7 @@ export default function WebDesignPage() {
       />
 
       {/* HERO SECTION */}
-      <div className="max-w-7xl mx-auto px-6 mb-20">
+      <div className="max-w-7xl mx-auto px-6 mb-16">
         <div className="inline-flex items-center gap-2 bg-slate-900 border border-slate-800 rounded-full px-4 py-1.5 mb-8">
             <span className="text-xs font-bold text-slate-300 uppercase tracking-wide">Enterprise Web Design</span>
         </div>
@@ -123,8 +123,8 @@ export default function WebDesignPage() {
       </div>
 
       {/* SEO CROSS-SELL */}
-      <div className="bg-slate-900 py-20 border-y border-slate-800 mb-20">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+      <div className="bg-slate-900 py-16 border-y border-slate-800 mb-16">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-8">
             <div className="flex-1">
                 <div className="inline-flex items-center gap-2 text-blue-400 font-bold mb-4">
                     <BarChart3 className="w-5 h-5" />
@@ -140,7 +140,7 @@ export default function WebDesignPage() {
                     Explore our SEO Services <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
             </div>
-            <div className="flex-1 w-full bg-slate-800 rounded-2xl p-8 border border-slate-700">
+            <div className="flex-1 w-full bg-slate-800 rounded-2xl p-6 border border-slate-700">
                 <div className="space-y-4">
                     {[
                       "Perfect Core Web Vitals", 
@@ -158,21 +158,21 @@ export default function WebDesignPage() {
       </div>
 
       {/* --- NEW: FAQ SECTION --- */}
-      <div className="max-w-4xl mx-auto px-6 mb-32">
-        <div className="text-center mb-12">
+      <div className="max-w-4xl mx-auto px-6 mb-24">
+        <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-white mb-4">Common Questions</h2>
           <p className="text-slate-400">Everything you need to know about our process.</p>
         </div>
         <div className="space-y-4">
           {faqs.map((faq, i) => (
             <details key={i} className="group border border-slate-700 rounded-2xl bg-slate-800 open:shadow-lg transition-all duration-300">
-              <summary className="flex items-center justify-between p-6 cursor-pointer list-none text-lg font-bold text-white">
+              <summary className="flex items-center justify-between p-5 cursor-pointer list-none text-lg font-bold text-white">
                 {faq.question}
                 <span className="transition-transform group-open:rotate-45">
                   <Plus className="w-5 h-5 text-blue-400" />
                 </span>
               </summary>
-              <div className="px-6 pb-6 text-slate-300 leading-relaxed">
+              <div className="px-5 pb-5 text-slate-300 leading-relaxed">
                 {faq.answer}
               </div>
             </details>
@@ -183,7 +183,7 @@ export default function WebDesignPage() {
       {/* CTA SECTION */}
       <div className="max-w-4xl mx-auto px-6 text-center">
         <h2 className="text-3xl font-bold text-white mb-6">Stop losing customers to slow websites.</h2>
-        <p className="text-slate-400 mb-10 max-w-lg mx-auto">
+        <p className="text-slate-400 mb-8 max-w-lg mx-auto">
             Get a free technical breakdown of your current site and a roadmap to market dominance.
         </p>
         <div className="flex justify-center gap-4">
