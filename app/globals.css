@@ -43,39 +43,39 @@
     animation: fadeInBlob 1s ease-in 0.5s forwards, blob 7s infinite 0.5s;
   }
 
-  /* Rich Text Styles for AI Audit Results */
+  /* Rich Text Styles for Blog Content (Dark Theme) */
   .blog-content h2 {
-    @apply mt-12 mb-6 text-3xl font-bold text-slate-900 tracking-tight leading-tight;
+    @apply mt-12 mb-6 text-3xl font-bold text-white tracking-tight leading-tight;
   }
   .blog-content h3 {
-    @apply mt-10 mb-4 text-2xl font-bold text-slate-900 leading-snug;
+    @apply mt-10 mb-4 text-2xl font-bold text-white leading-snug;
   }
   .blog-content h4 {
-    @apply mt-8 mb-4 text-xl font-bold text-slate-900;
+    @apply mt-8 mb-4 text-xl font-bold text-white;
   }
   .blog-content p {
-    @apply mb-6 text-lg leading-relaxed text-slate-600;
+    @apply mb-6 text-lg leading-relaxed text-slate-300;
   }
   .blog-content ul {
-    @apply mb-8 pl-6 list-disc text-slate-600;
+    @apply mb-8 pl-6 list-disc text-slate-300;
   }
   .blog-content ol {
-    @apply mb-8 pl-6 list-decimal text-slate-600;
+    @apply mb-8 pl-6 list-decimal text-slate-300;
   }
   .blog-content li {
     @apply mb-2 text-lg leading-relaxed;
   }
   .blog-content a {
-    @apply font-semibold text-blue-600 underline underline-offset-4 hover:text-blue-800;
+    @apply font-semibold text-blue-400 underline underline-offset-4 hover:text-blue-400;
   }
   .blog-content strong {
-    @apply font-bold text-slate-900;
+    @apply font-bold text-white;
   }
   .blog-content blockquote {
-    @apply my-8 pl-6 border-l-4 border-blue-600 bg-slate-100 py-4 pr-4 italic text-slate-700 rounded-r-lg;
+    @apply my-8 pl-6 border-l-4 border-blue-400 bg-slate-800 py-4 pr-4 italic text-slate-300 rounded-r-lg;
   }
   .blog-content img {
-    @apply my-10 w-full rounded-xl border border-slate-200 shadow-sm;
+    @apply my-10 w-full rounded-xl border border-slate-700 shadow-sm;
   }
 }
 

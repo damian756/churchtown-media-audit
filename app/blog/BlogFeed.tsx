@@ -72,36 +72,36 @@ export default function BlogFeed({ posts }: { posts: BlogPost[] }) {
     <>
       {/* HERO SECTION */}
       <div className="max-w-7xl mx-auto px-6 mb-16">
-        <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 rounded-full px-4 py-1.5 mb-8">
-            <span className="text-xs font-bold text-blue-700 uppercase tracking-wide">The Knowledge Base</span>
+        <div className="inline-flex items-center gap-2 bg-slate-900 border border-slate-800 rounded-full px-4 py-1.5 mb-8">
+            <span className="text-xs font-bold text-blue-400 uppercase tracking-wide">The Knowledge Base</span>
         </div>
         
         <div className="flex flex-col md:flex-row gap-12 items-end">
             <div className="flex-1">
-                <h1 className="text-5xl md:text-6xl font-extrabold text-slate-900 mb-6 tracking-tight">
-                  Southport's <br/> <span className="text-blue-600">Digital Intelligence.</span>
+                <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">
+                  Southport's <br/> <span className="text-blue-400">Digital Intelligence.</span>
                 </h1>
-                <p className="text-xl text-slate-600 leading-relaxed">
+                <p className="text-xl text-slate-400 leading-relaxed">
                   We don't hide our secrets. We publish weekly technical analysis, local market data, and transparent reports on exactly what is working in the North West right now.
                 </p>
             </div>
             
             {/* INTERACTIVE NEWSLETTER FORM */}
-            <div className="flex-1 w-full bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+            <div className="flex-1 w-full bg-slate-900 p-6 rounded-2xl border border-slate-700 shadow-sm">
                 <div className="flex items-start gap-4">
-                    <div className={`p-3 rounded-xl transition-colors ${isSubscribed ? 'bg-green-100' : 'bg-blue-50'}`}>
-                        {isSubscribed ? <CheckCircle2 className="w-6 h-6 text-green-600" /> : <TrendingUp className="w-6 h-6 text-blue-600" />}
+                    <div className={`p-3 rounded-xl transition-colors ${isSubscribed ? 'bg-emerald-900/50' : 'bg-slate-800'}`}>
+                        {isSubscribed ? <CheckCircle2 className="w-6 h-6 text-emerald-400" /> : <TrendingUp className="w-6 h-6 text-blue-400" />}
                     </div>
                     <div className="w-full">
                         {isSubscribed ? (
                             <div className="animate-in fade-in slide-in-from-bottom-2">
-                                <h3 className="font-bold text-slate-900 mb-1">Welcome aboard.</h3>
-                                <p className="text-sm text-slate-500">You've been added to the Local Growth Report.</p>
+                                <h3 className="font-bold text-white mb-1">Welcome aboard.</h3>
+                                <p className="text-sm text-slate-400">You've been added to the Local Growth Report.</p>
                             </div>
                         ) : (
                             <>
-                                <h3 className="font-bold text-slate-900 mb-1">Stay ahead of the curve.</h3>
-                                <p className="text-sm text-slate-500 mb-4">Get our "Local Growth Report" delivered to your inbox every Tuesday.</p>
+                                <h3 className="font-bold text-white mb-1">Stay ahead of the curve.</h3>
+                                <p className="text-sm text-slate-400 mb-4">Get our "Local Growth Report" delivered to your inbox every Tuesday.</p>
                                 <form onSubmit={handleSubscribe} className="flex gap-2">
                                     <input 
                                         type="email" 
@@ -111,12 +111,12 @@ export default function BlogFeed({ posts }: { posts: BlogPost[] }) {
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
                                         disabled={isSubmitting}
-                                        className="flex-1 px-4 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50"
+                                        className="flex-1 px-4 py-2 border border-slate-700 rounded-lg text-sm bg-slate-950 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-400 disabled:opacity-50"
                                     />
                                     <button 
                                         type="submit" 
                                         disabled={isSubmitting}
-                                        className="bg-slate-900 text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-slate-800 transition-colors disabled:opacity-70"
+                                        className="bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-blue-400 transition-colors disabled:opacity-70"
                                     >
                                         {isSubmitting ? "..." : "Subscribe"}
                                     </button>
@@ -209,15 +209,15 @@ export default function BlogFeed({ posts }: { posts: BlogPost[] }) {
         ) : (
             <div className="col-span-full text-center py-20 text-slate-400">
                 <p>No articles found in this category yet.</p>
-                <button onClick={() => setActiveCategory("All Insights")} className="text-blue-600 font-bold mt-2 hover:underline">Clear Filters</button>
+                <button onClick={() => setActiveCategory("All Insights")} className="text-blue-400 font-bold mt-2 hover:underline">Clear Filters</button>
             </div>
         )}
       </div>
 
       {/* FOOTER */}
-      <div className="max-w-4xl mx-auto px-6 mt-24 text-center border-t border-slate-200 pt-16">
-         <h2 className="text-2xl font-bold text-slate-900 mb-4">Why we publish this data</h2>
-         <p className="text-slate-600 leading-relaxed">
+      <div className="max-w-4xl mx-auto px-6 mt-24 text-center border-t border-slate-700 pt-16">
+         <h2 className="text-2xl font-bold text-white mb-4">Why we publish this data</h2>
+         <p className="text-slate-400 leading-relaxed">
             Most agencies hoard their secrets. We believe that an educated client is a better client. 
             Whether you are a startup in <strong>Southport</strong> or an enterprise in <strong>Manchester</strong>, 
             our goal is to provide the actionable intelligence you need to grow.

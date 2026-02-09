@@ -47,7 +47,7 @@ const jsonLd = {
 
 export default function BlogIndex() {
   return (
-    <main className="min-h-screen pt-32 pb-20 bg-slate-50">
+    <main className="min-h-screen pt-32 pb-20 bg-slate-950">
       {/* INJECT SCHEMA */}
       <script
         type="application/ld+json"

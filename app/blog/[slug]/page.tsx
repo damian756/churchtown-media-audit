@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-// 4. The Page Component (Light Theme)
+// 4. The Page Component (Dark Theme)
 export default async function BlogPost({ params }: Props) {
   const { slug } = await params;
   const post = posts.find((p) => p.slug === slug);
@@ -48,26 +48,26 @@ export default async function BlogPost({ params }: Props) {
   }
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-slate-950">
       
-      {/* HEADER SECTION (Light Theme) */}
-      <section className="bg-white px-6 pt-32 pb-24 text-center border-b border-slate-100">
+      {/* HEADER SECTION (Dark Theme) */}
+      <section className="bg-slate-950 px-6 pt-32 pb-24 text-center border-b border-slate-800">
          <div className="mx-auto max-w-3xl">
-            <Link href="/blog" className="mb-8 inline-flex items-center gap-2 text-sm font-bold text-slate-500 hover:text-blue-600 transition-colors bg-slate-50 px-4 py-2 rounded-full">
+            <Link href="/blog" className="mb-8 inline-flex items-center gap-2 text-sm font-bold text-slate-400 hover:text-blue-400 transition-colors bg-slate-900 px-4 py-2 rounded-full">
                 <ArrowLeft className="h-4 w-4" /> Back to Knowledge Base
             </Link>
             
-            <h1 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-5xl leading-tight mb-8">
+            <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-5xl leading-tight mb-8">
                 {post.title}
             </h1>
             
-            <div className="flex items-center justify-center gap-4 text-sm font-medium text-slate-500">
+            <div className="flex items-center justify-center gap-4 text-sm font-medium text-slate-400">
                 <div className="flex items-center gap-1.5">
-                    <Calendar className="w-4 h-4 text-blue-600" />
-                    <time className="text-slate-600">{post.date}</time>
+                    <Calendar className="w-4 h-4 text-blue-400" />
+                    <time className="text-slate-300">{post.date}</time>
                 </div>
-                <span className="text-slate-300">|</span>
-                <span className="flex items-center gap-1.5 bg-blue-50 px-3 py-1 rounded-full text-blue-700 font-bold text-xs uppercase tracking-wide">
+                <span className="text-slate-500">|</span>
+                <span className="flex items-center gap-1.5 bg-slate-800 px-3 py-1 rounded-full text-blue-400 font-bold text-xs uppercase tracking-wide">
                     <Tag className="w-3 h-3" />
                     {post.category}
                 </span>
@@ -80,22 +80,22 @@ export default async function BlogPost({ params }: Props) {
         <img 
           src={post.image} 
           alt={post.title} 
-          className="w-full rounded-2xl shadow-xl border border-slate-200 bg-white"
+          className="w-full rounded-2xl shadow-xl border border-slate-700 bg-slate-900"
         />
       </div>
 
       {/* CONTENT */}
       <article className="mx-auto max-w-3xl px-6 py-16">
         <div 
-          className="blog-content prose prose-lg prose-slate max-w-none prose-headings:font-bold prose-headings:text-slate-900 prose-a:text-blue-600 prose-img:rounded-xl"
+          className="blog-content prose prose-lg prose-invert prose-slate max-w-none prose-headings:font-bold prose-headings:text-white prose-a:text-blue-400 prose-a:no-underline hover:prose-a:text-blue-400 prose-img:rounded-xl prose-p:text-slate-300 prose-li:text-slate-300"
           dangerouslySetInnerHTML={{ __html: post.content }} 
         />
 
         {/* CTA Box */}
-        <div className="mt-20 rounded-2xl bg-slate-50 p-10 text-center ring-1 ring-slate-200">
-            <h3 className="text-xl font-bold text-slate-900">Need help implementing this?</h3>
-            <p className="mt-2 text-slate-600 mb-6">We help Southport businesses turn these strategies into revenue.</p>
-            <Link href="/contact" className="inline-block rounded-lg bg-blue-600 px-8 py-4 font-bold text-white hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl">
+        <div className="mt-20 rounded-2xl bg-slate-900 p-10 text-center ring-1 ring-slate-700">
+            <h3 className="text-xl font-bold text-white">Need help implementing this?</h3>
+            <p className="mt-2 text-slate-400 mb-6">We help Southport businesses turn these strategies into revenue.</p>
+            <Link href="/contact" className="inline-block rounded-lg bg-blue-500 px-8 py-4 font-bold text-white hover:bg-blue-400 transition-all shadow-lg hover:shadow-xl">
                 Book Strategy Call
             </Link>
         </div>
