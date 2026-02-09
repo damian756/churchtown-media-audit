@@ -346,8 +346,12 @@ export default function GrowthHub() {
 
             <div className="flex flex-col lg:flex-row gap-12 items-center">
                 <div className="lg:w-1/2">
-                    <p className="text-lg text-slate-300 leading-relaxed mb-6">
-                        In 2026, a beautiful website that nobody visits is a liability. We build high-performance digital engines designed to capture the existing demand in Southport and convert it into revenue.
+                    <p>
+                        In 2026, a beautiful website that nobody visits is a liability. We build{" "}
+                        <Link href="/services/web-design" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2 font-semibold">
+                          high-performance digital engines
+                        </Link>{" "}
+                        designed to capture the existing demand in Southport and convert it into revenue.
                     </p>
                     <div className="space-y-8">
                         <div className="flex gap-4">
@@ -361,7 +365,12 @@ export default function GrowthHub() {
                             <div className="p-3 bg-slate-900 rounded-lg shadow-sm h-fit border border-slate-700"><MapPin className="h-6 w-6 text-blue-400"/></div>
                             <div>
                                 <h4 className="font-bold text-white">Hyper-Local SEO</h4>
-                                <p className="text-sm text-slate-300 mt-1">We optimize your digital footprint to signal that <em>you</em> are the authority in Southport.</p>
+                                <p className="text-sm text-slate-300 mt-1">
+                                  We optimize your digital footprint to signal that <em>you</em> are the authority in Southport. Learn more about our{" "}
+                                  <Link href="/services/seo" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2 font-semibold">
+                                    data-driven SEO services
+                                  </Link>.
+                                </p>
                             </div>
                         </div>
                         <div className="flex gap-4">
@@ -428,7 +437,14 @@ export default function GrowthHub() {
                         How can I improve my local SEO in Southport?
                     </h3>
                     <p className="mt-4 text-slate-300 leading-relaxed">
-                        To dominate local search in Southport, focus on three pillars: 1) Claim and optimize your <strong>Google Business Profile</strong> with accurate categories and local photos. 2) Ensure your website loads in under 3 seconds to satisfy mobile users. 3) Build local authority by getting listed in reputable Sefton directories and networking groups like the <strong>Sandgrounders Business Club</strong> or <strong>Southport BID</strong>.
+                        To dominate local search in Southport, focus on three pillars: 1) Claim and optimize your <strong>Google Business Profile</strong> with accurate categories and local photos. 2) Ensure your{" "}
+                        <Link href="/services/web-design" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">
+                          website loads in under 3 seconds
+                        </Link>{" "}
+                        to satisfy mobile users. 3) Build local authority with our{" "}
+                        <Link href="/services/seo" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">
+                          comprehensive SEO strategies
+                        </Link>, including getting listed in reputable Sefton directories and networking groups like the <strong>Sandgrounders Business Club</strong> or <strong>Southport BID</strong>.
                     </p>
                 </div>
                 {/* 3 */}
