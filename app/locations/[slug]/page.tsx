@@ -128,15 +128,15 @@ export default async function LocationPage({ params }: Props) {
                 )}
             </div>
             
-            <div className="relative h-80 w-full bg-slate-800 rounded-3xl overflow-hidden shadow-2xl flex items-center justify-center group border border-slate-700">
+            <div className="relative min-h-[400px] w-full bg-slate-800 rounded-3xl overflow-hidden shadow-2xl flex items-center justify-center group border border-slate-700">
                  <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-900 opacity-90"></div>
-                 <div className="relative z-10 text-center p-8">
+                 <div className="relative z-10 text-center p-8 w-full">
                     <MapPin className="w-12 h-12 text-blue-400 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
                     <h3 className="text-2xl font-bold text-white mb-2">{location.name} Operations</h3>
                     <p className="text-slate-400 mb-6">Serviced directly from our Southport HQ</p>
                     
                     {/* Enhanced contact details */}
-                    <div className="space-y-3 pt-4 border-t border-slate-700">
+                    <div className="space-y-4 pt-6 border-t border-slate-700">
                       <div className="flex items-center justify-center gap-2 text-slate-300 text-sm">
                         <div className="w-8 h-8 bg-blue-500/10 rounded-lg flex items-center justify-center">
                           <Zap className="w-4 h-4 text-blue-400" />
@@ -148,6 +148,45 @@ export default async function LocationPage({ params }: Props) {
                           <CheckCircle2 className="w-4 h-4 text-emerald-400" />
                         </div>
                         <span>Same-day response available</span>
+                      </div>
+                      
+                      {/* Contact Info */}
+                      <div className="pt-4 border-t border-slate-700/50 space-y-3">
+                        <a href="tel:+447545934360" className="flex items-center justify-center gap-2 text-slate-300 hover:text-blue-400 transition-colors text-sm group/link">
+                          <div className="w-8 h-8 bg-blue-500/10 rounded-lg flex items-center justify-center group-hover/link:bg-blue-500/20 transition-colors">
+                            <svg className="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                          </div>
+                          <span className="font-medium">07545 934360</span>
+                        </a>
+                        <a href="mailto:hello@churchtownmedia.co.uk" className="flex items-center justify-center gap-2 text-slate-300 hover:text-blue-400 transition-colors text-sm group/link">
+                          <div className="w-8 h-8 bg-purple-500/10 rounded-lg flex items-center justify-center group-hover/link:bg-purple-500/20 transition-colors">
+                            <svg className="w-4 h-4 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                          </div>
+                          <span className="font-medium text-xs">hello@churchtownmedia.co.uk</span>
+                        </a>
+                      </div>
+                      
+                      {/* Service Highlights */}
+                      <div className="pt-4 border-t border-slate-700/50">
+                        <p className="text-xs font-bold text-slate-500 uppercase tracking-wide mb-3">Local Expertise</p>
+                        <div className="space-y-2 text-xs text-slate-400">
+                          <div className="flex items-center justify-center gap-2">
+                            <CheckCircle2 className="w-3 h-3 text-emerald-400 shrink-0" />
+                            <span>Face-to-face meetings</span>
+                          </div>
+                          <div className="flex items-center justify-center gap-2">
+                            <CheckCircle2 className="w-3 h-3 text-emerald-400 shrink-0" />
+                            <span>All work done in-house</span>
+                          </div>
+                          <div className="flex items-center justify-center gap-2">
+                            <CheckCircle2 className="w-3 h-3 text-emerald-400 shrink-0" />
+                            <span>Free initial consultation</span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                  </div>
