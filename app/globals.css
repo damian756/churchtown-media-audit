@@ -43,6 +43,12 @@
     animation: fadeInBlob 1s ease-in 1s forwards, blob 7s infinite 1s;
   }
 
+  /* LCP Optimization: HEAVILY Delayed Blob Rendering (for homepage) */
+  .animated-blob-delayed {
+    opacity: 0;
+    animation: fadeInBlob 1s ease-in 2.5s forwards, blob 7s infinite 2.5s;
+  }
+
   @keyframes fadeInBlob {
     from {
       opacity: 0;

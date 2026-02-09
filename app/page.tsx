@@ -94,10 +94,10 @@ export default function Home() {
       {/* 1. HERO SECTION */}
       <div className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden isolate">
         
-        {/* ANIMATED BACKGROUND BLOBS - Delayed for LCP optimization */}
-        <div className="animated-blob absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-purple-300/40 rounded-full blur-[100px] animate-blob"></div>
-        <div className="animated-blob absolute top-0 right-1/4 w-[500px] h-[500px] bg-blue-300/40 rounded-full blur-[100px] animate-blob animation-delay-2000"></div>
-        <div className="animated-blob absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-emerald-300/40 rounded-full blur-[100px] animate-blob animation-delay-4000"></div>
+        {/* ANIMATED BACKGROUND BLOBS - Heavily delayed for LCP optimization */}
+        <div className="animated-blob-delayed absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-purple-300/20 rounded-full blur-[80px]"></div>
+        <div className="animated-blob-delayed absolute top-0 right-1/4 w-[500px] h-[500px] bg-blue-300/20 rounded-full blur-[80px] animation-delay-2000"></div>
+        <div className="animated-blob-delayed absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-emerald-300/20 rounded-full blur-[80px] animation-delay-4000"></div>
 
         {/* Content Container */}
         <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
@@ -154,7 +154,7 @@ export default function Home() {
       </div>
 
       {/* 2. SERVICE SILOS */}
-      <section className="py-16 bg-slate-900/50 backdrop-blur-3xl relative z-10 border-t border-slate-800">
+      <section className="py-16 bg-slate-900 relative z-10 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-6">
             <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Choose Your Growth Engine</h2>
@@ -201,8 +201,7 @@ export default function Home() {
 
                 {/* CARD 3: AUDIT LEAD MAGNET */}
                 <div className="group p-6 rounded-[2rem] bg-gradient-to-br from-blue-600 to-blue-700 text-white hover:shadow-2xl hover:shadow-blue-600/30 transition-all duration-300 relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-64 h-64 bg-blue-400/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
-                    <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center mb-6 backdrop-blur-sm relative z-10">
+                    <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center mb-6 relative z-10">
                         <Zap className="w-7 h-7 text-yellow-400 fill-yellow-400" />
                     </div>
                     <h3 className="text-2xl font-bold mb-3 relative z-10">AI Website Audit</h3>

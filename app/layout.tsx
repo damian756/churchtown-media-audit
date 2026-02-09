@@ -6,7 +6,12 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ 
+  subsets: ["latin"],
+  display: 'swap',
+  preload: true,
+  variable: '--font-inter',
+});
 
 // 1. VIEWPORT SETTINGS
 export const viewport: Viewport = {
