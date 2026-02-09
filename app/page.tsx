@@ -83,7 +83,12 @@ const jsonLd = {
 
 export default function Home() {
   return (
-    <main className="min-h-screen overflow-x-hidden bg-slate-950 selection:bg-blue-400 selection:text-white">
+    <>
+      {/* Preconnect to external resources */}
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      
+      <main className="min-h-screen overflow-x-hidden bg-slate-950 selection:bg-blue-400 selection:text-white">
       
       {/* INJECT SCHEMA */}
       <script
@@ -104,10 +109,7 @@ export default function Home() {
             
             {/* STATUS BADGE */}
             <div className="inline-flex items-center gap-2 bg-slate-900 border border-emerald-500/30 rounded-full px-4 py-1.5 mb-8 shadow-sm ring-1 ring-emerald-500/20">
-                <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-                </span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                 <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wide">
                   Now accepting clients for 2026
                 </span>
@@ -218,5 +220,6 @@ export default function Home() {
       </section>
 
     </main>
+    </>
   );
 }

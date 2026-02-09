@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 
 const inter = Inter({ 
   subsets: ["latin"],
-  display: 'swap',
+  display: 'optional',
   preload: true,
   variable: '--font-inter',
 });
@@ -71,9 +71,8 @@ export default function RootLayout({
         {/* --- 1. COOKIEYES BANNER --- */}
         <Script
           id="cookieyes"
-          // I see you found your real code! This looks correct.
           src="https://cdn-cookieyes.com/client_data/d800a0412ec550532ec1984546b7231c/script.js" 
-          strategy="beforeInteractive" 
+          strategy="lazyOnload" 
         />
 
         <Navbar />
