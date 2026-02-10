@@ -40,9 +40,12 @@ export default function BlogFeed({ posts }: { posts: BlogPost[] }) {
     ? sortedPosts 
     : sortedPosts.filter(post => post.category === activeCategory);
 
-  // HERO POST
+  // HERO POST (only for "All Insights", otherwise use first filtered post)
   const heroPost = sortedPosts[0];
-  const gridPosts = filteredPosts.filter(p => p.slug !== heroPost.slug);
+  // Only exclude hero from grid when showing "All Insights"
+  const gridPosts = activeCategory === "All Insights" 
+    ? filteredPosts.filter(p => p.slug !== heroPost.slug)
+    : filteredPosts;
 
   // --- NEW: FORMSPREE SUBMISSION HANDLER ---
   const handleSubscribe = async (e: React.FormEvent) => {

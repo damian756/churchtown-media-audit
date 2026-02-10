@@ -19,6 +19,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // FIXED: Removed suffix to prevent double branding
     title: `Web Design & SEO Agency ${location.name}`,
     description: location.metaDesc,
+    alternates: {
+      canonical: `https://www.churchtownmedia.co.uk/locations/${location.slug}`,
+    },
+    openGraph: {
+      title: `Web Design & SEO Agency ${location.name}`,
+      description: location.metaDesc,
+      url: `https://www.churchtownmedia.co.uk/locations/${location.slug}`,
+      type: 'website',
+      siteName: 'Churchtown Media',
+      locale: 'en_GB',
+      images: [{
+        url: 'https://www.churchtownmedia.co.uk/opengraph-image.png',
+        width: 1200,
+        height: 630,
+        alt: `Churchtown Media - Web Design & SEO in ${location.name}`,
+      }],
+    },
   };
 }
 
