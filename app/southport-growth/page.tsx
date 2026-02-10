@@ -90,7 +90,7 @@ export default function GrowthHub() {
         <div className="flex flex-col lg:flex-row gap-12 items-center">
             <div className="lg:w-1/2">
                 <h2 className="text-3xl font-bold text-white mb-6">The "Digital First" Reality for Southport</h2>
-                <div className="prose prose-lg text-slate-300 space-y-6">
+                <div className="prose prose-lg text-slate-300 prose-strong:text-white space-y-6">
                     <p className="text-xl font-medium text-white">
                         The days of "word of mouth" are over. Today, word of mouth happens on Google Maps.
                     </p>

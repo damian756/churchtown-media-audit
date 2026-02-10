@@ -12,6 +12,16 @@
   body {
     @apply bg-slate-950 text-white antialiased selection:bg-blue-400 selection:text-white;
   }
+  
+  /* Ensure strong tags are visible on dark backgrounds */
+  strong {
+    @apply text-white font-bold;
+  }
+  
+  /* Ensure em tags maintain readability */
+  em {
+    @apply text-slate-100;
+  }
 }
 
 /* 2. ANIMATIONS (Restoring the Blob/Gradient effects) */
