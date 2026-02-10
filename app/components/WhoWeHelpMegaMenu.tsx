@@ -78,17 +78,17 @@ export default function WhoWeHelpMegaMenu({ isMobile = false, onItemClick }: Who
   // DESKTOP VERSION
   return (
     <div
-      className="relative group"
+      className="relative"
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
     >
-      <button className="flex items-center gap-1 text-sm font-bold text-slate-200 hover:text-white transition-colors hover:-translate-y-0.5 transform duration-200">
+      <button className="flex items-center gap-1 text-sm font-bold text-slate-200 hover:text-white transition-colors hover:-translate-y-0.5 transform duration-200 relative z-[101]">
         Who We Help <ChevronDown className="w-4 h-4" />
       </button>
 
       {/* MEGA MENU DROPDOWN */}
       {isOpen && (
-        <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[1000px] max-w-[95vw] bg-slate-900/98 backdrop-blur-md border border-slate-800 rounded-2xl shadow-2xl z-50 p-8">
+        <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[1000px] max-w-[95vw] bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl z-[100] p-8">
           
           {/* HEADER */}
           <div className="mb-6 pb-4 border-b border-slate-800">

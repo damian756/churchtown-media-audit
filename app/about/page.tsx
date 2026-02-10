@@ -208,15 +208,13 @@ export default function AboutPage() {
               {/* Image Column */}
               <div className="relative">
                 <div className="bg-gradient-to-br from-blue-600/20 to-purple-600/20 border border-blue-600/30 rounded-3xl p-8 backdrop-blur-sm">
-                  {/* TODO: Add a nostalgic photo here when you find one:
-                      - Old Doom screenshot
-                      - 90s computer setup
-                      - Early website you built
-                      - Whatever you have from that era
-                      Just save it as /images/about/origin-story.jpg */}
-                  <div className="aspect-square bg-slate-800 rounded-2xl flex items-center justify-center text-slate-500">
-                    <Code className="w-24 h-24" />
-                  </div>
+                  <Image
+                    src="/images/about/doom-90s-setup.jpg"
+                    alt="90s computer setup with Doom game on CRT monitor"
+                    width={600}
+                    height={600}
+                    className="rounded-2xl shadow-xl"
+                  />
                   <p className="text-center text-sm text-slate-400 mt-4 italic">
                     "Building Doom levels in the 90s taught me more about UX than most design courses ever could."
                   </p>
@@ -310,15 +308,13 @@ export default function AboutPage() {
               {/* Image Column (First on desktop) */}
               <div className="relative order-2 md:order-1">
                 <div className="bg-gradient-to-br from-green-600/20 to-blue-600/20 border border-green-600/30 rounded-3xl p-8 backdrop-blur-sm">
-                  {/* TODO: Add a lifestyle photo when you take one:
-                      - At the owl sanctuary with the kids
-                      - Walking Marshside
-                      - On the golf course
-                      - With your dog
-                      Whatever feels natural. Save as /images/about/southport-lifestyle.jpg */}
-                  <div className="aspect-square bg-slate-800 rounded-2xl flex items-center justify-center text-slate-500">
-                    <Heart className="w-24 h-24" />
-                  </div>
+                  <Image
+                    src="/images/about/southport-golf.jpg"
+                    alt="Beautiful Southport golf course with coastal views"
+                    width={600}
+                    height={600}
+                    className="rounded-2xl shadow-xl"
+                  />
                   <p className="text-center text-sm text-slate-400 mt-4 italic">
                     "Building sites that perform by day. Badly playing golf by weekend."
                   </p>
