@@ -35,10 +35,10 @@ export default function Navbar() {
 
   // STREAMLINED LINKS ARRAY
   // Services and Who We Help are handled by dropdown components
-  // Reviews and FAQ moved to footer for cleaner nav
   const links = [
     { name: "Work", href: "/work" },
     { name: "About", href: "/about" },
+    { name: "Reviews", href: "/testimonials" },
     { name: "Insights", href: "/blog" },
     { name: "Contact", href: "/contact" },
   ];
