@@ -142,6 +142,7 @@ export default function ServicesDropdown({ isMobile = false, onItemClick }: Serv
             })}
           </div>
         </div>
+        </>
       )}
     </div>
   );

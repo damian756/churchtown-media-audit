@@ -161,6 +161,7 @@ export default function WhoWeHelpMegaMenu({ isMobile = false, onItemClick }: Who
             </Link>
           </div>
         </div>
+        </>
       )}
     </div>
   );
