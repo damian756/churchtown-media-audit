@@ -5,13 +5,14 @@ import { ArrowRight, Check, Phone, Mail, Star } from "lucide-react";
 import { getIndustry, industries } from "@/lib/industries";
 
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const industry = getIndustry(params.slug);
+  const { slug } = await params;
+  const industry = getIndustry(slug);
   
   if (!industry) {
     return {
@@ -48,8 +49,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function IndustryPage({ params }: PageProps) {
-  const industry = getIndustry(params.slug);
+export default async function IndustryPage({ params }: PageProps) {
+  const { slug } = await params;
+  const industry = getIndustry(slug);
 
   if (!industry) {
     notFound();
