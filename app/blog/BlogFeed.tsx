@@ -109,7 +109,7 @@ export default function BlogFeed({ posts }: { posts: BlogPost[] }) {
                             <>
                                 <h3 className="font-bold text-white mb-1">Stay ahead of the curve.</h3>
                                 <p className="text-sm text-slate-400 mb-4">Get our "Local Growth Report" delivered to your inbox every Tuesday.</p>
-                                <form onSubmit={handleSubscribe} className="flex gap-2">
+                                <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-2">
                                     <input 
                                         type="email" 
                                         name="email" // Important for Formspree
@@ -123,7 +123,7 @@ export default function BlogFeed({ posts }: { posts: BlogPost[] }) {
                                     <button 
                                         type="submit" 
                                         disabled={isSubmitting}
-                                        className="bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-blue-400 transition-colors disabled:opacity-70"
+                                        className="bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-blue-400 transition-colors disabled:opacity-70 whitespace-nowrap"
                                     >
                                         {isSubmitting ? "..." : "Subscribe"}
                                     </button>

@@ -30,7 +30,7 @@ export default function Footer() {
             <div className="flex gap-5 pt-4">
                 <a href="https://www.facebook.com/ChurchtownMedia/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white hover:scale-110 transition-all" aria-label="Facebook"><Facebook className="w-5 h-5" /></a>
                 <a href="https://twitter.com/churchtownmedia" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white hover:scale-110 transition-all" aria-label="Twitter"><Twitter className="w-5 h-5" /></a>
-                <a href="https://linkedin.com/company/churchtownmedia" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white hover:scale-110 transition-all" aria-label="LinkedIn"><Linkedin className="w-5 h-5" /></a>
+                <a href="https://www.linkedin.com/in/damian-roche-7ba8293a5/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white hover:scale-110 transition-all" aria-label="LinkedIn"><Linkedin className="w-5 h-5" /></a>
                 <a href="https://instagram.com/churchtownmedia" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white hover:scale-110 transition-all" aria-label="Instagram"><Instagram className="w-5 h-5" /></a>
                 <a href="https://youtube.com/@churchtownmedia" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white hover:scale-110 transition-all" aria-label="YouTube"><Youtube className="w-5 h-5" /></a>
             </div>
