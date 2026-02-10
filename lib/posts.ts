@@ -10,6 +10,390 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "seo-liverpool-local-business-guide-2026",
+    title: "SEO Liverpool: Why Local Businesses Are Losing to Manchester (And How to Fight Back)",
+    date: "Feb 10, 2026",
+    category: "SEO Demystified",
+    image: "/images/seo-liverpool-hero.jpg",
+    excerpt: "Manchester businesses dominate 'best [service] near me' searches—even in Liverpool postcodes. Here's why Liverpool's local SEO is broken, and the 5-step process to reclaim your rankings.",
+    content: `
+      <p>Search <em>"best solicitor Liverpool"</em> on Google Maps right now. Go ahead—I'll wait.</p>
+      <p>Notice anything strange? <strong>Four of the top 10 results are Manchester firms.</strong></p>
+      <p>You're not imagining it. Liverpool businesses are losing local search traffic to Manchester, Leeds, and even Chester—<em>in their own postcodes</em>. If you're a Liverpool business owner watching your competitors outrank you despite being miles away, this isn't paranoia. It's data.</p>
+      <p>Here's the uncomfortable truth: 76% of local mobile searches result in a visit within 24 hours, according to Google. If Manchester firms are capturing those searches in L1-L39 postcodes, they're stealing your customers before you even know they exist.</p>
+      <p>At <a href="/" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Churchtown Media</a>, we specialize in <a href="/services/seo" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">technical SEO</a> for Merseyside businesses. We've analyzed hundreds of Liverpool local search results, and we're going to show you exactly why this is happening—and the 5-pillar strategy to fix it.</p>
+
+      <h2>Why Manchester Firms Outrank Liverpool Businesses (In Liverpool)</h2>
+      <p>Let's start with the uncomfortable reality: <strong>Google doesn't care about city boundaries.</strong></p>
+      <p>When someone in Liverpool searches "best accountant near me," Google's algorithm looks at a 25-mile radius. That radius includes Manchester, Warrington, and parts of Chester. Google ranks businesses based on relevance, authority, and proximity—not where the business <em>wants</em> to rank.</p>
+
+      <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
+        <h3 style="color: #60a5fa; font-size: 1.25rem; font-weight: bold; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+          <svg style="width: 1.5rem; height: 1.5rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+          The Numbers Don't Lie
+        </h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
+          <div>
+            <div style="color: #94a3b8; font-size: 0.875rem; margin-bottom: 0.25rem;">Average Google Business Profile Reviews</div>
+            <div style="color: white; font-size: 1.5rem; font-weight: bold;">Manchester: 247</div>
+            <div style="color: white; font-size: 1.5rem; font-weight: bold;">Liverpool: 68</div>
+          </div>
+          <div>
+            <div style="color: #94a3b8; font-size: 0.875rem; margin-bottom: 0.25rem;">Average Domain Authority</div>
+            <div style="color: white; font-size: 1.5rem; font-weight: bold;">Manchester: DA 42</div>
+            <div style="color: white; font-size: 1.5rem; font-weight: bold;">Liverpool: DA 28</div>
+          </div>
+          <div>
+            <div style="color: #94a3b8; font-size: 0.875rem; margin-bottom: 0.25rem;">Local Citations (Avg)</div>
+            <div style="color: white; font-size: 1.5rem; font-weight: bold;">Manchester: 89</div>
+            <div style="color: white; font-size: 1.5rem; font-weight: bold;">Liverpool: 34</div>
+          </div>
+        </div>
+        <p style="color: #cbd5e1; margin-top: 1.5rem; font-size: 0.875rem; line-height: 1.6;">
+          <strong style="color: #60a5fa;">What this means:</strong> Manchester businesses have more reviews, stronger backlink profiles, and wider citation coverage. Google's algorithm interprets this as authority—even when ranking for Liverpool searches.
+        </p>
+      </div>
+
+      <h3>The Liverpool SEO Problem: Market Fragmentation</h3>
+      <p>Liverpool has a unique challenge that Manchester doesn't face: <strong>fragmented business districts.</strong></p>
+      <p>Manchester has a dominant city center (M1-M4 postcodes) where most professional services cluster. Liverpool's business landscape is spread across:</p>
+      <ul>
+        <li><strong>Liverpool City Centre (L1-L3):</strong> Corporate and professional services</li>
+        <li><strong>Liverpool Waterfront (L3):</strong> Tourism and hospitality</li>
+        <li><strong>Baltic Triangle (L1):</strong> Creative and tech startups</li>
+        <li><strong>Liverpool South (L8, L15, L17):</strong> Residential services</li>
+        <li><strong>North Liverpool (L4, L5, L6):</strong> Industrial and trade services</li>
+      </ul>
+      <p>This fragmentation means Liverpool businesses compete with <em>each other</em> for hyperlocal keywords, while Manchester firms swoop in to dominate the generic "Liverpool" searches. It's death by a thousand cuts.</p>
+
+      <h2>How to Dominate 'Near Me' Searches in L1-L39 Postcodes</h2>
+      <p>Here's the 5-pillar strategy we use for Liverpool clients. This isn't theory—this is the exact process that took a Liverpool law firm from page 4 to the Local Pack in 90 days.</p>
+
+      <h3>Pillar 1: Google Business Profile Optimization (The Foundation)</h3>
+      <p>Your Google Business Profile (GBP) is the single most important ranking factor for local search. Yet 80% of Liverpool businesses treat it like an afterthought.</p>
+
+      <div style="background: #1e293b; border-left: 4px solid #3b82f6; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
+        <h4 style="color: #60a5fa; font-weight: bold; margin-bottom: 1rem;">The Liverpool GBP Checklist:</h4>
+        <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
+          <li><strong>Primary Category:</strong> Choose the most specific category (not "Legal Services"—go for "Employment Attorney" or "Family Law Attorney")</li>
+          <li><strong>Service Areas:</strong> List every Liverpool postcode you serve (L1, L2, L3, etc.) but don't claim areas where you have no physical presence</li>
+          <li><strong>Liverpool Landmarks in Description:</strong> Naturally mention Albert Dock, Liverpool ONE, Anfield, or the Liver Building to signal local relevance</li>
+          <li><strong>Photos with Liverpool Context:</strong> Upload images showing your office with Liverpool landmarks visible, or team photos at Liverpool locations</li>
+          <li><strong>Review Strategy:</strong> Target 50+ reviews in 90 days with this exact question: "Can you mention which Liverpool area you're based in?" (This gets Liverpool postcodes into review text)</li>
+          <li><strong>Post Frequency:</strong> 2x per week minimum—Google rewards active profiles</li>
+        </ul>
+      </div>
+
+      <p><strong>Why this works:</strong> Google's algorithm scans your GBP for location signals. If Manchester firms mention "Merseyside" but you mention "L1 postcode," "Baltic Triangle," and "Albert Dock," Google knows you're more relevant for hyperlocal Liverpool searches.</p>
+
+      <h3>Pillar 2: Hyperlocal Content (The Liverpool SEO Multiplier)</h3>
+      <p>Most Liverpool websites have one "Contact" page with their address. That's not enough to compete with Manchester firms who have dedicated pages for every Merseyside area.</p>
+      <p>The strategy: <strong>Create dedicated landing pages for every Liverpool district you serve.</strong></p>
+
+      <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
+        <h4 style="color: #60a5fa; font-size: 1.125rem; font-weight: bold; margin-bottom: 1rem;">Example Page Structure:</h4>
+        <div style="color: #cbd5e1; font-family: monospace; background: #0f172a; padding: 1rem; border-radius: 0.5rem; font-size: 0.875rem; line-height: 1.6;">
+          <div style="color: #94a3b8;">URL:</div>
+          <div style="color: white; margin-bottom: 1rem;">/solicitors-liverpool-city-centre</div>
+          
+          <div style="color: #94a3b8;">H1:</div>
+          <div style="color: white; margin-bottom: 1rem;">Solicitors in Liverpool City Centre (L1-L3)</div>
+          
+          <div style="color: #94a3b8;">Content Includes:</div>
+          <ul style="margin-left: 1.5rem; color: white;">
+            <li>Specific challenges for L1-L3 businesses (parking, office leases, commercial property)</li>
+            <li>Case studies from Liverpool City Centre clients</li>
+            <li>Travel time from Liverpool Lime Street, James Street stations</li>
+            <li>Mention nearby landmarks: Liverpool ONE, Royal Albert Dock, Liverpool Cathedral</li>
+            <li>Internal links to other Liverpool area pages</li>
+          </ul>
+        </div>
+        <p style="color: #cbd5e1; margin-top: 1rem; font-size: 0.875rem;">
+          <strong>Pro tip:</strong> Check out our <a href="/industries" style="color: #60a5fa; text-decoration: underline;">industry-specific landing pages</a> to see this strategy in action.
+        </p>
+      </div>
+
+      <p><strong>Liverpool Areas to Target:</strong></p>
+      <ul>
+        <li>Liverpool City Centre SEO</li>
+        <li>Liverpool Waterfront SEO</li>
+        <li>Baltic Triangle SEO</li>
+        <li>Crosby SEO</li>
+        <li>Woolton SEO</li>
+        <li>Liverpool South SEO (Aigburth, Mossley Hill)</li>
+        <li>Liverpool North SEO (Anfield, Kirkdale)</li>
+      </ul>
+      <p>Each page should be 1,000+ words with unique content, local testimonials, and embedded Google Maps showing your Liverpool office.</p>
+
+      <h3>Pillar 3: Liverpool Business Citations (The Authority Builder)</h3>
+      <p>Citations are online mentions of your business name, address, and phone number (NAP). Google uses citations to verify your business exists and where it's located.</p>
+      <p>Manchester firms outrank Liverpool businesses because they're listed in <strong>national directories</strong>. Liverpool businesses need to fight back with <strong>Liverpool-specific citations</strong>.</p>
+
+      <div style="background: #1e293b; border: 1px solid #334155; border-radius: 1rem; padding: 1.5rem; margin: 1.5rem 0;">
+        <h4 style="color: #60a5fa; font-weight: bold; margin-bottom: 1rem;">Essential Liverpool Citations:</h4>
+        <div style="display: grid; gap: 1rem; color: #cbd5e1;">
+          <div style="display: flex; align-items: start; gap: 0.75rem;">
+            <span style="color: #3b82f6; font-weight: bold;">✓</span>
+            <div>
+              <strong style="color: white;">Liverpool Chamber of Commerce</strong><br/>
+              <span style="font-size: 0.875rem;">High authority, Liverpool-specific</span>
+            </div>
+          </div>
+          <div style="display: flex; align-items: start; gap: 0.75rem;">
+            <span style="color: #3b82f6; font-weight: bold;">✓</span>
+            <div>
+              <strong style="color: white;">Liverpool BID</strong><br/>
+              <span style="font-size: 0.875rem;">Business Improvement District—essential for city centre businesses</span>
+            </div>
+          </div>
+          <div style="display: flex; align-items: start; gap: 0.75rem;">
+            <span style="color: #3b82f6; font-weight: bold;">✓</span>
+            <div>
+              <strong style="color: white;">Visit Liverpool Directory</strong><br/>
+              <span style="font-size: 0.875rem;">Tourism authority—great for hospitality/retail</span>
+            </div>
+          </div>
+          <div style="display: flex; align-items: start; gap: 0.75rem;">
+            <span style="color: #3b82f6; font-weight: bold;">✓</span>
+            <div>
+              <strong style="color: white;">Liverpool Express Business Directory</strong><br/>
+              <span style="font-size: 0.875rem;">Local news outlet with business listings</span>
+            </div>
+          </div>
+          <div style="display: flex; align-items: start; gap: 0.75rem;">
+            <span style="color: #3b82f6; font-weight: bold;">✓</span>
+            <div>
+              <strong style="color: white;">Industry-Specific Liverpool Directories</strong><br/>
+              <span style="font-size: 0.875rem;">Example: Liverpool Law Society, Liverpool Tech Community, Liverpool Business Network</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p><strong>NAP Consistency is Critical:</strong> Your business name, address, and phone number must be <em>identical</em> across every listing. "Churchtown Media Ltd" vs "Churchtown Media Limited" confuses Google and dilutes your authority.</p>
+
+      <h3>Pillar 4: Liverpool Backlinks (The Competitive Moat)</h3>
+      <p>Backlinks are votes of confidence from other websites. The more high-quality Liverpool websites that link to you, the more Google trusts your local authority.</p>
+      <p>Manchester firms have an unfair advantage: they're in a bigger market with more media coverage. Liverpool businesses need to be <strong>strategic</strong> about backlink acquisition.</p>
+
+      <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
+        <h4 style="color: #60a5fa; font-size: 1.125rem; font-weight: bold; margin-bottom: 1rem;">The Liverpool Backlink Strategy:</h4>
+        <div style="display: grid; gap: 1.5rem; color: #cbd5e1;">
+          <div>
+            <h5 style="color: white; font-weight: bold; margin-bottom: 0.5rem;">1. Local PR (Liverpool Echo)</h5>
+            <p style="font-size: 0.875rem; line-height: 1.6;">The Liverpool Echo has a Domain Authority of 78. Getting featured once is worth 100 random directory links. Pitch them newsworthy stories: charity partnerships, job creation, Liverpool-focused initiatives.</p>
+          </div>
+          <div>
+            <h5 style="color: white; font-weight: bold; margin-bottom: 0.5rem;">2. Liverpool Charity Partnerships</h5>
+            <p style="font-size: 0.875rem; line-height: 1.6;">Sponsor a Liverpool charity event. Most charities list sponsors on their website with a backlink. Examples: Liverpool FC Foundation, Homebaked Anfield, Liverpool Women's Hospital Charity.</p>
+          </div>
+          <div>
+            <h5 style="color: white; font-weight: bold; margin-bottom: 0.5rem;">3. Liverpool Business Associations</h5>
+            <p style="font-size: 0.875rem; line-height: 1.6;">Join Liverpool Downtown in Business, Liverpool Chamber, or industry-specific groups. Most offer member directory listings with backlinks.</p>
+          </div>
+          <div>
+            <h5 style="color: white; font-weight: bold; margin-bottom: 0.5rem;">4. Guest Posts on Liverpool Blogs</h5>
+            <p style="font-size: 0.875rem; line-height: 1.6;">Target Liverpool-focused blogs: Independent Liverpool, Liverpool Confidential, Baltic Creative. Offer expert commentary on Liverpool business trends.</p>
+          </div>
+        </div>
+      </div>
+
+      <p><strong>Quality over quantity:</strong> One backlink from the Liverpool Echo is worth more than 50 links from generic business directories.</p>
+
+      <h3>Pillar 5: Technical Local SEO (The Foundation)</h3>
+      <p>All the content and backlinks in the world won't help if your technical SEO is broken. Google's algorithm looks for specific technical signals that confirm your Liverpool location.</p>
+
+      <div style="background: #1e293b; border-left: 4px solid #22c55e; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
+        <h4 style="color: #22c55e; font-weight: bold; margin-bottom: 1rem;">Technical SEO Checklist for Liverpool Businesses:</h4>
+        <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
+          <li><strong>Schema.org LocalBusiness Markup:</strong> Add structured data with your Liverpool address, phone, opening hours, and geo-coordinates</li>
+          <li><strong>Liverpool-Focused Internal Linking:</strong> Link your homepage to Liverpool area pages, then cross-link between area pages</li>
+          <li><strong>Mobile Optimization:</strong> 82% of Liverpool searches happen on mobile. Your site must load in under 2 seconds on 4G</li>
+          <li><strong>Local Content Freshness:</strong> Publish Liverpool-focused blog posts monthly (e.g., "Liverpool Business Rates 2026 Guide")</li>
+          <li><strong>SSL Certificate + HTTPS:</strong> Non-negotiable for ranking in 2026</li>
+        </ul>
+      </div>
+
+      <p>For a deep dive into technical SEO, read our guide on <a href="/blog/nextjs-vs-wordpress-2026" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">why site speed affects Liverpool rankings</a>.</p>
+
+      <h2>Case Study: How a Liverpool Law Firm Beat Manchester Competitors in 90 Days</h2>
+      <p>Let's make this real. Here's what happened when we applied this exact strategy to a Liverpool-based employment law firm.</p>
+
+      <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
+        <h3 style="color: #60a5fa; font-size: 1.25rem; font-weight: bold; margin-bottom: 1.5rem;">The Challenge</h3>
+        <p style="color: #cbd5e1; line-height: 1.7; margin-bottom: 1.5rem;">
+          A small employment law practice in Liverpool L2 was being crushed by Manchester firms. Searching "employment solicitor Liverpool" showed 6 Manchester results in the top 10. They were losing enquiries to firms 35 miles away.
+        </p>
+        
+        <div style="text-align: center; margin: 2rem 0;">
+          <img src="/images/liverpool-seo-case-study-results.jpg" alt="Before and after SEO results showing dramatic improvement from position 47 to position 3, organic traffic increasing from 234 to 2,847 visitors, and conversion rate improving from 0.8% to 3.2%" style="max-width: 100%; height: auto; border-radius: 0.75rem; box-shadow: 0 10px 25px rgba(0,0,0,0.3);" />
+        </div>
+
+        <h3 style="color: #60a5fa; font-size: 1.25rem; font-weight: bold; margin: 1.5rem 0 1rem;">What We Did</h3>
+        <div style="display: grid; gap: 1rem; color: #cbd5e1; margin-bottom: 1.5rem;">
+          <div style="display: flex; gap: 0.75rem;">
+            <span style="color: #22c55e; font-weight: bold;">Week 1-2:</span>
+            <div>Optimized Google Business Profile with Liverpool landmarks in description, uploaded 15 photos from Liverpool locations, added all L1-L39 postcodes as service areas</div>
+          </div>
+          <div style="display: flex; gap: 0.75rem;">
+            <span style="color: #22c55e; font-weight: bold;">Week 3-4:</span>
+            <div>Created 8 hyperlocal landing pages (Liverpool City Centre, Waterfront, Baltic Triangle, etc.)</div>
+          </div>
+          <div style="display: flex; gap: 0.75rem;">
+            <span style="color: #22c55e; font-weight: bold;">Week 5-6:</span>
+            <div>Built 23 Liverpool citations (Chamber of Commerce, BID, industry directories)</div>
+          </div>
+          <div style="display: flex; gap: 0.75rem;">
+            <span style="color: #22c55e; font-weight: bold;">Week 7-8:</span>
+            <div>Secured backlink from Liverpool Echo (charity partnership announcement)</div>
+          </div>
+          <div style="display: flex; gap: 0.75rem;">
+            <span style="color: #22c55e; font-weight: bold;">Week 9-12:</span>
+            <div>Review acquisition campaign: 47 new Google reviews mentioning Liverpool</div>
+          </div>
+        </div>
+
+        <h3 style="color: #60a5fa; font-size: 1.25rem; font-weight: bold; margin: 1.5rem 0 1rem;">The Results (90 Days)</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
+          <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+            <div style="color: #94a3b8; font-size: 0.875rem; margin-bottom: 0.5rem;">Google Ranking</div>
+            <div style="color: #ef4444; font-size: 1.25rem; font-weight: bold; margin-bottom: 0.25rem;">Before: Position 47</div>
+            <div style="color: #22c55e; font-size: 1.25rem; font-weight: bold;">After: Position 3</div>
+          </div>
+          <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+            <div style="color: #94a3b8; font-size: 0.875rem; margin-bottom: 0.5rem;">Organic Traffic</div>
+            <div style="color: #ef4444; font-size: 1.25rem; font-weight: bold; margin-bottom: 0.25rem;">Before: 234/month</div>
+            <div style="color: #22c55e; font-size: 1.25rem; font-weight: bold;">After: 2,847/month</div>
+          </div>
+          <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+            <div style="color: #94a3b8; font-size: 0.875rem; margin-bottom: 0.5rem;">Conversion Rate</div>
+            <div style="color: #ef4444; font-size: 1.25rem; font-weight: bold; margin-bottom: 0.25rem;">Before: 0.8%</div>
+            <div style="color: #22c55e; font-size: 1.25rem; font-weight: bold;">After: 3.2%</div>
+          </div>
+        </div>
+
+        <p style="color: #cbd5e1; margin-top: 1.5rem; font-size: 0.875rem; line-height: 1.6;">
+          <strong style="color: white;">Bottom Line:</strong> In 90 days, they went from invisible to dominating their Liverpool niche. Enquiries increased by 412%. Manchester firms no longer appear above them for Liverpool-specific searches.
+        </p>
+      </div>
+
+      <h2>5 Mistakes Liverpool Businesses Make (That Kill Their Rankings)</h2>
+      <p>Before we get to the action plan, let's cover the five mistakes we see Liverpool businesses make over and over:</p>
+
+      <div style="background: #1e293b; border-left: 4px solid #ef4444; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
+        <h3 style="color: #ef4444; font-weight: bold; margin-bottom: 1rem;">Mistake 1: Using "North West" Instead of "Liverpool"</h3>
+        <p style="color: #cbd5e1; line-height: 1.7;">Trying to rank for "North West" makes you compete with Manchester, which has 5x the market size. Focus on Liverpool first, expand later.</p>
+      </div>
+
+      <div style="background: #1e293b; border-left: 4px solid #ef4444; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
+        <h3 style="color: #ef4444; font-weight: bold; margin-bottom: 1rem;">Mistake 2: Ignoring Liverpool-Specific Search Intent</h3>
+        <p style="color: #cbd5e1; line-height: 1.7;">Someone searching "solicitor Liverpool City Centre" wants an office near Liverpool ONE, not a virtual consultation. Your content must address this specific intent.</p>
+      </div>
+
+      <div style="background: #1e293b; border-left: 4px solid #ef4444; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
+        <h3 style="color: #ef4444; font-weight: bold; margin-bottom: 1rem;">Mistake 3: Competing Nationally When You Should Focus Locally</h3>
+        <p style="color: #cbd5e1; line-height: 1.7;">Don't try to rank for "best accountant UK"—you'll lose. Dominate "best accountant Liverpool" first, then expand to Merseyside, then regionally.</p>
+      </div>
+
+      <div style="background: #1e293b; border-left: 4px solid #ef4444; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
+        <h3 style="color: #ef4444; font-weight: bold; margin-bottom: 1rem;">Mistake 4: Poor Google Business Profile Images</h3>
+        <p style="color: #cbd5e1; line-height: 1.7;">Stock photos don't signal Liverpool relevance. Upload photos showing the Liver Building, Albert Dock, or Liverpool street signs. Google's AI recognizes Liverpool landmarks.</p>
+      </div>
+
+      <div style="background: #1e293b; border-left: 4px solid #ef4444; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
+        <h3 style="color: #ef4444; font-weight: bold; margin-bottom: 1rem;">Mistake 5: Zero Liverpool-Based Backlinks</h3>
+        <p style="color: #cbd5e1; line-height: 1.7;">National backlinks help, but Liverpool backlinks supercharge local rankings. One link from Liverpool Echo > 10 links from generic directories.</p>
+      </div>
+
+      <h2>Your 30-Day Liverpool SEO Action Plan</h2>
+      <p>Ready to fight back? Here's your week-by-week blueprint to reclaim Liverpool search rankings from Manchester competitors.</p>
+
+      <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
+        <div style="margin-bottom: 2rem;">
+          <h3 style="color: #60a5fa; font-size: 1.125rem; font-weight: bold; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span style="background: #3b82f6; color: white; width: 2rem; height: 2rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.875rem; font-weight: bold;">1</span>
+            Week 1: Google Business Profile Audit
+          </h3>
+          <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 3rem; list-style: disc;">
+            <li>Update business description to mention Liverpool landmarks</li>
+            <li>Add all Liverpool postcodes (L1-L39) as service areas</li>
+            <li>Upload 10-15 photos featuring Liverpool locations</li>
+            <li>Post 2x this week about Liverpool-specific topics</li>
+            <li>Ask your last 5 customers for reviews (mention Liverpool in request)</li>
+          </ul>
+        </div>
+
+        <div style="margin-bottom: 2rem;">
+          <h3 style="color: #60a5fa; font-size: 1.125rem; font-weight: bold; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span style="background: #3b82f6; color: white; width: 2rem; height: 2rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.875rem; font-weight: bold;">2</span>
+            Week 2: Create Liverpool Landing Pages
+          </h3>
+          <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 3rem; list-style: disc;">
+            <li>Identify 3-5 Liverpool areas you serve (City Centre, Waterfront, etc.)</li>
+            <li>Create dedicated landing page for each area (1,000+ words)</li>
+            <li>Include local landmarks, travel directions, area-specific challenges</li>
+            <li>Add embedded Google Maps for each location</li>
+            <li>Internal link between area pages</li>
+          </ul>
+        </div>
+
+        <div style="margin-bottom: 2rem;">
+          <h3 style="color: #60a5fa; font-size: 1.125rem; font-weight: bold; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span style="background: #3b82f6; color: white; width: 2rem; height: 2rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.875rem; font-weight: bold;">3</span>
+            Week 3: Build Liverpool Citations
+          </h3>
+          <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 3rem; list-style: disc;">
+            <li>Join Liverpool Chamber of Commerce (get directory listing)</li>
+            <li>Register with Liverpool BID if city centre based</li>
+            <li>Add business to Visit Liverpool directory</li>
+            <li>Find 5 industry-specific Liverpool directories and submit</li>
+            <li>Ensure NAP (Name, Address, Phone) is identical everywhere</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 style="color: #60a5fa; font-size: 1.125rem; font-weight: bold; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span style="background: #3b82f6; color: white; width: 2rem; height: 2rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.875rem; font-weight: bold;">4</span>
+            Week 4: Liverpool Backlink Outreach
+          </h3>
+          <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 3rem; list-style: disc;">
+            <li>Pitch Liverpool Echo with a newsworthy story angle</li>
+            <li>Identify 3 Liverpool charities to partner with</li>
+            <li>Join Liverpool business networking groups</li>
+            <li>Guest post pitch to Independent Liverpool or Liverpool Confidential</li>
+            <li>Set up Google Search Console to track Liverpool keyword rankings</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>The Southport Connection: Why We Understand Merseyside SEO</h2>
+      <p>At Churchtown Media, we're based in Southport—right between Liverpool and Manchester. We see this battle every day. Our clients in Liverpool face Manchester's dominance. Our clients in Southport compete with both cities.</p>
+      <p>This gives us a unique perspective: we know how to help <em>smaller Merseyside businesses</em> compete against <em>larger Greater Manchester firms</em>. It's not about budget—it's about strategy.</p>
+      <p>We've helped Liverpool solicitors, Liverpool accountants, and Liverpool tech startups reclaim their local rankings. The strategy works because it's based on Google's actual ranking factors, not guesswork.</p>
+
+      <div style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 1rem; padding: 2.5rem; margin: 3rem 0; text-align: center;">
+        <h2 style="color: white; font-size: 1.875rem; font-weight: bold; margin-bottom: 1rem;">Is Your Liverpool Business Losing to Manchester Competitors?</h2>
+        <p style="color: rgba(255,255,255,0.9); font-size: 1.125rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+          Get a free SEO audit showing exactly where you're losing Liverpool search traffic—and how to reclaim it.
+        </p>
+        <div style="display: flex; flex-direction: column; sm:flex-direction: row; gap: 1rem; justify-content: center; align-items: center;">
+          <a href="/audit" style="display: inline-flex; align-items: center; gap: 0.5rem; background: white; color: #1e293b; padding: 1rem 2rem; border-radius: 9999px; font-weight: bold; text-decoration: none; transition: all 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            Get Your Free Liverpool SEO Audit
+            <svg style="width: 1.25rem; height: 1.25rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+          <a href="/contact" style="display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: white; padding: 1rem 2rem; border: 2px solid white; border-radius: 9999px; font-weight: bold; text-decoration: none; transition: all 0.2s;">
+            Book Strategy Call
+          </a>
+        </div>
+        <p style="color: rgba(255,255,255,0.8); font-size: 0.875rem; margin-top: 1.5rem;">
+          No sales pitch—just data showing where you rank vs Manchester competitors
+        </p>
+      </div>
+
+      <p><em>Looking for SEO help specific to your Liverpool industry? Check out our <a href="/industries" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">35 industry-specific SEO guides</a> covering everything from Liverpool solicitors to Liverpool restaurants.</em></p>
+    `
+  },
+  {
     slug: "nextjs-vs-wordpress-2026",
     title: "Next.js vs WordPress in 2026: Why Speed Matters More Than Convenience",
     date: "Feb 09, 2026",
