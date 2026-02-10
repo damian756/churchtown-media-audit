@@ -40,6 +40,7 @@ export default function ServicesDropdown({ isMobile = false, onItemClick }: Serv
   ];
 
   const handleClick = () => {
+    setIsOpen(false);
     if (onItemClick) onItemClick();
   };
 
@@ -89,7 +90,7 @@ export default function ServicesDropdown({ isMobile = false, onItemClick }: Serv
   // DESKTOP VERSION
   return (
     <div
-      className="relative"
+      className="relative group"
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
     >
@@ -99,7 +100,14 @@ export default function ServicesDropdown({ isMobile = false, onItemClick }: Serv
 
       {/* DROPDOWN MENU */}
       {isOpen && (
-        <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[500px] max-w-[95vw] bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl z-[100] p-6">
+        <>
+          {/* Invisible bridge to prevent menu closing when moving mouse down */}
+          <div className="absolute top-full left-1/2 -translate-x-1/2 w-[500px] max-w-[95vw] h-2 z-[99]" />
+          
+          <div 
+            className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[500px] max-w-[95vw] bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl z-[100] p-6"
+            onClick={() => setIsOpen(false)}
+          >
           
           {/* HEADER */}
           <div className="mb-4 pb-3 border-b border-slate-800">

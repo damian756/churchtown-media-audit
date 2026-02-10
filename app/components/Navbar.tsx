@@ -35,7 +35,7 @@ export default function Navbar() {
 
   // STREAMLINED LINKS ARRAY
   // Services and Who We Help are handled by dropdown components
-  // FAQ and Reviews moved to footer for cleaner navigation
+  // Reviews and FAQ moved to footer for cleaner nav
   const links = [
     { name: "Work", href: "/work" },
     { name: "About", href: "/about" },
@@ -111,20 +111,24 @@ export default function Navbar() {
         </button>
 
         {/* MOBILE MENU OVERLAY */}
-        <div className={`fixed inset-0 bg-slate-950 z-40 flex flex-col items-center justify-start pt-24 gap-8 transition-all duration-300 overflow-y-auto ${isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"}`}>
+        <div className={`fixed inset-0 bg-slate-950 z-40 flex flex-col items-start justify-start pt-24 px-6 gap-6 transition-all duration-300 overflow-y-auto ${isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"}`}>
           
-          {/* SERVICES MOBILE */}
-          <ServicesDropdown isMobile={true} onItemClick={() => setIsOpen(false)} />
+          {/* SERVICES DROPDOWN MOBILE */}
+          <div className="w-full">
+            <ServicesDropdown isMobile={true} onItemClick={() => setIsOpen(false)} />
+          </div>
           
           {/* WHO WE HELP MOBILE */}
-          <WhoWeHelpMegaMenu isMobile={true} onItemClick={() => setIsOpen(false)} />
+          <div className="w-full">
+            <WhoWeHelpMegaMenu isMobile={true} onItemClick={() => setIsOpen(false)} />
+          </div>
           
-          {/* STANDARD LINKS */}
+          {/* STANDARD LINKS MOBILE */}
           {links.map((link) => (
             <Link 
                 key={link.name} 
                 href={link.href} 
-                className="text-3xl font-bold text-white hover:text-blue-400 transition-colors"
+                className="text-3xl font-bold text-white hover:text-blue-400 transition-colors w-full"
             >
               {link.name}
             </Link>
@@ -132,7 +136,7 @@ export default function Navbar() {
           
           <Link 
             href="/audit" 
-            className="mt-4 bg-blue-600 text-white px-8 py-4 rounded-full text-xl font-bold hover:bg-blue-700 transition-all shadow-xl shadow-blue-600/20 flex items-center gap-2"
+            className="mt-4 bg-blue-600 text-white px-8 py-4 rounded-full text-xl font-bold hover:bg-blue-700 transition-all shadow-xl shadow-blue-600/20 flex items-center gap-2 self-center"
           >
             Get Free Audit <ArrowRight className="w-5 h-5" />
           </Link>

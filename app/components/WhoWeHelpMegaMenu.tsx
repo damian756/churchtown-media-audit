@@ -78,7 +78,7 @@ export default function WhoWeHelpMegaMenu({ isMobile = false, onItemClick }: Who
   // DESKTOP VERSION
   return (
     <div
-      className="relative"
+      className="relative group"
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
     >
@@ -88,7 +88,14 @@ export default function WhoWeHelpMegaMenu({ isMobile = false, onItemClick }: Who
 
       {/* MEGA MENU DROPDOWN */}
       {isOpen && (
-        <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[1000px] max-w-[95vw] bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl z-[100] p-8">
+        <>
+          {/* Invisible bridge to prevent menu closing when moving mouse down */}
+          <div className="absolute top-full left-1/2 -translate-x-1/2 w-[1000px] max-w-[95vw] h-2 z-[99]" />
+          
+          <div 
+            className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[1000px] max-w-[95vw] bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl z-[100] p-8"
+            onClick={() => setIsOpen(false)}
+          >
           
           {/* HEADER */}
           <div className="mb-6 pb-4 border-b border-slate-800">
