@@ -181,12 +181,6 @@ export const posts: BlogPost[] = [
       <hr />
       
       <p><em>Not sure if your current WordPress site is hurting your rankings? We offer a free <a href="/audit" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Core Web Vitals audit</a> that shows you exactly where you’re losing visitors and rankings. No sales pitch—just the raw data.</em></p>
-      
-      <div style="margin-top: 2rem; text-align: center;">
-        <a href="/audit" class="inline-flex items-center justify-center rounded-xl bg-blue-600 px-8 py-4 font-bold text-white shadow-lg transition-all hover:bg-blue-700 hover:-translate-y-1">
-            Get Your Free Speed Audit
-        </a>
-      </div>
     `
   },
   {

@@ -76,9 +76,9 @@ export default function BlogFeed({ posts }: { posts: BlogPost[] }) {
   };
 
   return (
-    <>
+    <div className="overflow-x-hidden">
       {/* HERO SECTION */}
-      <div className="max-w-7xl mx-auto px-6 mb-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-12">
         <div className="inline-flex items-center gap-2 bg-slate-900 border border-slate-800 rounded-full px-4 py-1.5 mb-8">
             <span className="text-xs font-bold text-blue-400 uppercase tracking-wide">The Knowledge Base</span>
         </div>
@@ -137,8 +137,8 @@ export default function BlogFeed({ posts }: { posts: BlogPost[] }) {
       </div>
 
       {/* FEATURED HERO ARTICLE */}
-      <div className="max-w-7xl mx-auto px-6 mb-12">
-        <Link href={`/blog/${heroPost.slug}`} className="group block relative overflow-hidden rounded-[2rem] bg-slate-900 aspect-[2/1] md:aspect-[2.5/1] border border-slate-800 shadow-2xl">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-12">
+        <Link href={`/blog/${heroPost.slug}`} className="group block relative overflow-hidden rounded-2xl md:rounded-[2rem] bg-slate-900 aspect-[2/1] md:aspect-[2.5/1] border border-slate-800 shadow-2xl">
             <Image 
                 src={heroPost.image} 
                 alt={heroPost.title} 
@@ -146,7 +146,7 @@ export default function BlogFeed({ posts }: { posts: BlogPost[] }) {
                 className="object-cover opacity-50 group-hover:scale-105 transition-transform duration-700"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent z-10"></div>
-            <div className="absolute bottom-0 left-0 p-6 md:p-8 z-20 max-w-3xl">
+            <div className="absolute bottom-0 left-0 p-4 sm:p-6 md:p-8 z-20 max-w-3xl">
                 <div className="inline-block bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
                     Latest Report
                 </div>
@@ -162,7 +162,7 @@ export default function BlogFeed({ posts }: { posts: BlogPost[] }) {
       </div>
 
       {/* CATEGORY FILTER */}
-      <div className="max-w-7xl mx-auto px-6 mb-12 flex flex-wrap gap-2">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-12 flex flex-wrap gap-2">
         {categories.map((cat, i) => (
             <button 
                 key={i} 
@@ -179,7 +179,7 @@ export default function BlogFeed({ posts }: { posts: BlogPost[] }) {
       </div>
 
       {/* DYNAMIC POSTS GRID */}
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 min-h-[400px]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 min-h-[400px]">
         {gridPosts.length > 0 ? (
             gridPosts.map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`} className="group bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:border-blue-200 transition-all duration-300 flex flex-col h-full animate-in fade-in zoom-in-95 duration-300">
@@ -222,7 +222,7 @@ export default function BlogFeed({ posts }: { posts: BlogPost[] }) {
       </div>
 
       {/* FOOTER */}
-      <div className="max-w-4xl mx-auto px-6 mt-16 text-center border-t border-slate-700 pt-12">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 mt-16 text-center border-t border-slate-700 pt-12">
          <h2 className="text-2xl font-bold text-white mb-4">Why we publish this data</h2>
          <p className="text-slate-400 leading-relaxed">
             Most agencies hoard their secrets. We believe that an educated client is a better client. 
@@ -230,6 +230,6 @@ export default function BlogFeed({ posts }: { posts: BlogPost[] }) {
             our goal is to provide the actionable intelligence you need to grow.
          </p>
       </div>
-    </>
+    </div>
   );
 }
