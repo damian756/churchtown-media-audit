@@ -120,7 +120,7 @@ export default function ContactPage() {
                             </div>
                             <div>
                                 <p className="text-sm font-bold text-slate-400 uppercase tracking-wide mb-1">Email</p>
-                                <a href="mailto:hello@churchtownmedia.co.uk" className="text-lg font-medium text-white hover:text-blue-400 transition-colors">
+                                <a href="mailto:hello@churchtownmedia.co.uk" className="text-base md:text-lg font-medium text-white hover:text-blue-400 transition-colors break-all">
                                     hello@churchtownmedia.co.uk
                                 </a>
                             </div>
