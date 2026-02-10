@@ -90,7 +90,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium text-slate-600 relative z-10">
         <p>&copy; {currentYear} Churchtown Media Ltd. Company No. 16960442. All rights reserved.</p>
         
-        <div className="flex gap-6">
+        <div className="flex flex-wrap gap-6 justify-center">
             <Link href="/frequently-asked-questions" className="hover:text-slate-400 transition-colors">FAQ</Link>
             <Link href="/privacy" className="hover:text-slate-400 transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-slate-400 transition-colors">Terms of Service</Link>

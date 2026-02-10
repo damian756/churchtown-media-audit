@@ -39,6 +39,7 @@ export default function Navbar() {
     { name: "Work", href: "/work" },
     { name: "Insights", href: "/blog" },
     { name: "Reviews", href: "/testimonials" },
+    { name: "FAQ", href: "/frequently-asked-questions" },
     { name: "Contact", href: "/contact" },
   ];
 
