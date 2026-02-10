@@ -91,6 +91,7 @@ export default function Footer() {
         <p>&copy; {currentYear} Churchtown Media Ltd. Company No. 16960442. All rights reserved.</p>
         
         <div className="flex gap-6">
+            <Link href="/frequently-asked-questions" className="hover:text-slate-400 transition-colors">FAQ</Link>
             <Link href="/privacy" className="hover:text-slate-400 transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-slate-400 transition-colors">Terms of Service</Link>
         </div>
