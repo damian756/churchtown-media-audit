@@ -104,7 +104,7 @@ export default function Navbar() {
         </button>
 
         {/* MOBILE MENU OVERLAY */}
-        <div className={`fixed inset-0 bg-slate-950 z-40 flex flex-col items-center justify-center gap-8 transition-all duration-300 ${isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"}`}>
+        <div className={`fixed inset-0 bg-slate-950 z-40 flex flex-col items-center justify-start pt-24 gap-8 transition-all duration-300 overflow-y-auto ${isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"}`}>
           {links.map((link) => (
             <Link 
                 key={link.name} 
