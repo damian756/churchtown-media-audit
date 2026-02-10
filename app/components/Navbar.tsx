@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { usePathname } from "next/navigation";
+import WhoWeHelpMegaMenu from "./WhoWeHelpMegaMenu";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,6 +38,8 @@ export default function Navbar() {
     { name: "Web Design", href: "/services/web-design" },
     { name: "SEO", href: "/services/seo" },
     { name: "Work", href: "/work" },
+    { name: "About", href: "/about" },
+    // "Who We Help" is handled by WhoWeHelpMegaMenu component
     { name: "Insights", href: "/blog" },
     { name: "Reviews", href: "/testimonials" },
     { name: "FAQ", href: "/frequently-asked-questions" },
@@ -65,7 +68,26 @@ export default function Navbar() {
 
         {/* DESKTOP NAV */}
         <div className="hidden lg:flex items-center gap-8">
-          {links.map((link) => (
+          {links.slice(0, 5).map((link) => (
+            <Link 
+                key={link.name} 
+                href={link.href} 
+                className={`text-sm font-bold transition-colors hover:-translate-y-0.5 transform duration-200 ${
+                    useWhiteText 
+                    ? "text-slate-200 hover:text-white" 
+                    : pathname.startsWith(link.href) && link.href !== "/" // Active state logic
+                        ? "text-blue-600" 
+                        : "text-slate-600 hover:text-blue-600"
+                }`}
+            >
+              {link.name}
+            </Link>
+          ))}
+          
+          {/* WHO WE HELP MEGA MENU */}
+          <WhoWeHelpMegaMenu />
+          
+          {links.slice(5).map((link) => (
             <Link 
                 key={link.name} 
                 href={link.href} 
@@ -105,7 +127,20 @@ export default function Navbar() {
 
         {/* MOBILE MENU OVERLAY */}
         <div className={`fixed inset-0 bg-slate-950 z-40 flex flex-col items-center justify-start pt-24 gap-8 transition-all duration-300 overflow-y-auto ${isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"}`}>
-          {links.map((link) => (
+          {links.slice(0, 5).map((link) => (
+            <Link 
+                key={link.name} 
+                href={link.href} 
+                className="text-3xl font-bold text-white hover:text-blue-400 transition-colors"
+            >
+              {link.name}
+            </Link>
+          ))}
+          
+          {/* WHO WE HELP MOBILE */}
+          <WhoWeHelpMegaMenu isMobile={true} onItemClick={() => setIsOpen(false)} />
+          
+          {links.slice(5).map((link) => (
             <Link 
                 key={link.name} 
                 href={link.href} 

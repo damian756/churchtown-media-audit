@@ -1,25 +1,32 @@
 import { MetadataRoute } from 'next';
-import { posts } from '../lib/posts'; // <--- FIXED: Go UP one level (..) to find lib
+import { posts } from '../lib/posts';
+import { industries } from '../lib/industries';
+import { locations } from '../lib/locations';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.churchtownmedia.co.uk';
 
   // 1. Static Pages (Your main menu links)
-  // Ensure these match your Canonical URLs exactly (No trailing slashes)
   const staticPages = [
     '',
     '/services/web-design',
     '/services/seo',
     '/services/small-business',
     '/work',
+    '/about',
     '/contact',
     '/audit',
     '/blog',
+    '/industries',
+    '/locations',
+    '/testimonials',
+    '/frequently-asked-questions',
+    '/southport-growth',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
-    priority: route === '' ? 1 : 0.8,
+    priority: route === '' ? 1 : route === '/industries' ? 0.9 : 0.8,
   }));
 
   // 2. Dynamic Blog Posts
@@ -30,5 +37,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...blogPages];
+  // 3. Industry Pages (35 pages)
+  const industryPages = industries.map((industry) => ({
+    url: `${baseUrl}/industries/${industry.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.85, // High priority - key landing pages
+  }));
+
+  // 4. Location Pages
+  const locationPages = locations.map((location) => ({
+    url: `${baseUrl}/locations/${location.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.75,
+  }));
+
+  return [...staticPages, ...blogPages, ...industryPages, ...locationPages];
 }

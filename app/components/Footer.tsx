@@ -43,6 +43,7 @@ export default function Footer() {
                 <li><Link href="/services/web-design" className="hover:text-blue-400 transition-colors">Enterprise Web Design</Link></li>
                 <li><Link href="/services/seo" className="hover:text-blue-400 transition-colors">Data-Driven SEO</Link></li>
                 <li><Link href="/services/small-business" className="hover:text-blue-400 transition-colors">Small Business Websites</Link></li>
+                <li><Link href="/industries" className="hover:text-blue-400 transition-colors">Industries We Serve</Link></li>
                 <li><Link href="/audit" className="hover:text-blue-400 transition-colors">Free SEO Audit</Link></li>
             </ul>
         </div>
@@ -91,6 +92,7 @@ export default function Footer() {
         <p>&copy; {currentYear} Churchtown Media Ltd. Company No. 16960442. All rights reserved.</p>
         
         <div className="flex flex-wrap gap-6 justify-center">
+            <Link href="/about" className="hover:text-slate-400 transition-colors">About</Link>
             <Link href="/frequently-asked-questions" className="hover:text-slate-400 transition-colors">FAQ</Link>
             <Link href="/privacy" className="hover:text-slate-400 transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-slate-400 transition-colors">Terms of Service</Link>
