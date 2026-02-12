@@ -1,6 +1,5 @@
 import { ImageResponse } from 'next/og';
 
-export const runtime = 'edge';
 export const alt = 'Churchtown Media - Digital Growth for Southport Businesses';
 export const size = {
   width: 1200,
