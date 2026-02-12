@@ -1410,7 +1410,6 @@ export const posts: BlogPost[] = [
     image: "/images/churchtown-botanic-hero.jpg",
     excerpt: "We're based here. This is how we help Churchtown businesses dominate the Botanic Gardens tourism traffic and local village searches.",
     content: `
-      <p>I'm writing this from our office in Churchtown. Right now, I can see the Botanic Gardens from my window. This isn't just another blog post about SEO--this is about OUR neighborhood.</p>
       <p>Churchtown is where <strong>Churchtown Media</strong> is based. We chose this village for the same reason you're reading this: it's a hidden gem with genuine character, heritage tourism (Botanic Gardens attracts 80,000+ visitors annually), and a tight-knit community that values local businesses.</p>
       <p>This is the exact hyperlocal SEO strategy we use for ourselves--and for our Churchtown clients.</p>
 
