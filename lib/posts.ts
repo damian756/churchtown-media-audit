@@ -1,4 +1,4 @@
-export interface BlogPost {
+﻿export interface BlogPost {
   slug: string;
   title: string;
   date: string;
@@ -15,17 +15,17 @@ export const posts: BlogPost[] = [
     date: "Feb 10, 2026",
     category: "SEO Demystified",
     image: "/images/seo-liverpool-hero.jpg",
-    excerpt: "Manchester businesses dominate 'best [service] near me' searches—even in Liverpool postcodes. Here's why Liverpool's local SEO is broken, and the 5-step process to reclaim your rankings.",
+    excerpt: "Manchester businesses dominate 'best [service] near me' searches--even in Liverpool postcodes. Here's why Liverpool's local SEO is broken, and the 5-step process to reclaim your rankings.",
     content: `
-      <p>Search <em>"best solicitor Liverpool"</em> on Google Maps right now. Go ahead—I'll wait.</p>
+      <p>Search <em>"best solicitor Liverpool"</em> on Google Maps right now. Go ahead--I'll wait.</p>
       <p>Notice anything strange? <strong>Four of the top 10 results are Manchester firms.</strong></p>
-      <p>You're not imagining it. Liverpool businesses are losing local search traffic to Manchester, Leeds, and even Chester—<em>in their own postcodes</em>. If you're a Liverpool business owner watching your competitors outrank you despite being miles away, this isn't paranoia. It's data.</p>
+      <p>You're not imagining it. Liverpool businesses are losing local search traffic to Manchester, Leeds, and even Chester--<em>in their own postcodes</em>. If you're a Liverpool business owner watching your competitors outrank you despite being miles away, this isn't paranoia. It's data.</p>
       <p>Here's the uncomfortable truth: 76% of local mobile searches result in a visit within 24 hours, according to Google. If Manchester firms are capturing those searches in L1-L39 postcodes, they're stealing your customers before you even know they exist.</p>
-      <p>At <a href="/" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Churchtown Media</a>, we specialize in <a href="/services/seo" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">technical SEO</a> for Merseyside businesses. We've analyzed hundreds of Liverpool local search results, and we're going to show you exactly why this is happening—and the 5-pillar strategy to fix it.</p>
+      <p>At <a href="/" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Churchtown Media</a>, we specialize in <a href="/services/seo" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">technical SEO</a> for Merseyside businesses. We've analyzed hundreds of Liverpool local search results, and we're going to show you exactly why this is happening--and the 5-pillar strategy to fix it.</p>
 
       <h2>Why Manchester Firms Outrank Liverpool Businesses (In Liverpool)</h2>
       <p>Let's start with the uncomfortable reality: <strong>Google doesn't care about city boundaries.</strong></p>
-      <p>When someone in Liverpool searches "best accountant near me," Google's algorithm looks at a 25-mile radius. That radius includes Manchester, Warrington, and parts of Chester. Google ranks businesses based on relevance, authority, and proximity—not where the business <em>wants</em> to rank.</p>
+      <p>When someone in Liverpool searches "best accountant near me," Google's algorithm looks at a 25-mile radius. That radius includes Manchester, Warrington, and parts of Chester. Google ranks businesses based on relevance, authority, and proximity--not where the business <em>wants</em> to rank.</p>
 
       <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
         <h3 style="color: #60a5fa; font-size: 1.25rem; font-weight: bold; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
@@ -50,7 +50,7 @@ export const posts: BlogPost[] = [
           </div>
         </div>
         <p style="color: #cbd5e1; margin-top: 1.5rem; font-size: 0.875rem; line-height: 1.6;">
-          <strong style="color: #60a5fa;">What this means:</strong> Manchester businesses have more reviews, stronger backlink profiles, and wider citation coverage. Google's algorithm interprets this as authority—even when ranking for Liverpool searches.
+          <strong style="color: #60a5fa;">What this means:</strong> Manchester businesses have more reviews, stronger backlink profiles, and wider citation coverage. Google's algorithm interprets this as authority--even when ranking for Liverpool searches.
         </p>
       </div>
 
@@ -67,7 +67,7 @@ export const posts: BlogPost[] = [
       <p>This fragmentation means Liverpool businesses compete with <em>each other</em> for hyperlocal keywords, while Manchester firms swoop in to dominate the generic "Liverpool" searches. It's death by a thousand cuts.</p>
 
       <h2>How to Dominate 'Near Me' Searches in L1-L39 Postcodes</h2>
-      <p>Here's the 5-pillar strategy we use for Liverpool clients. This isn't theory—this is the exact process that took a Liverpool law firm from page 4 to the Local Pack in 90 days.</p>
+      <p>Here's the 5-pillar strategy we use for Liverpool clients. This isn't theory--this is the exact process that took a Liverpool law firm from page 4 to the Local Pack in 90 days.</p>
 
       <h3>Pillar 1: Google Business Profile Optimization (The Foundation)</h3>
       <p>Your Google Business Profile (GBP) is the single most important ranking factor for local search. Yet 80% of Liverpool businesses treat it like an afterthought.</p>
@@ -75,12 +75,12 @@ export const posts: BlogPost[] = [
       <div style="background: #1e293b; border-left: 4px solid #3b82f6; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
         <h4 style="color: #60a5fa; font-weight: bold; margin-bottom: 1rem;">The Liverpool GBP Checklist:</h4>
         <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
-          <li><strong>Primary Category:</strong> Choose the most specific category (not "Legal Services"—go for "Employment Attorney" or "Family Law Attorney")</li>
+          <li><strong>Primary Category:</strong> Choose the most specific category (not "Legal Services"--go for "Employment Attorney" or "Family Law Attorney")</li>
           <li><strong>Service Areas:</strong> List every Liverpool postcode you serve (L1, L2, L3, etc.) but don't claim areas where you have no physical presence</li>
           <li><strong>Liverpool Landmarks in Description:</strong> Naturally mention Albert Dock, Liverpool ONE, Anfield, or the Liver Building to signal local relevance</li>
           <li><strong>Photos with Liverpool Context:</strong> Upload images showing your office with Liverpool landmarks visible, or team photos at Liverpool locations</li>
           <li><strong>Review Strategy:</strong> Target 50+ reviews in 90 days with this exact question: "Can you mention which Liverpool area you're based in?" (This gets Liverpool postcodes into review text)</li>
-          <li><strong>Post Frequency:</strong> 2x per week minimum—Google rewards active profiles</li>
+          <li><strong>Post Frequency:</strong> 2x per week minimum--Google rewards active profiles</li>
         </ul>
       </div>
 
@@ -143,14 +143,14 @@ export const posts: BlogPost[] = [
             <span style="color: #3b82f6; font-weight: bold;">✓</span>
             <div>
               <strong style="color: white;">Liverpool BID</strong><br/>
-              <span style="font-size: 0.875rem;">Business Improvement District—essential for city centre businesses</span>
+              <span style="font-size: 0.875rem;">Business Improvement District--essential for city centre businesses</span>
             </div>
           </div>
           <div style="display: flex; align-items: start; gap: 0.75rem;">
             <span style="color: #3b82f6; font-weight: bold;">✓</span>
             <div>
               <strong style="color: white;">Visit Liverpool Directory</strong><br/>
-              <span style="font-size: 0.875rem;">Tourism authority—great for hospitality/retail</span>
+              <span style="font-size: 0.875rem;">Tourism authority--great for hospitality/retail</span>
             </div>
           </div>
           <div style="display: flex; align-items: start; gap: 0.75rem;">
@@ -292,7 +292,7 @@ export const posts: BlogPost[] = [
 
       <div style="background: #1e293b; border-left: 4px solid #ef4444; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
         <h3 style="color: #ef4444; font-weight: bold; margin-bottom: 1rem;">Mistake 3: Competing Nationally When You Should Focus Locally</h3>
-        <p style="color: #cbd5e1; line-height: 1.7;">Don't try to rank for "best accountant UK"—you'll lose. Dominate "best accountant Liverpool" first, then expand to Merseyside, then regionally.</p>
+        <p style="color: #cbd5e1; line-height: 1.7;">Don't try to rank for "best accountant UK"--you'll lose. Dominate "best accountant Liverpool" first, then expand to Merseyside, then regionally.</p>
       </div>
 
       <div style="background: #1e293b; border-left: 4px solid #ef4444; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
@@ -367,14 +367,14 @@ export const posts: BlogPost[] = [
       </div>
 
       <h2>The Southport Connection: Why We Understand Merseyside SEO</h2>
-      <p>At Churchtown Media, we're based in Southport—right between Liverpool and Manchester. We see this battle every day. Our clients in Liverpool face Manchester's dominance. Our clients in Southport compete with both cities.</p>
-      <p>This gives us a unique perspective: we know how to help <em>smaller Merseyside businesses</em> compete against <em>larger Greater Manchester firms</em>. It's not about budget—it's about strategy.</p>
+      <p>At Churchtown Media, we're based in Southport--right between Liverpool and Manchester. We see this battle every day. Our clients in Liverpool face Manchester's dominance. Our clients in Southport compete with both cities.</p>
+      <p>This gives us a unique perspective: we know how to help <em>smaller Merseyside businesses</em> compete against <em>larger Greater Manchester firms</em>. It's not about budget--it's about strategy.</p>
       <p>We've helped Liverpool solicitors, Liverpool accountants, and Liverpool tech startups reclaim their local rankings. The strategy works because it's based on Google's actual ranking factors, not guesswork.</p>
 
       <div style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 1rem; padding: 2.5rem; margin: 3rem 0; text-align: center;">
         <h2 style="color: white; font-size: 1.875rem; font-weight: bold; margin-bottom: 1rem;">Is Your Liverpool Business Losing to Manchester Competitors?</h2>
         <p style="color: rgba(255,255,255,0.9); font-size: 1.125rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-          Get a free SEO audit showing exactly where you're losing Liverpool search traffic—and how to reclaim it.
+          Get a free SEO audit showing exactly where you're losing Liverpool search traffic--and how to reclaim it.
         </p>
         <div style="display: flex; flex-direction: column; sm:flex-direction: row; gap: 1rem; justify-content: center; align-items: center;">
           <a href="/audit" style="display: inline-flex; align-items: center; gap: 0.5rem; background: white; color: #1e293b; padding: 1rem 2rem; border-radius: 9999px; font-weight: bold; text-decoration: none; transition: all 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -386,7 +386,7 @@ export const posts: BlogPost[] = [
           </a>
         </div>
         <p style="color: rgba(255,255,255,0.8); font-size: 0.875rem; margin-top: 1.5rem;">
-          No sales pitch—just data showing where you rank vs Manchester competitors
+          No sales pitch--just data showing where you rank vs Manchester competitors
         </p>
       </div>
 
@@ -399,27 +399,27 @@ export const posts: BlogPost[] = [
     date: "Feb 09, 2026",
     category: "Web Development",
     image: "/images/analytics.jpg",
-    excerpt: "WordPress powers 43% of the web, but it’s killing your Google rankings. Here’s the technical breakdown of why Next.js websites rank higher, load faster, and convert better in 2026.",
+    excerpt: "WordPress powers 43% of the web, but it's killing your Google rankings. Here's the technical breakdown of why Next.js websites rank higher, load faster, and convert better in 2026.",
     content: `
-      <p>Every week, a business owner tells us the same story: <em>“I just need a simple website. My mate said I should use WordPress—it’s easier.”</em></p>
-      <p>Six months later, they’re back. Their site is slow. They’re not ranking. The plugins keep breaking. And the “simple” website now costs £200/month in hosting, security, and maintenance fees.</p>
-      <p>Here’s the uncomfortable truth: <strong>WordPress was built in 2003</strong>. It was designed for blogging when Google was still a scrappy Stanford project and the iPhone didn’t exist. The web has evolved. WordPress hasn’t.</p>
-      <p>At <a href="/" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Churchtown Media</a>, we build websites using <strong>Next.js</strong>—the same technology Netflix, TikTok, and Nike use to handle billions of visitors. Here’s why that matters for your small business in Southport.</p>
+      <p>Every week, a business owner tells us the same story: <em>"I just need a simple website. My mate said I should use WordPress--it's easier."</em></p>
+      <p>Six months later, they're back. Their site is slow. They're not ranking. The plugins keep breaking. And the "simple" website now costs £200/month in hosting, security, and maintenance fees.</p>
+      <p>Here's the uncomfortable truth: <strong>WordPress was built in 2003</strong>. It was designed for blogging when Google was still a scrappy Stanford project and the iPhone didn't exist. The web has evolved. WordPress hasn't.</p>
+      <p>At <a href="/" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Churchtown Media</a>, we build websites using <strong>Next.js</strong>--the same technology Netflix, TikTok, and Nike use to handle billions of visitors. Here's why that matters for your small business in Southport.</p>
       
       <h2>The Speed Gap: Why Google Punishes WordPress</h2>
-      <p>Let’s start with the metric Google cares about most: <strong>Core Web Vitals</strong>.</p>
-      <p>In 2021, Google made site speed a direct ranking factor. If your website is slow, you don’t just lose visitors—you lose rankings. Google’s data shows that <strong>53% of mobile visitors abandon sites</strong> that take longer than 3 seconds to load.</p>
+      <p>Let's start with the metric Google cares about most: <strong>Core Web Vitals</strong>.</p>
+      <p>In 2021, Google made site speed a direct ranking factor. If your website is slow, you don't just lose visitors--you lose rankings. Google's data shows that <strong>53% of mobile visitors abandon sites</strong> that take longer than 3 seconds to load.</p>
       
       <h3>The Benchmark Test</h3>
-      <p>We ran Google PageSpeed Insights on 50 local Southport business websites. Here’s what we found:</p>
+      <p>We ran Google PageSpeed Insights on 50 local Southport business websites. Here's what we found:</p>
       <ul>
         <li><strong>WordPress sites:</strong> Average load time <strong>4.8 seconds</strong> (Mobile)</li>
         <li><strong>Next.js sites:</strong> Average load time <strong>0.9 seconds</strong> (Mobile)</li>
       </ul>
-      <p>That’s a <strong>5x performance gap</strong>. In Google’s eyes, that’s the difference between a Ferrari and a milk float.</p>
+      <p>That's a <strong>5x performance gap</strong>. In Google's eyes, that's the difference between a Ferrari and a milk float.</p>
       
       <h3>Why WordPress is Slow (The Technical Reality)</h3>
-      <p>WordPress wasn’t designed for performance. It was designed for <em>flexibility</em>. Every time someone visits your WordPress site, here’s what happens behind the scenes:</p>
+      <p>WordPress wasn't designed for performance. It was designed for <em>flexibility</em>. Every time someone visits your WordPress site, here's what happens behind the scenes:</p>
       <ol>
         <li>The server runs a PHP script.</li>
         <li>It queries a MySQL database (sometimes 50+ times for a single page).</li>
@@ -428,22 +428,22 @@ export const posts: BlogPost[] = [
         <li>The server stitches it all together and <em>finally</em> sends HTML to the browser.</li>
       </ol>
       <p>This process takes <strong>2-5 seconds</strong> on a good day. On a cheap shared hosting plan (which most small businesses use), it can take 8+ seconds.</p>
-      <p>By the time your homepage appears, your visitor has already clicked “Back” and is on your competitor’s <a href="/services/web-design" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">faster Next.js website</a>.</p>
+      <p>By the time your homepage appears, your visitor has already clicked "Back" and is on your competitor's <a href="/services/web-design" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">faster Next.js website</a>.</p>
       
       <h2>Next.js: Built for the 2026 Web</h2>
       <p>Next.js takes the opposite approach. Instead of generating your page <em>every single time</em> someone visits, it <strong>pre-builds</strong> your entire website into ultra-fast static HTML files.</p>
-      <p>When a user clicks on your site, they aren’t waiting for a database query or PHP script to run. They’re getting a pre-rendered page that loads in milliseconds.</p>
+      <p>When a user clicks on your site, they aren't waiting for a database query or PHP script to run. They're getting a pre-rendered page that loads in milliseconds.</p>
       
       <h3>The Technical Advantages</h3>
       <p><strong>1. Static Generation (The Secret Weapon)</strong></p>
-      <p>Next.js “compiles” your website at build time. This means your 10-page website is transformed into 10 lightning-fast HTML files hosted on a global CDN (Content Delivery Network). When someone in Southport visits your site, they’re loading a file from a server 15 miles away, not a server in Texas.</p>
+      <p>Next.js "compiles" your website at build time. This means your 10-page website is transformed into 10 lightning-fast HTML files hosted on a global CDN (Content Delivery Network). When someone in Southport visits your site, they're loading a file from a server 15 miles away, not a server in Texas.</p>
       
       <p><strong>2. No Plugins = No Bloat</strong></p>
       <p>WordPress sites often have 20-40 plugins installed. Each one adds weight. Each one is a potential security hole. Each one slows you down.</p>
-      <p>Next.js sites have zero plugins. Every feature is <em>coded</em> directly into the site. Want a contact form? We write 50 lines of React code. Want SEO optimization? We inject structured data directly into the HTML. It’s lean, fast, and secure.</p>
+      <p>Next.js sites have zero plugins. Every feature is <em>coded</em> directly into the site. Want a contact form? We write 50 lines of React code. Want SEO optimization? We inject structured data directly into the HTML. It's lean, fast, and secure.</p>
       
       <p><strong>3. Image Optimization (The Hidden Performance Killer)</strong></p>
-      <p>Here’s a mistake we see on 90% of WordPress sites: someone uploads a 4MB photo straight from their iPhone. WordPress does nothing to stop this. The result? Your homepage now takes 12 seconds to load on 4G.</p>
+      <p>Here's a mistake we see on 90% of WordPress sites: someone uploads a 4MB photo straight from their iPhone. WordPress does nothing to stop this. The result? Your homepage now takes 12 seconds to load on 4G.</p>
       <p>Next.js has <strong>automatic image optimization</strong> built in. Upload a 4MB image, and Next.js automatically:</p>
       <ul>
         <li>Compresses it to under 100KB</li>
@@ -455,41 +455,41 @@ export const posts: BlogPost[] = [
       
       <h2>The Security Nightmare</h2>
       <p>WordPress powers 43% of the internet. That makes it the #1 target for hackers.</p>
-      <p>According to Sucuri’s 2025 Website Threat Report, <strong>WordPress accounted for 94% of all hacked CMS websites</strong>. Why? Because hackers know that most small businesses never update their plugins.</p>
-      <p>A single outdated plugin—say, an old version of Contact Form 7 or Yoast SEO—can give attackers a backdoor into your entire site. Once they’re in, they can inject spam links, steal customer data, or hold your site for ransom.</p>
+      <p>According to Sucuri's 2025 Website Threat Report, <strong>WordPress accounted for 94% of all hacked CMS websites</strong>. Why? Because hackers know that most small businesses never update their plugins.</p>
+      <p>A single outdated plugin--say, an old version of Contact Form 7 or Yoast SEO--can give attackers a backdoor into your entire site. Once they're in, they can inject spam links, steal customer data, or hold your site for ransom.</p>
       
       <h3>Next.js: Unhackable by Design</h3>
-      <p>Next.js sites don’t have a “backend” in the traditional sense. There’s no WordPress admin panel. There’s no database of usernames and passwords sitting on a server waiting to be brute-forced.</p>
-      <p>Static sites are <strong>read-only</strong>. A hacker can’t inject malicious code into a file that doesn’t exist on the server. The entire site is pre-built and served from a CDN, making it nearly impossible to compromise.</p>
+      <p>Next.js sites don't have a "backend" in the traditional sense. There's no WordPress admin panel. There's no database of usernames and passwords sitting on a server waiting to be brute-forced.</p>
+      <p>Static sites are <strong>read-only</strong>. A hacker can't inject malicious code into a file that doesn't exist on the server. The entire site is pre-built and served from a CDN, making it nearly impossible to compromise.</p>
       
       <h2>The SEO Advantage</h2>
-      <p>Let’s talk rankings. Google’s algorithm has evolved significantly in the last few years. In 2026, three technical factors dominate:</p>
+      <p>Let's talk rankings. Google's algorithm has evolved significantly in the last few years. In 2026, three technical factors dominate:</p>
       
       <h3>1. Core Web Vitals (The Speed Test)</h3>
       <p>Google measures three performance metrics:</p>
       <ul>
         <li><strong>LCP (Largest Contentful Paint):</strong> How fast does the main content load? WordPress average: <strong>4.2s</strong>. Next.js average: <strong>1.1s</strong>.</li>
-        <li><strong>CLS (Cumulative Layout Shift):</strong> Does your page “jump around” as it loads? WordPress plugins often cause this. Next.js prevents it by design.</li>
+        <li><strong>CLS (Cumulative Layout Shift):</strong> Does your page "jump around" as it loads? WordPress plugins often cause this. Next.js prevents it by design.</li>
         <li><strong>INP (Interaction to Next Paint):</strong> How fast does the page respond to clicks? WordPress has to process every click server-side. Next.js handles interactions instantly on the client.</li>
       </ul>
-      <p>Google gives higher rankings to sites with better Core Web Vitals. It’s not subjective—it’s measurable. Our <a href="/services/seo" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">SEO strategies</a> prioritize these technical foundations before any keyword work.</p>
+      <p>Google gives higher rankings to sites with better Core Web Vitals. It's not subjective--it's measurable. Our <a href="/services/seo" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">SEO strategies</a> prioritize these technical foundations before any keyword work.</p>
       
       <h3>2. Mobile-First Indexing</h3>
-      <p>Google now uses the <em>mobile version</em> of your site to determine your rankings—even for desktop searches. If your mobile site is slow or broken, your desktop rankings suffer too.</p>
-      <p>Most WordPress themes are “responsive” (they technically work on mobile), but they weren’t <em>designed</em> mobile-first. Buttons are too small. Forms are clunky. Load times are brutal.</p>
+      <p>Google now uses the <em>mobile version</em> of your site to determine your rankings--even for desktop searches. If your mobile site is slow or broken, your desktop rankings suffer too.</p>
+      <p>Most WordPress themes are "responsive" (they technically work on mobile), but they weren't <em>designed</em> mobile-first. Buttons are too small. Forms are clunky. Load times are brutal.</p>
       <p>Next.js sites are built with mobile performance as the default. Every component is tested on a phone first, then scaled up to desktop. This aligns perfectly with how Google judges sites in 2026.</p>
       
       <h3>3. Structured Data (The AI Search Advantage)</h3>
-      <p>Here’s the future: Google is moving away from “10 blue links” toward <strong>AI Overviews</strong> that directly answer questions at the top of the search results.</p>
+      <p>Here's the future: Google is moving away from "10 blue links" toward <strong>AI Overviews</strong> that directly answer questions at the top of the search results.</p>
       <p>To appear in AI Overviews, your site needs <strong>structured data</strong> (schema.org markup) that tells Google <em>exactly</em> what your content means.</p>
-      <p>Most WordPress sites have zero structured data. SEO plugins like Yoast add some, but it’s often broken or generic.</p>
-      <p>With Next.js, we inject <strong>custom JSON-LD schema</strong> directly into every page. We tell Google: “This is a LocalBusiness. Here’s the address. Here are the services. Here are the reviews.” Google’s AI can read this instantly and promote you in AI search results.</p>
-      <p>We’ve seen this firsthand with our client <strong>Alotek Shelters</strong>, who went from Page 5 to <strong>AI Overview Winner</strong> for their primary keywords in under 6 weeks. Read the full case study: <a href="/blog/seo-recovery-alotek-shelters" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">The £20,000 SEO Mistake</a>.</p>
+      <p>Most WordPress sites have zero structured data. SEO plugins like Yoast add some, but it's often broken or generic.</p>
+      <p>With Next.js, we inject <strong>custom JSON-LD schema</strong> directly into every page. We tell Google: "This is a LocalBusiness. Here's the address. Here are the services. Here are the reviews." Google's AI can read this instantly and promote you in AI search results.</p>
+      <p>We've seen this firsthand with our client <strong>Alotek Shelters</strong>, who went from Page 5 to <strong>AI Overview Winner</strong> for their primary keywords in under 6 weeks. Read the full case study: <a href="/blog/seo-recovery-alotek-shelters" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">The £20,000 SEO Mistake</a>.</p>
       
       <h2>The Cost Comparison (The Real Numbers)</h2>
-      <p>Let’s talk money. Here’s what most businesses don’t realize:</p>
+      <p>Let's talk money. Here's what most businesses don't realize:</p>
       
-      <h3>WordPress “Affordable” Reality:</h3>
+      <h3>WordPress "Affordable" Reality:</h3>
       <ul>
         <li><strong>Initial build:</strong> £800 - £2,500 (template + customization)</li>
         <li><strong>Hosting:</strong> £10 - £50/month (scales with traffic)</li>
@@ -502,7 +502,7 @@ export const posts: BlogPost[] = [
       <h3>Next.js Modern Reality:</h3>
       <ul>
         <li><strong>Initial build:</strong> £1,500 - £5,000 (custom coded, no template)</li>
-        <li><strong>Hosting:</strong> £0 - £20/month (Vercel’s free tier handles most small businesses)</li>
+        <li><strong>Hosting:</strong> £0 - £20/month (Vercel's free tier handles most small businesses)</li>
         <li><strong>Plugins:</strong> £0 (everything is coded in)</li>
         <li><strong>Security:</strong> £0 (static sites are inherently secure)</li>
         <li><strong>Maintenance:</strong> £0 - £50/month (optional; sites rarely break)</li>
@@ -511,11 +511,11 @@ export const posts: BlogPost[] = [
       
       <p>Over 3 years, a Next.js site can save you <strong>£5,000 - £10,000</strong> in hosting, security, and maintenance costs alone.</p>
       
-      <h2>The “Ease of Use” Myth</h2>
-      <p>The biggest defense of WordPress is: <em>“But I can edit it myself!”</em></p>
+      <h2>The "Ease of Use" Myth</h2>
+      <p>The biggest defense of WordPress is: <em>"But I can edit it myself!"</em></p>
       <p>Can you, though?</p>
-      <p>Most WordPress users we meet are <em>terrified</em> of their own admin panel. They’re scared to update plugins because “last time, it broke the site.” They can’t remember their hosting login. They pay a developer £50 just to change a phone number.</p>
-      <p>WordPress’s “ease of use” is a myth sold by web designers who want recurring monthly fees.</p>
+      <p>Most WordPress users we meet are <em>terrified</em> of their own admin panel. They're scared to update plugins because "last time, it broke the site." They can't remember their hosting login. They pay a developer £50 just to change a phone number.</p>
+      <p>WordPress's "ease of use" is a myth sold by web designers who want recurring monthly fees.</p>
       
       <h3>Next.js + Headless CMS: The Best of Both Worlds</h3>
       <p>We solve this with <strong>Headless CMS</strong> systems (like Sanity or Contentful). You get a clean, simple dashboard where you can:</p>
@@ -524,21 +524,21 @@ export const posts: BlogPost[] = [
         <li>Publish new blog posts</li>
         <li>Change opening hours or prices</li>
       </ul>
-      <p>But instead of that content living in a clunky WordPress database, it’s fed into your lightning-fast Next.js site via an API. You get the editing simplicity you want with the performance your customers (and Google) demand.</p>
+      <p>But instead of that content living in a clunky WordPress database, it's fed into your lightning-fast Next.js site via an API. You get the editing simplicity you want with the performance your customers (and Google) demand.</p>
       <p>Learn more about our <a href="/services/headless-development" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Headless Development services</a>.</p>
       
       <h2>The Migration Reality</h2>
-      <p>If you already have a WordPress site, you might be thinking: <em>“This sounds great, but I’ve already invested £3,000 in my current site. I can’t start over.”</em></p>
-      <p>Good news: You don’t have to throw it away.</p>
-      <p>We specialize in <strong>WordPress-to-Next.js migrations</strong>. We can import your existing blog posts, images, and pages into a new Next.js site in as little as 2 weeks. You keep your content, your domain, and your Google rankings—you just get a massive performance upgrade.</p>
-      <p>We’ve done this for clients like <strong>Alotek Shelters</strong>, who saw their organic traffic <strong>triple in 6 weeks</strong> after migrating from a bloated WordPress site to our Next.js architecture. Read the case study: <a href="/blog/seo-recovery-alotek-shelters" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">The £20,000 SEO Mistake</a>.</p>
+      <p>If you already have a WordPress site, you might be thinking: <em>"This sounds great, but I've already invested £3,000 in my current site. I can't start over."</em></p>
+      <p>Good news: You don't have to throw it away.</p>
+      <p>We specialize in <strong>WordPress-to-Next.js migrations</strong>. We can import your existing blog posts, images, and pages into a new Next.js site in as little as 2 weeks. You keep your content, your domain, and your Google rankings--you just get a massive performance upgrade.</p>
+      <p>We've done this for clients like <strong>Alotek Shelters</strong>, who saw their organic traffic <strong>triple in 6 weeks</strong> after migrating from a bloated WordPress site to our Next.js architecture. Read the case study: <a href="/blog/seo-recovery-alotek-shelters" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">The £20,000 SEO Mistake</a>.</p>
       
       <h2>The Verdict: When to Use What</h2>
-      <p>Let’s be fair. There <em>are</em> scenarios where WordPress still makes sense:</p>
+      <p>Let's be fair. There <em>are</em> scenarios where WordPress still makes sense:</p>
       
       <h3>Use WordPress if:</h3>
       <ul>
-        <li>You’re a hobby blogger who doesn’t care about rankings or speed.</li>
+        <li>You're a hobby blogger who doesn't care about rankings or speed.</li>
         <li>You need to spin up a site in 24 hours with zero budget.</li>
         <li>You plan to edit content daily and need instant publishing (though Headless CMS solves this).</li>
       </ul>
@@ -547,24 +547,24 @@ export const posts: BlogPost[] = [
       <ul>
         <li>You want to <strong>rank on Google</strong>.</li>
         <li>Speed and security matter to you.</li>
-        <li>You’re tired of WordPress breaking every time you update a plugin.</li>
+        <li>You're tired of WordPress breaking every time you update a plugin.</li>
         <li>You want a site that can scale from 100 visitors/month to 100,000 without rebuilding.</li>
         <li>You want to stop paying £200/month in hosting and maintenance fees.</li>
       </ul>
       
       <h2>The Southport Small Business Angle</h2>
-      <p>If you’re a plumber, café, or boutique on Lord Street, you might think: <em>“This sounds like enterprise tech. I just need something simple.”</em></p>
-      <p>Here’s the thing: Your competitors are thinking the same. And that’s exactly why the businesses that invest in Next.js <em>now</em> are going to dominate local search for the next 5 years.</p>
-      <p>With the <a href="/southport-growth" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Marine Lake Events Centre bringing 500,000 new visitors</a> to Southport annually, the competition for “restaurant near MLEC” or “hotel near Marine Lake” is about to explode. The businesses with 0.9-second load times will capture those searches. The ones stuck on WordPress won’t.</p>
+      <p>If you're a plumber, café, or boutique on Lord Street, you might think: <em>"This sounds like enterprise tech. I just need something simple."</em></p>
+      <p>Here's the thing: Your competitors are thinking the same. And that's exactly why the businesses that invest in Next.js <em>now</em> are going to dominate local search for the next 5 years.</p>
+      <p>With the <a href="/southport-growth" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Marine Lake Events Centre bringing 500,000 new visitors</a> to Southport annually, the competition for "restaurant near MLEC" or "hotel near Marine Lake" is about to explode. The businesses with 0.9-second load times will capture those searches. The ones stuck on WordPress won't.</p>
       
       <h2>What We Recommend</h2>
-      <p>At Churchtown Media, we’re biased—we only build Next.js sites. But we’re transparent about why.</p>
-      <p>If you’re serious about growth, ranking, and ROI, modern web technology isn’t optional anymore. It’s the baseline.</p>
-      <p>WordPress had a 20-year run. But in 2026, speed isn’t a luxury—it’s a <strong>survival requirement</strong>.</p>
+      <p>At Churchtown Media, we're biased--we only build Next.js sites. But we're transparent about why.</p>
+      <p>If you're serious about growth, ranking, and ROI, modern web technology isn't optional anymore. It's the baseline.</p>
+      <p>WordPress had a 20-year run. But in 2026, speed isn't a luxury--it's a <strong>survival requirement</strong>.</p>
       
       <hr />
       
-      <p><em>Not sure if your current WordPress site is hurting your rankings? We offer a free <a href="/audit" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Core Web Vitals audit</a> that shows you exactly where you’re losing visitors and rankings. No sales pitch—just the raw data.</em></p>
+      <p><em>Not sure if your current WordPress site is hurting your rankings? We offer a free <a href="/audit" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Core Web Vitals audit</a> that shows you exactly where you're losing visitors and rankings. No sales pitch--just the raw data.</em></p>
     `
   },
   {
@@ -574,46 +574,46 @@ export const posts: BlogPost[] = [
     category: "Southport Business Growth",
     // UPDATED: .png -> .jpg
     image: "/images/southport.jpg", 
-    excerpt: "Are customers walking right past your door? Discover why ‘Near Me’ searches and the Google Map Pack are the new shop window for Southport businesses.",
+    excerpt: "Are customers walking right past your door? Discover why 'Near Me' searches and the Google Map Pack are the new shop window for Southport businesses.",
     content: `
-      <p>Walk down Lord Street on a busy Saturday afternoon. Look at the people—the tourists, the day-trippers, the locals. What are they doing?</p>
-      <p>Twenty years ago, they would have been looking at shop windows, scanning menus displayed on easels, or looking for “Open” signs. Today, they are looking down. They are looking at their screens.</p>
-      <p>In 2026, the “Shop Window” is no longer made of glass. It is a 6-inch digital list called the <strong>Google Map Pack</strong>.</p>
-      <p>At Churchtown Media, we often hear local business owners say, <em>“I have a great location; footfall isn’t a problem.”</em> But here is the hard truth: If you aren’t ranking in the top 3 results for a “near me” search, you are invisible to over 50% of the people walking right past your door.</p>
+      <p>Walk down Lord Street on a busy Saturday afternoon. Look at the people--the tourists, the day-trippers, the locals. What are they doing?</p>
+      <p>Twenty years ago, they would have been looking at shop windows, scanning menus displayed on easels, or looking for "Open" signs. Today, they are looking down. They are looking at their screens.</p>
+      <p>In 2026, the "Shop Window" is no longer made of glass. It is a 6-inch digital list called the <strong>Google Map Pack</strong>.</p>
+      <p>At Churchtown Media, we often hear local business owners say, <em>"I have a great location; footfall isn't a problem."</em> But here is the hard truth: If you aren't ranking in the top 3 results for a "near me" search, you are invisible to over 50% of the people walking right past your door.</p>
       <p>This is the concept of <strong>Digital Footfall</strong>, and for Southport businesses preparing for the MLEC boom, it is the single most important metric you need to master.</p>
-      <h2>The Death of “Just Walking By”</h2>
-      <p>Consumer behavior has shifted permanently. The modern customer—especially the 500,000 new visitors expected with the <a target="_blank" href="/blog/mlec-effect-southport">Marine Lake Events Centre development</a>—does not browse aimlessly. They search with <strong>intent</strong>.</p>
-      <p>They don’t search for “Coffee shops in Southport” before they leave home. They wait until they are standing on the Promenade, hungry and tired, and search for <em>“Coffee near me.”</em></p>
-      <p>Google’s data shows a 900% explosion in “near me” searches over the last few years. These searches are high-intent. These people aren’t researching; they are wallet-in-hand, ready to buy <em>right now</em>.</p>
+      <h2>The Death of "Just Walking By"</h2>
+      <p>Consumer behavior has shifted permanently. The modern customer--especially the 500,000 new visitors expected with the <a target="_blank" href="/blog/mlec-effect-southport">Marine Lake Events Centre development</a>--does not browse aimlessly. They search with <strong>intent</strong>.</p>
+      <p>They don't search for "Coffee shops in Southport" before they leave home. They wait until they are standing on the Promenade, hungry and tired, and search for <em>"Coffee near me."</em></p>
+      <p>Google's data shows a 900% explosion in "near me" searches over the last few years. These searches are high-intent. These people aren't researching; they are wallet-in-hand, ready to buy <em>right now</em>.</p>
       <p>If your business pops up? You get the sale. If your competitor pops up? They get the sale. It is that binary.</p>
-      <h2>The Google “3-Pack”: The Only VIP List That Matters</h2>
-      <p>When someone searches locally, Google ignores the standard website links. Instead, it shows a map with three featured businesses. We call this the <strong>“Map Pack”</strong> or the <strong>“3-Pack.”</strong></p>
-      <p>Being #1 on the map is worth ten times more than being #1 in standard search results. But how does Google decide who gets those three spots? It isn’t random, and it isn’t just about who is closest.</p>
+      <h2>The Google "3-Pack": The Only VIP List That Matters</h2>
+      <p>When someone searches locally, Google ignores the standard website links. Instead, it shows a map with three featured businesses. We call this the <strong>"Map Pack"</strong> or the <strong>"3-Pack."</strong></p>
+      <p>Being #1 on the map is worth ten times more than being #1 in standard search results. But how does Google decide who gets those three spots? It isn't random, and it isn't just about who is closest.</p>
       <p>Google uses three specific metrics to judge you:</p>
       <h3>1. Relevance</h3>
-      <p>Does Google actually know what you do? If you are an “Italian Restaurant,” but your website just says “Family Dining,” you might be missing out. Your <a href="/services/seo" target="_blank">Local SEO strategy</a> must explicitly tell Google what services you offer so it can match you to the user’s search.</p>
+      <p>Does Google actually know what you do? If you are an "Italian Restaurant," but your website just says "Family Dining," you might be missing out. Your <a href="/services/seo" target="_blank">Local SEO strategy</a> must explicitly tell Google what services you offer so it can match you to the user's search.</p>
       <h3>2. Distance</h3>
-      <p>This is the only factor you can’t control. Google will prioritize businesses physically close to the searcher. However, “Distance” is less important than you think. A highly optimized business 2 miles away can often outrank a poorly optimized business 200 meters away.</p>
+      <p>This is the only factor you can't control. Google will prioritize businesses physically close to the searcher. However, "Distance" is less important than you think. A highly optimized business 2 miles away can often outrank a poorly optimized business 200 meters away.</p>
       <h3>3. Prominence (The Secret Sauce)</h3>
-      <p>This is where Churchtown Media helps you win. “Prominence” is Google’s way of asking: <em>“Is this business trustworthy?”</em> It determines this by looking at:</p>
+      <p>This is where Churchtown Media helps you win. "Prominence" is Google's way of asking: <em>"Is this business trustworthy?"</em> It determines this by looking at:</p>
       <ul><li><strong>Review Velocity:</strong> Are you getting fresh 5-star reviews regularly?</li><li><strong>Citations:</strong> Is your business listed on Yell, Facebook, Apple Maps, and Bing?</li><li><strong>Backlinks:</strong> Do other local websites link to you?</li></ul>
-      <h2>The “NAP” Trap: Why Most Southport Businesses Fail</h2>
+      <h2>The "NAP" Trap: Why Most Southport Businesses Fail</h2>
       <p>The biggest reason local businesses fail to rank in the Map Pack is something incredibly simple: <strong>N.A.P. Consistency.</strong></p>
       <p><strong>N</strong>ame. <strong>A</strong>ddress. <strong>P</strong>hone Number.</p>
-      <p>To Google, data is everything. If your Facebook page says <em>“The Bold Hotel,”</em> but your website says <em>“Bold Hotel Bar & Grill,”</em> and your Yell listing says <em>“Bold Hotel Southport,”</em> Google gets confused. It creates a “trust gap.”</p>
-      <p>When Google’s algorithm sees conflicting data, it assumes the information might be outdated. To play it safe, it drops your ranking and promotes a competitor whose data is 100% consistent across the web.</p>
+      <p>To Google, data is everything. If your Facebook page says <em>"The Bold Hotel,"</em> but your website says <em>"Bold Hotel Bar & Grill,"</em> and your Yell listing says <em>"Bold Hotel Southport,"</em> Google gets confused. It creates a "trust gap."</p>
+      <p>When Google's algorithm sees conflicting data, it assumes the information might be outdated. To play it safe, it drops your ranking and promotes a competitor whose data is 100% consistent across the web.</p>
       <p>Fixing your NAP consistency is the lowest-hanging fruit in Local SEO, yet 80% of businesses get it wrong.</p>
       <h2>How to Capture the New Wave of Visitors</h2>
-      <p>As we discussed in our <a href="/southport-growth" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Southport Business Growth Hub</a>, the town is changing. The visitors coming for conferences and events at the MLEC won’t have “local knowledge.” They won’t know that the best sandwich shop is hidden down a side street off Lord Street.</p>
+      <p>As we discussed in our <a href="/southport-growth" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Southport Business Growth Hub</a>, the town is changing. The visitors coming for conferences and events at the MLEC won't have "local knowledge." They won't know that the best sandwich shop is hidden down a side street off Lord Street.</p>
       <p>They will trust their phones.</p>
       <p>If you want those customers, you need to treat your Google Business Profile with the same care you treat your physical shop front.</p>
-      <ul><li><strong>Update your photos:</strong> Show the vibe, not just the logo.</li><li><strong>Seed questions:</strong> Use the Q&A section to answer common queries like <em>“Do you have parking?”</em> or <em>“Are you dog friendly?”</em></li><li><strong>Get reviews:</strong> Don’t just hope for them; build a system to ask for them.</li></ul>
+      <ul><li><strong>Update your photos:</strong> Show the vibe, not just the logo.</li><li><strong>Seed questions:</strong> Use the Q&A section to answer common queries like <em>"Do you have parking?"</em> or <em>"Are you dog friendly?"</em></li><li><strong>Get reviews:</strong> Don't just hope for them; build a system to ask for them.</li></ul>
       <h2>Is Your Business Invisible?</h2>
-      <p>You don’t need to guess. You can test this right now.</p>
-      <ol start="1"><li>Open an <strong>Incognito/Private</strong> tab on your browser (this stops Google from using your history to bias the results).</li><li>Search for your core service + “Southport” (e.g., <em>“Plumber Southport”</em> or <em>“Cafe Southport”</em>).</li><li>Look at the Map Pack.</li></ol>
-      <p>Are you in the top 3? If you are, congratulations—keep doing what you’re doing. If you aren’t, you are losing money to the businesses that are.</p>
-      <p>At Churchtown Media, we believe in <strong>Radical Transparency</strong>. We don’t hide our methods. If you want to dominate the local map, we can audit your digital footprint and show you exactly why Google is favoring your competitors.</p>
-      <p><strong><a href="/contact" target="_blank">Contact us today</a> for a free Local Visibility Audit, and let’s get you back on the map.</strong></p>
+      <p>You don't need to guess. You can test this right now.</p>
+      <ol start="1"><li>Open an <strong>Incognito/Private</strong> tab on your browser (this stops Google from using your history to bias the results).</li><li>Search for your core service + "Southport" (e.g., <em>"Plumber Southport"</em> or <em>"Cafe Southport"</em>).</li><li>Look at the Map Pack.</li></ol>
+      <p>Are you in the top 3? If you are, congratulations--keep doing what you're doing. If you aren't, you are losing money to the businesses that are.</p>
+      <p>At Churchtown Media, we believe in <strong>Radical Transparency</strong>. We don't hide our methods. If you want to dominate the local map, we can audit your digital footprint and show you exactly why Google is favoring your competitors.</p>
+      <p><strong><a href="/contact" target="_blank">Contact us today</a> for a free Local Visibility Audit, and let's get you back on the map.</strong></p>
     `
   },
   {
@@ -625,44 +625,44 @@ export const posts: BlogPost[] = [
     image: "/images/mlec.jpg",
     excerpt: "The Marine Lake Events Centre is bringing 500,000 visitors to Southport. Here is the digital strategy local businesses need to capture this new economy in 2026.",
     content: `
-      <p>The demolition is done. The steel is rising. The <strong>Marine Lake Events Centre (MLEC)</strong> is no longer just a “Town Deal proposal”—it is the new reality of Southport’s skyline.</p>
-      <p>According to Sefton Council projections, the MLEC and the “Light Fantastic” water show are set to bring <strong>over 500,000 additional visitors</strong> to our town every single year, injecting an estimated <strong>£19 million</strong> into the local economy.</p>
-      <p>For hospitality, retail, and leisure businesses in Southport, this is the biggest opportunity in a generation. But here is the hard truth: <strong>Footfall in the town doesn’t guarantee footfall in your shop.</strong> <a href="/blog/invisible-on-lord-street" title="">How to capture this new footfall</a>.</p>
-      <p>These 500,000 new visitors aren’t locals. They don’t know that your café has the best scones on Lord Street or that your boutique stocks unique brands. They only know what their phone tells them.</p>
-      <p>At <strong>Churchtown Media</strong>, we call this the “Digital Tourist” phenomenon. Here is how to ensure that when MLEC delegates search for “dinner near me,” your business is the first one they see. For more insights on preparing for this opportunity, explore our <a href="/southport-growth" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Southport Business Growth Hub</a>.</p>
-      <h4><strong>1. The “Near Me” Battleground</strong></h4>
-      <p>Conference delegates have short windows of time. When they step out of the MLEC for lunch, they won’t walk down Lord Street hoping to find something; they will pull out their phone and search:</p>
-      <ul><li><em>“Coffee near Marine Lake”</em></li><li><em>“Best italian restaurant Southport”</em></li><li><em>“Shops open now”</em></li></ul>
-      <p>If you aren’t in the <strong>Google Map Pack</strong> (the top 3 map results), you are invisible to them.</p>
-      <ul><li><strong>Action Step:</strong> Ensure your Google Business Profile is categorized correctly. If you are a pub that serves food, ensure “Gastropub” or “Restaurant” is a primary category, not just “Pub”.</li></ul>
+      <p>The demolition is done. The steel is rising. The <strong>Marine Lake Events Centre (MLEC)</strong> is no longer just a "Town Deal proposal"--it is the new reality of Southport's skyline.</p>
+      <p>According to Sefton Council projections, the MLEC and the "Light Fantastic" water show are set to bring <strong>over 500,000 additional visitors</strong> to our town every single year, injecting an estimated <strong>£19 million</strong> into the local economy.</p>
+      <p>For hospitality, retail, and leisure businesses in Southport, this is the biggest opportunity in a generation. But here is the hard truth: <strong>Footfall in the town doesn't guarantee footfall in your shop.</strong> <a href="/blog/invisible-on-lord-street" title="">How to capture this new footfall</a>.</p>
+      <p>These 500,000 new visitors aren't locals. They don't know that your café has the best scones on Lord Street or that your boutique stocks unique brands. They only know what their phone tells them.</p>
+      <p>At <strong>Churchtown Media</strong>, we call this the "Digital Tourist" phenomenon. Here is how to ensure that when MLEC delegates search for "dinner near me," your business is the first one they see. For more insights on preparing for this opportunity, explore our <a href="/southport-growth" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Southport Business Growth Hub</a>.</p>
+      <h4><strong>1. The "Near Me" Battleground</strong></h4>
+      <p>Conference delegates have short windows of time. When they step out of the MLEC for lunch, they won't walk down Lord Street hoping to find something; they will pull out their phone and search:</p>
+      <ul><li><em>"Coffee near Marine Lake"</em></li><li><em>"Best italian restaurant Southport"</em></li><li><em>"Shops open now"</em></li></ul>
+      <p>If you aren't in the <strong>Google Map Pack</strong> (the top 3 map results), you are invisible to them.</p>
+      <ul><li><strong>Action Step:</strong> Ensure your Google Business Profile is categorized correctly. If you are a pub that serves food, ensure "Gastropub" or "Restaurant" is a primary category, not just "Pub".</li></ul>
       <h4><strong>2. Speed is the New Service</strong></h4>
-      <p>Imagine 1,200 delegates leaving a conference at 5 PM. They are all on mobile data, looking for a place to eat. If your website takes 10 seconds to load on 4G, they have already clicked “Back” and booked a table at your competitor’s place.</p>
+      <p>Imagine 1,200 delegates leaving a conference at 5 PM. They are all on mobile data, looking for a place to eat. If your website takes 10 seconds to load on 4G, they have already clicked "Back" and booked a table at your competitor's place.</p>
       <ul><li><strong>The Benchmark:</strong> In 2026, your mobile site needs to load in <strong>under 2.5 seconds</strong>. (Not sure if yours is fast enough? <a href="/contact" target="_blank">Contact us for a free audit</a>).</li></ul>
-      <h4><strong>3. The “Light Fantastic” Late Night Economy</strong></h4>
-      <p>The new water and light show isn’t just a daytime attraction; it’s a night-time anchor. This means thousands of people will be in the town centre <em>after</em> 8 PM.</p>
-      <ul><li><strong>The Pivot:</strong> Does your website explicitly state your evening hours? Do you have “Pre-Theatre” or “Post-Show” menus optimized on your site?</li><li><strong>SEO Tip:</strong> Create a dedicated page on your site titled “Dining Near Marine Lake Events Centre.” It signals relevance to Google and convenience to the user.</li></ul>
+      <h4><strong>3. The "Light Fantastic" Late Night Economy</strong></h4>
+      <p>The new water and light show isn't just a daytime attraction; it's a night-time anchor. This means thousands of people will be in the town centre <em>after</em> 8 PM.</p>
+      <ul><li><strong>The Pivot:</strong> Does your website explicitly state your evening hours? Do you have "Pre-Theatre" or "Post-Show" menus optimized on your site?</li><li><strong>SEO Tip:</strong> Create a dedicated page on your site titled "Dining Near Marine Lake Events Centre." It signals relevance to Google and convenience to the user.</li></ul>
       <h4><strong>4. How to Fund Your Upgrade</strong></h4>
-      <p>Transforming your digital presence to meet this demand costs money, but you might not have to pay for all of it yourself. As we detailed in our <strong><a href="/southport-growth" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Southport Business Growth Hub</a></strong>, there are active grants available right now—like the <strong>InvestSefton Growth Hub</strong> support—that can help fund digital consultancy and technical upgrades. Learn more about <a href="/services/web-design" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">our web design services</a> to maximize your MLEC opportunity.</p>
+      <p>Transforming your digital presence to meet this demand costs money, but you might not have to pay for all of it yourself. As we detailed in our <strong><a href="/southport-growth" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Southport Business Growth Hub</a></strong>, there are active grants available right now--like the <strong>InvestSefton Growth Hub</strong> support--that can help fund digital consultancy and technical upgrades. Learn more about <a href="/services/web-design" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">our web design services</a> to maximize your MLEC opportunity.</p>
       <h4><strong>The Verdict</strong></h4>
       <p>The visitors are coming. The question is: Will they find you, or will they find a national chain that optimized their SEO six months ago?</p>
-      <p>Don’t wait for the ribbon-cutting ceremony. The race to capture the MLEC economy starts today.</p>
+      <p>Don't wait for the ribbon-cutting ceremony. The race to capture the MLEC economy starts today.</p>
     `
   },
   {
     slug: "why-new-local-seo-company-is-your-business-best-friend",
-    title: "Why a New Local SEO Company is Your Business’s Best Friend",
+    title: "Why a New Local SEO Company is Your Business's Best Friend",
     date: "Jan 14, 2026",
     category: "SEO Demystified",
     // UPDATED: .png -> .jpg
     image: "/images/seo-robot.jpg",
-    excerpt: "Unlock Your Local Potential: Why a New Local SEO Company is Your Business’s Best Friend In today’s digital age, simply having a website isn’t enough.",
+    excerpt: "Unlock Your Local Potential: Why a New Local SEO Company is Your Business's Best Friend In today's digital age, simply having a website isn't enough.",
     content: `
-      <h2>Unlock Your Local Potential: Why a New Local SEO Company is Your Business’s Best Friend</h2>
-      <p>In today’s digital age, simply having a website isn’t enough – especially for local businesses. If you’re not showing up when potential customers search for your products or services “near me,” you’re leaving money on the table. This is where a new, dynamic local SEO company can be a game-changer for your business. Let’s explore the compelling benefits of partnering with the right local SEO experts.</p>
+      <h2>Unlock Your Local Potential: Why a New Local SEO Company is Your Business's Best Friend</h2>
+      <p>In today's digital age, simply having a website isn't enough - especially for local businesses. If you're not showing up when potential customers search for your products or services "near me," you're leaving money on the table. This is where a new, dynamic local SEO company can be a game-changer for your business. Let's explore the compelling benefits of partnering with the right local SEO experts.</p>
       <h3>Precision Targeting: Reaching Customers Right Next Door</h3>
-      <p>Imagine a customer in Southport searching for “best coffee shop near me” or “emergency plumber in Churchtown.” Do you appear in those results? A local SEO company specializes in optimizing your online presence to capture these highly specific, geographically-driven searches. They understand the nuances of local keywords, Google My Business optimization, and localized content strategies that larger, national SEO firms often overlook. This precision targeting ensures your marketing efforts aren’t wasted on distant prospects, but instead focus on the people most likely to walk through your door or call your service.</p>
+      <p>Imagine a customer in Southport searching for "best coffee shop near me" or "emergency plumber in Churchtown." Do you appear in those results? A local SEO company specializes in optimizing your online presence to capture these highly specific, geographically-driven searches. They understand the nuances of local keywords, Google My Business optimization, and localized content strategies that larger, national SEO firms often overlook. This precision targeting ensures your marketing efforts aren't wasted on distant prospects, but instead focus on the people most likely to walk through your door or call your service.</p>
       <h3>Dominate the Local Pack: Your Business on the Map</h3>
-      <p>One of the most valuable pieces of digital real estate for any local business is the “Local Pack” – the map section that appears at the top of Google’s search results for local queries. This prominent display, featuring your business name, address, phone number, and reviews, is where countless customers make their initial decisions. A dedicated local SEO company works tirelessly to ensure your business ranks high in this coveted section, driving immediate visibility and foot traffic. They’ll optimize your Google Business Profile, build local citations, and manage your online reviews – all crucial factors for Local Pack dominance.</p>
+      <p>One of the most valuable pieces of digital real estate for any local business is the "Local Pack" - the map section that appears at the top of Google's search results for local queries. This prominent display, featuring your business name, address, phone number, and reviews, is where countless customers make their initial decisions. A dedicated local SEO company works tirelessly to ensure your business ranks high in this coveted section, driving immediate visibility and foot traffic. They'll optimize your Google Business Profile, build local citations, and manage your online reviews - all crucial factors for Local Pack dominance.</p>
       <p>For further information on our <a href="/services/web-design" title="">web design</a> and <a href="/services/seo" title="">SEO services</a> in Southport and surrounding areas feel free to visit our service pages or <a href="/contact" title="">contact us</a>.</p>
     `
   },
@@ -673,31 +673,31 @@ export const posts: BlogPost[] = [
     category: "Case Studies",
     // UPDATED: .png -> .jpg
     image: "/images/alotek-cover.jpg",
-    excerpt: "Alotek Shelters spent £20k for zero growth. See the exact strategy Churchtown Media used to fix their ‘zombie’ site and capture #1 AI rankings in under 45 days.",
+    excerpt: "Alotek Shelters spent £20k for zero growth. See the exact strategy Churchtown Media used to fix their 'zombie' site and capture #1 AI rankings in under 45 days.",
     content: `
-      <p>Our client, <strong>Alotek Shelters</strong>, invested a significant amount in SEO with their previous agency over the last 12 months. For that price, you’d expect market dominance. You’d expect the phone to be ringing off the hook.</p>
+      <p>Our client, <strong>Alotek Shelters</strong>, invested a significant amount in SEO with their previous agency over the last 12 months. For that price, you'd expect market dominance. You'd expect the phone to be ringing off the hook.</p>
       <p>Instead, when we logged into their analytics in November, we saw a flat line.</p>
-      <p>The website was technically “there,” but it was a zombie. It wasn’t living, breathing, or growing. It was averaging position 50 (Page 5) on Google. It was invisible.</p>
-      <p>Here is the story of how we fixed the mechanical failure, fired the “vanity metrics,” and <strong>tripled their visibility in under 6 weeks</strong>.</p>
+      <p>The website was technically "there," but it was a zombie. It wasn't living, breathing, or growing. It was averaging position 50 (Page 5) on Google. It was invisible.</p>
+      <p>Here is the story of how we fixed the mechanical failure, fired the "vanity metrics," and <strong>tripled their visibility in under 6 weeks</strong>.</p>
       <hr />
-      <h3><strong>The Audit: Why Money Doesn’t Buy Rankings</strong></h3>
-      <p>When we took over, we didn’t just want to “do better.” We wanted to know <em>why</em> the previous budget had failed. We opened the hood and found three smoking guns that explained the flatline:</p>
+      <h3><strong>The Audit: Why Money Doesn't Buy Rankings</strong></h3>
+      <p>When we took over, we didn't just want to "do better." We wanted to know <em>why</em> the previous budget had failed. We opened the hood and found three smoking guns that explained the flatline:</p>
       
-      <h4><strong>1. The “50% Invisible” Problem</strong></h4>
-      <p>This was the shocker. We found that <strong>52% of the website was not indexed.</strong> Effectively, for every two pages Alotek paid for, Google only saw one. The previous agency had left 28 pages blocked by technical errors—broken redirects, 404 dead ends, and messy canonical tags. The site was trying to run a marathon with one leg tied behind its back.</p>
+      <h4><strong>1. The "50% Invisible" Problem</strong></h4>
+      <p>This was the shocker. We found that <strong>52% of the website was not indexed.</strong> Effectively, for every two pages Alotek paid for, Google only saw one. The previous agency had left 28 pages blocked by technical errors--broken redirects, 404 dead ends, and messy canonical tags. The site was trying to run a marathon with one leg tied behind its back.</p>
       
-      <h4><strong>2. The “Ghost Town” Keywords</strong></h4>
-      <p>They were ranking, sure—but for terms nobody used. They were ranking on Page 1 for technical jargon, but invisible for the words buyers actually type into Google.</p>
+      <h4><strong>2. The "Ghost Town" Keywords</strong></h4>
+      <p>They were ranking, sure--but for terms nobody used. They were ranking on Page 1 for technical jargon, but invisible for the words buyers actually type into Google.</p>
       <hr />
       <h3><strong>The Fix: Engineering the Hockey Stick</strong></h3>
       
-      <p>We didn’t start with a magic wand. We started with a wrench.</p>
+      <p>We didn't start with a magic wand. We started with a wrench.</p>
       <p><strong>Phase 1</strong> was purely mechanical. We went into the code and fixed the indexation blocks. We cleared the 404 errors, fixed the redirect loops, and submitted the sitemap.</p>
       <ul><li><strong>Result:</strong> We increased the number of indexed pages from <strong>26 to 41</strong>.</li><li><strong>Impact:</strong> By simply letting Google see the rest of the website, we instantly doubled the opportunities for the site to rank.</li></ul>
-      <p><strong>Phase 2</strong> was strategic. We stopped targeting “vanity” terms and went after <strong>Commercial Intent</strong> keywords—the specific phrases people search when they have a company credit card in their hand.</p>
+      <p><strong>Phase 2</strong> was strategic. We stopped targeting "vanity" terms and went after <strong>Commercial Intent</strong> keywords--the specific phrases people search when they have a company credit card in their hand.</p>
       <hr />
-      <h3><strong>The Data: Dominating the “AI Future”</strong></h3>
-      <p>We don’t do “fluff” reports. Here is the raw data from Google Search Console and Semrush, comparing November (The Old Agency) to January (Churchtown Media).</p>
+      <h3><strong>The Data: Dominating the "AI Future"</strong></h3>
+      <p>We don't do "fluff" reports. Here is the raw data from Google Search Console and Semrush, comparing November (The Old Agency) to January (Churchtown Media).</p>
       
       <figure>
         <img src="/images/alotek-graph-1.jpg" alt="Google Search Console data showing 86% increase in impressions" width="800" height="400" />
@@ -706,72 +706,72 @@ export const posts: BlogPost[] = [
 
       <h4><strong>1. The Visibility Explosion</strong></h4>
       <p>We effectively shocked the patient back to life.</p>
-      <ul><li><strong>Daily Impressions:</strong> Up <strong>86%</strong> (From 238/day to 442/day).</li><li><strong>Average Position:</strong> Improved from <strong>50 (Page 5)</strong> to <strong>37 (Page 4)</strong> across the entire site.</li><li><strong>Peak Visibility:</strong> On Jan 11th, the site hit nearly <strong>600 impressions</strong> in a single day—a 3x increase from the November baseline.</li></ul>
-      <h4><strong>2. The “New Google” Wins (AI Overviews)</strong></h4>
-      <p>This is the most exciting part. We aren’t just ranking in the traditional “blue links.” Our data shows Alotek is now triggering and <strong>owning the AI Overviews (AI Snapshots)</strong> for their biggest terms.</p>
+      <ul><li><strong>Daily Impressions:</strong> Up <strong>86%</strong> (From 238/day to 442/day).</li><li><strong>Average Position:</strong> Improved from <strong>50 (Page 5)</strong> to <strong>37 (Page 4)</strong> across the entire site.</li><li><strong>Peak Visibility:</strong> On Jan 11th, the site hit nearly <strong>600 impressions</strong> in a single day--a 3x increase from the November baseline.</li></ul>
+      <h4><strong>2. The "New Google" Wins (AI Overviews)</strong></h4>
+      <p>This is the most exciting part. We aren't just ranking in the traditional "blue links." Our data shows Alotek is now triggering and <strong>owning the AI Overviews (AI Snapshots)</strong> for their biggest terms.</p>
       
-      <p>This means when a user asks a question, Google’s AI is recommending <em>Alotek</em> as the direct answer at the very top of the page.</p>
-      <ul><li><strong>“Bus Shelter Manufacturers”</strong><ul><li><strong>Then:</strong> Position 8 (Buried at bottom of Page 1)</li><li><strong>Now:</strong> <strong>AI Overview Winner</strong> (Position 1)</li><li><em>Why it matters:</em> We have replaced the “search result” with the “answer.” Google AI now presents Alotek as the primary manufacturer to check.</li></ul></li><li><strong>“Outdoor Pram Storage”</strong><ul><li><strong>Then:</strong> Position 11 (The “Graveyard” of Page 2)</li><li><strong>Now:</strong> <strong>AI Overview Winner</strong> (Position 1)</li><li><em>Why it matters:</em> We jumped 10 spots to become the default recommendation.</li></ul></li><li><strong>“Bus Shelters for Parish Councils”</strong><ul><li><strong>Then:</strong> Not Ranked (100+)</li><li><strong>Now:</strong> <strong>Position #1</strong></li><li><em>Why it matters:</em> This is a specific B2B contract term. We took Alotek from “Who?” to the <strong>#1 option in the UK</strong> for local government buyers.</li></ul></li></ul>
+      <p>This means when a user asks a question, Google's AI is recommending <em>Alotek</em> as the direct answer at the very top of the page.</p>
+      <ul><li><strong>"Bus Shelter Manufacturers"</strong><ul><li><strong>Then:</strong> Position 8 (Buried at bottom of Page 1)</li><li><strong>Now:</strong> <strong>AI Overview Winner</strong> (Position 1)</li><li><em>Why it matters:</em> We have replaced the "search result" with the "answer." Google AI now presents Alotek as the primary manufacturer to check.</li></ul></li><li><strong>"Outdoor Pram Storage"</strong><ul><li><strong>Then:</strong> Position 11 (The "Graveyard" of Page 2)</li><li><strong>Now:</strong> <strong>AI Overview Winner</strong> (Position 1)</li><li><em>Why it matters:</em> We jumped 10 spots to become the default recommendation.</li></ul></li><li><strong>"Bus Shelters for Parish Councils"</strong><ul><li><strong>Then:</strong> Not Ranked (100+)</li><li><strong>Now:</strong> <strong>Position #1</strong></li><li><em>Why it matters:</em> This is a specific B2B contract term. We took Alotek from "Who?" to the <strong>#1 option in the UK</strong> for local government buyers.</li></ul></li></ul>
       
       <hr />
-      <h3><strong>What’s Next? (The “Striking Distance” Plan)</strong></h3>
-      <p>This is <strong>Phase 1</strong>. We have successfully turned the lights on and secured the top spot in Google’s AI results for key terms.</p>
+      <h3><strong>What's Next? (The "Striking Distance" Plan)</strong></h3>
+      <p>This is <strong>Phase 1</strong>. We have successfully turned the lights on and secured the top spot in Google's AI results for key terms.</p>
       <p>Now, we pivot to <strong>Phase 2: Traffic & Clicks.</strong></p>
-      <p>Our data shows that a massive opportunity—<em>“Covered Walkways for Schools”</em>—is currently sitting at <strong>Position 11</strong>. It is knocking on the door of Page 1. The previous agency ignored it. We are now optimizing specifically to push that term from Page 2 to Page 1, which will unlock over <strong>1,500 monthly views</strong>.</p>
-      <p><strong>Watch this space.</strong> In our next update (Month 3), we won’t just be showing you graphs of <em>rankings</em> going up. We’ll be showing you the <strong>Clicks</strong>—and the leads that follow.</p>
+      <p>Our data shows that a massive opportunity--<em>"Covered Walkways for Schools"</em>--is currently sitting at <strong>Position 11</strong>. It is knocking on the door of Page 1. The previous agency ignored it. We are now optimizing specifically to push that term from Page 2 to Page 1, which will unlock over <strong>1,500 monthly views</strong>.</p>
+      <p><strong>Watch this space.</strong> In our next update (Month 3), we won't just be showing you graphs of <em>rankings</em> going up. We'll be showing you the <strong>Clicks</strong>--and the leads that follow.</p>
       <hr />
-      <p><em>Has your agency spent 12 months sending you reports that say “work done” while your traffic stays flat? Let’s check under the hood. It might be a quick fix.</em></p>
+      <p><em>Has your agency spent 12 months sending you reports that say "work done" while your traffic stays flat? Let's check under the hood. It might be a quick fix.</em></p>
 `
   },
   {
     slug: "eating-our-own-dog-food",
-    title: "Eating Our Own Dog Food: Why We Ignored Google’s Advice on Our New Ad Campaign",
+    title: "Eating Our Own Dog Food: Why We Ignored Google's Advice on Our New Ad Campaign",
     date: "Jan 29, 2026",
     category: "Agency Life",
     // UPDATED: .png -> .jpg
     image: "/images/google-ads.jpg",
-    excerpt: "We ignored Google’s advice and launched a £15/day ad campaign. See the exact settings, keywords, and strategy Churchtown Media uses to get local leads.",
+    excerpt: "We ignored Google's advice and launched a £15/day ad campaign. See the exact settings, keywords, and strategy Churchtown Media uses to get local leads.",
     content: `
-      <p>It’s a strange feeling for a digital marketer to press “Publish” on their <em>own</em> ad campaign.</p>
-      <p>I spend my days managing budgets for clients, obsessing over their ROI and technical SEO. I know this stuff works. But when it’s your own debit card attached to the account, the stakes feel different. It becomes personal.</p>
-      <p>Welcome to the “Radical Transparency” section of our blog. This is where we pull back the curtain on agency life in Southport. No shiny case studies, just the real-time grinding of growing a business.</p>
-      <p>Today, I’m sharing the exact setup of the very first Google Ads campaign for Churchtown Media.</p>
+      <p>It's a strange feeling for a digital marketer to press "Publish" on their <em>own</em> ad campaign.</p>
+      <p>I spend my days managing budgets for clients, obsessing over their ROI and technical SEO. I know this stuff works. But when it's your own debit card attached to the account, the stakes feel different. It becomes personal.</p>
+      <p>Welcome to the "Radical Transparency" section of our blog. This is where we pull back the curtain on agency life in Southport. No shiny case studies, just the real-time grinding of growing a business.</p>
+      <p>Today, I'm sharing the exact setup of the very first Google Ads campaign for Churchtown Media.</p>
       <p>Why? Because most local businesses get ripped off by Google Ads, and I want to show you exactly how we set ours up to avoid the common traps.</p>
-      <h3>This is the “Default” Trap</h3>
-      <p>If you are a local business owner—say, a plumber in Birkdale or a solicitor in town—and you try to set up Google Ads yourself, Google makes it incredibly easy. Too easy. For comprehensive support with your digital marketing strategy, check out our <a href="/southport-growth" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">local business growth resources</a>.</p>
-      <p>They push you toward “Smart Campaigns” and automated settings. They encourage you to use broad keywords and let their AI handle the rest.</p>
-      <p>If you follow their default advice, here is what usually happens: You spend £500 in a month. You get 200 clicks. 150 of them are from people outside the UK, 40 are students looking for “free tips,” and maybe 10 are actual prospects.</p>
-      <p>You burn through cash, get zero leads, and decide “Google Ads doesn’t work.”</p>
+      <h3>This is the "Default" Trap</h3>
+      <p>If you are a local business owner--say, a plumber in Birkdale or a solicitor in town--and you try to set up Google Ads yourself, Google makes it incredibly easy. Too easy. For comprehensive support with your digital marketing strategy, check out our <a href="/southport-growth" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">local business growth resources</a>.</p>
+      <p>They push you toward "Smart Campaigns" and automated settings. They encourage you to use broad keywords and let their AI handle the rest.</p>
+      <p>If you follow their default advice, here is what usually happens: You spend £500 in a month. You get 200 clicks. 150 of them are from people outside the UK, 40 are students looking for "free tips," and maybe 10 are actual prospects.</p>
+      <p>You burn through cash, get zero leads, and decide "Google Ads doesn't work."</p>
       <p>It does work, but only if you put a leash on it.</p>
-      <h3>Our Blueprint: The “Anti-Volume” Strategy</h3>
-      <p>For our campaign, we did the opposite of what Google recommends for new accounts. We don’t want <em>volume</em>; we want <em>value</em>. We don’t want 1,000 clicks; we want 5 phone calls from serious business owners in Southport.</p>
+      <h3>Our Blueprint: The "Anti-Volume" Strategy</h3>
+      <p>For our campaign, we did the opposite of what Google recommends for new accounts. We don't want <em>volume</em>; we want <em>value</em>. We don't want 1,000 clicks; we want 5 phone calls from serious business owners in Southport.</p>
       <p>Here are the three constraints we put on our own campaign:</p>
       <h4>1. Hyper-Local Geography (The Southport Fence)</h4>
-      <p>Google will encourage you to target “Merseyside” or the “North West” to get more views.</p>
-      <p>We said no. Our ads only trigger if someone is physically standing in Southport, Formby, or Ormskirk, or if they specifically type “Southport” into their search.</p>
-      <p>If someone in Manchester searches for “best SEO agency,” they won’t see us. We don’t want to pay for that click right now. We are building a local fortress first.</p>
-      <h4>2. The “Kill List” (Negative Keywords)</h4>
-      <p>The secret to a profitable campaign isn’t just what you target; it’s what you <em>block</em>.</p>
-      <p>Before we went live, we loaded up a list of “negative keywords.” These are words that tell Google <em>not</em> to show our ad.</p>
-      <p>Our kill list includes words like: “cheap,” “affordable,” “free,” “jobs,” “course,” and “DIY.”</p>
-      <p>If someone searches for “Cheap web design Southport,” we do not want to appear. We aren’t competing in the race to the bottom. We want clients who understand that a fast, technical website is an investment, not a cost.</p>
-      <h4>3. Ignoring the AI “Help”</h4>
-      <p>During setup, Google kept flashing warnings: <em>“Your audience is too small!”</em> <em>“Add these broad keywords to get more clicks!”</em> <em>“Switch to AI-powered ads!”</em></p>
+      <p>Google will encourage you to target "Merseyside" or the "North West" to get more views.</p>
+      <p>We said no. Our ads only trigger if someone is physically standing in Southport, Formby, or Ormskirk, or if they specifically type "Southport" into their search.</p>
+      <p>If someone in Manchester searches for "best SEO agency," they won't see us. We don't want to pay for that click right now. We are building a local fortress first.</p>
+      <h4>2. The "Kill List" (Negative Keywords)</h4>
+      <p>The secret to a profitable campaign isn't just what you target; it's what you <em>block</em>.</p>
+      <p>Before we went live, we loaded up a list of "negative keywords." These are words that tell Google <em>not</em> to show our ad.</p>
+      <p>Our kill list includes words like: "cheap," "affordable," "free," "jobs," "course," and "DIY."</p>
+      <p>If someone searches for "Cheap web design Southport," we do not want to appear. We aren't competing in the race to the bottom. We want clients who understand that a fast, technical website is an investment, not a cost.</p>
+      <h4>3. Ignoring the AI "Help"</h4>
+      <p>During setup, Google kept flashing warnings: <em>"Your audience is too small!"</em> <em>"Add these broad keywords to get more clicks!"</em> <em>"Switch to AI-powered ads!"</em></p>
       <p>We ignored every single one.</p>
-      <p>We are using “Phrase Match” keywords. This means if we target <strong>“Web Design Southport”</strong>, someone has to type that exact phrase (or a very close variation) to see us. We won’t show up for loosely related terms like “graphic design.”</p>
-      <p>This makes Google’s algorithm nervous because it can’t spend our money as fast as it wants to. But it makes <em>us</em> sleep better.</p>
+      <p>We are using "Phrase Match" keywords. This means if we target <strong>"Web Design Southport"</strong>, someone has to type that exact phrase (or a very close variation) to see us. We won't show up for loosely related terms like "graphic design."</p>
+      <p>This makes Google's algorithm nervous because it can't spend our money as fast as it wants to. But it makes <em>us</em> sleep better.</p>
       <h3>The Numbers: £15 a Day</h3>
-      <figure><img decoding="async" width="1024" height="576" src="/images/google-ads.jpg" alt="Churchtown Media Google Ads dashboard showing the active ‘MLEC Readiness Audit’ campaign with a strict £15 daily budget and manual bidding strategy." /></figure>
+      <figure><img decoding="async" width="1024" height="576" src="/images/google-ads.jpg" alt="Churchtown Media Google Ads dashboard showing the active 'MLEC Readiness Audit' campaign with a strict £15 daily budget and manual bidding strategy." /></figure>
       <p>We set our initial budget to exactly £15.00 per day.</p>
       <p>Why? In the Southport market for our niche, a good click costs between £3 and £5. This budget guarantees us about 3 to 5 highly qualified visitors to our site every single day.</p>
       <p>That is enough data to know if our message is resonating, but not so much that we burn money while testing.</p>
       <h3>What Happens Next?</h3>
-      <p>Right now, the campaign status is “Learning.”</p>
+      <p>Right now, the campaign status is "Learning."</p>
       <p>Over the next 7 days, Google will test our ads at different times of day. We might spend £2 one day and £18 the next. It will be volatile.</p>
       <p>The hardest part is doing nothing. The temptation to tinker with bids or change headlines on Day 2 is immense. But you have to let the data accumulate.</p>
-      <p>In two weeks, I’ll write a follow-up post right here. I’ll share the actual results—how much we spent, what the Cost Per Click was, and most importantly, did anyone actually call us?</p>
-      <p>Win or lose, we’ll post the numbers.</p>
-      <p><em>If you’re a local business owner worried that your current agency or your own Google Ads efforts are leaking money on bad clicks, we do offer a free audit of your setup. We apply the same level of scrutiny to your account that we do to our own. <a href="/contact" title="">Get in touch if you want a second pair of eyes.</a></em></p>
+      <p>In two weeks, I'll write a follow-up post right here. I'll share the actual results--how much we spent, what the Cost Per Click was, and most importantly, did anyone actually call us?</p>
+      <p>Win or lose, we'll post the numbers.</p>
+      <p><em>If you're a local business owner worried that your current agency or your own Google Ads efforts are leaking money on bad clicks, we do offer a free audit of your setup. We apply the same level of scrutiny to your account that we do to our own. <a href="/contact" title="">Get in touch if you want a second pair of eyes.</a></em></p>
     `
   },
   
@@ -795,11 +795,11 @@ export const posts: BlogPost[] = [
     date: "Feb 13, 2026",
     category: "SEO Demystified",
     image: "/images/birkdale-village-hero.jpg",
-    excerpt: "Birkdale isn't just a Southport suburb—it's one of the North West's premium villages. Your digital presence must match the neighborhood.",
+    excerpt: "Birkdale isn't just a Southport suburb--it's one of the North West's premium villages. Your digital presence must match the neighborhood.",
     content: `
       <p>Stand at the corner of Liverpool Road and Weld Road on a Friday evening. Watch the clientele stepping out of gleaming German saloons, heading into bistros where the average main course costs £28.</p>
-      <p>This is Birkdale Village—where Southport's elite live, shop, and spend. Where property values average £380,000 (40% above Southport's average), and where your website is judged in the same 3 seconds it takes to assess a shop window.</p>
-      <p>At <a href="/" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Churchtown Media</a>, we're based just 5 minutes away. We understand Birkdale's unique market: premium positioning isn't optional—it's survival.</p>
+      <p>This is Birkdale Village--where Southport's elite live, shop, and spend. Where property values average £380,000 (40% above Southport's average), and where your website is judged in the same 3 seconds it takes to assess a shop window.</p>
+      <p>At <a href="/" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Churchtown Media</a>, we're based just 5 minutes away. We understand Birkdale's unique market: premium positioning isn't optional--it's survival.</p>
 
       <h2>Why Birkdale Demands a Different Digital Strategy</h2>
       <p>Birkdale isn't Southport. It's a village within a town, with its own identity, demographics, and search behavior.</p>
@@ -843,17 +843,17 @@ export const posts: BlogPost[] = [
         <h4 style="color: #60a5fa; font-weight: bold; margin-bottom: 1rem;">The Birkdale Website Standard:</h4>
         <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
           <li><strong>Load Speed:</strong> Under 1.5 seconds (no excuses)</li>
-          <li><strong>Design:</strong> Custom, elegant, sophisticated—not flashy</li>
+          <li><strong>Design:</strong> Custom, elegant, sophisticated--not flashy</li>
           <li><strong>Typography:</strong> Readable, premium fonts (not Comic Sans)</li>
           <li><strong>Colors:</strong> Understated elegance, not aggressive CTAs</li>
           <li><strong>Mobile:</strong> Flawless experience on latest iPhones</li>
         </ul>
       </div>
 
-      <p>We build Birkdale sites on <strong>Next.js</strong>—fast, elegant, and SEO-optimized. See: <a href="/portfolio" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Our Portfolio</a>.</p>
+      <p>We build Birkdale sites on <strong>Next.js</strong>--fast, elegant, and SEO-optimized. See: <a href="/portfolio" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Our Portfolio</a>.</p>
 
       <h3>Pillar 2: Village-Specific Keywords</h3>
-      <p>Birkdale residents don't search "Southport dentist"—they search "Birkdale Village dentist" or "dentist near Royal Birkdale".</p>
+      <p>Birkdale residents don't search "Southport dentist"--they search "Birkdale Village dentist" or "dentist near Royal Birkdale".</p>
 
       <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
         <h4 style="color: #60a5fa; font-size: 1.125rem; font-weight: bold; margin-bottom: 1rem;">Birkdale Keyword Opportunities:</h4>
@@ -884,7 +884,7 @@ export const posts: BlogPost[] = [
       </ul>
 
       <h3>Pillar 4: Review Excellence</h3>
-      <p>Birkdale clients read reviews meticulously. 4.5 stars isn't enough—you need 4.8+ with detailed, specific feedback.</p>
+      <p>Birkdale clients read reviews meticulously. 4.5 stars isn't enough--you need 4.8+ with detailed, specific feedback.</p>
 
       <div style="background: #1e293b; border-left: 4px solid #22c55e; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
         <h4 style="color: #22c55e; font-weight: bold; margin-bottom: 1rem;">The Birkdale Review Benchmark:</h4>
@@ -948,7 +948,7 @@ export const posts: BlogPost[] = [
     image: "/images/crosby-iron-men-hero.jpg",
     excerpt: "The Iron Men bring 200,000 tourists annually. Here's how Crosby businesses dominate 'near me' searches and turn beach visitors into loyal customers.",
     content: `
-      <p>Stand on Crosby Beach at sunset. Look at the Iron Men—100 cast-iron figures staring at the horizon, half-submerged by the tide. Then look at the car park: coaches from Yorkshire, families from Manchester, photographers from London.</p>
+      <p>Stand on Crosby Beach at sunset. Look at the Iron Men--100 cast-iron figures staring at the horizon, half-submerged by the tide. Then look at the car park: coaches from Yorkshire, families from Manchester, photographers from London.</p>
       <p>This is Crosby's reality: <strong>200,000 annual visitors</strong> to Another Place, Antony Gormley's iconic installation, creating a tourism economy that most Crosby businesses aren't capturing digitally.</p>
       <p>At <a href="/" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Churchtown Media</a>, we're 25 minutes away. We've studied Crosby's unique market: affluent Liverpool commuters + beach tourists + local loyalty. Here's how to dominate all three.</p>
 
@@ -1008,7 +1008,7 @@ export const posts: BlogPost[] = [
       </ul>
 
       <h3>Pillar 2: Hyperlocal Crosby SEO</h3>
-      <p>Crosby residents search specifically for "Crosby" or "Waterloo"—not generic "Sefton" or "Merseyside".</p>
+      <p>Crosby residents search specifically for "Crosby" or "Waterloo"--not generic "Sefton" or "Merseyside".</p>
 
       <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
         <h4 style="color: #60a5fa; font-size: 1.125rem; font-weight: bold; margin-bottom: 1rem;">High-Value Crosby Keywords:</h4>
@@ -1029,7 +1029,7 @@ export const posts: BlogPost[] = [
       </div>
 
       <h3>Pillar 3: Mobile-First Performance</h3>
-      <p>82% of Iron Men visitors search on mobile—while standing on the beach. Your site must load in under 2 seconds on 4G or you lose them.</p>
+      <p>82% of Iron Men visitors search on mobile--while standing on the beach. Your site must load in under 2 seconds on 4G or you lose them.</p>
 
       <div style="background: #1e293b; border-left: 4px solid #22c55e; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
         <h4 style="color: #22c55e; font-weight: bold; margin-bottom: 1rem;">The Crosby Mobile Standard:</h4>
@@ -1108,7 +1108,7 @@ export const posts: BlogPost[] = [
 
       <div style="background: #1e293b; border-left: 4px solid #ef4444; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
         <h3 style="color: #ef4444; font-weight: bold; margin-bottom: 1rem;">Mistake 3: Generic "Liverpool" Positioning</h3>
-        <p style="color: #cbd5e1; line-height: 1.7;">Crosby has its own identity. Use "Crosby" and "Waterloo" in all content—not just "Liverpool suburbs".</p>
+        <p style="color: #cbd5e1; line-height: 1.7;">Crosby has its own identity. Use "Crosby" and "Waterloo" in all content--not just "Liverpool suburbs".</p>
       </div>
 
       <h2>Why We Understand Crosby</h2>
@@ -1145,9 +1145,9 @@ export const posts: BlogPost[] = [
     image: "/images/churchtown-botanic-hero.jpg",
     excerpt: "We're based here. This is how we help Churchtown businesses dominate the Botanic Gardens tourism traffic and local village searches.",
     content: `
-      <p>I'm writing this from our office in Churchtown. Right now, I can see the Botanic Gardens from my window. This isn't just another blog post about SEO—this is about OUR neighborhood.</p>
+      <p>I'm writing this from our office in Churchtown. Right now, I can see the Botanic Gardens from my window. This isn't just another blog post about SEO--this is about OUR neighborhood.</p>
       <p>Churchtown is where <strong>Churchtown Media</strong> is based. We chose this village for the same reason you're reading this: it's a hidden gem with genuine character, heritage tourism (Botanic Gardens attracts 80,000+ visitors annually), and a tight-knit community that values local businesses.</p>
-      <p>This is the exact hyperlocal SEO strategy we use for ourselves—and for our Churchtown clients.</p>
+      <p>This is the exact hyperlocal SEO strategy we use for ourselves--and for our Churchtown clients.</p>
 
       <h2>Why Churchtown Needs Hyperlocal SEO</h2>
       <p>Churchtown has a unique challenge: it's technically part of Southport, but residents and visitors think of it as a distinct village with its own identity.</p>
@@ -1174,7 +1174,7 @@ export const posts: BlogPost[] = [
       </div>
 
       <h3>The Churchtown Search Behavior Pattern</h3>
-      <p>People search for "Churchtown Southport" or just "Churchtown"—not generic "Southport". This hyperlocal intent is your advantage.</p>
+      <p>People search for "Churchtown Southport" or just "Churchtown"--not generic "Southport". This hyperlocal intent is your advantage.</p>
 
       <ul>
         <li><strong>Village pride:</strong> Residents identify as "Churchtown" locals, not just "Southport"</li>
@@ -1233,12 +1233,12 @@ export const posts: BlogPost[] = [
       <ul>
         <li><strong>Local heritage:</strong> Mention historic church, Botanic Gardens history</li>
         <li><strong>Community involvement:</strong> Village events, local sponsorships</li>
-        <li><strong>Family-friendly:</strong> Gardens are family destination—emphasize this</li>
+        <li><strong>Family-friendly:</strong> Gardens are family destination--emphasize this</li>
         <li><strong>Personal service:</strong> "Family-run", "Est. [year]", "Proud Churchtown business"</li>
       </ul>
 
       <h2>Why We Practice What We Preach</h2>
-      <p>Churchtown Media is based in Churchtown. We're not outsiders giving generic advice—we're neighbors who've tested every strategy on ourselves first.</p>
+      <p>Churchtown Media is based in Churchtown. We're not outsiders giving generic advice--we're neighbors who've tested every strategy on ourselves first.</p>
 
       <div style="background: #1e293b; border-left: 4px solid #22c55e; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
         <h4 style="color: #22c55e; font-weight: bold; margin-bottom: 1rem;">How We Rank for "Churchtown":</h4>
@@ -1304,7 +1304,7 @@ export const posts: BlogPost[] = [
     content: `
       <p>Walk through Ormskirk town center in late September. The transformation is jarring: 14,000 Edge Hill University students flood the market town, turning quiet streets into a mobile-first, high-velocity economy.</p>
       <p>Ormskirk businesses face a unique digital challenge: <strong>capture impulsive student searches without alienating the established local customer base.</strong></p>
-      <p>At <a href="/" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Churchtown Media</a>, we're 20 minutes away. We've studied Ormskirk's dual economy—and here's how to dominate both markets simultaneously.</p>
+      <p>At <a href="/" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Churchtown Media</a>, we're 20 minutes away. We've studied Ormskirk's dual economy--and here's how to dominate both markets simultaneously.</p>
 
       <h2>Why Ormskirk is a Digital Opportunity</h2>
       <p>Ormskirk has two distinct customer bases with radically different search behavior:</p>
@@ -1339,7 +1339,7 @@ export const posts: BlogPost[] = [
       <h2>The Dual-Audience SEO Strategy</h2>
 
       <h3>Strategy 1: Capture Student Searches (Mobile-First)</h3>
-      <p>Students compare 5+ options in 30 seconds—all on mobile. If your site loads in 5 seconds, you've already lost.</p>
+      <p>Students compare 5+ options in 30 seconds--all on mobile. If your site loads in 5 seconds, you've already lost.</p>
 
       <div style="background: #1e293b; border-left: 4px solid #3b82f6; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
         <h4 style="color: #60a5fa; font-weight: bold; margin-bottom: 1rem;">Student-Focused Keywords:</h4>
@@ -1402,7 +1402,7 @@ export const posts: BlogPost[] = [
       </ul>
 
       <h2>The Mobile-First Imperative</h2>
-      <p>80% of student searches happen on phones—while walking, between lectures, or comparing options with friends. Your mobile site IS your business.</p>
+      <p>80% of student searches happen on phones--while walking, between lectures, or comparing options with friends. Your mobile site IS your business.</p>
 
       <div style="background: #1e293b; border-left: 4px solid #22c55e; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
         <h4 style="color: #22c55e; font-weight: bold; margin-bottom: 1rem;">The Ormskirk Mobile Standard:</h4>
@@ -1411,7 +1411,7 @@ export const posts: BlogPost[] = [
           <li><strong>Thumb-Friendly:</strong> Large buttons, easy navigation</li>
           <li><strong>No Pop-ups:</strong> Students will instantly bounce</li>
           <li><strong>Clear Pricing:</strong> Visible immediately (no hidden costs)</li>
-          <li><strong>One-Tap Actions:</strong> Call, order, directions—all single click</li>
+          <li><strong>One-Tap Actions:</strong> Call, order, directions--all single click</li>
         </ul>
       </div>
 
