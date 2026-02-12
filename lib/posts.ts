@@ -1,4 +1,4 @@
-﻿export interface BlogPost {
+export interface BlogPost {
   slug: string;
   title: string;
   date: string;
@@ -1245,7 +1245,7 @@ export const posts: BlogPost[] = [
         <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
           <li><strong>Our GBP:</strong> Lists "Churchtown, Southport" specifically</li>
           <li><strong>Our content:</strong> This blog post ranks for "Churchtown SEO"</li>
-          <li><strong>Our location page:</strong> `/locations/southport` mentions Churchtown throughout</li>
+          <li><strong>Our location page:</strong> /locations/southport mentions Churchtown throughout</li>
           <li><strong>Our footer:</strong> Includes "Based in Churchtown"</li>
           <li><strong>Our photos:</strong> Show Botanic Gardens, village landmarks</li>
         </ul>
