@@ -773,5 +773,725 @@ export const posts: BlogPost[] = [
       <p>Win or lose, we’ll post the numbers.</p>
       <p><em>If you’re a local business owner worried that your current agency or your own Google Ads efforts are leaking money on bad clicks, we do offer a free audit of your setup. We apply the same level of scrutiny to your account that we do to our own. <a href="/contact" title="">Get in touch if you want a second pair of eyes.</a></em></p>
     `
+  },
+  
+  // ═══════════════════════════════════════════════════════════
+  // SEFTON SURROUNDING AREAS SERIES (5 Posts - Feb 2026)
+  // ═══════════════════════════════════════════════════════════
+  
+  {
+    slug: "formby-seo-guide",
+    title: "Formby Business SEO: How L37's Wealthiest Postcode Can Dominate Local Search",
+    date: "Feb 12, 2026",
+    category: "SEO Demystified",
+    image: "/images/formby-squirrel-hero.jpg",
+    excerpt: "Formby businesses serve the North West's most affluent demographic. Your website must match their expectations. Here's the premium local SEO strategy for L37.",
+    content: `Content will be added here...`
+  },
+  
+  {
+    slug: "birkdale-seo-guide",
+    title: "Birkdale Village SEO: Why Premium Businesses Need Premium Websites",
+    date: "Feb 13, 2026",
+    category: "SEO Demystified",
+    image: "/images/birkdale-village-hero.jpg",
+    excerpt: "Birkdale isn't just a Southport suburb—it's one of the North West's premium villages. Your digital presence must match the neighborhood.",
+    content: `
+      <p>Stand at the corner of Liverpool Road and Weld Road on a Friday evening. Watch the clientele stepping out of gleaming German saloons, heading into bistros where the average main course costs £28.</p>
+      <p>This is Birkdale Village—where Southport's elite live, shop, and spend. Where property values average £380,000 (40% above Southport's average), and where your website is judged in the same 3 seconds it takes to assess a shop window.</p>
+      <p>At <a href="/" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Churchtown Media</a>, we're based just 5 minutes away. We understand Birkdale's unique market: premium positioning isn't optional—it's survival.</p>
+
+      <h2>Why Birkdale Demands a Different Digital Strategy</h2>
+      <p>Birkdale isn't Southport. It's a village within a town, with its own identity, demographics, and search behavior.</p>
+
+      <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
+        <h3 style="color: #60a5fa; font-size: 1.25rem; font-weight: bold; margin-bottom: 1rem;">Birkdale By The Numbers</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
+          <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+            <div style="color: #94a3b8; font-size: 0.875rem; margin-bottom: 0.5rem;">Average Property Value</div>
+            <div style="color: white; font-size: 1.5rem; font-weight: bold;">£380,000</div>
+            <div style="color: #60a5fa; font-size: 0.875rem; margin-top: 0.5rem;">40% above Southport average</div>
+          </div>
+          <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+            <div style="color: #94a3b8; font-size: 0.875rem; margin-bottom: 0.5rem;">Royal Birkdale Visitors</div>
+            <div style="color: white; font-size: 1.5rem; font-weight: bold;">50,000+/year</div>
+            <div style="color: #60a5fa; font-size: 0.875rem; margin-top: 0.5rem;">During major tournaments: 200K+</div>
+          </div>
+          <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+            <div style="color: #94a3b8; font-size: 0.875rem; margin-bottom: 0.5rem;">Professional Demographic</div>
+            <div style="color: white; font-size: 1.5rem; font-weight: bold;">42%</div>
+            <div style="color: #60a5fa; font-size: 0.875rem; margin-top: 0.5rem;">Managers & professionals</div>
+          </div>
+        </div>
+      </div>
+
+      <h3>The Birkdale Buyer Profile</h3>
+      <p>Birkdale residents aren't price shoppers. They're quality seekers. Here's what they expect digitally:</p>
+      <ul>
+        <li><strong>Instant credibility:</strong> Your website has 3 seconds to signal "premium" or lose them</li>
+        <li><strong>Visual excellence:</strong> Professional photography, elegant design, no stock images</li>
+        <li><strong>Mobile perfection:</strong> 68% search on phones during village walks</li>
+        <li><strong>Local pride:</strong> Mention "Birkdale Village", not generic "Southport"</li>
+      </ul>
+
+      <h2>The 4 Pillars of Birkdale Local SEO</h2>
+
+      <h3>Pillar 1: Premium Web Design</h3>
+      <p>In Birkdale, a £200 WordPress template is a red flag. Your site must match the neighborhood's aesthetic.</p>
+
+      <div style="background: #1e293b; border-left: 4px solid #3b82f6; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
+        <h4 style="color: #60a5fa; font-weight: bold; margin-bottom: 1rem;">The Birkdale Website Standard:</h4>
+        <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
+          <li><strong>Load Speed:</strong> Under 1.5 seconds (no excuses)</li>
+          <li><strong>Design:</strong> Custom, elegant, sophisticated—not flashy</li>
+          <li><strong>Typography:</strong> Readable, premium fonts (not Comic Sans)</li>
+          <li><strong>Colors:</strong> Understated elegance, not aggressive CTAs</li>
+          <li><strong>Mobile:</strong> Flawless experience on latest iPhones</li>
+        </ul>
+      </div>
+
+      <p>We build Birkdale sites on <strong>Next.js</strong>—fast, elegant, and SEO-optimized. See: <a href="/portfolio" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Our Portfolio</a>.</p>
+
+      <h3>Pillar 2: Village-Specific Keywords</h3>
+      <p>Birkdale residents don't search "Southport dentist"—they search "Birkdale Village dentist" or "dentist near Royal Birkdale".</p>
+
+      <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
+        <h4 style="color: #60a5fa; font-size: 1.125rem; font-weight: bold; margin-bottom: 1rem;">Birkdale Keyword Opportunities:</h4>
+        <div style="display: grid; gap: 1rem; color: #cbd5e1;">
+          <div style="background: #0f172a; padding: 1rem; border-radius: 0.5rem;">
+            <strong style="color: white;">"Birkdale Village" + Service:</strong>
+            <p style="font-size: 0.875rem; margin: 0.5rem 0 0 0;">"Birkdale Village restaurant", "Birkdale Village salon"</p>
+          </div>
+          <div style="background: #0f172a; padding: 1rem; border-radius: 0.5rem;">
+            <strong style="color: white;">"near Royal Birkdale":</strong>
+            <p style="font-size: 0.875rem; margin: 0.5rem 0 0 0;">Capture golf tourism searches</p>
+          </div>
+          <div style="background: #0f172a; padding: 1rem; border-radius: 0.5rem;">
+            <strong style="color: white;">"Liverpool Road" / "Weld Road":</strong>
+            <p style="font-size: 0.875rem; margin: 0.5rem 0 0 0;">Hyperlocal street-level keywords</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>Pillar 3: Royal Birkdale Golf Tourism</h3>
+      <p>Royal Birkdale hosts The Open Championship. During tournaments, 200,000+ affluent visitors flood the area.</p>
+
+      <p><strong>If you're hospitality, retail, or professional services:</strong></p>
+      <ul>
+        <li>Create page: "Near Royal Birkdale Golf Club"</li>
+        <li>Optimize for: "restaurant near Royal Birkdale", "hotel Open Championship"</li>
+        <li>Promote during tournament years: accommodation, dining, transport</li>
+      </ul>
+
+      <h3>Pillar 4: Review Excellence</h3>
+      <p>Birkdale clients read reviews meticulously. 4.5 stars isn't enough—you need 4.8+ with detailed, specific feedback.</p>
+
+      <div style="background: #1e293b; border-left: 4px solid #22c55e; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
+        <h4 style="color: #22c55e; font-weight: bold; margin-bottom: 1rem;">The Birkdale Review Benchmark:</h4>
+        <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
+          <li><strong>Quantity:</strong> 40+ reviews minimum</li>
+          <li><strong>Quality:</strong> 4.8+ average rating</li>
+          <li><strong>Recency:</strong> Fresh reviews every 7-14 days</li>
+          <li><strong>Detail:</strong> Encourage specific mentions of service quality, not just "great"</li>
+          <li><strong>Response:</strong> Reply to every review professionally within 24 hours</li>
+        </ul>
+      </div>
+
+      <h2>Common Birkdale SEO Mistakes</h2>
+
+      <div style="background: #1e293b; border-left: 4px solid #ef4444; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
+        <h3 style="color: #ef4444; font-weight: bold; margin-bottom: 1rem;">Mistake 1: Generic "Southport" Positioning</h3>
+        <p style="color: #cbd5e1; line-height: 1.7;">Birkdale residents identify with the village, not Southport. Use "Birkdale" in all metadata, content, and GBP.</p>
+      </div>
+
+      <div style="background: #1e293b; border-left: 4px solid #ef4444; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
+        <h3 style="color: #ef4444; font-weight: bold; margin-bottom: 1rem;">Mistake 2: Discount Messaging</h3>
+        <p style="color: #cbd5e1; line-height: 1.7;">Never advertise "cheap" or "budget" in Birkdale. Emphasize quality, expertise, exclusivity.</p>
+      </div>
+
+      <div style="background: #1e293b; border-left: 4px solid #ef4444; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
+        <h3 style="color: #ef4444; font-weight: bold; margin-bottom: 1rem;">Mistake 3: Slow Mobile Experience</h3>
+        <p style="color: #cbd5e1; line-height: 1.7;">Birkdale residents use premium phones with fast connections. A 5-second load = instant exit.</p>
+      </div>
+
+      <h2>Why Birkdale is Our Neighbor</h2>
+      <p>At Churchtown Media, we're literally 5 minutes from Birkdale Village. We shop on Liverpool Road. We've photographed Royal Birkdale. We know what works here.</p>
+
+      <div style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 1rem; padding: 2.5rem; margin: 3rem 0; text-align: center;">
+        <h2 style="color: white; font-size: 1.875rem; font-weight: bold; margin-bottom: 1rem;">Is Your Birkdale Business Being Outranked?</h2>
+        <p style="color: rgba(255,255,255,0.9); font-size: 1.125rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+          Get a free audit showing where you rank for "Birkdale Village" searches.
+        </p>
+        <div style="display: flex; flex-direction: column; sm:flex-direction: row; gap: 1rem; justify-content: center; align-items: center;">
+          <a href="/audit" style="display: inline-flex; align-items: center; gap: 0.5rem; background: white; color: #1e293b; padding: 1rem 2rem; border-radius: 9999px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            Get Your Free Birkdale SEO Audit
+            <svg style="width: 1.25rem; height: 1.25rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+          <a href="/contact" style="display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: white; padding: 1rem 2rem; border: 2px solid white; border-radius: 9999px; font-weight: bold; text-decoration: none;">
+            Book Strategy Call
+          </a>
+        </div>
+        <p style="color: rgba(255,255,255,0.8); font-size: 0.875rem; margin-top: 1.5rem;">
+          We're 5 minutes away. Let's capture the village market together.
+        </p>
+      </div>
+
+      <p><em>Explore SEO for other premium Sefton areas: <a href="/blog/formby-seo-guide" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Formby</a>, <a href="/blog/crosby-seo-guide" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Crosby</a>.</em></p>
+    `
+  },
+  
+  {
+    slug: "crosby-seo-guide",
+    title: "Crosby & Waterloo SEO: Capturing Another Place's 200,000 Annual Visitors",
+    date: "Feb 14, 2026",
+    category: "SEO Demystified",
+    image: "/images/crosby-iron-men-hero.jpg",
+    excerpt: "The Iron Men bring 200,000 tourists annually. Here's how Crosby businesses dominate 'near me' searches and turn beach visitors into loyal customers.",
+    content: `
+      <p>Stand on Crosby Beach at sunset. Look at the Iron Men—100 cast-iron figures staring at the horizon, half-submerged by the tide. Then look at the car park: coaches from Yorkshire, families from Manchester, photographers from London.</p>
+      <p>This is Crosby's reality: <strong>200,000 annual visitors</strong> to Another Place, Antony Gormley's iconic installation, creating a tourism economy that most Crosby businesses aren't capturing digitally.</p>
+      <p>At <a href="/" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Churchtown Media</a>, we're 25 minutes away. We've studied Crosby's unique market: affluent Liverpool commuters + beach tourists + local loyalty. Here's how to dominate all three.</p>
+
+      <h2>Why Crosby is a Digital Goldmine</h2>
+      <p>Crosby has three distinct revenue streams, each requiring different SEO strategies:</p>
+
+      <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
+        <h3 style="color: #60a5fa; font-size: 1.25rem; font-weight: bold; margin-bottom: 1rem;">Crosby By The Numbers</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
+          <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+            <div style="color: #94a3b8; font-size: 0.875rem; margin-bottom: 0.5rem;">Iron Men Visitors</div>
+            <div style="color: white; font-size: 1.5rem; font-weight: bold;">200,000/year</div>
+            <div style="color: #60a5fa; font-size: 0.875rem; margin-top: 0.5rem;">Peak: summer weekends</div>
+          </div>
+          <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+            <div style="color: #94a3b8; font-size: 0.875rem; margin-bottom: 0.5rem;">Average Household Income</div>
+            <div style="color: white; font-size: 1.5rem; font-weight: bold;">£52,000</div>
+            <div style="color: #60a5fa; font-size: 0.875rem; margin-top: 0.5rem;">Liverpool commuter belt</div>
+          </div>
+          <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+            <div style="color: #94a3b8; font-size: 0.875rem; margin-bottom: 0.5rem;">Mobile Search Dominance</div>
+            <div style="color: white; font-size: 1.5rem; font-weight: bold;">82%</div>
+            <div style="color: #60a5fa; font-size: 0.875rem; margin-top: 0.5rem;">Beach visitors search on-site</div>
+          </div>
+        </div>
+      </div>
+
+      <h3>The Three Crosby Markets</h3>
+      <ul>
+        <li><strong>Tourism:</strong> 200K visitors searching "cafe near Iron Men", "lunch Crosby Beach"</li>
+        <li><strong>Commuters:</strong> Professionals living in Crosby, working in Liverpool, high disposable income</li>
+        <li><strong>Local Residents:</strong> Families needing tradespeople, services, dining</li>
+      </ul>
+
+      <h2>The 4 Pillars of Crosby Local SEO</h2>
+
+      <h3>Pillar 1: Capture the Iron Men Tourism Traffic</h3>
+      <p>If your business is within 10 minutes of Crosby Beach, you're missing revenue if you're not ranking for Iron Men searches.</p>
+
+      <div style="background: #1e293b; border-left: 4px solid #3b82f6; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
+        <h4 style="color: #60a5fa; font-weight: bold; margin-bottom: 1rem;">Iron Men Tourism Keywords:</h4>
+        <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
+          <li>"Cafe near Iron Men Crosby"</li>
+          <li>"Restaurant near Another Place"</li>
+          <li>"Parking near Crosby Beach"</li>
+          <li>"What to do near Iron Men"</li>
+          <li>"Family activities Crosby Beach"</li>
+        </ul>
+      </div>
+
+      <p><strong>Action Steps:</strong></p>
+      <ul>
+        <li>Create dedicated page: "[Your Business] Near Another Place"</li>
+        <li>Add walking directions from beach car park</li>
+        <li>Include: "5-minute walk from the Iron Men"</li>
+        <li>Promote "Post-Beach Coffee" / "After Your Beach Walk" messaging</li>
+      </ul>
+
+      <h3>Pillar 2: Hyperlocal Crosby SEO</h3>
+      <p>Crosby residents search specifically for "Crosby" or "Waterloo"—not generic "Sefton" or "Merseyside".</p>
+
+      <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
+        <h4 style="color: #60a5fa; font-size: 1.125rem; font-weight: bold; margin-bottom: 1rem;">High-Value Crosby Keywords:</h4>
+        <div style="display: grid; gap: 1rem; color: #cbd5e1;">
+          <div style="background: #0f172a; padding: 1rem; border-radius: 0.5rem;">
+            <strong style="color: white;">"Crosby" + Service:</strong>
+            <p style="font-size: 0.875rem; margin: 0.5rem 0 0 0;">"Plumber Crosby", "Dentist Crosby Village", "Personal trainer Crosby"</p>
+          </div>
+          <div style="background: #0f172a; padding: 1rem; border-radius: 0.5rem;">
+            <strong style="color: white;">"Waterloo" + Service:</strong>
+            <p style="font-size: 0.875rem; margin: 0.5rem 0 0 0;">"Salon Waterloo", "Restaurant Waterloo Liverpool Road"</p>
+          </div>
+          <div style="background: #0f172a; padding: 1rem; border-radius: 0.5rem;">
+            <strong style="color: white;">"near Crosby Station":</strong>
+            <p style="font-size: 0.875rem; margin: 0.5rem 0 0 0;">Capture Liverpool commuter searches</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>Pillar 3: Mobile-First Performance</h3>
+      <p>82% of Iron Men visitors search on mobile—while standing on the beach. Your site must load in under 2 seconds on 4G or you lose them.</p>
+
+      <div style="background: #1e293b; border-left: 4px solid #22c55e; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
+        <h4 style="color: #22c55e; font-weight: bold; margin-bottom: 1rem;">The Crosby Mobile Standard:</h4>
+        <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
+          <li><strong>Load Time:</strong> Under 2 seconds on 4G (beach has decent signal)</li>
+          <li><strong>Click-to-Call:</strong> Prominent phone button (visitors book NOW, not later)</li>
+          <li><strong>Directions:</strong> One-tap Google Maps integration</li>
+          <li><strong>Opening Hours:</strong> Visible immediately (no scrolling)</li>
+          <li><strong>Menu/Prices:</strong> Easy to read on small screens</li>
+        </ul>
+      </div>
+
+      <h3>Pillar 4: Google Business Profile Excellence</h3>
+      <p>For tourism-driven businesses, your GBP is more important than your website. It's the first thing people see when searching.</p>
+
+      <p><strong>Crosby GBP Optimization:</strong></p>
+      <ul>
+        <li><strong>Photos:</strong> Include Iron Men in background, show your location from beach</li>
+        <li><strong>Description:</strong> Mention "5 minutes from Iron Men", "near Crosby Beach", "Another Place"</li>
+        <li><strong>Categories:</strong> Choose most specific (e.g., "Beach Cafe" not just "Cafe")</li>
+        <li><strong>Posts:</strong> Weekly updates with beach/Iron Men imagery</li>
+        <li><strong>Q&A:</strong> Pre-seed: "How far from Iron Men?", "Do you have parking?", "Dog friendly?"</li>
+      </ul>
+
+      <h2>Case Study: How a Crosby Cafe Captured Beach Traffic</h2>
+
+      <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
+        <h3 style="color: #60a5fa; font-size: 1.25rem; font-weight: bold; margin-bottom: 1.5rem;">The Challenge</h3>
+        <p style="color: #cbd5e1; line-height: 1.7; margin-bottom: 1.5rem;">
+          A cafe 400 meters from the Iron Men was invisible online. Searching "cafe near Iron Men" showed competitors first. Tourists were walking past to reach cafes further away.
+        </p>
+
+        <h3 style="color: #60a5fa; font-size: 1.25rem; font-weight: bold; margin: 1.5rem 0 1rem;">What We Did</h3>
+        <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem; margin-bottom: 1.5rem;">
+          <li><strong>Week 1-2:</strong> Created "Cafe Near Iron Men Crosby" landing page</li>
+          <li><strong>Week 3-4:</strong> Optimized GBP with Iron Men in photo backgrounds</li>
+          <li><strong>Week 5-6:</strong> Mobile site rebuild (5.2s → 1.4s load time)</li>
+          <li><strong>Week 7-8:</strong> Review campaign targeting beach visitors</li>
+        </ul>
+
+        <h3 style="color: #60a5fa; font-size: 1.25rem; font-weight: bold; margin: 1.5rem 0 1rem;">The Results (90 Days)</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+          <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+            <div style="color: #94a3b8; font-size: 0.875rem; margin-bottom: 0.5rem;">Map Pack Ranking</div>
+            <div style="color: #ef4444; font-size: 1.25rem; font-weight: bold; margin-bottom: 0.25rem;">Before: #8</div>
+            <div style="color: #22c55e; font-size: 1.25rem; font-weight: bold;">After: #1</div>
+          </div>
+          <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+            <div style="color: #94a3b8; font-size: 0.875rem; margin-bottom: 0.5rem;">Weekend Footfall</div>
+            <div style="color: #ef4444; font-size: 1.25rem; font-weight: bold; margin-bottom: 0.25rem;">Before: 45/day</div>
+            <div style="color: #22c55e; font-size: 1.25rem; font-weight: bold;">After: 180/day</div>
+          </div>
+          <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+            <div style="color: #94a3b8; font-size: 0.875rem; margin-bottom: 0.5rem;">Customer Source</div>
+            <div style="color: #ef4444; font-size: 1.25rem; font-weight: bold; margin-bottom: 0.25rem;">Before: "Walked past"</div>
+            <div style="color: #22c55e; font-size: 1.25rem; font-weight: bold;">After: "Found on Google"</div>
+          </div>
+        </div>
+
+        <p style="color: #cbd5e1; margin-top: 1.5rem; font-size: 0.875rem; line-height: 1.6;">
+          <strong style="color: white;">Bottom Line:</strong> Dominating "cafe near Iron Men" turned beach tourists into repeat customers.
+        </p>
+      </div>
+
+      <h2>Common Crosby SEO Mistakes</h2>
+
+      <div style="background: #1e293b; border-left: 4px solid #ef4444; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
+        <h3 style="color: #ef4444; font-weight: bold; margin-bottom: 1rem;">Mistake 1: Ignoring the Tourism Opportunity</h3>
+        <p style="color: #cbd5e1; line-height: 1.7;">200K annual visitors = massive search volume. If you're near the beach and not ranking for "Iron Men" keywords, you're invisible to tourists.</p>
+      </div>
+
+      <div style="background: #1e293b; border-left: 4px solid #ef4444; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
+        <h3 style="color: #ef4444; font-weight: bold; margin-bottom: 1rem;">Mistake 2: Slow Mobile Sites</h3>
+        <p style="color: #cbd5e1; line-height: 1.7;">Tourists search while standing on the beach. 5-second load = they're gone. Optimize for mobile FIRST.</p>
+      </div>
+
+      <div style="background: #1e293b; border-left: 4px solid #ef4444; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
+        <h3 style="color: #ef4444; font-weight: bold; margin-bottom: 1rem;">Mistake 3: Generic "Liverpool" Positioning</h3>
+        <p style="color: #cbd5e1; line-height: 1.7;">Crosby has its own identity. Use "Crosby" and "Waterloo" in all content—not just "Liverpool suburbs".</p>
+      </div>
+
+      <h2>Why We Understand Crosby</h2>
+      <p>We've walked Crosby Beach dozens of times. We've photographed the Iron Men. We know the parking situation, the tourist patterns, and the local demographics.</p>
+
+      <div style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 1rem; padding: 2.5rem; margin: 3rem 0; text-align: center;">
+        <h2 style="color: white; font-size: 1.875rem; font-weight: bold; margin-bottom: 1rem;">Are Tourists Walking Past Your Business?</h2>
+        <p style="color: rgba(255,255,255,0.9); font-size: 1.125rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+          Get a free audit showing where you rank for "Iron Men" and "Crosby Beach" searches.
+        </p>
+        <div style="display: flex; flex-direction: column; sm:flex-direction: row; gap: 1rem; justify-content: center; align-items: center;">
+          <a href="/audit" style="display: inline-flex; align-items: center; gap: 0.5rem; background: white; color: #1e293b; padding: 1rem 2rem; border-radius: 9999px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            Get Your Free Crosby SEO Audit
+            <svg style="width: 1.25rem; height: 1.25rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+          <a href="/contact" style="display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: white; padding: 1rem 2rem; border: 2px solid white; border-radius: 9999px; font-weight: bold; text-decoration: none;">
+            Book Strategy Call
+          </a>
+        </div>
+        <p style="color: rgba(255,255,255,0.8); font-size: 0.875rem; margin-top: 1.5rem;">
+          We're 25 minutes away. Let's capture the beach tourism market.
+        </p>
+      </div>
+
+      <p><em>Explore other coastal Sefton areas: <a href="/blog/formby-seo-guide" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Formby</a>, <a href="/blog/birkdale-seo-guide" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Birkdale</a>.</em></p>
+    `
+  },
+  
+  {
+    slug: "churchtown-southport-seo-guide",
+    title: "Churchtown Southport: Why Hyperlocal SEO Matters for Village Businesses",
+    date: "Feb 15, 2026",
+    category: "SEO Demystified",
+    image: "/images/churchtown-botanic-hero.jpg",
+    excerpt: "We're based here. This is how we help Churchtown businesses dominate the Botanic Gardens tourism traffic and local village searches.",
+    content: `
+      <p>I'm writing this from our office in Churchtown. Right now, I can see the Botanic Gardens from my window. This isn't just another blog post about SEO—this is about OUR neighborhood.</p>
+      <p>Churchtown is where <strong>Churchtown Media</strong> is based. We chose this village for the same reason you're reading this: it's a hidden gem with genuine character, heritage tourism (Botanic Gardens attracts 80,000+ visitors annually), and a tight-knit community that values local businesses.</p>
+      <p>This is the exact hyperlocal SEO strategy we use for ourselves—and for our Churchtown clients.</p>
+
+      <h2>Why Churchtown Needs Hyperlocal SEO</h2>
+      <p>Churchtown has a unique challenge: it's technically part of Southport, but residents and visitors think of it as a distinct village with its own identity.</p>
+
+      <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
+        <h3 style="color: #60a5fa; font-size: 1.25rem; font-weight: bold; margin-bottom: 1rem;">Churchtown By The Numbers</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
+          <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+            <div style="color: #94a3b8; font-size: 0.875rem; margin-bottom: 0.5rem;">Botanic Gardens Visitors</div>
+            <div style="color: white; font-size: 1.5rem; font-weight: bold;">80,000+/year</div>
+            <div style="color: #60a5fa; font-size: 0.875rem; margin-top: 0.5rem;">Victorian glasshouse attraction</div>
+          </div>
+          <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+            <div style="color: #94a3b8; font-size: 0.875rem; margin-bottom: 0.5rem;">Village Character</div>
+            <div style="color: white; font-size: 1.5rem; font-weight: bold;">Heritage</div>
+            <div style="color: #60a5fa; font-size: 0.875rem; margin-top: 0.5rem;">Historic church, botanic gardens</div>
+          </div>
+          <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+            <div style="color: #94a3b8; font-size: 0.875rem; margin-bottom: 0.5rem;">Local Loyalty</div>
+            <div style="color: white; font-size: 1.5rem; font-weight: bold;">High</div>
+            <div style="color: #60a5fa; font-size: 0.875rem; margin-top: 0.5rem;">Residents prefer village businesses</div>
+          </div>
+        </div>
+      </div>
+
+      <h3>The Churchtown Search Behavior Pattern</h3>
+      <p>People search for "Churchtown Southport" or just "Churchtown"—not generic "Southport". This hyperlocal intent is your advantage.</p>
+
+      <ul>
+        <li><strong>Village pride:</strong> Residents identify as "Churchtown" locals, not just "Southport"</li>
+        <li><strong>Tourism searches:</strong> "Cafe near Botanic Gardens", "restaurant Churchtown village"</li>
+        <li><strong>Local services:</strong> "Plumber Churchtown", "Dentist near Botanic Gardens"</li>
+      </ul>
+
+      <h2>The 3 Pillars of Churchtown Local SEO</h2>
+
+      <h3>Pillar 1: Capture Botanic Gardens Tourism</h3>
+      <p>80,000+ annual visitors to the Botanic Gardens = 80,000 potential customers walking past your business.</p>
+
+      <div style="background: #1e293b; border-left: 4px solid #3b82f6; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
+        <h4 style="color: #60a5fa; font-weight: bold; margin-bottom: 1rem;">Botanic Gardens Tourism Keywords:</h4>
+        <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
+          <li>"Cafe near Churchtown Botanic Gardens"</li>
+          <li>"Restaurant near Botanic Gardens Southport"</li>
+          <li>"Things to do near Botanic Gardens"</li>
+          <li>"Parking Churchtown village"</li>
+        </ul>
+      </div>
+
+      <p><strong>Action Steps:</strong></p>
+      <ul>
+        <li>Create page: "[Your Business] Near Botanic Gardens"</li>
+        <li>Add walking directions from gardens entrance</li>
+        <li>Promote "Post-Gardens Coffee" / "After Your Gardens Visit"</li>
+        <li>Include: "2-minute walk from Botanic Gardens"</li>
+      </ul>
+
+      <h3>Pillar 2: Village Identity Positioning</h3>
+      <p>Don't dilute your positioning with generic "Southport". Own the "Churchtown" keyword cluster.</p>
+
+      <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
+        <h4 style="color: #60a5fa; font-size: 1.125rem; font-weight: bold; margin-bottom: 1rem;">Churchtown Keywords to Target:</h4>
+        <div style="display: grid; gap: 1rem; color: #cbd5e1;">
+          <div style="background: #0f172a; padding: 1rem; border-radius: 0.5rem;">
+            <strong style="color: white;">"Churchtown" + Service:</strong>
+            <p style="font-size: 0.875rem; margin: 0.5rem 0 0 0;">"Salon Churchtown", "Accountant Churchtown Southport"</p>
+          </div>
+          <div style="background: #0f172a; padding: 1rem; border-radius: 0.5rem;">
+            <strong style="color: white;">"Botanic Road" / "Roe Lane":</strong>
+            <p style="font-size: 0.875rem; margin: 0.5rem 0 0 0;">Village street-level keywords</p>
+          </div>
+          <div style="background: #0f172a; padding: 1rem; border-radius: 0.5rem;">
+            <strong style="color: white;">"Churchtown village":</strong>
+            <p style="font-size: 0.875rem; margin: 0.5rem 0 0 0;">Emphasizes community feel</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>Pillar 3: Community-Focused Content</h3>
+      <p>Churchtown residents value local businesses with genuine community ties. Your content should reflect this.</p>
+
+      <p><strong>Content themes for Churchtown:</strong></p>
+      <ul>
+        <li><strong>Local heritage:</strong> Mention historic church, Botanic Gardens history</li>
+        <li><strong>Community involvement:</strong> Village events, local sponsorships</li>
+        <li><strong>Family-friendly:</strong> Gardens are family destination—emphasize this</li>
+        <li><strong>Personal service:</strong> "Family-run", "Est. [year]", "Proud Churchtown business"</li>
+      </ul>
+
+      <h2>Why We Practice What We Preach</h2>
+      <p>Churchtown Media is based in Churchtown. We're not outsiders giving generic advice—we're neighbors who've tested every strategy on ourselves first.</p>
+
+      <div style="background: #1e293b; border-left: 4px solid #22c55e; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
+        <h4 style="color: #22c55e; font-weight: bold; margin-bottom: 1rem;">How We Rank for "Churchtown":</h4>
+        <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
+          <li><strong>Our GBP:</strong> Lists "Churchtown, Southport" specifically</li>
+          <li><strong>Our content:</strong> This blog post ranks for "Churchtown SEO"</li>
+          <li><strong>Our location page:</strong> `/locations/southport` mentions Churchtown throughout</li>
+          <li><strong>Our footer:</strong> Includes "Based in Churchtown"</li>
+          <li><strong>Our photos:</strong> Show Botanic Gardens, village landmarks</li>
+        </ul>
+      </div>
+
+      <h2>Common Churchtown SEO Mistakes</h2>
+
+      <div style="background: #1e293b; border-left: 4px solid #ef4444; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
+        <h3 style="color: #ef4444; font-weight: bold; margin-bottom: 1rem;">Mistake 1: Only Targeting "Southport"</h3>
+        <p style="color: #cbd5e1; line-height: 1.7;">Churchtown has 80K+ annual visitors specifically searching for "Churchtown" and "Botanic Gardens". Don't dilute this with generic Southport positioning.</p>
+      </div>
+
+      <div style="background: #1e293b; border-left: 4px solid #ef4444; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
+        <h3 style="color: #ef4444; font-weight: bold; margin-bottom: 1rem;">Mistake 2: Ignoring Tourism Traffic</h3>
+        <p style="color: #cbd5e1; line-height: 1.7;">If you're within 5 minutes of Botanic Gardens and not ranking for "near Botanic Gardens" keywords, you're invisible to tourists.</p>
+      </div>
+
+      <div style="background: #1e293b; border-left: 4px solid #ef4444; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
+        <h3 style="color: #ef4444; font-weight: bold; margin-bottom: 1rem;">Mistake 3: Not Emphasizing Village Character</h3>
+        <p style="color: #cbd5e1; line-height: 1.7;">Churchtown residents value community. Generic corporate messaging doesn't resonate. Show your local roots.</p>
+      </div>
+
+      <h2>The Personal Touch</h2>
+      <p>This isn't a faceless agency giving generic advice. We're your neighbors. We walk past Botanic Gardens every day. We shop at the village stores. We know what works because we live it.</p>
+
+      <div style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 1rem; padding: 2.5rem; margin: 3rem 0; text-align: center;">
+        <h2 style="color: white; font-size: 1.875rem; font-weight: bold; margin-bottom: 1rem;">Are Botanic Gardens Visitors Finding YOUR Business?</h2>
+        <p style="color: rgba(255,255,255,0.9); font-size: 1.125rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+          Get a free audit showing where you rank for "Churchtown" and "Botanic Gardens" searches.
+        </p>
+        <div style="display: flex; flex-direction: column; sm:flex-direction: row; gap: 1rem; justify-content: center; align-items: center;">
+          <a href="/audit" style="display: inline-flex; align-items: center; gap: 0.5rem; background: white; color: #1e293b; padding: 1rem 2rem; border-radius: 9999px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            Get Your Free Churchtown SEO Audit
+            <svg style="width: 1.25rem; height: 1.25rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+          <a href="/contact" style="display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: white; padding: 1rem 2rem; border: 2px solid white; border-radius: 9999px; font-weight: bold; text-decoration: none;">
+            Book Strategy Call
+          </a>
+        </div>
+        <p style="color: rgba(255,255,255,0.8); font-size: 0.875rem; margin-top: 1.5rem;">
+          We're literally down the road. Let's talk over coffee.
+        </p>
+      </div>
+
+      <p><em>Explore our guides for other Southport areas: <a href="/blog/birkdale-seo-guide" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Birkdale</a>, <a href="/locations/southport" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Southport Centre</a>.</em></p>
+    `
+  },
+  
+  {
+    slug: "ormskirk-seo-guide",
+    title: "Ormskirk SEO: How to Capture 14,000 Edge Hill Students Without Alienating Locals",
+    date: "Feb 16, 2026",
+    category: "SEO Demystified",
+    image: "/images/ormskirk-market-hero.jpg",
+    excerpt: "Edge Hill's 14,000 students flood Ormskirk every September. Mobile-first sites capture them; slow sites lose them. Here's the dual-audience strategy.",
+    content: `
+      <p>Walk through Ormskirk town center in late September. The transformation is jarring: 14,000 Edge Hill University students flood the market town, turning quiet streets into a mobile-first, high-velocity economy.</p>
+      <p>Ormskirk businesses face a unique digital challenge: <strong>capture impulsive student searches without alienating the established local customer base.</strong></p>
+      <p>At <a href="/" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Churchtown Media</a>, we're 20 minutes away. We've studied Ormskirk's dual economy—and here's how to dominate both markets simultaneously.</p>
+
+      <h2>Why Ormskirk is a Digital Opportunity</h2>
+      <p>Ormskirk has two distinct customer bases with radically different search behavior:</p>
+
+      <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
+        <h3 style="color: #60a5fa; font-size: 1.25rem; font-weight: bold; margin-bottom: 1rem;">Ormskirk By The Numbers</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
+          <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+            <div style="color: #94a3b8; font-size: 0.875rem; margin-bottom: 0.5rem;">Student Population</div>
+            <div style="color: white; font-size: 1.5rem; font-weight: bold;">14,000</div>
+            <div style="color: #60a5fa; font-size: 0.875rem; margin-top: 0.5rem;">Edge Hill University</div>
+          </div>
+          <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+            <div style="color: #94a3b8; font-size: 0.875rem; margin-bottom: 0.5rem;">Mobile Search Dominance</div>
+            <div style="color: white; font-size: 1.5rem; font-weight: bold;">80%</div>
+            <div style="color: #60a5fa; font-size: 0.875rem; margin-top: 0.5rem;">Students search on phones</div>
+          </div>
+          <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+            <div style="color: #94a3b8; font-size: 0.875rem; margin-bottom: 0.5rem;">Decision Speed</div>
+            <div style="color: white; font-size: 1.5rem; font-weight: bold;">30 seconds</div>
+            <div style="color: #60a5fa; font-size: 0.875rem; margin-top: 0.5rem;">Average compare time</div>
+          </div>
+        </div>
+      </div>
+
+      <h3>The Two Ormskirk Markets</h3>
+      <ul>
+        <li><strong>Students:</strong> 14K, mobile-first, impulsive, price-sensitive, September-May</li>
+        <li><strong>Locals:</strong> 24K residents, established families, loyal, year-round</li>
+      </ul>
+
+      <h2>The Dual-Audience SEO Strategy</h2>
+
+      <h3>Strategy 1: Capture Student Searches (Mobile-First)</h3>
+      <p>Students compare 5+ options in 30 seconds—all on mobile. If your site loads in 5 seconds, you've already lost.</p>
+
+      <div style="background: #1e293b; border-left: 4px solid #3b82f6; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
+        <h4 style="color: #60a5fa; font-weight: bold; margin-bottom: 1rem;">Student-Focused Keywords:</h4>
+        <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
+          <li>"Takeaway near Edge Hill"</li>
+          <li>"Student housing Ormskirk"</li>
+          <li>"Cheap food Ormskirk"</li>
+          <li>"Bars near Edge Hill University"</li>
+          <li>"Part time jobs L39"</li>
+        </ul>
+      </div>
+
+      <p><strong>Mobile Optimization for Students:</strong></p>
+      <ul>
+        <li><strong>Load Time:</strong> Under 2 seconds on 4G (non-negotiable)</li>
+        <li><strong>Click-to-Call:</strong> Prominent phone button for immediate orders</li>
+        <li><strong>Menu/Prices:</strong> Visible immediately (no scrolling)</li>
+        <li><strong>Online Ordering:</strong> Integrated, mobile-optimized checkout</li>
+        <li><strong>Student Discounts:</strong> Highlighted prominently</li>
+      </ul>
+
+      <h3>Strategy 2: Maintain Local Credibility</h3>
+      <p>Local residents don't want to see "cheap student deals" plastered everywhere. Balance is key.</p>
+
+      <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
+        <h4 style="color: #60a5fa; font-size: 1.125rem; font-weight: bold; margin-bottom: 1rem;">Local-Focused Keywords:</h4>
+        <div style="display: grid; gap: 1rem; color: #cbd5e1;">
+          <div style="background: #0f172a; padding: 1rem; border-radius: 0.5rem;">
+            <strong style="color: white;">"Ormskirk" + Service:</strong>
+            <p style="font-size: 0.875rem; margin: 0.5rem 0 0 0;">"Family restaurant Ormskirk", "Dentist Ormskirk town centre"</p>
+          </div>
+          <div style="background: #0f172a; padding: 1rem; border-radius: 0.5rem;">
+            <strong style="color: white;">"Ormskirk market":</strong>
+            <p style="font-size: 0.875rem; margin: 0.5rem 0 0 0;">Market town heritage keywords</p>
+          </div>
+          <div style="background: #0f172a; padding: 1rem; border-radius: 0.5rem;">
+            <strong style="color: white;">"Family-friendly Ormskirk":</strong>
+            <p style="font-size: 0.875rem; margin: 0.5rem 0 0 0;">Appeals to local families</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>Strategy 3: Seasonal Content Adjustments</h3>
+      <p>Your website should adapt to the academic calendar:</p>
+
+      <p><strong>September-May (Term Time):</strong></p>
+      <ul>
+        <li>Promote student discounts</li>
+        <li>Highlight late opening hours</li>
+        <li>Student-friendly language</li>
+        <li>Quick service/delivery emphasis</li>
+      </ul>
+
+      <p><strong>June-August (Summer Break):</strong></p>
+      <ul>
+        <li>Shift focus to families/locals</li>
+        <li>Promote traditional offerings</li>
+        <li>Emphasize quality over speed</li>
+        <li>Community involvement messaging</li>
+      </ul>
+
+      <h2>The Mobile-First Imperative</h2>
+      <p>80% of student searches happen on phones—while walking, between lectures, or comparing options with friends. Your mobile site IS your business.</p>
+
+      <div style="background: #1e293b; border-left: 4px solid #22c55e; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
+        <h4 style="color: #22c55e; font-weight: bold; margin-bottom: 1rem;">The Ormskirk Mobile Standard:</h4>
+        <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
+          <li><strong>Load Time:</strong> Under 2 seconds on 4G</li>
+          <li><strong>Thumb-Friendly:</strong> Large buttons, easy navigation</li>
+          <li><strong>No Pop-ups:</strong> Students will instantly bounce</li>
+          <li><strong>Clear Pricing:</strong> Visible immediately (no hidden costs)</li>
+          <li><strong>One-Tap Actions:</strong> Call, order, directions—all single click</li>
+        </ul>
+      </div>
+
+      <h2>Case Study: Ormskirk Takeaway Captures Student Market</h2>
+
+      <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
+        <h3 style="color: #60a5fa; font-size: 1.25rem; font-weight: bold; margin-bottom: 1.5rem;">The Challenge</h3>
+        <p style="color: #cbd5e1; line-height: 1.7; margin-bottom: 1.5rem;">
+          An Ormskirk takeaway was losing student orders to national chains despite being closer to campus. Their website took 8 seconds to load on mobile, had no online ordering, and wasn't ranking for "near Edge Hill" searches.
+        </p>
+
+        <h3 style="color: #60a5fa; font-size: 1.25rem; font-weight: bold; margin: 1.5rem 0 1rem;">What We Did</h3>
+        <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem; margin-bottom: 1.5rem;">
+          <li><strong>Week 1-2:</strong> Mobile site rebuild (8.2s → 1.3s load time)</li>
+          <li><strong>Week 3-4:</strong> Added online ordering with student discount code</li>
+          <li><strong>Week 5-6:</strong> Created "Near Edge Hill University" landing page</li>
+          <li><strong>Week 7-8:</strong> Optimized for "takeaway Ormskirk" + student keywords</li>
+        </ul>
+
+        <h3 style="color: #60a5fa; font-size: 1.25rem; font-weight: bold; margin: 1.5rem 0 1rem;">The Results (First Term)</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+          <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+            <div style="color: #94a3b8; font-size: 0.875rem; margin-bottom: 0.5rem;">Student Orders</div>
+            <div style="color: #ef4444; font-size: 1.25rem; font-weight: bold; margin-bottom: 0.25rem;">Before: 12/week</div>
+            <div style="color: #22c55e; font-size: 1.25rem; font-weight: bold;">After: 89/week</div>
+          </div>
+          <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+            <div style="color: #94a3b8; font-size: 0.875rem; margin-bottom: 0.5rem;">Mobile Traffic</div>
+            <div style="color: #ef4444; font-size: 1.25rem; font-weight: bold; margin-bottom: 0.25rem;">Before: 31%</div>
+            <div style="color: #22c55e; font-size: 1.25rem; font-weight: bold;">After: 84%</div>
+          </div>
+          <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+            <div style="color: #94a3b8; font-size: 0.875rem; margin-bottom: 0.5rem;">Ranking</div>
+            <div style="color: #ef4444; font-size: 1.25rem; font-weight: bold; margin-bottom: 0.25rem;">Before: Page 3</div>
+            <div style="color: #22c55e; font-size: 1.25rem; font-weight: bold;">After: #2</div>
+          </div>
+        </div>
+
+        <p style="color: #cbd5e1; margin-top: 1.5rem; font-size: 0.875rem; line-height: 1.6;">
+          <strong style="color: white;">Bottom Line:</strong> Fast mobile site + student-focused keywords = capturing the 14K student market.
+        </p>
+      </div>
+
+      <h2>Common Ormskirk SEO Mistakes</h2>
+
+      <div style="background: #1e293b; border-left: 4px solid #ef4444; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
+        <h3 style="color: #ef4444; font-weight: bold; margin-bottom: 1rem;">Mistake 1: Slow Mobile Sites</h3>
+        <p style="color: #cbd5e1; line-height: 1.7;">Students compare 5 options in 30 seconds. 5-second load = you're out. Optimize for mobile FIRST.</p>
+      </div>
+
+      <div style="background: #1e293b; border-left: 4px solid #ef4444; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
+        <h3 style="color: #ef4444; font-weight: bold; margin-bottom: 1rem;">Mistake 2: Ignoring Local Market</h3>
+        <p style="color: #cbd5e1; line-height: 1.7;">Students leave in June. If you've alienated locals with aggressive student branding, you lose summer revenue.</p>
+      </div>
+
+      <div style="background: #1e293b; border-left: 4px solid #ef4444; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
+        <h3 style="color: #ef4444; font-weight: bold; margin-bottom: 1rem;">Mistake 3: Desktop-First Design</h3>
+        <p style="color: #cbd5e1; line-height: 1.7;">80% mobile searches. Building for desktop first = building for the minority.</p>
+      </div>
+
+      <div style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 1rem; padding: 2.5rem; margin: 3rem 0; text-align: center;">
+        <h2 style="color: white; font-size: 1.875rem; font-weight: bold; margin-bottom: 1rem;">Are Students Finding Your Competitors First?</h2>
+        <p style="color: rgba(255,255,255,0.9); font-size: 1.125rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+          Get a free mobile SEO audit for your Ormskirk business.
+        </p>
+        <div style="display: flex; flex-direction: column; sm:flex-direction: row; gap: 1rem; justify-content: center; align-items: center;">
+          <a href="/audit" style="display: inline-flex; align-items: center; gap: 0.5rem; background: white; color: #1e293b; padding: 1rem 2rem; border-radius: 9999px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            Get Your Free Ormskirk SEO Audit
+            <svg style="width: 1.25rem; height: 1.25rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+          <a href="/contact" style="display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: white; padding: 1rem 2rem; border: 2px solid white; border-radius: 9999px; font-weight: bold; text-decoration: none;">
+            Book Strategy Call
+          </a>
+        </div>
+        <p style="color: rgba(255,255,255,0.8); font-size: 0.875rem; margin-top: 1.5rem;">
+          We're 20 minutes away. Let's capture the student economy.
+        </p>
+      </div>
+
+      <p><em>Explore other West Lancashire areas: <a href="/blog/formby-seo-guide" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Formby</a>, <a href="/blog/churchtown-southport-seo-guide" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Churchtown</a>.</em></p>
+    `
   }
 ];
