@@ -68,28 +68,39 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.className} bg-slate-950 text-white antialiased selection:bg-blue-400 selection:text-white`}>
         
-        {/* --- 1. COOKIEYES BANNER --- */}
+        {/* --- 1. COOKIEYES BANNER (Delayed for performance) --- */}
         <Script
           id="cookieyes"
-          src="https://cdn-cookieyes.com/client_data/d800a0412ec550532ec1984546b7231c/script.js" 
-          strategy="lazyOnload" 
+          strategy="lazyOnload"
+          dangerouslySetInnerHTML={{
+            __html: `
+              setTimeout(function() {
+                var s = document.createElement('script');
+                s.src = 'https://cdn-cookieyes.com/client_data/d800a0412ec550532ec1984546b7231c/script.js';
+                s.async = 1;
+                document.head.appendChild(s);
+              }, 2000);
+            `,
+          }}
         />
 
-        {/* --- 2. CRISP CHAT --- */}
+        {/* --- 2. CRISP CHAT (Delayed 3s for performance) --- */}
         <Script
           id="crisp-chat"
           strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
-              window.$crisp=[];
-              window.CRISP_WEBSITE_ID="5b24b78a-41ad-45fb-bda1-066fe50b4fc4";
-              (function(){
-                d=document;
-                s=d.createElement("script");
-                s.src="https://client.crisp.chat/l.js";
-                s.async=1;
-                d.getElementsByTagName("head")[0].appendChild(s);
-              })();
+              setTimeout(function() {
+                window.$crisp=[];
+                window.CRISP_WEBSITE_ID="5b24b78a-41ad-45fb-bda1-066fe50b4fc4";
+                (function(){
+                  var d=document;
+                  var s=d.createElement("script");
+                  s.src="https://client.crisp.chat/l.js";
+                  s.async=1;
+                  d.getElementsByTagName("head")[0].appendChild(s);
+                })();
+              }, 3000);
             `,
           }}
         />

@@ -51,17 +51,22 @@ const jsonLd = {
 
 export default function AuditPage() {
   return (
-    <main className="min-h-screen pt-32 pb-20 bg-slate-950 relative overflow-hidden">
+    <>
+      {/* Preload critical resources for faster LCP */}
+      <link rel="preconnect" href="https://www.googleapis.com" />
+      <link rel="dns-prefetch" href="https://www.googleapis.com" />
       
-      {/* INJECT SCHEMA */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <main className="min-h-screen pt-32 pb-20 bg-slate-950 relative overflow-hidden">
+        
+        {/* INJECT SCHEMA */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
 
-      {/* BACKGROUND EFFECTS (The Premium Polish) - LCP Optimized */}
-      <div className="animated-blob absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-blue-600/20 rounded-full blur-[120px] pointer-events-none"></div>
-      <div className="animated-blob absolute bottom-0 right-0 w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+        {/* BACKGROUND EFFECTS - Optimized for performance */}
+        <div className="animated-blob absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-blue-600/20 rounded-full blur-[80px] pointer-events-none will-change-transform"></div>
+        <div className="animated-blob absolute bottom-0 right-0 w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[60px] pointer-events-none will-change-transform"></div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
@@ -177,5 +182,6 @@ export default function AuditPage() {
 
       </div>
     </main>
+    </>
   );
 }

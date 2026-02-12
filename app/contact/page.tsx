@@ -214,6 +214,7 @@ export default function ContactPage() {
                             <label className="text-sm font-bold text-white ml-1">Project Type</label>
                             <select name="service" className="w-full h-14 px-4 rounded-xl bg-slate-800 border border-slate-700 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 outline-none transition-all text-white font-medium">
                                 <option>Custom Website Development</option>
+                                <option>Small Business Website</option>
                                 <option>SEO & Performance Audit</option>
                                 <option>E-Commerce / Shopify</option>
                                 <option>Software / SaaS Dev</option>
