@@ -17,7 +17,12 @@ export default function Footer() {
         
         {/* COL 1: BRAND & SOCIALS */}
         <div className="space-y-6">
-            <Link href="/" className="block">
+            <Link href="/" className="flex items-center gap-3 group">
+                <img 
+                  src="/logo.png" 
+                  alt="Churchtown Media Logo" 
+                  className="w-10 h-10 group-hover:scale-110 transition-transform"
+                />
                 <span className="font-bold text-2xl text-white tracking-tight">
                     Churchtown<span className="text-blue-500">Media</span>
                 </span>

@@ -58,7 +58,12 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         
         {/* LOGO */}
-        <Link href="/" className="relative z-50 group" onClick={() => setIsOpen(false)}>
+        <Link href="/" className="relative z-50 group flex items-center gap-3" onClick={() => setIsOpen(false)}>
+          <img 
+            src="/logo.png" 
+            alt="Churchtown Media Logo" 
+            className="w-10 h-10 group-hover:scale-110 transition-transform"
+          />
           <span className={`font-bold text-2xl tracking-tight transition-colors ${useWhiteText ? "text-white" : "text-slate-900"}`}>
             Churchtown<span className={useWhiteText ? "text-blue-400" : "text-blue-600"}>Media</span>
           </span>

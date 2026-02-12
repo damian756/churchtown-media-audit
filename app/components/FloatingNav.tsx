@@ -10,7 +10,11 @@ export default function FloatingNav() {
         
         {/* Logo */}
         <Link href="/" className="font-bold text-xl tracking-tight text-slate-900 flex items-center gap-2 group">
-          <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-black text-xs group-hover:rotate-12 transition-transform">CM</div>
+          <img 
+            src="/logo.png" 
+            alt="Churchtown Media Logo" 
+            className="w-8 h-8 group-hover:scale-110 transition-transform"
+          />
           <span>Churchtown<span className="text-blue-600">Media</span></span>
         </Link>
 
