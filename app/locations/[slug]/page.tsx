@@ -100,7 +100,7 @@ export default async function LocationPage({ params }: Props) {
                     <p dangerouslySetInnerHTML={{ 
                       __html: location.description
                         // Process specific phrases first (most specific to least specific)
-                        .replace(/technical SEO/gi, '<a href="/services/technical-seo" class="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">technical SEO</a>')
+                        .replace(/technical SEO/gi, '<a href="/services/seo#technical" class="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">technical SEO</a>')
                         .replace(/local SEO/gi, '<a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">local SEO</a>')
                         .replace(/international SEO/gi, '<a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">international SEO</a>')
                         .replace(/\bSEO and Development\b/gi, '<a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">SEO</a> and <a href="/services/web-design" class="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Development</a>')

@@ -485,7 +485,7 @@ export const faqs: FAQ[] = [
   {
     id: "seo-011",
     question: "What's a reasonable SEO timeline for results?",
-    answer: "Technical fixes: 1-4 weeks to see impact. Local SEO/Map Pack: 4-8 weeks. Competitive organic keywords: 3-6 months. Content-driven rankings: 6-12 months. We're upfront: SEO isn't instant. But it compounds—month 1 builds on month 2 builds on month 3. Our clients typically see meaningful improvement by month 3. The businesses that quit at month 2 never see the payoff. Patience + consistent execution = results. See our <a href='/case-studies'>case studies</a> for real timelines.",
+    answer: "Technical fixes: 1-4 weeks to see impact. Local SEO/Map Pack: 4-8 weeks. Competitive organic keywords: 3-6 months. Content-driven rankings: 6-12 months. We're upfront: SEO isn't instant. But it compounds—month 1 builds on month 2 builds on month 3. Our clients typically see meaningful improvement by month 3. The businesses that quit at month 2 never see the payoff. Patience + consistent execution = results. See our <a href='/portfolio'>case studies</a> for real timelines.",
     category: "SEO & Rankings",
     keywords: ["timeline", "when will I see results", "seo patience"]
   },
@@ -590,7 +590,7 @@ export const faqs: FAQ[] = [
   {
     id: "seo-026",
     question: "What ROI should I expect from SEO?",
-    answer: "Varies by industry. Local trades: often 300-500% ROI in year one (cost of SEO vs value of new jobs). Professional services: 200-400%. E-commerce: depends on margins. We track conversions (calls, forms, sales) and assign values. Typical Southport client: £500/month SEO = 5-10 extra jobs at £100+ each = £500-1000/month value. ROI compounds—month 6 often performs better than month 1. We provide ROI reporting in our analytics. See <a href='/case-studies'>real ROI examples</a>.",
+    answer: "Varies by industry. Local trades: often 300-500% ROI in year one (cost of SEO vs value of new jobs). Professional services: 200-400%. E-commerce: depends on margins. We track conversions (calls, forms, sales) and assign values. Typical Southport client: £500/month SEO = 5-10 extra jobs at £100+ each = £500-1000/month value. ROI compounds—month 6 often performs better than month 1. We provide ROI reporting in our analytics. See <a href='/portfolio'>real ROI examples</a>.",
     category: "SEO & Rankings",
     keywords: ["roi", "return on investment", "seo value", "results"]
   },
@@ -874,7 +874,7 @@ export const faqs: FAQ[] = [
   {
     id: "techseo-001",
     question: "What is technical SEO?",
-    answer: "Technical SEO = making your site technically perfect for Google's crawler. It includes: site speed (Core Web Vitals), crawlability (can Google find all pages?), indexing (is Google showing the right pages?), structured data (schema), mobile-friendliness, HTTPS. It's the foundation—you can have great content but if Google can't crawl your site or it loads in 5 seconds, you won't rank. We audit and fix technical issues first. See our <a href='/services/technical-seo'>technical SEO services</a>.",
+    answer: "Technical SEO = making your site technically perfect for Google's crawler. It includes: site speed (Core Web Vitals), crawlability (can Google find all pages?), indexing (is Google showing the right pages?), structured data (schema), mobile-friendliness, HTTPS. It's the foundation—you can have great content but if Google can't crawl your site or it loads in 5 seconds, you won't rank. We audit and fix technical issues first. See our <a href='/services/seo#technical'>technical SEO approach</a>.",
     category: "Technical SEO",
     keywords: ["technical seo", "what is", "foundation", "crawlability"]
   },
@@ -1021,7 +1021,7 @@ export const faqs: FAQ[] = [
   {
     id: "techseo-022",
     question: "How do I add structured data to my site?",
-    answer: "JSON-LD in the page's head or body. Script tag with type='application/ld+json' containing your schema. We inject this programmatically in Next.js—every page gets appropriate schema (LocalBusiness on homepage, Article on blog posts, etc.). WordPress: use a plugin (Schema Pro, RankMath) but they add bloat. Clean implementation beats plugin. We include schema in every build. See our <a href='/services/technical-seo'>technical SEO approach</a>.",
+    answer: "JSON-LD in the page's head or body. Script tag with type='application/ld+json' containing your schema. We inject this programmatically in Next.js—every page gets appropriate schema (LocalBusiness on homepage, Article on blog posts, etc.). WordPress: use a plugin (Schema Pro, RankMath) but they add bloat. Clean implementation beats plugin. We include schema in every build. See our <a href='/services/seo'>SEO services</a>.",
     category: "Technical SEO",
     keywords: ["structured data", "schema", "json-ld", "add"]
   },
@@ -1042,7 +1042,7 @@ export const faqs: FAQ[] = [
   {
     id: "techseo-025",
     question: "What technical SEO do you include in website builds?",
-    answer: "Every build gets: Core Web Vitals optimization, semantic HTML structure, unique meta titles/descriptions, JSON-LD schema, sitemap, robots.txt, canonical tags, mobile-first design, HTTPS, clean URL structure, internal linking. We don't charge extra—technical SEO is part of quality web development. Next.js gives us the foundation; we build on it. Your site launches SEO-ready. See our <a href='/services/technical-seo'>technical SEO package</a>.",
+    answer: "Every build gets: Core Web Vitals optimization, semantic HTML structure, unique meta titles/descriptions, JSON-LD schema, sitemap, robots.txt, canonical tags, mobile-first design, HTTPS, clean URL structure, internal linking. We don't charge extra—technical SEO is part of quality web development. Next.js gives us the foundation; we build on it. Your site launches SEO-ready. See our <a href='/services/seo'>SEO services</a>.",
     category: "Technical SEO",
     keywords: ["technical seo", "included", "website build", "what's included"]
   },
@@ -1135,7 +1135,7 @@ export const faqs: FAQ[] = [
   {
     id: "price-013",
     question: "What's the ROI of a £3,000 website?",
-    answer: "If your site generates one extra enquiry per month at £100 average value = £1,200/year. Paid back in 2.5 years—and the site lasts 5+ years. Or: organic traffic from SEO. £500/month SEO + £3,000 site = 5-10 extra jobs at £100+ each monthly. ROI in months, not years. We've seen Southport clients 3x their enquiry volume. The website isn't a cost—it's your cheapest sales channel. See <a href='/case-studies'>real ROI</a>.",
+    answer: "If your site generates one extra enquiry per month at £100 average value = £1,200/year. Paid back in 2.5 years—and the site lasts 5+ years. Or: organic traffic from SEO. £500/month SEO + £3,000 site = 5-10 extra jobs at £100+ each monthly. ROI in months, not years. We've seen Southport clients 3x their enquiry volume. The website isn't a cost—it's your cheapest sales channel. See <a href='/portfolio'>real ROI</a>.",
     category: "Pricing & Packages",
     keywords: ["roi", "return", "worth it", "value"]
   },
@@ -1433,7 +1433,7 @@ export const faqs: FAQ[] = [
   {
     id: "mlec-020",
     question: "Why should Southport businesses choose Churchtown Media?",
-    answer: "Local expertise—we understand Southport, the MLEC opportunity, and North West business. Modern tech—Next.js, not slow WordPress. Transparent pricing—no surprises. Proven results—Alotek Shelters tripled traffic, case studies on our site. We're not the cheapest or most expensive—we're the right fit for Southport businesses who want quality and results. See our <a href='/testimonials'>testimonials</a> and <a href='/case-studies'>case studies</a>.",
+    answer: "Local expertise—we understand Southport, the MLEC opportunity, and North West business. Modern tech—Next.js, not slow WordPress. Transparent pricing—no surprises. Proven results—Alotek Shelters tripled traffic, case studies on our site. We're not the cheapest or most expensive—we're the right fit for Southport businesses who want quality and results. See our <a href='/testimonials'>testimonials</a> and <a href='/portfolio'>case studies</a>.",
     category: "Southport & MLEC",
     keywords: ["why us", "choose", "churchtown media", "southport"]
   },
@@ -1742,7 +1742,7 @@ export const faqs: FAQ[] = [
   {
     id: "analytics-008",
     question: "How do you measure SEO success?",
-    answer: "Primary: organic traffic and conversions. Secondary: keyword rankings, Map Pack position, domain authority. We care about leads and revenue, not vanity rankings. Ranking #1 for an irrelevant keyword = pointless. We track keywords that convert. Success = more enquiries, more calls, more sales from organic search. We'll show you the correlation between our work and your bottom line. See our <a href='/case-studies'>case studies</a> for examples.",
+    answer: "Primary: organic traffic and conversions. Secondary: keyword rankings, Map Pack position, domain authority. We care about leads and revenue, not vanity rankings. Ranking #1 for an irrelevant keyword = pointless. We track keywords that convert. Success = more enquiries, more calls, more sales from organic search. We'll show you the correlation between our work and your bottom line. See our <a href='/portfolio'>case studies</a> for examples.",
     category: "Analytics & Reporting",
     keywords: ["seo success", "measure", "results", "kpis"]
   },

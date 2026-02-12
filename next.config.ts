@@ -70,6 +70,11 @@ const nextConfig: NextConfig = {
       // 3. GENERIC SERVICE PAGES
       // ----------------------------------------
       {
+        source: '/services/technical-seo',
+        destination: '/services/seo',
+        permanent: true,
+      },
+      {
         source: '/search-engine-optimisation',
         destination: '/services/seo',
         permanent: true,
@@ -98,6 +103,11 @@ const nextConfig: NextConfig = {
       // ----------------------------------------
       // 4. CORE PAGES
       // ----------------------------------------
+      {
+        source: '/case-studies',
+        destination: '/portfolio',
+        permanent: true,
+      },
       {
         source: '/contacts',
         destination: '/contact',

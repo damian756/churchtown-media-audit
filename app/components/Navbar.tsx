@@ -37,6 +37,7 @@ export default function Navbar() {
   // Services and Who We Help are handled by dropdown components
   const links = [
     { name: "Work", href: "/work" },
+    { name: "Portfolio", href: "/portfolio" },
     { name: "About", href: "/about" },
     { name: "Reviews", href: "/testimonials" },
     { name: "Insights", href: "/blog" },

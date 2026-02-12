@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Search, MapPin, BarChart, ArrowRight, Laptop, CheckCircle2, Plus, TrendingUp, Target, Zap, Shield, Award, Users, Clock, LineChart, Sparkles } from "lucide-react";
+import { Search, MapPin, BarChart, ArrowRight, Laptop, CheckCircle2, Plus, TrendingUp, Target, Zap, Shield, Award, Users, Clock, LineChart, Sparkles, AlertTriangle, Terminal, Database } from "lucide-react";
 
 // ENHANCED METADATA WITH OPENGRAPH
 export const metadata: Metadata = {
@@ -330,8 +330,166 @@ export default function SEOPage() {
         </article>
       </section>
 
-      {/* LOCAL SEO SHOWCASE */}
+      {/* TECHNICAL FOUNDATION SECTION */}
       <section className="py-16 px-4 sm:px-6">
+        <article className="max-w-7xl mx-auto">
+          <header className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-black mb-4">
+              Technical Foundation: The Invisible Advantage
+            </h2>
+            <p className="text-slate-400 max-w-2xl mx-auto">
+              Most agencies focus on "content" while ignoring the foundation. If Googlebot can't crawl your site efficiently, 
+              no amount of blogging will save you. We fix the technical issues first.
+            </p>
+          </header>
+
+          <div className="grid lg:grid-cols-2 gap-8 mb-12">
+            {/* Left: Common Technical Problems */}
+            <div className="space-y-6">
+              <h3 className="text-2xl font-bold text-white mb-6">Why Rankings Get Stuck</h3>
+              
+              <div className="flex gap-4">
+                <div className="flex-none rounded-lg bg-red-950/50 p-3 h-fit">
+                  <AlertTriangle className="w-6 h-6 text-red-400" />
+                </div>
+                <div>
+                  <h4 className="font-bold text-white mb-2">JavaScript Bloat</h4>
+                  <p className="text-sm text-slate-300 leading-relaxed">
+                    Heavy WordPress themes and plugins hide your content from search engines. Google's crawler sees blank pages. 
+                    We implement Server-Side Rendering (SSR) with Next.js to ensure instant indexing—your content is visible to 
+                    Google from millisecond one.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="flex-none rounded-lg bg-red-950/50 p-3 h-fit">
+                  <AlertTriangle className="w-6 h-6 text-red-400" />
+                </div>
+                <div>
+                  <h4 className="font-bold text-white mb-2">Crawl Budget Waste</h4>
+                  <p className="text-sm text-slate-300 leading-relaxed">
+                    If you have 1,000 low-quality pages (tag archives, category pages, duplicate content), Google stops looking 
+                    for the good ones. We audit your site architecture, prune wasteful pages, and consolidate content so Google's 
+                    crawler focuses on pages that actually drive revenue.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="flex-none rounded-lg bg-red-950/50 p-3 h-fit">
+                  <AlertTriangle className="w-6 h-6 text-red-400" />
+                </div>
+                <div>
+                  <h4 className="font-bold text-white mb-2">Core Web Vitals Failures</h4>
+                  <p className="text-sm text-slate-300 leading-relaxed">
+                    Google directly penalizes slow sites. If your Largest Contentful Paint (LCP) is over 2.5s, you're losing 
+                    rankings to faster competitors. We optimize images, eliminate render-blocking resources, and achieve 
+                    sub-1s load times consistently.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="flex-none rounded-lg bg-red-950/50 p-3 h-fit">
+                  <AlertTriangle className="w-6 h-6 text-red-400" />
+                </div>
+                <div>
+                  <h4 className="font-bold text-white mb-2">Missing Structured Data</h4>
+                  <p className="text-sm text-slate-300 leading-relaxed">
+                    Without Schema.org markup, Google doesn't understand what your content IS. A restaurant without Recipe or 
+                    Menu schema won't appear in rich results. A law firm without LocalBusiness schema won't dominate the Map Pack. 
+                    We inject proper JSON-LD on every page.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Right: Our 24-Point Audit */}
+            <div className="rounded-2xl bg-slate-900 border border-slate-800 p-8">
+              <div className="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-600/30 rounded-full px-3 py-1 text-sm font-bold text-blue-400 mb-6">
+                <Terminal className="w-4 h-4" />
+                Code-First Strategy
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-4">Our 24-Point Technical Audit</h3>
+              <p className="text-slate-300 text-sm leading-relaxed mb-6">
+                Before we touch content or backlinks, we fix your technical foundation. Here's what we audit and optimize:
+              </p>
+              
+              <ul className="space-y-3">
+                {[
+                  "Log File Analysis (what is Google actually crawling?)",
+                  "Core Web Vitals Optimization (LCP, CLS, INP)",
+                  "Schema.org Structured Data Implementation",
+                  "Canonicalization Strategy (duplicate content cleanup)",
+                  "Internal Link Graph Analysis & Optimization",
+                  "XML Sitemap Generation & Validation",
+                  "Robots.txt Configuration",
+                  "Mobile Usability & Responsive Design",
+                  "HTTPS & Security Headers",
+                  "Image Optimization (WebP conversion, lazy loading)",
+                  "JavaScript & CSS Minification",
+                  "Browser Caching Configuration",
+                  "URL Structure & Slug Optimization",
+                  "Redirect Chain Elimination (301 cleanup)",
+                  "Meta Description & Title Tag Audit",
+                  "Heading Hierarchy (H1-H6 structure)",
+                  "Alt Text & Image SEO",
+                  "Broken Link Detection & Fixing",
+                  "Pagination & Infinite Scroll SEO",
+                  "Hreflang Tags (multi-language sites)",
+                  "Open Graph & Twitter Card Meta",
+                  "Breadcrumb Navigation Schema",
+                  "Site Speed Optimization (CDN, caching)",
+                  "Crawl Depth & Click Distance Analysis"
+                ].map((item, idx) => (
+                  <li key={idx} className="flex gap-3 text-sm text-slate-300">
+                    <CheckCircle2 className="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="mt-8 pt-6 border-t border-slate-800">
+                <Link 
+                  href="/audit" 
+                  className="block w-full rounded-xl bg-green-600 hover:bg-green-700 px-6 py-4 text-center font-bold text-white transition-all"
+                >
+                  Get Your Technical Audit
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Technical SEO Results */}
+          <div className="bg-gradient-to-br from-blue-900/20 to-purple-900/20 border border-blue-600/30 rounded-2xl p-8">
+            <h3 className="text-xl font-bold text-blue-400 mb-4">Why Technical SEO Matters: Real Data</h3>
+            <div className="grid md:grid-cols-3 gap-6 mb-6">
+              <div className="bg-slate-900 border border-slate-800 rounded-xl p-4">
+                <div className="text-3xl font-black text-green-400 mb-1">53%</div>
+                <div className="text-xs text-slate-400">of users abandon sites over 3s load time</div>
+              </div>
+              <div className="bg-slate-900 border border-slate-800 rounded-xl p-4">
+                <div className="text-3xl font-black text-blue-400 mb-1">5x</div>
+                <div className="text-xs text-slate-400">faster: Next.js vs WordPress average</div>
+              </div>
+              <div className="bg-slate-900 border border-slate-800 rounded-xl p-4">
+                <div className="text-3xl font-black text-purple-400 mb-1">80%</div>
+                <div className="text-xs text-slate-400">of sites we audit have critical tech issues</div>
+              </div>
+            </div>
+            <p className="text-slate-300 text-sm leading-relaxed">
+              Technical SEO is the foundation of your SEO house. Keywords and content are the paint on your walls. 
+              If your foundation is broken (slow site, poor mobile UX, missing schema), no amount of beautiful paint will save you. 
+              We fix the foundation first, then scale your content. See our <Link href="/services/web-design" className="text-blue-400 hover:text-blue-300 underline">Next.js web design services</Link> for 
+              technical excellence baked into every build.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      {/* LOCAL SEO SHOWCASE */}
+      <section className="py-16 px-4 sm:px-6 bg-slate-900/50">
         <article className="max-w-6xl mx-auto">
           <header className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-black mb-4">
@@ -508,6 +666,64 @@ export default function SEOPage() {
                 <Link href="/services/web-design" className="text-blue-400 font-bold hover:text-blue-300 inline-flex items-center gap-2 group">
                   See Our Web Design Standards <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      {/* CONTENT SCALING CROSS-SELL */}
+      <section className="py-16 px-4 sm:px-6 bg-slate-900/50">
+        <article className="max-w-7xl mx-auto">
+          <div className="bg-gradient-to-br from-purple-900/20 via-slate-900 to-blue-900/20 border border-purple-600/30 rounded-3xl p-8 md:p-12">
+            <div className="grid lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <div className="inline-flex items-center gap-2 text-purple-400 font-bold mb-4">
+                  <Database className="w-5 h-5" />
+                  <span>Scale SEO Faster</span>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-black text-white mb-6">
+                  Need 100+ Location or Product Pages?
+                </h2>
+                <p className="text-lg text-slate-300 mb-6 leading-relaxed">
+                  Writing individual SEO pages manually is slow and expensive. If you're a multi-location business (franchises, chains), 
+                  product catalog (manufacturers, distributors), or service area company covering 20+ towns, our <strong className="text-white">Content Scaling</strong> service 
+                  can generate hundreds of high-quality landing pages in 48 hours using programmatic SEO.
+                </p>
+                <div className="space-y-3 mb-6">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-300 text-sm">Generate 100+ pages from a single template</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-300 text-sm">Each page unique, SEO-optimized, with proper schema</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-300 text-sm">70% cheaper than manual writing, 20x faster</span>
+                  </div>
+                </div>
+                <Link href="/services/content-scaling" className="text-purple-400 font-bold hover:text-purple-300 inline-flex items-center gap-2 group">
+                  Explore Content Scaling <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
+              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+                <div className="text-sm text-purple-400 font-bold mb-4">Perfect For:</div>
+                <div className="space-y-3">
+                  {[
+                    "Franchises with 20+ locations",
+                    "Manufacturers with 100+ products",
+                    "Service businesses covering 50 towns",
+                    "E-commerce with large catalogs",
+                    "Legal/Medical with multiple offices"
+                  ].map((item, idx) => (
+                    <div key={idx} className="flex items-start gap-3 text-slate-300 text-sm">
+                      <div className="w-2 h-2 bg-purple-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                      <span>{item}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

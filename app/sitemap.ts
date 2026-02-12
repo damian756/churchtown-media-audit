@@ -11,8 +11,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '',
     '/services/web-design',
     '/services/seo',
+    '/services/content-scaling',
     '/services/small-business',
     '/work',
+    '/portfolio',
     '/about',
     '/contact',
     '/audit',
@@ -26,7 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
-    priority: route === '' ? 1 : route === '/industries' ? 0.9 : 0.8,
+    priority: route === '' ? 1 : route === '/industries' ? 0.9 : route === '/portfolio' ? 0.85 : route === '/services/content-scaling' ? 0.85 : 0.8,
   }));
 
   // 2. Dynamic Blog Posts

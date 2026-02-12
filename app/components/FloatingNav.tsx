@@ -17,7 +17,7 @@ export default function FloatingNav() {
         {/* Links */}
         <div className="hidden md:flex gap-8 font-medium text-sm text-slate-600">
           <Link href="/services" className="hover:text-blue-600 transition-colors">Services</Link>
-          <Link href="/case-studies" className="hover:text-blue-600 transition-colors">Work</Link>
+          <Link href="/portfolio" className="hover:text-blue-600 transition-colors">Portfolio</Link>
           <Link href="/blog" className="hover:text-blue-600 transition-colors">Insights</Link>
         </div>
 

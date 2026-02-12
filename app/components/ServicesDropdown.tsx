@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { ChevronDown, Code, LineChart, Briefcase, Zap } from "lucide-react";
+import { ChevronDown, Code, LineChart, Briefcase, Zap, Database } from "lucide-react";
 
 interface ServicesDropdownProps {
   isMobile?: boolean;
@@ -24,6 +24,12 @@ export default function ServicesDropdown({ isMobile = false, onItemClick }: Serv
       href: "/services/seo",
       description: "Technical SEO that delivers rankings and revenue",
       icon: LineChart,
+    },
+    {
+      name: "Content Scaling",
+      href: "/services/content-scaling",
+      description: "100+ landing pages generated in 48 hours",
+      icon: Database,
     },
     {
       name: "Small Business Websites",
