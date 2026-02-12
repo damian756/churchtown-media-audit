@@ -511,6 +511,139 @@ export default function WebDesignPage() {
         </article>
       </section>
 
+      {/* TRANSPARENT PRICING */}
+      <section className="py-20 px-4 sm:px-6 bg-slate-900">
+        <article className="max-w-7xl mx-auto">
+          <header className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-600/30 rounded-full px-4 py-2 mb-6">
+              <Sparkles className="w-4 h-4 text-blue-400" />
+              <span className="text-blue-400 text-sm font-bold">Transparent Pricing</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-black mb-6">
+              No Hidden Fees. No Surprises.
+            </h2>
+            <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+              Choose the package that fits your business. All prices include first-year hosting, SSL, and 30-day support.
+            </p>
+          </header>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {/* Foundation Package */}
+            <div className="bg-slate-900 border-2 border-slate-800 rounded-3xl p-8 hover:border-blue-600/50 transition-all">
+              <div className="text-sm font-bold text-blue-400 uppercase tracking-wide mb-2">Foundation</div>
+              <div className="mb-6">
+                <span className="text-5xl font-black text-white">£2,500</span>
+              </div>
+              <p className="text-slate-400 mb-8">Perfect for new businesses and service providers launching their web presence.</p>
+              
+              <ul className="space-y-4 mb-8">
+                {[
+                  "5-page Next.js website",
+                  "Mobile-responsive design",
+                  "Contact form integration",
+                  "Basic SEO setup",
+                  "Google Analytics",
+                  "30-day support",
+                  "First-year hosting included"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-300 text-sm">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              
+              <Link
+                href="/contact?package=foundation"
+                className="block w-full bg-slate-800 hover:bg-slate-700 text-white text-center px-6 py-4 rounded-xl font-bold transition-all"
+              >
+                Get Started
+              </Link>
+            </div>
+
+            {/* Growth Package - Featured */}
+            <div className="bg-gradient-to-br from-blue-900/40 to-purple-900/40 border-2 border-blue-600 rounded-3xl p-8 relative transform md:scale-105 shadow-2xl shadow-blue-600/20">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-bold">
+                Most Popular
+              </div>
+              <div className="text-sm font-bold text-blue-400 uppercase tracking-wide mb-2">Growth</div>
+              <div className="mb-6">
+                <span className="text-5xl font-black text-white">£5,000</span>
+              </div>
+              <p className="text-slate-300 mb-8">For established businesses ready to scale with advanced features and optimization.</p>
+              
+              <ul className="space-y-4 mb-8">
+                {[
+                  "10-page custom website",
+                  "Premium design + animations",
+                  "Blog / CMS integration",
+                  "Advanced SEO strategy",
+                  "E-commerce ready",
+                  "Schema markup",
+                  "90-day support",
+                  "Performance optimization"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-white text-sm font-medium">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              
+              <Link
+                href="/contact?package=growth"
+                className="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center px-6 py-4 rounded-xl font-bold transition-all shadow-lg"
+              >
+                Get Started
+              </Link>
+            </div>
+
+            {/* Premium Package */}
+            <div className="bg-slate-900 border-2 border-slate-800 rounded-3xl p-8 hover:border-purple-600/50 transition-all">
+              <div className="text-sm font-bold text-purple-400 uppercase tracking-wide mb-2">Premium</div>
+              <div className="mb-6">
+                <span className="text-5xl font-black text-white">£10,000+</span>
+              </div>
+              <p className="text-slate-400 mb-8">Enterprise-grade custom solutions with unlimited complexity and ongoing optimization.</p>
+              
+              <ul className="space-y-4 mb-8">
+                {[
+                  "Unlimited pages",
+                  "Custom features & integrations",
+                  "CRM / API integrations",
+                  "Advanced analytics",
+                  "Multi-language support",
+                  "Priority support",
+                  "Dedicated project manager",
+                  "Ongoing optimization"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-300 text-sm">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              
+              <Link
+                href="/contact?package=premium"
+                className="block w-full bg-slate-800 hover:bg-purple-600/20 border border-purple-600/50 text-white text-center px-6 py-4 rounded-xl font-bold transition-all"
+              >
+                Contact Us
+              </Link>
+            </div>
+          </div>
+
+          <div className="text-center bg-slate-900/50 border border-slate-800 rounded-2xl p-6">
+            <p className="text-slate-300 mb-2">
+              <strong className="text-white">Not sure which package fits?</strong> Book a free 15-minute call.
+            </p>
+            <p className="text-sm text-slate-400">
+              Payment plans available: 3-6 month installments • No long-term contracts • Money-back guarantee
+            </p>
+          </div>
+        </article>
+      </section>
+
       {/* OUR PROCESS */}
       <section className="py-16 px-4 sm:px-6 bg-slate-900/50">
         <article className="max-w-5xl mx-auto">

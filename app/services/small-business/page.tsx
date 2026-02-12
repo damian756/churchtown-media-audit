@@ -93,9 +93,9 @@ export default function SmallBusinessPage() {
 
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
             <div>
-                <div className="inline-flex items-center gap-2 rounded-full bg-blue-900/50 border border-blue-800 px-4 py-1.5 text-sm font-bold text-blue-400 mb-8">
+                <div className="inline-flex items-center gap-2 rounded-full bg-emerald-900/50 border border-emerald-600/50 px-4 py-2 text-sm font-bold text-emerald-400 mb-6">
                     <Rocket className="h-4 w-4" />
-                    For Trades, Shops & Startups
+                    Starting from £1,500
                 </div>
                 <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-8">
                     Punch above <br/>
@@ -103,8 +103,11 @@ export default function SmallBusinessPage() {
                         your weight.
                     </span>
                 </h1>
-                <p className="text-xl text-slate-300 leading-relaxed mb-10 max-w-xl">
+                <p className="text-xl text-slate-300 leading-relaxed mb-6 max-w-xl">
                     You don't need a corporate budget to beat corporate competitors. We give Southport small businesses the same "Enterprise-Grade" weapons used by the big players—at a fraction of the cost.
+                </p>
+                <p className="text-lg text-slate-400 leading-relaxed mb-10 max-w-xl bg-slate-900/50 border border-slate-800 rounded-xl p-6">
+                    This package is for businesses that need a professional web presence without the £5k+ price tag. <strong className="text-white">Same standards. Same quality.</strong> Focused scope. Payment plans available.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                     <Link href="/audit" className="inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-500 transition-all hover:-translate-y-1 shadow-lg shadow-blue-600/20">

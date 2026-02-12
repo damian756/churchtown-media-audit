@@ -269,9 +269,17 @@ export default function PortfolioPage() {
                       <h2 className="text-4xl font-black text-white mb-3">
                         {project.name}
                       </h2>
-                      <p className="text-xl text-slate-400 font-semibold italic">
+                      <p className="text-xl text-slate-400 font-semibold italic mb-4">
                         {project.tagline}
                       </p>
+                      <div className="flex items-center gap-4 text-sm text-slate-500">
+                        <span className="bg-slate-900 border border-slate-800 px-3 py-1 rounded-full">
+                          💰 Investment: £{project.id === 1 ? '5,000' : '3,500'}
+                        </span>
+                        <span className="bg-slate-900 border border-slate-800 px-3 py-1 rounded-full">
+                          ⏱️ {project.id === 1 ? '8 weeks' : '2 weeks'}
+                        </span>
+                      </div>
                     </div>
 
                     {/* Description */}

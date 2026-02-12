@@ -775,6 +775,142 @@ export default function SEOPage() {
         </article>
       </section>
 
+      {/* TRANSPARENT PRICING */}
+      <section className="py-20 px-4 sm:px-6 bg-slate-900">
+        <article className="max-w-7xl mx-auto">
+          <header className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 bg-green-600/20 border border-green-600/30 rounded-full px-4 py-2 mb-6">
+              <Sparkles className="w-4 h-4 text-green-400" />
+              <span className="text-green-400 text-sm font-bold">Clear SEO Pricing</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-black mb-6">
+              Month-to-Month. No Lock-Ins.
+            </h2>
+            <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+              SEO takes 3-6 months to show results. We'll show you progress every month. If you're not happy, cancel anytime.
+            </p>
+          </header>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {/* Local Package */}
+            <div className="bg-slate-900 border-2 border-slate-800 rounded-3xl p-8 hover:border-green-600/50 transition-all">
+              <div className="text-sm font-bold text-green-400 uppercase tracking-wide mb-2">Local</div>
+              <div className="mb-6">
+                <span className="text-5xl font-black text-white">£500</span>
+                <span className="text-slate-400 text-lg">/mo</span>
+              </div>
+              <p className="text-slate-400 mb-8">Dominate your town. Perfect for single-location businesses targeting local 'near me' searches.</p>
+              
+              <ul className="space-y-4 mb-8">
+                {[
+                  "1 city/town focus",
+                  "Google Business Profile optimization",
+                  "5 local keywords targeted",
+                  "Monthly local citations",
+                  "Review management",
+                  "Monthly performance report",
+                  "3-month minimum"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-300 text-sm">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              
+              <Link
+                href="/contact?package=seo-local"
+                className="block w-full bg-slate-800 hover:bg-slate-700 text-white text-center px-6 py-4 rounded-xl font-bold transition-all"
+              >
+                Get Started
+              </Link>
+            </div>
+
+            {/* Regional Package - Featured */}
+            <div className="bg-gradient-to-br from-green-900/40 to-blue-900/40 border-2 border-green-600 rounded-3xl p-8 relative transform md:scale-105 shadow-2xl shadow-green-600/20">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-green-600 text-white px-4 py-1 rounded-full text-sm font-bold">
+                Most Popular
+              </div>
+              <div className="text-sm font-bold text-green-400 uppercase tracking-wide mb-2">Regional</div>
+              <div className="mb-6">
+                <span className="text-5xl font-black text-white">£900</span>
+                <span className="text-slate-300 text-lg">/mo</span>
+              </div>
+              <p className="text-slate-300 mb-8">Rank across multiple cities. Built for businesses serving Merseyside, Lancashire, or the North West.</p>
+              
+              <ul className="space-y-4 mb-8">
+                {[
+                  "3-5 city coverage",
+                  "15 keywords targeted",
+                  "Technical SEO audit & fixes",
+                  "Content strategy + optimization",
+                  "Backlink building campaign",
+                  "Competitor tracking",
+                  "Bi-weekly progress calls",
+                  "6-month minimum"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-white text-sm font-medium">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              
+              <Link
+                href="/contact?package=seo-regional"
+                className="block w-full bg-green-600 hover:bg-green-700 text-white text-center px-6 py-4 rounded-xl font-bold transition-all shadow-lg"
+              >
+                Get Started
+              </Link>
+            </div>
+
+            {/* Dominant Package */}
+            <div className="bg-slate-900 border-2 border-slate-800 rounded-3xl p-8 hover:border-blue-600/50 transition-all">
+              <div className="text-sm font-bold text-blue-400 uppercase tracking-wide mb-2">Dominant</div>
+              <div className="mb-6">
+                <span className="text-5xl font-black text-white">£1,500+</span>
+                <span className="text-slate-400 text-lg">/mo</span>
+              </div>
+              <p className="text-slate-400 mb-8">Own your market. Multi-location or national campaigns with aggressive link building and PR.</p>
+              
+              <ul className="space-y-4 mb-8">
+                {[
+                  "Unlimited location coverage",
+                  "30+ keywords targeted",
+                  "Advanced technical SEO",
+                  "Content production team",
+                  "PR & digital outreach",
+                  "Schema & featured snippets",
+                  "Weekly reporting + strategy",
+                  "Custom contract terms"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-300 text-sm">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              
+              <Link
+                href="/contact?package=seo-dominant"
+                className="block w-full bg-slate-800 hover:bg-blue-600/20 border border-blue-600/50 text-white text-center px-6 py-4 rounded-xl font-bold transition-all"
+              >
+                Contact Us
+              </Link>
+            </div>
+          </div>
+
+          <div className="text-center bg-slate-900/50 border border-slate-800 rounded-2xl p-6">
+            <p className="text-slate-300 mb-2">
+              <strong className="text-white">SEO is an investment, not an expense.</strong> We'll show you ROI every month.
+            </p>
+            <p className="text-sm text-slate-400">
+              No 12-month contracts • Cancel anytime • First-month setup included • Results typically visible in 8-12 weeks
+            </p>
+          </div>
+        </article>
+      </section>
+
       {/* FAQ SECTION */}
       <section className="py-16 px-4 sm:px-6 bg-slate-900/50">
         <article className="max-w-4xl mx-auto">

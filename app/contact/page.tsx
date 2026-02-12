@@ -247,6 +247,30 @@ export default function ContactPage() {
 
         </div>
 
+        {/* PRICING GUIDE */}
+        <div className="max-w-6xl mx-auto px-6 mt-16">
+          <div className="bg-slate-900/50 backdrop-blur border border-slate-800 rounded-2xl p-8">
+            <h3 className="text-2xl font-bold text-white mb-6 text-center">Pricing Guide</h3>
+            <div className="grid md:grid-cols-3 gap-6 text-center mb-6">
+              <div>
+                <div className="text-sm text-slate-400 mb-2">Web Design</div>
+                <div className="text-2xl font-black text-white">From £2,500</div>
+              </div>
+              <div>
+                <div className="text-sm text-slate-400 mb-2">Small Business Sites</div>
+                <div className="text-2xl font-black text-white">From £1,500</div>
+              </div>
+              <div>
+                <div className="text-sm text-slate-400 mb-2">SEO Services</div>
+                <div className="text-2xl font-black text-white">From £500/mo</div>
+              </div>
+            </div>
+            <p className="text-center text-slate-400 text-sm">
+              <a href="/services/web-design" className="text-blue-400 hover:text-blue-300 underline font-semibold">View full pricing details</a> • Payment plans available • No hidden fees
+            </p>
+          </div>
+        </div>
+
       </div>
     </main>
   );

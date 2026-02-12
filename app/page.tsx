@@ -143,10 +143,10 @@ export default function Home() {
             </div>
 
             {/* TRUST INDICATORS */}
-            <div className="mt-12 flex items-center justify-center gap-6 text-xs font-bold text-slate-500 uppercase tracking-widest">
-                <span className="flex items-center gap-1.5 bg-slate-800/50 px-3 py-1 rounded-full"><Code2 className="w-4 h-4 text-blue-400" /> Next.js 16</span>
-                <span className="flex items-center gap-1.5 bg-slate-800/50 px-3 py-1 rounded-full"><Zap className="w-3 h-3 text-yellow-400 fill-yellow-400" /> Vercel</span>
-                <span className="flex items-center gap-1.5 bg-slate-800/50 px-3 py-1 rounded-full"><TrendingUp className="w-3 h-3 text-emerald-400" /> Google Analytics 4</span>
+            <div className="mt-12 flex flex-wrap items-center justify-center gap-4 md:gap-6 text-xs font-bold text-slate-500 uppercase tracking-widest">
+                <span className="flex items-center gap-1.5 bg-slate-800/50 px-3 py-1 rounded-full">💰 From £1,500</span>
+                <span className="flex items-center gap-1.5 bg-slate-800/50 px-3 py-1 rounded-full">🤝 No Contracts</span>
+                <span className="flex items-center gap-1.5 bg-slate-800/50 px-3 py-1 rounded-full">⚡ 4-6 Weeks</span>
             </div>
         </div>
       </div>
@@ -167,13 +167,14 @@ export default function Home() {
                         <Globe className="w-7 h-7 text-blue-400" />
                     </div>
                     <h3 className="text-2xl font-bold text-white mb-3">Enterprise Web Design</h3>
-                    <p className="text-slate-300 mb-6 leading-relaxed">
+                    <p className="text-slate-300 mb-4 leading-relaxed">
                         Blazing fast{" "}
                         <Link href="/services/web-design" className="text-blue-400 hover:text-blue-300">
                           Next.js websites
                         </Link>
                         . No plugins, no bloat—just pure code designed to convert.
                     </p>
+                    <div className="text-sm text-slate-500 font-medium mb-4">From £2,500</div>
                     <Link href="/services/web-design" className="inline-flex items-center gap-2 text-blue-400 font-bold hover:gap-3 transition-all">
                         Explore Design <ArrowRight className="w-4 h-4" />
                     </Link>
@@ -185,13 +186,14 @@ export default function Home() {
                         <BarChart3 className="w-7 h-7 text-emerald-400" />
                     </div>
                     <h3 className="text-2xl font-bold text-white mb-3">Data-Driven SEO</h3>
-                    <p className="text-slate-300 mb-6 leading-relaxed">
+                    <p className="text-slate-300 mb-4 leading-relaxed">
                         Dominate the{" "}
                         <Link href="/services/seo" className="text-emerald-400 hover:text-emerald-300">
                           Google Map Pack
                         </Link>{" "}
                         in the North West. We use data, not guesswork, to rank you #1.
                     </p>
+                    <div className="text-sm text-slate-500 font-medium mb-4">From £500/month</div>
                     <Link href="/services/seo" className="inline-flex items-center gap-2 text-emerald-400 font-bold hover:gap-3 transition-all">
                         Explore SEO <ArrowRight className="w-4 h-4" />
                     </Link>
