@@ -21,6 +21,7 @@ export const viewport: Viewport = {
 };
 
 // 2. SEO METADATA
+// Force redeploy
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.churchtownmedia.co.uk'),
   title: 'Churchtown Media | Digital Growth for Southport Businesses',
