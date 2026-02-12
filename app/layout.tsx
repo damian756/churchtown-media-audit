@@ -75,13 +75,32 @@ export default function RootLayout({
           strategy="lazyOnload" 
         />
 
+        {/* --- 2. CRISP CHAT --- */}
+        <Script
+          id="crisp-chat"
+          strategy="lazyOnload"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.$crisp=[];
+              window.CRISP_WEBSITE_ID="5b24b78a-41ad-45fb-bda1-066fe50b4fc4";
+              (function(){
+                d=document;
+                s=d.createElement("script");
+                s.src="https://client.crisp.chat/l.js";
+                s.async=1;
+                d.getElementsByTagName("head")[0].appendChild(s);
+              })();
+            `,
+          }}
+        />
+
         <Navbar />
         
         {children}
         
         <Footer />
 
-        {/* --- 2. GOOGLE ANALYTICS --- */}
+        {/* --- 3. GOOGLE ANALYTICS --- */}
         <GoogleAnalytics gaId="G-WZM6ZEYTBL" />
 
       </body>
