@@ -53,26 +53,42 @@ export default function AuditForm() {
     }
   };
 
-  const handleEmailSubmit = (e: React.FormEvent) => {
+  const handleEmailSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email.trim()) return;
 
-    // Unlock and show results
+    // Capture lead via Formspree (same as contact form)
+    const FORMSPREE_ID = "mpqjzyby";
+    try {
+      await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: email.trim(),
+          url: url.trim(),
+          source: "seo-audit",
+          _subject: "New SEO Audit Lead",
+        }),
+      });
+    } catch {
+      // Don't block UX if lead capture fails
+    }
+
     setStep("results");
   };
 
   return (
-    <div className="w-full rounded-xl border border-slate-200 bg-white p-8 shadow-sm">
+    <div className="w-full rounded-xl border border-slate-700 bg-slate-900/80 backdrop-blur p-8 shadow-lg">
       {step === "results" && auditResult ? (
         <AuditResults data={auditResult} url={url} />
       ) : (
         <>
-          <h2 className="text-center text-xl font-semibold text-slate-800">
+          <h2 className="text-center text-xl font-semibold text-white">
             Free AI SEO Audit
           </h2>
 
           {step === "email" && (
-            <div className="mt-6 flex items-center justify-center gap-2 rounded-lg bg-green-50 px-4 py-3 text-green-700">
+            <div className="mt-6 flex items-center justify-center gap-2 rounded-lg bg-emerald-900/50 border border-emerald-500/30 px-4 py-3 text-emerald-400">
               <CheckCircle className="h-5 w-5" />
               <p className="text-sm font-medium">Audit Ready for {url}!</p>
             </div>
@@ -84,7 +100,7 @@ export default function AuditForm() {
               onSubmit={handleUrlSubmit}
             >
               {error && (
-                <div className="rounded-lg bg-red-50 px-4 py-3 text-sm text-red-700">
+                <div className="rounded-lg bg-red-900/50 border border-red-500/30 px-4 py-3 text-sm text-red-400">
                   {error}
                 </div>
               )}
@@ -97,13 +113,13 @@ export default function AuditForm() {
                 value={url}
                 onChange={(e) => setUrl(e.target.value)}
                 placeholder="Enter your website URL"
-                className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-800 placeholder:text-slate-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
+                className="w-full rounded-lg border border-slate-600 bg-slate-800 px-4 py-3 text-white placeholder:text-slate-500 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/30"
                 aria-label="Website URL"
                 required
               />
               <button
                 type="submit"
-                className="w-full rounded-lg bg-blue-600 px-4 py-3 font-medium text-white transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-70"
+                className="w-full rounded-lg bg-blue-600 px-4 py-3 font-medium text-white transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-slate-900 disabled:cursor-not-allowed disabled:opacity-70"
               >
                 Analyze Now
               </button>
@@ -119,7 +135,7 @@ export default function AuditForm() {
                 type="url"
                 value={url}
                 disabled
-                className="w-full rounded-lg border border-slate-300 bg-slate-50 px-4 py-3 text-slate-500 placeholder:text-slate-400"
+                className="w-full rounded-lg border border-slate-600 bg-slate-800/50 px-4 py-3 text-slate-400 placeholder:text-slate-500"
                 aria-label="Website URL"
               />
               <button
@@ -147,13 +163,13 @@ export default function AuditForm() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email to unlock results"
-                className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-800 placeholder:text-slate-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
+                className="w-full rounded-lg border border-slate-600 bg-slate-800 px-4 py-3 text-white placeholder:text-slate-500 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/30"
                 aria-label="Email address"
                 required
               />
               <button
                 type="submit"
-                className="w-full rounded-lg bg-blue-600 px-4 py-3 font-medium text-white transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                className="w-full rounded-lg bg-blue-600 px-4 py-3 font-medium text-white transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-slate-900"
               >
                 Unlock Report
               </button>
