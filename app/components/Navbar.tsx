@@ -49,7 +49,7 @@ export default function Navbar() {
 
   return (
     <nav 
-        className={`fixed top-0 w-full z-[60] transition-all duration-300 ${
+        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
             scrolled 
             ? "bg-slate-900/90 backdrop-blur-md border-b border-slate-800 py-4 shadow-sm" 
             : "bg-transparent py-6"
@@ -117,7 +117,7 @@ export default function Navbar() {
         </button>
 
         {/* MOBILE MENU OVERLAY */}
-        <div className={`fixed inset-0 bg-slate-950 z-50 flex flex-col items-start justify-start pt-28 sm:pt-32 px-6 gap-6 transition-all duration-300 overflow-y-auto ${isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"}`}>
+        <div className={`fixed inset-0 bg-slate-950/95 backdrop-blur-sm z-[60] flex flex-col items-start justify-start pt-28 sm:pt-32 px-6 gap-6 transition-all duration-300 overflow-y-auto ${isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"}`}>
           
           {/* SERVICES DROPDOWN MOBILE */}
           <div className="w-full">
