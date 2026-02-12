@@ -108,26 +108,53 @@ const jsonLd = {
     'itemListElement': [
       {
         '@type': 'Offer',
+        'name': 'Local SEO Package',
+        'description': 'Dominate your town with Google Business Profile optimization, 5 local keywords, monthly citations, and review management',
+        'priceSpecification': {
+          '@type': 'UnitPriceSpecification',
+          'price': '500',
+          'priceCurrency': 'GBP',
+          'unitText': 'MONTH'
+        },
+        'availability': 'https://schema.org/InStock',
         'itemOffered': {
           '@type': 'Service',
-          'name': 'Local SEO',
-          'description': 'Google Business Profile optimization and local map pack domination'
+          'name': 'Local SEO Package',
+          'description': 'Single-location local SEO for near me searches'
         }
       },
       {
         '@type': 'Offer',
+        'name': 'Regional SEO Package',
+        'description': 'Rank across 3-5 cities with 15 keywords, technical SEO, content strategy, and backlink building',
+        'priceSpecification': {
+          '@type': 'UnitPriceSpecification',
+          'price': '900',
+          'priceCurrency': 'GBP',
+          'unitText': 'MONTH'
+        },
+        'availability': 'https://schema.org/InStock',
         'itemOffered': {
           '@type': 'Service',
-          'name': 'Technical SEO Audits',
-          'description': 'Core Web Vitals optimization and technical foundation fixes'
+          'name': 'Regional SEO Package',
+          'description': 'Multi-city SEO for North West businesses'
         }
       },
       {
         '@type': 'Offer',
+        'name': 'Dominant SEO Package',
+        'description': 'Own your market with unlimited locations, 30+ keywords, advanced technical SEO, content production, and PR outreach',
+        'priceSpecification': {
+          '@type': 'UnitPriceSpecification',
+          'price': '1500',
+          'priceCurrency': 'GBP',
+          'unitText': 'MONTH'
+        },
+        'availability': 'https://schema.org/InStock',
         'itemOffered': {
           '@type': 'Service',
-          'name': 'Content Strategy',
-          'description': 'Data-driven content creation and optimization'
+          'name': 'Dominant SEO Package',
+          'description': 'National SEO campaigns with aggressive link building'
         }
       }
     ]

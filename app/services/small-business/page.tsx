@@ -64,6 +64,20 @@ const jsonLd = {
     '@type': 'City',
     'name': 'Southport'
   },
+  'offers': {
+    '@type': 'Offer',
+    'name': 'Small Business Website Package',
+    'description': 'Professional web presence for small businesses without the £5k+ price tag. Same standards, focused scope.',
+    'price': '1500',
+    'priceCurrency': 'GBP',
+    'availability': 'https://schema.org/InStock',
+    'priceValidUntil': '2026-12-31',
+    'itemOffered': {
+      '@type': 'Service',
+      'name': 'Small Business Website Package',
+      'description': '5-page Next.js website with enterprise-grade technology for local businesses'
+    }
+  },
   'mainEntity': faqs.map(faq => ({
     '@type': 'Question',
     'name': faq.question,

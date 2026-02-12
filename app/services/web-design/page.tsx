@@ -108,26 +108,41 @@ const jsonLd = {
     'itemListElement': [
       {
         '@type': 'Offer',
+        'name': 'Foundation Web Design Package',
+        'description': '5-page Next.js website with mobile-responsive design, contact form, basic SEO, and first-year hosting',
+        'price': '2500',
+        'priceCurrency': 'GBP',
+        'availability': 'https://schema.org/InStock',
         'itemOffered': {
           '@type': 'Service',
-          'name': 'Small Business Website Design',
-          'description': '5-10 page websites for small businesses'
+          'name': 'Foundation Web Design Package',
+          'description': '5-page Next.js website for new businesses'
         }
       },
       {
         '@type': 'Offer',
+        'name': 'Growth Web Design Package',
+        'description': '10-page custom website with premium design, blog/CMS integration, advanced SEO, and 90-day support',
+        'price': '5000',
+        'priceCurrency': 'GBP',
+        'availability': 'https://schema.org/InStock',
         'itemOffered': {
           '@type': 'Service',
-          'name': 'Enterprise Web Development',
-          'description': 'Custom Next.js applications for large organizations'
+          'name': 'Growth Web Design Package',
+          'description': 'Custom Next.js website for established businesses'
         }
       },
       {
         '@type': 'Offer',
+        'name': 'Premium Web Design Package',
+        'description': 'Enterprise-grade custom solutions with unlimited pages, CRM/API integrations, and dedicated project manager',
+        'price': '10000',
+        'priceCurrency': 'GBP',
+        'availability': 'https://schema.org/InStock',
         'itemOffered': {
           '@type': 'Service',
-          'name': 'E-Commerce Development',
-          'description': 'Headless e-commerce solutions with Shopify integration'
+          'name': 'Premium Web Design Package',
+          'description': 'Enterprise Next.js applications with unlimited complexity'
         }
       }
     ]
