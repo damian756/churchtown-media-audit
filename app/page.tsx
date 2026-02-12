@@ -84,10 +84,6 @@ const jsonLd = {
 export default function Home() {
   return (
     <>
-      {/* Preconnect to external resources */}
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-      
       <main className="min-h-screen overflow-x-hidden bg-slate-950 selection:bg-blue-400 selection:text-white">
       
       {/* INJECT SCHEMA */}

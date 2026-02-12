@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Twitter, Linkedin, Instagram, Youtube, Mail, MapPin, Phone, Facebook } from "lucide-react";
 
 export default function Footer() {
@@ -18,9 +19,11 @@ export default function Footer() {
         {/* COL 1: BRAND & SOCIALS */}
         <div className="space-y-6">
             <Link href="/" className="flex items-center gap-3 group">
-                <img 
+                <Image 
                   src="/logo.png" 
                   alt="Churchtown Media Logo" 
+                  width={40}
+                  height={40}
                   className="w-10 h-10 group-hover:scale-110 transition-transform"
                 />
                 <span className="font-bold text-2xl text-white tracking-tight">

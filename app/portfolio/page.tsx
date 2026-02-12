@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, ExternalLink, Zap, Code2, Gauge, TrendingUp, CheckCircle2, Sparkles, Rocket, Target } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -234,10 +235,12 @@ export default function PortfolioPage() {
 
                       {/* Screenshot */}
                       <div className="relative bg-slate-800 rounded-b-xl overflow-hidden aspect-[16/10]">
-                        <img 
+                        <Image 
                           src={project.image} 
                           alt={`${project.name} website screenshot`}
-                          className="w-full h-full object-cover"
+                          fill
+                          sizes="(max-width: 768px) 100vw, 50vw"
+                          className="object-cover"
                         />
                       </div>
 

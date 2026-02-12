@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { posts } from "../../../lib/posts"; 
 import { ArrowLeft, Calendar, Tag } from "lucide-react";
 import { notFound } from "next/navigation";
@@ -77,10 +78,13 @@ export default async function BlogPost({ params }: Props) {
 
       {/* HERO IMAGE */}
       <div className="mx-auto max-w-4xl -mt-12 px-6 relative z-10">
-        <img 
+        <Image 
           src={post.image} 
           alt={post.title} 
-          className="w-full rounded-2xl shadow-xl border border-slate-700 bg-slate-900"
+          width={1200}
+          height={630}
+          priority
+          className="w-full rounded-2xl shadow-xl border border-slate-700 bg-slate-900 object-cover"
         />
       </div>
 

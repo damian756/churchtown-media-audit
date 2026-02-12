@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 export default function FloatingNav() {
@@ -10,9 +11,11 @@ export default function FloatingNav() {
         
         {/* Logo */}
         <Link href="/" className="font-bold text-xl tracking-tight text-slate-900 flex items-center gap-2 group">
-          <img 
+          <Image 
             src="/logo.png" 
             alt="Churchtown Media Logo" 
+            width={32}
+            height={32}
             className="w-8 h-8 group-hover:scale-110 transition-transform"
           />
           <span>Churchtown<span className="text-blue-600">Media</span></span>

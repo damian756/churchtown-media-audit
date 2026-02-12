@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -100,8 +99,24 @@ export default function RootLayout({
         
         <Footer />
 
-        {/* --- 3. GOOGLE ANALYTICS --- */}
-        <GoogleAnalytics gaId="G-WZM6ZEYTBL" />
+        {/* --- 3. GOOGLE ANALYTICS (lazyOnload to reduce TBT and improve LCP) --- */}
+        <Script
+          id="ga-init"
+          strategy="lazyOnload"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-WZM6ZEYTBL');
+            `,
+          }}
+        />
+        <Script
+          id="ga-script"
+          src="https://www.googletagmanager.com/gtag/js?id=G-WZM6ZEYTBL"
+          strategy="lazyOnload"
+        />
 
       </body>
     </html>

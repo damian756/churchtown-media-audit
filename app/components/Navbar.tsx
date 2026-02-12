@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { usePathname } from "next/navigation";
 import WhoWeHelpMegaMenu from "./WhoWeHelpMegaMenu";
@@ -59,9 +60,12 @@ export default function Navbar() {
         
         {/* LOGO */}
         <Link href="/" className="relative z-[70] group flex items-center gap-2 sm:gap-3" onClick={() => setIsOpen(false)}>
-          <img 
+          <Image 
             src="/logo.png" 
             alt="Churchtown Media Logo" 
+            width={40}
+            height={40}
+            priority
             className="w-8 h-8 sm:w-10 sm:h-10 group-hover:scale-110 transition-transform flex-shrink-0"
           />
           <span className={`font-bold text-lg sm:text-2xl tracking-tight transition-colors ${useWhiteText ? "text-white" : "text-slate-900"}`}>
