@@ -50,21 +50,21 @@ export default function ServicesPage() {
                     </p>
                     
                     <ul className="space-y-4 mb-8 relative z-20">
-                        <li className="flex items-start gap-3 text-sm font-medium text-slate-700">
+                        <li className="flex items-start gap-3 text-sm font-medium text-slate-300">
                             <Zap className="w-5 h-5 text-blue-500 shrink-0" />
-                            <span><strong>Sub-second loads</strong> regardless of traffic spikes.</span>
+                            <span><strong className="text-white">Sub-second loads</strong> regardless of traffic spikes.</span>
                         </li>
-                        <li className="flex items-start gap-3 text-sm font-medium text-slate-700">
+                        <li className="flex items-start gap-3 text-sm font-medium text-slate-300">
                             <LayoutTemplate className="w-5 h-5 text-blue-500 shrink-0" />
-                            <span><strong>Visual CMS</strong> (Sanity/Contentful) for marketing teams.</span>
+                            <span><strong className="text-white">Visual CMS</strong> (Sanity/Contentful) for marketing teams.</span>
                         </li>
-                        <li className="flex items-start gap-3 text-sm font-medium text-slate-700">
+                        <li className="flex items-start gap-3 text-sm font-medium text-slate-300">
                             <ShieldAlert className="w-5 h-5 text-blue-500 shrink-0" />
-                            <span><strong>Zero maintenance</strong> security. No plugins to update.</span>
+                            <span><strong className="text-white">Zero maintenance</strong> security. No plugins to update.</span>
                         </li>
                     </ul>
 
-                    <Link href="/contact" className="inline-flex items-center gap-2 text-blue-600 font-bold hover:gap-4 transition-all relative z-20">
+                    <Link href="/contact" className="inline-flex items-center gap-2 text-blue-400 font-bold hover:gap-4 transition-all relative z-20">
                         Discuss Architecture <ArrowRight className="w-4 h-4" />
                     </Link>
                 </div>
@@ -108,10 +108,10 @@ export default function ServicesPage() {
             </div>
 
             {/* PILLAR 3: CONVERSION (Audit) */}
-            <div className="group relative p-8 rounded-[2.5rem] bg-white/60 backdrop-blur-xl border border-white/60 shadow-xl hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-500 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-emerald-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className="group relative p-8 rounded-[2.5rem] bg-slate-800 border border-slate-700 shadow-xl hover:shadow-2xl hover:shadow-emerald-500/20 transition-all duration-500 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 {/* BIG NUMBER WATERMARK */}
-                <div className="absolute -right-4 -top-4 text-9xl font-black text-slate-100 opacity-50 select-none pointer-events-none group-hover:text-emerald-50/80 transition-colors">03</div>
+                <div className="absolute -right-4 -top-4 text-9xl font-black text-slate-700 opacity-50 select-none pointer-events-none group-hover:text-slate-600 transition-colors">03</div>
                 
                 <div className="relative z-10">
                     <div className="w-14 h-14 bg-emerald-600 rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-emerald-500/30 group-hover:scale-110 transition-transform duration-500">
