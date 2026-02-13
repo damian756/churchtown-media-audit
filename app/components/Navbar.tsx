@@ -49,8 +49,9 @@ export default function Navbar() {
   const useWhiteText = !isLightPage || (!scrolled && !isOpen);
 
   return (
+    <>
     <nav 
-        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        className={`fixed top-0 w-full z-[90] transition-all duration-300 ${
             scrolled 
             ? "bg-slate-900/90 backdrop-blur-md border-b border-slate-800 py-4 shadow-sm" 
             : "bg-transparent py-6"
@@ -120,8 +121,11 @@ export default function Navbar() {
           {isOpen ? <X className="w-7 h-7 sm:w-8 sm:h-8" /> : <Menu className="w-7 h-7 sm:w-8 sm:h-8" />}
         </button>
 
-        {/* MOBILE MENU OVERLAY */}
-        <div className={`fixed inset-0 bg-slate-950/98 backdrop-blur-md z-[100] flex flex-col items-start justify-start pt-28 sm:pt-32 px-6 gap-6 transition-all duration-300 overflow-y-auto ${isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"}`}>
+      </div>
+    </nav>
+
+    {/* MOBILE MENU OVERLAY - Outside nav for proper z-index stacking */}
+    <div className={`fixed inset-0 bg-slate-950 z-[100] flex flex-col items-start justify-start pt-28 sm:pt-32 px-6 gap-6 transition-all duration-300 overflow-y-auto lg:hidden ${isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"}`}>
           
           {/* SERVICES DROPDOWN MOBILE */}
           <div className="w-full">
@@ -151,8 +155,6 @@ export default function Navbar() {
             Get Free Audit <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
-
-      </div>
-    </nav>
+    </>
   );
 }
