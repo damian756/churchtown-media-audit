@@ -61,7 +61,7 @@ const jsonLd = {
     { '@type': 'City', 'name': 'Lancashire' }
   ],
   'priceRange': '££',
-  'telephone': '+447545934360',
+  'telephone': '+441704635785',
   'openingHoursSpecification': [
     {
       '@type': 'OpeningHoursSpecification',

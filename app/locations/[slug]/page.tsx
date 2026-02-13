@@ -184,13 +184,13 @@ export default async function LocationPage({ params }: Props) {
                       
                       {/* Contact Info */}
                       <div className="pt-4 border-t border-slate-700/50 space-y-3">
-                        <a href="tel:+447545934360" className="flex items-center justify-center gap-2 text-slate-300 hover:text-blue-400 transition-colors text-sm group/link">
+                        <a href="tel:+441704635785" className="flex items-center justify-center gap-2 text-slate-300 hover:text-blue-400 transition-colors text-sm group/link">
                           <div className="w-8 h-8 bg-blue-500/10 rounded-lg flex items-center justify-center group-hover/link:bg-blue-500/20 transition-colors">
                             <svg className="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                             </svg>
                           </div>
-                          <span className="font-medium">07545 934360</span>
+                          <span className="font-medium">01704 635785</span>
                         </a>
                         <a href="mailto:hello@churchtownmedia.co.uk" className="flex items-center justify-center gap-2 text-slate-300 hover:text-blue-400 transition-colors text-sm group/link">
                           <div className="w-8 h-8 bg-purple-500/10 rounded-lg flex items-center justify-center group-hover/link:bg-purple-500/20 transition-colors">

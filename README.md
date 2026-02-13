@@ -170,7 +170,7 @@ npm run lint
 **Churchtown Media**
 - Website: https://www.churchtownmedia.co.uk
 - Email: hello@churchtownmedia.co.uk
-- Phone: 07545 934360
+- Phone: 01704 635785
 - Address: Cambridge Avenue, Southport, PR9 9SA
 
 ## 📄 License

@@ -49,7 +49,7 @@ export default function ContactPage() {
       '@type': 'LocalBusiness',
       'name': 'Churchtown Media',
       'image': 'https://www.churchtownmedia.co.uk/opengraph-image.png',
-      'telephone': '+447545934360',
+      'telephone': '+441704635785',
       'email': 'hello@churchtownmedia.co.uk',
       'address': {
         '@type': 'PostalAddress',

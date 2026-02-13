@@ -89,7 +89,7 @@ const jsonLd = {
       'addressRegion': 'Merseyside',
       'addressCountry': 'GB'
     },
-    'telephone': '07545934360',
+    'telephone': '01704635785',
     'email': 'hello@churchtownmedia.co.uk'
   },
   'areaServed': [
