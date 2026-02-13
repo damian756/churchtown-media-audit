@@ -1059,7 +1059,7 @@ export const posts: BlogPost[] = [
     title: "Birkdale Village SEO: Why Premium Businesses Need Premium Websites",
     date: "Feb 13, 2026",
     category: "SEO Demystified",
-    image: "/images/birkdale-village-hero.jpg",
+    image: "/images/birkdale-map-seo.jpg",
     excerpt: "Birkdale isn't just a Southport suburb--it's one of the North West's premium villages. Your digital presence must match the neighborhood.",
     content: `
       <p>Stand at the corner of Liverpool Road and Weld Road on a Friday evening. Watch the clientele stepping out of gleaming German saloons, heading into bistros where the average main course costs £28.</p>
@@ -1102,7 +1102,7 @@ export const posts: BlogPost[] = [
       <h2>The 4 Pillars of Birkdale Local SEO</h2>
 
       <h3>Pillar 1: Premium Web Design</h3>
-      <p>In Birkdale, a £200 WordPress template is a red flag. Your site must match the neighborhood's aesthetic.</p>
+      <p>In Birkdale, a £200 WordPress template is a red flag. Your <a href="/services/web-design" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">website</a> must match the neighborhood's aesthetic.</p>
 
       <div style="background: #1e293b; border-left: 4px solid #3b82f6; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
         <h4 style="color: #60a5fa; font-weight: bold; margin-bottom: 1rem;">The Birkdale Website Standard:</h4>
@@ -1407,11 +1407,11 @@ export const posts: BlogPost[] = [
     title: "Churchtown Southport: Why Hyperlocal SEO Matters for Village Businesses",
     date: "Feb 15, 2026",
     category: "SEO Demystified",
-    image: "/images/churchtown-botanic-hero.jpg",
+    image: "/images/churchtown-village-evening.jpg",
     excerpt: "We're based here. This is how we help Churchtown businesses dominate the Botanic Gardens tourism traffic and local village searches.",
     content: `
       <p>Churchtown is where <strong>Churchtown Media</strong> is based. We chose this village for the same reason you're reading this: it's a hidden gem with genuine character, heritage tourism (Botanic Gardens attracts 80,000+ visitors annually), and a tight-knit community that values local businesses.</p>
-      <p>This is the exact hyperlocal SEO strategy we use for ourselves--and for our Churchtown clients.</p>
+      <p>This is the exact hyperlocal <a href="/services/seo" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">SEO strategy</a> we use for ourselves--and for our Churchtown clients.</p>
 
       <h2>Why Churchtown Needs Hyperlocal SEO</h2>
       <p>Churchtown has a unique challenge: it's technically part of Southport, but residents and visitors think of it as a distinct village with its own identity.</p>
@@ -1491,7 +1491,7 @@ export const posts: BlogPost[] = [
       </div>
 
       <h3>Pillar 3: Community-Focused Content</h3>
-      <p>Churchtown residents value local businesses with genuine community ties. Your content should reflect this.</p>
+      <p>Churchtown residents value local businesses with genuine community ties. Your <a href="/services/web-design" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">website content</a> should reflect this.</p>
 
       <p><strong>Content themes for Churchtown:</strong></p>
       <ul>

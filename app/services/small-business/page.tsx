@@ -124,7 +124,7 @@ export default function SmallBusinessPage() {
                     This package is for businesses that need a professional web presence without the £5k+ price tag. <strong className="text-white">Same standards. Same quality.</strong> Focused scope. Payment plans available.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                    <Link href="/audit" className="inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-500 transition-all hover:-translate-y-1 shadow-lg shadow-blue-600/20">
+                    <Link href="/contact" className="inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-500 transition-all hover:-translate-y-1 shadow-lg shadow-blue-600/20">
                         Get Your Growth Plan
                     </Link>
                     <Link href="/work" className="inline-flex items-center justify-center gap-2 bg-slate-800 text-white px-8 py-4 rounded-xl font-bold hover:bg-slate-700 transition-all border border-slate-700">
