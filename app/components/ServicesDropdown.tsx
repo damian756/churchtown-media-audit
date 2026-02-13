@@ -108,10 +108,10 @@ export default function ServicesDropdown({ isMobile = false, onItemClick }: Serv
       {isOpen && (
         <>
           {/* Invisible bridge to prevent menu closing when moving mouse down */}
-          <div className="absolute top-full left-1/2 -translate-x-1/2 w-[500px] max-w-[95vw] h-2 z-[59]" />
+          <div className="absolute top-full left-1/2 -translate-x-1/2 w-[500px] max-w-[95vw] h-2 z-[49]" />
           
           <div 
-            className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[500px] max-w-[95vw] bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl z-[60] p-6"
+            className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[500px] max-w-[95vw] bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl z-50 p-6"
             onClick={() => setIsOpen(false)}
           >
           

@@ -51,7 +51,7 @@ export default function Navbar() {
   return (
     <>
     <nav 
-        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        className={`fixed top-0 w-full z-[100] transition-all duration-300 ${
             scrolled 
             ? "bg-slate-900/90 backdrop-blur-md border-b border-slate-800 py-4 shadow-sm" 
             : "bg-transparent py-6"
@@ -60,7 +60,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         
         {/* LOGO */}
-        <Link href="/" className="relative z-[90] group flex items-center gap-2 sm:gap-3" onClick={() => setIsOpen(false)}>
+        <Link href="/" className="relative group flex items-center gap-2 sm:gap-3" onClick={() => setIsOpen(false)}>
           <Image 
             src="/logo.png" 
             alt="Churchtown Media Logo" 
@@ -116,7 +116,7 @@ export default function Navbar() {
         <button 
             onClick={() => setIsOpen(!isOpen)} 
             aria-label="Toggle Menu"
-            className={`lg:hidden relative z-[90] p-2 -mr-2 transition-colors ${useWhiteText ? "text-white" : "text-slate-900"}`}
+            className={`lg:hidden relative p-2 -mr-2 transition-colors ${useWhiteText ? "text-white" : "text-slate-900"}`}
         >
           {isOpen ? <X className="w-7 h-7 sm:w-8 sm:h-8" /> : <Menu className="w-7 h-7 sm:w-8 sm:h-8" />}
         </button>
@@ -124,12 +124,11 @@ export default function Navbar() {
       </div>
     </nav>
 
-    {/* MOBILE MENU OVERLAY - Isolated stacking context */}
+    {/* MOBILE MENU OVERLAY - Below nav bar */}
     <div 
-      className={`fixed inset-0 bg-slate-950 z-[80] lg:hidden transition-all duration-300 ${
+      className={`fixed inset-0 bg-slate-950 z-[90] lg:hidden transition-all duration-300 ${
         isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
       }`}
-      style={{ isolation: 'isolate' }}
     >
       <div className="flex flex-col items-start justify-start pt-28 sm:pt-32 px-6 gap-6 overflow-y-auto h-full">
         {/* SERVICES DROPDOWN MOBILE */}

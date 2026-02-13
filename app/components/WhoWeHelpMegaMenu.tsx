@@ -90,10 +90,10 @@ export default function WhoWeHelpMegaMenu({ isMobile = false, onItemClick }: Who
       {isOpen && (
         <>
           {/* Invisible bridge to prevent menu closing when moving mouse down */}
-          <div className="absolute top-full left-1/2 -translate-x-1/2 w-[1000px] max-w-[95vw] h-2 z-[59]" />
+          <div className="absolute top-full left-1/2 -translate-x-1/2 w-[1000px] max-w-[95vw] h-2 z-[49]" />
           
           <div 
-            className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[1000px] max-w-[95vw] bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl z-[60] p-8"
+            className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[1000px] max-w-[95vw] bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl z-50 p-8"
             onClick={() => setIsOpen(false)}
           >
           
