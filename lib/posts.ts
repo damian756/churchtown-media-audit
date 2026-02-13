@@ -1059,7 +1059,7 @@ export const posts: BlogPost[] = [
     title: "Birkdale Village SEO: Why Premium Businesses Need Premium Websites",
     date: "Feb 13, 2026",
     category: "SEO Demystified",
-    image: "/images/birkdale-map-seo.jpg",
+    image: "/images/birkdale-village-hero.jpg",
     excerpt: "Birkdale isn't just a Southport suburb--it's one of the North West's premium villages. Your digital presence must match the neighborhood.",
     content: `
       <p>Stand at the corner of Liverpool Road and Weld Road on a Friday evening. Watch the clientele stepping out of gleaming German saloons, heading into bistros where the average main course costs £28.</p>
