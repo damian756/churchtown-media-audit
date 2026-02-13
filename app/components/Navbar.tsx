@@ -51,7 +51,7 @@ export default function Navbar() {
   return (
     <>
     <nav 
-        className={`fixed top-0 w-full z-[90] transition-all duration-300 ${
+        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
             scrolled 
             ? "bg-slate-900/90 backdrop-blur-md border-b border-slate-800 py-4 shadow-sm" 
             : "bg-transparent py-6"
@@ -60,7 +60,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         
         {/* LOGO */}
-        <Link href="/" className="relative z-[110] group flex items-center gap-2 sm:gap-3" onClick={() => setIsOpen(false)}>
+        <Link href="/" className="relative z-[90] group flex items-center gap-2 sm:gap-3" onClick={() => setIsOpen(false)}>
           <Image 
             src="/logo.png" 
             alt="Churchtown Media Logo" 
@@ -116,7 +116,7 @@ export default function Navbar() {
         <button 
             onClick={() => setIsOpen(!isOpen)} 
             aria-label="Toggle Menu"
-            className={`lg:hidden relative z-[110] p-2 -mr-2 transition-colors ${useWhiteText ? "text-white" : "text-slate-900"}`}
+            className={`lg:hidden relative z-[90] p-2 -mr-2 transition-colors ${useWhiteText ? "text-white" : "text-slate-900"}`}
         >
           {isOpen ? <X className="w-7 h-7 sm:w-8 sm:h-8" /> : <Menu className="w-7 h-7 sm:w-8 sm:h-8" />}
         </button>
@@ -124,37 +124,45 @@ export default function Navbar() {
       </div>
     </nav>
 
-    {/* MOBILE MENU OVERLAY - Outside nav for proper z-index stacking */}
-    <div className={`fixed inset-0 bg-slate-950 z-[100] flex flex-col items-start justify-start pt-28 sm:pt-32 px-6 gap-6 transition-all duration-300 overflow-y-auto lg:hidden ${isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"}`}>
-          
-          {/* SERVICES DROPDOWN MOBILE */}
-          <div className="w-full">
-            <ServicesDropdown isMobile={true} onItemClick={() => setIsOpen(false)} />
-          </div>
-          
-          {/* WHO WE HELP MOBILE */}
-          <div className="w-full">
-            <WhoWeHelpMegaMenu isMobile={true} onItemClick={() => setIsOpen(false)} />
-          </div>
-          
-          {/* STANDARD LINKS MOBILE */}
-          {links.map((link) => (
-            <Link 
-                key={link.name} 
-                href={link.href} 
-                className="text-3xl font-bold text-white hover:text-blue-400 transition-colors w-full"
-            >
-              {link.name}
-            </Link>
-          ))}
-          
-          <Link 
-            href="/audit" 
-            className="mt-4 bg-blue-600 text-white px-8 py-4 rounded-full text-xl font-bold hover:bg-blue-700 transition-all shadow-xl shadow-blue-600/20 flex items-center gap-2 self-center"
-          >
-            Get Free Audit <ArrowRight className="w-5 h-5" />
-          </Link>
+    {/* MOBILE MENU OVERLAY - Isolated stacking context */}
+    <div 
+      className={`fixed inset-0 bg-slate-950 z-[80] lg:hidden transition-all duration-300 ${
+        isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
+      }`}
+      style={{ isolation: 'isolate' }}
+    >
+      <div className="flex flex-col items-start justify-start pt-28 sm:pt-32 px-6 gap-6 overflow-y-auto h-full">
+        {/* SERVICES DROPDOWN MOBILE */}
+        <div className="w-full">
+          <ServicesDropdown isMobile={true} onItemClick={() => setIsOpen(false)} />
         </div>
+        
+        {/* WHO WE HELP MOBILE */}
+        <div className="w-full">
+          <WhoWeHelpMegaMenu isMobile={true} onItemClick={() => setIsOpen(false)} />
+        </div>
+        
+        {/* STANDARD LINKS MOBILE */}
+        {links.map((link) => (
+          <Link 
+              key={link.name} 
+              href={link.href} 
+              onClick={() => setIsOpen(false)}
+              className="text-3xl font-bold text-white hover:text-blue-400 transition-colors w-full"
+          >
+            {link.name}
+          </Link>
+        ))}
+        
+        <Link 
+          href="/audit"
+          onClick={() => setIsOpen(false)}
+          className="mt-4 bg-blue-600 text-white px-8 py-4 rounded-full text-xl font-bold hover:bg-blue-700 transition-all shadow-xl shadow-blue-600/20 flex items-center gap-2 self-center"
+        >
+          Get Free Audit <ArrowRight className="w-5 h-5" />
+        </Link>
+      </div>
+    </div>
     </>
   );
 }

@@ -100,7 +100,7 @@ export default function ServicesDropdown({ isMobile = false, onItemClick }: Serv
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
     >
-      <button className="flex items-center gap-1 text-sm font-bold text-slate-200 hover:text-white transition-colors hover:-translate-y-0.5 transform duration-200 relative z-[101]">
+      <button className="flex items-center gap-1 text-sm font-bold text-slate-200 hover:text-white transition-colors hover:-translate-y-0.5 transform duration-200">
         Services <ChevronDown className="w-4 h-4" />
       </button>
 
@@ -108,10 +108,10 @@ export default function ServicesDropdown({ isMobile = false, onItemClick }: Serv
       {isOpen && (
         <>
           {/* Invisible bridge to prevent menu closing when moving mouse down */}
-          <div className="absolute top-full left-1/2 -translate-x-1/2 w-[500px] max-w-[95vw] h-2 z-[99]" />
+          <div className="absolute top-full left-1/2 -translate-x-1/2 w-[500px] max-w-[95vw] h-2 z-[59]" />
           
           <div 
-            className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[500px] max-w-[95vw] bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl z-[100] p-6"
+            className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[500px] max-w-[95vw] bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl z-[60] p-6"
             onClick={() => setIsOpen(false)}
           >
           
