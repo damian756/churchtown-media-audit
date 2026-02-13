@@ -59,7 +59,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         
         {/* LOGO */}
-        <Link href="/" className="relative z-[70] group flex items-center gap-2 sm:gap-3" onClick={() => setIsOpen(false)}>
+        <Link href="/" className="relative z-[110] group flex items-center gap-2 sm:gap-3" onClick={() => setIsOpen(false)}>
           <Image 
             src="/logo.png" 
             alt="Churchtown Media Logo" 
@@ -115,13 +115,13 @@ export default function Navbar() {
         <button 
             onClick={() => setIsOpen(!isOpen)} 
             aria-label="Toggle Menu"
-            className={`lg:hidden relative z-[70] p-2 -mr-2 transition-colors ${useWhiteText ? "text-white" : "text-slate-900"}`}
+            className={`lg:hidden relative z-[110] p-2 -mr-2 transition-colors ${useWhiteText ? "text-white" : "text-slate-900"}`}
         >
           {isOpen ? <X className="w-7 h-7 sm:w-8 sm:h-8" /> : <Menu className="w-7 h-7 sm:w-8 sm:h-8" />}
         </button>
 
         {/* MOBILE MENU OVERLAY */}
-        <div className={`fixed inset-0 bg-slate-950/95 backdrop-blur-sm z-[60] flex flex-col items-start justify-start pt-28 sm:pt-32 px-6 gap-6 transition-all duration-300 overflow-y-auto ${isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"}`}>
+        <div className={`fixed inset-0 bg-slate-950/98 backdrop-blur-md z-[100] flex flex-col items-start justify-start pt-28 sm:pt-32 px-6 gap-6 transition-all duration-300 overflow-y-auto ${isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"}`}>
           
           {/* SERVICES DROPDOWN MOBILE */}
           <div className="w-full">
