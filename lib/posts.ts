@@ -23,9 +23,9 @@ export const posts: BlogPost[] = [
       <p>Here's the uncomfortable truth: 76% of local mobile searches result in a visit within 24 hours, according to Google. If Manchester firms are capturing those searches in L1-L39 postcodes, they're stealing your customers before you even know they exist.</p>
       <p>At <a href="/" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Churchtown Media</a>, we specialize in <a href="/services/seo" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">technical SEO</a> for Merseyside businesses. We've analyzed hundreds of Liverpool local search results, and we're going to show you exactly why this is happening--and the 5-pillar strategy to fix it.</p>
 
-      <h2>Why Manchester Firms Outrank Liverpool Businesses (In Liverpool)</h2>
+      <p><strong>Why Manchester Firms Outrank Liverpool Businesses (In Liverpool)</strong></p>
       <p>Let's start with the uncomfortable reality: <strong>Google doesn't care about city boundaries.</strong></p>
-      <p>When someone in Liverpool searches "best accountant near me," Google's algorithm looks at a 25-mile radius. That radius includes Manchester, Warrington, and parts of Chester. Google ranks businesses based on relevance, authority, and proximity--not where the business <em>wants</em> to rank.</p>
+      <p>When someone in <a href="/locations/liverpool" class="text-blue-400 hover:text-blue-300 underline">Liverpool</a> searches "best accountant near me," Google's algorithm looks at a 25-mile radius. That radius includes <a href="/locations/manchester" class="text-blue-400 hover:text-blue-300 underline">Manchester</a>, Warrington, and parts of Chester. Google ranks businesses based on relevance, authority, and proximity--not where the business <em>wants</em> to rank.</p>
 
       <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
         <h3 style="color: #60a5fa; font-size: 1.25rem; font-weight: bold; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
@@ -56,7 +56,7 @@ export const posts: BlogPost[] = [
 
       <h3>The Liverpool SEO Problem: Market Fragmentation</h3>
       <p>Liverpool has a unique challenge that Manchester doesn't face: <strong>fragmented business districts.</strong></p>
-      <p>Manchester has a dominant city center (M1-M4 postcodes) where most professional services cluster. Liverpool's business landscape is spread across:</p>
+      <p><a href="/locations/manchester" class="text-blue-400 hover:text-blue-300 underline">Manchester</a> has a dominant city center (M1-M4 postcodes) where most professional services cluster. <a href="/locations/liverpool" class="text-blue-400 hover:text-blue-300 underline">Liverpool's</a> business landscape is spread across:</p>
       <ul>
         <li><strong>Liverpool City Centre (L1-L3):</strong> Corporate and professional services</li>
         <li><strong>Liverpool Waterfront (L3):</strong> Tourism and hospitality</li>
@@ -579,8 +579,8 @@ export const posts: BlogPost[] = [
       <p>Walk down Lord Street on a busy Saturday afternoon. Look at the people--the tourists, the day-trippers, the locals. What are they doing?</p>
       <p>Twenty years ago, they would have been looking at <a href="/industries/retail-shops" class="text-blue-400 hover:text-blue-300 underline">shop windows</a>, scanning menus displayed on easels, or looking for "Open" signs. Today, they are looking down. They are looking at their screens.</p>
       <p>In 2026, the "Shop Window" is no longer made of glass. It is a 6-inch digital list called the <strong>Google Map Pack</strong>.</p>
-      <p>At Churchtown Media, we often hear local business owners say, <em>"I have a great location; footfall isn't a problem."</em> But here is the hard truth: If you aren't ranking in the top 3 results for a "near me" search, you are invisible to over 50% of the people walking right past your door.</p>
-      <p>This is the concept of <strong>Digital Footfall</strong>, and for Southport businesses preparing for the MLEC boom, it is the single most important metric you need to master.</p>
+      <p>At Churchtown Media, we often hear local business owners in <a href="/locations/southport" class="text-blue-400 hover:text-blue-300 underline">Southport</a> say, <em>"I have a great location; footfall isn't a problem."</em> But here is the hard truth: If you aren't ranking in the top 3 results for a "near me" search, you are invisible to over 50% of the people walking right past your door.</p>
+      <p>This is the concept of <strong>Digital Footfall</strong>, and for <a href="/locations/southport" class="text-blue-400 hover:text-blue-300 underline">Southport</a> businesses preparing for the MLEC boom, it is the single most important metric you need to master.</p>
       <h2>The Death of "Just Walking By"</h2>
       <p>Consumer behavior has shifted permanently. The modern customer--especially the 500,000 new visitors expected with the <a target="_blank" href="/blog/mlec-effect-southport">Marine Lake Events Centre development</a>--does not browse aimlessly. They search with <strong>intent</strong>.</p>
       <p>They don't search for "Coffee shops in Southport" before they leave home. They wait until they are standing on the Promenade, hungry and tired, and search for <em>"Coffee near me."</em></p>
@@ -625,9 +625,9 @@ export const posts: BlogPost[] = [
     image: "/images/mlec.jpg",
     excerpt: "The Marine Lake Events Centre is bringing 500,000 visitors to Southport. Here is the digital strategy local businesses need to capture this new economy in 2026.",
     content: `
-      <p>The demolition is done. The steel is rising. The <strong>Marine Lake Events Centre (MLEC)</strong> is no longer just a "Town Deal proposal"--it is the new reality of Southport's skyline.</p>
+      <p>The demolition is done. The steel is rising. The <strong>Marine Lake Events Centre (MLEC)</strong> is no longer just a "Town Deal proposal"--it is the new reality of <a href="/locations/southport" class="text-blue-400 hover:text-blue-300 underline">Southport's</a> skyline.</p>
       <p>According to Sefton Council projections, the MLEC and the "Light Fantastic" water show are set to bring <strong>over 500,000 additional visitors</strong> to our town every single year, injecting an estimated <strong>£19 million</strong> into the local economy.</p>
-      <p>For <a href="/industries/hotels" class="text-blue-400 hover:text-blue-300 underline">hospitality</a>, <a href="/industries/restaurants" class="text-blue-400 hover:text-blue-300 underline">retail</a>, and <a href="/industries/event-venues" class="text-blue-400 hover:text-blue-300 underline">leisure</a> businesses in Southport, this is the biggest opportunity in a generation. But here is the hard truth: <strong>Footfall in the town doesn't guarantee footfall in your shop.</strong> <a href="/blog/invisible-on-lord-street" title="">How to capture this new footfall</a>.</p>
+      <p>For <a href="/industries/hotels" class="text-blue-400 hover:text-blue-300 underline">hospitality</a>, <a href="/industries/restaurants" class="text-blue-400 hover:text-blue-300 underline">retail</a>, and <a href="/industries/event-venues" class="text-blue-400 hover:text-blue-300 underline">leisure</a> businesses in <a href="/locations/southport" class="text-blue-400 hover:text-blue-300 underline">Southport</a>, this is the biggest opportunity in a generation. But here is the hard truth: <strong>Footfall in the town doesn't guarantee footfall in your shop.</strong> <a href="/blog/invisible-on-lord-street" title="">How to capture this new footfall</a>.</p>
       <p>These 500,000 new visitors aren't locals. They don't know that your café has the best scones on Lord Street or that your boutique stocks unique brands. They only know what their phone tells them.</p>
       <p>At <strong>Churchtown Media</strong>, we call this the "Digital Tourist" phenomenon. Here is how to ensure that when MLEC delegates search for "dinner near me," your business is the first one they see. For more insights on preparing for this opportunity, explore our <a href="/southport-growth" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Southport Business Growth Hub</a>.</p>
       <h4><strong>1. The "Near Me" Battleground</strong></h4>
@@ -788,9 +788,9 @@ export const posts: BlogPost[] = [
     excerpt: "Formby businesses serve the North West's most affluent demographic. Your website must match their expectations. Here's the premium local SEO strategy for L37.",
     content: `
       <p>Walk down Chapel Lane on a Saturday morning. Look at the boutiques, the cafés, the professional services. Then look at the cars in the car park: Range Rovers, Teslas, Porsche Cayennes.</p>
-      <p>This is Formby--one of the wealthiest postcodes in the North West, where the average house costs £450,000+ and Premier League footballers are your neighbors.</p>
+      <p>This is <a href="/locations/formby" class="text-blue-400 hover:text-blue-300 underline">Formby</a>--one of the wealthiest postcodes in the North West, where the average house costs £450,000+ and Premier League footballers are your neighbors.</p>
       <p>If you're a business owner in L37, you face a unique digital challenge: <strong>Your website must signal premium quality, not budget convenience.</strong></p>
-      <p>At <a href="/" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Churchtown Media</a>, we're based just 15 minutes away in Southport. We understand Formby's market intimately. This is the exact local SEO strategy we use to help L37 businesses dominate 'near me' searches and justify premium pricing.</p>
+      <p>At <a href="/" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Churchtown Media</a>, we're based just 15 minutes away in <a href="/locations/southport" class="text-blue-400 hover:text-blue-300 underline">Southport</a>. We understand <a href="/locations/formby" class="text-blue-400 hover:text-blue-300 underline">Formby's</a> market intimately. This is the exact local SEO strategy we use to help L37 businesses dominate 'near me' searches and justify premium pricing.</p>
 
       <h2>Why Formby's Digital Market Is Different</h2>
       <p>Formby isn't just another Sefton suburb. It's a distinct micro-economy with search behavior that reflects exceptional affluence and discriminating taste.</p>
@@ -1063,8 +1063,8 @@ export const posts: BlogPost[] = [
     excerpt: "Birkdale isn't just a Southport suburb--it's one of the North West's premium villages. Your digital presence must match the neighborhood.",
     content: `
       <p>Stand at the corner of Liverpool Road and Weld Road on a Friday evening. Watch the clientele stepping out of gleaming German saloons, heading into bistros where the average main course costs £28.</p>
-      <p>This is Birkdale Village--where Southport's elite live, shop, and spend. Where property values average £380,000 (40% above Southport's average), and where your website is judged in the same 3 seconds it takes to assess a shop window.</p>
-      <p>At <a href="/" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Churchtown Media</a>, we're based just 5 minutes away. We understand Birkdale's unique market: premium positioning isn't optional--it's survival.</p>
+      <p>This is <a href="/locations/birkdale" class="text-blue-400 hover:text-blue-300 underline">Birkdale Village</a>--where <a href="/locations/southport" class="text-blue-400 hover:text-blue-300 underline">Southport's</a> elite live, shop, and spend. Where property values average £380,000 (40% above Southport's average), and where your website is judged in the same 3 seconds it takes to assess a shop window.</p>
+      <p>At <a href="/" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Churchtown Media</a>, we're based just 5 minutes away. We understand <a href="/locations/birkdale" class="text-blue-400 hover:text-blue-300 underline">Birkdale's</a> unique market: premium positioning isn't optional--it's survival.</p>
 
       <h2>Why Birkdale Demands a Different Digital Strategy</h2>
       <p>Birkdale isn't Southport. It's a village within a town, with its own identity, demographics, and search behavior.</p>
@@ -1213,9 +1213,9 @@ export const posts: BlogPost[] = [
     image: "/images/crosby-iron-men-hero.jpg",
     excerpt: "The Iron Men bring 200,000 tourists annually. Here's how Crosby businesses dominate 'near me' searches and turn beach visitors into loyal customers.",
     content: `
-      <p>Stand on Crosby Beach at sunset. Look at the Iron Men--100 cast-iron figures staring at the horizon, half-submerged by the tide. Then look at the car park: coaches from Yorkshire, families from Manchester, photographers from London.</p>
-      <p>This is Crosby's reality: <strong>200,000 annual visitors</strong> to Another Place, Antony Gormley's iconic installation, creating a tourism economy that most Crosby businesses aren't capturing digitally.</p>
-      <p>At <a href="/" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Churchtown Media</a>, we're 25 minutes away. We've studied Crosby's unique market: affluent Liverpool commuters + beach tourists + local loyalty. Here's how to dominate all three.</p>
+      <p>Stand on <a href="/locations/crosby" class="text-blue-400 hover:text-blue-300 underline">Crosby</a> Beach at sunset. Look at the Iron Men--100 cast-iron figures staring at the horizon, half-submerged by the tide. Then look at the car park: coaches from Yorkshire, families from <a href="/locations/manchester" class="text-blue-400 hover:text-blue-300 underline">Manchester</a>, photographers from <a href="/locations/london" class="text-blue-400 hover:text-blue-300 underline">London</a>.</p>
+      <p>This is <a href="/locations/crosby" class="text-blue-400 hover:text-blue-300 underline">Crosby's</a> reality: <strong>200,000 annual visitors</strong> to Another Place, Antony Gormley's iconic installation, creating a tourism economy that most Crosby businesses aren't capturing digitally.</p>
+      <p>At <a href="/" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Churchtown Media</a>, we're 25 minutes away. We've studied <a href="/locations/crosby" class="text-blue-400 hover:text-blue-300 underline">Crosby's</a> unique market: affluent <a href="/locations/liverpool" class="text-blue-400 hover:text-blue-300 underline">Liverpool</a> commuters + beach tourists + local loyalty. Here's how to dominate all three.</p>
 
       <h2>Why Crosby is a Digital Goldmine</h2>
       <p>Crosby has three distinct revenue streams, each requiring different SEO strategies:</p>
@@ -1566,9 +1566,9 @@ export const posts: BlogPost[] = [
     image: "/images/ormskirk-market-hero.jpg",
     excerpt: "Edge Hill's 14,000 students flood Ormskirk every September. Mobile-first sites capture them; slow sites lose them. Here's the dual-audience strategy.",
     content: `
-      <p>Walk through Ormskirk town center in late September. The transformation is jarring: 14,000 Edge Hill University students flood the market town, turning quiet streets into a mobile-first, high-velocity economy.</p>
-      <p>Ormskirk businesses face a unique digital challenge: <strong>capture impulsive student searches without alienating the established local customer base.</strong></p>
-      <p>At <a href="/" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Churchtown Media</a>, we're 20 minutes away. We've studied Ormskirk's dual economy--and here's how to dominate both markets simultaneously.</p>
+      <p>Walk through <a href="/locations/ormskirk" class="text-blue-400 hover:text-blue-300 underline">Ormskirk</a> town center in late September. The transformation is jarring: 14,000 Edge Hill University students flood the market town, turning quiet streets into a mobile-first, high-velocity economy.</p>
+      <p><a href="/locations/ormskirk" class="text-blue-400 hover:text-blue-300 underline">Ormskirk</a> businesses face a unique digital challenge: <strong>capture impulsive student searches without alienating the established local customer base.</strong></p>
+      <p>At <a href="/" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Churchtown Media</a>, we're 20 minutes away. We've studied <a href="/locations/ormskirk" class="text-blue-400 hover:text-blue-300 underline">Ormskirk's</a> dual economy--and here's how to dominate both markets simultaneously.</p>
 
       <h2>Why Ormskirk is a Digital Opportunity</h2>
       <p>Ormskirk has two distinct customer bases with radically different search behavior:</p>

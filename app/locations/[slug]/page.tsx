@@ -3,7 +3,45 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MapPin, Trophy, ArrowRight, CheckCircle2, Zap, BarChart } from "lucide-react";
 import { locations, getLocation } from "@/lib/locations";
+import { posts } from "@/lib/posts";
 import type { Metadata } from "next";
+
+// Map location slugs to relevant blog post slugs
+const locationBlogMap: Record<string, string[]> = {
+  // Northwest locations
+  "southport": ["invisible-on-lord-street", "mlec-effect-southport", "southport-air-show-seo-guide", "southport-golf-open-seo-guide"],
+  "liverpool": ["seo-liverpool-local-business-guide-2026", "mlec-effect-southport"],
+  "manchester": ["nextjs-vs-wordpress-2026", "seo-liverpool-local-business-guide-2026"],
+  "preston": ["seo-recovery-alotek-shelters", "why-new-local-seo-company-is-your-business-best-friend"],
+  "blackpool": ["southport-air-show-seo-guide", "southport-beach-tourism-seo-guide", "southport-splashworld-seo-guide"],
+  "formby": ["formby-seo-guide", "why-new-local-seo-company-is-your-business-best-friend"],
+  "birkdale": ["birkdale-seo-guide", "southport-golf-clubs-seo-guide", "southport-golf-open-seo-guide"],
+  "crosby": ["crosby-seo-guide", "formby-seo-guide"],
+  "ormskirk": ["ormskirk-seo-guide", "why-new-local-seo-company-is-your-business-best-friend"],
+  "maghull": ["crosby-seo-guide", "formby-seo-guide"],
+  "churchtown": ["churchtown-southport-seo-guide", "invisible-on-lord-street"],
+  
+  // Major UK cities
+  "london": ["nextjs-vs-wordpress-2026", "seo-recovery-alotek-shelters"],
+  "birmingham": ["seo-recovery-alotek-shelters", "why-new-local-seo-company-is-your-business-best-friend"],
+  "leeds": ["seo-liverpool-local-business-guide-2026", "why-new-local-seo-company-is-your-business-best-friend"],
+  "glasgow": ["nextjs-vs-wordpress-2026", "eating-our-own-dog-food"],
+  "edinburgh": ["mlec-effect-southport", "southport-flower-show-seo-guide"],
+  "bristol": ["nextjs-vs-wordpress-2026", "eating-our-own-dog-food"],
+  "cardiff": ["why-new-local-seo-company-is-your-business-best-friend", "seo-recovery-alotek-shelters"],
+  "sheffield": ["seo-recovery-alotek-shelters", "southport-tree-nursery-seo-guide"],
+  "leicester": ["southport-food-market-seo-guide", "southport-restaurants-seo-guide"],
+  "coventry": ["seo-recovery-alotek-shelters"],
+  "nottingham": ["nextjs-vs-wordpress-2026", "why-new-local-seo-company-is-your-business-best-friend"],
+  "newcastle": ["eating-our-own-dog-food", "nextjs-vs-wordpress-2026"],
+  "belfast": ["nextjs-vs-wordpress-2026", "seo-recovery-alotek-shelters"],
+  "southampton": ["southport-marina-seo-guide", "southport-beach-tourism-seo-guide"],
+  "brighton": ["eating-our-own-dog-food", "nextjs-vs-wordpress-2026"],
+  "derby": ["seo-recovery-alotek-shelters"],
+  "plymouth": ["southport-marina-seo-guide", "southport-beach-tourism-seo-guide"],
+  "cambridge": ["nextjs-vs-wordpress-2026", "seo-recovery-alotek-shelters"],
+  "bradford": ["seo-recovery-alotek-shelters", "southport-tree-nursery-seo-guide"],
+};
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -333,6 +371,47 @@ export default async function LocationPage({ params }: Props) {
             </div>
         </div>
       </section>
+
+      {/* RELATED READING */}
+      {locationBlogMap[location.slug] && locationBlogMap[location.slug].length > 0 && (() => {
+        const relatedPosts = locationBlogMap[location.slug]
+          .map(slug => posts.find(p => p.slug === slug))
+          .filter(Boolean)
+          .slice(0, 3);
+        
+        if (relatedPosts.length === 0) return null;
+        
+        return (
+          <section className="py-16 px-4 sm:px-6 bg-slate-900 border-y border-slate-800">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-black mb-4 text-center text-white">
+                Related Reading
+              </h2>
+              <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+                Insights and strategies specifically relevant to {location.name} businesses
+              </p>
+              <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                {relatedPosts.map((post) => post && (
+                  <Link
+                    key={post.slug}
+                    href={`/blog/${post.slug}`}
+                    className="group bg-slate-800 border border-slate-700 hover:border-blue-600 rounded-2xl p-6 transition-all hover:scale-[1.02]"
+                  >
+                    <span className="text-xs font-bold text-blue-400 uppercase tracking-wide">{post.category}</span>
+                    <h3 className="text-lg font-bold text-white mt-2 mb-3 group-hover:text-blue-400 transition-colors leading-snug">
+                      {post.title}
+                    </h3>
+                    <p className="text-sm text-slate-400 line-clamp-2 mb-4">{post.excerpt}</p>
+                    <span className="text-sm font-bold text-blue-400 inline-flex items-center gap-1">
+                      Read more <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        );
+      })()}
 
        {/* CTA */}
        <section className="bg-gradient-to-b from-slate-900 to-slate-950 py-24 px-6 text-center text-white border-t border-slate-800">
