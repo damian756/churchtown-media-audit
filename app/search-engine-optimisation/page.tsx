@@ -4,6 +4,9 @@ import { Target, TrendingUp, Search, Eye, ArrowRight, MapPin } from "lucide-reac
 export const metadata = {
   title: "SEO Agency UK | Data-Driven Search Engine Optimisation",
   description: "Stop guessing. Start growing. We are a data-first SEO agency that helps Southport businesses dominate their market.",
+  alternates: {
+    canonical: 'https://www.churchtownmedia.co.uk/search-engine-optimisation',
+  },
 };
 
 export default function SEOPage() {

@@ -4,6 +4,9 @@ import { BarChart, Search, FileText } from "lucide-react";
 export const metadata = {
   title: "Local SEO Packages | Southport Business Growth",
   description: "Transparent, data-driven SEO for small businesses. Clear KPIs, monthly reports, and no jargon.",
+  alternates: {
+    canonical: 'https://www.churchtownmedia.co.uk/search-engine-optimisation/local',
+  },
 };
 
 export default function LocalSEO() {

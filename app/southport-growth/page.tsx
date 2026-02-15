@@ -8,6 +8,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: 'Southport Business Growth Hub | Grants, Networking & SEO',
   description: 'The complete growth playbook for Southport businesses. Access InvestSefton grants, join Sandgrounders networking, and dominate local SEO. Updated for 2026.',
+  alternates: {
+    canonical: 'https://www.churchtownmedia.co.uk/southport-growth',
+  },
   openGraph: {
     title: 'Southport Business Growth Hub | Churchtown Media',
     description: 'Access £37.5m Town Deal opportunities, local grants, and digital strategies.',

@@ -1,6 +1,14 @@
 import Link from "next/link";
 import { Zap, Server, ShieldCheck, LayoutTemplate } from "lucide-react";
 
+export const metadata = {
+  title: "Headless Development | Next.js Architecture | Churchtown Media",
+  description: "Stop losing customers to loading screens. We migrate slow WordPress sites to the Ferrari Engine of the web: Next.js + Vercel.",
+  alternates: {
+    canonical: 'https://www.churchtownmedia.co.uk/services/headless-development',
+  },
+};
+
 export default function HeadlessDev() {
   return (
     <main className="min-h-screen bg-slate-950">

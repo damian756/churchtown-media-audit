@@ -4,6 +4,9 @@ import { ArrowRight, Code2, BarChart3, Zap, Search, LayoutTemplate, ShieldAlert,
 export const metadata = {
   title: "Services | Churchtown Media",
   description: "High-performance digital infrastructure. Headless CMS, Programmatic SEO, and Technical Audits.",
+  alternates: {
+    canonical: 'https://www.churchtownmedia.co.uk/services',
+  },
 };
 
 export default function ServicesPage() {

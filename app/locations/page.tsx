@@ -7,6 +7,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: 'Areas We Serve',
   description: 'Web Design & SEO services across the North West. From Liverpool to Preston, see our local case studies and travel times.',
+  alternates: {
+    canonical: 'https://www.churchtownmedia.co.uk/locations',
+  },
 };
 
 export default function LocationsIndex() {
