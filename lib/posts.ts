@@ -1763,7 +1763,7 @@ export const posts: BlogPost[] = [
     slug: "southport-leisure-seo-guide",
     title: "Leisure Industry SEO: Southport's Opportunity",
     date: "Feb 15, 2026",
-    category: "Leisure SEO",
+    category: "Tourism & Events",
     excerpt: "Southport's gyms, fitness centres, and leisure venues are losing online visibility to national chains. Here's how local leisure businesses can fight back with smart SEO.",
     image: "/images/southport-leisure-center-seo.jpg",
     content: `
@@ -1883,7 +1883,7 @@ export const posts: BlogPost[] = [
     slug: "southport-family-days-out-seo-guide",
     title: "Family Days Out SEO: Winning Weekend Search",
     date: "Feb 15, 2026",
-    category: "Tourism SEO",
+    category: "Tourism & Events",
     excerpt: "Families searching 'things to do in Southport' are ready to spend. Here's how attractions and activity centres can capture those high-intent weekend searches.",
     image: "/images/southport-family-days-out-seo.jpg",
     content: `
@@ -2006,7 +2006,7 @@ export const posts: BlogPost[] = [
     slug: "southport-bnb-hospitality-seo-guide",
     title: "B&B SEO: Booking Direct Over Booking.com",
     date: "Feb 15, 2026",
-    category: "Hospitality SEO",
+    category: "Tourism & Events",
     excerpt: "Southport B&Bs lose up to 18% commission on every OTA booking. Here's how to build a direct booking website that reduces your dependency on Booking.com and Airbnb.",
     image: "/images/southport-bnb-hospitality-seo.jpg",
     content: `
@@ -2125,7 +2125,7 @@ export const posts: BlogPost[] = [
     slug: "southport-restaurants-seo-guide",
     title: "Restaurant SEO: From Empty Tables to Fully Booked",
     date: "Feb 15, 2026",
-    category: "Hospitality SEO",
+    category: "Tourism & Events",
     excerpt: "Southport restaurants relying solely on Facebook are invisible to hungry searchers. Here's how to dominate 'restaurants near me' and fill tables every weekend.",
     image: "/images/southport-restaurants-seo.jpg",
     content: `
@@ -2250,7 +2250,7 @@ export const posts: BlogPost[] = [
     slug: "southport-tree-nursery-seo-guide",
     title: "Tree Nursery SEO: Growing Your Online Presence",
     date: "Feb 15, 2026",
-    category: "Local SEO",
+    category: "Local Business",
     excerpt: "Southport's tree nurseries have deep roots but shallow digital footprints. Here's how to turn seasonal search spikes into year-round sales growth.",
     image: "/images/southport-tree-nursery-seo.jpg",
     content: `
@@ -2372,7 +2372,7 @@ export const posts: BlogPost[] = [
     slug: "southport-garden-center-seo-guide",
     title: "Garden Center SEO: Beating Amazon Locally",
     date: "Feb 15, 2026",
-    category: "Local SEO",
+    category: "Local Business",
     excerpt: "Amazon can't pot up a shrub and hand you planting advice over the counter. Here's how Southport garden centres can win the local search battle.",
     image: "/images/southport-garden-center-seo.jpg",
     content: `
@@ -2484,7 +2484,7 @@ export const posts: BlogPost[] = [
     slug: "southport-caravan-park-seo-guide",
     title: "Caravan Park SEO: Filling Pitches Year-Round",
     date: "Feb 15, 2026",
-    category: "Tourism SEO",
+    category: "Tourism & Events",
     excerpt: "Southport's caravan parks lose thousands of bookings to aggregator sites each year. Here's how to reclaim direct bookings with smart local SEO.",
     image: "/images/southport-caravan-park-seo.jpg",
     content: `
@@ -2595,7 +2595,7 @@ export const posts: BlogPost[] = [
     slug: "southport-marina-seo-guide",
     title: "Marina SEO: Docking More Customers Online",
     date: "Feb 15, 2026",
-    category: "Local SEO",
+    category: "Local Business",
     excerpt: "Southport's marine leisure scene is growing, but most marina businesses are invisible online. Here's how to change that with practical local SEO.",
     image: "/images/southport-boat-marina-seo.jpg",
     content: `
@@ -2712,7 +2712,7 @@ export const posts: BlogPost[] = [
     slug: "southport-aesthetics-clinic-seo-guide",
     title: "Aesthetics Clinic SEO: Looking Good Online",
     date: "Feb 15, 2026",
-    category: "Healthcare SEO",
+    category: "Local Business",
     excerpt: "In aesthetics, trust beats price every time. Here's how Southport clinics can build online authority that converts browsers into bookings.",
     image: "/images/southport-aesthetics-clinic-seo.jpg",
     content: `
@@ -2826,7 +2826,7 @@ export const posts: BlogPost[] = [
     slug: "southport-golf-open-seo-guide",
     title: "The Open Championship: Southport's SEO Gold Rush",
     date: "Feb 15, 2026",
-    category: "Event SEO",
+    category: "Tourism & Events",
     excerpt: "When The Open comes to Royal Birkdale, the world watches Southport. Here's how local businesses can capture international search traffic.",
     image: "/images/southport-golf-open-seo.jpg",
     content: `
@@ -2940,7 +2940,7 @@ export const posts: BlogPost[] = [
     slug: "southport-air-show-seo-guide",
     title: "Southport Air Show: Sky-High Search Traffic",
     date: "Feb 15, 2026",
-    category: "Event SEO",
+    category: "Tourism & Events",
     excerpt: "The Southport Air Show draws huge crowds and massive search spikes. Here's how local businesses can capture event-driven traffic year after year.",
     image: "/images/southport-air-show-seo.jpg",
     content: `
@@ -3065,7 +3065,7 @@ export const posts: BlogPost[] = [
     slug: "southport-eccentric-boutique-seo-guide",
     title: "Boutique Retail SEO: Standing Out in Southport",
     date: "Feb 15, 2026",
-    category: "Retail SEO",
+    category: "Local Business",
     excerpt: "Independent boutiques in Southport offer something the high street chains can't. Here's how to make sure shoppers actually find you online before they visit.",
     image: "/images/southport-eccentric-boutique-seo.jpg",
     content: `
@@ -3182,7 +3182,7 @@ export const posts: BlogPost[] = [
     slug: "southport-flower-show-seo-guide",
     title: "Southport Flower Show: Blooming Great SEO",
     date: "Feb 15, 2026",
-    category: "Event SEO",
+    category: "Tourism & Events",
     excerpt: "Southport Flower Show draws tens of thousands of visitors every August. Here's how exhibitors and local businesses can capture that search traffic year-round.",
     image: "/images/southport-flower-show-seo.jpg",
     content: `
@@ -3305,7 +3305,7 @@ export const posts: BlogPost[] = [
     slug: "southport-oktoberfest-seo-guide",
     title: "Southport Oktoberfest: Tapping Into Search",
     date: "Feb 15, 2026",
-    category: "Event SEO",
+    category: "Tourism & Events",
     excerpt: "Southport's Oktoberfest draws thousands of revellers each autumn. Here's the event SEO playbook for food, drink, and hospitality businesses looking to cash in.",
     image: "/images/southport-oktoberfest-seo.jpg",
     content: `
@@ -3416,7 +3416,7 @@ export const posts: BlogPost[] = [
     slug: "southport-food-drink-festival-seo-guide",
     title: "Food Festival SEO: A Feast of Local Search",
     date: "Feb 15, 2026",
-    category: "Event SEO",
+    category: "Tourism & Events",
     excerpt: "Southport's food and drink festival scene is thriving. Here's how vendors and restaurants can build an online presence that works before, during, and after every event.",
     image: "/images/southport-food-drink-festival-seo.jpg",
     content: `
@@ -3542,7 +3542,7 @@ export const posts: BlogPost[] = [
     slug: "southport-food-market-seo-guide",
     title: "Food Market SEO: Fresh Approaches to Search",
     date: "Feb 15, 2026",
-    category: "Local SEO",
+    category: "Local Business",
     excerpt: "Southport's food markets are a brilliant local institution. Here's how market vendors and artisan food producers can build an online presence that actually works.",
     image: "/images/southport-food-market-seo.jpg",
     content: `
@@ -3666,7 +3666,7 @@ export const posts: BlogPost[] = [
     slug: "southport-music-fireworks-seo-guide",
     title: "Fireworks & Festivals: Explosive Event SEO",
     date: "Feb 15, 2026",
-    category: "Event SEO",
+    category: "Tourism & Events",
     excerpt: "Southport's music festivals and firework displays create massive seasonal search spikes. Here's how entertainment businesses can capture that demand with smart SEO.",
     image: "/images/southport-firework-display-seo.jpg",
     content: `
@@ -3785,7 +3785,7 @@ export const posts: BlogPost[] = [
     slug: "southport-pier-development-seo-guide",
     title: "Southport Pier: A Landmark for Local SEO",
     date: "Feb 15, 2026",
-    category: "Tourism SEO",
+    category: "Tourism & Events",
     excerpt: "Southport Pier is the town's most iconic landmark. Here's how businesses near the pier can turn that physical visibility into digital visibility with smart local SEO.",
     image: "/images/southport-pier-development-seo.jpg",
     content: `
@@ -3913,7 +3913,7 @@ export const posts: BlogPost[] = [
     slug: "southport-beach-tourism-seo-guide",
     title: "Beach Tourism SEO: Riding the Coastal Wave",
     date: "Feb 15, 2026",
-    category: "Tourism SEO",
+    category: "Tourism & Events",
     image: "/images/southport-beach-tourism-seo.jpg",
     excerpt: "Southport's coastline draws thousands every summer. Here's how beach kiosks, water sports operators, and equipment hire businesses can capture tourist search traffic year-round.",
     content: `
@@ -4049,7 +4049,7 @@ export const posts: BlogPost[] = [
     slug: "southport-rspb-marshside-seo-guide",
     title: "Nature Reserve SEO: A Birdwatcher's Guide",
     date: "Feb 15, 2026",
-    category: "Tourism SEO",
+    category: "Tourism & Events",
     image: "/images/southport-marshside-nature-seo.jpg",
     excerpt: "RSPB Marshside draws nature lovers from across the UK. Here's how eco-tourism businesses near Southport can use content marketing to capture this passionate niche audience.",
     content: `
@@ -4169,7 +4169,7 @@ export const posts: BlogPost[] = [
     slug: "southport-bird-prey-sanctuary-seo-guide",
     title: "Wildlife Attraction SEO: Soaring Visibility",
     date: "Feb 15, 2026",
-    category: "Tourism SEO",
+    category: "Tourism & Events",
     image: "/images/southport-bird-prey-sanctuary-seo.jpg",
     excerpt: "Bird of prey centres and wildlife sanctuaries near Southport can compete with TripAdvisor for search traffic. Here's how to soar above the listing sites and drive direct bookings.",
     content: `
@@ -4284,7 +4284,7 @@ export const posts: BlogPost[] = [
     slug: "southport-golf-clubs-seo-guide",
     title: "Golf Club SEO: Driving Membership Online",
     date: "Feb 15, 2026",
-    category: "Local SEO",
+    category: "Local Business",
     image: "/images/southport-golf-clubs-seo.jpg",
     excerpt: "Southport sits on England's Golf Coast with world-class courses. Here's how golf clubs can attract members and green-fee visitors through smart SEO and content strategy.",
     content: `
@@ -4417,7 +4417,7 @@ export const posts: BlogPost[] = [
     slug: "southport-fair-seo-guide",
     title: "Southport Fair: Fun, Thrills and Local SEO",
     date: "Feb 15, 2026",
-    category: "Event SEO",
+    category: "Tourism & Events",
     image: "/images/southport-fair-seo.jpg",
     excerpt: "Southport's fairground and Pleasureland draw families all year round. Here's how entertainment venues and seasonal attractions can capture family search traffic with smart SEO.",
     content: `
@@ -4547,7 +4547,7 @@ export const posts: BlogPost[] = [
     slug: "southport-splashworld-seo-guide",
     title: "Water Park SEO: Making a Splash Online",
     date: "Feb 15, 2026",
-    category: "Leisure SEO",
+    category: "Tourism & Events",
     image: "/images/southport-splashworld-seo.jpg",
     excerpt: "Water parks and aquatic leisure facilities in Southport compete for family day-out searches all year. Here's how to make your facility the first thing families find online.",
     content: `
@@ -4684,7 +4684,7 @@ export const posts: BlogPost[] = [
     slug: "southport-canal-barges-seo-guide",
     title: "Canal Barge SEO: Navigating Local Search",
     date: "Feb 15, 2026",
-    category: "Tourism SEO",
+    category: "Tourism & Events",
     image: "/images/southport-canal-barges-seo.jpg",
     excerpt: "Canal barge hire and waterway tourism near Southport is a niche market with huge SEO potential. Here's how to dominate your vertical with long-tail keywords and trip planning content.",
     content: `

@@ -25,8 +25,9 @@ export default function BlogFeed({ posts }: { posts: BlogPost[] }) {
   const [isSubscribed, setIsSubscribed] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false); // New loading state
 
-  // CATEGORIES
-  const categories = ["All Insights", "Southport Business Growth", "SEO Demystified", "Case Studies", "Agency Life", "Web Development"];
+  // CATEGORIES - dynamically derived from posts
+  const allCategories = Array.from(new Set(posts.map(p => p.category)));
+  const categories = ["All Insights", ...allCategories.sort()];
 
   // SORT POSTS BY DATE (newest first)
   const sortedPosts = [...posts].sort((a, b) => {
