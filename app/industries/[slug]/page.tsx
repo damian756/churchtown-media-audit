@@ -3,6 +3,45 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowRight, Check, Phone, Mail, Star } from "lucide-react";
 import { getIndustry, industries } from "@/lib/industries";
+import { posts } from "@/lib/posts";
+
+// Map industry slugs to relevant blog post slugs
+const industryBlogMap: Record<string, string[]> = {
+  "restaurants": ["southport-restaurants-seo-guide", "southport-food-drink-festival-seo-guide", "mlec-effect-southport"],
+  "hotels": ["southport-bnb-hospitality-seo-guide", "southport-golf-open-seo-guide", "mlec-effect-southport"],
+  "bars-nightlife": ["southport-oktoberfest-seo-guide", "southport-music-fireworks-seo-guide", "mlec-effect-southport"],
+  "retail": ["southport-eccentric-boutique-seo-guide", "southport-food-market-seo-guide", "invisible-on-lord-street"],
+  "event-venues": ["southport-air-show-seo-guide", "southport-flower-show-seo-guide", "mlec-effect-southport"],
+  "tourism": ["southport-family-days-out-seo-guide", "southport-beach-tourism-seo-guide", "southport-pier-development-seo-guide"],
+  "retail-shops": ["southport-eccentric-boutique-seo-guide", "invisible-on-lord-street", "southport-food-market-seo-guide"],
+  "travel": ["southport-canal-barges-seo-guide", "southport-caravan-park-seo-guide"],
+  "landscapers": ["southport-tree-nursery-seo-guide", "southport-garden-center-seo-guide"],
+  "beauty-salons": ["southport-aesthetics-clinic-seo-guide"],
+  "gyms-fitness": ["southport-leisure-seo-guide", "southport-golf-clubs-seo-guide"],
+  "healthcare": ["southport-aesthetics-clinic-seo-guide"],
+  "tree-surgeons": ["southport-tree-nursery-seo-guide"],
+  "estate-agents": ["invisible-on-lord-street"],
+  "photographers": ["southport-air-show-seo-guide"],
+  "dentists": ["southport-aesthetics-clinic-seo-guide"],
+  "property-management": ["invisible-on-lord-street"],
+  "plumbers": ["formby-seo-guide", "birkdale-seo-guide"],
+  "electricians": ["formby-seo-guide", "birkdale-seo-guide"],
+  "builders": ["formby-seo-guide", "birkdale-seo-guide"],
+  "solicitors": ["formby-seo-guide", "crosby-seo-guide"],
+  "accountants": ["formby-seo-guide", "crosby-seo-guide"],
+  "architects": ["formby-seo-guide"],
+  "cleaning-services": ["formby-seo-guide", "birkdale-seo-guide"],
+  "charities": ["invisible-on-lord-street"],
+  "ecommerce": ["nextjs-vs-wordpress-2026"],
+  "it-services": ["nextjs-vs-wordpress-2026"],
+  "web-design-agencies": ["nextjs-vs-wordpress-2026"],
+  "marketing-agencies": ["seo-liverpool-local-business-guide-2026"],
+  "physiotherapy": ["southport-leisure-seo-guide"],
+  "counseling": ["southport-aesthetics-clinic-seo-guide"],
+  "education-training": ["ormskirk-seo-guide"],
+  "financial-advisors": ["formby-seo-guide"],
+  "mortgage-brokers": ["formby-seo-guide"],
+};
 
 interface PageProps {
   params: Promise<{
@@ -243,6 +282,46 @@ export default async function IndustryPage({ params }: PageProps) {
             </div>
           </div>
         </section>
+
+        {/* RELATED READING */}
+        {industryBlogMap[industry.slug] && industryBlogMap[industry.slug].length > 0 && (() => {
+          const relatedPosts = industryBlogMap[industry.slug]
+            .map(slug => posts.find(p => p.slug === slug))
+            .filter(Boolean);
+          
+          if (relatedPosts.length === 0) return null;
+          
+          return (
+            <section className="py-16 px-4 sm:px-6">
+              <div className="max-w-5xl mx-auto">
+                <h2 className="text-3xl md:text-4xl font-black mb-4 text-center">
+                  Related Reading
+                </h2>
+                <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+                  Insights and strategies specifically relevant to {industry.name.toLowerCase()}
+                </p>
+                <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                  {relatedPosts.map((post) => post && (
+                    <Link
+                      key={post.slug}
+                      href={`/blog/${post.slug}`}
+                      className="group bg-slate-900 border border-slate-800 hover:border-blue-600 rounded-2xl p-6 transition-all hover:scale-[1.02]"
+                    >
+                      <span className="text-xs font-bold text-blue-400 uppercase tracking-wide">{post.category}</span>
+                      <h3 className="text-lg font-bold text-white mt-2 mb-3 group-hover:text-blue-400 transition-colors leading-snug">
+                        {post.title}
+                      </h3>
+                      <p className="text-sm text-slate-400 line-clamp-2 mb-4">{post.excerpt}</p>
+                      <span className="text-sm font-bold text-blue-400 inline-flex items-center gap-1">
+                        Read more <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </section>
+          );
+        })()}
 
         {/* RELATED INDUSTRIES */}
         <section className="py-16 px-4 sm:px-6 bg-slate-900/50">

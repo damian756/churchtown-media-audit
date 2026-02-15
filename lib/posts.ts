@@ -577,7 +577,7 @@ export const posts: BlogPost[] = [
     excerpt: "Are customers walking right past your door? Discover why 'Near Me' searches and the Google Map Pack are the new shop window for Southport businesses.",
     content: `
       <p>Walk down Lord Street on a busy Saturday afternoon. Look at the people--the tourists, the day-trippers, the locals. What are they doing?</p>
-      <p>Twenty years ago, they would have been looking at shop windows, scanning menus displayed on easels, or looking for "Open" signs. Today, they are looking down. They are looking at their screens.</p>
+      <p>Twenty years ago, they would have been looking at <a href="/industries/retail-shops" class="text-blue-400 hover:text-blue-300 underline">shop windows</a>, scanning menus displayed on easels, or looking for "Open" signs. Today, they are looking down. They are looking at their screens.</p>
       <p>In 2026, the "Shop Window" is no longer made of glass. It is a 6-inch digital list called the <strong>Google Map Pack</strong>.</p>
       <p>At Churchtown Media, we often hear local business owners say, <em>"I have a great location; footfall isn't a problem."</em> But here is the hard truth: If you aren't ranking in the top 3 results for a "near me" search, you are invisible to over 50% of the people walking right past your door.</p>
       <p>This is the concept of <strong>Digital Footfall</strong>, and for Southport businesses preparing for the MLEC boom, it is the single most important metric you need to master.</p>
@@ -627,7 +627,7 @@ export const posts: BlogPost[] = [
     content: `
       <p>The demolition is done. The steel is rising. The <strong>Marine Lake Events Centre (MLEC)</strong> is no longer just a "Town Deal proposal"--it is the new reality of Southport's skyline.</p>
       <p>According to Sefton Council projections, the MLEC and the "Light Fantastic" water show are set to bring <strong>over 500,000 additional visitors</strong> to our town every single year, injecting an estimated <strong>£19 million</strong> into the local economy.</p>
-      <p>For hospitality, retail, and leisure businesses in Southport, this is the biggest opportunity in a generation. But here is the hard truth: <strong>Footfall in the town doesn't guarantee footfall in your shop.</strong> <a href="/blog/invisible-on-lord-street" title="">How to capture this new footfall</a>.</p>
+      <p>For <a href="/industries/hotels" class="text-blue-400 hover:text-blue-300 underline">hospitality</a>, <a href="/industries/restaurants" class="text-blue-400 hover:text-blue-300 underline">retail</a>, and <a href="/industries/event-venues" class="text-blue-400 hover:text-blue-300 underline">leisure</a> businesses in Southport, this is the biggest opportunity in a generation. But here is the hard truth: <strong>Footfall in the town doesn't guarantee footfall in your shop.</strong> <a href="/blog/invisible-on-lord-street" title="">How to capture this new footfall</a>.</p>
       <p>These 500,000 new visitors aren't locals. They don't know that your café has the best scones on Lord Street or that your boutique stocks unique brands. They only know what their phone tells them.</p>
       <p>At <strong>Churchtown Media</strong>, we call this the "Digital Tourist" phenomenon. Here is how to ensure that when MLEC delegates search for "dinner near me," your business is the first one they see. For more insights on preparing for this opportunity, explore our <a href="/southport-growth" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Southport Business Growth Hub</a>.</p>
       <h4><strong>1. The "Near Me" Battleground</strong></h4>
@@ -1769,7 +1769,7 @@ export const posts: BlogPost[] = [
     content: `
       <p>Here's a frustrating reality for Southport's leisure businesses: someone in PR8 searches <em>"gym near me"</em> and the first three results are PureGym, The Gym Group, and JD Gyms. Your independent fitness centre—the one with actual personal trainers who know their clients' names—is buried on page two.</p>
       <p>It's not because national chains offer a better experience. It's because they have dedicated SEO teams working around the clock to dominate every local search in every town in the UK. <strong>Southport's leisure businesses are being outranked by marketing budgets, not by quality.</strong></p>
-      <p>At <a href="/" class="text-blue-400 hover:text-blue-300 underline">Churchtown Media</a>, we work with Southport businesses to level the playing field. The leisure industry—gyms, fitness studios, swimming pools, recreation centres, yoga studios—has specific SEO opportunities that national chains simply can't replicate. Let's explore them.</p>
+      <p>At <a href="/" class="text-blue-400 hover:text-blue-300 underline">Churchtown Media</a>, we work with Southport businesses to level the playing field. The leisure industry—<a href="/industries/gyms-fitness" class="text-blue-400 hover:text-blue-300 underline">gyms, fitness studios</a>, swimming pools, recreation centres, yoga studios—has specific SEO opportunities that national chains simply can't replicate. Let's explore them.</p>
 
       <h2>Why National Chains Dominate Leisure Searches (And Their Weakness)</h2>
       <p>National gym chains rank well because they have enormous domain authority, hundreds of location pages, and aggressive Google Ads budgets. But they also have a fundamental weakness: <strong>they can't be local.</strong></p>
@@ -1889,7 +1889,7 @@ export const posts: BlogPost[] = [
     content: `
       <p>It's Thursday evening. A parent in Bolton, Wigan, or Preston picks up their phone and types: <em>"things to do with kids this weekend near me."</em> Southport—with its pier, beach, parks, and attractions—should be the answer. But is it <strong>your</strong> attraction they find, or your competitor's?</p>
       <p>The "days out" search market is enormous, seasonal, and shockingly underserved by most Southport businesses. Families don't plan weeks ahead anymore. They decide on Thursday, search on Friday, and arrive on Saturday. If your website doesn't appear in that 24-hour decision window, you simply don't exist.</p>
-      <p>At <a href="/" class="text-blue-400 hover:text-blue-300 underline">Churchtown Media</a>, we help Southport's tourism and leisure businesses capture these high-intent family searches. Here's the playbook.</p>
+      <p>At <a href="/" class="text-blue-400 hover:text-blue-300 underline">Churchtown Media</a>, we help Southport's <a href="/industries/tourism" class="text-blue-400 hover:text-blue-300 underline">tourism and leisure businesses</a> capture these high-intent family searches. Here's the playbook.</p>
 
       <h2>Understanding the "Days Out" Search Journey</h2>
       <p>Family day out searches follow a predictable pattern, and understanding it is the key to showing up at the right moment:</p>
@@ -2012,7 +2012,7 @@ export const posts: BlogPost[] = [
     content: `
       <p>Every time a guest books your Southport B&B through Booking.com, you hand over 15–18% of the room rate in commission. For an Airbnb booking, you're giving away 3–5% on your end while the guest pays an additional service fee. Over a year, those commissions can add up to thousands of pounds—money that could be going straight into your business.</p>
       <p>The uncomfortable truth? <strong>Most Southport B&Bs and guesthouses have become entirely dependent on Online Travel Agents (OTAs).</strong> Some owners tell us that 80% or more of their bookings come through third-party platforms. That's not a business model—it's a vulnerability.</p>
-      <p>At <a href="/" class="text-blue-400 hover:text-blue-300 underline">Churchtown Media</a>, we help Southport hospitality businesses build direct booking websites that actually compete with the OTAs. It's not about abandoning Booking.com entirely—it's about shifting the balance. Let's talk about how.</p>
+      <p>At <a href="/" class="text-blue-400 hover:text-blue-300 underline">Churchtown Media</a>, we help Southport <a href="/industries/hotels" class="text-blue-400 hover:text-blue-300 underline">hospitality businesses</a> build direct booking websites that actually compete with the OTAs. It's not about abandoning Booking.com entirely—it's about shifting the balance. Let's talk about how.</p>
 
       <h2>Why OTA Dependency Is Dangerous</h2>
       <p>OTAs are brilliant at what they do. They spend billions on marketing so that when someone searches "hotels in Southport," Booking.com dominates the first page. But that convenience comes at a steep cost:</p>
@@ -2131,7 +2131,7 @@ export const posts: BlogPost[] = [
     content: `
       <p>Pop quiz: where do people actually look when they're deciding where to eat tonight? If you answered Facebook, you're about five years behind. <strong>The answer is Google.</strong> Google Maps, specifically. And if your Southport restaurant doesn't show up when someone searches <em>"restaurants near me"</em> or <em>"best place to eat in Southport,"</em> you're handing customers to whoever does.</p>
       <p>We talk to a lot of restaurant owners in Southport, and the story is almost always the same: <em>"We've got a Facebook page, we post our specials, what more do we need?"</em> The answer is: quite a lot more. A Facebook page is a walled garden. Google can't see your menu, your opening hours are buried in an "About" tab nobody clicks, and your posts reach a shrinking percentage of your followers thanks to algorithm changes.</p>
-      <p>At <a href="/" class="text-blue-400 hover:text-blue-300 underline">Churchtown Media</a>, we specialise in <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">local SEO</a> for Southport businesses. Let's talk about what it actually takes to fill tables through search.</p>
+      <p>At <a href="/" class="text-blue-400 hover:text-blue-300 underline">Churchtown Media</a>, we specialise in <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">local SEO</a> for Southport <a href="/industries/restaurants" class="text-blue-400 hover:text-blue-300 underline">restaurants</a>. Let's talk about what it actually takes to fill tables through search.</p>
 
       <h2>Why a Facebook Page Isn't Enough</h2>
       <p>Let's be clear: Facebook is still valuable for restaurants. It's great for community engagement, event promotion, and sharing photos of tonight's special. But it has serious limitations as your primary online presence:</p>
@@ -2259,7 +2259,7 @@ export const posts: BlogPost[] = [
 
       <h2>Why Tree Nurseries Need Digital Visibility</h2>
       <p>Let's address the elephant in the potting shed: <strong>"Our customers know where we are."</strong> That might have been true a decade ago. Today, even loyal customers Google you before visiting—to check opening hours, stock availability, or to show a friend where to find you.</p>
-      <p>But here's the bigger opportunity: the customers who <em>don't</em> know you exist. People moving to Southport, weekend visitors from Liverpool and Manchester, and the growing army of new gardeners who picked up a trowel during lockdown and never put it down.</p>
+      <p>But here's the bigger opportunity: the customers who <em>don't</em> know you exist. People moving to Southport, weekend visitors from Liverpool and Manchester, and the growing army of new <a href="/industries/landscapers" class="text-blue-400 hover:text-blue-300 underline">gardeners</a> who picked up a trowel during lockdown and never put it down.</p>
       <p>These people search terms like:</p>
       <ul>
         <li><strong>"tree nursery near Southport"</strong></li>
@@ -2378,7 +2378,7 @@ export const posts: BlogPost[] = [
     content: `
       <p>Here's a question that should keep every garden centre owner awake at night: <strong>why would someone drive to your garden centre when Amazon delivers compost to their door by Tuesday?</strong></p>
       <p>The answer, of course, is that a garden centre offers something Amazon never can—expertise, inspiration, the joy of wandering through rows of plants on a Saturday morning, and the ability to actually see and smell what you're buying. But here's the problem: if people can't find you on Google, they'll never discover what makes you special. They'll just order from their sofa.</p>
-      <p>For garden centres across the Southport area—from the retail parks along the A565 to the independent nurseries out towards Ormskirk and Rufford—<a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">local SEO</a> isn't just a marketing tactic. It's survival.</p>
+      <p>For garden centres across the Southport area—from the <a href="/industries/retail" class="text-blue-400 hover:text-blue-300 underline">retail parks</a> along the A565 to the independent nurseries out towards Ormskirk and Rufford—<a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">local SEO</a> isn't just a marketing tactic. It's survival.</p>
 
       <h2>The "Near Me" Revolution</h2>
       <p>Google has confirmed that <strong>"near me" searches</strong> have grown consistently year on year. For garden centres, this translates to searches like:</p>
@@ -2488,7 +2488,7 @@ export const posts: BlogPost[] = [
     excerpt: "Southport's caravan parks lose thousands of bookings to aggregator sites each year. Here's how to reclaim direct bookings with smart local SEO.",
     image: "/images/southport-caravan-park-seo.jpg",
     content: `
-      <p>Southport and the surrounding Lancashire coast have been caravan country for generations. From static holiday homes overlooking the dunes to touring pitches nestled in the West Lancashire countryside, this area has one of the highest concentrations of holiday parks in the North West.</p>
+      <p>Southport and the surrounding Lancashire coast have been caravan country for generations. From static holiday homes overlooking the dunes to touring pitches nestled in the West Lancashire countryside, this area has one of the highest concentrations of <a href="/industries/tourism" class="text-blue-400 hover:text-blue-300 underline">holiday parks</a> in the North West.</p>
       <p>But here's the uncomfortable truth: <strong>most caravan parks in the Southport area are handing a significant chunk of their bookings—and their profit margins—to third-party aggregator websites.</strong></p>
       <p>Sites like Pitchup, Haven, and various booking aggregators sit between you and your customer, taking commissions on every booking. The irony? Those sites are ranking for your park's name, your location, and the keywords your customers are actually searching. Time to take that traffic back.</p>
 
@@ -2608,7 +2608,7 @@ export const posts: BlogPost[] = [
       <p>That worked when the boating community was small and everyone knew each other. But the marine leisure market has changed:</p>
       <ul>
         <li><strong>New boat owners:</strong> Paddleboarding, kayaking, and small boat ownership have surged in popularity</li>
-        <li><strong>Visitors:</strong> Tourists and day-trippers search online before they arrive</li>
+        <li><strong>Visitors:</strong> <a href="/industries/tourism" class="text-blue-400 hover:text-blue-300 underline">Tourists and day-trippers</a> search online before they arrive</li>
         <li><strong>Younger demographics:</strong> New entrants to sailing and water sports search online first—always</li>
         <li><strong>Seasonal residents:</strong> People with holiday homes or caravans nearby search for local marine services</li>
       </ul>
@@ -2716,7 +2716,7 @@ export const posts: BlogPost[] = [
     excerpt: "In aesthetics, trust beats price every time. Here's how Southport clinics can build online authority that converts browsers into bookings.",
     image: "/images/southport-aesthetics-clinic-seo.jpg",
     content: `
-      <p>The aesthetics industry in Southport is booming. Lip fillers, Botox, skin treatments, body contouring—demand for non-surgical cosmetic procedures has grown significantly across the UK, and Southport is no exception. Lord Street alone has seen a noticeable increase in aesthetic clinics over recent years.</p>
+      <p>The aesthetics industry in Southport is booming. Lip fillers, Botox, <a href="/industries/beauty-salons" class="text-blue-400 hover:text-blue-300 underline">skin treatments</a>, body contouring—demand for non-surgical cosmetic procedures has grown significantly across the UK, and Southport is no exception. Lord Street alone has seen a noticeable increase in aesthetic clinics over recent years.</p>
       <p>But here's the challenge: <strong>aesthetics is one of the most trust-dependent industries online.</strong> People aren't choosing a clinic based on who has the cheapest prices. They're choosing based on who they trust to inject things into their face. And that trust is built—or destroyed—by your online presence long before anyone picks up the phone.</p>
 
       <h2>Google's YMYL Rules: Why Aesthetics SEO Is Different</h2>
@@ -2831,7 +2831,7 @@ export const posts: BlogPost[] = [
     image: "/images/southport-golf-open-seo.jpg",
     content: `
       <p>When The Open Championship comes to Royal Birkdale, Southport transforms. The world's best golfers, tens of thousands of spectators, and—crucially—<strong>millions of online searches</strong> all converge on this stretch of the Lancashire coast.</p>
-      <p>For Southport businesses, The Open isn't just a sporting event. It's the single biggest influx of wealthy, free-spending visitors the town experiences. Hotels fill up, restaurants are booked solid, and every taxi in Merseyside seems to find its way to Birkdale. But here's the question: <strong>is your business actually capturing any of this attention online?</strong></p>
+      <p>For Southport businesses, The Open isn't just a sporting event. It's the single biggest influx of wealthy, free-spending visitors the town experiences. <a href="/industries/hotels" class="text-blue-400 hover:text-blue-300 underline">Hotels</a> fill up, restaurants are booked solid, and every taxi in Merseyside seems to find its way to Birkdale. But here's the question: <strong>is your business actually capturing any of this attention online?</strong></p>
       <p>Because if you wait until the event is announced to start thinking about your website, you've already lost. The businesses that benefit most from The Open are the ones that prepare months—even years—in advance.</p>
 
       <h2>The Search Traffic Opportunity</h2>
@@ -2944,7 +2944,7 @@ export const posts: BlogPost[] = [
     excerpt: "The Southport Air Show draws huge crowds and massive search spikes. Here's how local businesses can capture event-driven traffic year after year.",
     image: "/images/southport-air-show-seo.jpg",
     content: `
-      <p>Every year, the Southport Air Show transforms the seafront into one of the North West's biggest events. The skies fill with aerobatic displays, the promenade fills with spectators, and—if you know where to look—Google fills with search queries from people planning their visit.</p>
+      <p>Every year, the Southport Air Show transforms the seafront into one of the North West's biggest <a href="/industries/event-venues" class="text-blue-400 hover:text-blue-300 underline">events</a>. The skies fill with aerobatic displays, the promenade fills with spectators, and—if you know where to look—Google fills with search queries from people planning their visit.</p>
       <p>The Air Show isn't just a spectacle. It's a <strong>massive economic engine</strong> for Southport and the surrounding area. Visitors travel from across the UK, spending money on food, drink, accommodation, parking, and entertainment. For local businesses, it's one of the best weekends of the year.</p>
       <p>But here's the thing: <strong>most Southport businesses do nothing to capture this traffic online.</strong> They open their doors, hope for walk-ins, and miss the thousands of people who planned their entire day through Google before they even left home.</p>
 
@@ -3070,7 +3070,7 @@ export const posts: BlogPost[] = [
     image: "/images/southport-eccentric-boutique-seo.jpg",
     content: `
       <p>Southport has always had a streak of the unconventional. Wander away from the chain stores and you'll find independent boutiques tucked along Lord Street's Victorian arcades and down its side streets — shops selling things you genuinely can't find anywhere else. Vintage fashion. Handmade jewellery. Quirky homeware. Things with <em>personality</em>.</p>
-      <p>Places like Elegantly Eccentric have built loyal followings precisely because they're the antithesis of mass-produced retail. But here's the problem: <strong>Google doesn't automatically reward uniqueness.</strong> If you're an independent retailer in Southport and you're not showing up when someone searches "unique gift shop Southport" or "vintage boutique near me," you're relying entirely on foot traffic — and that's a gamble.</p>
+      <p>Places like Elegantly Eccentric have built loyal followings precisely because they're the antithesis of mass-produced retail. But here's the problem: <strong>Google doesn't automatically reward uniqueness.</strong> If you're an <a href="/industries/retail-shops" class="text-blue-400 hover:text-blue-300 underline">independent retailer</a> in Southport and you're not showing up when someone searches "unique gift shop Southport" or "vintage boutique near me," you're relying entirely on foot traffic — and that's a gamble.</p>
       <p>This guide is for the boutique owners, the vintage curators, and the independent retailers who know their product is brilliant but need help getting it in front of the right people online. Let's talk about <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">retail SEO</a> for businesses that refuse to be boring.</p>
 
       <h2>Why Independent Retail SEO Is Different</h2>
@@ -3356,7 +3356,7 @@ export const posts: BlogPost[] = [
       </ul>
 
       <h2>The Hospitality Playbook</h2>
-      <p>If you run a pub, bar, or restaurant in Southport, Oktoberfest is one of your biggest weekends of the year. Here's how to make sure Google sends people your way:</p>
+      <p>If you run a <a href="/industries/bars-nightlife" class="text-blue-400 hover:text-blue-300 underline">pub, bar</a>, or restaurant in Southport, Oktoberfest is one of your biggest weekends of the year. Here's how to make sure Google sends people your way:</p>
 
       <div style="background: #1e293b; border-left: 4px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
         <h4 style="color: #f59e0b; font-weight: bold; margin-bottom: 1rem;">Hospitality Quick Wins</h4>
@@ -3420,7 +3420,7 @@ export const posts: BlogPost[] = [
     excerpt: "Southport's food and drink festival scene is thriving. Here's how vendors and restaurants can build an online presence that works before, during, and after every event.",
     image: "/images/southport-food-drink-festival-seo.jpg",
     content: `
-      <p>Southport's food and drink scene has come a long way. The town now hosts vibrant food festivals that draw visitors from across the North West — people who come specifically to eat, drink, and discover something new. For local restaurants, street food vendors, and artisan producers, these events are a goldmine.</p>
+      <p>Southport's food and drink scene has come a long way. The town now hosts vibrant food festivals that draw visitors from across the North West — people who come specifically to eat, drink, and discover something new. For local <a href="/industries/restaurants" class="text-blue-400 hover:text-blue-300 underline">restaurants</a>, street food vendors, and artisan producers, these events are a goldmine.</p>
       <p>But there's a catch: <strong>most food businesses treat festivals as purely offline events.</strong> They set up their stall, serve their food, pack up, and go home. The online opportunity — the search traffic, the social media buzz, the email signups — goes completely untapped.</p>
       <p>If you're a food or drink business in Southport, this guide will show you how to use <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">SEO and digital strategy</a> to extract maximum value from every festival, market, and food event you participate in.</p>
 
@@ -3546,7 +3546,7 @@ export const posts: BlogPost[] = [
     excerpt: "Southport's food markets are a brilliant local institution. Here's how market vendors and artisan food producers can build an online presence that actually works.",
     image: "/images/southport-food-market-seo.jpg",
     content: `
-      <p>There's something about a food market that a supermarket will never replicate. The conversations with producers, the samples, the discovery of something you didn't know you wanted. Southport's regular food markets — whether on the Promenade, in the town centre, or popping up in Victoria Park — are a genuine draw for locals and visitors alike.</p>
+      <p>There's something about a food market that a supermarket will never replicate. The conversations with producers, the samples, the discovery of something you didn't know you wanted. Southport's regular <a href="/industries/retail" class="text-blue-400 hover:text-blue-300 underline">food markets</a> — whether on the Promenade, in the town centre, or popping up in Victoria Park — are a genuine draw for locals and visitors alike.</p>
       <p>But if you're a market vendor or artisan food producer, you face a unique SEO challenge: <strong>you don't have a fixed address.</strong> Your "shop" moves from market to market. Your opening hours change weekly. And your Google Business Profile doesn't quite fit the traditional mould.</p>
       <p>This guide will show you how to build an <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">online presence</a> that works for market-based businesses — because the people searching "food market Southport" or "artisan bread near me" are exactly the customers you want to reach.</p>
 
@@ -3854,7 +3854,7 @@ export const posts: BlogPost[] = [
       </div>
 
       <h2>Tourism SEO: Capturing Visitor Intent</h2>
-      <p>The pier is a tourism magnet, which means the people searching for it are often visitors — not locals. This changes the SEO strategy significantly.</p>
+      <p>The pier is a <a href="/industries/tourism" class="text-blue-400 hover:text-blue-300 underline">tourism</a> magnet, which means the people searching for it are often visitors — not locals. This changes the SEO strategy significantly.</p>
       <p>Visitors don't know the area. They're searching for practical information:</p>
       <ul>
         <li>Where to eat near the pier</li>
@@ -3921,7 +3921,7 @@ export const posts: BlogPost[] = [
 
       <p>If you run a beach kiosk, a water sports outfit, an equipment hire business, or any coastal tourism operation in the Southport area, that question is your golden ticket. The problem? Most beach businesses don't have a digital presence that captures those searches. They rely on footfall, word of mouth, and good weather.</p>
 
-      <p>At <a href="/" class="text-blue-400 hover:text-blue-300 underline">Churchtown Media</a>, we help Southport's tourism businesses ride the digital wave. Here's how <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">smart SEO</a> can transform your seasonal business into a year-round search magnet.</p>
+      <p>At <a href="/" class="text-blue-400 hover:text-blue-300 underline">Churchtown Media</a>, we help Southport's <a href="/industries/tourism" class="text-blue-400 hover:text-blue-300 underline">tourism businesses</a> ride the digital wave. Here's how <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">smart SEO</a> can transform your seasonal business into a year-round search magnet.</p>
 
       <h2>The Beach Search Economy</h2>
 
@@ -4292,7 +4292,7 @@ export const posts: BlogPost[] = [
 
       <p>But here's the thing: <strong>having a world-class reputation on the course doesn't automatically translate to world-class visibility online.</strong> Many golf clubs in the Southport area have websites that look like they were built in 2012, load slowly on mobile, and contain almost no content beyond a course tour and contact form.</p>
 
-      <p>Meanwhile, golfers are making decisions online. They're searching for green fees, reading course reviews, comparing membership packages, and booking tee times—all on their phones. If your club isn't capturing those searches, someone else is.</p>
+      <p>Meanwhile, golfers are making decisions online. They're searching for green fees, reading course reviews, comparing <a href="/industries/gyms-fitness" class="text-blue-400 hover:text-blue-300 underline">membership packages</a>, and booking tee times—all on their phones. If your club isn't capturing those searches, someone else is.</p>
 
       <p>At <a href="/" class="text-blue-400 hover:text-blue-300 underline">Churchtown Media</a>, we're based right here on the Golf Coast. We understand the market, and we know how <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">targeted SEO</a> can fill tee sheets and membership waitlists.</p>
 
