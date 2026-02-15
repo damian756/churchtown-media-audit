@@ -4,7 +4,7 @@ import { ArrowRight, Search, Star, Heart, Home, Briefcase, Palette, Cpu, Leaf, B
 import { industries, industryGroups, getIndustriesByGroup } from "@/lib/industries";
 
 export const metadata: Metadata = {
-  title: "Industries We Serve | 35 Specialized Web Design & SEO Solutions",
+  title: "Industries We Serve | Web Design & SEO Solutions",
   description: "Fast, conversion-optimized websites for 35+ industries. MLEC-ready hospitality, local trades, professional services, healthcare, and more. 10/10 SEO excellence.",
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk/industries',

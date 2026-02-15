@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 // 1. REGIONAL STRATEGY METADATA
 export const metadata: Metadata = {
-  title: 'Digital Growth Partner North West | Revenue Engines & Strategy',
+  title: 'North West Digital Growth Partner | Churchtown Media',
   description: 'We build revenue engines, not just websites. The North West\'s leading digital growth partner. Data-driven SEO and high-performance development.',
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk',

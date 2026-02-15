@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ArrowRight, Heart, Zap, Target, Users, Code, TrendingUp } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Us | 15+ Years of SEO & Web Design Excellence | Churchtown Media",
+  title: "About Us | SEO & Web Design Experts | Churchtown Media",
   description: "Meet the team behind Churchtown Media. 15+ years in SEO, 20+ years in web design. Obsessive about client ROI. Family-run agency in Southport specializing in Next.js and technical SEO.",
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk/about',

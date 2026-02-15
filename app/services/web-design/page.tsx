@@ -6,7 +6,7 @@ import { Zap, Smartphone, Code2, ArrowRight, BarChart3, CheckCircle2, Plus, Shie
 
 // METADATA WITH ENHANCED OPENGRAPH
 export const metadata: Metadata = {
-  title: 'Enterprise Web Design Agency North West | Next.js Experts | Churchtown Media',
+  title: 'Web Design Agency North West | Next.js Experts',
   description: 'Award-winning Next.js web design for North West businesses. We build lightning-fast, conversion-optimized websites that rank #1 on Google. 90+ Lighthouse scores guaranteed. Based in Southport.',
   keywords: ['web design north west', 'next.js development', 'react web design', 'fast websites', 'enterprise web development', 'web design southport', 'web design liverpool', 'web design manchester'],
   alternates: {

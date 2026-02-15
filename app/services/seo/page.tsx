@@ -6,7 +6,7 @@ import { Search, MapPin, BarChart, ArrowRight, Laptop, CheckCircle2, Plus, Trend
 
 // ENHANCED METADATA WITH OPENGRAPH
 export const metadata: Metadata = {
-  title: 'Data-Driven SEO Agency North West | Liverpool, Manchester | Churchtown Media',
+  title: 'SEO Agency North West | Data-Driven Results',
   description: 'Award-winning SEO agency specializing in North West businesses. We deliver measurable ROI through technical SEO, local domination, and content strategy. 287% average traffic growth. Based in Southport.',
   keywords: ['seo north west', 'seo liverpool', 'seo manchester', 'technical seo', 'local seo', 'seo agency southport', 'seo consultant', 'data-driven seo'],
   alternates: {

@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${post.title} | Churchtown Media`,
+    title: post.title,
     description: post.excerpt,
     alternates: {
       canonical: `https://www.churchtownmedia.co.uk/blog/${post.slug}`,

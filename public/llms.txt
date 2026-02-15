@@ -1,0 +1,35 @@
+# Churchtown Media
+
+> North West digital growth agency specializing in Next.js web design and data-driven SEO. Based in Southport, serving Liverpool, Manchester, Preston, and the wider UK.
+
+## About
+
+Churchtown Media builds high-performance websites and SEO strategies for businesses across the North West. We use Next.js, React, and Vercel to deliver sub-second page loads, 90+ Lighthouse scores, and measurable traffic growth. Family-run agency with 15+ years in SEO and 20+ years in web development.
+
+## Services
+
+- [Web Design](https://www.churchtownmedia.co.uk/services/web-design): Enterprise Next.js websites from £2,500
+- [SEO](https://www.churchtownmedia.co.uk/services/seo): Data-driven SEO packages from £500/month
+- [Small Business](https://www.churchtownmedia.co.uk/services/small-business): Professional websites from £1,500
+- [Content Scaling](https://www.churchtownmedia.co.uk/services/content-scaling): 100+ programmatic SEO pages in 48 hours
+- [Headless Development](https://www.churchtownmedia.co.uk/services/headless-development): WordPress to Next.js migration
+
+## Key Pages
+
+- [Homepage](https://www.churchtownmedia.co.uk/)
+- [Portfolio](https://www.churchtownmedia.co.uk/portfolio)
+- [Industries](https://www.churchtownmedia.co.uk/industries): 35+ industry-specific solutions
+- [Locations](https://www.churchtownmedia.co.uk/locations): Service areas across the North West
+- [Blog](https://www.churchtownmedia.co.uk/blog): SEO insights and market intelligence
+- [About](https://www.churchtownmedia.co.uk/about)
+- [Contact](https://www.churchtownmedia.co.uk/contact)
+- [Free SEO Audit](https://www.churchtownmedia.co.uk/audit)
+- [Testimonials](https://www.churchtownmedia.co.uk/testimonials)
+- [FAQs](https://www.churchtownmedia.co.uk/frequently-asked-questions)
+
+## Contact
+
+- Email: hello@churchtownmedia.co.uk
+- Phone: 01704 635785
+- Address: Cambridge Avenue, Southport, Merseyside, PR9 9SA
+- Website: https://www.churchtownmedia.co.uk

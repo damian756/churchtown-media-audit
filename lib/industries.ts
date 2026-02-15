@@ -121,7 +121,7 @@ export const industries: Industry[] = [
     tagline: "Convert MLEC conference delegates into booked rooms",
     heroHeadline: "500,000 MLEC Visitors Need Somewhere to Stay. Will They Book YOUR Hotel?",
     heroSubheadline: "Direct booking websites that avoid OTA commission fees. Fast, mobile-first design. Google Hotel Ads integration. Capture 'hotels near Marine Lake Events Centre' searches.",
-    metaTitle: "Hotel Website Design & SEO Southport | MLEC Conference Ready",
+    metaTitle: "Hotel Website Design & SEO Southport | MLEC-Ready",
     metaDesc: "MLEC brings 500k visitors needing accommodation. Fast hotel websites + direct booking systems + local SEO. Avoid OTA fees. Capture conference delegates.",
     painPoints: [
       {
@@ -196,7 +196,7 @@ export const industries: Industry[] = [
     tagline: "Capture the Light Fantastic late-night economy",
     heroHeadline: "The Light Fantastic Creates a Late-Night Economy. Is Your Bar Ready?",
     heroSubheadline: "Fast websites + 'near me' SEO for bars, pubs, and nightlife venues. Event calendars. Social media integration. Capture post-show crowds.",
-    metaTitle: "Bar & Nightlife Website Design Southport | Light Fantastic Ready",
+    metaTitle: "Bar & Nightlife Website Design Southport | SEO",
     metaDesc: "Light Fantastic brings late-night crowds to Southport. Fast bar websites + local SEO to capture 'bar near Marine Lake' and post-show searches.",
     painPoints: [
       {
@@ -346,7 +346,7 @@ export const industries: Industry[] = [
     tagline: "MLEC needs function space—capture conference bookings",
     heroHeadline: "MLEC Will Need 500+ Corporate Events per Year. Will They Book YOUR Venue?",
     heroSubheadline: "Showcase your function rooms with virtual tours, capacity details, and instant quote systems. Dominate 'conference venue Southport' searches.",
-    metaTitle: "Event Venue Website Design Southport | Conference & Function Rooms",
+    metaTitle: "Event Venue Website Design Southport | Venue SEO",
     metaDesc: "MLEC conference spillover creates venue demand. Fast websites with virtual tours, capacity info, instant quotes. Capture corporate bookings.",
     painPoints: [
       {
@@ -650,7 +650,7 @@ export const industries: Industry[] = [
     tagline: "Dominate 'emergency plumber near me' searches",
     heroHeadline: "Southport Has 127 Plumbers. Only 3 Show Up for 'Plumber Near Me.'",
     heroSubheadline: "Fast, mobile-first websites that rank #1 for emergency searches. Click-to-call optimization. Local SEO for Southport, Formby, and Sefton.",
-    metaTitle: "Plumber Website Design & SEO Southport | Emergency Plumber Rankings",
+    metaTitle: "Plumber Website Design & SEO Southport",
     metaDesc: "Fast plumber websites that dominate 'emergency plumber near me'. Click-to-call, local SEO, mobile-first. Rank #1 in Southport Map Pack.",
     painPoints: [
       {
@@ -1304,7 +1304,7 @@ export const industries: Industry[] = [
     tagline: "Capture the renewable energy boom",
     heroHeadline: "UK's Net Zero Push Creates £9B Renewable Energy Market. Are You Visible?",
     heroSubheadline: "Technical websites for solar and wind installers. ROI calculators. Grant information. Rank for 'solar panels [location]' searches.",
-    metaTitle: "Solar & Wind Energy Website Design | Renewable Energy SEO",
+    metaTitle: "Renewable Energy Website Design | Green Energy SEO",
     metaDesc: "Fast renewable energy websites. ROI calculators, grant guides, technical specs. Rank for 'solar panels near me' searches.",
     painPoints: [
       {
@@ -1722,7 +1722,7 @@ export const industries: Industry[] = [
     tagline: "Showcase your vision with portfolio-first design",
     heroHeadline: "Your Architecture Portfolio Deserves a Website as Beautiful as Your Designs.",
     heroSubheadline: "Portfolio-first websites for architects. Project showcases. RIBA compliance. Rank for 'architect Southport' and residential design searches.",
-    metaTitle: "Architect Website Design Southport | Architecture Portfolio SEO",
+    metaTitle: "Architect Website Design Southport | Portfolio SEO",
     metaDesc: "Portfolio-first architect websites. Showcase projects, RIBA credentials. Rank for 'architect Southport' residential & commercial.",
     painPoints: [
       { title: "Portfolio is Your Sales Tool", description: "Architects sell visually. If your portfolio isn't stunning and fast-loading, you've lost the client before they read a word.", stat: "Project galleries drive 83% of architect enquiries" },
@@ -1764,7 +1764,7 @@ export const industries: Industry[] = [
     tagline: "Your portfolio should load fast and look stunning",
     heroHeadline: "Slow Photography Websites Lose Bookings. Yours Should Load in Under 2 Seconds.",
     heroSubheadline: "Fast, image-optimized websites for photographers. Wedding, commercial, portrait galleries. Booking systems. Rank for local photography searches.",
-    metaTitle: "Photographer Website Design Southport | Photography Portfolio SEO",
+    metaTitle: "Photographer Website Design Southport | Photo SEO",
     metaDesc: "Fast photographer websites. Wedding, portrait, commercial galleries. Online booking. Rank for 'photographer Southport' searches.",
     painPoints: [
       { title: "Slow Image Loading", description: "Photographers need high-res galleries, but slow sites lose impatient clients. Next.js optimizes images automatically.", stat: "Slow photo galleries lose 67% of visitors" },
@@ -1932,7 +1932,7 @@ export const industries: Industry[] = [
     tagline: "Convert first-time buyers and remortgage searches",
     heroHeadline: "When Buyers Search 'Mortgage Advisor Near Me', Are You The First Call?",
     heroSubheadline: "Professional mortgage broker websites. Mortgage calculators. FCA compliance. Rank for first-time buyer and remortgage searches.",
-    metaTitle: "Mortgage Broker Website Design Southport | Mortgage Advisor SEO",
+    metaTitle: "Mortgage Broker Website Design Southport | SEO",
     metaDesc: "Professional mortgage broker websites. Calculators, FCA compliance, service pages. Rank for 'mortgage advisor Southport' searches.",
     painPoints: [
       { title: "No Mortgage Calculator", description: "Buyers want to know 'How much can I borrow?' before contacting you. Calculators are powerful lead magnets.", stat: "Mortgage calculators increase enquiries by 340%" },
@@ -2058,7 +2058,7 @@ export const industries: Industry[] = [
     tagline: "Scalable online stores that convert",
     heroHeadline: "Slow E-Commerce Sites Lose 40% of Sales. Is Yours Fast Enough?",
     heroSubheadline: "Headless e-commerce websites (Shopify + Next.js). Fast, scalable, conversion-optimized. Built for brands ready to grow.",
-    metaTitle: "E-Commerce Website Design | Headless Shopify Development",
+    metaTitle: "E-Commerce Website Design | Shopify & Next.js",
     metaDesc: "Fast e-commerce websites. Headless Shopify + Next.js. Scalable, conversion-optimized online stores for growing brands.",
     painPoints: [
       { title: "Slow Checkout = Lost Sales", description: "Every 1-second delay reduces conversions by 7%. Your checkout must be lightning-fast.", stat: "Fast checkout increases conversion by 35%" },
@@ -2100,7 +2100,7 @@ export const industries: Industry[] = [
     tagline: "Convert injury searches into booked appointments",
     heroHeadline: "When Someone Searches 'Physio Near Me' in Pain, Are You There?",
     heroSubheadline: "Fast physio websites with online booking. Injury guides. Treatment pages. Rank for 'physiotherapy near me' and condition-specific searches.",
-    metaTitle: "Physiotherapy Website Design Southport | Sports Therapy SEO",
+    metaTitle: "Physiotherapy Website Design Southport | SEO",
     metaDesc: "Fast physio websites. Online appointment booking, injury guides, treatment pages. Rank for 'physio near me' Southport.",
     painPoints: [
       { title: "No Online Booking Loses Patients", description: "People in pain want instant appointments. Phone-only creates friction when they need urgent help.", stat: "Online booking increases physio appointments by 82%" },

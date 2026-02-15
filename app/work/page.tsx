@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, Clock, Rocket, Code2, LineChart, Cog, Zap, Shield, Search, Gauge, TrendingUp } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "How We Build High-Performance Websites | Our Process & Methodology",
+  title: "Our Process | High-Performance Web Development",
   description: "Our proven 4-phase process for building Next.js websites that rank, convert, and scale. From discovery to launch in 3-5 weeks. Technical SEO, Core Web Vitals optimization, and measurable results.",
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk/work',

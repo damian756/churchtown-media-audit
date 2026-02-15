@@ -4,7 +4,7 @@ import { faqs } from '@/lib/faqs';
 
 // 1. METADATA FOR 10/10 SEO
 export const metadata: Metadata = {
-  title: '200+ Frequently Asked Questions | Web Design & SEO | Churchtown Media',
+  title: '200+ FAQs | Web Design & SEO | Churchtown Media',
   description: 'Get expert answers to 200+ questions about Next.js web design, local SEO, WordPress migration, pricing, and digital marketing in Southport and the North West.',
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk/frequently-asked-questions',

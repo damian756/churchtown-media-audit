@@ -9,10 +9,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // 1. Static Pages (Your main menu links)
   const staticPages = [
     '',
+    '/services',
     '/services/web-design',
     '/services/seo',
     '/services/content-scaling',
     '/services/small-business',
+    '/services/headless-development',
     '/work',
     '/portfolio',
     '/about',
@@ -24,6 +26,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/testimonials',
     '/frequently-asked-questions',
     '/southport-growth',
+    '/search-engine-optimisation',
+    '/search-engine-optimisation/local',
+    '/terms',
+    '/privacy',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
