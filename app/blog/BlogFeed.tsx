@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from "next/link";
 import Image from "next/image"; 
-import { ArrowRight, BookOpen, TrendingUp, Calendar, User, CheckCircle2 } from "lucide-react";
+import { ArrowRight, BookOpen, TrendingUp, Calendar, User, CheckCircle2, Search, X } from "lucide-react";
 
 // Define the shape of a post
 interface BlogPost {
@@ -17,8 +17,9 @@ interface BlogPost {
 }
 
 export default function BlogFeed({ posts }: { posts: BlogPost[] }) {
-  // 1. STATE FOR FILTERING
+  // 1. STATE FOR FILTERING & SEARCH
   const [activeCategory, setActiveCategory] = useState("All Insights");
+  const [searchQuery, setSearchQuery] = useState("");
   
   // 2. STATE FOR EMAIL FORM
   const [email, setEmail] = useState("");
@@ -36,15 +37,23 @@ export default function BlogFeed({ posts }: { posts: BlogPost[] }) {
     return dateB.getTime() - dateA.getTime();
   });
 
-  // FILTER LOGIC
-  const filteredPosts = activeCategory === "All Insights" 
-    ? sortedPosts 
-    : sortedPosts.filter(post => post.category === activeCategory);
+  // FILTER LOGIC (category + search)
+  const query = searchQuery.toLowerCase().trim();
+  const filteredPosts = sortedPosts.filter(post => {
+    const matchesCategory = activeCategory === "All Insights" || post.category === activeCategory;
+    const matchesSearch = !query || 
+      post.title.toLowerCase().includes(query) || 
+      post.excerpt.toLowerCase().includes(query) ||
+      post.category.toLowerCase().includes(query);
+    return matchesCategory && matchesSearch;
+  });
 
-  // HERO POST (only for "All Insights", otherwise use first filtered post)
+  const isSearching = query.length > 0;
+
+  // HERO POST (only for "All Insights" with no search active)
   const heroPost = sortedPosts[0];
-  // Only exclude hero from grid when showing "All Insights"
-  const gridPosts = activeCategory === "All Insights" 
+  // Only exclude hero from grid when showing "All Insights" and not searching
+  const gridPosts = activeCategory === "All Insights" && !isSearching
     ? filteredPosts.filter(p => p.slug !== heroPost.slug)
     : filteredPosts;
 
@@ -165,7 +174,34 @@ export default function BlogFeed({ posts }: { posts: BlogPost[] }) {
         </Link>
       </div>
 
-      {/* CATEGORY FILTER */}
+      {/* SEARCH & CATEGORY FILTER */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-6">
+        <div className="relative max-w-md">
+          <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
+          <input
+            type="text"
+            placeholder="Search articles..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="w-full pl-11 pr-10 py-3 bg-slate-900 border border-slate-700 rounded-xl text-sm text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+          />
+          {searchQuery && (
+            <button
+              onClick={() => setSearchQuery("")}
+              className="absolute right-3 top-1/2 -translate-y-1/2 p-1 rounded-full hover:bg-slate-700 transition-colors"
+              aria-label="Clear search"
+            >
+              <X className="w-4 h-4 text-slate-400" />
+            </button>
+          )}
+        </div>
+        {isSearching && (
+          <p className="text-sm text-slate-400 mt-3">
+            {filteredPosts.length} {filteredPosts.length === 1 ? 'result' : 'results'} for "<span className="text-white">{searchQuery}</span>"
+          </p>
+        )}
+      </div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-12 flex flex-wrap gap-2">
         {categories.map((cat, i) => (
             <button 
@@ -219,8 +255,8 @@ export default function BlogFeed({ posts }: { posts: BlogPost[] }) {
             ))
         ) : (
             <div className="col-span-full text-center py-20 text-slate-400">
-                <p>No articles found in this category yet.</p>
-                <button onClick={() => setActiveCategory("All Insights")} className="text-blue-400 font-bold mt-2 hover:underline">Clear Filters</button>
+                <p>{isSearching ? `No articles matching "${searchQuery}"` : "No articles found in this category yet."}</p>
+                <button onClick={() => { setActiveCategory("All Insights"); setSearchQuery(""); }} className="text-blue-400 font-bold mt-2 hover:underline">Clear Filters</button>
             </div>
         )}
       </div>
