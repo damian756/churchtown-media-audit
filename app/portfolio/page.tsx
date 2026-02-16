@@ -5,7 +5,7 @@ import { ArrowRight, ExternalLink, Zap, Code2, Gauge, TrendingUp, CheckCircle2, 
 
 export const metadata: Metadata = {
   title: "Portfolio | Client Projects & Success Stories",
-  description: "See our live Next.js projects in action. From bus shelter manufacturers to B2B distributors—real clients, real results, real performance. Lighthouse scores 90+, traffic increases up to 300%.",
+  description: "See our live Next.js projects in action. From bus shelter manufacturers to professional video capture equipment—real clients, real results, real performance. Lighthouse scores 90+, traffic increases up to 300%.",
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk/portfolio',
   },
@@ -59,6 +59,17 @@ export default function PortfolioPage() {
           "name": "Forefront Imaging",
           "description": "B2B product catalog for Magewell distributor. 76+ SKUs with real-time stock tracking and reseller portal.",
           "url": "https://forefront-imaging-6zvd.vercel.app",
+          "creator": {
+            "@type": "Organization",
+            "@id": "https://www.churchtownmedia.co.uk/#organization"
+          }
+        },
+        {
+          "@type": "CreativeWork",
+          "position": 3,
+          "name": "StreamKit",
+          "description": "Professional USB video capture devices for streamers, broadcasters, educators, and healthcare. Driver-free, universal compatibility.",
+          "url": "https://www.streamkit.co.uk",
           "creator": {
             "@type": "Organization",
             "@id": "https://www.churchtownmedia.co.uk/#organization"
@@ -119,6 +130,32 @@ export default function PortfolioPage() {
         "Stock availability indicators (In Stock/Low Stock/Order Soon)",
         "Reseller-focused UX (quote requests, bulk inquiries)",
         "Mobile-first design for on-site decision making",
+      ]
+    },
+    {
+      id: 3,
+      name: "StreamKit",
+      tagline: "Professional Video Capture. Zero Drivers.",
+      industry: "Professional AV Equipment",
+      url: "https://www.streamkit.co.uk",
+      status: "live",
+      image: "/images/streamkit-portfolio.jpg",
+      description: "StreamKit provides professional USB video capture devices for streamers, broadcasters, educators, and healthcare professionals. The site needed to showcase technical specifications while remaining accessible to non-technical buyers across multiple industries.",
+      challenge: "Competing in a crowded video capture market dominated by Elgato and AverMedia. Needed to position as the professional-grade alternative while explaining complex technical features (latency, compatibility, resolution) without overwhelming buyers.",
+      solution: "Industry-focused landing pages with tailored messaging for each audience (streaming, broadcast, education, healthcare). Clean product presentation with 'plug & play' positioning and real-time performance indicators.",
+      results: [
+        { label: "Industries Served", value: "10+", description: "From streaming to surgery" },
+        { label: "Zero Latency", value: "Real-time", description: "Hardware-accelerated capture" },
+        { label: "Lighthouse Score", value: "94/100", description: "Desktop performance" },
+        { label: "Universal Support", value: "3 OS", description: "Windows, Mac, Linux" },
+      ],
+      techStack: ["Next.js 16", "TypeScript", "Tailwind CSS", "Vercel", "Responsive Design"],
+      caseStudySlug: null,
+      highlights: [
+        "Industry-specific landing pages for targeted messaging",
+        "Technical specs presented for non-technical buyers",
+        "Driver-free positioning vs competitors requiring software",
+        "Multi-platform compatibility showcase (Windows, Mac, Linux)",
       ]
     }
   ];
