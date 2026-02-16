@@ -331,14 +331,21 @@ export default function PortfolioPage() {
 
                     {/* CTAs */}
                     <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                      <a
-                        href={project.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full text-sm font-bold transition-all hover:scale-105 shadow-lg shadow-blue-600/20"
-                      >
-                        View Live Site <ExternalLink className="w-4 h-4" />
-                      </a>
+                      {project.status === 'live' ? (
+                        <a
+                          href={project.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full text-sm font-bold transition-all hover:scale-105 shadow-lg shadow-blue-600/20"
+                        >
+                          View Live Site <ExternalLink className="w-4 h-4" />
+                        </a>
+                      ) : (
+                        <div className="inline-flex items-center justify-center gap-2 bg-slate-700 text-slate-400 px-6 py-3 rounded-full text-sm font-bold cursor-not-allowed opacity-60">
+                          <Rocket className="w-4 h-4" />
+                          In Progress
+                        </div>
+                      )}
                       {project.caseStudySlug && (
                         <Link
                           href={`/blog/${project.caseStudySlug}`}
