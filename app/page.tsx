@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { ArrowRight, Zap, BarChart3, Globe, TrendingUp, Code2, Star, Quote } from "lucide-react";
+import Image from "next/image";
+import { ArrowRight, Zap, BarChart3, Globe, TrendingUp, Code2, Star, Quote, ExternalLink } from "lucide-react";
 import type { Metadata } from "next";
 
 // 1. REGIONAL STRATEGY METADATA
@@ -217,7 +218,146 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 3. TESTIMONIALS SECTION */}
+      {/* 3. PORTFOLIO SHOWCASE */}
+      <section className="py-20 px-4 sm:px-6 bg-slate-950 relative overflow-hidden border-t border-slate-800">
+        <div className="max-w-7xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 bg-emerald-600/20 border border-emerald-600/30 rounded-full px-4 py-2 mb-6">
+              <TrendingUp className="w-4 h-4 text-emerald-400" />
+              <span className="text-emerald-400 text-sm font-bold">Live Projects</span>
+            </div>
+            <h2 className="text-3xl md:text-5xl font-black text-white mb-4">
+              Built for Growth. Proven by Results.
+            </h2>
+            <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+              From bus shelter manufacturers to tourism directories—real clients seeing real traffic growth.
+            </p>
+          </div>
+
+          {/* Portfolio Grid */}
+          <div className="grid md:grid-cols-3 gap-6 mb-10">
+            
+            {/* Project 1: Alotek Shelters */}
+            <Link 
+              href="/portfolio" 
+              className="group relative bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-blue-500/50 transition-all hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-600/20"
+            >
+              <div className="aspect-[4/3] relative overflow-hidden">
+                <Image
+                  src="/images/alotek-portfolio.jpg"
+                  alt="Alotek Shelters - Bus Shelter Manufacturers"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent" />
+                
+                {/* Floating Badge */}
+                <div className="absolute top-4 right-4 bg-emerald-500 text-white text-xs font-black px-3 py-1.5 rounded-full shadow-lg">
+                  +86% Traffic
+                </div>
+              </div>
+              
+              {/* Content Overlay */}
+              <div className="p-6">
+                <div className="text-xs font-bold text-blue-400 uppercase tracking-wide mb-2">Manufacturing</div>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                  Alotek Shelters
+                </h3>
+                <p className="text-sm text-slate-400 mb-4">
+                  From invisible to industry leader in 6 weeks
+                </p>
+                <div className="flex items-center gap-2 text-blue-400 font-bold text-sm">
+                  View Case Study <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </div>
+            </Link>
+
+            {/* Project 2: StreamKit */}
+            <Link 
+              href="/portfolio" 
+              className="group relative bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-purple-500/50 transition-all hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-600/20"
+            >
+              <div className="aspect-[4/3] relative overflow-hidden">
+                <Image
+                  src="/images/streamkit-portfolio.jpg"
+                  alt="StreamKit - Professional Video Capture"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent" />
+                
+                {/* Floating Badge */}
+                <div className="absolute top-4 right-4 bg-purple-500 text-white text-xs font-black px-3 py-1.5 rounded-full shadow-lg">
+                  10+ Industries
+                </div>
+              </div>
+              
+              {/* Content Overlay */}
+              <div className="p-6">
+                <div className="text-xs font-bold text-purple-400 uppercase tracking-wide mb-2">Professional AV</div>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">
+                  StreamKit
+                </h3>
+                <p className="text-sm text-slate-400 mb-4">
+                  Professional video capture. Zero drivers.
+                </p>
+                <div className="flex items-center gap-2 text-purple-400 font-bold text-sm">
+                  View Case Study <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </div>
+            </Link>
+
+            {/* Project 3: Southport Guide */}
+            <Link 
+              href="/portfolio" 
+              className="group relative bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-emerald-500/50 transition-all hover:-translate-y-2 hover:shadow-2xl hover:shadow-emerald-600/20"
+            >
+              <div className="aspect-[4/3] relative overflow-hidden">
+                <Image
+                  src="/images/southportguide-portfolio.jpg"
+                  alt="Southport Guide - Tourism Directory"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent" />
+                
+                {/* Floating Badge */}
+                <div className="absolute top-4 right-4 bg-emerald-500 text-white text-xs font-black px-3 py-1.5 rounded-full shadow-lg">
+                  999+ Venues
+                </div>
+              </div>
+              
+              {/* Content Overlay */}
+              <div className="p-6">
+                <div className="text-xs font-bold text-emerald-400 uppercase tracking-wide mb-2">Tourism</div>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors">
+                  Southport Guide
+                </h3>
+                <p className="text-sm text-slate-400 mb-4">
+                  Britain's seaside town. 8M annual visitors.
+                </p>
+                <div className="flex items-center gap-2 text-emerald-400 font-bold text-sm">
+                  View Case Study <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </div>
+            </Link>
+
+          </div>
+
+          {/* View All Portfolio Link */}
+          <div className="text-center">
+            <Link 
+              href="/portfolio" 
+              className="inline-flex items-center gap-2 px-6 py-3 bg-slate-800 hover:bg-slate-700 text-white font-bold rounded-xl border border-slate-700 hover:border-slate-600 transition-all group"
+            >
+              View Full Portfolio <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. TESTIMONIALS SECTION */}
       <section className="py-20 px-4 sm:px-6 bg-slate-950 relative overflow-hidden">
         {/* Background gradient */}
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/50 via-slate-950 to-slate-950" />
