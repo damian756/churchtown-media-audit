@@ -74,6 +74,17 @@ export default function PortfolioPage() {
             "@type": "Organization",
             "@id": "https://www.churchtownmedia.co.uk/#organization"
           }
+        },
+        {
+          "@type": "CreativeWork",
+          "position": 4,
+          "name": "Southport Guide",
+          "description": "Complete tourism directory for Southport featuring 999+ businesses. Mobile-first local discovery for 8M annual visitors.",
+          "url": "https://www.southportguide.co.uk",
+          "creator": {
+            "@type": "Organization",
+            "@id": "https://www.churchtownmedia.co.uk/#organization"
+          }
         }
       ]
     }
@@ -156,6 +167,32 @@ export default function PortfolioPage() {
         "Technical specs presented for non-technical buyers",
         "Driver-free positioning vs competitors requiring software",
         "Multi-platform compatibility showcase (Windows, Mac, Linux)",
+      ]
+    },
+    {
+      id: 4,
+      name: "Southport Guide",
+      tagline: "Discover Britain's Great Seaside Town",
+      industry: "Tourism & Local Directory",
+      url: "https://www.southportguide.co.uk",
+      status: "live",
+      image: "/images/southportguide-portfolio.jpg",
+      description: "The complete guide to eating, staying, and exploring Southport—one of Britain's great seaside towns. A comprehensive directory featuring 999+ local businesses across restaurants, hotels, attractions, and more. Built to showcase Southport's tourism economy while driving direct engagement with local venues.",
+      challenge: "Southport's £2.5 billion annual visitor economy was fragmented across multiple outdated listing sites and social media. Visitors struggled to discover local businesses, and venues lacked a modern, mobile-first platform to showcase their offerings. No single authoritative guide existed for the town's 8 million annual visitors.",
+      solution: "Built a Next.js-powered local directory with 11 categorized industries, mobile-first design, and 'near me' search optimization. Clean, Instagram-worthy imagery and intuitive filtering help tourists discover businesses while they're walking Lord Street or the Promenade. Designed to rank for 'things to do Southport' and 'restaurants near me' searches.",
+      results: [
+        { label: "Businesses Listed", value: "999+", description: "Across 11 categories" },
+        { label: "Categories", value: "11", description: "Industries covered" },
+        { label: "Lighthouse Score", value: "96/100", description: "Mobile performance" },
+        { label: "Load Time", value: "<1.5s", description: "Mobile 4G average" },
+      ],
+      techStack: ["Next.js 16", "TypeScript", "Tailwind CSS", "Vercel", "Schema.org"],
+      caseStudySlug: null,
+      highlights: [
+        "999+ venues across restaurants, hotels, bars, attractions, beaches, golf, shopping",
+        "Home of The Open Championship 2026 positioning",
+        "Mobile-first 'near me' search optimization for 8M annual visitors",
+        "Category filtering for tourists making real-time decisions",
       ]
     }
   ];
