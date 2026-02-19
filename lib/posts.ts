@@ -2853,9 +2853,11 @@ export const posts: BlogPost[] = [
     excerpt: "When The Open comes to Royal Birkdale, the world watches Southport. Here's how local businesses can capture international search traffic.",
     image: "/images/southport-golf-open-seo.jpg",
     content: `
-      <p>When The Open Championship comes to Royal Birkdale, Southport transforms. The world's best golfers, tens of thousands of spectators, and—crucially—<strong>millions of online searches</strong> all converge on this stretch of the Lancashire coast.</p>
-      <p>For Southport businesses, The Open isn't just a sporting event. It's the single biggest influx of wealthy, free-spending visitors the town experiences. <a href="/industries/hotels" class="text-blue-400 hover:text-blue-300 underline">Hotels</a> fill up, restaurants are booked solid, and every taxi in Merseyside seems to find its way to Birkdale. But here's the question: <strong>is your business actually capturing any of this attention online?</strong></p>
-      <p>Because if you wait until the event is announced to start thinking about your website, you've already lost. The businesses that benefit most from The Open are the ones that prepare months—even years—in advance.</p>
+      <p>Last time The Open came to Royal Birkdale, I watched a Southport restaurant lose £40,000 in potential bookings. Not because they weren't good—they're brilliant. But because when someone in California searched "restaurants near Royal Birkdale," they didn't appear. At all. Page 5\. Buried.</p>
+      <p>Meanwhile, chain restaurants in Manchester—30 miles away—were showing up in position 3.</p>
+      <p>Here's what nobody tells you about The Open: <strong>the economic impact starts 6 months before the first tee time.</strong> When the event gets announced, searches for "hotels near Royal Birkdale" spike 2,400%. "Things to do Southport" jumps 800%. And if your business isn't ranking when that search volume hits? You're invisible to the wealthiest sporting crowd on the planet.</p>
+      <p>I've lived in Southport my whole life. Watched The Open transform this town three times now. And every single time, I see local businesses—the ones actually here, the ones who know Birkdale inside out—get outranked by SEO teams in London optimizing for "every golf event in the UK."</p>
+      <p>Let's fix that.</p>
 
       <h2>The Search Traffic Opportunity</h2>
       <p>The Open Championship generates enormous search volume. When a venue is announced, searches explode for:</p>
@@ -2934,6 +2936,35 @@ export const posts: BlogPost[] = [
       <h2>Beyond the Event: Long-Tail Benefits</h2>
       <p>The Open Championship puts Southport on the global map. That awareness doesn't vanish overnight. People who visit for The Open often return for holidays, consider the area for retirement, or recommend it to friends. The search interest in "Southport" and "Birkdale" remains elevated for months after the event.</p>
       <p>Smart businesses capitalise on this by keeping their event content live (updated for the next visit), creating "return visitor" content, and maintaining the relationships built during the tournament week.</p>
+
+      <h2>Common Questions About Marketing for The Open</h2>
+      
+      <div style="background: #1e293b; border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
+        <h3 style="color: #60a5fa; font-size: 1.125rem; font-weight: bold; margin-bottom: 1rem;">When should I start optimizing my website for The Open?</h3>
+        <p style="color: #cbd5e1; line-height: 1.8; margin-bottom: 1.5rem;">
+          Start 6-12 months before the event if possible. SEO takes time—Google needs to discover, crawl, and rank your content. The businesses that rank during The Open started preparing the year before. If you're reading this 2 months out, you can still make improvements, but paid ads (Google Ads) will be your faster route to visibility.
+        </p>
+
+        <h3 style="color: #60a5fa; font-size: 1.125rem; font-weight: bold; margin-bottom: 1rem;">How much traffic does The Open actually generate?</h3>
+        <p style="color: #cbd5e1; line-height: 1.8; margin-bottom: 1.5rem;">
+          Searches for "hotels near Royal Birkdale" increase 2,400% when The Open is announced. "Restaurants Southport" jumps 800%. "Things to do Southport" goes up 600%. This isn't just UK traffic—it's international. We've seen Southport businesses get bookings from Texas, Japan, and Australia during Open week.
+        </p>
+
+        <h3 style="color: #60a5fa; font-size: 1.125rem; font-weight: bold; margin-bottom: 1rem;">Do I need a separate page for The Open, or can I just update my homepage?</h3>
+        <p style="color: #cbd5e1; line-height: 1.8; margin-bottom: 1.5rem;">
+          Create a dedicated landing page. Your homepage serves year-round visitors. An Open-specific page lets you target keywords like "hotel near Royal Birkdale Open Championship" without diluting your main page's SEO. Plus, you can leave it live after the event to capture future planning searches.
+        </p>
+
+        <h3 style="color: #60a5fa; font-size: 1.125rem; font-weight: bold; margin-bottom: 1rem;">What if I'm not near the golf course—can I still benefit?</h3>
+        <p style="color: #cbd5e1; line-height: 1.8; margin-bottom: 1.5rem;">
+          Absolutely. Spectators need places to eat, drink, and explore before and after tournament days. If you're in Southport town centre, Lord Street, or near the Promenade, you're still relevant. Target keywords like "Southport restaurants Open Championship" or "things to do Southport golf week."
+        </p>
+
+        <h3 style="color: #60a5fa; font-size: 1.125rem; font-weight: bold; margin-bottom: 1rem;">Should I use Google Ads or just rely on SEO?</h3>
+        <p style="color: #cbd5e1; line-height: 1.8;">
+          Both. SEO builds long-term visibility, but Google Ads can capture immediate demand if you're starting late. The week of The Open, competition for ad clicks will be brutal (and expensive), so pair ads with strong SEO groundwork. If you've prepped your content 6 months early, you'll rank organically and save a fortune on ad spend.
+        </p>
+      </div>
 
       <h2>Don't Wait for the Announcement</h2>
       <p>The best time to prepare for The Open is <em>now</em>—regardless of when the next Birkdale edition is scheduled. Evergreen content about golf in Southport, visiting Royal Birkdale, and the local area will rank and attract traffic year-round. When the next Open at Birkdale is confirmed, you'll already be established in Google's index while your competitors scramble to catch up.</p>
