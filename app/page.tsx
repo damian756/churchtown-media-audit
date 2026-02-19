@@ -365,7 +365,12 @@ export default function Home() {
         <article className="max-w-7xl mx-auto relative z-10">
           {/* Header */}
           <header className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-slate-900 border border-yellow-600/30 rounded-full px-4 py-2 mb-6">
+            <Link 
+              href="https://www.google.com/maps/place/Churchtown+Media/@53.6567,-2.9772,17z/data=!4m8!3m7!1s0x0:0x0!8m2!3d53.6567!4d-2.9772!9m1!1b1!16s%2Fg%2F11j8x1y8y8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-slate-900 border border-yellow-600/30 rounded-full px-4 py-2 mb-6 hover:border-yellow-600/50 hover:bg-slate-800 transition-all group"
+            >
               <div className="flex gap-1">
                 {[1,2,3,4,5].map((s) => (
                   <Star key={s} className="w-3 h-3 text-yellow-400 fill-yellow-400" />
@@ -374,7 +379,8 @@ export default function Home() {
               <span className="text-yellow-400 text-xs font-bold uppercase tracking-wide">
                 5.0 on Google
               </span>
-            </div>
+              <ExternalLink className="w-3 h-3 text-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity" />
+            </Link>
             <h2 className="text-3xl md:text-5xl font-black text-white mb-4">
               Trusted by North West Businesses
             </h2>
@@ -464,10 +470,12 @@ export default function Home() {
           {/* View All Link */}
           <div className="text-center">
             <Link 
-              href="/testimonials" 
+              href="https://www.google.com/maps/place/Churchtown+Media/@53.6567,-2.9772,17z/data=!4m8!3m7!1s0x0:0x0!8m2!3d53.6567!4d-2.9772!9m1!1b1!16s%2Fg%2F11j8x1y8y8"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 font-bold group"
             >
-              Read All 6 Reviews <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              Read All Reviews on Google <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
         </article>
