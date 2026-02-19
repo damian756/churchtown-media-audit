@@ -366,7 +366,7 @@ export default function Home() {
           {/* Header */}
           <header className="text-center mb-16">
             <Link 
-              href="https://www.google.com/maps/place/Churchtown+Media/@53.5877021,-3.9235894,8z/data=!3m1!4b1!4m6!3m5!1s0x663cb1a2d653acfd:0x27fe81fd714a5ccb!8m2!3d53.5933535!4d-2.6019064!16s%2Fg%2F11yx4kf7_9?entry=ttu&g_ep=EgoyMDI2MDIxNi4wIKXMDSoASAFQAw%3D%3D"
+              href="https://share.google/EWApeBLNuBQUP506R"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-slate-900 border border-yellow-600/30 rounded-full px-4 py-2 mb-6 hover:border-yellow-600/50 hover:bg-slate-800 transition-all group"
@@ -470,7 +470,7 @@ export default function Home() {
           {/* View All Link */}
           <div className="text-center">
             <Link 
-              href="https://www.google.com/maps/place/Churchtown+Media/@53.5877021,-3.9235894,8z/data=!3m1!4b1!4m6!3m5!1s0x663cb1a2d653acfd:0x27fe81fd714a5ccb!8m2!3d53.5933535!4d-2.6019064!16s%2Fg%2F11yx4kf7_9?entry=ttu&g_ep=EgoyMDI2MDIxNi4wIKXMDSoASAFQAw%3D%3D"
+              href="https://share.google/EWApeBLNuBQUP506R"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 font-bold group"
