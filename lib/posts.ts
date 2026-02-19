@@ -86,8 +86,24 @@ export const posts: BlogPost[] = [
         </div>
       </div>
       
+      <div style="margin: 2rem 0;">
+        <img src="/images/case-study-gsc-performance-clicks.png" alt="Google Search Console - 12 Month Traffic Growth showing 9.26k clicks and exponential growth curve" style="width: 100%; height: auto; border-radius: 0.5rem; border: 1px solid #334155;" />
+        <p style="text-align: center; color: #94a3b8; font-size: 0.875rem; margin-top: 0.5rem;">Google Search Console: 12-month performance showing exponential traffic growth</p>
+      </div>
+      
+      <div style="margin: 2rem 0;">
+        <img src="/images/case-study-gsc-impressions.png" alt="Google Search Console impressions growth chart showing 58.5k monthly impressions" style="width: 100%; height: auto; border-radius: 0.5rem; border: 1px solid #334155;" />
+        <p style="text-align: center; color: #94a3b8; font-size: 0.875rem; margin-top: 0.5rem;">Impressions hockey stick: flat for months, then exponential growth starting Jan 2026</p>
+      </div>
+      
       <h3>Keyword Velocity: The Hockey Stick</h3>
       <p>From Jan 23 to Feb 19, 2026, keyword rankings exploded:</p>
+      
+      <div style="margin: 2rem 0;">
+        <img src="/images/case-study-semrush-keywords.png" alt="Semrush keyword rankings chart showing growth from 30 to 253 keywords in 4 weeks" style="width: 100%; height: auto; border-radius: 0.5rem; border: 1px solid #334155;" />
+        <p style="text-align: center; color: #94a3b8; font-size: 0.875rem; margin-top: 0.5rem;">Keyword explosion: 30 keywords → 253 keywords in 4 weeks (8.4x growth)</p>
+      </div>
+      
       <div style="background: #1e293b; border-left: 4px solid #3b82f6; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
         <ul style="color: #cbd5e1; line-height: 2;">
           <li><strong style="color: white;">253 keywords ranking</strong> (up from ~30 in 4 weeks = 8.4x growth)</li>
@@ -100,7 +116,18 @@ export const posts: BlogPost[] = [
       
       <p><strong>Average position: 24.5</strong> (page 3). That's not great—yet. But the trajectory matters more than the snapshot. This is early-stage growth with clear acceleration.</p>
       
+      <div style="margin: 2rem 0;">
+        <img src="/images/case-study-gsc-indexing.png" alt="Google Search Console indexing chart showing 1.78k pages indexed with growth trajectory" style="width: 100%; height: auto; border-radius: 0.5rem; border: 1px solid #334155;" />
+        <p style="text-align: center; color: #94a3b8; font-size: 0.875rem; margin-top: 0.5rem;">Indexing success: 1.78k pages indexed (vs 200 on WordPress). Green bars = Google loves static Next.js pages.</p>
+      </div>
+      
       <h3>Technical SEO: Zero Errors</h3>
+      
+      <div style="margin: 2rem 0;">
+        <img src="/images/case-study-faq-schema.png" alt="Google Search Console FAQ schema validation showing 53 valid schemas and 0 errors" style="width: 100%; height: auto; border-radius: 0.5rem; border: 1px solid #334155;" />
+        <p style="text-align: center; color: #94a3b8; font-size: 0.875rem; margin-top: 0.5rem;">Programmatic SEO at scale: 53 FAQ schemas, 0 errors. Impossible to maintain manually on WordPress.</p>
+      </div>
+      
       <div style="background: #1e293b; border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
         <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; text-align: center;">
           <div>
