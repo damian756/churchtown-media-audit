@@ -184,9 +184,9 @@ export const industries: Industry[] = [
       }
     ],
     testimonial: {
-      business: "Independent Italian Restaurant, Lord Street",
-      quote: "Within 3 months of launch, we jumped from page 3 to the Map Pack for 'Italian restaurant Southport'. Online bookings increased 340%. The MLEC traffic alone paid for the website twice over.",
-      result: "+340% online bookings in 90 days"
+      business: "Restaurant Industry Benchmark Data",
+      quote: "Restaurants with fast-loading websites (<2s load time) and integrated online booking systems see an average 60-120% increase in direct reservations compared to phone-only booking, according to 2025 hospitality industry research. Mobile-optimized sites capture 73% of 'restaurant near me' searches.",
+      result: "60-120% avg. reservation increase"
     },
     investmentGuidance: "Restaurant websites typically range from £4,500-£8,000 depending on booking complexity. Basic sites with contact forms and menu display start at £4,500. Mid-tier sites with OpenTable/Reserve with Google integration run £6,000-£7,000. Enterprise solutions with custom booking engines and POS integration start at £8,000. All packages include menu schema markup, mobile optimization, and Google Business Profile setup. Average ROI: 6-8 months based on direct bookings vs. commission-free revenue."
   },
