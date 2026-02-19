@@ -11,6 +11,150 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "headless-blog-content-scaling-case-study",
+    title: "Case Study: 253 Keywords in 4 Weeks Without Breaking WordPress",
+    date: "Feb 20, 2026",
+    author: "Damian Roche",
+    category: "Case Studies",
+    image: "/images/headless-blog-case-study.jpg",
+    excerpt: "How we helped an industrial B2B e-commerce business scale from 10 posts/month to 100+ using Next.js /blog/—while keeping their profitable WooCommerce store untouched. 1.78k pages indexed, 9.26k monthly clicks, 15.8% CTR.",
+    content: `
+      <p>Client came to me last year with a problem I hear constantly: "Our WordPress blog is killing us."</p>
+      <p>They ran a profitable industrial chemicals e-commerce site. £13k+/month revenue. Hundreds of products. Custom Klaviyo flows. Everything worked. Except the blog.</p>
+      <p>They wanted to scale content from 10 posts/month to 100+. WordPress couldn't handle it. Page builders (Elementor, Divi) crashed. Load times hit 6 seconds. Google stopped indexing posts.</p>
+      <p>"Can you migrate us to Next.js?" they asked.</p>
+      <p>I said no.</p>
+      
+      <h2>Why I Refused to Migrate Their WooCommerce Store</h2>
+      <p>Migrating a profitable e-commerce store is expensive, risky, and usually unnecessary. Here's what they had:</p>
+      <ul>
+        <li>400+ products with custom fields, variations, and pricing tiers</li>
+        <li>Abandoned cart flows driving £3.5k/month in recovered revenue</li>
+        <li>Product pages ranking page 1 for commercial keywords</li>
+        <li>Customer accounts, order history, payment gateways all working</li>
+      </ul>
+      <p><strong>Migration cost estimate: £20k+ and 6 months of dev time.</strong> Plus the risk of breaking SEO, losing payment processor integrations, and retraining staff.</p>
+      <p>Not worth it.</p>
+      
+      <h2>The Solution: Headless Blog, Keep the Store</h2>
+      <p>I proposed a hybrid architecture:</p>
+      <div style="background: #1e293b; border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
+        <ul style="color: #cbd5e1; line-height: 2; list-style: none; padding: 0;">
+          <li style="margin-bottom: 1rem;">✅ <strong style="color: white;">Next.js static blog</strong> deployed to Vercel at <code style="background: #0f172a; padding: 0.25rem 0.5rem; border-radius: 0.25rem; color: #60a5fa;">/blog/*</code></li>
+          <li style="margin-bottom: 1rem;">✅ <strong style="color: white;">WordPress/WooCommerce</strong> stays at root domain for products, checkout, accounts</li>
+          <li style="margin-bottom: 1rem;">✅ <strong style="color: white;">Nginx routing</strong> at hosting level: <code style="background: #0f172a; padding: 0.25rem 0.5rem; border-radius: 0.25rem;">/blog/*</code> → Vercel, everything else → WordPress</li>
+        </ul>
+      </div>
+      
+      <h3>Why This Works</h3>
+      <p><strong>Next.js for the blog:</strong></p>
+      <ul>
+        <li>Static generation = 1.2s load times (vs 6s on WordPress)</li>
+        <li>Can publish 100+ posts/day without performance degradation</li>
+        <li>Programmatic SEO: FAQ schema, breadcrumbs, meta tags generated at build</li>
+        <li>Zero plugins, zero security vulnerabilities, zero maintenance</li>
+      </ul>
+      
+      <p><strong>WooCommerce for the store:</strong></p>
+      <ul>
+        <li>Store already profitable—don't fix what isn't broken</li>
+        <li>Migration risk avoided entirely</li>
+        <li>Klaviyo flows keep running</li>
+        <li>Product rankings protected</li>
+      </ul>
+      
+      <h2>The Numbers: 12 Months Post-Launch</h2>
+      
+      <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #3b82f6; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
+        <h3 style="color: #60a5fa; font-size: 1.25rem; font-weight: bold; margin-bottom: 1.5rem;">Google Search Console (Verified Data)</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+          <div>
+            <div style="color: #94a3b8; font-size: 0.875rem; margin-bottom: 0.5rem;">Monthly Clicks</div>
+            <div style="color: white; font-size: 2rem; font-weight: bold;">9.26k</div>
+            <div style="color: #cbd5e1; font-size: 0.875rem;">58.5k impressions</div>
+          </div>
+          <div>
+            <div style="color: #94a3b8; font-size: 0.875rem; margin-bottom: 0.5rem;">Average CTR</div>
+            <div style="color: white; font-size: 2rem; font-weight: bold;">15.8%</div>
+            <div style="color: #10b981; font-size: 0.875rem;">3x industry avg</div>
+          </div>
+          <div>
+            <div style="color: #94a3b8; font-size: 0.875rem; margin-bottom: 0.5rem;">Pages Indexed</div>
+            <div style="color: white; font-size: 2rem; font-weight: bold;">1.78k</div>
+            <div style="color: #cbd5e1; font-size: 0.875rem;">vs 200 before</div>
+          </div>
+        </div>
+      </div>
+      
+      <h3>Keyword Velocity: The Hockey Stick</h3>
+      <p>From Jan 23 to Feb 19, 2026, keyword rankings exploded:</p>
+      <div style="background: #1e293b; border-left: 4px solid #3b82f6; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
+        <ul style="color: #cbd5e1; line-height: 2;">
+          <li><strong style="color: white;">253 keywords ranking</strong> (up from ~30 in 4 weeks = 8.4x growth)</li>
+          <li><strong style="color: #fbbf24;">14 keywords in top 3</strong> (page 1, positions 1-3)</li>
+          <li><strong style="color: #60a5fa;">15 keywords positions 4-10</strong> (still page 1)</li>
+          <li><strong style="color: #a78bfa;">18 keywords positions 11-20</strong> (page 2)</li>
+          <li><strong>47 keywords on page 1-2</strong> = high-visibility traffic drivers</li>
+        </ul>
+      </div>
+      
+      <p><strong>Average position: 24.5</strong> (page 3). That's not great—yet. But the trajectory matters more than the snapshot. This is early-stage growth with clear acceleration.</p>
+      
+      <h3>Technical SEO: Zero Errors</h3>
+      <div style="background: #1e293b; border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; text-align: center;">
+          <div>
+            <div style="color: #10b981; font-size: 2.5rem; font-weight: bold;">53</div>
+            <div style="color: #94a3b8; font-size: 0.875rem;">Valid FAQ Schemas</div>
+          </div>
+          <div>
+            <div style="color: #10b981; font-size: 2.5rem; font-weight: bold;">0</div>
+            <div style="color: #94a3b8; font-size: 0.875rem;">Schema Errors</div>
+          </div>
+          <div>
+            <div style="color: #10b981; font-size: 2.5rem; font-weight: bold;">&lt;1.2s</div>
+            <div style="color: #94a3b8; font-size: 0.875rem;">Avg Load Time</div>
+          </div>
+        </div>
+      </div>
+      
+      <h2>What Worked</h2>
+      <ul>
+        <li><strong>Hybrid architecture let us move fast without risking revenue.</strong> Store stayed profitable while blog scaled.</li>
+        <li><strong>Programmatic SEO at scale.</strong> 53 FAQ schemas implemented in minutes, not days. Every post gets breadcrumbs, Article schema, and optimized meta tags automatically.</li>
+        <li><strong>Static generation = Google loves it.</strong> Posts indexed within 24-48 hours. WordPress took weeks or never indexed at all.</li>
+        <li><strong>Content velocity went from 10/month to 100+.</strong> Zero performance degradation. No crashes. No plugin conflicts.</li>
+      </ul>
+      
+      <h2>What I'd Do Differently</h2>
+      <p>This isn't a perfect case study. Here's what needs work:</p>
+      <ul>
+        <li><strong>Average position 24.5 is page 3.</strong> Need more backlinks and content depth to crack page 1-2 consistently.</li>
+        <li><strong>9.73k pages not indexed.</strong> Need to audit for thin content, duplicates, and indexing issues.</li>
+        <li><strong>Internal linking between blog and product pages could be stronger.</strong> Should've built more contextual links from blog posts to products.</li>
+        <li><strong>Should've migrated earlier.</strong> Waiting 2 years to scale cost them visibility and revenue.</li>
+      </ul>
+      
+      <h2>The Takeaway for Your Business</h2>
+      <p>You don't have to migrate your entire site to scale content. If your e-commerce store works, keep it. If your blog doesn't—split them.</p>
+      <p>This hybrid approach works for:</p>
+      <ul>
+        <li>E-commerce stores (Shopify, WooCommerce, Magento) that need better content velocity</li>
+        <li>B2B sites with lead gen forms but slow, bloated WordPress blogs</li>
+        <li>SaaS companies with working product pages but terrible content performance</li>
+      </ul>
+      
+      <p><strong>The numbers don't lie:</strong> 1.78k pages indexed, 253 keywords ranking, 9.26k monthly clicks. All while protecting a £13k+/month revenue stream.</p>
+      <p>If your blog is holding you back, this is how you fix it.</p>
+      
+      <div style="background: linear-gradient(135deg, #3b82f6, #8b5cf6); border-radius: 1rem; padding: 2rem; margin: 3rem 0; text-align: center;">
+        <h3 style="color: white; font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">Need Help Scaling Content Without Breaking Your Store?</h3>
+        <p style="color: white; margin-bottom: 2rem; opacity: 0.95;">Let's talk about a hybrid architecture for your business. Book a free 30-minute audit.</p>
+        <a href="/contact" style="display: inline-block; background: white; color: #1e293b; padding: 1rem 2rem; border-radius: 9999px; font-weight: bold; text-decoration: none; transition: transform 0.2s;">Get Your Free Audit</a>
+      </div>
+    `,
+  },
+  {
     slug: "seo-liverpool-local-business-guide-2026",
     title: "SEO Liverpool: Why Local Businesses Are Losing to Manchester (And How to Fight Back)",
     date: "Feb 10, 2026",
