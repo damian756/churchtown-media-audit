@@ -580,8 +580,11 @@ export const posts: BlogPost[] = [
     image: "/images/southport.jpg", 
     excerpt: "Are customers walking right past your door? Discover why 'Near Me' searches and the Google Map Pack are the new shop window for Southport businesses.",
     content: `
-      <p>Walk down Lord Street on a busy Saturday afternoon. Look at the people--the tourists, the day-trippers, the locals. What are they doing?</p>
-      <p>Twenty years ago, they would have been looking at <a href="/industries/retail-shops" class="text-blue-400 hover:text-blue-300 underline">shop windows</a>, scanning menus displayed on easels, or looking for "Open" signs. Today, they are looking down. They are looking at their screens.</p>
+      <p>I walked down Lord Street last week with a client who owns a boutique near the Wayfarers Arcade. Beautiful shop. Curated stock. Been there 8 years. She was frustrated: "People walk right past. They don't even look up."</p>
+      <p>So I tested something. Pulled out my phone, searched "boutique Southport." Her shop? <strong>Page 3. Buried below chain stores in Manchester.</strong> Then I searched "independent shops Lord Street." Still page 3.</p>
+      <p>"Do you have a website?" I asked. She showed me her Instagram. 4,000 followers. Gorgeous feed. Zero Google presence.</p>
+      <p>This is the problem with Lord Street businesses in 2026. You're Instagram-famous but Google-invisible. And when someone from Liverpool or Manchester Googles "things to do Southport" or "shopping Lord Street," they find... nothing. You're not in the game.</p>
+      <p>Let's fix that.</p>
       <p>In 2026, the "Shop Window" is no longer made of glass. It is a 6-inch digital list called the <strong>Google Map Pack</strong>.</p>
       <p>At Churchtown Media, we often hear local business owners in <a href="/locations/southport" class="text-blue-400 hover:text-blue-300 underline">Southport</a> say, <em>"I have a great location; footfall isn't a problem."</em> But here is the hard truth: If you aren't ranking in the top 3 results for a "near me" search, you are invisible to over 50% of the people walking right past your door.</p>
       <p>This is the concept of <strong>Digital Footfall</strong>, and for <a href="/locations/southport" class="text-blue-400 hover:text-blue-300 underline">Southport</a> businesses preparing for the MLEC boom, it is the single most important metric you need to master.</p>
