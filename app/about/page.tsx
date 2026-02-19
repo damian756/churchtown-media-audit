@@ -158,7 +158,7 @@ export default function AboutPage() {
                     Let's Talk <ArrowRight className="w-5 h-5" />
                   </Link>
                   <Link
-                    href="/work"
+                    href="/portfolio"
                     className="inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white px-8 py-4 rounded-full text-lg font-bold transition-all"
                   >
                     See What I've Built
