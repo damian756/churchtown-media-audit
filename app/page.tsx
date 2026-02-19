@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Zap, BarChart3, Globe, TrendingUp, Code2, Star, Quote, ExternalLink } from "lucide-react";
+import { ArrowRight, Zap, BarChart3, Globe, TrendingUp, Code2, Star, Quote, ExternalLink, BookOpen } from "lucide-react";
 import type { Metadata } from "next";
+import { posts } from "@/lib/posts";
 
 // 1. REGIONAL STRATEGY METADATA
 export const metadata: Metadata = {
@@ -83,6 +84,8 @@ const jsonLd = {
 };
 
 export default function Home() {
+  const recentPosts = posts.slice(0, 3);
+  
   return (
     <>
       <main className="min-h-screen overflow-x-hidden bg-slate-950 selection:bg-blue-400 selection:text-white">
@@ -479,6 +482,70 @@ export default function Home() {
             </Link>
           </div>
         </article>
+      </section>
+
+      {/* 5. LATEST INSIGHTS SECTION */}
+      <section className="py-20 px-4 sm:px-6 bg-slate-900 border-t border-slate-800">
+        <div className="max-w-7xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-600/30 rounded-full px-4 py-2 mb-6">
+              <BookOpen className="w-4 h-4 text-blue-400" />
+              <span className="text-blue-400 text-sm font-bold">Knowledge Base</span>
+            </div>
+            <h2 className="text-3xl md:text-5xl font-black text-white mb-4">
+              Latest Insights & Strategies
+            </h2>
+            <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+              Data-driven SEO strategies, technical guides, and growth playbooks for North West businesses.
+            </p>
+          </div>
+
+          {/* Blog Post Cards */}
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+            {recentPosts.map((post) => (
+              <Link 
+                key={post.slug} 
+                href={`/blog/${post.slug}`} 
+                className="group block bg-slate-950 rounded-2xl overflow-hidden border border-slate-800 hover:border-blue-600/50 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-600/20"
+              >
+                <div className="aspect-[16/9] relative overflow-hidden">
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
+                </div>
+                
+                <div className="p-6">
+                  <div className="flex items-center gap-3 mb-3 text-xs text-slate-400">
+                    <span>{post.date}</span>
+                    <span className="w-1 h-1 bg-slate-500 rounded-full"></span>
+                    <span className="text-blue-400 font-medium">{post.category}</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors mb-2 line-clamp-2">
+                    {post.title}
+                  </h3>
+                  <p className="text-slate-400 text-sm line-clamp-2">
+                    {post.excerpt}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          {/* View All Link */}
+          <div className="text-center">
+            <Link 
+              href="/blog" 
+              className="inline-flex items-center gap-2 px-6 py-3 bg-slate-800 hover:bg-slate-700 text-white font-bold rounded-xl border border-slate-700 hover:border-slate-600 transition-all group"
+            >
+              View All Insights <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </div>
+        </div>
       </section>
 
     </main>
