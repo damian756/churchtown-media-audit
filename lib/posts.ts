@@ -33,7 +33,7 @@ export const posts: BlogPost[] = [
         <li>Product pages ranking page 1 for commercial keywords</li>
         <li>Customer accounts, order history, payment gateways all working</li>
       </ul>
-      <p><strong>Migration cost estimate: £35k-60k and 3-4 months of dev time.</strong> Plus the risk of breaking SEO, losing payment processor integrations, and retraining staff.</p>
+      <p><strong>Migration cost estimate: £40k+ and 3-4 months.</strong> Plus the risk of breaking SEO, losing payment processor integrations, and retraining staff.</p>
       <p>Not worth it.</p>
       
       <h2>The Solution: Headless Blog, Keep the Store</h2>
@@ -158,10 +158,9 @@ export const posts: BlogPost[] = [
       <h2>What I'd Do Differently</h2>
       <p>This isn't a perfect case study. Here's what needs work:</p>
       <ul>
-        <li><strong>Average position 24.5 is page 3.</strong> Need more backlinks and content depth to crack page 1-2 consistently.</li>
+        <li><strong>Average position 24.5 is misleading.</strong> They're tracking 253 keywords—many aren't relevant targets. The 47 keywords on page 1-2 are what actually matter. Need to clean up keyword tracking and focus on high-intent terms.</li>
         <li><strong>9.73k pages not indexed.</strong> Need to audit for thin content, duplicates, and indexing issues.</li>
-        <li><strong>Internal linking between blog and product pages could be stronger.</strong> Should've built more contextual links from blog posts to products.</li>
-        <li><strong>Should've migrated earlier.</strong> Waiting 2 years to scale cost them visibility and revenue.</li>
+        <li><strong>Internal linking between blog and product pages could be stronger.</strong> Should've built more contextual links from blog posts to products to drive conversions.</li>
       </ul>
       
       <h2>The Takeaway for Your Business</h2>
