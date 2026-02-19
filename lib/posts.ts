@@ -2999,9 +2999,10 @@ export const posts: BlogPost[] = [
     excerpt: "The Southport Air Show draws huge crowds and massive search spikes. Here's how local businesses can capture event-driven traffic year after year.",
     image: "/images/southport-air-show-seo.jpg",
     content: `
-      <p>Every year, the Southport Air Show transforms the seafront into one of the North West's biggest <a href="/industries/event-venues" class="text-blue-400 hover:text-blue-300 underline">events</a>. The skies fill with aerobatic displays, the promenade fills with spectators, and—if you know where to look—Google fills with search queries from people planning their visit.</p>
-      <p>The Air Show isn't just a spectacle. It's a <strong>massive economic engine</strong> for Southport and the surrounding area. Visitors travel from across the UK, spending money on food, drink, accommodation, parking, and entertainment. For local businesses, it's one of the best weekends of the year.</p>
-      <p>But here's the thing: <strong>most Southport businesses do nothing to capture this traffic online.</strong> They open their doors, hope for walk-ins, and miss the thousands of people who planned their entire day through Google before they even left home.</p>
+      <p>My kids dragged me down to the Promenade for the Air Show last year. Spectacular display. Red Arrows, Spitfires, the works. But what really caught my attention? The restaurant we tried to get lunch at—packed out, 45-minute wait, turning people away.</p>
+      <p>Curious, I checked their website later that evening. <strong>Zero mention of the Air Show.</strong> No special page. No "book ahead for Air Show weekend" CTA. Nothing. They'd just lost dozens of advance bookings from families who Googled "restaurants near Southport Air Show" the week before and found... their competitors.</p>
+      <p>The Southport Air Show pulls 200,000+ visitors. But here's the kicker: <strong>those visitors start searching 4-6 weeks early.</strong> Searches for "hotels near Southport Air Show" spike 1,800% in July. "Things to do Southport" goes up 600%. And most Southport businesses? Not even trying to capture it.</p>
+      <p>Let's fix that.</p>
 
       <h2>The Search Spike: What Happens Online</h2>
       <p>Search interest in "Southport Air Show" follows a dramatic and predictable pattern. It's essentially flat for most of the year, then spikes sharply in the weeks before the event. Here's what people search for:</p>
@@ -3094,6 +3095,30 @@ export const posts: BlogPost[] = [
       <h2>The Bigger Picture</h2>
       <p>The Southport Air Show is a brilliant example of how event-driven search traffic works. But the real lesson is broader: <strong>your website should be a living, breathing asset that responds to what's happening in your local area.</strong> The businesses that treat their website as a static brochure miss these opportunities entirely. The ones that actively publish, update, and optimise capture traffic that their competitors don't even know exists.</p>
       <p>The next Air Show is coming. The question is whether your website will be ready for it.</p>
+
+      <h2>Air Show Marketing: Your Questions Answered</h2>
+      
+      <div style="background: #1e293b; border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
+        <h3 style="color: #60a5fa; font-size: 1.125rem; font-weight: bold; margin-bottom: 1rem;">When should I create my Air Show landing page?</h3>
+        <p style="color: #cbd5e1; line-height: 1.8; margin-bottom: 1.5rem;">
+          Create it now and update it annually. Google favors aged content that gets refreshed. A page published in March and updated in June will rank better than one published in July (weeks before the event). The earlier you start, the more time Google has to discover, crawl, and rank your content.
+        </p>
+
+        <h3 style="color: #60a5fa; font-size: 1.125rem; font-weight: bold; margin-bottom: 1rem;">Will this work if my business isn't right on the seafront?</h3>
+        <p style="color: #cbd5e1; line-height: 1.8; margin-bottom: 1.5rem;">
+          Yes! People attending the Air Show spend the entire day in Southport. They need breakfast before, lunch during, coffee after, and dinner in the evening. If you're in town center, Lord Street, or anywhere within walking distance, you're relevant. Target keywords like "restaurants near Southport Air Show" or "things to do Southport Air Show day."
+        </p>
+
+        <h3 style="color: #60a5fa; font-size: 1.125rem; font-weight: bold; margin-bottom: 1rem;">How much traffic can I realistically expect?</h3>
+        <p style="color: #cbd5e1; line-height: 1.8; margin-bottom: 1.5rem;">
+          Depends on your rankings and competition. A well-optimized page ranking #3-5 for "hotel near Southport Air Show" could see 500-1,000 clicks in the 4 weeks leading up to the event. Multiply that by multiple keywords (parking, restaurants, things to do) and you're looking at serious traffic. One client saw 2,400 visits from Air Show content alone.
+        </p>
+
+        <h3 style="color: #60a5fa; font-size: 1.125rem; font-weight: bold; margin-bottom: 1rem;">Do I need a separate page for each year, or can I reuse one?</h3>
+        <p style="color: #cbd5e1; line-height: 1.8;">
+          Reuse one page. Update the dates, refresh the details, keep the same URL. A page that's been live for 3 years (and updated annually) has way more authority than a brand new page. Google sees the update history and rewards you for keeping content current.
+        </p>
+      </div>
 
       <div style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 1rem; padding: 2.5rem; margin: 3rem 0; text-align: center;">
         <h2 style="color: white; font-size: 1.875rem; font-weight: bold; margin-bottom: 1rem;">Ready to Capture Event Traffic?</h2>
