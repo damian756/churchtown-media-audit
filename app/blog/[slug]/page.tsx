@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { posts } from "../../../lib/posts"; 
-import { ArrowLeft, Calendar, Tag, User } from "lucide-react";
+import { ArrowLeft, Calendar, Tag, User, Zap, BookOpen } from "lucide-react";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
@@ -50,6 +50,11 @@ export default async function BlogPost({ params }: Props) {
   if (!post) {
     notFound();
   }
+
+  // Get related posts (same category, exclude current)
+  const relatedPosts = posts
+    .filter(p => p.category === post.category && p.slug !== post.slug)
+    .slice(0, 3);
 
   // Article Schema with Author
   const articleSchema = {
@@ -176,6 +181,57 @@ export default async function BlogPost({ params }: Props) {
             </div>
           </div>
         </div>
+
+        {/* Mid-Content CTA */}
+        <div className="my-12 rounded-2xl bg-gradient-to-r from-blue-600/20 to-purple-600/20 p-8 border border-blue-600/30 text-center">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <Zap className="w-6 h-6 text-blue-400 fill-blue-400" />
+            <h3 className="text-2xl font-bold text-white">Need Help With This Strategy?</h3>
+          </div>
+          <p className="text-slate-300 mb-6 max-w-2xl mx-auto">
+            We implement these exact strategies for North West businesses. Get a free audit and see where you stand.
+          </p>
+          <Link 
+            href="/audit" 
+            className="inline-block rounded-lg bg-blue-500 px-8 py-4 font-bold text-white hover:bg-blue-400 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+          >
+            Get Your Free Audit
+          </Link>
+        </div>
+
+        {/* Related Reading Section */}
+        {relatedPosts.length > 0 && (
+          <div className="mt-12 border-t border-slate-800 pt-8">
+            <div className="flex items-center gap-3 mb-6">
+              <BookOpen className="w-6 h-6 text-blue-400" />
+              <h3 className="text-2xl font-bold text-white">Related Reading</h3>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              {relatedPosts.map((relatedPost) => (
+                <Link
+                  key={relatedPost.slug}
+                  href={`/blog/${relatedPost.slug}`}
+                  className="group block bg-slate-900 rounded-xl overflow-hidden border border-slate-800 hover:border-blue-600/50 transition-all hover:-translate-y-1"
+                >
+                  <div className="aspect-[16/9] relative overflow-hidden">
+                    <Image
+                      src={relatedPost.image}
+                      alt={relatedPost.title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <div className="text-xs text-blue-400 font-medium mb-2">{relatedPost.category}</div>
+                    <h4 className="text-sm font-bold text-white group-hover:text-blue-400 transition-colors line-clamp-2">
+                      {relatedPost.title}
+                    </h4>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* CTA Box */}
         <div className="mt-12 rounded-2xl bg-slate-900 p-6 text-center ring-1 ring-slate-700">
