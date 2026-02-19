@@ -237,7 +237,7 @@ export default async function IndustryPage({ params }: PageProps) {
           </div>
         </section>
 
-        {/* LOCAL MARKET DATA */}
+        {/* MARKET DATA */}
         <section className="py-16 px-4 sm:px-6 bg-slate-900/50">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-black mb-12 text-center">
@@ -265,6 +265,142 @@ export default async function IndustryPage({ params }: PageProps) {
             </div>
           </div>
         </section>
+
+        {/* COMMON MISTAKES SECTION */}
+        {industry.commonMistakes && industry.commonMistakes.length > 0 && (
+          <section className="py-16 px-4 sm:px-6">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-black mb-6 text-center">
+                5 Mistakes {industry.name} Make Online
+              </h2>
+              <p className="text-slate-400 text-center mb-12 max-w-3xl mx-auto">
+                We've audited hundreds of {industry.name.toLowerCase()} websites. These are the costly mistakes we see repeatedly.
+              </p>
+              <div className="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+                {industry.commonMistakes.map((mistake, idx) => (
+                  <div key={idx} className="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-red-600/30 transition-colors">
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0 w-8 h-8 bg-red-600/20 rounded-full flex items-center justify-center text-red-400 font-bold">
+                        {idx + 1}
+                      </div>
+                      <p className="text-slate-300 leading-relaxed">{mistake}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* PROCESS TIMELINE SECTION */}
+        {industry.processSteps && industry.processSteps.length > 0 && (
+          <section className="py-16 px-4 sm:px-6 bg-slate-900/50">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-black mb-6 text-center">
+                Our {industry.name} Website Process
+              </h2>
+              <p className="text-slate-400 text-center mb-12 max-w-3xl mx-auto">
+                From discovery to launch in 4-6 weeks. Here's exactly what happens and when.
+              </p>
+              
+              <div className="relative">
+                {/* Vertical connecting line */}
+                <div className="absolute left-[52px] top-8 bottom-8 w-0.5 bg-gradient-to-b from-blue-600 via-purple-600 to-blue-600 hidden md:block"></div>
+                
+                <div className="space-y-8">
+                  {industry.processSteps.map((step, idx) => (
+                    <div key={idx} className="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-blue-600/50 transition-all group relative">
+                      <div className="flex flex-col md:flex-row items-start gap-6">
+                        <div className="relative">
+                          <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl p-4 flex-shrink-0 group-hover:scale-110 transition-transform shadow-lg shadow-blue-600/20">
+                            <span className="text-4xl font-black text-white">{step.phase}</span>
+                          </div>
+                          {idx < (industry.processSteps?.length || 0) - 1 && (
+                            <div className="hidden md:block absolute left-1/2 -translate-x-1/2 -bottom-10 w-2 h-2 bg-blue-600 rounded-full"></div>
+                          )}
+                        </div>
+                        
+                        <div className="flex-1">
+                          <div className="flex items-center gap-3 mb-3">
+                            <span className="text-sm font-bold text-blue-400 uppercase tracking-wide">{step.duration}</span>
+                            <span className="text-slate-500">|</span>
+                            <span className="text-sm text-slate-400">Phase {step.phase}</span>
+                          </div>
+                          <h3 className="text-2xl font-black text-white mb-3 group-hover:text-blue-400 transition-colors">{step.title}</h3>
+                          <p className="text-slate-300 leading-relaxed mb-4">{step.description}</p>
+                          
+                          <div className="bg-slate-950 border border-slate-800 rounded-xl p-4">
+                            <div className="text-xs text-blue-400 font-bold uppercase tracking-wider mb-3 flex items-center gap-2">
+                              <Check className="w-4 h-4" />
+                              Deliverables
+                            </div>
+                            <ul className="grid sm:grid-cols-2 gap-3">
+                              {step.deliverables.map((item, i) => (
+                                <li key={i} className="flex items-start gap-2 text-sm text-slate-300">
+                                  <span className="text-green-400 mt-0.5">✓</span>
+                                  <span>{item}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* TESTIMONIAL SECTION */}
+        {industry.testimonial && (
+          <section className="py-16 px-4 sm:px-6">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-black mb-12 text-center">
+                Real Results from {industry.name}
+              </h2>
+              <div className="bg-gradient-to-br from-blue-600/10 to-purple-600/10 border border-blue-600/30 rounded-3xl p-8 md:p-12">
+                <div className="flex items-start gap-6 mb-6">
+                  <div className="flex-shrink-0 w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-3xl font-black">
+                    <Check className="w-10 h-10" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-white mb-2">{industry.testimonial.business}</h3>
+                    <div className="text-3xl font-black text-green-400 mb-4">{industry.testimonial.result}</div>
+                    <p className="text-lg text-slate-300 italic leading-relaxed">
+                      "{industry.testimonial.quote}"
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* INVESTMENT GUIDANCE */}
+        {industry.investmentGuidance && (
+          <section className="py-16 px-4 sm:px-6 bg-slate-900/50">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-black mb-6 text-center">
+                Investment & Pricing
+              </h2>
+              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-8">
+                <p className="text-slate-300 leading-relaxed text-lg">
+                  {industry.investmentGuidance}
+                </p>
+                <div className="mt-6 pt-6 border-t border-slate-800 text-center">
+                  <Link 
+                    href="/contact" 
+                    className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-bold transition-all hover:scale-105"
+                  >
+                    Get Custom Quote <ArrowRight className="w-5 h-5" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* FAQs SECTION */}
         <section className="py-16 px-4 sm:px-6">

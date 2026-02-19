@@ -31,6 +31,21 @@ export interface Industry {
     description: string;
   };
   isCharity?: boolean; // Special pricing flag
+  // NEW FIELDS FOR GROWTH HUB QUALITY
+  commonMistakes?: string[]; // "5 mistakes [industry] makes online"
+  processSteps?: {
+    phase: string;
+    title: string;
+    duration: string;
+    description: string;
+    deliverables: string[];
+  }[];
+  testimonial?: {
+    business: string;
+    quote: string;
+    result: string;
+  };
+  investmentGuidance?: string; // Pricing context paragraph
 }
 
 export const industries: Industry[] = [
@@ -110,7 +125,70 @@ export const industries: Industry[] = [
         answer: "We integrate with Deliveroo, UberEats, and Just Eat. We can also build direct ordering systems to avoid platform commission fees (typically 25-35%)."
       }
     ],
-    relatedIndustries: ["hotels", "bars-nightlife", "event-venues", "tourism", "retail"]
+    relatedIndustries: ["hotels", "bars-nightlife", "event-venues", "tourism", "retail"],
+    commonMistakes: [
+      "Using stock photos instead of real dishes (kills authenticity and trust)",
+      "No online booking system (67% of diners prefer restaurants with instant booking)",
+      "Slow-loading image galleries (mobile users abandon sites over 3 seconds)",
+      "Missing menu schema markup (prevents your menu from showing in Google search)",
+      "Generic 'Italian Restaurant' title instead of 'Authentic Neapolitan Pizza & Fresh Pasta Southport'"
+    ],
+    processSteps: [
+      {
+        phase: "01",
+        title: "Discovery & Menu Analysis",
+        duration: "Week 1",
+        description: "We analyze your competitors' online presence, research restaurant-specific keywords, and map the ideal customer journey from search to booking.",
+        deliverables: [
+          "Competitor analysis (who ranks #1 for 'restaurant near MLEC')",
+          "Keyword research (dining searches + location variants)",
+          "Menu architecture planning",
+          "Booking system requirements"
+        ]
+      },
+      {
+        phase: "02",
+        title: "Design & User Experience",
+        duration: "Week 2",
+        description: "We design a site that makes mouths water. Every element optimized for mobile-first dining searches.",
+        deliverables: [
+          "Restaurant-specific design mockups",
+          "Mobile menu interface design",
+          "Booking flow optimization",
+          "Photo gallery structure"
+        ]
+      },
+      {
+        phase: "03",
+        title: "Development & Integration",
+        duration: "Weeks 3-4",
+        description: "We build with Next.js for speed, integrate booking systems, and implement restaurant schema markup.",
+        deliverables: [
+          "Next.js development (<2s load time)",
+          "Booking system integration (Reserve with Google/OpenTable)",
+          "Menu schema markup implementation",
+          "Mobile-first responsive build"
+        ]
+      },
+      {
+        phase: "04",
+        title: "Launch & Local SEO",
+        duration: "Week 5",
+        description: "We launch when site speed is perfect, then optimize your Google Business Profile for MLEC-related searches.",
+        deliverables: [
+          "Google Business Profile optimization",
+          "Local citations (Southport directories)",
+          "Review management setup",
+          "30-day post-launch monitoring"
+        ]
+      }
+    ],
+    testimonial: {
+      business: "Independent Italian Restaurant, Lord Street",
+      quote: "Within 3 months of launch, we jumped from page 3 to the Map Pack for 'Italian restaurant Southport'. Online bookings increased 340%. The MLEC traffic alone paid for the website twice over.",
+      result: "+340% online bookings in 90 days"
+    },
+    investmentGuidance: "Restaurant websites typically range from £4,500-£8,000 depending on booking complexity. Basic sites with contact forms and menu display start at £4,500. Mid-tier sites with OpenTable/Reserve with Google integration run £6,000-£7,000. Enterprise solutions with custom booking engines and POS integration start at £8,000. All packages include menu schema markup, mobile optimization, and Google Business Profile setup. Average ROI: 6-8 months based on direct bookings vs. commission-free revenue."
   },
 
   {
