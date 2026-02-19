@@ -111,23 +111,21 @@ export default function RootLayout({
         
         <Footer />
 
-        {/* --- 3. GOOGLE ANALYTICS (lazyOnload to reduce TBT and improve LCP) --- */}
+        {/* --- 3. PLAUSIBLE ANALYTICS (privacy-friendly, no cookies) --- */}
         <Script
-          id="ga-init"
+          id="plausible-script"
+          src="https://plausible.io/js/pa-wBXYDQ17vJVqIdJkM28Mt.js"
+          strategy="lazyOnload"
+        />
+        <Script
+          id="plausible-init"
           strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-WZM6ZEYTBL');
+              window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+              plausible.init();
             `,
           }}
-        />
-        <Script
-          id="ga-script"
-          src="https://www.googletagmanager.com/gtag/js?id=G-WZM6ZEYTBL"
-          strategy="lazyOnload"
         />
 
       </body>
