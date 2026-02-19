@@ -20,7 +20,7 @@ export const posts: BlogPost[] = [
     excerpt: "How we helped an industrial B2B e-commerce business scale from 10 posts/month to 100+ using Next.js /blog/—while keeping their profitable WooCommerce store untouched. 1.78k pages indexed, 9.26k monthly clicks, 15.8% CTR.",
     content: `
       <p>Client came to me last year with a problem I hear constantly: "Our WordPress blog is killing us."</p>
-      <p>They ran a profitable industrial chemicals e-commerce site. £13k+/month revenue. Hundreds of products. Custom Klaviyo flows. Everything worked. Except the blog.</p>
+      <p>They ran a profitable industrial e-commerce site. £13k+/month revenue. Hundreds of products. Custom Klaviyo flows. Everything worked. Except the blog.</p>
       <p>They wanted to scale content from 10 posts/month to 100+. WordPress couldn't handle it. Page builders (Elementor, Divi) crashed. Load times hit 6 seconds. Google stopped indexing posts.</p>
       <p>"Can you migrate us to Next.js?" they asked.</p>
       <p>I said no.</p>
