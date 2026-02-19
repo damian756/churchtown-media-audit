@@ -3268,9 +3268,10 @@ export const posts: BlogPost[] = [
     excerpt: "Southport Flower Show draws tens of thousands of visitors every August. Here's how exhibitors and local businesses can capture that search traffic year-round.",
     image: "/images/southport-flower-show-seo.jpg",
     content: `
-      <p>Every August, Victoria Park transforms into one of the UK's largest independent flower shows. The <strong>Southport Flower Show</strong> has been running for over a century, drawing tens of thousands of visitors from across the country. For a few days each summer, Southport becomes a destination for garden enthusiasts, families, and foodies alike.</p>
-      <p>But here's what most local businesses and exhibitors don't realise: <strong>the search traffic around Southport Flower Show starts building weeks before the event — and continues weeks after.</strong> If you're only thinking about SEO on the day of the show, you're missing the vast majority of the opportunity.</p>
-      <p>Let's break down how to use <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">event-based SEO</a> to capture this annual surge of interest, whether you're an exhibitor, a nearby restaurant, or a hotel looking to fill rooms.</p>
+      <p>My neighbor runs a plant nursery just outside Southport. Last August, during Flower Show week, she was slammed. Queue out the door. Best week of the year. Then September hit and she wondered why traffic dropped off a cliff.</p>
+      <p>I checked her website. No mention of the Flower Show anywhere. No "Visit us after the show" page. No blog post about "Best local nurseries for show-quality plants." Google had no idea she existed in the context of the event.</p>
+      <p>Meanwhile, a nursery 15 miles away in Preston—who'd written one blog post about "preparing for Southport Flower Show"—was ranking #3 for that search. <strong>They were capturing her customers before they even got to Southport.</strong></p>
+      <p>The Southport Flower Show pulls 50,000+ visitors every August. Searches for "Southport Flower Show hotels" spike 900% in July. But here's what kills me: most Southport businesses wait until August to think about their website. By then, it's too late. Google's already decided who ranks.</p>
 
       <h2>Understanding the Flower Show Search Cycle</h2>
       <p>Event SEO isn't like regular local SEO. It follows a predictable wave pattern that you can plan around. For an event like Southport Flower Show, the search cycle looks like this:</p>
