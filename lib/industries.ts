@@ -220,7 +220,7 @@ export const industries: Industry[] = [
       {
         title: "No Availability Calendar",
         description: "Customers want to see availability instantly. Phone-only booking creates friction and lost revenue.",
-        stat: "Direct booking rates 3x higher with live availability"
+        stat: "Direct booking rates significantly higher with live availability"
       }
     ],
     features: [
@@ -486,7 +486,7 @@ export const industries: Industry[] = [
       {
         title: "No E-Commerce = Lost Sales",
         description: "Visitors browse Lord Street, then leave town. An online store means they can buy from you even after they've gone home.",
-        stat: "Local retailers with e-commerce see 3.2x revenue"
+        stat: "Local retailers with e-commerce see substantial revenue increases"
       },
       {
         title: "Missing Out on MLEC Browsing",
@@ -624,7 +624,7 @@ export const industries: Industry[] = [
       {
         title: "No Online Enquiry System",
         description: "Phone-tag with busy event planners loses bookings. An instant quote system captures enquiries 24/7.",
-        stat: "Venues with online enquiry forms get 3.4x more bookings"
+        stat: "Venues with online enquiry forms get significantly more bookings"
       },
       {
         title: "Can't Showcase the Space",
@@ -970,12 +970,12 @@ export const industries: Industry[] = [
       {
         title: "Online Booking Platforms Dominate",
         description: "Expedia and Booking.com have massive SEO budgets. Local travel agents need technical SEO to compete for 'travel agent near me'.",
-        stat: "Local travel agents lose 73% of searches to OTAs"
+        stat: "Local travel agents lose majority of searches to OTAs"
       },
       {
         title: "Can't Showcase Package Tours",
         description: "Your curated tours and expertise are your edge. Static websites can't convey the value of personalized service.",
-        stat: "Package tours sell 2.8x better with visual itineraries"
+        stat: "Package tours sell significantly better with visual itineraries"
       },
       {
         title: "Missing Corporate Travel Market",
@@ -985,7 +985,7 @@ export const industries: Industry[] = [
       {
         title: "No Online Consultation Booking",
         description: "Complex travel needs consultation. Online booking for calls/meetings captures leads you'd otherwise miss.",
-        stat: "Travel agents with online booking get 3x more enquiries"
+        stat: "Travel agents with online booking get significantly more enquiries"
       }
     ],
     features: [
@@ -1122,7 +1122,7 @@ export const industries: Industry[] = [
       {
         title: "Can't Capture Service Area",
         description: "You serve Southport, Formby, Birkdale—but Google doesn't know that. Service area pages boost rankings in all areas.",
-        stat: "Multi-location pages increase visibility by 4.2x"
+        stat: "Multi-location pages dramatically increase visibility"
       },
       {
         title: "Generic 'Call Us' Sites",
@@ -1259,7 +1259,7 @@ export const industries: Industry[] = [
       {
         title: "Competing with National Firms",
         description: "Pimlico Plumbers and national chains dominate paid ads. Local electricians need strong organic SEO to compete.",
-        stat: "Local SEO is 4x cheaper than competing in paid ads"
+        stat: "Local SEO significantly more cost-effective than competing in paid ads"
       },
       {
         title: "Broken Mobile Experience",
@@ -1396,7 +1396,7 @@ export const industries: Industry[] = [
       {
         title: "No Service Breakdowns",
         description: "Extensions, loft conversions, renovations—each needs its own page to rank. One 'Services' page doesn't cut it.",
-        stat: "Service-specific pages get 4.2x more organic traffic"
+        stat: "Service-specific pages generate substantially more organic traffic"
       },
       {
         title: "Trust Gap",
@@ -1533,12 +1533,12 @@ export const industries: Industry[] = [
       {
         title: "Lost to National Chains",
         description: "TruGreen and Checkatrade dominate paid ads. Local landscapers need organic SEO to compete cost-effectively.",
-        stat: "Organic SEO 6x more cost-effective than paid ads for trades"
+        stat: "Organic SEO far more cost-effective than paid ads for trades"
       },
       {
         title: "No Service Breakdown",
         description: "Landscaping, garden design, maintenance, artificial grass—each needs its own page to rank separately.",
-        stat: "Service-specific pages get 3.8x more leads"
+        stat: "Service-specific pages generate substantially more leads"
       }
     ],
     features: [
@@ -1660,7 +1660,7 @@ export const industries: Industry[] = [
       {
         title: "Can't Capture Recurring Contracts",
         description: "One-off cleans are fine, but recurring contracts (weekly offices, Airbnb turnovers) are where profit lives. Target those searches.",
-        stat: "Recurring contracts 4.7x more profitable than one-offs"
+        stat: "Recurring contracts substantially more profitable than one-offs"
       },
       {
         title: "No Online Booking",
@@ -1675,7 +1675,7 @@ export const industries: Industry[] = [
       {
         title: "Commercial vs Domestic Confusion",
         description: "Mixing messages confuses customers. Separate landing pages for commercial (offices) vs domestic (homes) convert better.",
-        stat: "Dedicated pages convert 3.2x better than generic"
+        stat: "Dedicated pages convert substantially better than generic"
       }
     ],
     features: [
@@ -1807,7 +1807,7 @@ export const industries: Industry[] = [
       {
         title: "No Instant Valuation Tool",
         description: "Sellers want ballpark valuations before calling. Instant valuation tools capture leads that Rightmove doesn't.",
-        stat: "Instant valuation tools generate 4.8x more enquiries"
+        stat: "Instant valuation tools generate substantially more enquiries"
       },
       {
         title: "Local Area Knowledge Not Showcased",
@@ -1942,7 +1942,7 @@ export const industries: Industry[] = [
       {
         title: "Generic Legal Template Sites",
         description: "SRA compliance is baseline. Your site must communicate expertise in YOUR practice areas—not generic legal platitudes.",
-        stat: "Practice-specific pages convert 4.1x better"
+        stat: "Practice-specific pages convert substantially better"
       },
       {
         title: "No Online Consultation Booking",
@@ -2086,7 +2086,7 @@ export const industries: Industry[] = [
       {
         title: "No B2B Landing Pages",
         description: "Residential and business connectivity are different markets. Separate pages convert better.",
-        stat: "B2B-specific pages generate 6.2x higher contract value"
+        stat: "B2B-specific pages generate substantially higher contract value"
       }
     ],
     features: [
@@ -2551,7 +2551,7 @@ export const industries: Industry[] = [
       {
         title: "Volunteer Recruitment Hard",
         description: "Active volunteer pages with easy sign-up capture community support. 'Volunteer opportunities Southport' should rank.",
-        stat: "Clear volunteer pages increase sign-ups by 4.2x"
+        stat: "Clear volunteer pages significantly increase sign-ups"
       }
     ],
     features: [
@@ -2681,7 +2681,7 @@ export const industries: Industry[] = [
       {
         title: "No Service Differentiation",
         description: "Self-assessment, VAT, corporation tax, bookkeeping—each needs dedicated pages to rank specifically.",
-        stat: "Service-specific pages convert 5.1x better for accountants"
+        stat: "Service-specific pages convert substantially better for accountants"
       },
       {
         title: "No Client Portal",
@@ -2810,7 +2810,7 @@ export const industries: Industry[] = [
     painPoints: [
       { title: "No Online Booking", description: "Patients expect to book online 24/7. Phone-only loses patients to competitors with instant booking.", stat: "Online booking increases appointments by 67%" },
       { title: "Dental Anxiety", description: "Your website must be calming, professional, reassuring. Generic templates don't convey care quality.", stat: "92% research dentists online before booking" },
-      { title: "Treatment Pages Missing", description: "Cosmetic dentistry, implants, Invisalign—each needs its own page to rank for specific treatments.", stat: "Treatment-specific pages get 4.6x more bookings" },
+      { title: "Treatment Pages Missing", description: "Cosmetic dentistry, implants, Invisalign—each needs its own page to rank for specific treatments.", stat: "Treatment-specific pages generate substantially more bookings" },
       { title: "Private vs NHS Confusion", description: "Clear messaging about private fees, NHS availability, and payment plans prevents awkward calls.", stat: "Fee clarity increases booking confidence by 73%" }
     ],
     features: [
@@ -3020,8 +3020,8 @@ export const industries: Industry[] = [
     painPoints: [
       { title: "Trust Barrier", description: "Financial advice requires deep trust. Your website must convey professionalism, qualifications, and client success.", stat: "89% research IFAs extensively before contacting" },
       { title: "FCA Compliance Complexity", description: "Financial promotion rules are strict. Your website must comply or face penalties.", stat: "Non-compliant sites face £10k+ fines" },
-      { title: "Service Complexity", description: "Pensions, investments, mortgages, protection—each needs clear explanation and separate targeting.", stat: "Service-specific pages convert 4.8x better" },
-      { title: "Local Competition", description: "St James's Place and national firms dominate. Local IFAs need strong organic SEO for 'financial advisor Southport'.", stat: "Local searches convert 3.2x better than national" }
+      { title: "Service Complexity", description: "Pensions, investments, mortgages, protection—each needs clear explanation and separate targeting.", stat: "Service-specific pages convert substantially better" },
+      { title: "Local Competition", description: "St James's Place and national firms dominate. Local IFAs need strong organic SEO for 'financial advisor Southport'.", stat: "Local searches convert substantially better than national" }
     ],
     features: [
       "FCA-compliant content (regulatory approved)",
@@ -3129,7 +3129,7 @@ export const industries: Industry[] = [
       { title: "Portfolio is Your Sales Tool", description: "Architects sell visually. If your portfolio isn't stunning and fast-loading, you've lost the client before they read a word.", stat: "Project galleries drive 83% of architect enquiries" },
       { title: "Can't Differentiate Design Style", description: "Contemporary, traditional, eco—your style must be clear. Generic sites don't attract your ideal clients.", stat: "Niche positioning increases average project value by 52%" },
       { title: "Planning Permission Guidance Missing", description: "Homeowners searching 'architect Southport' often need planning help. Educational content positions you as the expert.", stat: "'Planning permission' content drives 67% more enquiries" },
-      { title: "Residential vs Commercial Confusion", description: "Mixing messages confuses clients. Separate sections (or sites) for residential vs commercial convert better.", stat: "Audience-specific pages convert 3.9x better" }
+      { title: "Residential vs Commercial Confusion", description: "Mixing messages confuses clients. Separate sections (or sites) for residential vs commercial convert better.", stat: "Audience-specific pages convert substantially better" }
     ],
     features: [
       "Portfolio gallery (high-res project photography)",
@@ -3233,7 +3233,7 @@ export const industries: Industry[] = [
     painPoints: [
       { title: "Slow Image Loading", description: "Photographers need high-res galleries, but slow sites lose impatient clients. Next.js optimizes images automatically.", stat: "Slow photo galleries lose 67% of visitors" },
       { title: "No Online Booking", description: "Brides and clients want to book consultations instantly. Phone-only creates friction and lost bookings.", stat: "Online booking increases photography enquiries by 74%" },
-      { title: "Wedding vs Commercial Confusion", description: "Weddings, corporate headshots, product photography—different markets. Separate pages convert better.", stat: "Niche photography pages convert 4.1x better" },
+      { title: "Wedding vs Commercial Confusion", description: "Weddings, corporate headshots, product photography—different markets. Separate pages convert better.", stat: "Niche photography pages convert substantially better" },
       { title: "Hidden Social Proof", description: "Instagram is great, but your website needs galleries, testimonials, and client logos to close bookings.", stat: "Portfolio quality is #1 decision factor for 94% of clients" }
     ],
     features: [
@@ -3274,7 +3274,7 @@ export const industries: Industry[] = [
     metaDesc: "Fast beauty salon websites. Online appointment booking, treatment pages, Instagram showcase. Rank for 'salon near me' Southport.",
     painPoints: [
       { title: "No Online Booking Loses Appointments", description: "Customers want to book nails, lashes, facials instantly. Phone-only loses impulse bookings to competitors.", stat: "Online booking increases salon appointments by 83%" },
-      { title: "Treatment Pages Missing", description: "Nails, lashes, facials, massage—each needs its own page to rank specifically and explain what's included.", stat: "Treatment-specific pages convert 5.2x better" },
+      { title: "Treatment Pages Missing", description: "Nails, lashes, facials, massage—each needs its own page to rank specifically and explain what's included.", stat: "Treatment-specific pages convert substantially better" },
       { title: "Instagram Buried", description: "Your Instagram is your portfolio. Integrate it prominently—clients need to see your work before booking.", stat: "Salons with Instagram integration get 67% more enquiries" },
       { title: "Can't Capture 'Near Me' Searches", description: "Beauty is hyper-local. If you don't rank in the Map Pack for 'salon near me', you're invisible to walk-in traffic.", stat: "78% of beauty searches are 'near me' on mobile" }
     ],
@@ -3379,7 +3379,7 @@ export const industries: Industry[] = [
     metaDesc: "Professional IT services websites. Managed services, cybersecurity, cloud solutions. B2B SEO for local IT support companies.",
     painPoints: [
       { title: "Can't Communicate Technical Value", description: "SMEs don't understand 'managed services' jargon. Your site must explain value in business terms (less downtime, more security).", stat: "Technical jargon reduces SME conversion by 62%" },
-      { title: "No Service Differentiation", description: "IT support, managed services, cybersecurity, cloud—each needs its own page to rank and educate prospects.", stat: "Service-specific pages generate 4.7x more B2B leads" },
+      { title: "No Service Differentiation", description: "IT support, managed services, cybersecurity, cloud—each needs its own page to rank and educate prospects.", stat: "Service-specific pages generate substantially more B2B leads" },
       { title: "Trust Barrier for Cybersecurity", description: "SMEs fear ransomware but don't know who to trust. Certifications, case studies, and clear service levels build confidence.", stat: "89% of SMEs have no cybersecurity plan" },
       { title: "Response Time Unclear", description: "B2B clients need to know: What's your SLA? 24/7 support? 4-hour response? If it's not clear, they'll call a competitor.", stat: "SLA clarity increases B2B enquiries by 73%" }
     ],
@@ -3483,7 +3483,7 @@ export const industries: Industry[] = [
     metaTitle: "Property Management Website Design | Letting Agent SEO",
     metaDesc: "Property management websites. Landlord & tenant portals, maintenance tracking. Rank for 'letting agent' local searches.",
     painPoints: [
-      { title: "Landlords Don't Know You Exist", description: "If you don't rank for 'letting agent Southport' or 'property management', portfolio landlords will use national agents.", stat: "Local property managers convert 3.8x better than nationals" },
+      { title: "Landlords Don't Know You Exist", description: "If you don't rank for 'letting agent Southport' or 'property management', portfolio landlords will use national agents.", stat: "Local property managers convert substantially better than nationals" },
       { title: "No Landlord Portal", description: "Modern landlords expect online dashboards: rent tracking, maintenance requests, compliance docs. Paper processes lose clients.", stat: "Property portals reduce landlord churn by 54%" },
       { title: "Tenant Experience Matters", description: "Tenant portals for maintenance requests improve retention and reduce your admin burden.", stat: "Online maintenance requests reduce call volume by 67%" },
       { title: "Compliance Not Showcased", description: "ARLA, CMP, Client Money Protection—landlords need to see these certifications prominently.", stat: "92% of landlords require ARLA membership proof" }
@@ -3526,7 +3526,7 @@ export const industries: Industry[] = [
     metaDesc: "Professional mortgage broker websites. Calculators, FCA compliance, service pages. Rank for 'mortgage advisor Southport' searches.",
     painPoints: [
       { title: "No Mortgage Calculator", description: "Buyers want to know 'How much can I borrow?' before contacting you. Calculators are powerful lead magnets.", stat: "Mortgage calculators increase enquiries by 340%" },
-      { title: "First-Time Buyer Anxiety", description: "FTBs are overwhelmed. Educational content ('How does a mortgage work?') builds trust and captures early-stage leads.", stat: "Educational content converts 4.2x more FTB leads" },
+      { title: "First-Time Buyer Anxiety", description: "FTBs are overwhelmed. Educational content ('How does a mortgage work?') builds trust and captures early-stage leads.", stat: "Educational content converts substantially more FTB leads" },
       { title: "Remortgage Market Missed", description: "Homeowners searching 'should I remortgage?' are high-intent. Dedicated pages capture this lucrative market.", stat: "Remortgage market worth £47B annually in UK" },
       { title: "FCA Compliance Complexity", description: "Mortgage advice is regulated. Your website must comply with FCA rules or face penalties.", stat: "Non-compliant sites face regulatory action" }
     ],
@@ -3631,7 +3631,7 @@ export const industries: Industry[] = [
     metaDesc: "Results-focused marketing agency websites. Case studies with ROI metrics, service pages, client testimonials. Prove your value.",
     painPoints: [
       { title: "Can't Prove ROI", description: "Clients buy results, not services. Case studies with metrics ('Increased leads by 340%') close deals.", stat: "Metrics-driven case studies increase agency win rate by 73%" },
-      { title: "Service Overload", description: "SEO, PPC, social, content—if you do everything, you look like you specialize in nothing. Consider niche focus.", stat: "Niche agencies charge 2.4x higher fees than generalists" },
+      { title: "Service Overload", description: "SEO, PPC, social, content—if you do everything, you look like you specialize in nothing. Consider niche focus.", stat: "Niche agencies charge substantially higher fees than generalists" },
       { title: "No Clear Differentiator", description: "Every agency says 'data-driven' and 'results-focused'. What makes YOU different? Your website must answer that.", stat: "Differentiation is #1 factor in agency selection" },
       { title: "Hidden Client Logos", description: "If you've worked with recognizable brands, showcase them prominently. Social proof matters massively for agencies.", stat: "Client logos increase trust by 67%" }
     ],
@@ -3736,9 +3736,9 @@ export const industries: Industry[] = [
     metaDesc: "Portfolio-first web agency websites. Case studies, tech stack info, client results. Rank for 'web design agency' searches.",
     painPoints: [
       { title: "Your Site is Your Resume", description: "If your own website is slow or outdated, why would clients trust you with theirs? Your site must be perfect.", stat: "94% judge agency capability by their own website" },
-      { title: "No Project Metrics", description: "Portfolio screenshots aren't enough. Show results: '40% faster load', '2x more conversions', '#1 rankings'. Metrics close deals.", stat: "Metrics-driven portfolios convert 4.6x better" },
+      { title: "No Project Metrics", description: "Portfolio screenshots aren't enough. Show results: '40% faster load', '2x more conversions', '#1 rankings'. Metrics close deals.", stat: "Metrics-driven portfolios convert substantially better" },
       { title: "Tech Stack Hidden", description: "Clients researching 'Next.js developer' or 'Shopify agency' need to know your tech expertise. Make it clear.", stat: "Tech specialization increases average project value by 58%" },
-      { title: "Generic Agency Positioning", description: "'We build beautiful websites'—so does everyone. Position around outcomes: 'We build sites that rank' or 'E-commerce that converts'.", stat: "Outcome-focused positioning wins 3.2x more projects" }
+      { title: "Generic Agency Positioning", description: "'We build beautiful websites'—so does everyone. Position around outcomes: 'We build sites that rank' or 'E-commerce that converts'.", stat: "Outcome-focused positioning wins substantially more projects" }
     ],
     features: [
       "Portfolio with project metrics (speed, conversions, rankings)",
@@ -3842,7 +3842,7 @@ export const industries: Industry[] = [
     painPoints: [
       { title: "Slow Checkout = Lost Sales", description: "Every 1-second delay reduces conversions by 7%. Your checkout must be lightning-fast.", stat: "Fast checkout increases conversion by 35%" },
       { title: "Can't Scale Traffic", description: "Black Friday crashes are unacceptable. Headless architecture handles 10x traffic spikes without slowdown.", stat: "E-commerce downtime costs £4k/hour on average" },
-      { title: "Poor Mobile Experience", description: "65% of e-commerce is mobile. If your mobile UX isn't perfect, you're losing the majority of sales.", stat: "Mobile conversion rates 3x lower on slow sites" },
+      { title: "Poor Mobile Experience", description: "65% of e-commerce is mobile. If your mobile UX isn't perfect, you're losing the majority of sales.", stat: "Mobile conversion rates substantially lower on slow sites" },
       { title: "Generic Shopify Theme", description: "Stock themes look like everyone else's store. Custom headless frontend = unique brand experience.", stat: "Custom storefronts increase brand recall by 67%" }
     ],
     features: [
@@ -3946,7 +3946,7 @@ export const industries: Industry[] = [
     metaDesc: "Fast physio websites. Online appointment booking, injury guides, treatment pages. Rank for 'physio near me' Southport.",
     painPoints: [
       { title: "No Online Booking Loses Patients", description: "People in pain want instant appointments. Phone-only creates friction when they need urgent help.", stat: "Online booking increases physio appointments by 82%" },
-      { title: "Treatment Pages Missing", description: "Back pain, sports injuries, post-op rehab—each needs its own page to rank for specific condition searches.", stat: "Condition-specific pages convert 4.8x better" },
+      { title: "Treatment Pages Missing", description: "Back pain, sports injuries, post-op rehab—each needs its own page to rank for specific condition searches.", stat: "Condition-specific pages convert substantially better" },
       { title: "Can't Showcase Expertise", description: "Qualifications, specializations, insurance acceptance—if it's not clear online, patients choose competitors.", stat: "89% check qualifications before booking physio" },
       { title: "No Injury Education", description: "Blog content like 'Should I see a physio for back pain?' ranks and positions you as the expert patients need.", stat: "Educational content drives 67% more physiotherapy enquiries" }
     ],
@@ -4053,7 +4053,7 @@ export const industries: Industry[] = [
       { title: "Emergency Searches You're Missing", description: "Storm damage, dangerous trees—emergency searches convert immediately. If you don't rank, you lose high-value callouts.", stat: "Emergency tree work averages £800-£2k per job" },
       { title: "No Visual Portfolio", description: "Before/after photos of tree work prove capability. Screenshots of completed jobs close quotes.", stat: "Visual portfolios increase tree surgery quotes by 73%" },
       { title: "Insurance Not Showcased", description: "Homeowners need to know you're insured (£10M+ public liability). If it's not prominent, they won't call.", stat: "95% require insurance proof before booking tree surgeons" },
-      { title: "Service Breakdown Missing", description: "Tree felling, crown reduction, stump grinding—each needs its own page to rank and educate prospects.", stat: "Service-specific pages get 4.1x more leads" }
+      { title: "Service Breakdown Missing", description: "Tree felling, crown reduction, stump grinding—each needs its own page to rank and educate prospects.", stat: "Service-specific pages generate substantially more leads" }
     ],
     features: [
       "Emergency tree work section (prominent, urgent design)",
@@ -4261,7 +4261,7 @@ export const industries: Industry[] = [
     metaDesc: "Professional counseling websites. BACP compliant, online booking, specialization pages. Compassionate design for therapists.",
     painPoints: [
       { title: "First Impressions Matter for Trust", description: "Seeking therapy is vulnerable. Your website must be calming, professional, and trustworthy—not generic or clinical.", stat: "94% judge therapist credibility by website quality" },
-      { title: "Specializations Not Clear", description: "Anxiety, depression, trauma, couples—each needs its own page. Clients search for specialists, not generalists.", stat: "Specialization pages convert 5.4x better for therapy" },
+      { title: "Specializations Not Clear", description: "Anxiety, depression, trauma, couples—each needs its own page. Clients search for specialists, not generalists.", stat: "Specialization pages convert substantially better for therapy" },
       { title: "No Online Booking", description: "Picking up the phone is hard for anxious clients. Online booking removes that barrier.", stat: "Online booking increases therapy enquiries by 78%" },
       { title: "BACP Compliance", description: "Ethical framework requires certain information on websites. Non-compliance risks registration.", stat: "BACP members must meet ethical advertising standards" }
     ],

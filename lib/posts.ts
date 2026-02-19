@@ -174,12 +174,6 @@ export const posts: BlogPost[] = [
       
       <p><strong>The numbers don't lie:</strong> 1.78k pages indexed, 253 keywords ranking, 9.26k monthly clicks. All while protecting a £13k+/month revenue stream.</p>
       <p>If your blog is holding you back, this is how you fix it.</p>
-      
-      <div style="background: linear-gradient(135deg, #3b82f6, #8b5cf6); border-radius: 1rem; padding: 2rem; margin: 3rem 0; text-align: center;">
-        <h3 style="color: white; font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">Need Help Scaling Content Without Breaking Your Store?</h3>
-        <p style="color: white; margin-bottom: 2rem; opacity: 0.95;">Let's talk about a hybrid architecture for your business. Book a free 30-minute audit.</p>
-        <a href="/contact" style="display: inline-block; background: white; color: #1e293b; padding: 1rem 2rem; border-radius: 9999px; font-weight: bold; text-decoration: none; transition: transform 0.2s;">Get Your Free Audit</a>
-      </div>
     `,
   },
   {

@@ -327,22 +327,6 @@ export default async function LocationPage({ params }: Props) {
               Data-driven insights that inform our {location.name} SEO and web design strategies.
             </p>
             
-            {/* Market Stats */}
-            <div className="grid md:grid-cols-3 gap-6 mb-12">
-              <div className="bg-slate-800 p-6 rounded-xl border border-slate-700 text-center">
-                <div className="text-3xl font-bold text-blue-400 mb-2">{location.marketStats.population}</div>
-                <div className="text-sm text-slate-400 font-medium">Population</div>
-              </div>
-              <div className="bg-slate-800 p-6 rounded-xl border border-slate-700 text-center">
-                <div className="text-3xl font-bold text-blue-400 mb-2">{location.marketStats.businesses}</div>
-                <div className="text-sm text-slate-400 font-medium">Businesses</div>
-              </div>
-              <div className="bg-slate-800 p-6 rounded-xl border border-slate-700 text-center">
-                <div className="text-sm font-bold text-blue-400 mb-2">Key Trend</div>
-                <div className="text-sm text-slate-300 leading-relaxed">{location.marketStats.keyTrend}</div>
-              </div>
-            </div>
-            
             {/* Local Challenges */}
             <div className="mb-8">
               <h3 className="text-xl font-bold text-white mb-4">

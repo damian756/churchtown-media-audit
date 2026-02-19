@@ -448,7 +448,7 @@ export default function GrowthHub() {
                     <h2 className="text-3xl font-bold text-white">Fueling Growth: Grants & Funding</h2>
                 </div>
                 <p className="text-lg text-slate-300 mb-6 leading-relaxed">
-                    Scaling a business requires more than just a great website; it requires capital. With the MLEC now active, Southport businesses have access to specific <strong>Sefton Council</strong> and <strong>Liverpool City Region</strong> funding streams designed to boost the visitor economy.
+                    Scaling a business requires more than just a great website; it requires capital. With the MLEC opening soon, Southport businesses have access to specific <strong>Sefton Council</strong> and <strong>Liverpool City Region</strong> funding streams designed to boost the visitor economy.
                 </p>
                 <div className="bg-green-500/10 border-l-4 border-green-400 p-6 rounded-r-lg">
                     <p className="font-bold text-green-400">Agency Tip:</p>
