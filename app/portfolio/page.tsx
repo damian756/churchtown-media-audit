@@ -5,7 +5,7 @@ import { ArrowRight, ExternalLink, Zap, Code2, Gauge, TrendingUp, CheckCircle2, 
 
 export const metadata: Metadata = {
   title: "Portfolio | Client Projects & Success Stories",
-  description: "See our live Next.js projects in action. From bus shelter manufacturers to professional video capture equipment—real clients, real results, real performance. Lighthouse scores 90+, traffic increases up to 300%.",
+  description: "See our live Next.js projects in action. From headless blog scaling (253 keywords in 4 weeks) to bus shelter manufacturers—real clients, real results, real performance. Lighthouse scores 90+, traffic increases up to 300%.",
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk/portfolio',
   },
@@ -45,6 +45,17 @@ export default function PortfolioPage() {
         {
           "@type": "CreativeWork",
           "position": 1,
+          "name": "Industrial Chemicals Headless Blog",
+          "description": "Next.js blog scaling: 1.78k pages indexed, 253 keywords ranking, 9.26k monthly clicks. Hybrid architecture with WordPress/WooCommerce.",
+          "url": "https://www.churchtownmedia.co.uk/work/headless-blog",
+          "creator": {
+            "@type": "Organization",
+            "@id": "https://www.churchtownmedia.co.uk/#organization"
+          }
+        },
+        {
+          "@type": "CreativeWork",
+          "position": 2,
           "name": "Alotek Shelters",
           "description": "Bus shelter manufacturer website rebuilt with Next.js. 86% visibility increase, AI Overview dominance in 6 weeks.",
           "url": "https://www.alotekshelters.co.uk",
@@ -55,7 +66,7 @@ export default function PortfolioPage() {
         },
         {
           "@type": "CreativeWork",
-          "position": 2,
+          "position": 3,
           "name": "Forefront Imaging",
           "description": "B2B product catalog for Magewell distributor. 76+ SKUs with real-time stock tracking and reseller portal.",
           "url": "https://forefront-imaging-6zvd.vercel.app",
@@ -66,7 +77,7 @@ export default function PortfolioPage() {
         },
         {
           "@type": "CreativeWork",
-          "position": 3,
+          "position": 4,
           "name": "StreamKit",
           "description": "Professional USB video capture devices for streamers, broadcasters, educators, and healthcare. Driver-free, universal compatibility.",
           "url": "https://www.streamkit.co.uk",
@@ -77,7 +88,7 @@ export default function PortfolioPage() {
         },
         {
           "@type": "CreativeWork",
-          "position": 4,
+          "position": 5,
           "name": "Southport Guide",
           "description": "Complete tourism directory for Southport featuring 999+ businesses. Mobile-first local discovery for 8M annual visitors.",
           "url": "https://www.southportguide.co.uk",
@@ -91,6 +102,32 @@ export default function PortfolioPage() {
   };
 
   const projects = [
+    {
+      id: 5,
+      name: "Industrial Chemicals Supplier",
+      tagline: "Headless Blog: 253 Keywords in 4 Weeks",
+      industry: "Industrial B2B E-commerce",
+      url: "/work/headless-blog",
+      status: "live",
+      image: "/images/headless-blog-portfolio.jpg",
+      description: "An established industrial chemicals supplier needed to scale content from 10 posts/month to 100+ without breaking their profitable WooCommerce store. We built a Next.js blog at /blog/ subdirectory while keeping WordPress/WooCommerce for products and checkout—achieving 1.78k indexed pages and 9.26k monthly clicks in 12 months.",
+      challenge: "WordPress couldn't handle 100+ posts/month without crashing. Migrating the WooCommerce store (£13k+/month revenue, hundreds of products, custom flows) was too risky and expensive. Blog load times of 4-6 seconds were killing SEO and user experience.",
+      solution: "Hybrid architecture: Next.js static blog deployed to Vercel at /blog/, WordPress/WooCommerce kept at root for store. Nginx routing at hosting level directs traffic. Programmatic SEO with FAQ schema, breadcrumbs, and instant page loads (avg 1.2s).",
+      results: [
+        { label: "Pages Indexed", value: "1.78k", description: "vs. 200 pre-migration" },
+        { label: "Keywords Ranking", value: "253", description: "47 on page 1-2" },
+        { label: "Monthly Clicks", value: "9.26k", description: "58.5k impressions" },
+        { label: "Average CTR", value: "15.8%", description: "3x industry average" },
+      ],
+      techStack: ["Next.js 16", "TypeScript", "WordPress", "WooCommerce", "Vercel", "Schema.org"],
+      caseStudySlug: "/work/headless-blog",
+      highlights: [
+        "8.4x keyword growth in 4 weeks (30 → 253 keywords)",
+        "Content velocity: 10 posts/month → 100+ without performance hit",
+        "53 programmatic FAQ schemas, 0 errors",
+        "Store revenue protected (£13k+/month maintained)",
+      ]
+    },
     {
       id: 1,
       name: "Alotek Shelters",
