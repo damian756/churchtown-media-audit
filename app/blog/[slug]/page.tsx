@@ -150,7 +150,7 @@ export default async function BlogPost({ params }: Props) {
           <div className="flex gap-6 items-start bg-slate-900 rounded-2xl p-6 border border-slate-800">
             <Link href="/about" className="flex-shrink-0">
               <Image
-                src="/images/about/damian-headshot.jpg"
+                src="/images/about/damian-blog-bio.jpg"
                 alt="Damian Roche"
                 width={80}
                 height={80}
