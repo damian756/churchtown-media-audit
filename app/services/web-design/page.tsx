@@ -659,10 +659,14 @@ export default function WebDesignPage() {
         </article>
       </section>
 
-      {/* OUR PROCESS */}
+      {/* OUR PROCESS - ENHANCED VISUAL TIMELINE */}
       <section className="py-16 px-4 sm:px-6 bg-slate-900/50">
         <article className="max-w-5xl mx-auto">
           <header className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-600/30 rounded-full px-4 py-2 mb-6">
+              <Clock className="w-4 h-4 text-blue-400" />
+              <span className="text-blue-400 text-sm font-bold">Our Process</span>
+            </div>
             <h2 className="text-3xl md:text-4xl font-black mb-4">
               The 4-Phase Process
             </h2>
@@ -671,37 +675,64 @@ export default function WebDesignPage() {
             </p>
           </header>
 
-          <div className="space-y-8">
-            {processSteps.map((step, idx) => (
-              <div key={step.number} className="bg-slate-900 border border-slate-800 rounded-2xl p-8">
-                <div className="flex items-start gap-6">
-                  <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl p-4 flex-shrink-0">
-                    <span className="text-4xl font-black text-white">{step.number}</span>
-                  </div>
-                  <div className="flex-1">
-                    <div className="text-sm text-blue-400 font-bold mb-2">{step.duration}</div>
-                    <h3 className="text-2xl font-black text-white mb-3">{step.title}</h3>
-                    <p className="text-slate-300 leading-relaxed mb-4">{step.description}</p>
-                    <div className="bg-slate-800 border border-slate-700 rounded-xl p-4">
-                      <div className="text-xs text-blue-400 font-bold uppercase tracking-wider mb-2">Deliverables</div>
-                      <ul className="space-y-2">
-                        {step.deliverables.map((item, i) => (
-                          <li key={i} className="flex items-start gap-2 text-sm text-slate-300">
-                            <CheckCircle2 className="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5" />
-                            <span>{item}</span>
-                          </li>
-                        ))}
-                      </ul>
+          <div className="relative">
+            {/* Vertical Timeline Line */}
+            <div className="absolute left-[52px] top-8 bottom-8 w-0.5 bg-gradient-to-b from-blue-600 via-purple-600 to-blue-600 hidden md:block"></div>
+            
+            <div className="space-y-8">
+              {processSteps.map((step, idx) => (
+                <div key={step.number} className="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-blue-600/50 transition-all group relative">
+                  <div className="flex flex-col md:flex-row items-start gap-6">
+                    {/* Number Badge */}
+                    <div className="relative">
+                      <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl p-4 flex-shrink-0 group-hover:scale-110 transition-transform shadow-lg shadow-blue-600/20">
+                        <span className="text-4xl font-black text-white">{step.number}</span>
+                      </div>
+                      {/* Connecting Dot for Timeline */}
+                      {idx < processSteps.length - 1 && (
+                        <div className="hidden md:block absolute left-1/2 -translate-x-1/2 -bottom-10 w-2 h-2 bg-blue-600 rounded-full"></div>
+                      )}
+                    </div>
+                    
+                    {/* Content */}
+                    <div className="flex-1">
+                      <div className="flex items-center gap-3 mb-3">
+                        <span className="text-sm font-bold text-blue-400 uppercase tracking-wide">{step.duration}</span>
+                        <span className="text-slate-500">|</span>
+                        <span className="text-sm text-slate-400">Phase {step.number}</span>
+                      </div>
+                      <h3 className="text-2xl font-black text-white mb-3 group-hover:text-blue-400 transition-colors">{step.title}</h3>
+                      <p className="text-slate-300 leading-relaxed mb-4">{step.description}</p>
+                      
+                      {/* Deliverables Box */}
+                      <div className="bg-slate-950 border border-slate-800 rounded-xl p-4">
+                        <div className="text-xs text-blue-400 font-bold uppercase tracking-wider mb-3 flex items-center gap-2">
+                          <CheckCircle2 className="w-4 h-4" />
+                          Deliverables
+                        </div>
+                        <ul className="grid sm:grid-cols-2 gap-3">
+                          {step.deliverables.map((item, i) => (
+                            <li key={i} className="flex items-start gap-2 text-sm text-slate-300">
+                              <span className="text-green-400 mt-0.5">✓</span>
+                              <span>{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
-          <div className="mt-8 text-center">
+          <div className="mt-12 text-center bg-slate-900 border border-slate-800 rounded-2xl p-8">
+            <h3 className="text-xl font-bold text-white mb-3">Ready to Start Your Project?</h3>
+            <p className="text-slate-400 mb-6 max-w-xl mx-auto">
+              Every project begins with Phase 01: Discovery & Audit. Book a free consultation to get started.
+            </p>
             <Link href="/work" className="text-blue-400 hover:text-blue-300 font-bold inline-flex items-center gap-2 group">
-              See the Full Process in Detail <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              See Our Full Portfolio <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
         </article>

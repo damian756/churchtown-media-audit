@@ -5,6 +5,7 @@ import { MapPin, Trophy, ArrowRight, CheckCircle2, Zap, BarChart } from "lucide-
 import { locations, getLocation } from "@/lib/locations";
 import { posts } from "@/lib/posts";
 import type { Metadata } from "next";
+import StatCard from "@/app/components/StatCard";
 
 // Map location slugs to relevant blog post slugs
 const locationBlogMap: Record<string, string[]> = {
@@ -128,6 +129,57 @@ export default async function LocationPage({ params }: Props) {
             </div>
         </div>
       </section>
+
+      {/* MARKET STATS SECTION */}
+      {location.marketStats && (
+        <section className="px-6 py-12 bg-slate-950">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-8">
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
+                {location.name} Market Overview
+              </h2>
+              <p className="text-slate-400 max-w-2xl mx-auto">
+                Data-driven insights into the {location.name} business landscape
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <StatCard 
+                number={location.marketStats.population} 
+                label="Population" 
+                color="blue"
+                className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-blue-600/50 transition-all"
+              />
+              <StatCard 
+                number={location.marketStats.businesses} 
+                label="Local Businesses" 
+                color="green"
+                className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-green-600/50 transition-all"
+              />
+              <StatCard 
+                number="24/7" 
+                label="Local Support" 
+                color="purple"
+                className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-purple-600/50 transition-all"
+              />
+            </div>
+
+            {location.marketStats.keyTrend && (
+              <div className="bg-gradient-to-r from-blue-600/10 via-purple-600/10 to-blue-600/10 border border-blue-600/30 rounded-2xl p-6">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 bg-blue-600/20 rounded-xl flex-shrink-0">
+                    <BarChart className="w-6 h-6 text-blue-400" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-white mb-2">Key Market Trend</h3>
+                    <p className="text-slate-300 leading-relaxed">{location.marketStats.keyTrend}</p>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        </section>
+      )}
 
       {/* LOCAL INSIGHT SECTION */}
       <section className="px-6 py-16 bg-slate-900 border-y border-slate-800">
