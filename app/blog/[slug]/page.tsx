@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { posts } from "../../../lib/posts"; 
-import { ArrowLeft, Calendar, Tag } from "lucide-react";
+import { ArrowLeft, Calendar, Tag, User } from "lucide-react";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
@@ -51,8 +51,48 @@ export default async function BlogPost({ params }: Props) {
     notFound();
   }
 
+  // Article Schema with Author
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.title,
+    "description": post.excerpt,
+    "image": `https://www.churchtownmedia.co.uk${post.image}`,
+    "datePublished": new Date(post.date).toISOString(),
+    "dateModified": new Date(post.date).toISOString(),
+    "author": {
+      "@type": "Person",
+      "name": post.author,
+      "url": "https://www.churchtownmedia.co.uk/about",
+      "jobTitle": "Founder & CEO",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Churchtown Media",
+        "url": "https://www.churchtownmedia.co.uk"
+      }
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Churchtown Media",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.churchtownmedia.co.uk/icon.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://www.churchtownmedia.co.uk/blog/${post.slug}`
+    }
+  };
+
   return (
     <main className="min-h-screen bg-slate-950">
+      
+      {/* JSON-LD Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       
       {/* HEADER SECTION (Dark Theme) */}
       <section className="bg-slate-950 px-6 pt-32 pb-16 text-center border-b border-slate-800">
@@ -65,7 +105,14 @@ export default async function BlogPost({ params }: Props) {
                 {post.title}
             </h1>
             
-            <div className="flex items-center justify-center gap-4 text-sm font-medium text-slate-400">
+            <div className="flex items-center justify-center gap-4 text-sm font-medium text-slate-400 flex-wrap">
+                <div className="flex items-center gap-1.5">
+                    <User className="w-4 h-4 text-blue-400" />
+                    <Link href="/about" className="text-slate-300 hover:text-blue-400 transition-colors">
+                      {post.author}
+                    </Link>
+                </div>
+                <span className="text-slate-500">|</span>
                 <div className="flex items-center gap-1.5">
                     <Calendar className="w-4 h-4 text-blue-400" />
                     <time className="text-slate-300">{post.date}</time>
@@ -97,6 +144,38 @@ export default async function BlogPost({ params }: Props) {
           className="blog-content prose prose-lg prose-invert prose-slate max-w-none prose-headings:font-bold prose-headings:text-white prose-a:text-blue-400 prose-a:no-underline hover:prose-a:text-blue-400 prose-img:rounded-xl prose-p:text-slate-300 prose-li:text-slate-300"
           dangerouslySetInnerHTML={{ __html: post.content }} 
         />
+
+        {/* Author Bio Section */}
+        <div className="mt-12 border-t border-slate-800 pt-8">
+          <div className="flex gap-6 items-start bg-slate-900 rounded-2xl p-6 border border-slate-800">
+            <Link href="/about" className="flex-shrink-0">
+              <Image
+                src="/images/about/damian-headshot.jpg"
+                alt="Damian Roche"
+                width={80}
+                height={80}
+                className="rounded-full border-2 border-blue-600"
+              />
+            </Link>
+            <div>
+              <Link href="/about" className="inline-block">
+                <h3 className="text-xl font-bold text-white hover:text-blue-400 transition-colors">
+                  Written by {post.author}
+                </h3>
+              </Link>
+              <p className="text-sm text-slate-400 mt-1">Founder & CEO, Churchtown Media</p>
+              <p className="text-slate-300 mt-3 leading-relaxed">
+                20+ years building websites, 15+ years obsessing over SEO. Based in Southport, helping North West businesses turn traffic into revenue with Next.js and data-driven strategies.
+              </p>
+              <Link 
+                href="/about"
+                className="inline-flex items-center gap-2 mt-4 text-sm font-bold text-blue-400 hover:text-blue-300 transition-colors"
+              >
+                More about Damian <ArrowLeft className="w-4 h-4 rotate-180" />
+              </Link>
+            </div>
+          </div>
+        </div>
 
         {/* CTA Box */}
         <div className="mt-12 rounded-2xl bg-slate-900 p-6 text-center ring-1 ring-slate-700">
