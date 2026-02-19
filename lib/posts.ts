@@ -19,7 +19,7 @@ export const posts: BlogPost[] = [
     image: "/images/headless-blog-case-study.jpg",
     excerpt: "How we helped an industrial B2B e-commerce business scale from 10 posts/month to 100+ using Next.js /blog/—while keeping their profitable WooCommerce store untouched. 1.78k pages indexed, 9.26k monthly clicks, 15.8% CTR.",
     content: `
-      <p>Client came to me last year with a problem I hear constantly: "Our WordPress blog is killing us."</p>
+      <p>Client came to me in early 2025 with a problem I hear constantly: "Our WordPress blog is killing us."</p>
       <p>They ran a profitable industrial e-commerce site. £13k+/month revenue. Hundreds of products. Custom Klaviyo flows. Everything worked. Except the blog.</p>
       <p>They wanted to scale content from 10 posts/month to 100+. WordPress couldn't handle it. Page builders (Elementor, Divi) crashed. Load times hit 6 seconds. Google stopped indexing posts.</p>
       <p>"Can you migrate us to Next.js?" they asked.</p>
@@ -33,7 +33,7 @@ export const posts: BlogPost[] = [
         <li>Product pages ranking page 1 for commercial keywords</li>
         <li>Customer accounts, order history, payment gateways all working</li>
       </ul>
-      <p><strong>Migration cost estimate: £20k+ and 6 months of dev time.</strong> Plus the risk of breaking SEO, losing payment processor integrations, and retraining staff.</p>
+      <p><strong>Migration cost estimate: £35k-60k and 3-4 months of dev time.</strong> Plus the risk of breaking SEO, losing payment processor integrations, and retraining staff.</p>
       <p>Not worth it.</p>
       
       <h2>The Solution: Headless Blog, Keep the Store</h2>
@@ -64,6 +64,8 @@ export const posts: BlogPost[] = [
       </ul>
       
       <h2>The Numbers: 12 Months Post-Launch</h2>
+      
+      <p><strong>Timeline:</strong> Launched March 2025. These numbers are from March 2025 → Feb 2026 (12 months of data).</p>
       
       <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #3b82f6; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
         <h3 style="color: #60a5fa; font-size: 1.25rem; font-weight: bold; margin-bottom: 1.5rem;">Google Search Console (Verified Data)</h3>
@@ -97,16 +99,16 @@ export const posts: BlogPost[] = [
       </div>
       
       <h3>Keyword Velocity: The Hockey Stick</h3>
-      <p>From Jan 23 to Feb 19, 2026, keyword rankings exploded:</p>
+      <p>Growth was steady for 10 months. Then in Jan-Feb 2026, something clicked. Keyword rankings exploded:</p>
       
       <div style="margin: 2rem 0;">
         <img src="/images/case-study-semrush-keywords.png" alt="Semrush keyword rankings chart showing growth from 30 to 253 keywords in 4 weeks" style="width: 100%; height: auto; border-radius: 0.5rem; border: 1px solid #334155;" />
-        <p style="text-align: center; color: #94a3b8; font-size: 0.875rem; margin-top: 0.5rem;">Keyword explosion: 30 keywords → 253 keywords in 4 weeks (8.4x growth)</p>
+        <p style="text-align: center; color: #94a3b8; font-size: 0.875rem; margin-top: 0.5rem;">Keyword explosion: Jan-Feb 2026 saw 30 keywords → 253 keywords (8.4x growth in 4 weeks)</p>
       </div>
       
       <div style="background: #1e293b; border-left: 4px solid #3b82f6; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
         <ul style="color: #cbd5e1; line-height: 2;">
-          <li><strong style="color: white;">253 keywords ranking</strong> (up from ~30 in 4 weeks = 8.4x growth)</li>
+          <li><strong style="color: white;">253 keywords ranking</strong> (up from ~30 in late Jan = 8.4x growth)</li>
           <li><strong style="color: #fbbf24;">14 keywords in top 3</strong> (page 1, positions 1-3)</li>
           <li><strong style="color: #60a5fa;">15 keywords positions 4-10</strong> (still page 1)</li>
           <li><strong style="color: #a78bfa;">18 keywords positions 11-20</strong> (page 2)</li>
