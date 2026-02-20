@@ -24,7 +24,10 @@ export const viewport: Viewport = {
 // Force redeploy
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.churchtownmedia.co.uk'),
-  title: 'Churchtown Media | Digital Growth for Southport Businesses',
+  title: {
+    default: 'Churchtown Media | Digital Growth for Southport Businesses',
+    template: '%s',
+  },
   description: 'We build high-performance revenue engines for businesses in Southport, Merseyside, and West Lancashire. Web Design, SEO, and Digital Strategy.',
   applicationName: 'Churchtown Media',
   authors: [{ name: 'Churchtown Media Team', url: 'https://www.churchtownmedia.co.uk' }],
