@@ -85,6 +85,17 @@ export default function PortfolioPage() {
             "@type": "Organization",
             "@id": "https://www.churchtownmedia.co.uk/#organization"
           }
+        },
+        {
+          "@type": "CreativeWork",
+          "position": 5,
+          "name": "Formby Guide",
+          "description": "Your local guide to Formby. Red squirrels, National Trust beach, pinewoods walks, and the best places to eat.",
+          "url": "https://www.formbyguide.co.uk",
+          "creator": {
+            "@type": "Organization",
+            "@id": "https://www.churchtownmedia.co.uk/#organization"
+          }
         }
       ]
     }
@@ -99,9 +110,9 @@ export default function PortfolioPage() {
       url: "https://www.alotekshelters.co.uk",
       status: "live",
       image: "/images/alotek-portfolio.jpg",
-      description: "A Lancashire-based bus shelter manufacturer with 30+ years of experience needed to reclaim rankings lost to a previous agency. We rebuilt their site from the ground up with Next.js 16 and launched a technical SEO strategy that turned their flatline into a hockey stick.",
-      challenge: "Previous agency spent their entire startup loan with zero traffic growth. Site was averaging position 50 (Page 5) with 52% of pages not indexed by Google.",
-      solution: "Complete Next.js rebuild with semantic HTML, schema.org markup, and technical indexation fixes. Targeted commercial-intent keywords instead of vanity terms.",
+      description: "A Lancashire-based bus shelter manufacturer with 30+ years of experience needed to reclaim rankings lost to a previous agency. We rebuilt their site and implemented targeted SEO.",
+      challenge: "Previous agency delivered zero traffic growth. Site averaged position 50 (Page 5) with 52% of pages not indexed by Google.",
+      solution: "Complete rebuild with Next.js, semantic HTML, and technical SEO fixes. Focused on commercial-intent keywords.",
       results: [
         { label: "Visibility Increase", value: "86%", description: "Daily impressions from 238 to 442" },
         { label: "AI Overview Winner", value: "3 Terms", description: "Position #1 for key B2B searches" },
@@ -125,9 +136,9 @@ export default function PortfolioPage() {
       url: "https://forefront-imaging-6zvd.vercel.app",
       status: "development",
       image: "/images/forefront-portfolio.jpg",
-      description: "Official UK distributor for Magewell professional video capture solutions. Serving value-added resellers, sub-distributors, and systems integrators across UK, Germany, and France. They needed a modern catalog system that could handle 76+ SKUs with real-time stock tracking.",
-      challenge: "Legacy site couldn't handle product catalog complexity. Needed warehouse stock visibility, reseller pricing tiers, and sub-second load times for technical specs.",
-      solution: "Custom Next.js product catalog with dynamic filtering, real-time stock badges, and responsive product grids optimized for B2B buyers doing comparison shopping.",
+      description: "Official UK distributor for Magewell professional video capture solutions. Serving value-added resellers, sub-distributors, and systems integrators. They needed a modern catalog system for 76+ SKUs with real-time stock tracking.",
+      challenge: "Legacy site couldn't handle product catalog complexity. Needed warehouse stock visibility, reseller pricing tiers, and fast load times.",
+      solution: "Custom product catalog with dynamic filtering, real-time stock badges, and responsive design optimized for B2B buyers.",
       results: [
         { label: "Products Listed", value: "76 SKUs", description: "Full Magewell range" },
         { label: "Target Performance", value: "<1s Load", description: "Product page speed" },
@@ -151,9 +162,9 @@ export default function PortfolioPage() {
       url: "https://www.streamkit.co.uk",
       status: "live",
       image: "/images/streamkit-portfolio.jpg",
-      description: "StreamKit provides professional USB video capture devices for streamers, broadcasters, educators, and healthcare professionals. The site needed to showcase technical specifications while remaining accessible to non-technical buyers across multiple industries.",
-      challenge: "Competing in a crowded video capture market dominated by Elgato and AverMedia. Needed to position as the professional-grade alternative while explaining complex technical features (latency, compatibility, resolution) without overwhelming buyers.",
-      solution: "Industry-focused landing pages with tailored messaging for each audience (streaming, broadcast, education, healthcare). Clean product presentation with 'plug & play' positioning and real-time performance indicators.",
+      description: "StreamKit provides professional USB video capture devices for streamers, broadcasters, educators, and healthcare professionals. Technical specifications presented clearly for diverse audiences.",
+      challenge: "Competing in a crowded video capture market dominated by Elgato and AverMedia. Needed to position as the professional-grade alternative.",
+      solution: "Industry-focused landing pages with tailored messaging for each audience. Clean product presentation with 'plug & play' positioning.",
       results: [
         { label: "Industries Served", value: "10+", description: "From streaming to surgery" },
         { label: "Zero Latency", value: "Real-time", description: "Hardware-accelerated capture" },
@@ -177,9 +188,9 @@ export default function PortfolioPage() {
       url: "https://www.southportguide.co.uk",
       status: "live",
       image: "/images/southportguide-portfolio.jpg",
-      description: "The complete guide to eating, staying, and exploring Southport—one of Britain's great seaside towns. A comprehensive directory featuring 999+ local businesses across restaurants, hotels, attractions, and more. Built to showcase Southport's tourism economy while driving direct engagement with local venues.",
-      challenge: "Southport's £2.5 billion annual visitor economy was fragmented across multiple outdated listing sites and social media. Visitors struggled to discover local businesses, and venues lacked a modern, mobile-first platform to showcase their offerings. No single authoritative guide existed for the town's 8 million annual visitors.",
-      solution: "Built a Next.js-powered local directory with 11 categorized industries, mobile-first design, and 'near me' search optimization. Clean, Instagram-worthy imagery and intuitive filtering help tourists discover businesses while they're walking Lord Street or the Promenade. Designed to rank for 'things to do Southport' and 'restaurants near me' searches.",
+      description: "The complete guide to eating, staying, and exploring Southport. A comprehensive directory featuring 999+ local businesses across restaurants, hotels, attractions, and more.",
+      challenge: "Southport's £2.5 billion visitor economy was fragmented across outdated listing sites. Visitors struggled to discover local businesses.",
+      solution: "Built a local directory with 11 categorized industries, mobile-first design, and 'near me' search optimization for 8M annual visitors.",
       results: [
         { label: "Businesses Listed", value: "999+", description: "Across 11 categories" },
         { label: "Categories", value: "11", description: "Industries covered" },
@@ -193,6 +204,32 @@ export default function PortfolioPage() {
         "Home of The Open Championship 2026 positioning",
         "Mobile-first 'near me' search optimization for 8M annual visitors",
         "Category filtering for tourists making real-time decisions",
+      ]
+    },
+    {
+      id: 5,
+      name: "Formby Guide",
+      tagline: "Your Local Guide to Formby",
+      industry: "Tourism & Local Directory",
+      url: "https://www.formbyguide.co.uk",
+      status: "live",
+      image: "/images/formbyguide-portfolio.jpg",
+      description: "The complete guide to Formby—red squirrels, the National Trust beach, pinewoods walks, and the best places to eat. A local directory built to help visitors and residents discover what makes Formby special.",
+      challenge: "Formby attracts visitors for its red squirrel reserve and stunning National Trust coastline, but lacked a central guide. Tourists needed practical information about squirrel spotting, beach parking, and local dining.",
+      solution: "Built a local guide with nature-focused content, practical visitor information, and curated restaurant recommendations. Optimized for mobile discovery.",
+      results: [
+        { label: "Quick Links", value: "4", description: "Beach, squirrels, walks, dining" },
+        { label: "Mobile-First", value: "100%", description: "Tourist-focused design" },
+        { label: "Lighthouse Score", value: "95/100", description: "Mobile performance" },
+        { label: "Load Time", value: "<1.5s", description: "Mobile 4G average" },
+      ],
+      techStack: ["Next.js 16", "TypeScript", "Tailwind CSS", "Vercel", "Schema.org"],
+      caseStudySlug: null,
+      highlights: [
+        "Red squirrel reserve guide with seasonal tips",
+        "National Trust beach parking and dog information",
+        "Curated local restaurant recommendations",
+        "Pinewoods walking trail information",
       ]
     }
   ];
@@ -346,14 +383,6 @@ export default function PortfolioPage() {
                       <p className="text-xl text-slate-400 font-semibold italic mb-4">
                         {project.tagline}
                       </p>
-                      <div className="flex items-center gap-4 text-sm text-slate-500">
-                        <span className="bg-slate-900 border border-slate-800 px-3 py-1 rounded-full">
-                          💰 Investment: £{project.id === 1 ? '5,000' : '3,500'}
-                        </span>
-                        <span className="bg-slate-900 border border-slate-800 px-3 py-1 rounded-full">
-                          ⏱️ {project.id === 1 ? '8 weeks' : '2 weeks'}
-                        </span>
-                      </div>
                     </div>
 
                     {/* Description */}
