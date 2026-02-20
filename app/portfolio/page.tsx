@@ -391,18 +391,6 @@ export default function PortfolioPage() {
                           className="object-cover"
                         />
                       </div>
-
-                      {/* Tech Stack Badges */}
-                      <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 flex gap-2 flex-wrap justify-center max-w-md">
-                        {project.techStack.map((tech) => (
-                          <span 
-                            key={tech}
-                            className="bg-slate-800 border border-slate-700 text-slate-300 text-xs font-bold px-3 py-1 rounded-full"
-                          >
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
                     </div>
                   </div>
 
@@ -420,6 +408,18 @@ export default function PortfolioPage() {
                       <p className="text-xl text-slate-400 font-semibold italic mb-4">
                         {project.tagline}
                       </p>
+                      
+                      {/* Tech Stack Badges */}
+                      <div className="flex gap-2 flex-wrap mb-2">
+                        {project.techStack.map((tech) => (
+                          <span 
+                            key={tech}
+                            className="bg-slate-800 border border-slate-700 text-slate-300 text-xs font-bold px-3 py-1 rounded-full"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
                     </div>
 
                     {/* Description */}
