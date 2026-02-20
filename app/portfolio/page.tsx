@@ -96,6 +96,17 @@ export default function PortfolioPage() {
             "@type": "Organization",
             "@id": "https://www.churchtownmedia.co.uk/#organization"
           }
+        },
+        {
+          "@type": "CreativeWork",
+          "position": 6,
+          "name": "Sefton Links",
+          "description": "The definitive links golf guide to the Sefton Coast. Royal Birkdale, The Open 2026, and championship golf in 17 languages.",
+          "url": "https://www.seftonlinks.com",
+          "creator": {
+            "@type": "Organization",
+            "@id": "https://www.churchtownmedia.co.uk/#organization"
+          }
         }
       ]
     }
@@ -230,6 +241,32 @@ export default function PortfolioPage() {
         "National Trust beach parking and dog information",
         "Curated local restaurant recommendations",
         "Pinewoods walking trail information",
+      ]
+    },
+    {
+      id: 6,
+      name: "Sefton Links",
+      tagline: "The World's Greatest Links Golf Corridor",
+      industry: "Sports Tourism & Golf",
+      url: "https://www.seftonlinks.com",
+      status: "live",
+      image: "/images/seftonlinks-portfolio.jpg",
+      description: "The definitive guide to links golf on the Sefton Coast—Royal Birkdale, Hillside, Formby, and four other championship courses. Built for international golf tourists planning trips to England's premier links golf destination ahead of The Open 2026.",
+      challenge: "Golf tourists from US, Germany, Japan, and beyond needed comprehensive information about the Sefton Coast's six championship courses. No single authoritative English-language guide existed, and language barriers limited international reach.",
+      solution: "Built a comprehensive golf tourism guide with course comparisons, tee time information, and accommodation. Implemented native translations in 17 languages to reach international golf markets.",
+      results: [
+        { label: "Languages", value: "17", description: "Native translations" },
+        { label: "Courses Covered", value: "6", description: "Championship links" },
+        { label: "Lighthouse Score", value: "96/100", description: "Mobile performance" },
+        { label: "The Open 2026", value: "July", description: "Royal Birkdale host" },
+      ],
+      techStack: ["Next.js 16", "TypeScript", "Tailwind CSS", "Vercel", "i18n"],
+      caseStudySlug: null,
+      highlights: [
+        "17 native language translations (EN, DE, JA, FR, ES, NL, SV, DA, NO, FI, KO, ZH, PT, IT, PL, CA, CY, AR)",
+        "Complete guide to 6 championship courses from Royal Birkdale to Southport Old Links",
+        "The Open Championship 2026 countdown and visitor guide",
+        "Course conditions, tee times, scorecards, and golf break planning tools",
       ]
     }
   ];
