@@ -46,6 +46,7 @@ export interface Industry {
     result: string;
   };
   investmentGuidance?: string; // Pricing context paragraph
+  heroImage?: string; // Unique AI-generated hero image path, defaults to /images/industries/industry-{slug}.jpg
 }
 
 export const industries: Industry[] = [

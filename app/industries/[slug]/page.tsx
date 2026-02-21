@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Check, Phone, Mail, Star } from "lucide-react";
 import { getIndustry, industries } from "@/lib/industries";
 import { posts } from "@/lib/posts";
@@ -59,6 +60,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
+  const heroImagePath = industry.heroImage ?? `/images/industries/industry-${industry.slug}.jpg`;
+
   return {
     title: industry.metaTitle,
     description: industry.metaDesc,
@@ -73,10 +76,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       siteName: 'Churchtown Media',
       locale: 'en_GB',
       images: [{
-        url: 'https://www.churchtownmedia.co.uk/opengraph-image.png',
+        url: `https://www.churchtownmedia.co.uk${heroImagePath}`,
         width: 1200,
         height: 630,
-        alt: `Churchtown Media - ${industry.name} Web Design & SEO`,
+        alt: `${industry.name} - Web Design & SEO | Churchtown Media`,
       }],
     },
   };
@@ -96,12 +99,15 @@ export default async function IndustryPage({ params }: PageProps) {
     notFound();
   }
 
+  const heroImagePath = industry.heroImage ?? `/images/industries/industry-${industry.slug}.jpg`;
+
   // Schema.org JSON-LD for the industry service page
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": `${industry.name} Web Design & SEO`,
     "description": industry.metaDesc,
+    "image": `https://www.churchtownmedia.co.uk${heroImagePath}`,
     "provider": {
       "@type": "Organization",
       "name": "Churchtown Media",
@@ -136,6 +142,19 @@ export default async function IndustryPage({ params }: PageProps) {
           <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-slate-950 to-slate-950" />
           
           <div className="max-w-5xl mx-auto relative z-10">
+            {/* Unique Hero Image - Differentiates each industry page */}
+            <div className="relative w-full aspect-[21/9] rounded-2xl overflow-hidden mb-10 border border-slate-800 shadow-2xl">
+              <Image
+                src={industry.heroImage ?? `/images/industries/industry-${industry.slug}.jpg`}
+                alt={`${industry.name} - Professional web design and SEO services`}
+                fill
+                sizes="(max-width: 768px) 100vw, 1024px"
+                className="object-cover"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+            </div>
+
             {/* Breadcrumbs */}
             <div className="flex items-center gap-2 text-sm text-slate-400 mb-6">
               <Link href="/" className="hover:text-white transition-colors">Home</Link>
@@ -237,12 +256,28 @@ export default async function IndustryPage({ params }: PageProps) {
           </div>
         </section>
 
-        {/* MARKET DATA */}
+        {/* MARKET DATA - Inline industry image for content differentiation */}
         <section className="py-16 px-4 sm:px-6 bg-slate-900/50">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-black mb-12 text-center">
-              The Market Opportunity
-            </h2>
+            <div className="flex flex-col lg:flex-row gap-8 items-center mb-12">
+              <div className="flex-1 order-2 lg:order-1">
+                <h2 className="text-3xl md:text-4xl font-black mb-4">
+                  The Market Opportunity
+                </h2>
+                <p className="text-slate-400">
+                  {industry.name} businesses in the North West face a unique digital landscape. Here's what the data shows.
+                </p>
+              </div>
+              <div className="relative w-full lg:w-80 aspect-video rounded-xl overflow-hidden border border-slate-700 flex-shrink-0 order-1 lg:order-2">
+                <Image
+                  src={heroImagePath}
+                  alt={`${industry.name} - Digital growth opportunity`}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 320px"
+                  className="object-cover"
+                />
+              </div>
+            </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
               <div className="bg-gradient-to-br from-blue-600/20 to-purple-600/20 border border-blue-600/30 rounded-2xl p-6 text-center">
                 <div className="text-3xl font-black text-white mb-2">{industry.localMarketData.businessCount}</div>
