@@ -26,22 +26,10 @@ const locationBlogMap: Record<string, string[]> = {
   "london": ["nextjs-vs-wordpress-2026", "seo-recovery-alotek-shelters"],
   "birmingham": ["seo-recovery-alotek-shelters", "why-new-local-seo-company-is-your-business-best-friend"],
   "leeds": ["seo-liverpool-local-business-guide-2026", "why-new-local-seo-company-is-your-business-best-friend"],
-  "glasgow": ["nextjs-vs-wordpress-2026", "eating-our-own-dog-food"],
-  "edinburgh": ["mlec-effect-southport", "southport-flower-show-seo-guide"],
+  "sheffield": ["seo-recovery-alotek-shelters", "nextjs-vs-wordpress-2026"],
   "bristol": ["nextjs-vs-wordpress-2026", "eating-our-own-dog-food"],
-  "cardiff": ["why-new-local-seo-company-is-your-business-best-friend", "seo-recovery-alotek-shelters"],
-  "sheffield": ["seo-recovery-alotek-shelters", "southport-tree-nursery-seo-guide"],
-  "leicester": ["southport-food-market-seo-guide", "southport-restaurants-seo-guide"],
-  "coventry": ["seo-recovery-alotek-shelters"],
   "nottingham": ["nextjs-vs-wordpress-2026", "why-new-local-seo-company-is-your-business-best-friend"],
   "newcastle": ["eating-our-own-dog-food", "nextjs-vs-wordpress-2026"],
-  "belfast": ["nextjs-vs-wordpress-2026", "seo-recovery-alotek-shelters"],
-  "southampton": ["southport-marina-seo-guide", "southport-beach-tourism-seo-guide"],
-  "brighton": ["eating-our-own-dog-food", "nextjs-vs-wordpress-2026"],
-  "derby": ["seo-recovery-alotek-shelters"],
-  "plymouth": ["southport-marina-seo-guide", "southport-beach-tourism-seo-guide"],
-  "cambridge": ["nextjs-vs-wordpress-2026", "seo-recovery-alotek-shelters"],
-  "bradford": ["seo-recovery-alotek-shelters", "southport-tree-nursery-seo-guide"],
 };
 
 type Props = {

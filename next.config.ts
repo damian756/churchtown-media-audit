@@ -108,7 +108,23 @@ const nextConfig: NextConfig = {
       },
 
       // ----------------------------------------
-      // 3. GENERIC SERVICE PAGES
+      // 3. REMOVED THIN LOCATION PAGES → /locations
+      // ----------------------------------------
+      { source: '/locations/edinburgh', destination: '/locations', permanent: true },
+      { source: '/locations/glasgow', destination: '/locations', permanent: true },
+      { source: '/locations/cardiff', destination: '/locations', permanent: true },
+      { source: '/locations/belfast', destination: '/locations', permanent: true },
+      { source: '/locations/plymouth', destination: '/locations', permanent: true },
+      { source: '/locations/cambridge', destination: '/locations', permanent: true },
+      { source: '/locations/derby', destination: '/locations', permanent: true },
+      { source: '/locations/brighton', destination: '/locations', permanent: true },
+      { source: '/locations/southampton', destination: '/locations', permanent: true },
+      { source: '/locations/coventry', destination: '/locations', permanent: true },
+      { source: '/locations/bradford', destination: '/locations', permanent: true },
+      { source: '/locations/leicester', destination: '/locations', permanent: true },
+
+      // ----------------------------------------
+      // 5. GENERIC SERVICE PAGES
       // ----------------------------------------
       {
         source: '/services/technical-seo',
@@ -176,7 +192,7 @@ const nextConfig: NextConfig = {
       },
       
       // ----------------------------------------
-      // 5. WORDPRESS CLEANUP (Catch-Alls)
+      // 6. WORDPRESS CLEANUP (Catch-Alls)
       // ----------------------------------------
       {
         source: '/category/:slug*',
