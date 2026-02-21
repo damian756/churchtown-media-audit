@@ -463,23 +463,6 @@ export default async function LocationPage({ params }: Props) {
       </section>
 
       {/* Internal Links Footer */}
-      <section className="bg-slate-950 py-12 border-t border-slate-800">
-        <div className="max-w-7xl mx-auto px-6">
-            <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-6">Other Areas We Serve</p>
-            <div className="flex flex-wrap gap-x-8 gap-y-3">
-                {locations.filter(l => l.slug !== location.slug).map((loc) => (
-                    <Link 
-                        key={loc.slug} 
-                        href={`/locations/${loc.slug}`}
-                        className="text-sm text-slate-400 hover:text-blue-400 hover:underline transition-colors"
-                    >
-                        Web Design {loc.name}
-                    </Link>
-                ))}
-            </div>
-        </div>
-      </section>
-
     </main>
   );
 }
