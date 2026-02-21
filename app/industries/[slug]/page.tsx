@@ -214,6 +214,17 @@ export default async function IndustryPage({ params }: PageProps) {
           </div>
         </section>
 
+        {/* UNIQUE INTRO SECTION */}
+        {industry.introText && (
+          <section className="py-12 px-4 sm:px-6">
+            <div className="max-w-3xl mx-auto">
+              <p className="text-lg text-slate-300 leading-relaxed border-l-4 border-blue-600 pl-6">
+                {industry.introText}
+              </p>
+            </div>
+          </section>
+        )}
+
         {/* PAIN POINTS SECTION */}
         <section className="py-16 px-4 sm:px-6 bg-slate-900/50">
           <div className="max-w-5xl mx-auto">
