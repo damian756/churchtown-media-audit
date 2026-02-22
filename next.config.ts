@@ -86,12 +86,22 @@ const nextConfig: NextConfig = {
       // SOUTHPORT
       {
         source: '/seo-southport',
-        destination: '/locations/southport',
+        destination: '/services/seo',
+        permanent: true,
+      },
+      {
+        source: '/seo-southport/',
+        destination: '/services/seo',
         permanent: true,
       },
       {
         source: '/seo-company-southport',
-        destination: '/locations/southport',
+        destination: '/services/seo',
+        permanent: true,
+      },
+      {
+        source: '/seo-company-southport/',
+        destination: '/services/seo',
         permanent: true,
       },
       // LIVERPOOL
