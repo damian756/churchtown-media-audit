@@ -31,6 +31,64 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Churchtown Media",
+  "url": "https://www.churchtownmedia.co.uk/locations/southport",
+  "description":
+    "Churchtown Media is a Southport-based web design and SEO agency. Fast websites, local SEO, and honest results — no city-centre prices, no outsourcing.",
+  "telephone": "+441704635785",
+  "email": "hello@churchtownmedia.co.uk",
+  "priceRange": "££",
+  "areaServed": [
+    { "@type": "City", "name": "Southport" },
+    { "@type": "Place", "name": "Birkdale" },
+    { "@type": "Place", "name": "Churchtown" },
+    { "@type": "Place", "name": "Ainsdale" },
+    { "@type": "Place", "name": "Marshside" },
+    { "@type": "Place", "name": "Blowick" },
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Southport Digital Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Web Design Southport",
+          "url": "https://www.churchtownmedia.co.uk/services/web-design",
+        },
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Local SEO Southport",
+          "url": "https://www.churchtownmedia.co.uk/services/seo",
+        },
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Small Business Websites Southport",
+          "url": "https://www.churchtownmedia.co.uk/services/small-business",
+        },
+      },
+    ],
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "17:30",
+    },
+  ],
+};
+
 const southportBlogSlugs = [
   "invisible-on-lord-street",
   "mlec-effect-southport",
@@ -46,6 +104,12 @@ export default function SouthportPage() {
 
   return (
     <main className="min-h-screen bg-slate-950 pt-32">
+
+      {/* SCHEMA */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
 
       {/* HERO */}
       <section className="px-6 mb-20">

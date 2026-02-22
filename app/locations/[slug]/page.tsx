@@ -80,8 +80,59 @@ export default async function LocationPage({ params }: Props) {
     notFound();
   }
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Churchtown Media",
+    "url": `https://www.churchtownmedia.co.uk/locations/${location.slug}`,
+    "description": location.metaDesc,
+    "telephone": "+441704635785",
+    "email": "hello@churchtownmedia.co.uk",
+    "priceRange": "££",
+    "areaServed": [
+      { "@type": "City", "name": location.name },
+      ...(location.nearbyAreas?.map((area) => ({ "@type": "Place", "name": area })) ?? []),
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": `Digital Services in ${location.name}`,
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": `Web Design ${location.name}`,
+            "url": "https://www.churchtownmedia.co.uk/services/web-design",
+          },
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": `Local SEO ${location.name}`,
+            "url": "https://www.churchtownmedia.co.uk/services/seo",
+          },
+        },
+      ],
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "17:30",
+      },
+    ],
+  };
+
   return (
     <main className="min-h-screen bg-slate-950 pt-32">
+
+      {/* SCHEMA */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       
       {/* HERO SECTION */}
       <section className="px-6 mb-20">
