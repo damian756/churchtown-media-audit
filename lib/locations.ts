@@ -30,7 +30,7 @@ export const locations: Location[] = [
     landmark: "Lord Street",
     industryFocus: "Tourism, Hospitality & Retail",
     description: "Southport's digital landscape is driven by seasonality and visitor behavior. With over 8 million annual visitors and a thriving local economy, businesses here face a unique challenge: capturing both tourist traffic and local loyalty year-round. The town's search patterns spike during summer months and weekends, with mobile searches dominating as visitors walk Lord Street looking for places to eat, shop, and stay. We understand this rhythm because we're part of it. Our strategies account for seasonal keywords, event-driven traffic (like Air Show searches), and the critical 'near me' queries that convert visitors into customers. We've helped Southport businesses secure Map Pack dominance for searches like 'restaurants near Lord Street' and 'hotels near Southport Pier', driving walk-in traffic when it matters most.",
-    metaDesc: "Web Design & SEO Agency in Southport. The local experts. We build revenue-generating websites for businesses on Lord Street and beyond.",
+    metaDesc: "Churchtown Media is a Southport-based web design and SEO agency. Fast websites, local SEO, and honest results — no city-centre prices, no outsourcing.",
     nearbyAreas: ["Birkdale", "Churchtown", "Ainsdale", "Marshside", "Blowick"],
     marketStats: {
       population: "91,000",
