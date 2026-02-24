@@ -11,6 +11,74 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "sefton-coast-network",
+    title: "I Built Four Local Publishing Sites on My Doorstep. Here's Why.",
+    date: "Feb 24, 2026",
+    author: "Damian Roche",
+    category: "Case Studies",
+    image: "/images/sefton-coast-network-hero.jpg",
+    excerpt: "I live three miles from Royal Birkdale and five minutes from Marshside RSPB reserve. No decent guide existed for any of it. So I built four. This is the honest account of why, how, and what happened in the first week.",
+    content: `
+      <p>I've spent twenty years building websites for other people. Somewhere along the way I noticed something: I could find a decent guide to almost any corner of Britain on the internet, but not to the stretch of coast I actually live on.</p>
+
+      <p>I'm in Churchtown, Southport. Three miles from Royal Birkdale Golf Club. Five minutes from Marshside RSPB reserve. Twenty minutes from the National Trust pinewoods at Formby, where there's a functioning red squirrel population that somehow survived when the rest of England's didn't.</p>
+
+      <p>None of it had a proper guide. Not one that was editorially independent, locally written, and actually useful to someone planning a visit.</p>
+
+      <p>So this week I launched four of them.</p>
+
+      <h2>The Four Sites</h2>
+
+      <p><a href="https://www.southportguide.co.uk" target="_blank" rel="noopener noreferrer">SouthportGuide.co.uk</a> is the broadest — a full visitor guide to Southport covering restaurants, hotels, things to do, events, and two significant upcoming moments for the town: The Open Championship returning to Royal Birkdale in July 2026, and the Marine Lake Events Centre opening in 2027. The site has a business directory, a blog, and booking integrations.</p>
+
+      <p><a href="https://www.formbyguide.co.uk" target="_blank" rel="noopener noreferrer">FormbyGuide.co.uk</a> exists because no dedicated guide to Formby existed anywhere online. The National Trust covers their own estate and stops at the car park gate. TripAdvisor is generic. Formbyevents.co.uk does events only. There was a genuine editorial gap — red squirrels, the beach, the pinewoods, village dining — and nobody was filling it properly.</p>
+
+      <p><a href="https://www.seftonlinks.com" target="_blank" rel="noopener noreferrer">SeftonLinks.com</a> covers the links golf corridor — Royal Birkdale, Hillside, Formby Golf Club, West Lancashire, Southport &amp; Ainsdale, Southport Old Links. Seven courses, 18 languages, course conditions, tee time links, scorecards, and an Open 2026 hub. I built it partly because I play golf badly and wanted somewhere better than the club websites to find out what I needed to know before booking.</p>
+
+      <p><a href="https://www.seftoncoastwildlife.co.uk" target="_blank" rel="noopener noreferrer">SeftonCoastWildlife.co.uk</a> is the one that surprised me most in the building. It's a 257-species database covering birds, mammals, insects and plants found between Southport and Formby. Species profiles, seasonal guides, a nature guide to Marshside RSPB. The Sefton Coast is a Special Area of Conservation — natterjack toads, little terns, ringed plovers — and there was nowhere pulling it all together into something actually readable.</p>
+
+      <h2>The Stack</h2>
+
+      <p>All four sites run on the same foundation: Next.js App Router, TypeScript, Tailwind CSS v4, deployed to Vercel. SouthportGuide uses Prisma and PostgreSQL for its business directory. The rest are primarily static — which means they're fast, maintainable, and don't have WordPress's maintenance overhead.</p>
+
+      <p>The shared stack was deliberate. Every pattern I build for one site carries to the others. The cross-linking strategy, the structured data implementation, the component library — it all transfers. Building four sites doesn't take four times the work when the foundation is the same.</p>
+
+      <p>Analytics is Plausible across all four — cookieless, GDPR-compliant, no consent banner required. I'm not interested in surveillance capitalism. I just want to know which pages are working.</p>
+
+      <h2>Why a Network, Not One Site</h2>
+
+      <p>The easy answer is topical authority. A site that covers one subject in depth signals something different to Google than a site that covers everything lightly. SeftonLinks doesn't try to write about red squirrels. FormbyGuide doesn't try to cover championship golf. They each go deep on one thing.</p>
+
+      <p>But the more honest answer is that the subjects are genuinely distinct. The person searching for "Formby beach parking" is not the same person searching for "Royal Birkdale green fees." They need different things. Trying to serve both on one site would mean serving neither properly.</p>
+
+      <p>The network structure means the four sites can cross-link editorially — not with a generic "see our sister sites" footer bar, but with genuine contextual links placed where a real user would benefit from them. The wildlife site links to SouthportGuide when it makes sense for a visitor to know where to eat after a morning at Marshside. The golf site links to FormbyGuide for dining recommendations near Formby Golf Club. The connections are real, not manufactured.</p>
+
+      <h2>The SEO Architecture</h2>
+
+      <p>Each site has a full structured data implementation built from the ground up — connecting publisher, authors, and content in a way that search engines can actually verify. The technical infrastructure is designed to make the relationships between the four sites explicit and machine-readable, rather than just implied by the cross-links. I've been doing this for fifteen years and it still surprises me how many sites skip this step entirely.</p>
+
+      <h2>What's Already Working</h2>
+
+      <p>It's been one week. I'm not going to pretend I have ranking data. What I can say is that the sites are indexing cleanly, the structured data validates without errors, and Core Web Vitals are strong across all four — which is what you'd expect from static Next.js on Vercel but is still worth confirming.</p>
+
+      <p>The keyword opportunity is real. A SEMrush gap analysis showed that the main competitors on most Sefton Coast queries — the National Trust, TripAdvisor, formbyevents.co.uk — rank weakly and have no editorial depth. Keyword difficulty is low across almost everything I'm targeting. The content just needs to be there and be good.</p>
+
+      <p>The Open 2026 hub on SouthportGuide is the biggest single bet. The championship is in July. There are five months for the site to establish authority before search demand peaks. If it gets there, the traffic opportunity is significant — and it's not like there are strong competitors for "stay in Southport for The Open" or "Formby accommodation The Open 2026."</p>
+
+      <h2>The Honest Version</h2>
+
+      <p>I built this partly as a business, partly as proof of concept for everything I tell clients to do, and partly because I live here and it genuinely irritated me that nobody had done it properly.</p>
+
+      <p>The commercial model is straightforward: businesses pay for featured placement in the directories. That funds the editorial work. There's no sponsored content, no paid reviews, no advertorial dressed up as journalism. That's not a moral position — it's a practical one. The sites only have value if people trust them, and people only trust them if the editorial is honest.</p>
+
+      <p>Ask me again in six months. I'll have actual numbers by then.</p>
+
+      <p style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #1e293b; color: #94a3b8; font-size: 0.9rem;">
+        <em>The four sites are at <a href="https://www.southportguide.co.uk" style="color: #60a5fa;">southportguide.co.uk</a>, <a href="https://www.formbyguide.co.uk" style="color: #60a5fa;">formbyguide.co.uk</a>, <a href="https://www.seftonlinks.com" style="color: #60a5fa;">seftonlinks.com</a> and <a href="https://www.seftoncoastwildlife.co.uk" style="color: #60a5fa;">seftoncoastwildlife.co.uk</a>.</em>
+      </p>
+    `,
+  },
+  {
     slug: "headless-blog-content-scaling-case-study",
     title: "Case Study: 253 Keywords in 4 Weeks Without Breaking WordPress",
     date: "Feb 20, 2026",
