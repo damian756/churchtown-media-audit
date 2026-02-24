@@ -425,7 +425,7 @@ export default function PortfolioPage() {
                           alt={`${project.name} website screenshot`}
                           fill
                           sizes="(max-width: 768px) 100vw, 50vw"
-                          className="object-cover"
+                          className="object-cover object-top"
                         />
                       </div>
                     </div>
