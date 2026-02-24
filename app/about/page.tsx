@@ -82,6 +82,12 @@ export default function AboutPage() {
           "https://twitter.com/churchtownmedia",
           "https://github.com/churchtownmedia"
         ],
+        "owns": [
+          { "@type": "WebSite", "name": "SouthportGuide.co.uk", "url": "https://www.southportguide.co.uk" },
+          { "@type": "WebSite", "name": "FormbyGuide.co.uk", "url": "https://www.formbyguide.co.uk" },
+          { "@type": "WebSite", "name": "SeftonLinks.com", "url": "https://www.seftonlinks.com" },
+          { "@type": "WebSite", "name": "SeftonCoastWildlife.co.uk", "url": "https://www.seftoncoastwildlife.co.uk" }
+        ],
         "alumniOf": "Self-taught developer with 20+ years experience",
         "knowsAbout": [
           "Next.js Development",
@@ -426,6 +432,42 @@ export default function AboutPage() {
                     not just "fast enough."
                   </p>
                 </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        {/* SEFTON COAST NETWORK */}
+        <section className="py-16 px-4 sm:px-6 bg-slate-900/50">
+          <article className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 items-start">
+              <div>
+                <p className="text-green-400 text-xs font-bold uppercase tracking-widest mb-3">Side Projects — or the Main Event</p>
+                <h2 className="text-3xl md:text-4xl font-black mb-6 text-white">The Sefton Coast Network</h2>
+                <div className="space-y-4 text-slate-300 leading-relaxed">
+                  <p>
+                    Beyond client work, I own and operate the <strong>Sefton Coast Network</strong> — four independent editorial guides built on the same stack I use for clients. They&apos;re real publishing businesses, not just demo sites.
+                  </p>
+                  <p>
+                    Each one targets a specific audience and subject area: the visitor guide to Southport, the guide to Formby, championship links golf on the coast, and a 257-species coastal wildlife database. They cross-link, share domain authority, and operate as a network.
+                  </p>
+                  <p>
+                    It&apos;s both the proof of concept for everything I build for clients, and a commercial project in its own right. If you want to see what a properly engineered content site looks like — technically, structurally, and editorially — this is it.
+                  </p>
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                {[
+                  { name: "SouthportGuide.co.uk", desc: "Visitor guide to Southport. 1,000+ business listings, The Open 2026 hub, MLEC guide.", url: "https://www.southportguide.co.uk", color: "border-blue-600/40 bg-blue-600/5" },
+                  { name: "FormbyGuide.co.uk", desc: "National Trust pinewoods, red squirrels, Formby Beach and village dining.", url: "https://www.formbyguide.co.uk", color: "border-green-600/40 bg-green-600/5" },
+                  { name: "SeftonLinks.com", desc: "Championship links golf on the Sefton Coast. 7 courses, 18 languages, The Open 2026.", url: "https://www.seftonlinks.com", color: "border-yellow-600/40 bg-yellow-600/5" },
+                  { name: "SeftonCoastWildlife.co.uk", desc: "257-species database covering birds, mammals, insects and plants from Southport to Formby.", url: "https://www.seftoncoastwildlife.co.uk", color: "border-teal-600/40 bg-teal-600/5" },
+                ].map(({ name, desc, url, color }) => (
+                  <a key={url} href={url} target="_blank" rel="noopener noreferrer" className={`block border ${color} rounded-xl p-4 hover:border-opacity-70 transition-all group`}>
+                    <p className="font-bold text-white text-sm mb-1 group-hover:text-blue-300 transition-colors">{name} ↗</p>
+                    <p className="text-slate-400 text-xs leading-relaxed">{desc}</p>
+                  </a>
+                ))}
               </div>
             </div>
           </article>
