@@ -107,6 +107,17 @@ export default function PortfolioPage() {
             "@type": "Organization",
             "@id": "https://www.churchtownmedia.co.uk/#organization"
           }
+        },
+        {
+          "@type": "CreativeWork",
+          "position": 7,
+          "name": "Sefton Coast Wildlife",
+          "description": "Independent species database and field guide to the birds, insects, plants and mammals of the Sefton Coast. 257+ species with Wikipedia-sourced images, seasonal filters, and editorial blog.",
+          "url": "https://seftoncoastwildlife.co.uk",
+          "creator": {
+            "@type": "Organization",
+            "@id": "https://www.churchtownmedia.co.uk/#organization"
+          }
         }
       ]
     }
@@ -267,6 +278,32 @@ export default function PortfolioPage() {
         "Complete guide to 6 championship courses from Royal Birkdale to Southport Old Links",
         "The Open Championship 2026 countdown and visitor guide",
         "Course conditions, tee times, scorecards, and golf break planning tools",
+      ]
+    },
+    {
+      id: 7,
+      name: "Sefton Coast Wildlife",
+      tagline: "257 Species. One Independent Guide.",
+      industry: "Wildlife & Nature Publishing",
+      url: "https://seftoncoastwildlife.co.uk",
+      status: "live",
+      image: "/images/seftoncoastwildlife-portfolio.png",
+      description: "An independent species database and editorial field guide to the birds, insects, plants and mammals of the Sefton Coast — from Marshside RSPB to the Formby pinewoods. Built as a genuine public resource, not a scraped aggregator.",
+      challenge: "No dedicated wildlife guide existed for the Sefton Coast despite it being one of England's most significant coastal habitats — home to 80,000+ Pink-footed Geese, nationally rare Natterjack Toads, and one of England's last Red Squirrel populations.",
+      solution: "Built a full species database with 257+ entries across four categories, Wikipedia API image integration, seasonal and habitat filters, an editorial blog, and structured data for every species page.",
+      results: [
+        { label: "Species Recorded", value: "257+", description: "Birds, insects, plants, mammals" },
+        { label: "Categories", value: "4", description: "Full taxonomic coverage" },
+        { label: "Image Source", value: "Wikipedia API", description: "Auto-fetched with fallback" },
+        { label: "Schema Types", value: "Taxon + Article", description: "Rich results ready" },
+      ],
+      techStack: ["Next.js 16", "TypeScript", "Tailwind CSS", "Vercel", "Wikipedia API", "Schema.org"],
+      caseStudySlug: null,
+      highlights: [
+        "257-species database with identification tips, seasonal presence, and habitat data",
+        "Wikipedia REST API integration with concurrency-limited fetching and retry logic",
+        "Client-side filters: search, conservation status, season, habitat, and sort order",
+        "FAQPage, Taxon, Article, and BreadcrumbList schema across all pages",
       ]
     }
   ];
