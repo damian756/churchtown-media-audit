@@ -58,16 +58,16 @@ export default function Footer() {
             </ul>
         </div>
 
-        {/* COL 3: AREAS SERVED (Updated with Big 5) */}
+        {/* COL 3: AREAS SERVED */}
         <div>
             <h4 className="text-slate-200 font-bold mb-6 text-sm uppercase tracking-wider">Areas Served</h4>
             <ul className="space-y-4 text-sm font-medium text-slate-500">
-                <li><Link href="/southport-growth" className="hover:text-blue-400 transition-colors">Southport Growth Hub</Link></li>
-                <li><Link href="/locations/manchester" className="hover:text-blue-400 transition-colors">Web Design Manchester</Link></li>
-                <li><Link href="/locations/liverpool" className="hover:text-blue-400 transition-colors">Web Design Liverpool</Link></li>
-                <li><Link href="/locations/preston" className="hover:text-blue-400 transition-colors">Web Design Preston</Link></li>
-                <li><Link href="/locations/blackpool" className="hover:text-blue-400 transition-colors">Web Design Blackpool</Link></li>
-                
+                <li><Link href="/locations/southport" className="hover:text-blue-400 transition-colors">Web Design & SEO Southport</Link></li>
+                <li><Link href="/locations/manchester" className="hover:text-blue-400 transition-colors">Web Design & SEO Manchester</Link></li>
+                <li><Link href="/locations/liverpool" className="hover:text-blue-400 transition-colors">Web Design & SEO Liverpool</Link></li>
+                <li><Link href="/locations/preston" className="hover:text-blue-400 transition-colors">Web Design & SEO Preston</Link></li>
+                <li><Link href="/locations/blackpool" className="hover:text-blue-400 transition-colors">Web Design & SEO Blackpool</Link></li>
+
                 <li className="pt-2 border-t border-white/5 mt-2">
                     <Link href="/locations" className="text-blue-500 font-bold hover:text-white transition-colors flex items-center gap-1">
                         View All Locations →
