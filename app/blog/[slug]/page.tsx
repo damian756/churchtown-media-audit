@@ -67,18 +67,26 @@ export default async function BlogPost({ params }: Props) {
     "dateModified": new Date(post.date).toISOString(),
     "author": {
       "@type": "Person",
+      "@id": "https://www.churchtownmedia.co.uk/about#founder",
       "name": post.author,
       "url": "https://www.churchtownmedia.co.uk/about",
       "jobTitle": "Founder & CEO",
+      "sameAs": [
+        "https://www.linkedin.com/in/damian-roche-7ba8293a5/",
+        "https://find-and-update.company-information.service.gov.uk/company/16960442"
+      ],
       "worksFor": {
         "@type": "Organization",
+        "@id": "https://www.churchtownmedia.co.uk/#organization",
         "name": "Churchtown Media",
         "url": "https://www.churchtownmedia.co.uk"
       }
     },
     "publisher": {
       "@type": "Organization",
+      "@id": "https://www.churchtownmedia.co.uk/#organization",
       "name": "Churchtown Media",
+      "url": "https://www.churchtownmedia.co.uk",
       "logo": {
         "@type": "ImageObject",
         "url": "https://www.churchtownmedia.co.uk/icon.png"
