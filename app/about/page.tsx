@@ -80,7 +80,7 @@ export default function AboutPage() {
         "sameAs": [
           "https://www.linkedin.com/in/damian-roche-7ba8293a5/",
           "https://twitter.com/churchtownmedia",
-          "https://github.com/churchtownmedia"
+          "https://github.com/damian756"
         ],
         "owns": [
           { "@type": "WebSite", "name": "SouthportGuide.co.uk", "url": "https://www.southportguide.co.uk" },
