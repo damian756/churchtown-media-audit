@@ -163,7 +163,7 @@ export default function BlogFeed({ posts }: { posts: BlogPost[] }) {
                 <div className="inline-block bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
                     Latest Report
                 </div>
-                <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 group-hover:text-blue-200 transition-colors leading-tight">
+                <h2 className="text-2xl md:text-5xl font-bold text-white mb-4 group-hover:text-blue-200 transition-colors leading-tight line-clamp-3">
                     {heroPost.title}
                 </h2>
                 <div className="flex items-center gap-2 text-slate-300 font-medium">
