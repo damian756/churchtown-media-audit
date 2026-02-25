@@ -45,3 +45,15 @@ next-env.d.ts
 .cursorrules
 
 .vercel
+
+# Cursor AI
+.cursorrules
+
+# Internal strategy docs
+ABOUT_PAGE.md
+IMPLEMENTATION_REPORT.md
+INDUSTRY_ENHANCEMENT_GUIDE.md
+VOICE.md
+WHO_WE_HELP.md
+WORKTREE_SYNC_GUIDE.md
+WORK_PAGE.md
