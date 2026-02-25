@@ -322,7 +322,7 @@ export default function AboutPage() {
                     className="rounded-2xl shadow-xl"
                   />
                   <p className="text-center text-sm text-slate-400 mt-4 italic">
-                    "Building sites that perform by day. Badly playing golf by weekend."
+                    "The greatest inheritance a father can give is not money or property, but the confidence to build something from nothing."
                   </p>
                 </div>
               </div>
