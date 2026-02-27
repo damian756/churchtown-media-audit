@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -114,22 +115,7 @@ export default function RootLayout({
         
         <Footer />
 
-        {/* --- 3. PLAUSIBLE ANALYTICS (privacy-friendly, no cookies) --- */}
-        <Script
-          id="plausible-script"
-          src="https://plausible.io/js/pa-wBXYDQ17vJVqIdJkM28Mt.js"
-          strategy="lazyOnload"
-        />
-        <Script
-          id="plausible-init"
-          strategy="lazyOnload"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-              plausible.init();
-            `,
-          }}
-        />
+        <Analytics />
 
       </body>
     </html>
