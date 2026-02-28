@@ -34,7 +34,11 @@ export const metadata: Metadata = {
   authors: [{ name: 'Churchtown Media Team', url: 'https://www.churchtownmedia.co.uk' }],
   generator: 'Next.js',
   keywords: ['Web Design Southport', 'SEO Southport', 'Digital Agency North West', 'Next.js Developer'],
-  // ❌ DELETED: alternates: { canonical: '/' }, <-- This was the bug!
+  alternates: {
+    types: {
+      "application/rss+xml": "https://www.churchtownmedia.co.uk/feed",
+    },
+  },
   openGraph: {
     title: 'Churchtown Media | Digital Growth Experts',
     description: 'Stop burning money on ads. Start building a revenue engine.',
