@@ -6,15 +6,15 @@ import { Zap, Smartphone, Code2, ArrowRight, BarChart3, CheckCircle2, Plus, Shie
 
 // METADATA WITH ENHANCED OPENGRAPH
 export const metadata: Metadata = {
-  title: 'Web Design Agency North West | Next.js Experts',
-  description: 'Award-winning Next.js web design for North West businesses. We build lightning-fast, conversion-optimized websites that rank #1 on Google. 90+ Lighthouse scores guaranteed. Based in Southport.',
-  keywords: ['web design north west', 'next.js development', 'react web design', 'fast websites', 'enterprise web development', 'web design southport', 'web design liverpool', 'web design manchester'],
+  title: 'Web Design Agency Southport | Churchtown Media',
+  description: 'Southport web design agency building lightning-fast Next.js websites that rank and convert. 90+ Lighthouse scores. No templates. Based in Southport, serving Liverpool, Manchester and the North West.',
+  keywords: ['web design southport', 'website design southport', 'web design agency southport', 'next.js development', 'web design north west', 'web design liverpool', 'web design manchester'],
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk/services/web-design',
   },
   openGraph: {
-    title: 'Enterprise Web Design Agency North West | Next.js Experts',
-    description: 'We build lightning-fast, conversion-optimized websites that rank #1 on Google. 90+ Lighthouse scores guaranteed.',
+    title: 'Web Design Agency Southport | Churchtown Media',
+    description: 'Southport web design agency building lightning-fast Next.js websites that rank and convert. 90+ Lighthouse scores. No templates.',
     url: 'https://www.churchtownmedia.co.uk/services/web-design',
     type: 'website',
     siteName: 'Churchtown Media',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Enterprise Web Design | Next.js Experts | Churchtown Media',
+    title: 'Web Design Agency Southport | Churchtown Media',
     description: 'Lightning-fast, conversion-optimized websites that rank #1 on Google. 90+ Lighthouse scores guaranteed.',
     images: ['https://www.churchtownmedia.co.uk/images/web-design-hero.jpg'],
   },
@@ -268,10 +268,10 @@ export default function WebDesignPage() {
               </div>
 
               <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6">
-                Next.js Websites
+                Web Design
                 <br />
                 <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                  That Print Money
+                  Southport
                 </span>
               </h1>
               

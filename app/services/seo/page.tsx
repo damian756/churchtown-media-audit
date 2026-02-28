@@ -6,15 +6,15 @@ import { Search, MapPin, BarChart, ArrowRight, Laptop, CheckCircle2, Plus, Trend
 
 // ENHANCED METADATA WITH OPENGRAPH
 export const metadata: Metadata = {
-  title: 'SEO Agency North West | Data-Driven Results',
-  description: 'Award-winning SEO agency specializing in North West businesses. We deliver measurable ROI through technical SEO, local domination, and content strategy. 287% average traffic growth. Based in Southport.',
-  keywords: ['seo north west', 'seo liverpool', 'seo manchester', 'technical seo', 'local seo', 'seo agency southport', 'seo consultant', 'data-driven seo'],
+  title: 'SEO Agency Southport | Churchtown Media',
+  description: 'Southport SEO agency delivering measurable results. Technical SEO, local search domination, and content strategy for North West businesses. Based in Southport, serving Liverpool, Manchester and beyond.',
+  keywords: ['seo southport', 'seo agency southport', 'seo company southport', 'local seo southport', 'technical seo', 'seo north west', 'seo liverpool', 'seo manchester'],
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk/services/seo',
   },
   openGraph: {
-    title: 'Data-Driven SEO Agency North West | Liverpool, Manchester',
-    description: 'Award-winning SEO agency delivering measurable ROI. 287% average traffic growth through technical SEO and local domination.',
+    title: 'SEO Agency Southport | Churchtown Media',
+    description: 'Southport SEO agency delivering measurable results. Technical SEO, local search domination, and content strategy for North West businesses.',
     url: 'https://www.churchtownmedia.co.uk/services/seo',
     type: 'website',
     siteName: 'Churchtown Media',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Data-Driven SEO Agency | North West | Churchtown Media',
+    title: 'SEO Agency Southport | Churchtown Media',
     description: '287% average traffic growth through technical SEO and local domination. Measurable ROI guaranteed.',
     images: ['https://www.churchtownmedia.co.uk/images/seo-results-dashboard.jpg'],
   },
@@ -265,10 +265,10 @@ export default function SEOPage() {
               </div>
 
               <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6">
-                SEO That Dominates
+                SEO Agency
                 <br />
                 <span className="bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
-                  Google Rankings
+                  Southport
                 </span>
               </h1>
               

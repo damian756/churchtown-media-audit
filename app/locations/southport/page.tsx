@@ -6,16 +6,16 @@ import type { Metadata } from "next";
 import StatCard from "@/app/components/StatCard";
 
 export const metadata: Metadata = {
-  title: "Web Design & SEO Agency Southport | Churchtown Media",
+  title: "Digital Agency Southport | Web Design & SEO | Churchtown Media",
   description:
-    "Churchtown Media is a Southport-based web design and SEO agency. Fast websites, local SEO, and honest results — no city-centre prices, no outsourcing.",
+    "Churchtown Media is Southport's local digital agency — web design and SEO for Southport businesses. Based in Churchtown, five minutes from Lord Street. No outsourcing, no city-centre prices.",
   alternates: {
     canonical: "https://www.churchtownmedia.co.uk/locations/southport",
   },
   openGraph: {
-    title: "Web Design & SEO Agency Southport | Churchtown Media",
+    title: "Digital Agency Southport | Churchtown Media",
     description:
-      "Churchtown Media is a Southport-based web design and SEO agency. Fast websites, local SEO, and honest results — no city-centre prices, no outsourcing.",
+      "Churchtown Media is Southport's local digital agency — web design and SEO for Southport businesses. Based in Churchtown, five minutes from Lord Street.",
     url: "https://www.churchtownmedia.co.uk/locations/southport",
     type: "website",
     siteName: "Churchtown Media",
@@ -37,7 +37,7 @@ const jsonLd = {
   "name": "Churchtown Media",
   "url": "https://www.churchtownmedia.co.uk/locations/southport",
   "description":
-    "Churchtown Media is a Southport-based web design and SEO agency. Fast websites, local SEO, and honest results — no city-centre prices, no outsourcing.",
+    "Churchtown Media is Southport's local digital agency — web design and SEO for Southport businesses. Based in Churchtown, five minutes from Lord Street. No outsourcing.",
   "telephone": "+441704635785",
   "email": "hello@churchtownmedia.co.uk",
   "priceRange": "££",
@@ -121,15 +121,29 @@ export default function SouthportPage() {
               <span>Based in Southport — serving the whole borough</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight tracking-tight">
-              Southport&apos;s Own<br />
-              <span className="text-blue-500">Web &amp; SEO Agency.</span>
+              Southport&apos;s Local<br />
+              <span className="text-blue-500">Digital Agency.</span>
             </h1>
             <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
-              Not a city agency that added Southport to a dropdown. We&apos;re a proper local business — we know Lord Street, we know the seasonal rhythms, and we know which Southport searches actually convert. Come and meet us. We don&apos;t charge city-centre rates either.
+              Not a city agency that added Southport to a dropdown. We&apos;re a proper local business — based in Churchtown, five minutes from Lord Street. We know the seasonal rhythms, the local market, and which searches actually convert. No outsourcing. No city-centre rates.
               <span className="block mt-4 text-sm text-slate-400">
                 Serving: Birkdale • Churchtown • Ainsdale • Marshside • Blowick
               </span>
             </p>
+            <div className="flex flex-wrap gap-3 mb-8">
+              <Link
+                href="/services/seo"
+                className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all backdrop-blur-md border border-white/10"
+              >
+                SEO Southport <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+              <Link
+                href="/services/web-design"
+                className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all backdrop-blur-md border border-white/10"
+              >
+                Web Design Southport <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
             <div className="flex flex-wrap gap-4">
               <Link
                 href="/audit"
