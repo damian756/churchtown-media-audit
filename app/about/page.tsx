@@ -130,14 +130,19 @@ export default function AboutPage() {
               <div className="order-2 md:order-1">
                 <div className="relative">
                   <div className="absolute inset-0 bg-blue-600/20 rounded-3xl blur-3xl"></div>
-                  <Image
-                    src="/images/about/damian-headshot.jpg"
-                    alt="Damian Roche - Founder of Churchtown Media"
-                    width={600}
-                    height={600}
-                    className="relative rounded-3xl border border-slate-800 shadow-2xl"
-                    priority
-                  />
+                  <figure>
+                    <Image
+                      src="/images/about/damian-rspb-marshside.webp"
+                      alt="Damian Roche at RSPB Marshside, Southport — Founder of Churchtown Media"
+                      width={600}
+                      height={600}
+                      className="relative rounded-3xl border border-slate-800 shadow-2xl"
+                      priority
+                    />
+                    <figcaption className="text-center text-sm text-slate-400 mt-4 italic">
+                      Former British Army. I bring the same discipline and attention to detail to every project I take on.
+                    </figcaption>
+                  </figure>
                 </div>
               </div>
 
