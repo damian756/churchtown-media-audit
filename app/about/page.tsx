@@ -140,7 +140,7 @@ export default function AboutPage() {
                       priority
                     />
                     <figcaption className="text-center text-sm text-slate-400 mt-4 italic">
-                      Former British Army. I bring the same discipline and attention to detail to every project I take on.
+                      Former British Army (Queen&apos;s Guards). I bring the same discipline and attention to detail to every project I take on.
                     </figcaption>
                   </figure>
                 </div>
