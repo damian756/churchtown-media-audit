@@ -62,7 +62,9 @@ export default function Footer() {
         <div>
             <h4 className="text-slate-200 font-bold mb-6 text-sm uppercase tracking-wider">Areas Served</h4>
             <ul className="space-y-4 text-sm font-medium text-slate-500">
-                <li><Link href="/locations/southport" className="hover:text-blue-400 transition-colors">Web Design & SEO Southport</Link></li>
+                <li><Link href="/locations/southport" className="hover:text-blue-400 transition-colors">Digital Agency Southport</Link></li>
+                <li><Link href="/services/seo" className="hover:text-blue-400 transition-colors">SEO Agency Southport</Link></li>
+                <li><Link href="/services/web-design" className="hover:text-blue-400 transition-colors">Web Design Southport</Link></li>
                 <li><Link href="/locations/manchester" className="hover:text-blue-400 transition-colors">Web Design & SEO Manchester</Link></li>
                 <li><Link href="/locations/liverpool" className="hover:text-blue-400 transition-colors">Web Design & SEO Liverpool</Link></li>
                 <li><Link href="/locations/preston" className="hover:text-blue-400 transition-colors">Web Design & SEO Preston</Link></li>
