@@ -142,11 +142,6 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: '/search-engine-optimisation',
-        destination: '/services/seo',
-        permanent: true,
-      },
-      {
         source: '/web-design',
         destination: '/services/web-design',
         permanent: true,
@@ -216,11 +211,6 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/tag/:slug*',
-        destination: '/blog', 
-        permanent: true,
-      },
-      {
-        source: '/feed',
         destination: '/blog', 
         permanent: true,
       },

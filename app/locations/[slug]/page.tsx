@@ -83,12 +83,21 @@ export default async function LocationPage({ params }: Props) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
+    "@id": "https://www.churchtownmedia.co.uk/#organization",
     "name": "Churchtown Media",
     "url": `https://www.churchtownmedia.co.uk/locations/${location.slug}`,
     "description": location.metaDesc,
     "telephone": "+441704635785",
     "email": "hello@churchtownmedia.co.uk",
     "priceRange": "££",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "5 Cambridge Avenue",
+      "addressLocality": "Southport",
+      "addressRegion": "Merseyside",
+      "postalCode": "PR9 9SA",
+      "addressCountry": "GB"
+    },
     "areaServed": [
       { "@type": "City", "name": location.name },
       ...(location.nearbyAreas?.map((area) => ({ "@type": "Place", "name": area })) ?? []),

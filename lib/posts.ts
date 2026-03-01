@@ -11,6 +11,166 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "alotek-shelters-month-1-seo-results",
+    title: "30 Days. 10 #1 Rankings. AI Overviews on Every Term. The Alotek Month 1 Report.",
+    date: "Mar 1, 2026",
+    author: "Damian Roche",
+    category: "Case Studies",
+    image: "/images/alotek-rankings.webp",
+    excerpt: "Alotek Shelters went from WordPress and page 2 to #1 for every core commercial keyword in 30 days. Here's the full SEMrush data, the AI Overview story, and why low-volume B2B keywords are worth more than they look.",
+    content: `
+      <p>I'm going to keep this straightforward. Here's what the data looks like after month one of Alotek's SEO retainer.</p>
+
+      <p>First, some context. Alotek Shelters are a Lancashire manufacturer — bus shelters, covered walkways, outdoor pram storage. They'd spent money with a previous agency and had very little to show for it. When I took them on, we migrated their site from WordPress to Next.js before any retainer was signed. I didn't charge for it. They're a hard-working local family and the old platform was the wrong foundation. There's no point doing SEO on a slow, poorly-structured site — you're filling a bucket with a hole in the bottom.</p>
+
+      <p>They then came on as an SEO client. Month one closed on 1st March 2026. Here's what happened.</p>
+
+      <hr />
+
+      <h2>The Rankings Data</h2>
+
+      <p>This is from SEMrush Position Tracking, Jan 31 to Mar 1, 2026. I'm not going to dress it up.</p>
+
+      <figure style="margin: 2rem 0;">
+        <img
+          src="/images/alotek-rankings.webp"
+          alt="SEMrush position tracking for alotekshelters.co.uk showing multiple #1 rankings with AI Overview appearances — Jan 31 to Mar 1, 2026"
+          style="width: 100%; border-radius: 0.75rem; border: 1px solid #1e293b;"
+        />
+        <figcaption style="text-align: center; color: #64748b; font-size: 0.875rem; margin-top: 0.75rem;">SEMrush Position Tracking — alotekshelters.co.uk — Jan 31 to Mar 1, 2026</figcaption>
+      </figure>
+
+      <div style="overflow-x: auto; margin: 2rem 0;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem;">
+          <thead>
+            <tr style="background: #1e293b; color: #94a3b8; text-align: left;">
+              <th style="padding: 0.75rem 1rem; border-bottom: 1px solid #334155;">Keyword</th>
+              <th style="padding: 0.75rem 1rem; border-bottom: 1px solid #334155; text-align: center;">Jan 31</th>
+              <th style="padding: 0.75rem 1rem; border-bottom: 1px solid #334155; text-align: center;">Mar 1</th>
+              <th style="padding: 0.75rem 1rem; border-bottom: 1px solid #334155; text-align: center;">Change</th>
+              <th style="padding: 0.75rem 1rem; border-bottom: 1px solid #334155; text-align: center;">Volume</th>
+            </tr>
+          </thead>
+          <tbody style="color: #cbd5e1;">
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 0.75rem 1rem;">bus shelter suppliers</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #f87171;">16</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80; font-weight: bold;">1</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80;">↑15</td>
+              <td style="padding: 0.75rem 1rem; text-align: center;">210</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b; background: #0f172a;">
+              <td style="padding: 0.75rem 1rem;">bus shelter companies</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #f87171;">15</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80; font-weight: bold;">1</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80;">↑14</td>
+              <td style="padding: 0.75rem 1rem; text-align: center;">30</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 0.75rem 1rem;">council bus shelter manufacturer</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #f87171;">5</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80; font-weight: bold;">1</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80;">↑4</td>
+              <td style="padding: 0.75rem 1rem; text-align: center;">0</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b; background: #0f172a;">
+              <td style="padding: 0.75rem 1rem;">parish bus shelters supplier</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #fbbf24;">2</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80; font-weight: bold;">1</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80;">↑1</td>
+              <td style="padding: 0.75rem 1rem; text-align: center;">0</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 0.75rem 1rem;">parish council bus shelter</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #94a3b8;">—</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80; font-weight: bold;">1</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80;">NEW</td>
+              <td style="padding: 0.75rem 1rem; text-align: center;">0</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b; background: #0f172a;">
+              <td style="padding: 0.75rem 1rem;">parish council bus shelter manufacturer</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #fbbf24;">2</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80; font-weight: bold;">1</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80;">↑1</td>
+              <td style="padding: 0.75rem 1rem; text-align: center;">0</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 0.75rem 1rem;">bus shelter manufacturers</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80; font-weight: bold;">1</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80; font-weight: bold;">1</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #94a3b8;">held</td>
+              <td style="padding: 0.75rem 1rem; text-align: center;">210</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b; background: #0f172a;">
+              <td style="padding: 0.75rem 1rem;">outdoor pram storage</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80; font-weight: bold;">1</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80; font-weight: bold;">1</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #94a3b8;">held</td>
+              <td style="padding: 0.75rem 1rem; text-align: center;">260</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 0.75rem 1rem;">bus shelters for parish councils</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80; font-weight: bold;">1</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80; font-weight: bold;">1</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #94a3b8;">held</td>
+              <td style="padding: 0.75rem 1rem; text-align: center;">0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Every tracked keyword is now at position 1. Some were already there from the initial technical work before the retainer started. Others have moved — the biggest shift being "bus shelter suppliers" from 16 to 1 in 30 days. That's the one that matters most commercially.</p>
+
+      <hr />
+
+      <h2>The AI Overview Point</h2>
+
+      <p>Every keyword in that table is triggering an AI Overview — the box that appears above the traditional blue links when Google's AI pulls a direct answer. You can see the SF (SERP Features) column in the screenshot.</p>
+
+      <p>This matters more than it might look. When someone at a parish council or local authority types "bus shelter suppliers" into Google, they're not doing casual research. They're looking for a company to contact. The AI Overview puts Alotek's name at the very top of the page — before the organic results even load. That's the most prominent position on the search results page in 2026.</p>
+
+      <p>Ranking #1 in the blue links used to be the goal. Now, ranking #1 with an AI Overview on top is. Alotek has both.</p>
+
+      <hr />
+
+      <h2>The Low Volume Argument</h2>
+
+      <p>I'll address this directly because I'd be surprised if you didn't notice it. Several of those keywords show zero or very low search volume in SEMrush. "Council bus shelter manufacturer" shows 0. "Parish council bus shelter" shows 0.</p>
+
+      <p>For a consumer brand, those numbers would be meaningless. For a B2B manufacturer selling to local authorities, parish councils, and housing associations, they're not. A single contract for a bus shelter installation can be worth £5,000 to £50,000. One enquiry from a procurement officer who found Alotek at the top of a niche search could pay for twelve months of SEO work.</p>
+
+      <p>The search volumes are low because the buyer pool is small and specific. That's not a weakness in the strategy — it is the strategy. You're not trying to rank for "bus shelter" (vague, no intent). You're ranking for "parish council bus shelter manufacturer" (specific, purchase intent, logged onto a council computer). Those are different searches from different people in very different stages of decision-making.</p>
+
+      <p>"Bus shelter suppliers" at volume 210 might be the most commercially valuable keyword Alotek has. 210 searches a month of people looking to buy. We're #1 for it. That's the point.</p>
+
+      <hr />
+
+      <h2>How We Got Here</h2>
+
+      <p>The WordPress to Next.js migration came first. Not because Next.js is magic, but because the previous site had structural problems that no amount of SEO work could overcome. Slow load times, poor crawlability, no semantic HTML structure. You can't win a race on flat tyres.</p>
+
+      <p>Month one of the retainer was primarily on-page — restructuring content around the specific search terms buyers actually use, tightening up the page hierarchy, and making sure every product and service page was doing a clear job. No smoke and mirrors, no link schemes. Just content that answers the right question for the right person.</p>
+
+      <p>The AI Overviews followed from the content quality. Google's AI pulls from pages that give clear, structured, authoritative answers. That's what we optimised for.</p>
+
+      <hr />
+
+      <h2>What Comes Next</h2>
+
+      <p>Month 2 focus is clicks. Rankings are the lagging indicator — impressions and clicks are the leading indicators of actual enquiries. The ranking data is solid. Now we watch the Search Console data for which terms are converting from impressions to clicks, and we optimise the title tags and meta descriptions to improve CTR.</p>
+
+      <p>There are also two or three additional terms in striking distance that didn't make this month's table. We'll be targeting those next.</p>
+
+      <p>I'll post the month 2 data here when it's ready.</p>
+
+      <hr />
+
+      <p style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #1e293b; color: #94a3b8; font-size: 0.9rem;">
+        <em>If your site is on WordPress and you're not ranking for the terms your actual buyers search, <a href="/contact" style="color: #60a5fa;">get in touch</a>. We'll tell you honestly whether it's fixable on your current platform or whether you need a proper rebuild first.</em>
+      </p>
+    `,
+  },
+  {
     slug: "sefton-coast-network",
     title: "I Built Four Local Publishing Sites on My Doorstep. Here's Why.",
     date: "Feb 24, 2026",

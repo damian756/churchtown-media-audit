@@ -4,7 +4,7 @@ import Image from "next/image";
 import { ArrowRight, Database, Zap, Target, Rocket, CheckCircle2, TrendingUp, MapPin, Package, Users, Clock, Code2, Sparkles, BarChart3, Globe } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Content Scaling | 100+ SEO Pages in 48 Hours",
+  title: "Content Scaling | 100+ Pages in 48 Hours | Churchtown Media",
   description: "Stop writing pages one at a time. We use programmatic SEO to generate hundreds of high-quality landing pages instantly. Perfect for multi-location businesses, product catalogs, and service area companies. Data-driven templates, not spam.",
   keywords: ['programmatic seo', 'content scaling', 'automated seo content', 'multi-location seo', 'product catalog seo', 'landing page automation', 'pSEO'],
   alternates: {

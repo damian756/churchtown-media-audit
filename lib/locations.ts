@@ -531,32 +531,6 @@ export const locations: Location[] = [
     }
   },
   {
-    slug: "cardiff",
-    name: "Cardiff",
-    travelTime: "3h 15m",
-    landmark: "Principality Stadium",
-    industryFocus: "Professional Services & Government",
-    description: "Cardiff is Wales' capital and a growing hub for professional services, media, and public sector operations. With over 18,000 businesses and major government contracts driving the local economy, the digital landscape here centers on B2B credibility and public sector procurement visibility. Search behavior reflects Cardiff's professional services focus: procurement searches like 'Welsh government suppliers', 'Cardiff legal services', and 'professional services Wales' come from decision-makers who expect comprehensive capability documentation before engagement. The city's business districts—from Cardiff Bay's media sector to the civic centre's professional services cluster—require websites that signal competence to procurement officers, win competitive tenders, and position Welsh businesses as credible regional and national players. We've helped Cardiff businesses dominate public sector and B2B searches by implementing advanced schema markup for government procurement, creating tender-ready content that answers RFP questions, and building authority sites that demonstrate Welsh market expertise. In Cardiff's government-influenced market, compliance and credibility are conversion prerequisites.",
-    metaDesc: "Cardiff B2B & Professional Services Web Design. Public sector procurement-ready websites for Wales' leading businesses.",
-    nearbyAreas: ["Cardiff Bay", "City Centre", "Pontcanna", "Canton", "Roath"],
-    marketStats: {
-      population: "362,000 (1.1M metro)",
-      businesses: "18,000+ (government & professional services)",
-      keyTrend: "Welsh government decentralization creating procurement opportunities for local firms"
-    },
-    localChallenges: [
-      "Public sector procurement requiring compliance documentation and transparency",
-      "Competing for Welsh government contracts via organic search visibility",
-      "Positioning as credible Wales-wide and UK-wide service providers"
-    ],
-    successMetric: "Cardiff B2B clients win 3.8x more public sector tender opportunities from improved search visibility",
-    caseStudySnippet: {
-      client: "Professional Services",
-      result: "Procurement-optimized website increases public sector tender wins",
-      quote: "Cardiff's public sector market requires websites that demonstrate compliance and capability. Transparency wins contracts."
-    }
-  },
-  {
     slug: "nottingham",
     name: "Nottingham",
     travelTime: "2h",

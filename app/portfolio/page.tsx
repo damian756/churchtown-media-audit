@@ -5,7 +5,7 @@ import { ArrowRight, ExternalLink, Zap, Code2, Gauge, TrendingUp, CheckCircle2, 
 
 export const metadata: Metadata = {
   title: "Portfolio | Client Projects & Success Stories",
-  description: "See our live Next.js projects in action. From bus shelter manufacturers to professional video capture equipment—real clients, real results, real performance. Lighthouse scores 90+, traffic increases up to 300%.",
+  description: "See our live Next.js projects in action. From bus shelter manufacturers with 10 #1 rankings in 30 days to professional video capture equipment—real clients, real results, real performance.",
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk/portfolio',
   },
@@ -46,7 +46,7 @@ export default function PortfolioPage() {
           "@type": "CreativeWork",
           "position": 1,
           "name": "Alotek Shelters",
-          "description": "Bus shelter manufacturer website rebuilt with Next.js. 86% visibility increase, AI Overview dominance in 6 weeks.",
+          "description": "Bus shelter manufacturer website rebuilt with Next.js. 10 #1 rankings with AI Overview appearances across all core terms in 30 days.",
           "url": "https://www.alotekshelters.co.uk",
           "creator": {
             "@type": "Organization",
@@ -132,22 +132,22 @@ export default function PortfolioPage() {
       url: "https://www.alotekshelters.co.uk",
       status: "live",
       image: "/images/alotek-portfolio.jpg",
-      description: "A Lancashire-based bus shelter manufacturer with 30+ years of experience needed to reclaim rankings lost to a previous agency. We rebuilt their site and implemented targeted SEO.",
-      challenge: "Previous agency delivered zero traffic growth. Site averaged position 50 (Page 5) with 52% of pages not indexed by Google.",
-      solution: "Complete rebuild with Next.js, semantic HTML, and technical SEO fixes. Focused on commercial-intent keywords.",
+      description: "A Lancashire bus shelter manufacturer — previously on WordPress with a costly agency doing nothing. We migrated them to Next.js at no charge, then started an SEO retainer. Month one results are below.",
+      challenge: "Previous agency delivered zero traffic growth over 12 months. Site averaged position 50 (Page 5) with 52% of pages not indexed. WordPress was the wrong foundation.",
+      solution: "Free Next.js migration to fix the technical foundation, then targeted SEO focused on the exact terms parish councils and local authorities search. Content structured for AI Overviews.",
       results: [
-        { label: "Visibility Increase", value: "86%", description: "Daily impressions from 238 to 442" },
-        { label: "AI Overview Winner", value: "3 Terms", description: "Position #1 for key B2B searches" },
-        { label: "Lighthouse Score", value: "92/100", description: "Desktop performance" },
-        { label: "Time to Results", value: "6 Weeks", description: "From flatline to growth" },
+        { label: "#1 Rankings", value: "10", description: "Every core commercial keyword" },
+        { label: "AI Overviews", value: "All terms", description: "Above organic results on every target query" },
+        { label: "Biggest climb", value: "↑15", description: "\"Bus shelter suppliers\" — pos. 16 to #1" },
+        { label: "Time to results", value: "30 days", description: "Month 1 of SEO retainer" },
       ],
       techStack: ["Next.js 16", "TypeScript", "Tailwind CSS", "Vercel", "Schema.org"],
-      caseStudySlug: "seo-recovery-alotek-shelters",
+      caseStudySlug: "alotek-shelters-month-1-seo-results",
       highlights: [
-        "Rescued from costly SEO failure",
-        "Fixed 52% indexation gap in Week 1",
-        "Captured AI Overview positions for 'Bus Shelter Manufacturers UK'",
-        "Tripled visibility in under 45 days",
+        "#1 for 'bus shelter suppliers' (vol. 210) — up from position 16",
+        "AI Overview appearances across every tracked keyword",
+        "'Parish council bus shelter' — new entry direct to #1",
+        "WordPress replaced with Next.js before retainer started — at no charge",
       ]
     },
     {

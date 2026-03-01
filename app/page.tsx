@@ -31,6 +31,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
+  '@id': 'https://www.churchtownmedia.co.uk/#organization',
   'name': 'Churchtown Media',
   'url': 'https://www.churchtownmedia.co.uk',
   'logo': 'https://www.churchtownmedia.co.uk/icon.png',
@@ -42,7 +43,7 @@ const jsonLd = {
     'addressLocality': 'Southport',
     'addressRegion': 'Merseyside',
     'postalCode': 'PR9 9SA',
-    'addressCountry': 'UK'
+    'addressCountry': 'GB'
   },
   'geo': {
     '@type': 'GeoCoordinates',
