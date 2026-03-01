@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     question: "How much does it cost?",
-    answer: "Our Small Business Packages start from just £499 or affordable monthly plans. We believe every local business deserves a website that actually generates leads, not just a digital brochure."
+    answer: "Our Small Business Package starts from £1,500 — that gets you a 5-page Next.js site, basic SEO setup, contact form, and first-year hosting included. Payment plans are available if that helps with cash flow. For context: a comparable WordPress build typically costs £2,000–3,000 upfront and then charges £150–300/month to keep it running. We don't do that."
   },
   {
     question: "My current WordPress site is broken. Can you fix it?",
@@ -56,7 +56,7 @@ const jsonLd = {
     'aggregateRating': {
       '@type': 'AggregateRating',
       'ratingValue': '5.0',
-      'reviewCount': '24'
+      'reviewCount': '6'
     }
   },
   'description': 'A complete digital starter kit for local businesses including 5-page website, Google Business Profile optimization, and local citation building.',

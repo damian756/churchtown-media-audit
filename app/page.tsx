@@ -126,15 +126,15 @@ export default function Home() {
 
             {/* SUBHEAD */}
             <p className="text-xl md:text-2xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
-              The North West's digital growth partner. We combine{" "}
+              Southport-based. North West-focused. We combine{" "}
               <Link href="/services/web-design" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2 font-bold">
-                Next.js performance
+                fast Next.js websites
               </Link>{" "}
               with{" "}
               <Link href="/services/seo" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2 font-bold">
-                data-driven SEO
+                local SEO
               </Link>{" "}
-              to turn traffic into profit.
+              that actually moves the needle.
             </p>
 
             {/* CTA BUTTONS */}
@@ -235,7 +235,7 @@ export default function Home() {
               Built for Growth. Proven by Results.
             </h2>
             <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-              From bus shelter manufacturers to tourism directories—real clients seeing real traffic growth.
+              From bus shelter manufacturers to championship golf guides — real sites built to rank and convert.
             </p>
           </div>
 
@@ -277,37 +277,37 @@ export default function Home() {
               </div>
             </Link>
 
-            {/* Project 2: StreamKit */}
+            {/* Project 2: Sefton Links */}
             <Link 
               href="/portfolio" 
-              className="group relative bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-purple-500/50 transition-all hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-600/20"
+              className="group relative bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-amber-500/50 transition-all hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-600/20"
             >
               <div className="aspect-[4/3] relative overflow-hidden">
                 <Image
-                  src="/images/streamkit-portfolio.jpg"
-                  alt="StreamKit - Professional Video Capture"
+                  src="/images/seftonlinks-portfolio.jpg"
+                  alt="Sefton Links - Championship Golf Guide"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent" />
                 
                 {/* Floating Badge */}
-                <div className="absolute top-4 right-4 bg-purple-500 text-white text-xs font-black px-3 py-1.5 rounded-full shadow-lg">
-                  10+ Industries
+                <div className="absolute top-4 right-4 bg-amber-500 text-white text-xs font-black px-3 py-1.5 rounded-full shadow-lg">
+                  The Open 2026
                 </div>
               </div>
               
               {/* Content Overlay */}
               <div className="p-6">
-                <div className="text-xs font-bold text-purple-400 uppercase tracking-wide mb-2">Professional AV</div>
-                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">
-                  StreamKit
+                <div className="text-xs font-bold text-amber-400 uppercase tracking-wide mb-2">Golf & Tourism</div>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">
+                  Sefton Links
                 </h3>
                 <p className="text-sm text-slate-400 mb-4">
-                  Professional video capture. Zero drivers.
+                  Championship golf. 17 languages. Royal Birkdale.
                 </p>
-                <div className="flex items-center gap-2 text-purple-400 font-bold text-sm">
-                  View Case Study <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                <div className="flex items-center gap-2 text-amber-400 font-bold text-sm">
+                  View Project <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>
             </Link>

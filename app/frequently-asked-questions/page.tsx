@@ -32,14 +32,29 @@ const jsonLd = {
       'url': 'https://www.churchtownmedia.co.uk/icon.png'
     }
   },
-  'mainEntity': faqs.map(faq => ({
-    '@type': 'Question',
-    'name': faq.question,
-    'acceptedAnswer': {
-      '@type': 'Answer',
-      'text': faq.answer.replace(/<[^>]*>/g, '') // Strip HTML for schema
-    }
-  }))
+  // Curated high-intent questions for schema — Google surfaces max ~10 rich results.
+  // Full 200+ FAQ content remains on-page for long-tail indexing.
+  'mainEntity': faqs
+    .filter(faq => [
+      // Pricing (what people search before buying)
+      'price-001', 'price-002', 'price-005', 'price-008', 'price-010',
+      // Local SEO (Southport-specific signals)
+      'local-001', 'local-002', 'local-003', 'local-004', 'local-005',
+      // Southport & MLEC (high local intent)
+      'mlec-001', 'mlec-002', 'mlec-003',
+      // Process (pre-purchase anxiety)
+      'process-001', 'process-002', 'process-003',
+      // Core web design (decision-stage queries)
+      'nextjs-003', 'nextjs-007', 'nextjs-026',
+    ].includes(faq.id))
+    .map(faq => ({
+      '@type': 'Question',
+      'name': faq.question,
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': faq.answer.replace(/<[^>]*>/g, '')
+      }
+    }))
 };
 
 // 3. BREADCRUMBS SCHEMA
