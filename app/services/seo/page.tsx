@@ -1,86 +1,69 @@
 import type { Metadata } from 'next';
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
-import { Search, MapPin, BarChart, ArrowRight, Laptop, CheckCircle2, Plus, TrendingUp, Target, Zap, Shield, Award, Users, Clock, LineChart, Sparkles, AlertTriangle, Terminal, Database } from "lucide-react";
+import { ArrowRight, CheckCircle2, Plus, MapPin, TrendingUp, Search, AlertCircle, Clock } from "lucide-react";
 
-// ENHANCED METADATA WITH OPENGRAPH
 export const metadata: Metadata = {
   title: 'SEO Agency Southport | Churchtown Media',
-  description: 'Southport SEO agency delivering measurable results. Technical SEO, local search domination, and content strategy for North West businesses. Based in Southport, serving Liverpool, Manchester and beyond.',
-  keywords: ['seo southport', 'seo agency southport', 'seo company southport', 'local seo southport', 'technical seo', 'seo north west', 'seo liverpool', 'seo manchester'],
-  alternates: {
-    canonical: 'https://www.churchtownmedia.co.uk/services/seo',
-  },
+  description: 'SEO agency based in Southport. We rank #1 in the local pack for "seo southport" — and we got a client to #1 in Google\'s AI Overview in 30 days. Honest pricing, real data.',
+  keywords: ['seo southport', 'seo agency southport', 'seo company southport', 'local seo southport', 'technical seo southport', 'seo services merseyside', 'seo north west'],
+  alternates: { canonical: 'https://www.churchtownmedia.co.uk/services/seo' },
   openGraph: {
     title: 'SEO Agency Southport | Churchtown Media',
-    description: 'Southport SEO agency delivering measurable results. Technical SEO, local search domination, and content strategy for North West businesses.',
+    description: 'SEO agency based in Southport. #1 local pack for "seo southport". Real results, real data.',
     url: 'https://www.churchtownmedia.co.uk/services/seo',
     type: 'website',
     siteName: 'Churchtown Media',
     locale: 'en_GB',
-    images: [{
-      url: 'https://www.churchtownmedia.co.uk/images/seo-results-dashboard.jpg',
-      width: 1200,
-      height: 630,
-      alt: 'SEO results dashboard showing 287% organic traffic growth and page 1 rankings for 47 keywords',
-    }],
+    images: [{ url: 'https://www.churchtownmedia.co.uk/og-default.png', width: 1200, height: 630, alt: 'Churchtown Media SEO Agency Southport' }],
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'SEO Agency Southport | Churchtown Media',
-    description: '287% average traffic growth through technical SEO and local domination. Measurable ROI guaranteed.',
-    images: ['https://www.churchtownmedia.co.uk/images/seo-results-dashboard.jpg'],
-  },
+  twitter: { card: 'summary_large_image', title: 'SEO Agency Southport | Churchtown Media', description: '#1 local pack for "seo southport". Real results, honest pricing.' },
 };
 
-// FAQ DATA
 const faqs = [
   {
-    question: "How long does it take to see SEO results?",
-    answer: "SEO is a compound effect, not a quick fix. Technical improvements (site speed, schema markup) can improve rankings within 2-4 weeks. Content strategy and backlink building take 8-12 weeks to show impact. Significant revenue growth typically kicks in around months 3-6. We build long-term assets that compound over time—think 'snowball rolling downhill' rather than 'overnight success.' Most agencies promise instant results because they're chasing your money, not your growth."
+    question: "How long does it take to see results?",
+    answer: "Honestly: 8–12 weeks before rankings move meaningfully, 3–6 months before you're seeing a real change in enquiry volume. Technical fixes (crawlability, speed, schema) can show impact in 2–4 weeks. Content and authority building takes longer. We'll show you what's moving every month so you're never in the dark. If nothing is moving after 12 weeks, we'll tell you why and what needs to change."
   },
   {
-    question: "Do you guarantee #1 rankings on Google?",
-    answer: "No ethical agency can guarantee a specific ranking because Google's algorithm changes daily (literally—they make 3,000+ updates per year). Anyone who guarantees #1 rankings is lying to you. What we DO guarantee: a data-driven process, transparent reporting, measurable improvements in traffic and leads, and ROI tracking. We've taken Liverpool businesses from page 4 to the Local Pack in 90 days. We've helped Manchester firms beat national competitors. But we never promise specific positions—we promise results."
+    question: "Do you guarantee #1 rankings?",
+    answer: "No — and you should be suspicious of anyone who does. Google's algorithm changes constantly and no agency controls it. What we can control: the quality of the technical foundation, the relevance of the content, and the consistency of the process. We can show you exactly where we rank for our own SEO terms — that's the most honest proof available. If we can rank ourselves, we can rank you."
   },
   {
     question: "Why is my competitor ranking higher than me?",
-    answer: "It's usually a combination of three factors: (1) Authority—they have more high-quality backlinks from trusted sites; (2) Technical Performance—their site loads faster, has better Core Web Vitals, and cleaner code; (3) Content Quality—they answer the user's question better, with more depth and relevant internal links. We run a 'Competitor Gap Analysis' during discovery to find exactly where they're beating you, then we build a strategy to surpass them. Sometimes it's as simple as fixing your site speed. Other times it requires a 6-month content and backlink campaign."
+    answer: "Almost always one of three things: their site is faster and better-structured, they have more relevant content that directly answers buyer queries, or they've been doing this longer and have accumulated more authority. We do a competitor gap analysis at the start of every engagement to find exactly where they're beating you — and whether it's a gap we can close quickly or one that takes sustained effort."
   },
   {
     question: "Do I need a new website for SEO to work?",
-    answer: "Not always. We can optimize most existing sites with technical fixes, content improvements, and backlink building. However, if your current site is built on a slow platform (Wix, old WordPress theme, or outdated custom code) that fundamentally hurts your Core Web Vitals and mobile usability, we might recommend migrating to Next.js. Slow sites (3+ seconds) lose 53% of visitors AND get penalized by Google. If your site scores below 50 on Lighthouse, a rebuild will deliver faster ROI than trying to fix a broken foundation."
+    answer: "Not always. We can work with most existing sites. But if your site is on a slow, bloated platform with poor structure, SEO work on top of it is like painting a broken wall — it'll look better temporarily but the underlying problem remains. We'll tell you honestly whether your current site is a viable foundation before any money changes hands."
   },
   {
-    question: "What is 'Technical SEO' and why does it matter?",
-    answer: "Technical SEO is the foundation of your house. It's everything Google's bots need to crawl, understand, and rank your site: site speed (Core Web Vitals), mobile usability, structured data (schema markup), XML sitemaps, robots.txt configuration, canonical tags, and internal linking architecture. Think of it this way: keywords are the paint on your walls. Technical SEO is the concrete foundation. If your foundation is broken, no amount of beautiful paint will save you. 80% of sites we audit have critical technical issues that kill rankings before content even matters."
+    question: "What do I actually receive each month?",
+    answer: "A plain-English report covering: rankings movement (which terms went up or down and why), traffic and impressions from Google Search Console, what work was done that month and what it was for, and what's planned next. We also flag anything we're seeing in the data that you need to know about — algorithm updates, competitor movements, new opportunities. You'll never have to chase us for an update."
   },
   {
-    question: "How do you track SEO ROI?",
-    answer: "We don't just track rankings—we track revenue. Our dashboard shows: (1) Organic traffic growth (month-over-month), (2) Keyword rankings (with search volume and competition data), (3) Conversion rates (leads, calls, form submissions), (4) Revenue attribution (which keywords drive sales), and (5) Local Pack visibility (for location-based searches). Every month you get a plain-English report showing exactly how SEO is affecting your bottom line. If organic traffic is up 200% but conversions are flat, we pivot strategy. Results matter, not vanity metrics."
+    question: "What's the difference between local pack and organic rankings?",
+    answer: "The local pack (the map and three listings that appear at the top of Google for location-based searches) is won through your Google Business Profile, local citations, and reviews. Organic web results are won through content quality, technical SEO, and domain authority. Both matter — local pack gets you calls, organic gets people to your site. We work on both."
   },
   {
-    question: "What's the difference between Local SEO and regular SEO?",
-    answer: "Local SEO targets 'near me' searches and Google Maps rankings—critical for businesses serving specific geographic areas (Liverpool, Manchester, Southport, etc.). It involves optimizing your Google Business Profile, building local citations (Liverpool Chamber of Commerce, local directories), earning reviews, and creating location-specific content. Regular SEO targets national or international keywords without geographic intent. Most North West businesses need BOTH: local SEO to capture 'solicitor Liverpool' searches, and broader SEO for 'employment law advice UK.' We specialize in dominating local markets first, then expanding."
+    question: "Can you fix a Google penalty or a traffic drop?",
+    answer: "Yes. If your site was hit by a core update or has a manual action, we audit the likely causes — thin content, toxic backlinks, technical issues — fix what's fixable, and track recovery. Algorithm recoveries take time (weeks to months depending on severity) and we'll be straight with you about what's realistic."
   },
   {
-    question: "Can you fix a Google penalty or manual action?",
-    answer: "Yes. If your site has been penalized (manual action) or hit by an algorithm update (Penguin, Panda, Core Update), we audit your backlink profile, identify toxic links, submit disavow files, fix thin content, and request reconsideration. Recovery typically takes 4-8 weeks for manual actions, and 3-6 months for algorithm recoveries. Prevention is easier than cure—we audit client sites monthly to catch issues before they become penalties. If you've been hit by a 'helpful content update' (your traffic tanked overnight), we can diagnose and fix it."
+    question: "Do you work with businesses outside Southport?",
+    answer: "Yes — we work across Merseyside, Lancashire and the wider North West. Most of the process works well remotely. But if you're a Southport, Birkdale, Formby or Sefton Coast business, we're your local option and we know this market in detail."
   }
 ];
 
-// ENHANCED JSON-LD SCHEMA
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
-  'name': 'Data-Driven SEO Services',
-  'serviceType': 'Search Engine Optimization',
+  'name': 'SEO Agency Southport',
+  'serviceType': 'Search Engine Optimisation',
   'provider': {
     '@type': 'LocalBusiness',
     '@id': 'https://www.churchtownmedia.co.uk/#organization',
     'name': 'Churchtown Media',
-    'image': 'https://www.churchtownmedia.co.uk/images/seo-results-dashboard.jpg',
     'address': {
       '@type': 'PostalAddress',
       'streetAddress': 'Cambridge Avenue',
@@ -95,942 +78,471 @@ const jsonLd = {
   'areaServed': [
     { '@type': 'City', 'name': 'Southport' },
     { '@type': 'City', 'name': 'Liverpool' },
-    { '@type': 'City', 'name': 'Manchester' },
     { '@type': 'City', 'name': 'Preston' },
-    { '@type': 'City', 'name': 'Blackpool' },
+    { '@type': 'AdministrativeArea', 'name': 'Merseyside' },
+    { '@type': 'AdministrativeArea', 'name': 'Lancashire' },
     { '@type': 'AdministrativeArea', 'name': 'North West England' },
-    { '@type': 'AdministrativeArea', 'name': 'Merseyside' }
   ],
-  'description': 'Data-driven SEO services including Local SEO, Technical Audits, Content Strategy, and Backlink Building for North West businesses.',
+  'description': 'SEO agency based in Southport. Local pack, technical SEO, and content strategy for North West businesses.',
   'hasOfferCatalog': {
     '@type': 'OfferCatalog',
-    'name': 'SEO Services',
+    'name': 'SEO Packages',
     'itemListElement': [
-      {
-        '@type': 'Offer',
-        'name': 'Local SEO Package',
-        'description': 'Dominate your town with Google Business Profile optimization, 5 local keywords, monthly citations, and review management',
-        'priceSpecification': {
-          '@type': 'UnitPriceSpecification',
-          'price': '500',
-          'priceCurrency': 'GBP',
-          'unitText': 'MONTH'
-        },
-        'availability': 'https://schema.org/InStock',
-        'itemOffered': {
-          '@type': 'Service',
-          'name': 'Local SEO Package',
-          'description': 'Single-location local SEO for near me searches'
-        }
-      },
-      {
-        '@type': 'Offer',
-        'name': 'Regional SEO Package',
-        'description': 'Rank across 3-5 cities with 15 keywords, technical SEO, content strategy, and backlink building',
-        'priceSpecification': {
-          '@type': 'UnitPriceSpecification',
-          'price': '900',
-          'priceCurrency': 'GBP',
-          'unitText': 'MONTH'
-        },
-        'availability': 'https://schema.org/InStock',
-        'itemOffered': {
-          '@type': 'Service',
-          'name': 'Regional SEO Package',
-          'description': 'Multi-city SEO for North West businesses'
-        }
-      },
-      {
-        '@type': 'Offer',
-        'name': 'Dominant SEO Package',
-        'description': 'Own your market with unlimited locations, 30+ keywords, advanced technical SEO, content production, and PR outreach',
-        'priceSpecification': {
-          '@type': 'UnitPriceSpecification',
-          'price': '1500',
-          'priceCurrency': 'GBP',
-          'unitText': 'MONTH'
-        },
-        'availability': 'https://schema.org/InStock',
-        'itemOffered': {
-          '@type': 'Service',
-          'name': 'Dominant SEO Package',
-          'description': 'National SEO campaigns with aggressive link building'
-        }
-      }
+      { '@type': 'Offer', 'name': 'Local SEO', 'priceSpecification': { '@type': 'UnitPriceSpecification', 'price': '500', 'priceCurrency': 'GBP', 'unitText': 'MONTH' }, 'availability': 'https://schema.org/InStock', 'itemOffered': { '@type': 'Service', 'name': 'Local SEO', 'description': 'Local pack and Google Business Profile optimisation for Southport businesses' } },
+      { '@type': 'Offer', 'name': 'Regional SEO', 'priceSpecification': { '@type': 'UnitPriceSpecification', 'price': '900', 'priceCurrency': 'GBP', 'unitText': 'MONTH' }, 'availability': 'https://schema.org/InStock', 'itemOffered': { '@type': 'Service', 'name': 'Regional SEO', 'description': 'Multi-city SEO for North West businesses' } },
+      { '@type': 'Offer', 'name': 'Full SEO Retainer', 'priceSpecification': { '@type': 'UnitPriceSpecification', 'price': '1500', 'priceCurrency': 'GBP', 'unitText': 'MONTH' }, 'availability': 'https://schema.org/InStock', 'itemOffered': { '@type': 'Service', 'name': 'Full SEO Retainer', 'description': 'National and multi-location SEO with content production and authority building' } },
     ]
   },
   'mainEntity': faqs.map(faq => ({
     '@type': 'Question',
     'name': faq.question,
-    'acceptedAnswer': {
-      '@type': 'Answer',
-      'text': faq.answer
-    }
+    'acceptedAnswer': { '@type': 'Answer', 'text': faq.answer }
   }))
 };
 
 export default function SEOPage() {
-  
-  const coreStrategies = [
-    { 
-      icon: MapPin, 
-      title: "Local SEO Domination", 
-      desc: "Capture 'near me' searches and own the Google Maps Local Pack. We optimize your Google Business Profile, build local citations, and dominate Liverpool, Manchester, and Southport rankings.",
-      result: "87% avg increase in local calls"
-    },
-    { 
-      icon: Zap, 
-      title: "Technical SEO Audits", 
-      desc: "We fix the invisible errors killing your rankings: Core Web Vitals, schema markup, crawl budget, mobile usability, and canonical tags. Fast sites rank higher—period.",
-      result: "0.9s avg load time achieved"
-    },
-    { 
-      icon: TrendingUp, 
-      title: "Revenue Tracking", 
-      desc: "Vanity metrics don't pay bills. We track organic traffic, keyword rankings, conversion rates, and actual revenue generated from SEO. Every report shows ROI.",
-      result: "412% avg ROI within 6 months"
-    }
-  ];
-
-  const seoProcess = [
-    {
-      number: "01",
-      title: "Competitive Analysis",
-      description: "We analyze your top 10 competitors to find their strengths, weaknesses, and ranking gaps.",
-      deliverables: ["Competitor backlink analysis", "Keyword gap report", "Technical performance comparison", "Content quality audit"]
-    },
-    {
-      number: "02",
-      title: "Technical Foundation",
-      description: "Fix critical technical issues that prevent Google from ranking you: speed, mobile, schema, crawlability.",
-      deliverables: ["Core Web Vitals optimization", "Schema.org markup", "XML sitemap", "Canonical tag cleanup"]
-    },
-    {
-      number: "03",
-      title: "Content Strategy",
-      description: "Create high-quality, keyword-optimized content that answers user questions and builds authority.",
-      deliverables: ["Keyword research", "Content calendar", "On-page optimization", "Internal linking strategy"]
-    },
-    {
-      number: "04",
-      title: "Authority Building",
-      description: "Earn high-quality backlinks from trusted North West sources: Liverpool Echo, local directories, industry sites.",
-      deliverables: ["Local PR outreach", "Citation building", "Guest post placements", "Digital PR campaigns"]
-    }
-  ];
-
-  const principles = [
-    {
-      icon: Target,
-      title: "Data Over Guesswork",
-      description: "Every decision backed by Google Analytics, Search Console, and ranking data. No hunches.",
-    },
-    {
-      icon: Shield,
-      title: "White Hat Only",
-      description: "We don't buy links, spam directories, or use black hat tactics. Sustainable growth only.",
-    },
-    {
-      icon: Users,
-      title: "Transparent Reporting",
-      description: "Monthly reports in plain English. You'll always know what we're doing and why.",
-    },
-    {
-      icon: Award,
-      title: "Measurable ROI",
-      description: "We track revenue, not just rankings. If SEO isn't making you money, we pivot strategy.",
-    }
-  ];
-
   return (
     <main className="min-h-screen bg-slate-950 text-white">
-      
-      {/* INJECT SCHEMA */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
 
-      {/* HERO SECTION */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+
+      {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="relative pt-32 pb-20 px-4 sm:px-6 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-green-900/20 via-slate-950 to-slate-950" />
-        
-        <article className="max-w-7xl mx-auto relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left: Text Content */}
-            <div>
-              <div className="inline-flex items-center gap-2 bg-green-600/20 border border-green-600/30 rounded-full px-4 py-2 mb-6">
-                <Sparkles className="w-4 h-4 text-green-400" />
-                <span className="text-green-400 text-sm font-bold">Data-Driven Growth</span>
-              </div>
 
-              <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6">
-                North West SEO
-                <br />
-                <span className="bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
-                  That Moves the Needle
-                </span>
-              </h1>
-              
-              <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed">
-                Being on page 2 is like being invisible. We use technical precision and regional market data to put 
-                your North West business in front of customers exactly when they're ready to buy.
-              </p>
+        <div className="max-w-5xl mx-auto relative z-10">
 
-              <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <Link
-                  href="/audit"
-                  className="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full text-lg font-bold transition-all hover:scale-105 shadow-xl shadow-green-600/20"
-                >
-                  Get Free SEO Audit <ArrowRight className="w-5 h-5" />
-                </Link>
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white px-8 py-4 rounded-full text-lg font-bold transition-all"
-                >
-                  Book Consultation
-                </Link>
-              </div>
-
-              {/* Quick Stats */}
-              <div className="grid grid-cols-3 gap-4">
-                <div className="bg-slate-900 border border-slate-800 rounded-xl p-4">
-                  <div className="text-2xl font-black text-green-400">+287%</div>
-                  <div className="text-xs text-slate-400">Avg Traffic Growth</div>
-                </div>
-                <div className="bg-slate-900 border border-slate-800 rounded-xl p-4">
-                  <div className="text-2xl font-black text-blue-400">412%</div>
-                  <div className="text-xs text-slate-400">Avg ROI</div>
-                </div>
-                <div className="bg-slate-900 border border-slate-800 rounded-xl p-4">
-                  <div className="text-2xl font-black text-purple-400">3-6mo</div>
-                  <div className="text-xs text-slate-400">Time to Results</div>
-                </div>
-              </div>
-            </div>
-
-            {/* Right: Hero Image */}
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-green-600/20 to-blue-600/20 rounded-3xl blur-3xl"></div>
-              <Image
-                src="/images/seo-results-dashboard.jpg"
-                alt="SEO results dashboard showing 287% organic traffic growth, keyword rankings climbing from position 24 to position 2, and 412% ROI"
-                width={1200}
-                height={800}
-                className="relative rounded-3xl shadow-2xl border border-slate-800"
-                priority
-              />
-            </div>
-          </div>
-        </article>
-      </section>
-
-      {/* CORE STRATEGIES */}
-      <section className="py-16 px-4 sm:px-6 bg-slate-900/50">
-        <article className="max-w-7xl mx-auto">
-          <header className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black mb-4">
-              The 3 Pillars of SEO Success
-            </h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
-              Most agencies focus on keywords alone. We optimize technical performance, local presence, and content—all three.
-            </p>
-          </header>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {coreStrategies.map((strategy, idx) => {
-              const IconComponent = strategy.icon;
-              return (
-                <div key={idx} className="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-green-600/50 transition-all group">
-                  <div className="bg-green-600/20 rounded-2xl p-4 w-fit mb-6 group-hover:scale-110 transition-transform">
-                    <IconComponent className="w-8 h-8 text-green-400" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-white mb-3">{strategy.title}</h3>
-                  <p className="text-slate-300 leading-relaxed mb-4">{strategy.desc}</p>
-                  <div className="bg-green-600/10 border border-green-600/30 rounded-lg px-3 py-2 inline-block">
-                    <span className="text-green-400 text-sm font-bold">{strategy.result}</span>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </article>
-      </section>
-
-      {/* TECHNICAL FOUNDATION SECTION */}
-      <section className="py-16 px-4 sm:px-6">
-        <article className="max-w-7xl mx-auto">
-          <header className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black mb-4">
-              Technical Foundation: The Invisible Advantage
-            </h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
-              Most agencies focus on "content" while ignoring the foundation. If Googlebot can't crawl your site efficiently, 
-              no amount of blogging will save you. We fix the technical issues first.
-            </p>
-          </header>
-
-          <div className="grid lg:grid-cols-2 gap-8 mb-12">
-            {/* Left: Common Technical Problems */}
-            <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-white mb-6">Why Rankings Get Stuck</h3>
-              
-              <div className="flex gap-4">
-                <div className="flex-none rounded-lg bg-red-950/50 p-3 h-fit">
-                  <AlertTriangle className="w-6 h-6 text-red-400" />
-                </div>
-                <div>
-                  <h4 className="font-bold text-white mb-2">JavaScript Bloat</h4>
-                  <p className="text-sm text-slate-300 leading-relaxed">
-                    Heavy WordPress themes and plugins hide your content from search engines. Google's crawler sees blank pages. 
-                    We implement Server-Side Rendering (SSR) with Next.js to ensure instant indexing—your content is visible to 
-                    Google from millisecond one.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-4">
-                <div className="flex-none rounded-lg bg-red-950/50 p-3 h-fit">
-                  <AlertTriangle className="w-6 h-6 text-red-400" />
-                </div>
-                <div>
-                  <h4 className="font-bold text-white mb-2">Crawl Budget Waste</h4>
-                  <p className="text-sm text-slate-300 leading-relaxed">
-                    If you have 1,000 low-quality pages (tag archives, category pages, duplicate content), Google stops looking 
-                    for the good ones. We audit your site architecture, prune wasteful pages, and consolidate content so Google's 
-                    crawler focuses on pages that actually drive revenue.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-4">
-                <div className="flex-none rounded-lg bg-red-950/50 p-3 h-fit">
-                  <AlertTriangle className="w-6 h-6 text-red-400" />
-                </div>
-                <div>
-                  <h4 className="font-bold text-white mb-2">Core Web Vitals Failures</h4>
-                  <p className="text-sm text-slate-300 leading-relaxed">
-                    Google directly penalizes slow sites. If your Largest Contentful Paint (LCP) is over 2.5s, you're losing 
-                    rankings to faster competitors. We optimize images, eliminate render-blocking resources, and achieve 
-                    sub-1s load times consistently.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-4">
-                <div className="flex-none rounded-lg bg-red-950/50 p-3 h-fit">
-                  <AlertTriangle className="w-6 h-6 text-red-400" />
-                </div>
-                <div>
-                  <h4 className="font-bold text-white mb-2">Missing Structured Data</h4>
-                  <p className="text-sm text-slate-300 leading-relaxed">
-                    Without Schema.org markup, Google doesn't understand what your content IS. A restaurant without Recipe or 
-                    Menu schema won't appear in rich results. A law firm without LocalBusiness schema won't dominate the Map Pack. 
-                    We inject proper JSON-LD on every page.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Right: Our 24-Point Audit */}
-            <div className="rounded-2xl bg-slate-900 border border-slate-800 p-8">
-              <div className="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-600/30 rounded-full px-3 py-1 text-sm font-bold text-blue-400 mb-6">
-                <Terminal className="w-4 h-4" />
-                Code-First Strategy
-              </div>
-              <h3 className="text-2xl font-bold text-white mb-4">Our 24-Point Technical Audit</h3>
-              <p className="text-slate-300 text-sm leading-relaxed mb-6">
-                Before we touch content or backlinks, we fix your technical foundation. Here's what we audit and optimize:
-              </p>
-              
-              <ul className="space-y-3">
-                {[
-                  "Log File Analysis (what is Google actually crawling?)",
-                  "Core Web Vitals Optimization (LCP, CLS, INP)",
-                  "Schema.org Structured Data Implementation",
-                  "Canonicalization Strategy (duplicate content cleanup)",
-                  "Internal Link Graph Analysis & Optimization",
-                  "XML Sitemap Generation & Validation",
-                  "Robots.txt Configuration",
-                  "Mobile Usability & Responsive Design",
-                  "HTTPS & Security Headers",
-                  "Image Optimization (WebP conversion, lazy loading)",
-                  "JavaScript & CSS Minification",
-                  "Browser Caching Configuration",
-                  "URL Structure & Slug Optimization",
-                  "Redirect Chain Elimination (301 cleanup)",
-                  "Meta Description & Title Tag Audit",
-                  "Heading Hierarchy (H1-H6 structure)",
-                  "Alt Text & Image SEO",
-                  "Broken Link Detection & Fixing",
-                  "Pagination & Infinite Scroll SEO",
-                  "Hreflang Tags (multi-language sites)",
-                  "Open Graph & Twitter Card Meta",
-                  "Breadcrumb Navigation Schema",
-                  "Site Speed Optimization (CDN, caching)",
-                  "Crawl Depth & Click Distance Analysis"
-                ].map((item, idx) => (
-                  <li key={idx} className="flex gap-3 text-sm text-slate-300">
-                    <CheckCircle2 className="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <div className="mt-8 pt-6 border-t border-slate-800">
-                <Link 
-                  href="/audit" 
-                  className="block w-full rounded-xl bg-green-600 hover:bg-green-700 px-6 py-4 text-center font-bold text-white transition-all"
-                >
-                  Get Your Technical Audit
-                </Link>
-              </div>
-            </div>
+          <div className="inline-flex items-center gap-2 text-green-400 text-sm font-semibold mb-6">
+            <MapPin className="w-4 h-4" />
+            <span>Based in Southport · Serving Merseyside, Lancashire & the North West</span>
           </div>
 
-          {/* Technical SEO Results */}
-          <div className="bg-gradient-to-br from-blue-900/20 to-purple-900/20 border border-blue-600/30 rounded-2xl p-8">
-            <h3 className="text-xl font-bold text-blue-400 mb-4">Why Technical SEO Matters: Real Data</h3>
-            <div className="grid md:grid-cols-3 gap-6 mb-6">
-              <div className="bg-slate-900 border border-slate-800 rounded-xl p-4">
-                <div className="text-3xl font-black text-green-400 mb-1">53%</div>
-                <div className="text-xs text-slate-400">of users abandon sites over 3s load time</div>
-              </div>
-              <div className="bg-slate-900 border border-slate-800 rounded-xl p-4">
-                <div className="text-3xl font-black text-blue-400 mb-1">5x</div>
-                <div className="text-xs text-slate-400">faster: Next.js vs WordPress average</div>
-              </div>
-              <div className="bg-slate-900 border border-slate-800 rounded-xl p-4">
-                <div className="text-3xl font-black text-purple-400 mb-1">80%</div>
-                <div className="text-xs text-slate-400">of sites we audit have critical tech issues</div>
-              </div>
-            </div>
-            <p className="text-slate-300 text-sm leading-relaxed">
-              Technical SEO is the foundation of your SEO house. Keywords and content are the paint on your walls. 
-              If your foundation is broken (slow site, poor mobile UX, missing schema), no amount of beautiful paint will save you. 
-              We fix the foundation first, then scale your content. See our <Link href="/services/web-design" className="text-blue-400 hover:text-blue-300 underline">Next.js web design services</Link> for 
-              technical excellence baked into every build.
-            </p>
-          </div>
-        </article>
-      </section>
+          <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6">
+            SEO Agency
+            <br />
+            <span className="bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">
+              Southport
+            </span>
+          </h1>
 
-      {/* LOCAL SEO SHOWCASE */}
-      <section className="py-16 px-4 sm:px-6 bg-slate-900/50">
-        <article className="max-w-6xl mx-auto">
-          <header className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black mb-4">
-              Dominate Local Search Results
-            </h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
-              76% of local mobile searches result in a visit within 24 hours. If you're not in the Local Pack, you're invisible.
-            </p>
-          </header>
+          <p className="text-xl md:text-2xl text-slate-300 mb-4 leading-relaxed max-w-3xl">
+            We rank #1 in the local pack for "seo southport". We got a client to #1 in Google's AI Overview in 30 days. Here's how both of those happened — and what it would look like for your business.
+          </p>
 
-          <div className="bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-800 rounded-3xl p-8 md:p-12">
-            <div className="grid lg:grid-cols-2 gap-8 items-center mb-8">
-              <div>
-                <h3 className="text-2xl font-bold text-white mb-4">What is the Local Pack?</h3>
-                <p className="text-slate-300 leading-relaxed mb-6">
-                  When someone searches "solicitor near me" or "best restaurant Liverpool," Google shows a map with 3 businesses—the "Local Pack." 
-                  These get 75% of clicks. Position 4+ gets scraps.
-                </p>
-                <p className="text-slate-300 leading-relaxed mb-6">
-                  We specialize in getting Liverpool, Manchester, and Southport businesses into the Local Pack through:
-                </p>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
-                    <span className="text-slate-300">Google Business Profile optimization (photos, posts, reviews)</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
-                    <span className="text-slate-300">Local citations (Chamber of Commerce, industry directories)</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
-                    <span className="text-slate-300">Review generation strategy (50+ reviews in 90 days)</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
-                    <span className="text-slate-300">Location-specific content (Liverpool City Centre, Manchester Deansgate, etc.)</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="relative">
-                <Image
-                  src="/images/local-seo-map-pack.jpg"
-                  alt="Google Maps local pack showing top 3 solicitor results with 5-star reviews, business photos, and location pins"
-                  width={800}
-                  height={1000}
-                  className="rounded-2xl shadow-2xl border border-slate-700"
-                />
-              </div>
-            </div>
+          <p className="text-slate-400 mb-10 max-w-2xl">
+            No fabricated case studies. No invented traffic stats. Real data, published publicly. If you want to verify anything on this page, we'll show you the Search Console.
+          </p>
 
-            <div className="bg-blue-600/10 border border-blue-600/30 rounded-2xl p-6">
-              <h4 className="text-lg font-bold text-blue-400 mb-3">Real Results: Liverpool Law Firm</h4>
-              <p className="text-slate-300 text-sm leading-relaxed">
-                A Liverpool employment law firm was ranking #8 (invisible) for "employment solicitor Liverpool." 
-                After 90 days of Local SEO optimization, they claimed the #1 Local Pack position. Result: +412% organic traffic, 
-                +87% phone calls. Read the full case study in our <Link href="/blog/seo-liverpool-local-business-guide-2026" className="text-blue-400 hover:text-blue-300 underline">SEO Liverpool guide</Link>.
-              </p>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      {/* THE 4 PRINCIPLES */}
-      <section className="py-16 px-4 sm:px-6 bg-slate-900/50">
-        <article className="max-w-6xl mx-auto">
-          <header className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black mb-4">
-              How We Work
-            </h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
-              These principles guide every SEO campaign we run. No exceptions.
-            </p>
-          </header>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {principles.map((principle, idx) => {
-              const IconComponent = principle.icon;
-              return (
-                <div key={idx} className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-green-600/50 transition-all">
-                  <div className="flex items-start gap-4">
-                    <div className="bg-green-600/20 rounded-xl p-3 flex-shrink-0">
-                      <IconComponent className="w-6 h-6 text-green-400" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold text-white mb-2">{principle.title}</h3>
-                      <p className="text-slate-300 text-sm leading-relaxed">
-                        {principle.description}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </article>
-      </section>
-
-      {/* SEO PROCESS - ENHANCED VISUAL TIMELINE */}
-      <section className="py-16 px-4 sm:px-6">
-        <article className="max-w-5xl mx-auto">
-          <header className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-green-600/20 border border-green-600/30 rounded-full px-4 py-2 mb-6">
-              <Clock className="w-4 h-4 text-green-400" />
-              <span className="text-green-400 text-sm font-bold">Our Process</span>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-black mb-4">
-              The SEO Process
-            </h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
-              From audit to authority in 4 phases. Here's exactly what we do and when results appear.
-            </p>
-          </header>
-
-          <div className="relative">
-            {/* Vertical Timeline Line */}
-            <div className="absolute left-[52px] top-8 bottom-8 w-0.5 bg-gradient-to-b from-green-600 via-blue-600 to-green-600 hidden md:block"></div>
-            
-            <div className="space-y-8">
-              {seoProcess.map((step, idx) => (
-                <div key={step.number} className="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-green-600/50 transition-all group relative">
-                  <div className="flex flex-col md:flex-row items-start gap-6">
-                    {/* Number Badge */}
-                    <div className="relative">
-                      <div className="bg-gradient-to-br from-green-600 to-blue-600 rounded-2xl p-4 flex-shrink-0 group-hover:scale-110 transition-transform shadow-lg shadow-green-600/20">
-                        <span className="text-4xl font-black text-white">{step.number}</span>
-                      </div>
-                      {/* Connecting Dot for Timeline */}
-                      {idx < seoProcess.length - 1 && (
-                        <div className="hidden md:block absolute left-1/2 -translate-x-1/2 -bottom-10 w-2 h-2 bg-green-600 rounded-full"></div>
-                      )}
-                    </div>
-                    
-                    {/* Content */}
-                    <div className="flex-1">
-                      <div className="flex items-center gap-3 mb-3">
-                        <span className="text-sm font-bold text-green-400 uppercase tracking-wide">Phase {step.number}</span>
-                        <span className="text-slate-500">|</span>
-                        <span className="text-sm text-slate-400">Foundation Building</span>
-                      </div>
-                      <h3 className="text-2xl font-black text-white mb-3 group-hover:text-green-400 transition-colors">{step.title}</h3>
-                      <p className="text-slate-300 leading-relaxed mb-4">{step.description}</p>
-                      
-                      {/* Deliverables Box */}
-                      <div className="bg-slate-950 border border-slate-800 rounded-xl p-4">
-                        <div className="text-xs text-green-400 font-bold uppercase tracking-wider mb-3 flex items-center gap-2">
-                          <CheckCircle2 className="w-4 h-4" />
-                          Deliverables
-                        </div>
-                        <ul className="grid sm:grid-cols-2 gap-3">
-                          {step.deliverables.map((item, i) => (
-                            <li key={i} className="flex items-start gap-2 text-sm text-slate-300">
-                              <span className="text-green-400 mt-0.5">✓</span>
-                              <span>{item}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="mt-12 text-center bg-slate-900 border border-slate-800 rounded-2xl p-8">
-            <h3 className="text-xl font-bold text-white mb-3">Ready to Dominate Your Market?</h3>
-            <p className="text-slate-400 mb-6 max-w-xl mx-auto">
-              Every SEO campaign begins with Phase 01: Competitive Analysis. Get your free audit to see where you stand.
-            </p>
-            <Link href="/audit" className="text-green-400 hover:text-green-300 font-bold inline-flex items-center gap-2 group">
-              Get Your Free SEO Audit <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full text-lg font-bold transition-all hover:scale-105 shadow-xl shadow-green-600/20"
+            >
+              Talk to Us <ArrowRight className="w-5 h-5" />
+            </Link>
+            <Link
+              href="/audit"
+              className="inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white px-8 py-4 rounded-full text-lg font-bold transition-all"
+            >
+              Free Site Audit
             </Link>
           </div>
-        </article>
+        </div>
       </section>
 
-      {/* WEB DESIGN CROSS-SELL */}
-      <section className="py-16 px-4 sm:px-6 bg-slate-900/50">
-        <article className="max-w-7xl mx-auto">
-          <div className="bg-gradient-to-br from-red-900/20 via-slate-900 to-orange-900/20 border border-slate-800 rounded-3xl p-8 md:p-12">
-            <div className="grid lg:grid-cols-2 gap-8 items-center">
-              <div className="bg-slate-900 rounded-2xl p-6 border border-slate-700 order-2 lg:order-1">
-                <div className="space-y-4">
-                  <div className="flex items-center gap-4 p-4 bg-red-900/30 border border-red-900/50 rounded-lg">
-                    <div className="w-3 h-3 bg-red-400 rounded-full"></div>
-                    <span className="text-sm text-slate-300">Slow Site = Google Penalty</span>
-                  </div>
-                  <div className="flex items-center gap-4 p-4 bg-red-900/30 border border-red-900/50 rounded-lg">
-                    <div className="w-3 h-3 bg-red-400 rounded-full"></div>
-                    <span className="text-sm text-slate-300">Poor UX = High Bounce Rate</span>
-                  </div>
-                  <div className="flex items-center gap-4 p-4 bg-green-900/30 border border-green-900/50 rounded-lg">
-                    <CheckCircle2 className="w-5 h-5 text-green-400" />
-                    <span className="text-sm text-slate-300">Next.js = 0.9s Load Time = Higher Rankings</span>
-                  </div>
-                </div>
-              </div>
-              <div className="order-1 lg:order-2">
-                <div className="inline-flex items-center gap-2 text-blue-400 font-bold mb-4">
-                  <Laptop className="w-5 h-5" />
-                  <span>Technical Foundation</span>
-                </div>
-                <h2 className="text-3xl md:text-4xl font-black text-white mb-6">
-                  You can't rank a broken website.
-                </h2>
-                <p className="text-lg text-slate-300 mb-6 leading-relaxed">
-                  Google hates slow websites. Before we scale your traffic, we ensure your technical foundation is solid. 
-                  Our Next.js web design services are built specifically to support high-performance SEO campaigns. 
-                  Fast sites rank higher—period.
-                </p>
-                <Link href="/services/web-design" className="text-blue-400 font-bold hover:text-blue-300 inline-flex items-center gap-2 group">
-                  See Our Web Design Standards <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </article>
-      </section>
+      {/* ── WE PRACTICE WHAT WE PREACH ───────────────────────────────────── */}
+      <section className="py-16 px-4 sm:px-6 bg-slate-900">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-xs font-bold text-green-400 uppercase tracking-widest mb-4">Proof of craft</div>
+          <h2 className="text-3xl md:text-4xl font-black mb-3">
+            We rank for our own keywords
+          </h2>
+          <p className="text-slate-400 mb-10 max-w-2xl">
+            The simplest test for any SEO agency: do they rank for their own terms? Here's where Churchtown Media sits right now, verified in SEMrush position tracking as of 1 March 2026.
+          </p>
 
-      {/* CONTENT SCALING CROSS-SELL */}
-      <section className="py-16 px-4 sm:px-6 bg-slate-900/50">
-        <article className="max-w-7xl mx-auto">
-          <div className="bg-gradient-to-br from-purple-900/20 via-slate-900 to-blue-900/20 border border-purple-600/30 rounded-3xl p-8 md:p-12">
-            <div className="grid lg:grid-cols-2 gap-8 items-center">
-              <div>
-                <div className="inline-flex items-center gap-2 text-purple-400 font-bold mb-4">
-                  <Database className="w-5 h-5" />
-                  <span>Scale SEO Faster</span>
-                </div>
-                <h2 className="text-3xl md:text-4xl font-black text-white mb-6">
-                  Need 100+ Location or Product Pages?
-                </h2>
-                <p className="text-lg text-slate-300 mb-6 leading-relaxed">
-                  Writing individual SEO pages manually is slow and expensive. If you're a multi-location business (franchises, chains), 
-                  product catalog (manufacturers, distributors), or service area company covering 20+ towns, our <strong className="text-white">Content Scaling</strong> service 
-                  can generate hundreds of high-quality landing pages in 48 hours using programmatic SEO.
-                </p>
-                <div className="space-y-3 mb-6">
-                  <div className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
-                    <span className="text-slate-300 text-sm">Generate 100+ pages from a single template</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
-                    <span className="text-slate-300 text-sm">Each page unique, SEO-optimized, with proper schema</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
-                    <span className="text-slate-300 text-sm">70% cheaper than manual writing, 20x faster</span>
-                  </div>
-                </div>
-                <Link href="/services/content-scaling" className="text-purple-400 font-bold hover:text-purple-300 inline-flex items-center gap-2 group">
-                  Explore Content Scaling <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </div>
-              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-                <div className="text-sm text-purple-400 font-bold mb-4">Perfect For:</div>
-                <div className="space-y-3">
-                  {[
-                    "Franchises with 20+ locations",
-                    "Manufacturers with 100+ products",
-                    "Service businesses covering 50 towns",
-                    "E-commerce with large catalogs",
-                    "Legal/Medical with multiple offices"
-                  ].map((item, idx) => (
-                    <div key={idx} className="flex items-start gap-3 text-slate-300 text-sm">
-                      <div className="w-2 h-2 bg-purple-400 rounded-full mt-1.5 flex-shrink-0"></div>
-                      <span>{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      {/* INDUSTRIES WE SERVE */}
-      <section className="py-16 px-4 sm:px-6">
-        <article className="max-w-6xl mx-auto">
-          <header className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black mb-4">
-              Industry-Specific SEO
-            </h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
-              Every industry has unique SEO challenges. Legal sites need trust signals. Restaurants need menu schema. 
-              We've mastered 35+ industries.
-            </p>
-          </header>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+          <div className="grid md:grid-cols-2 gap-4 mb-8">
             {[
-              "Solicitors & Legal Practices",
-              "Accountants & Tax Advisors",
-              "Healthcare & Medical",
-              "Restaurants & Cafes",
-              "Hotels & B&Bs",
-              "Tech Startups & SaaS",
-              "Architects & Design",
-              "Marketing Agencies",
-              "Real Estate & Property"
-            ].map((industry, idx) => (
-              <div key={idx} className="bg-slate-900 border border-slate-800 rounded-xl p-4 hover:border-green-600/50 transition-all">
-                <div className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0" />
-                  <span className="text-slate-300 text-sm font-semibold">{industry}</span>
+              { keyword: "seo southport", position: "#1", type: "Local Pack", vol: "590/mo", note: "The primary target keyword — we're in the 3-pack" },
+              { keyword: "seo company near me", position: "#2", type: "Local Pack", vol: "1,300/mo", note: "Geo-qualified by Google based on searcher location" },
+              { keyword: "technical seo southport", position: "#1", type: "Local Pack", vol: "—", note: "Consistent for the past week" },
+              { keyword: "seo audit southport", position: "#1", type: "Local Pack", vol: "—", note: "Consistent for the past week" },
+              { keyword: "seo services merseyside", position: "#2", type: "Local Pack", vol: "—", note: "Consistent all week" },
+              { keyword: "business growth southport", position: "#1", type: "AI Overview", vol: "—", note: "Featured in Google's AI-generated answer" },
+            ].map((row, i) => (
+              <div key={i} className="bg-slate-800 border border-slate-700 rounded-xl p-4 flex items-start gap-4">
+                <div className="flex-shrink-0 text-center min-w-[52px]">
+                  <div className="text-2xl font-black text-green-400">{row.position}</div>
+                  <div className="text-xs text-slate-500 leading-tight">{row.type}</div>
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="text-white font-semibold text-sm mb-0.5">"{row.keyword}"</div>
+                  <div className="text-slate-400 text-xs leading-relaxed">{row.note}{row.vol !== "—" ? ` · ${row.vol}` : ""}</div>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="text-center">
-            <Link 
-              href="/industries" 
-              className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full text-lg font-bold transition-all hover:scale-105 shadow-xl shadow-green-600/20"
-            >
-              View All 35 Industries <ArrowRight className="w-5 h-5" />
-            </Link>
+          <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-5">
+            <p className="text-slate-300 text-sm leading-relaxed">
+              The local pack positions mean when a Southport business owner searches "seo southport" right now, we're the first result in the map. Organic web rankings for broader terms are improving — the trajectory is upward. We publish the data here because transparency is the point: if we can do this for ourselves, we can do it for you.
+            </p>
           </div>
-        </article>
+        </div>
       </section>
 
-      {/* TRANSPARENT PRICING */}
-      <section className="py-20 px-4 sm:px-6 bg-slate-900">
-        <article className="max-w-7xl mx-auto">
-          <header className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-green-600/20 border border-green-600/30 rounded-full px-4 py-2 mb-6">
-              <Sparkles className="w-4 h-4 text-green-400" />
-              <span className="text-green-400 text-sm font-bold">Clear SEO Pricing</span>
-            </div>
-            <h2 className="text-4xl md:text-5xl font-black mb-6">
-              Month-to-Month. No Lock-Ins.
-            </h2>
-            <p className="text-xl text-slate-400 max-w-2xl mx-auto">
-              SEO takes 3-6 months to show results. We'll show you progress every month. If you're not happy, cancel anytime.
-            </p>
-          </header>
+      {/* ── ALOTEK CASE STUDY (SEO RETAINER ANGLE) ───────────────────────── */}
+      <section className="py-16 px-4 sm:px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-xs font-bold text-green-400 uppercase tracking-widest mb-4">Case Study — Month 1</div>
+          <h2 className="text-3xl md:text-4xl font-black mb-3">
+            10 #1 rankings in 30 days. AI Overview on every core term.
+          </h2>
+          <p className="text-slate-400 mb-10 max-w-2xl">
+            Alotek Shelters are a Lancashire manufacturer — bus shelters, covered walkways, outdoor canopies. When we took them on as an SEO retainer client, the site had already been rebuilt on Next.js. Month one was pure SEO work: on-page content restructuring, semantic targeting, and schema. No backlinks purchased. No tricks.
+          </p>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {/* Local Package */}
-            <div className="bg-slate-900 border-2 border-slate-800 rounded-3xl p-8 hover:border-green-600/50 transition-all">
-              <div className="text-sm font-bold text-green-400 uppercase tracking-wide mb-2">Local</div>
-              <div className="mb-6">
-                <span className="text-5xl font-black text-white">£500</span>
-                <span className="text-slate-400 text-lg">/mo</span>
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+              <div className="text-xs font-bold text-red-400 uppercase tracking-wider mb-4">Before the retainer</div>
+              <ul className="space-y-3 text-sm text-slate-300">
+                <li className="flex items-start gap-2"><span className="text-red-400 mt-0.5">✗</span> Averaging position 50 — page 5 on Google for every core keyword</li>
+                <li className="flex items-start gap-2"><span className="text-red-400 mt-0.5">✗</span> ~200 Google impressions per day across all terms</li>
+                <li className="flex items-start gap-2"><span className="text-red-400 mt-0.5">✗</span> No page was clearly answering any specific buyer query</li>
+                <li className="flex items-start gap-2"><span className="text-red-400 mt-0.5">✗</span> £20,000 spent with a previous agency for a flat line</li>
+              </ul>
+            </div>
+            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+              <div className="text-xs font-bold text-green-400 uppercase tracking-wider mb-4">After month 1 of the retainer</div>
+              <ul className="space-y-3 text-sm text-slate-300">
+                <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">✓</span> #1 in Google's AI Overview for "bus shelter manufacturers" nationally</li>
+                <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">✓</span> 10 keywords at position #1, including "bus shelter suppliers" (vol 210)</li>
+                <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">✓</span> AI Overview appearances on every core commercial term</li>
+                <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">✓</span> Daily impressions grew from 200 to 800+ over 3 months</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 mb-6">
+            <h3 className="text-white font-bold mb-3">What month 1 actually involved</h3>
+            <p className="text-slate-300 text-sm leading-relaxed mb-3">
+              Month one was on-page work: restructuring content around the specific search terms their actual buyers use, tightening the page hierarchy, and making sure every product page was doing a clear job. No smoke and mirrors. The AI Overviews followed from content quality — Google's AI pulls from pages that give clear, structured, authoritative answers. That's what we optimised for.
+            </p>
+            <p className="text-slate-400 text-sm">
+              "Bus shelter suppliers" at volume 210 sounds small. But it's 210 searches a month from procurement officers at parish councils and local authorities looking to place an order. One contract is worth £5,000–£50,000. We're #1 for it. That's the point of B2B SEO.
+            </p>
+          </div>
+
+          <Link href="/blog/alotek-shelters-month-1-seo-results" className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 text-sm font-semibold group">
+            Read the full month-1 data breakdown — every ranking, every position change <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </Link>
+        </div>
+      </section>
+
+      {/* ── SOUTHPORT MARKET SECTION ─────────────────────────────────────── */}
+      <section className="py-16 px-4 sm:px-6 bg-slate-900">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-black mb-3">
+            Why Southport businesses need to move on SEO now
+          </h2>
+          <p className="text-slate-400 mb-8 max-w-2xl">
+            Two things are about to change search competition in Southport significantly. Both are time-sensitive.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="bg-slate-800 border border-slate-700 rounded-2xl p-6">
+              <div className="text-2xl mb-3">🏗️</div>
+              <h3 className="text-white font-bold text-lg mb-2">The Marine Lake Events Centre</h3>
+              <p className="text-slate-300 text-sm leading-relaxed">
+                The MLEC is projected to bring 500,000 additional visitors to Southport annually. That means a sustained surge in "restaurant near Marine Lake", "hotel Southport", "things to do Southport" searches — starting from opening day. The businesses that rank well before it opens will capture that traffic. The ones that start their SEO after it opens will spend 6 months trying to catch up.
+              </p>
+              <Link href="/southport-growth" className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 text-xs font-semibold mt-4 group">
+                Read the full Southport growth analysis <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+            <div className="bg-slate-800 border border-slate-700 rounded-2xl p-6">
+              <div className="text-2xl mb-3">⛳</div>
+              <h3 className="text-white font-bold text-lg mb-2">The Open 2026 at Royal Birkdale</h3>
+              <p className="text-slate-300 text-sm leading-relaxed">
+                The Open Championship brings international search volume to Southport that usually doesn't exist. "Hotel near Royal Birkdale", "restaurants Southport", "stay in Southport for the Open" — these terms spike months before the tournament and the bookings go to whoever ranks. Local hotels and restaurants that have decent SEO in place by spring 2026 will take that business. It's a one-off opportunity that won't repeat for years.
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-green-950/30 border border-green-900/40 rounded-xl p-5">
+            <p className="text-slate-300 text-sm leading-relaxed">
+              Both of these are 2026 events. SEO takes 3–6 months to meaningfully move the needle. If you start in March, you're positioned by summer. If you start in summer, you've missed the window for The Open and you're late for the MLEC opening period.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── WHAT WE ACTUALLY DO ──────────────────────────────────────────── */}
+      <section className="py-16 px-4 sm:px-6">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-black mb-3">What we do each month</h2>
+          <p className="text-slate-400 mb-10 max-w-2xl">
+            Concrete work, not vague "optimisation". Here's what's actually happening on your retainer.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-5 mb-8">
+            {[
+              {
+                title: "Technical audit & fixes",
+                desc: "Month one starts with a technical audit — crawlability, site speed, schema markup, canonical tags, mobile usability. We fix what's broken before we build on top of it.",
+              },
+              {
+                title: "Content restructuring",
+                desc: "We identify which pages should be ranking for which queries, rewrite or restructure them around specific buyer intent, and make sure each page has a clear job. This is what moved Alotek from page 5 to #1 in month one.",
+              },
+              {
+                title: "Google Business Profile management",
+                desc: "For local pack rankings, your GBP is critical. We optimise your listing, keep it updated with posts and photos, and manage the review response process.",
+              },
+              {
+                title: "Rank tracking & Search Console monitoring",
+                desc: "We watch what's moving, what Google is crawling, and what queries are generating impressions vs. clicks. When something changes — algorithm update, competitor movement, ranking drop — we're on it.",
+              },
+              {
+                title: "Monthly reporting",
+                desc: "Plain-English report covering ranking changes (with explanations), Search Console impressions and clicks, what was done that month and why, and what's next. You'll never have to chase us.",
+              },
+              {
+                title: "Authority building",
+                desc: "Citations, local directory listings, and — on higher-tier retainers — digital PR and backlink outreach. We do this properly: no link farms, no purchased links.",
+              },
+            ].map((item, i) => (
+              <div key={i} className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h3 className="text-white font-bold mb-1.5">{item.title}</h3>
+                    <p className="text-slate-400 text-sm leading-relaxed">{item.desc}</p>
+                  </div>
+                </div>
               </div>
-              <p className="text-slate-400 mb-8">Dominate your town. Perfect for single-location businesses targeting local 'near me' searches.</p>
-              
-              <ul className="space-y-4 mb-8">
+            ))}
+          </div>
+
+          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
+            <p className="text-slate-400 text-sm leading-relaxed">
+              We also build and run our own local web properties — <a href="https://www.southportguide.co.uk" className="text-green-400 hover:text-green-300" target="_blank" rel="noopener noreferrer">SouthportGuide.co.uk</a> and <a href="https://www.formbyguide.co.uk" className="text-green-400 hover:text-green-300" target="_blank" rel="noopener noreferrer">FormbyGuide.co.uk</a>. Building organic traffic from scratch for our own sites is how we stay sharp on what actually works. You can go look at how they rank right now.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── IS SEO RIGHT FOR YOU ─────────────────────────────────────────── */}
+      <section className="py-16 px-4 sm:px-6 bg-slate-900">
+        <div className="max-w-5xl mx-auto">
+          <div className="inline-flex items-center gap-2 text-amber-400 text-sm font-semibold mb-4">
+            <AlertCircle className="w-4 h-4" />
+            <span>Read this before you enquire</span>
+          </div>
+          <h2 className="text-3xl md:text-4xl font-black mb-3">
+            Is SEO right for your business?
+          </h2>
+          <p className="text-slate-400 mb-10 max-w-2xl">
+            We turn down enquiries when SEO isn't the right fit. It's worth being honest about when it makes sense and when it doesn't.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="bg-green-950/30 border border-green-900/40 rounded-2xl p-6">
+              <h3 className="text-green-400 font-bold text-lg mb-4">SEO makes sense when:</h3>
+              <ul className="space-y-3 text-sm text-slate-300">
+                <li className="flex items-start gap-2"><span className="text-green-400">✓</span> Your customers search Google before buying (most B2B and considered purchases)</li>
+                <li className="flex items-start gap-2"><span className="text-green-400">✓</span> You have a long sales cycle where appearing in search at the right moment matters</li>
+                <li className="flex items-start gap-2"><span className="text-green-400">✓</span> Your average client value is high enough that one extra enquiry per month covers the retainer</li>
+                <li className="flex items-start gap-2"><span className="text-green-400">✓</span> You're prepared to wait 3–6 months for meaningful results and can sustain the investment</li>
+                <li className="flex items-start gap-2"><span className="text-green-400">✓</span> You're a local service business (solicitor, restaurant, trade, hospitality) competing for "near me" searches</li>
+              </ul>
+            </div>
+            <div className="bg-red-950/20 border border-red-900/30 rounded-2xl p-6">
+              <h3 className="text-red-400 font-bold text-lg mb-4">SEO probably isn't right when:</h3>
+              <ul className="space-y-3 text-sm text-slate-300">
+                <li className="flex items-start gap-2"><span className="text-red-400">✗</span> You need results within the next 30 days (that's a paid ads conversation)</li>
+                <li className="flex items-start gap-2"><span className="text-red-400">✗</span> You're a brand new business with very limited cash flow</li>
+                <li className="flex items-start gap-2"><span className="text-red-400">✗</span> Your margins are too tight for the retainer to pay for itself within a year</li>
+                <li className="flex items-start gap-2"><span className="text-red-400">✗</span> Your customers don't find you through search — they come through referrals or trade relationships exclusively</li>
+                <li className="flex items-start gap-2"><span className="text-red-400">✗</span> Your website is too broken to be worth optimising (in which case, fix the site first)</li>
+              </ul>
+            </div>
+          </div>
+
+          <p className="text-slate-400 text-sm">
+            If you're not sure which side you fall on, book a call. We'll give you a straight answer — and if we think SEO isn't the right move right now, we'll tell you that too.
+          </p>
+        </div>
+      </section>
+
+      {/* ── PRICING ──────────────────────────────────────────────────────── */}
+      <section className="py-20 px-4 sm:px-6">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-black mb-3">Pricing</h2>
+          <p className="text-slate-400 mb-3 max-w-2xl">
+            Month-to-month after an initial commitment period. No 12-month lock-ins. Cancel when you want.
+          </p>
+          <p className="text-slate-500 text-sm mb-12 max-w-2xl">
+            A rough ROI check: at £500/month you're spending £6,000/year. If one extra client per quarter covers that — and for most service businesses it does — the question is whether Google search is a realistic source of enquiries for your sector. If you're not sure, we can tell you before you sign up.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+            <div className="bg-slate-900 border-2 border-slate-800 rounded-3xl p-8 hover:border-slate-700 transition-all">
+              <div className="text-sm font-bold text-green-400 uppercase tracking-wide mb-2">Local</div>
+              <div className="text-5xl font-black text-white mb-1">£500</div>
+              <div className="text-slate-400 text-sm mb-6">/month · 3-month minimum</div>
+              <p className="text-slate-400 text-sm mb-8">For single-location Southport businesses competing for local "near me" searches.</p>
+              <ul className="space-y-3 mb-8">
                 {[
-                  "1 city/town focus",
-                  "Google Business Profile optimization",
-                  "5 local keywords targeted",
+                  "Local pack focus — 1 town/area",
+                  "Google Business Profile optimisation",
+                  "5 target keywords tracked",
                   "Monthly local citations",
                   "Review management",
-                  "Monthly performance report",
-                  "3-month minimum"
+                  "Monthly plain-English report",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5" />
                     <span className="text-slate-300 text-sm">{item}</span>
                   </li>
                 ))}
               </ul>
-              
-              <Link
-                href="/contact?package=seo-local"
-                className="block w-full bg-slate-800 hover:bg-slate-700 text-white text-center px-6 py-4 rounded-xl font-bold transition-all"
-              >
-                Get Started
+              <Link href="/contact?package=seo-local" className="block w-full bg-slate-800 hover:bg-slate-700 text-white text-center px-6 py-3.5 rounded-xl font-bold text-sm transition-all">
+                Get a Quote
               </Link>
             </div>
 
-            {/* Regional Package - Featured */}
-            <div className="bg-gradient-to-br from-green-900/40 to-blue-900/40 border-2 border-green-600 rounded-3xl p-8 relative transform md:scale-105 shadow-2xl shadow-green-600/20">
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-green-600 text-white px-4 py-1 rounded-full text-sm font-bold">
+            <div className="bg-gradient-to-br from-green-900/40 to-slate-900 border-2 border-green-600 rounded-3xl p-8 relative shadow-2xl shadow-green-600/10">
+              <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-green-600 text-white px-4 py-1 rounded-full text-xs font-bold">
                 Most Popular
               </div>
               <div className="text-sm font-bold text-green-400 uppercase tracking-wide mb-2">Regional</div>
-              <div className="mb-6">
-                <span className="text-5xl font-black text-white">£900</span>
-                <span className="text-slate-300 text-lg">/mo</span>
-              </div>
-              <p className="text-slate-300 mb-8">Rank across multiple cities. Built for businesses serving Merseyside, Lancashire, or the North West.</p>
-              
-              <ul className="space-y-4 mb-8">
+              <div className="text-5xl font-black text-white mb-1">£900</div>
+              <div className="text-slate-300 text-sm mb-6">/month · 6-month minimum</div>
+              <p className="text-slate-300 text-sm mb-8">For businesses serving multiple towns across Merseyside and Lancashire, or with national B2B ambitions.</p>
+              <ul className="space-y-3 mb-8">
                 {[
-                  "3-5 city coverage",
-                  "15 keywords targeted",
-                  "Technical SEO audit & fixes",
-                  "Content strategy + optimization",
-                  "Backlink building campaign",
+                  "3–5 city/area coverage",
+                  "15 keywords tracked",
+                  "Technical SEO audit + fixes",
+                  "Content strategy + on-page optimisation",
+                  "Local citation and directory building",
                   "Competitor tracking",
-                  "Bi-weekly progress calls",
-                  "6-month minimum"
+                  "Bi-weekly check-in calls",
+                  "Full monthly report",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5" />
                     <span className="text-white text-sm font-medium">{item}</span>
                   </li>
                 ))}
               </ul>
-              
-              <Link
-                href="/contact?package=seo-regional"
-                className="block w-full bg-green-600 hover:bg-green-700 text-white text-center px-6 py-4 rounded-xl font-bold transition-all shadow-lg"
-              >
-                Get Started
+              <Link href="/contact?package=seo-regional" className="block w-full bg-green-600 hover:bg-green-700 text-white text-center px-6 py-3.5 rounded-xl font-bold text-sm transition-all">
+                Get a Quote
               </Link>
             </div>
 
-            {/* Dominant Package */}
-            <div className="bg-slate-900 border-2 border-slate-800 rounded-3xl p-8 hover:border-blue-600/50 transition-all">
-              <div className="text-sm font-bold text-blue-400 uppercase tracking-wide mb-2">Dominant</div>
-              <div className="mb-6">
-                <span className="text-5xl font-black text-white">£1,500+</span>
-                <span className="text-slate-400 text-lg">/mo</span>
-              </div>
-              <p className="text-slate-400 mb-8">Own your market. Multi-location or national campaigns with aggressive link building and PR.</p>
-              
-              <ul className="space-y-4 mb-8">
+            <div className="bg-slate-900 border-2 border-slate-800 rounded-3xl p-8 hover:border-slate-700 transition-all">
+              <div className="text-sm font-bold text-blue-400 uppercase tracking-wide mb-2">Full Retainer</div>
+              <div className="text-5xl font-black text-white mb-1">£1,500+</div>
+              <div className="text-slate-400 text-sm mb-6">/month · custom terms</div>
+              <p className="text-slate-400 text-sm mb-8">For businesses with national reach, large product catalogues, or multi-location operations.</p>
+              <ul className="space-y-3 mb-8">
                 {[
                   "Unlimited location coverage",
-                  "30+ keywords targeted",
+                  "30+ keywords tracked",
                   "Advanced technical SEO",
-                  "Content production team",
-                  "PR & digital outreach",
-                  "Schema & featured snippets",
-                  "Weekly reporting + strategy",
-                  "Custom contract terms"
+                  "Content production included",
+                  "Digital PR and backlink outreach",
+                  "Schema and featured snippet targeting",
+                  "Weekly reporting",
+                  "Dedicated strategy sessions",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" />
                     <span className="text-slate-300 text-sm">{item}</span>
                   </li>
                 ))}
               </ul>
-              
-              <Link
-                href="/contact?package=seo-dominant"
-                className="block w-full bg-slate-800 hover:bg-blue-600/20 border border-blue-600/50 text-white text-center px-6 py-4 rounded-xl font-bold transition-all"
-              >
-                Contact Us
+              <Link href="/contact?package=seo-retainer" className="block w-full bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white text-center px-6 py-3.5 rounded-xl font-bold text-sm transition-all">
+                Get a Quote
               </Link>
             </div>
           </div>
 
-          <div className="text-center bg-slate-900/50 border border-slate-800 rounded-2xl p-6">
-            <p className="text-slate-300 mb-2">
-              <strong className="text-white">SEO is an investment, not an expense.</strong> We'll show you ROI every month.
-            </p>
-            <p className="text-sm text-slate-400">
-              No 12-month contracts • Cancel anytime • First-month setup included • Results typically visible in 8-12 weeks
+          <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-5 text-center">
+            <p className="text-slate-300 text-sm">
+              Not sure which fits? <Link href="/contact" className="text-green-400 hover:text-green-300 font-semibold">Book a free call</Link> — we'll be honest about whether SEO makes sense for your business and at what level.
             </p>
           </div>
-        </article>
+        </div>
       </section>
 
-      {/* FAQ SECTION */}
-      <section className="py-16 px-4 sm:px-6 bg-slate-900/50">
-        <article className="max-w-4xl mx-auto">
-          <header className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black mb-4">Common Questions</h2>
-            <p className="text-slate-400">Straight answers to your SEO concerns. No jargon, no BS.</p>
-          </header>
-          <div className="space-y-4">
+      {/* ── CROSSLINK: WEB DESIGN ────────────────────────────────────────── */}
+      <section className="py-10 px-4 sm:px-6 bg-slate-900">
+        <div className="max-w-5xl mx-auto">
+          <div className="bg-slate-800 border border-slate-700 rounded-2xl p-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div>
+              <div className="text-white font-bold mb-1">SEO on a slow website is wasted effort</div>
+              <p className="text-slate-400 text-sm">If your site loads in 5 seconds, Google is already penalising your rankings. We build fast Next.js sites designed specifically to support SEO campaigns.</p>
+            </div>
+            <Link href="/services/web-design" className="flex-shrink-0 inline-flex items-center gap-2 bg-slate-700 hover:bg-slate-600 text-white px-6 py-3 rounded-xl font-bold text-sm transition-all">
+              Web Design <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FAQ ──────────────────────────────────────────────────────────── */}
+      <section className="py-16 px-4 sm:px-6">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-black mb-10">Common questions</h2>
+          <div className="space-y-3">
             {faqs.map((faq, i) => (
-              <details key={i} className="group border border-slate-700 rounded-2xl bg-slate-800 hover:border-slate-600 transition-all">
-                <summary className="flex items-center justify-between p-6 cursor-pointer list-none text-lg font-bold text-white">
+              <details key={i} className="group border border-slate-700 rounded-2xl bg-slate-800/60 hover:border-slate-600 transition-all">
+                <summary className="flex items-center justify-between p-5 cursor-pointer list-none font-bold text-white text-[15px]">
                   {faq.question}
-                  <span className="transition-transform group-open:rotate-45">
+                  <span className="transition-transform group-open:rotate-45 flex-shrink-0 ml-4">
                     <Plus className="w-5 h-5 text-green-400" />
                   </span>
                 </summary>
-                <div className="px-6 pb-6 text-slate-300 leading-relaxed">
+                <div className="px-5 pb-5 text-slate-300 text-sm leading-relaxed">
                   {faq.answer}
                 </div>
               </details>
             ))}
           </div>
-        </article>
+        </div>
       </section>
 
-      {/* FINAL CTA */}
+      {/* ── CTA ──────────────────────────────────────────────────────────── */}
       <section className="py-20 px-4 sm:px-6">
-        <div className="max-w-4xl mx-auto text-center bg-gradient-to-br from-green-600/20 via-blue-600/20 to-green-600/20 border border-green-600/30 rounded-3xl p-12">
-          <div className="inline-flex items-center gap-2 bg-green-600/20 border border-green-600/30 rounded-full px-4 py-2 mb-6">
-            <Clock className="w-4 h-4 text-green-400" />
-            <span className="text-green-400 text-sm font-bold">Free Audit Available Now</span>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-black mb-6">
-            See Exactly Why You Aren't Ranking #1
+        <div className="max-w-3xl mx-auto text-center bg-gradient-to-br from-green-600/15 via-slate-900 to-green-600/10 border border-green-600/25 rounded-3xl p-12">
+          <h2 className="text-3xl md:text-4xl font-black mb-4">
+            Want to know if SEO would work for your business?
           </h2>
-          <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
-            Our automated audit tool scans your site for 50+ ranking factors and gives you a plain-English report in seconds. 
-            No sales pitch—just data.
+          <p className="text-slate-300 mb-2 leading-relaxed">
+            Book a call and we'll give you a straight answer — including if we think it isn't the right move right now.
+          </p>
+          <p className="text-slate-400 text-sm mb-8">
+            Or run a free automated audit of your site first.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/audit"
-              className="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-10 py-5 rounded-full text-lg font-bold transition-all hover:scale-105 shadow-xl shadow-green-600/30"
+              href="/contact"
+              className="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-10 py-4 rounded-full text-lg font-bold transition-all hover:scale-105 shadow-xl shadow-green-600/20"
             >
-              Run Free SEO Audit <ArrowRight className="w-5 h-5" />
+              Book a Call <ArrowRight className="w-5 h-5" />
             </Link>
             <Link
-              href="/contact"
-              className="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-900 px-10 py-5 rounded-full text-lg font-bold transition-all hover:scale-105"
+              href="/audit"
+              className="inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white px-10 py-4 rounded-full text-lg font-bold transition-all"
             >
-              Book Strategy Call
+              Free Audit
             </Link>
           </div>
-          <p className="text-slate-400 text-sm mt-6">
-            Serving Liverpool, Manchester, Preston, Blackpool & the North West
+          <p className="text-slate-500 text-xs mt-6">
+            Southport · Birkdale · Formby · Liverpool · Preston · across the North West
           </p>
         </div>
       </section>
