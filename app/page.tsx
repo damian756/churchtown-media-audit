@@ -6,8 +6,8 @@ import { posts } from "@/lib/posts";
 
 // 1. REGIONAL STRATEGY METADATA
 export const metadata: Metadata = {
-  title: 'North West Digital Growth Partner | Churchtown Media',
-  description: 'We build revenue engines, not just websites. The North West\'s leading digital growth partner. Data-driven SEO and high-performance development.',
+  title: 'Web Design & SEO Agency Southport | Churchtown Media',
+  description: 'Churchtown Media — web design and SEO for Southport and North West businesses. Fast Next.js sites, local pack rankings, honest pricing. Based in Churchtown, Southport.',
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk',
   },
@@ -36,7 +36,7 @@ const jsonLd = {
   'url': 'https://www.churchtownmedia.co.uk',
   'logo': 'https://www.churchtownmedia.co.uk/icon.png',
   'image': 'https://www.churchtownmedia.co.uk/opengraph-image.png',
-  'description': 'Churchtown Media is the North West\'s leading digital growth agency, specializing in Next.js Web Design and Data-Driven SEO.',
+  'description': 'Churchtown Media is a web design and SEO agency based in Southport, Merseyside. We build fast Next.js websites and deliver local SEO results for North West businesses.',
   'address': {
     '@type': 'PostalAddress',
     'streetAddress': '5 Cambridge Avenue',
@@ -77,8 +77,8 @@ const jsonLd = {
     '@type': 'OfferCatalog',
     'name': 'Digital Growth Services',
     'itemListElement': [
-      { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'Enterprise Web Design' } },
-      { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'Regional SEO Strategy' } },
+      { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'Web Design Southport' } },
+      { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'SEO Services Southport' } },
       { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'Technical Audits' } }
     ]
   }
@@ -171,7 +171,7 @@ export default function Home() {
                     <div className="w-14 h-14 bg-blue-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <Globe className="w-7 h-7 text-blue-400" />
                     </div>
-                    <h3 className="text-2xl font-bold text-white mb-3">Enterprise Web Design</h3>
+                    <h3 className="text-2xl font-bold text-white mb-3">Web Design Southport</h3>
                     <p className="text-slate-300 mb-4 leading-relaxed">
                         Blazing fast{" "}
                         <Link href="/services/web-design" className="text-blue-400 hover:text-blue-300">
@@ -190,7 +190,7 @@ export default function Home() {
                     <div className="w-14 h-14 bg-emerald-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <BarChart3 className="w-7 h-7 text-emerald-400" />
                     </div>
-                    <h3 className="text-2xl font-bold text-white mb-3">Data-Driven SEO</h3>
+                    <h3 className="text-2xl font-bold text-white mb-3">SEO Services</h3>
                     <p className="text-slate-300 mb-4 leading-relaxed">
                         Dominate the{" "}
                         <Link href="/services/seo" className="text-emerald-400 hover:text-emerald-300">
@@ -258,7 +258,7 @@ export default function Home() {
                 
                 {/* Floating Badge */}
                 <div className="absolute top-4 right-4 bg-emerald-500 text-white text-xs font-black px-3 py-1.5 rounded-full shadow-lg">
-                  +86% Traffic
+                  #1 AI Overview
                 </div>
               </div>
               

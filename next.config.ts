@@ -137,6 +137,11 @@ const nextConfig: NextConfig = {
       // 5. GENERIC SERVICE PAGES
       // ----------------------------------------
       {
+        source: '/search-engine-optimisation',
+        destination: '/services/seo',
+        permanent: true,
+      },
+      {
         source: '/services/technical-seo',
         destination: '/services/seo',
         permanent: true,
