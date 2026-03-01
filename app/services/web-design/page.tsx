@@ -1,86 +1,71 @@
 import type { Metadata } from 'next';
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
-import { Zap, Smartphone, Code2, ArrowRight, BarChart3, CheckCircle2, Plus, Shield, Gauge, TrendingUp, Rocket, Users, Target, Clock, Award, Sparkles } from "lucide-react";
+import { ArrowRight, CheckCircle2, Plus, MapPin, Phone, TrendingUp, Zap, Shield, Clock } from "lucide-react";
 
-// METADATA WITH ENHANCED OPENGRAPH
 export const metadata: Metadata = {
-  title: 'Web Design Agency Southport | Churchtown Media',
-  description: 'Southport web design agency building lightning-fast Next.js websites that rank and convert. 90+ Lighthouse scores. No templates. Based in Southport, serving Liverpool, Manchester and the North West.',
-  keywords: ['web design southport', 'website design southport', 'web design agency southport', 'next.js development', 'web design north west', 'web design liverpool', 'web design manchester'],
+  title: 'Web Design Southport | Churchtown Media',
+  description: 'Web design for Southport businesses. Fast Next.js sites that rank on Google. Honest pricing from £2,500. Based in Southport — you can actually come and meet us.',
+  keywords: ['web design southport', 'website design southport', 'web design agency southport', 'next.js development southport', 'web design north west', 'web design liverpool', 'southport web designer'],
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk/services/web-design',
   },
   openGraph: {
-    title: 'Web Design Agency Southport | Churchtown Media',
-    description: 'Southport web design agency building lightning-fast Next.js websites that rank and convert. 90+ Lighthouse scores. No templates.',
+    title: 'Web Design Southport | Churchtown Media',
+    description: 'Web design for Southport businesses. Fast Next.js sites that rank on Google. Honest pricing from £2,500. Based in Southport.',
     url: 'https://www.churchtownmedia.co.uk/services/web-design',
     type: 'website',
     siteName: 'Churchtown Media',
     locale: 'en_GB',
-    images: [{
-      url: 'https://www.churchtownmedia.co.uk/images/web-design-hero.jpg',
-      width: 1200,
-      height: 630,
-      alt: 'Professional Next.js web development workspace showing high-performance website with 99 Lighthouse score',
-    }],
+    images: [{ url: 'https://www.churchtownmedia.co.uk/images/web-design-hero.jpg', width: 1200, height: 630, alt: 'Churchtown Media — web design Southport' }],
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Web Design Agency Southport | Churchtown Media',
-    description: 'Lightning-fast, conversion-optimized websites that rank #1 on Google. 90+ Lighthouse scores guaranteed.',
-    images: ['https://www.churchtownmedia.co.uk/images/web-design-hero.jpg'],
-  },
+  twitter: { card: 'summary_large_image', title: 'Web Design Southport | Churchtown Media', description: 'Fast, rankable websites for Southport businesses. From £2,500. Based in Southport.' },
 };
 
-// FAQ DATA
 const faqs = [
   {
-    question: "Why shouldn't I just use WordPress or Wix?",
-    answer: "WordPress and Wix rely on heavy plugins and generic templates that slow down your site. A slow site (over 3 seconds) loses 53% of visitors instantly, and Google penalizes slow sites in rankings. We build custom Next.js websites that load in under 1 second, are unhackable by design (no admin panel to breach), and give you complete control without the plugin nightmare. WordPress sites average 4.8s load times; our Next.js sites average 0.9s. That's a 5x performance advantage that directly impacts your rankings and revenue."
+    question: "I've been let down by a web designer before — how is this different?",
+    answer: "Directly: we're a small local operation and our reputation depends on every project we take on. We don't take on work we can't do properly. Before we quote, we'll tell you honestly whether your existing site is fixable or whether it needs a rebuild — and why. If we're not the right fit, we'll say so. If you want to see how we work, read the Alotek Shelters case study on the blog — that's a real client, real data, nothing dressed up."
   },
   {
-    question: "Will I be able to edit content myself?",
-    answer: "Absolutely! We can integrate a Headless CMS (like Sanity) that gives you a simple, intuitive dashboard—easier than Facebook—where you can update text, upload blog posts, change images, and manage your site without touching code. You get the editing simplicity of WordPress with the performance and security of custom Next.js development. We provide full training during handover, and you'll have access to video tutorials and documentation."
+    question: "How much does a website actually cost?",
+    answer: "Small business sites (5 pages, contact form, basic SEO) start from £2,500. Sites with a blog, CMS so you can edit content yourself, and more advanced SEO start from £5,000. E-commerce or custom functionality starts from £10,000. All prices include first-year hosting and 30 days of post-launch support. We give fixed quotes — no surprises, no ongoing fees you didn't agree to."
   },
   {
-    question: "How long does it take to build a website?",
-    answer: "Timeline depends on complexity. Small business sites (5-10 pages) typically launch in 3-4 weeks. Enterprise projects with custom functionality take 6-8 weeks. E-commerce sites take 8-10 weeks. We follow our proven 4-phase process: Discovery & Audit (Week 1), Architecture & Design (Week 2), Development & Content (Weeks 3-4+), and Launch & Optimization (Final week). Check out our detailed process on the Work page for exact timelines."
+    question: "Will I be able to update the site myself?",
+    answer: "Yes. We integrate a simple content management system that lets you update text, upload images, and add blog posts without touching code. It's easier to use than your email. We provide a walkthrough at handover and you'll have written guidance to refer back to."
   },
   {
-    question: "What industries do you specialize in?",
-    answer: "We've built high-performance websites for 35+ industries across the North West, including solicitors, accountants, healthcare providers, restaurants, retail, tech startups, and professional services. Each industry has unique challenges—legal sites need trust signals and schema markup, restaurants need fast-loading menus and reservation integration, retail needs e-commerce optimization. Check our 'Who We Help' section to see if your industry is listed, or contact us to discuss your specific needs."
+    question: "Why Next.js and not WordPress?",
+    answer: "WordPress sites are slow by default — the average WordPress site loads in 4–5 seconds. A slow site loses visitors and ranks lower on Google. Our Next.js sites load in under a second. They're also secure by design: there's no admin panel for hackers to find, no plugins to keep updated, no monthly maintenance bill to keep things running. Most of our clients save more on hosting and maintenance in year two than the difference in initial build cost."
   },
   {
-    question: "Do you work with businesses outside of Southport?",
-    answer: "Yes! While we're based in Southport and specialize in North West growth (Liverpool, Manchester, Preston, Blackpool), we work with clients across the UK and internationally via Zoom and Slack. Our remote workflow is seamless—you'll have regular video check-ins, a shared project dashboard, and direct access to our team. Many of our best clients are in London, Edinburgh, and even overseas."
+    question: "Can I come and meet you in person?",
+    answer: "Yes — we're based in Churchtown, Southport. If you'd rather have a proper conversation in person than a Zoom call, that's fine with us. Most local clients prefer it."
   },
   {
-    question: "What if I need changes or help after the site goes live?",
-    answer: "Every project includes 30 days of post-launch support for bug fixes and minor tweaks. After that, you have two options: (1) Monthly maintenance packages (£200-500/month) that include hosting, security monitoring, updates, and priority support; or (2) Pay-as-you-go hourly support (£100/hour) for occasional updates. Most clients choose the maintenance package for peace of mind. You can also manage simple content updates yourself via the CMS."
+    question: "How long does it take to build a site?",
+    answer: "Small business sites typically launch in 3–4 weeks. Larger projects with custom functionality take 6–8 weeks. We don't launch until the site hits our performance benchmarks. Timeline depends partly on how quickly we get content and feedback from you — the more responsive, the faster it goes."
   },
   {
-    question: "How much does a website cost?",
-    answer: "Investment depends on scope. Small business sites start from £2,500. Enterprise sites with custom functionality start from £8,000. E-commerce sites start from £12,000. All pricing includes first-year hosting, SSL certificates, and 30 days post-launch support. We provide transparent, fixed-price quotes after an initial discovery call—no hidden fees, no surprise invoices. Book a free consultation to get an exact quote for your project."
+    question: "Do you work with businesses outside Southport?",
+    answer: "Yes. We work with businesses across Merseyside, Lancashire and the wider North West. Most of the process works just as well over email and video call. But if you're in Southport, Formby, Birkdale, Churchtown or anywhere on the Sefton Coast, we're your local option."
   },
   {
-    question: "What happens if my website breaks or gets hacked?",
-    answer: "Next.js sites are virtually unhackable because they're static—there's no database or admin panel for hackers to exploit. But if something does go wrong, our maintenance clients get 24/7 monitoring and same-day fixes. Without a maintenance package, we offer emergency support at £150/hour with 24-hour response times. We also take daily backups and can restore your site instantly if needed."
+    question: "What are the ongoing costs after launch?",
+    answer: "Hosting on Vercel is free for most small sites or around £20/month for higher-traffic sites. That's it for the basics. We offer optional monthly maintenance packages (£200–£500/month) covering updates, monitoring and priority support — but these aren't mandatory. Many clients manage updates themselves via the CMS."
   }
 ];
 
-// ENHANCED JSON-LD SCHEMA
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
-  'name': 'Enterprise Web Design & Development',
-  'serviceType': 'Next.js Web Development',
+  'name': 'Web Design Southport',
+  'serviceType': 'Web Design & Development',
   'provider': {
     '@type': 'LocalBusiness',
     '@id': 'https://www.churchtownmedia.co.uk/#organization',
     'name': 'Churchtown Media',
-    'image': 'https://www.churchtownmedia.co.uk/images/web-design-hero.jpg',
     'address': {
       '@type': 'PostalAddress',
       'streetAddress': 'Cambridge Avenue',
@@ -95,792 +80,422 @@ const jsonLd = {
   'areaServed': [
     { '@type': 'City', 'name': 'Southport' },
     { '@type': 'City', 'name': 'Liverpool' },
-    { '@type': 'City', 'name': 'Manchester' },
     { '@type': 'City', 'name': 'Preston' },
-    { '@type': 'City', 'name': 'Blackpool' },
+    { '@type': 'AdministrativeArea', 'name': 'Merseyside' },
+    { '@type': 'AdministrativeArea', 'name': 'Lancashire' },
     { '@type': 'AdministrativeArea', 'name': 'North West England' },
-    { '@type': 'AdministrativeArea', 'name': 'Merseyside' }
   ],
-  'description': 'Enterprise-grade Next.js web design and development for high-growth businesses. Lightning-fast websites optimized for conversions and search rankings.',
+  'description': 'Web design for Southport businesses. Fast Next.js sites built to rank on Google and convert visitors into enquiries.',
   'hasOfferCatalog': {
     '@type': 'OfferCatalog',
-    'name': 'Web Design Services',
+    'name': 'Web Design Packages',
     'itemListElement': [
-      {
-        '@type': 'Offer',
-        'name': 'Foundation Web Design Package',
-        'description': '5-page Next.js website with mobile-responsive design, contact form, basic SEO, and first-year hosting',
-        'price': '2500',
-        'priceCurrency': 'GBP',
-        'availability': 'https://schema.org/InStock',
-        'itemOffered': {
-          '@type': 'Service',
-          'name': 'Foundation Web Design Package',
-          'description': '5-page Next.js website for new businesses'
-        }
-      },
-      {
-        '@type': 'Offer',
-        'name': 'Growth Web Design Package',
-        'description': '10-page custom website with premium design, blog/CMS integration, advanced SEO, and 90-day support',
-        'price': '5000',
-        'priceCurrency': 'GBP',
-        'availability': 'https://schema.org/InStock',
-        'itemOffered': {
-          '@type': 'Service',
-          'name': 'Growth Web Design Package',
-          'description': 'Custom Next.js website for established businesses'
-        }
-      },
-      {
-        '@type': 'Offer',
-        'name': 'Premium Web Design Package',
-        'description': 'Enterprise-grade custom solutions with unlimited pages, CRM/API integrations, and dedicated project manager',
-        'price': '10000',
-        'priceCurrency': 'GBP',
-        'availability': 'https://schema.org/InStock',
-        'itemOffered': {
-          '@type': 'Service',
-          'name': 'Premium Web Design Package',
-          'description': 'Enterprise Next.js applications with unlimited complexity'
-        }
-      }
+      { '@type': 'Offer', 'name': 'Foundation', 'price': '2500', 'priceCurrency': 'GBP', 'availability': 'https://schema.org/InStock', 'itemOffered': { '@type': 'Service', 'name': 'Foundation Web Design', 'description': '5-page Next.js website for small businesses' } },
+      { '@type': 'Offer', 'name': 'Growth', 'price': '5000', 'priceCurrency': 'GBP', 'availability': 'https://schema.org/InStock', 'itemOffered': { '@type': 'Service', 'name': 'Growth Web Design', 'description': 'Custom Next.js website with CMS and advanced SEO' } },
+      { '@type': 'Offer', 'name': 'Premium', 'price': '10000', 'priceCurrency': 'GBP', 'availability': 'https://schema.org/InStock', 'itemOffered': { '@type': 'Service', 'name': 'Premium Web Design', 'description': 'Enterprise Next.js with custom integrations' } },
     ]
   },
   'mainEntity': faqs.map(faq => ({
     '@type': 'Question',
     'name': faq.question,
-    'acceptedAnswer': {
-      '@type': 'Answer',
-      'text': faq.answer
-    }
+    'acceptedAnswer': { '@type': 'Answer', 'text': faq.answer }
   }))
 };
 
 export default function WebDesignPage() {
-  
-  const coreFeatures = [
-    { 
-      icon: Gauge, 
-      title: "Lightning-Fast Performance", 
-      desc: "Average 0.9s load time on 4G. Google rewards speed with higher rankings—our sites consistently score 90+ on Lighthouse.",
-      stat: "0.9s avg load"
-    },
-    { 
-      icon: Smartphone, 
-      title: "Mobile-First Design", 
-      desc: "60% of your traffic is mobile. We design for thumbs, not mice. Perfect touch targets, readable text, fast interactions.",
-      stat: "100% responsive"
-    },
-    { 
-      icon: Shield, 
-      title: "Unhackable Architecture", 
-      desc: "No WordPress admin panel. No database vulnerabilities. Static sites are read-only—hackers can't inject code into files that don't exist.",
-      stat: "Zero breaches"
-    }
-  ];
-
-  const techStack = [
-    { name: "Next.js 14+", description: "React framework with built-in SEO, automatic code splitting, and server-side rendering", benefit: "Best-in-class performance" },
-    { name: "TypeScript", description: "Type-safe code that catches errors before production", benefit: "Fewer bugs, more reliable" },
-    { name: "Tailwind CSS", description: "Utility-first CSS framework for rapid, consistent styling", benefit: "Zero runtime overhead" },
-    { name: "Sanity CMS", description: "Headless CMS for easy content management without performance penalties", benefit: "Edit without slowing down" }
-  ];
-
-  const processSteps = [
-    {
-      number: "01",
-      title: "Discovery & Audit",
-      duration: "Week 1",
-      description: "We analyze your competitors, identify technical gaps, and map user journeys.",
-      deliverables: ["Competitor speed analysis", "Keyword research", "Conversion funnel mapping", "Technical requirements doc"]
-    },
-    {
-      number: "02",
-      title: "Architecture & Design",
-      duration: "Week 2",
-      description: "We design the technical foundation first, then make it beautiful.",
-      deliverables: ["Information architecture", "Semantic HTML planning", "Design mockups", "Core Web Vitals strategy"]
-    },
-    {
-      number: "03",
-      title: "Development & Content",
-      duration: "Week 3-4",
-      description: "We build with Next.js 14+ and optimize every line for performance and SEO.",
-      deliverables: ["Next.js development", "Schema.org markup", "Image optimization", "Content migration"]
-    },
-    {
-      number: "04",
-      title: "Launch & Optimization",
-      duration: "Week 5",
-      description: "We launch when the site hits our performance benchmarks. Not before.",
-      deliverables: ["Core Web Vitals testing", "SEO validation", "Analytics setup", "24/7 monitoring"]
-    }
-  ];
-
-  const principles = [
-    {
-      icon: Gauge,
-      title: "Speed is Non-Negotiable",
-      description: "Every site must achieve 90+ Lighthouse performance score. Slow sites lose money.",
-      target: "Target: <2s mobile load on 4G"
-    },
-    {
-      icon: Target,
-      title: "Conversion-Optimized",
-      description: "Every page designed with user intent in mind. Clear CTAs, minimal friction, strategic content.",
-      target: "Target: 2-5% conversion rate"
-    },
-    {
-      icon: TrendingUp,
-      title: "SEO-First Architecture",
-      description: "Semantic HTML, schema markup, and internal linking built into the foundation.",
-      target: "100% pages with proper metadata"
-    },
-    {
-      icon: Rocket,
-      title: "Built to Scale",
-      description: "Handle 10x traffic without breaking. Vercel serverless = unlimited scale.",
-      target: "Infinite scalability"
-    }
-  ];
-
   return (
     <main className="min-h-screen bg-slate-950 text-white">
-      
-      {/* INJECT SCHEMA */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
 
-      {/* HERO SECTION */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+
+      {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="relative pt-32 pb-20 px-4 sm:px-6 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-slate-950 to-slate-950" />
-        
-        <article className="max-w-7xl mx-auto relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left: Text Content */}
-            <div>
-              <div className="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-600/30 rounded-full px-4 py-2 mb-6">
-                <Sparkles className="w-4 h-4 text-blue-400" />
-                <span className="text-blue-400 text-sm font-bold">Enterprise Web Design</span>
-              </div>
 
-              <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6">
-                Web Design
-                <br />
-                <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                  Southport
-                </span>
-              </h1>
-              
-              <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed">
-                Most agencies sell you a brochure. We build revenue engines. Lightning-fast Next.js architecture 
-                designed to convert North West traffic into paying customers.
-              </p>
+        <div className="max-w-5xl mx-auto relative z-10">
 
-              <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <Link
-                  href="/work"
-                  className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-bold transition-all hover:scale-105 shadow-xl shadow-blue-600/20"
-                >
-                  See Our Process <ArrowRight className="w-5 h-5" />
-                </Link>
-                <Link
-                  href="/audit"
-                  className="inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white px-8 py-4 rounded-full text-lg font-bold transition-all"
-                >
-                  Get Free Audit
-                </Link>
-              </div>
-
-              {/* Quick Stats */}
-              <div className="grid grid-cols-3 gap-4">
-                <div className="bg-slate-900 border border-slate-800 rounded-xl p-4">
-                  <div className="text-2xl font-black text-blue-400">0.9s</div>
-                  <div className="text-xs text-slate-400">Avg Load Time</div>
-                </div>
-                <div className="bg-slate-900 border border-slate-800 rounded-xl p-4">
-                  <div className="text-2xl font-black text-green-400">95+</div>
-                  <div className="text-xs text-slate-400">Lighthouse Score</div>
-                </div>
-                <div className="bg-slate-900 border border-slate-800 rounded-xl p-4">
-                  <div className="text-2xl font-black text-purple-400">35+</div>
-                  <div className="text-xs text-slate-400">Industries</div>
-                </div>
-              </div>
-            </div>
-
-            {/* Right: Hero Image */}
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-3xl blur-3xl"></div>
-              <Image
-                src="/images/web-design-hero.jpg"
-                alt="Professional Next.js web development workspace showing high-performance website with 99 Lighthouse score and Core Web Vitals metrics"
-                width={1200}
-                height={800}
-                className="relative rounded-3xl shadow-2xl border border-slate-800"
-                priority
-              />
-            </div>
+          <div className="inline-flex items-center gap-2 text-blue-400 text-sm font-semibold mb-6">
+            <MapPin className="w-4 h-4" />
+            <span>Based in Churchtown, Southport</span>
           </div>
-        </article>
+
+          <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6">
+            Web Design
+            <br />
+            <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+              Southport
+            </span>
+          </h1>
+
+          <p className="text-xl md:text-2xl text-slate-300 mb-4 leading-relaxed max-w-3xl">
+            We build fast, well-structured websites that rank on Google and turn visitors into enquiries.
+            No templates. No WordPress. Honest pricing.
+          </p>
+
+          <p className="text-slate-400 mb-10 max-w-2xl">
+            We're a small Southport team. We take on projects we can do properly and we're straightforward about what your site needs — even if that's not what you were expecting to hear.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-bold transition-all hover:scale-105 shadow-xl shadow-blue-600/20"
+            >
+              Talk to Us <ArrowRight className="w-5 h-5" />
+            </Link>
+            <Link
+              href="/audit"
+              className="inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white px-8 py-4 rounded-full text-lg font-bold transition-all"
+            >
+              Free Site Audit
+            </Link>
+          </div>
+        </div>
       </section>
 
-      {/* CORE FEATURES */}
-      <section className="py-16 px-4 sm:px-6 bg-slate-900/50">
-        <article className="max-w-7xl mx-auto">
-          <header className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black mb-4">
-              The Performance Difference
-            </h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
-              While your competitors struggle with 5-second load times, your site will be instant. Speed = rankings = revenue.
-            </p>
-          </header>
+      {/* ── ALOTEK CASE STUDY ────────────────────────────────────────────── */}
+      <section className="py-16 px-4 sm:px-6 bg-slate-900">
+        <div className="max-w-5xl mx-auto">
 
-          <div className="grid md:grid-cols-3 gap-6">
-            {coreFeatures.map((feature, idx) => {
-              const IconComponent = feature.icon;
-              return (
-                <div key={idx} className="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-blue-600/50 transition-all group">
-                  <div className="bg-blue-600/20 rounded-2xl p-4 w-fit mb-6 group-hover:scale-110 transition-transform">
-                    <IconComponent className="w-8 h-8 text-blue-400" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-white mb-3">{feature.title}</h3>
-                  <p className="text-slate-300 leading-relaxed mb-4">{feature.desc}</p>
-                  <div className="bg-blue-600/10 border border-blue-600/30 rounded-lg px-3 py-2 inline-block">
-                    <span className="text-blue-400 text-sm font-bold">{feature.stat}</span>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </article>
-      </section>
+          <div className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-4">Case Study</div>
+          <h2 className="text-3xl md:text-4xl font-black mb-3">
+            Page 5 to #1 in the AI Overview — in 6 weeks
+          </h2>
+          <p className="text-slate-400 mb-10 max-w-2xl">
+            Alotek Shelters are a Lancashire manufacturer of bus shelters, covered walkways and outdoor canopies. They came to us after spending significant money with a previous agency and having almost nothing to show for it.
+          </p>
 
-      {/* WORDPRESS VS NEXT.JS COMPARISON */}
-      <section className="py-16 px-4 sm:px-6">
-        <article className="max-w-6xl mx-auto">
-          <header className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black mb-4">
-              Why Next.js Destroys WordPress
-            </h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
-              WordPress powers 43% of the web, but it's also responsible for 94% of hacked CMS websites. 
-              Here's the data-driven comparison.
-            </p>
-          </header>
-
-          <div className="bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-800 rounded-3xl p-8 md:p-12">
-            <Image
-              src="/images/wordpress-vs-nextjs-comparison.jpg"
-              alt="Performance comparison showing WordPress 4.8s load time with 23 plugins and security vulnerabilities versus Next.js 0.9s load time with zero plugins and secure by design architecture"
-              width={1200}
-              height={1600}
-              className="rounded-2xl shadow-2xl mx-auto"
-            />
-            
-            <div className="mt-8 grid md:grid-cols-2 gap-6">
-              <div className="bg-red-900/20 border border-red-900/50 rounded-2xl p-6">
-                <h3 className="text-xl font-bold text-red-400 mb-4">WordPress Problems</h3>
-                <ul className="space-y-3 text-slate-300">
-                  <li className="flex items-start gap-3">
-                    <span className="text-red-400 mt-1">✗</span>
-                    <span>Average 4.8s load time (53% visitor loss)</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-red-400 mt-1">✗</span>
-                    <span>23+ plugins = slow, vulnerable, breaking changes</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-red-400 mt-1">✗</span>
-                    <span>94% of hacked CMS sites are WordPress</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-red-400 mt-1">✗</span>
-                    <span>£200+/month in hosting, security, maintenance</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-green-900/20 border border-green-900/50 rounded-2xl p-6">
-                <h3 className="text-xl font-bold text-green-400 mb-4">Next.js Advantages</h3>
-                <ul className="space-y-3 text-slate-300">
-                  <li className="flex items-start gap-3">
-                    <span className="text-green-400 mt-1">✓</span>
-                    <span>Average 0.9s load time (5.3x faster)</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-green-400 mt-1">✓</span>
-                    <span>Zero plugins = lean, fast, stable</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-green-400 mt-1">✓</span>
-                    <span>Unhackable by design (no admin panel)</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-green-400 mt-1">✓</span>
-                    <span>£50/month hosting on Vercel (includes SSL, CDN)</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="mt-8 text-center">
-              <Link href="/blog/nextjs-vs-wordpress-2026" className="text-blue-400 hover:text-blue-300 font-semibold inline-flex items-center gap-2 group">
-                Read the Full Technical Breakdown <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </Link>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      {/* THE 4 PRINCIPLES */}
-      <section className="py-16 px-4 sm:px-6 bg-slate-900/50">
-        <article className="max-w-6xl mx-auto">
-          <header className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black mb-4">
-              The Non-Negotiables
-            </h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
-              Every site we build follows these core principles. No exceptions.
-            </p>
-          </header>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {principles.map((principle, idx) => {
-              const IconComponent = principle.icon;
-              return (
-                <div key={idx} className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-blue-600/50 transition-all">
-                  <div className="flex items-start gap-4 mb-4">
-                    <div className="bg-blue-600/20 rounded-xl p-3 flex-shrink-0">
-                      <IconComponent className="w-6 h-6 text-blue-400" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold text-white mb-2">{principle.title}</h3>
-                      <p className="text-slate-300 text-sm leading-relaxed mb-3">
-                        {principle.description}
-                      </p>
-                      <div className="bg-blue-600/10 border border-blue-600/30 rounded-lg px-3 py-2 inline-block">
-                        <span className="text-blue-400 text-xs font-bold">{principle.target}</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </article>
-      </section>
-
-      {/* OUR TECH STACK */}
-      <section className="py-16 px-4 sm:px-6">
-        <article className="max-w-6xl mx-auto">
-          <header className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black mb-4">
-              The Tech Stack
-            </h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
-              We use modern tools that deliver speed, reliability, and SEO performance. No outdated platforms.
-            </p>
-          </header>
-
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
-            {techStack.map((tech, idx) => (
-              <div key={idx} className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-blue-600/50 transition-all">
-                <div className="flex items-start gap-4">
-                  <div className="bg-blue-600/20 rounded-xl p-3 flex-shrink-0">
-                    <Code2 className="w-6 h-6 text-blue-400" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-white mb-2">{tech.name}</h3>
-                    <p className="text-slate-300 text-sm mb-3 leading-relaxed">
-                      {tech.description}
-                    </p>
-                    <div className="text-blue-400 text-sm font-semibold">
-                      ✓ {tech.benefit}
-                    </div>
-                  </div>
-                </div>
+          <div className="grid md:grid-cols-3 gap-4 mb-10">
+            {[
+              { label: "Starting position", value: "Page 5", sub: "averaging position 50 on Google", color: "text-red-400" },
+              { label: "After 6 weeks", value: "#1", sub: "AI Overview + organic for core terms", color: "text-green-400" },
+              { label: "Google impressions", value: "800+/day", sub: "up from ~200/day at launch", color: "text-blue-400" },
+            ].map((stat, i) => (
+              <div key={i} className="bg-slate-800 border border-slate-700 rounded-2xl p-6">
+                <div className="text-xs text-slate-400 uppercase tracking-wider mb-2">{stat.label}</div>
+                <div className={`text-4xl font-black mb-1 ${stat.color}`}>{stat.value}</div>
+                <div className="text-slate-400 text-sm">{stat.sub}</div>
               </div>
             ))}
           </div>
 
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-            <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
-              <Award className="w-5 h-5 text-blue-400" />
-              Trusted by Industry Leaders
-            </h3>
-            <p className="text-slate-300 text-sm leading-relaxed mb-4">
-              Next.js is the same technology Netflix, TikTok, Nike, and Uber use to handle billions of visitors. 
-              If it's good enough for them, it's good enough for your North West business. We're bringing enterprise-grade 
-              technology to small and medium businesses at a fraction of the cost.
-            </p>
-            <p className="text-slate-400 text-sm">
-              Need to migrate from WordPress? We handle everything: content transfer, URL redirects, and SEO preservation. 
-              Zero downtime, zero ranking loss.
-            </p>
+          <div className="bg-slate-800 border border-slate-700 rounded-2xl p-6 md:p-8 mb-6">
+            <h3 className="text-lg font-bold text-white mb-4">What changed</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <div className="text-xs font-bold text-red-400 uppercase tracking-wider mb-3">Before</div>
+                <ul className="space-y-2 text-sm text-slate-300">
+                  <li className="flex items-start gap-2"><span className="text-red-400 mt-0.5">✗</span> WordPress site averaging position 50 — effectively invisible</li>
+                  <li className="flex items-start gap-2"><span className="text-red-400 mt-0.5">✗</span> ~200 Google impressions per day across all keywords</li>
+                  <li className="flex items-start gap-2"><span className="text-red-400 mt-0.5">✗</span> Poor page structure — no page was clearly answering any specific buyer query</li>
+                  <li className="flex items-start gap-2"><span className="text-red-400 mt-0.5">✗</span> Slow load times penalising rankings</li>
+                </ul>
+              </div>
+              <div>
+                <div className="text-xs font-bold text-green-400 uppercase tracking-wider mb-3">After (6 weeks)</div>
+                <ul className="space-y-2 text-sm text-slate-300">
+                  <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">✓</span> #1 in Google's AI Overview for "bus shelter manufacturers" nationally</li>
+                  <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">✓</span> 800+ daily impressions — 4× growth in 3 months</li>
+                  <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">✓</span> Page 1 rankings across bus shelters, covered walkways, buggy shelters, entrance canopies</li>
+                  <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">✓</span> 67 keywords now tracked nationally in a niche B2B sector</li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </article>
+
+          <p className="text-slate-400 text-sm mb-2">
+            We rebuilt the site on Next.js, restructured the content around specific buyer search terms, and ran month-one SEO. The AI Overviews followed from the content quality — Google's AI pulls from pages that give clear, authoritative answers.
+          </p>
+
+          <Link href="/blog/alotek-shelters-month-1-seo-results" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 text-sm font-semibold group">
+            Read the full month-1 data breakdown <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </Link>
+        </div>
       </section>
 
-      {/* TRANSPARENT PRICING */}
-      <section className="py-20 px-4 sm:px-6 bg-slate-900">
-        <article className="max-w-7xl mx-auto">
-          <header className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-600/30 rounded-full px-4 py-2 mb-6">
-              <Sparkles className="w-4 h-4 text-blue-400" />
-              <span className="text-blue-400 text-sm font-bold">Transparent Pricing</span>
-            </div>
-            <h2 className="text-4xl md:text-5xl font-black mb-6">
-              No Hidden Fees. No Surprises.
-            </h2>
-            <p className="text-xl text-slate-400 max-w-2xl mx-auto">
-              Choose the package that fits your business. All prices include first-year hosting, SSL, and 30-day support.
-            </p>
-          </header>
+      {/* ── WHAT WE BUILD ────────────────────────────────────────────────── */}
+      <section className="py-16 px-4 sm:px-6">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-black mb-3">What we build</h2>
+          <p className="text-slate-400 mb-10 max-w-2xl">
+            You can see our work directly. We also run our own network of local guide sites on the Sefton Coast — built on the same stack, same approach.
+          </p>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {/* Foundation Package */}
-            <div className="bg-slate-900 border-2 border-slate-800 rounded-3xl p-8 hover:border-blue-600/50 transition-all">
+          <div className="grid md:grid-cols-3 gap-5 mb-10">
+            {[
+              { name: "SouthportGuide.co.uk", desc: "Local directory and visitor guide — restaurants, hotels, golf, attractions. 150+ listings.", href: "https://www.southportguide.co.uk", tag: "Directory & guides" },
+              { name: "FormbyGuide.co.uk", desc: "Nature-first visitor guide covering Formby Beach, red squirrels, pinewoods and local businesses.", href: "https://www.formbyguide.co.uk", tag: "Directory & guides" },
+              { name: "SeftonCoast.network", desc: "Umbrella brand and landing page for the Sefton Coast network of sites.", href: "https://www.seftoncoast.network", tag: "Brand site" },
+            ].map((site, i) => (
+              <a key={i} href={site.href} target="_blank" rel="noopener noreferrer" className="group bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-blue-600/50 transition-all block">
+                <div className="text-xs font-bold text-blue-400 uppercase tracking-wider mb-3">{site.tag}</div>
+                <div className="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors">{site.name}</div>
+                <p className="text-slate-400 text-sm leading-relaxed">{site.desc}</p>
+                <div className="mt-4 text-blue-400 text-xs font-semibold flex items-center gap-1">
+                  View live site <ArrowRight className="w-3 h-3" />
+                </div>
+              </a>
+            ))}
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              { icon: Zap, title: "Loads fast", desc: "Under 1 second on mobile. Fast sites rank higher and lose fewer visitors.", stat: "Sub-1s load time" },
+              { icon: TrendingUp, title: "Built to rank", desc: "Semantic structure, schema markup and clean URLs built in from the start — not bolted on later.", stat: "SEO-first architecture" },
+              { icon: Shield, title: "No WordPress headaches", desc: "No plugins to break, no admin panel to hack, no monthly maintenance bill to keep things running.", stat: "Zero plugin dependencies" },
+            ].map((feature, i) => {
+              const Icon = feature.icon;
+              return (
+                <div key={i} className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+                  <div className="bg-blue-600/20 rounded-xl p-3 w-fit mb-4">
+                    <Icon className="w-6 h-6 text-blue-400" />
+                  </div>
+                  <h3 className="text-lg font-bold text-white mb-2">{feature.title}</h3>
+                  <p className="text-slate-400 text-sm leading-relaxed mb-3">{feature.desc}</p>
+                  <div className="text-blue-400 text-xs font-bold">{feature.stat}</div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* ── WORDPRESS VS NEXT.JS ─────────────────────────────────────────── */}
+      <section className="py-16 px-4 sm:px-6 bg-slate-900/60">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-black mb-3">Why not just use WordPress?</h2>
+          <p className="text-slate-400 mb-8 max-w-2xl">
+            WordPress powers a lot of the web. It also accounts for the vast majority of hacked websites and slow-loading business sites. Here's the practical difference.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-6">
+            <div className="bg-red-950/30 border border-red-900/40 rounded-2xl p-6">
+              <h3 className="text-lg font-bold text-red-400 mb-4">WordPress — what it actually costs</h3>
+              <ul className="space-y-3 text-sm text-slate-300">
+                <li className="flex items-start gap-2"><span className="text-red-400">✗</span> 4–5s average load time (53% of visitors leave before 3s)</li>
+                <li className="flex items-start gap-2"><span className="text-red-400">✗</span> 20+ plugins = slow, vulnerable, and something breaks every update</li>
+                <li className="flex items-start gap-2"><span className="text-red-400">✗</span> Hosting + security + maintenance: £150–300/month ongoing</li>
+                <li className="flex items-start gap-2"><span className="text-red-400">✗</span> 94% of hacked CMS sites are WordPress</li>
+              </ul>
+            </div>
+            <div className="bg-green-950/30 border border-green-900/40 rounded-2xl p-6">
+              <h3 className="text-lg font-bold text-green-400 mb-4">Next.js — what you actually get</h3>
+              <ul className="space-y-3 text-sm text-slate-300">
+                <li className="flex items-start gap-2"><span className="text-green-400">✓</span> Under 1s load time — better rankings, fewer lost visitors</li>
+                <li className="flex items-start gap-2"><span className="text-green-400">✓</span> Zero plugins — nothing to break, nothing to update</li>
+                <li className="flex items-start gap-2"><span className="text-green-400">✓</span> Hosting from £0–£20/month on Vercel</li>
+                <li className="flex items-start gap-2"><span className="text-green-400">✓</span> No admin panel = nothing to hack</li>
+              </ul>
+            </div>
+          </div>
+
+          <Link href="/blog/nextjs-vs-wordpress-2026" className="text-blue-400 hover:text-blue-300 text-sm font-semibold inline-flex items-center gap-2 group">
+            Full comparison with real cost data <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </Link>
+        </div>
+      </section>
+
+      {/* ── PRICING ──────────────────────────────────────────────────────── */}
+      <section className="py-20 px-4 sm:px-6 bg-slate-900">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-black mb-3">Pricing</h2>
+          <p className="text-slate-400 mb-12 max-w-2xl">
+            Fixed quotes. No ongoing fees you didn't agree to. All packages include first-year hosting and 30 days of post-launch support.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+            <div className="bg-slate-900 border-2 border-slate-800 rounded-3xl p-8 hover:border-slate-700 transition-all">
               <div className="text-sm font-bold text-blue-400 uppercase tracking-wide mb-2">Foundation</div>
-              <div className="mb-6">
-                <span className="text-5xl font-black text-white">£2,500</span>
-              </div>
-              <p className="text-slate-400 mb-8">Perfect for new businesses and service providers launching their web presence.</p>
-              
-              <ul className="space-y-4 mb-8">
-                {[
-                  "5-page Next.js website",
-                  "Mobile-responsive design",
-                  "Contact form integration",
-                  "Basic SEO setup",
-                  "Google Analytics",
-                  "30-day support",
-                  "First-year hosting included"
-                ].map((item, i) => (
+              <div className="text-5xl font-black text-white mb-2">£2,500</div>
+              <p className="text-slate-400 text-sm mb-8">For new businesses or simple service sites. Everything you need to get online properly.</p>
+              <ul className="space-y-3 mb-8">
+                {["5-page Next.js site", "Mobile-responsive design", "Contact form", "Basic SEO setup", "Google Analytics", "30-day support", "First-year hosting"].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" />
                     <span className="text-slate-300 text-sm">{item}</span>
                   </li>
                 ))}
               </ul>
-              
-              <Link
-                href="/contact?package=foundation"
-                className="block w-full bg-slate-800 hover:bg-slate-700 text-white text-center px-6 py-4 rounded-xl font-bold transition-all"
-              >
-                Get Started
+              <Link href="/contact?package=foundation" className="block w-full bg-slate-800 hover:bg-slate-700 text-white text-center px-6 py-3.5 rounded-xl font-bold text-sm transition-all">
+                Get a Quote
               </Link>
             </div>
 
-            {/* Growth Package - Featured */}
-            <div className="bg-gradient-to-br from-blue-900/40 to-purple-900/40 border-2 border-blue-600 rounded-3xl p-8 relative transform md:scale-105 shadow-2xl shadow-blue-600/20">
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-bold">
+            <div className="bg-gradient-to-br from-blue-900/40 to-slate-900 border-2 border-blue-600 rounded-3xl p-8 relative shadow-2xl shadow-blue-600/10">
+              <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-4 py-1 rounded-full text-xs font-bold">
                 Most Popular
               </div>
               <div className="text-sm font-bold text-blue-400 uppercase tracking-wide mb-2">Growth</div>
-              <div className="mb-6">
-                <span className="text-5xl font-black text-white">£5,000</span>
-              </div>
-              <p className="text-slate-300 mb-8">For established businesses ready to scale with advanced features and optimization.</p>
-              
-              <ul className="space-y-4 mb-8">
-                {[
-                  "10-page custom website",
-                  "Premium design + animations",
-                  "Blog / CMS integration",
-                  "Advanced SEO strategy",
-                  "E-commerce ready",
-                  "Schema markup",
-                  "90-day support",
-                  "Performance optimization"
-                ].map((item, i) => (
+              <div className="text-5xl font-black text-white mb-2">£5,000</div>
+              <p className="text-slate-300 text-sm mb-8">For established businesses that want to rank and convert. CMS so you can update content yourself.</p>
+              <ul className="space-y-3 mb-8">
+                {["Up to 15 pages", "Premium design", "Blog + CMS (edit yourself)", "Advanced SEO", "Schema markup", "90-day support", "Performance optimisation"].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" />
                     <span className="text-white text-sm font-medium">{item}</span>
                   </li>
                 ))}
               </ul>
-              
-              <Link
-                href="/contact?package=growth"
-                className="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center px-6 py-4 rounded-xl font-bold transition-all shadow-lg"
-              >
-                Get Started
+              <Link href="/contact?package=growth" className="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center px-6 py-3.5 rounded-xl font-bold text-sm transition-all">
+                Get a Quote
               </Link>
             </div>
 
-            {/* Premium Package */}
-            <div className="bg-slate-900 border-2 border-slate-800 rounded-3xl p-8 hover:border-purple-600/50 transition-all">
+            <div className="bg-slate-900 border-2 border-slate-800 rounded-3xl p-8 hover:border-slate-700 transition-all">
               <div className="text-sm font-bold text-purple-400 uppercase tracking-wide mb-2">Premium</div>
-              <div className="mb-6">
-                <span className="text-5xl font-black text-white">£10,000+</span>
-              </div>
-              <p className="text-slate-400 mb-8">Enterprise-grade custom solutions with unlimited complexity and ongoing optimization.</p>
-              
-              <ul className="space-y-4 mb-8">
-                {[
-                  "Unlimited pages",
-                  "Custom features & integrations",
-                  "CRM / API integrations",
-                  "Advanced analytics",
-                  "Multi-language support",
-                  "Priority support",
-                  "Dedicated project manager",
-                  "Ongoing optimization"
-                ].map((item, i) => (
+              <div className="text-5xl font-black text-white mb-2">£10k+</div>
+              <p className="text-slate-400 text-sm mb-8">Custom builds, e-commerce, CRM integrations, and anything that doesn't fit a standard template.</p>
+              <ul className="space-y-3 mb-8">
+                {["Unlimited pages", "Custom functionality", "CRM / API integrations", "E-commerce", "Dedicated project manager", "Priority support", "Ongoing optimisation"].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5" />
                     <span className="text-slate-300 text-sm">{item}</span>
                   </li>
                 ))}
               </ul>
-              
-              <Link
-                href="/contact?package=premium"
-                className="block w-full bg-slate-800 hover:bg-purple-600/20 border border-purple-600/50 text-white text-center px-6 py-4 rounded-xl font-bold transition-all"
-              >
-                Contact Us
+              <Link href="/contact?package=premium" className="block w-full bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white text-center px-6 py-3.5 rounded-xl font-bold text-sm transition-all">
+                Get a Quote
               </Link>
             </div>
           </div>
 
-          <div className="text-center bg-slate-900/50 border border-slate-800 rounded-2xl p-6">
-            <p className="text-slate-300 mb-2">
-              <strong className="text-white">Not sure which package fits?</strong> Book a free 15-minute call.
-            </p>
-            <p className="text-sm text-slate-400">
-              Payment plans available: 3-6 month installments • No long-term contracts • Money-back guarantee
+          <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-5 text-center">
+            <p className="text-slate-300 text-sm">
+              Not sure which fits? <Link href="/contact" className="text-blue-400 hover:text-blue-300 font-semibold">Book a free call</Link> — we'll tell you honestly what your site needs and what it'll cost. Payment plans available on all packages.
             </p>
           </div>
-        </article>
+        </div>
       </section>
 
-      {/* OUR PROCESS - ENHANCED VISUAL TIMELINE */}
-      <section className="py-16 px-4 sm:px-6 bg-slate-900/50">
-        <article className="max-w-5xl mx-auto">
-          <header className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-600/30 rounded-full px-4 py-2 mb-6">
-              <Clock className="w-4 h-4 text-blue-400" />
-              <span className="text-blue-400 text-sm font-bold">Our Process</span>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-black mb-4">
-              The 4-Phase Process
-            </h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
-              From discovery to launch in 3-5 weeks. Here's exactly what happens and when.
-            </p>
-          </header>
-
-          <div className="relative">
-            {/* Vertical Timeline Line */}
-            <div className="absolute left-[52px] top-8 bottom-8 w-0.5 bg-gradient-to-b from-blue-600 via-purple-600 to-blue-600 hidden md:block"></div>
-            
-            <div className="space-y-8">
-              {processSteps.map((step, idx) => (
-                <div key={step.number} className="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-blue-600/50 transition-all group relative">
-                  <div className="flex flex-col md:flex-row items-start gap-6">
-                    {/* Number Badge */}
-                    <div className="relative">
-                      <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl p-4 flex-shrink-0 group-hover:scale-110 transition-transform shadow-lg shadow-blue-600/20">
-                        <span className="text-4xl font-black text-white">{step.number}</span>
-                      </div>
-                      {/* Connecting Dot for Timeline */}
-                      {idx < processSteps.length - 1 && (
-                        <div className="hidden md:block absolute left-1/2 -translate-x-1/2 -bottom-10 w-2 h-2 bg-blue-600 rounded-full"></div>
-                      )}
-                    </div>
-                    
-                    {/* Content */}
-                    <div className="flex-1">
-                      <div className="flex items-center gap-3 mb-3">
-                        <span className="text-sm font-bold text-blue-400 uppercase tracking-wide">{step.duration}</span>
-                        <span className="text-slate-500">|</span>
-                        <span className="text-sm text-slate-400">Phase {step.number}</span>
-                      </div>
-                      <h3 className="text-2xl font-black text-white mb-3 group-hover:text-blue-400 transition-colors">{step.title}</h3>
-                      <p className="text-slate-300 leading-relaxed mb-4">{step.description}</p>
-                      
-                      {/* Deliverables Box */}
-                      <div className="bg-slate-950 border border-slate-800 rounded-xl p-4">
-                        <div className="text-xs text-blue-400 font-bold uppercase tracking-wider mb-3 flex items-center gap-2">
-                          <CheckCircle2 className="w-4 h-4" />
-                          Deliverables
-                        </div>
-                        <ul className="grid sm:grid-cols-2 gap-3">
-                          {step.deliverables.map((item, i) => (
-                            <li key={i} className="flex items-start gap-2 text-sm text-slate-300">
-                              <span className="text-green-400 mt-0.5">✓</span>
-                              <span>{item}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="mt-12 text-center bg-slate-900 border border-slate-800 rounded-2xl p-8">
-            <h3 className="text-xl font-bold text-white mb-3">Ready to Start Your Project?</h3>
-            <p className="text-slate-400 mb-6 max-w-xl mx-auto">
-              Every project begins with Phase 01: Discovery & Audit. Book a free consultation to get started.
-            </p>
-            <Link href="/work" className="text-blue-400 hover:text-blue-300 font-bold inline-flex items-center gap-2 group">
-              See Our Full Portfolio <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </div>
-        </article>
-      </section>
-
-      {/* SEO CROSS-SELL */}
+      {/* ── PROCESS ──────────────────────────────────────────────────────── */}
       <section className="py-16 px-4 sm:px-6">
-        <article className="max-w-7xl mx-auto">
-          <div className="bg-gradient-to-br from-blue-900/20 via-slate-900 to-purple-900/20 border border-slate-800 rounded-3xl p-8 md:p-12">
-            <div className="grid lg:grid-cols-2 gap-8 items-center">
-              <div>
-                <div className="inline-flex items-center gap-2 text-blue-400 font-bold mb-4">
-                  <BarChart3 className="w-5 h-5" />
-                  <span>Built for Growth</span>
-                </div>
-                <h2 className="text-3xl md:text-4xl font-black text-white mb-6">
-                  A beautiful site is useless if nobody sees it.
-                </h2>
-                <p className="text-lg text-slate-300 mb-6 leading-relaxed">
-                  We don't just design pixels—we design for rankings. Every website we build comes with a technical 
-                  SEO foundation that puts you ahead of 90% of competitors. Perfect Core Web Vitals, schema markup, 
-                  and semantic HTML5 architecture built in from day one.
-                </p>
-                <Link href="/services/seo" className="text-blue-400 font-bold hover:text-blue-300 inline-flex items-center gap-2 group">
-                  Explore our SEO Services <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </div>
-              <div className="bg-slate-900 rounded-2xl p-6 border border-slate-700">
-                <div className="space-y-4">
-                  {[
-                    "Perfect Core Web Vitals (0.9s LCP)", 
-                    "Schema.org Structured Data (LocalBusiness + Service)", 
-                    "Semantic HTML5 Architecture",
-                    "Automatic Image Optimization (WebP + lazy load)",
-                    "Internal Linking Strategy",
-                    "Mobile-First Indexing Ready"
-                  ].map((item, i) => (
-                    <div key={i} className="flex items-center gap-4 p-4 bg-slate-800 rounded-lg shadow-sm border border-slate-700">
-                      <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0" />
-                      <span className="text-sm text-slate-300">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
+        <div className="max-w-5xl mx-auto">
+          <div className="inline-flex items-center gap-2 text-blue-400 text-sm font-semibold mb-4">
+            <Clock className="w-4 h-4" />
+            <span>Typically 3–5 weeks from start to launch</span>
           </div>
-        </article>
-      </section>
+          <h2 className="text-3xl md:text-4xl font-black mb-10">How a project works</h2>
 
-      {/* INDUSTRIES WE SERVE */}
-      <section className="py-16 px-4 sm:px-6 bg-slate-900/50">
-        <article className="max-w-6xl mx-auto">
-          <header className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black mb-4">
-              Industries We Serve
-            </h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
-              We've built high-performance websites for 35+ industries across the North West. Each industry has unique challenges—we know them all.
-            </p>
-          </header>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+          <div className="space-y-4">
             {[
-              "Solicitors & Legal Practices",
-              "Accountants & Financial Advisors",
-              "Healthcare & Private Medical",
-              "Restaurants & Hospitality",
-              "Retail & E-Commerce",
-              "Tech Startups & SaaS",
-              "Architects & Design Studios",
-              "Marketing Agencies",
-              "Real Estate & Property"
-            ].map((industry, idx) => (
-              <div key={idx} className="bg-slate-900 border border-slate-800 rounded-xl p-4 hover:border-blue-600/50 transition-all">
-                <div className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-blue-400 flex-shrink-0" />
-                  <span className="text-slate-300 text-sm font-semibold">{industry}</span>
+              { n: "01", title: "Discovery", time: "Week 1", desc: "We look at your existing site, your competitors and the specific search terms your actual buyers use. We tell you what needs fixing and why — before any money changes hands." },
+              { n: "02", title: "Design & Structure", time: "Week 2", desc: "We plan the page structure for SEO first, then design around it. Every page has a clear job. We get your approval before we build anything." },
+              { n: "03", title: "Build & Content", time: "Week 3–4", desc: "Next.js development, schema markup, image optimisation, and content either written or migrated from your existing site. We handle all of it." },
+              { n: "04", title: "Launch", time: "Week 5", desc: "We run performance checks before going live. 90+ Lighthouse score is our standard — we don't launch below it. You get a walkthrough and handover documentation." },
+            ].map((step) => (
+              <div key={step.n} className="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-6 items-start">
+                <div className="bg-gradient-to-br from-blue-600 to-cyan-600 rounded-xl px-4 py-3 flex-shrink-0 text-center min-w-[64px]">
+                  <div className="text-2xl font-black text-white">{step.n}</div>
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center gap-3 mb-2">
+                    <span className="text-white font-bold text-lg">{step.title}</span>
+                    <span className="text-blue-400 text-xs font-semibold bg-blue-600/10 border border-blue-600/20 rounded-full px-2.5 py-0.5">{step.time}</span>
+                  </div>
+                  <p className="text-slate-400 text-sm leading-relaxed">{step.desc}</p>
                 </div>
               </div>
             ))}
           </div>
-
-          <div className="text-center">
-            <Link 
-              href="/industries" 
-              className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-bold transition-all hover:scale-105 shadow-xl shadow-blue-600/20"
-            >
-              View All 35 Industries <ArrowRight className="w-5 h-5" />
-            </Link>
-          </div>
-        </article>
+        </div>
       </section>
 
-      {/* FAQ SECTION */}
+      {/* ── LOCAL ────────────────────────────────────────────────────────── */}
+      <section className="py-16 px-4 sm:px-6 bg-slate-900">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-black mb-4">
+                Based in Southport.<br />
+                <span className="text-slate-400 font-normal">You can actually meet us.</span>
+              </h2>
+              <p className="text-slate-300 leading-relaxed mb-4">
+                We're based in Churchtown, Southport — not a distant agency with a local landing page. We know Lord Street, we know the seasonal pattern of the town, we know what the Marine Lake Events Centre will do to search competition over the next five years.
+              </p>
+              <p className="text-slate-300 leading-relaxed mb-6">
+                If you'd rather have a conversation in person than a Zoom call, that's completely fine. Most of our local clients prefer it.
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3 text-sm text-slate-300">
+                  <MapPin className="w-4 h-4 text-blue-400 flex-shrink-0" />
+                  <span>Cambridge Avenue, Churchtown, Southport PR9 9SA</span>
+                </div>
+                <div className="flex items-center gap-3 text-sm text-slate-300">
+                  <Phone className="w-4 h-4 text-blue-400 flex-shrink-0" />
+                  <a href="tel:01704635785" className="hover:text-blue-400 transition-colors">01704 635785</a>
+                </div>
+              </div>
+            </div>
+            <div className="bg-slate-800 border border-slate-700 rounded-2xl p-6 space-y-4">
+              <h3 className="text-white font-bold mb-2">Areas we cover</h3>
+              {[
+                "Southport — town centre, Lord Street, Birkdale, Ainsdale, Churchtown",
+                "Formby, Freshfield, Hightown",
+                "Crosby and the wider Sefton Coast",
+                "Liverpool and Merseyside",
+                "Preston, Blackpool and Lancashire",
+                "Remote projects across the UK",
+              ].map((area, i) => (
+                <div key={i} className="flex items-start gap-3 text-sm text-slate-300">
+                  <CheckCircle2 className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" />
+                  <span>{area}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FAQ ──────────────────────────────────────────────────────────── */}
       <section className="py-16 px-4 sm:px-6">
-        <article className="max-w-4xl mx-auto">
-          <header className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black mb-4">Common Questions</h2>
-            <p className="text-slate-400">Everything you need to know about our web design process.</p>
-          </header>
-          <div className="space-y-4">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-black mb-10">Common questions</h2>
+          <div className="space-y-3">
             {faqs.map((faq, i) => (
-              <details key={i} className="group border border-slate-700 rounded-2xl bg-slate-800 hover:border-slate-600 transition-all">
-                <summary className="flex items-center justify-between p-6 cursor-pointer list-none text-lg font-bold text-white">
+              <details key={i} className="group border border-slate-700 rounded-2xl bg-slate-800/60 hover:border-slate-600 transition-all">
+                <summary className="flex items-center justify-between p-5 cursor-pointer list-none font-bold text-white text-[15px]">
                   {faq.question}
-                  <span className="transition-transform group-open:rotate-45">
+                  <span className="transition-transform group-open:rotate-45 flex-shrink-0 ml-4">
                     <Plus className="w-5 h-5 text-blue-400" />
                   </span>
                 </summary>
-                <div className="px-6 pb-6 text-slate-300 leading-relaxed">
+                <div className="px-5 pb-5 text-slate-300 text-sm leading-relaxed">
                   {faq.answer}
                 </div>
               </details>
             ))}
           </div>
-        </article>
+        </div>
       </section>
 
-      {/* FINAL CTA */}
+      {/* ── CTA ──────────────────────────────────────────────────────────── */}
       <section className="py-20 px-4 sm:px-6">
-        <div className="max-w-4xl mx-auto text-center bg-gradient-to-br from-blue-600/20 via-purple-600/20 to-blue-600/20 border border-blue-600/30 rounded-3xl p-12">
-          <div className="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-600/30 rounded-full px-4 py-2 mb-6">
-            <Clock className="w-4 h-4 text-blue-400" />
-            <span className="text-blue-400 text-sm font-bold">Free Consultation Available</span>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-black mb-6">
-            Stop Losing Customers to Slow Websites
+        <div className="max-w-3xl mx-auto text-center bg-gradient-to-br from-blue-600/15 via-slate-900 to-blue-600/10 border border-blue-600/25 rounded-3xl p-12">
+          <h2 className="text-3xl md:text-4xl font-black mb-4">
+            Ready to get started?
           </h2>
-          <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
-            Get a free technical breakdown of your current site and a roadmap to dominate your market. 
-            No sales pitch—just data.
+          <p className="text-slate-300 mb-2 leading-relaxed">
+            Get in touch and we'll tell you honestly what your site needs. No sales pitch — just a straight answer about what's wrong and what it would take to fix it.
+          </p>
+          <p className="text-slate-400 text-sm mb-8">
+            Or get a free automated audit of your current site first.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/audit"
-              className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 rounded-full text-lg font-bold transition-all hover:scale-105 shadow-xl shadow-blue-600/30"
+              href="/contact"
+              className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-full text-lg font-bold transition-all hover:scale-105 shadow-xl shadow-blue-600/20"
             >
-              Get Free Site Audit <ArrowRight className="w-5 h-5" />
+              Get in Touch <ArrowRight className="w-5 h-5" />
             </Link>
             <Link
-              href="/contact"
-              className="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-900 px-10 py-5 rounded-full text-lg font-bold transition-all hover:scale-105"
+              href="/audit"
+              className="inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white px-10 py-4 rounded-full text-lg font-bold transition-all"
             >
-              Book Consultation
+              Free Audit
             </Link>
           </div>
-          <p className="text-slate-400 text-sm mt-6">
-            Trusted by North West businesses in Liverpool, Manchester, Preston & beyond
+          <p className="text-slate-500 text-xs mt-6">
+            Serving Southport, Formby, Liverpool, Preston and across the North West
           </p>
         </div>
       </section>
