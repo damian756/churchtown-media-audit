@@ -14,15 +14,15 @@ export default function ServicesDropdown({ isMobile = false, onItemClick }: Serv
 
   const services = [
     {
-      name: "Enterprise Web Design",
+      name: "Web Design Southport",
       href: "/services/web-design",
-      description: "Next.js websites built for speed and conversions",
+      description: "Fast Next.js websites built to rank and convert",
       icon: Code,
     },
     {
-      name: "Data-Driven SEO",
+      name: "SEO Services",
       href: "/services/seo",
-      description: "Technical SEO that delivers rankings and revenue",
+      description: "Local pack, technical SEO and content — real results",
       icon: LineChart,
     },
     {
