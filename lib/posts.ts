@@ -16,7 +16,7 @@ export const posts: BlogPost[] = [
     date: "Mar 1, 2026",
     author: "Damian Roche",
     category: "Case Studies",
-    image: "/images/alotek-rankings.webp",
+    image: "/images/alotek-cover.jpg",
     excerpt: "Alotek Shelters went from WordPress and page 2 to #1 for every core commercial keyword in 30 days. Here's the full SEMrush data, the AI Overview story, and why low-volume B2B keywords are worth more than they look.",
     content: `
       <p>I'm going to keep this straightforward. Here's what the data looks like after month one of Alotek's SEO retainer.</p>

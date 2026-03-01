@@ -151,19 +151,19 @@ export default function BlogFeed({ posts }: { posts: BlogPost[] }) {
 
       {/* FEATURED HERO ARTICLE */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-12">
-        <Link href={`/blog/${heroPost.slug}`} className="group block relative overflow-hidden rounded-2xl md:rounded-[2rem] bg-slate-900 aspect-[2/1] md:aspect-[2.5/1] border border-slate-800 shadow-2xl">
+        <Link href={`/blog/${heroPost.slug}`} className="group block relative overflow-hidden rounded-2xl md:rounded-[2rem] bg-slate-900 aspect-[4/3] sm:aspect-[2/1] md:aspect-[2.5/1] border border-slate-800 shadow-2xl">
             <Image 
                 src={heroPost.image} 
                 alt={heroPost.title} 
                 fill
-                className="object-cover opacity-50 group-hover:scale-105 transition-transform duration-700"
+                className="object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent z-10"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/70 to-slate-900/20 z-10"></div>
             <div className="absolute bottom-0 left-0 p-4 sm:p-6 md:p-8 z-20 max-w-3xl">
-                <div className="inline-block bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
+                <div className="inline-block bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full mb-2 sm:mb-4">
                     Latest Report
                 </div>
-                <h2 className="text-2xl md:text-5xl font-bold text-white mb-4 group-hover:text-blue-200 transition-colors leading-tight line-clamp-3">
+                <h2 className="text-xl sm:text-2xl md:text-5xl font-bold text-white mb-2 sm:mb-4 group-hover:text-blue-200 transition-colors leading-tight line-clamp-2 sm:line-clamp-3">
                     {heroPost.title}
                 </h2>
                 <div className="flex items-center gap-2 text-slate-300 font-medium">
