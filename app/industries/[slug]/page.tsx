@@ -148,7 +148,7 @@ export default async function IndustryPage({ params }: PageProps) {
                 src={industry.heroImage ?? `/images/industries/industry-${industry.slug}.jpg`}
                 alt={`${industry.name} - Professional web design and SEO services`}
                 fill
-                sizes="(max-width: 768px) 100vw, 1024px"
+                sizes="(max-width: 768px) 100vw, (max-width: 1280px) 90vw, 1024px"
                 className="object-cover"
                 priority
               />
@@ -284,7 +284,7 @@ export default async function IndustryPage({ params }: PageProps) {
                   src={heroImagePath}
                   alt={`${industry.name} - Digital growth opportunity`}
                   fill
-                  sizes="(max-width: 1024px) 100vw, 320px"
+                  sizes="(max-width: 1024px) 100vw, 384px"
                   className="object-cover"
                 />
               </div>

@@ -156,6 +156,7 @@ export default function BlogFeed({ posts }: { posts: BlogPost[] }) {
                 src={heroPost.image} 
                 alt={heroPost.title} 
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 1280px"
                 className="object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/70 to-slate-900/20 z-10"></div>
@@ -228,6 +229,7 @@ export default function BlogFeed({ posts }: { posts: BlogPost[] }) {
                         src={post.image} 
                         alt={post.title} 
                         fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute top-4 left-4 bg-white/95 backdrop-blur px-3 py-1 rounded-lg text-xs font-bold text-blue-700 shadow-sm z-10">

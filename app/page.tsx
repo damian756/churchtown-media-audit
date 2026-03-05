@@ -252,6 +252,7 @@ export default function Home() {
                   src="/images/alotek-portfolio.jpg"
                   alt="Alotek Shelters - Bus Shelter Manufacturers"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent" />
@@ -287,6 +288,7 @@ export default function Home() {
                   src="/images/seftonlinks-portfolio.jpg"
                   alt="Sefton Links - Championship Golf Guide"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent" />
@@ -322,6 +324,7 @@ export default function Home() {
                   src="/images/southportguide-portfolio.jpg"
                   alt="Southport Guide - Tourism Directory"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent" />
@@ -515,6 +518,7 @@ export default function Home() {
                     src={post.image}
                     alt={post.title}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
