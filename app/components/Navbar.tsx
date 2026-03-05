@@ -1,12 +1,14 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { usePathname } from "next/navigation";
-import WhoWeHelpMegaMenu from "./WhoWeHelpMegaMenu";
-import ServicesDropdown from "./ServicesDropdown";
+
+const ServicesDropdown = dynamic(() => import("./ServicesDropdown"), { ssr: true });
+const WhoWeHelpMegaMenu = dynamic(() => import("./WhoWeHelpMegaMenu"), { ssr: true });
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

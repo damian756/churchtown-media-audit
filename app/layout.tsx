@@ -1,16 +1,15 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
-import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ["latin"],
-  display: 'optional',
+  display: "swap",
   preload: true,
-  variable: '--font-inter',
+  variable: "--font-inter",
 });
 
 // 1. VIEWPORT SETTINGS
@@ -74,45 +73,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      </head>
       <body className={`${inter.className} bg-slate-950 text-white antialiased selection:bg-blue-400 selection:text-white`}>
-        
-        {/* --- 1. COOKIEYES BANNER (Delayed for performance) --- */}
-        <Script
-          id="cookieyes"
-          strategy="lazyOnload"
-          dangerouslySetInnerHTML={{
-            __html: `
-              setTimeout(function() {
-                var s = document.createElement('script');
-                s.src = 'https://cdn-cookieyes.com/client_data/d800a0412ec550532ec1984546b7231c/script.js';
-                s.async = 1;
-                document.head.appendChild(s);
-              }, 2000);
-            `,
-          }}
-        />
-
-        {/* --- 2. CRISP CHAT (Delayed 3s for performance) --- */}
-        <Script
-          id="crisp-chat"
-          strategy="lazyOnload"
-          dangerouslySetInnerHTML={{
-            __html: `
-              setTimeout(function() {
-                window.$crisp=[];
-                window.CRISP_WEBSITE_ID="5b24b78a-41ad-45fb-bda1-066fe50b4fc4";
-                (function(){
-                  var d=document;
-                  var s=d.createElement("script");
-                  s.src="https://client.crisp.chat/l.js";
-                  s.async=1;
-                  d.getElementsByTagName("head")[0].appendChild(s);
-                })();
-              }, 3000);
-            `,
-          }}
-        />
-
         <Navbar />
         
         {children}
