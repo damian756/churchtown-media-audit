@@ -55,13 +55,13 @@ export async function GET(req: NextRequest) {
       pageviewsThisMonth,
       uniqueVisitorsThisWeek: pageviewsThisWeek,
       topPages: topPagesRaw
-        .map((r) => ({ path: r.path, count: r._count.path }))
-        .sort((a, b) => b.count - a.count)
+        .map((r: { path: string; _count: { path: number } }) => ({ path: r.path, count: r._count.path }))
+        .sort((a: { count: number }, b: { count: number }) => b.count - a.count)
         .slice(0, 10),
       topReferrers: topReferrersRaw
-        .filter((r) => r.referrer)
-        .map((r) => ({ referrer: r.referrer!, count: r._count.referrer }))
-        .sort((a, b) => b.count - a.count)
+        .filter((r: { referrer: string | null; _count: { referrer: number } }) => r.referrer)
+        .map((r: { referrer: string | null; _count: { referrer: number } }) => ({ referrer: r.referrer!, count: r._count.referrer }))
+        .sort((a: { count: number }, b: { count: number }) => b.count - a.count)
         .slice(0, 10),
     },
     content: {
