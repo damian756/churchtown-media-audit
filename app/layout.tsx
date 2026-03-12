@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import Script from "next/script";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
@@ -75,14 +74,13 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* eslint-disable-next-line @next/next/no-before-interactive-script-outside-document */}
+        <script src="https://analytics.ahrefs.com/analytics.js" data-key="Vjz4nA8LqwXN3ma/wV/sWg" async></script>
       </head>
       <body className={`${inter.className} bg-slate-950 text-white antialiased selection:bg-blue-400 selection:text-white`}>
         <Navbar />
-        
         {children}
-        
         <Footer />
-        <Script src="https://analytics.ahrefs.com/analytics.js" data-key="Vjz4nA8LqwXN3ma/wV/sWg" strategy="afterInteractive" />
       </body>
     </html>
   );
