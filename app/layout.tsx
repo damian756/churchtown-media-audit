@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
@@ -81,8 +82,7 @@ export default function RootLayout({
         {children}
         
         <Footer />
-
-
+        <Script src="https://analytics.ahrefs.com/analytics.js" data-key="Vjz4nA8LqwXN3ma/wV/sWg" strategy="afterInteractive" />
       </body>
     </html>
   );
