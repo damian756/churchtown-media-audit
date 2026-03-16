@@ -27,7 +27,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/frequently-asked-questions',
     '/southport-growth',
     '/search-engine-optimisation',
-    '/search-engine-optimisation/local',
     '/terms',
     '/privacy',
   ].map((route) => ({

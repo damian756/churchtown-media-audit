@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     description: 'Enterprise-grade tech, priced for local business. Dominate your postcode.',
     url: 'https://www.churchtownmedia.co.uk/services/small-business',
     type: 'website',
+    images: [{ url: 'https://www.churchtownmedia.co.uk/opengraph-image.png', width: 1200, height: 630, alt: 'Small Business Growth Packages' }],
   }
 };
 

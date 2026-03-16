@@ -7,6 +7,14 @@ export const metadata = {
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk/services/headless-development',
   },
+  openGraph: {
+    title: 'Headless Next.js Development | Churchtown Media',
+    description: 'We migrate slow WordPress sites to Next.js. Faster, more secure, and built to rank.',
+    url: 'https://www.churchtownmedia.co.uk/services/headless-development',
+    type: 'website',
+    siteName: 'Churchtown Media',
+    images: [{ url: 'https://www.churchtownmedia.co.uk/opengraph-image.png', width: 1200, height: 630, alt: 'Headless Next.js Development' }],
+  },
 };
 
 export default function HeadlessDev() {

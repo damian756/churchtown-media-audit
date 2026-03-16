@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     description: 'Weekly reports on the Southport digital economy.',
     url: 'https://www.churchtownmedia.co.uk/blog',
     type: 'website',
+    images: [{ url: 'https://www.churchtownmedia.co.uk/opengraph-image.png', width: 1200, height: 630, alt: 'Market Intelligence — Churchtown Media' }],
   }
 };
 

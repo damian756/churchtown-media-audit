@@ -34,13 +34,28 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
+  "@id": "https://www.churchtownmedia.co.uk/#business",
   "name": "Churchtown Media",
-  "url": "https://www.churchtownmedia.co.uk/locations/southport",
+  "url": "https://www.churchtownmedia.co.uk",
   "description":
     "Churchtown Media is Southport's local digital agency — web design and SEO for Southport businesses. Based in Churchtown, five minutes from Lord Street. No outsourcing.",
   "telephone": "+441704635785",
   "email": "hello@churchtownmedia.co.uk",
   "priceRange": "££",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Churchtown",
+    "addressLocality": "Southport",
+    "addressRegion": "Merseyside",
+    "postalCode": "PR9",
+    "addressCountry": "GB"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 53.6657,
+    "longitude": -2.9831
+  },
+  "image": "https://www.churchtownmedia.co.uk/opengraph-image.png",
   "areaServed": [
     { "@type": "City", "name": "Southport" },
     { "@type": "Place", "name": "Birkdale" },

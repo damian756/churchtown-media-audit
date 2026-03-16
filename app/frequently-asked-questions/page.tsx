@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     description: 'Expert answers to all your questions about Next.js, WordPress, local SEO, and growing your business online.',
     url: 'https://www.churchtownmedia.co.uk/frequently-asked-questions',
     type: 'website',
+    images: [{ url: 'https://www.churchtownmedia.co.uk/opengraph-image.png', width: 1200, height: 630, alt: 'FAQs — Churchtown Media' }],
   },
 };
 

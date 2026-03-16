@@ -148,6 +148,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/search-engine-optimisation/local',
+        destination: '/services/seo',
+        permanent: true,
+      },
+      {
         source: '/services/technical-seo',
         destination: '/services/seo',
         permanent: true,

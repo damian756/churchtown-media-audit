@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     description: 'See why businesses across the North West trust us to build their revenue engines.',
     url: 'https://www.churchtownmedia.co.uk/testimonials',
     type: 'website',
+    images: [{ url: 'https://www.churchtownmedia.co.uk/opengraph-image.png', width: 1200, height: 630, alt: 'Client Reviews — Churchtown Media' }],
   }
 };
 

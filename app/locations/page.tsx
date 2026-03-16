@@ -10,6 +10,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk/locations',
   },
+  openGraph: {
+    title: 'Areas We Serve | Churchtown Media',
+    description: 'Web Design & SEO services across the North West. From Liverpool to Preston, see our local case studies and travel times.',
+    url: 'https://www.churchtownmedia.co.uk/locations',
+    type: 'website',
+    siteName: 'Churchtown Media',
+    images: [{ url: 'https://www.churchtownmedia.co.uk/opengraph-image.png', width: 1200, height: 630, alt: 'Churchtown Media' }],
+  },
 };
 
 export default function LocationsIndex() {

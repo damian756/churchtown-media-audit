@@ -7,6 +7,14 @@ export const metadata = {
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk/services',
   },
+  openGraph: {
+    title: 'Services | Churchtown Media',
+    description: 'Bespoke web development, programmatic SEO, and technical audits for North West businesses.',
+    url: 'https://www.churchtownmedia.co.uk/services',
+    type: 'website',
+    siteName: 'Churchtown Media',
+    images: [{ url: 'https://www.churchtownmedia.co.uk/opengraph-image.png', width: 1200, height: 630, alt: 'Churchtown Media Services' }],
+  },
 };
 
 export default function ServicesPage() {

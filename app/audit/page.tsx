@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     description: 'Get a comprehensive report on your site\'s speed, SEO, and conversion blockers in 2 minutes.',
     url: 'https://www.churchtownmedia.co.uk/audit',
     type: 'website',
+    images: [{ url: 'https://www.churchtownmedia.co.uk/opengraph-image.png', width: 1200, height: 630, alt: 'Free SEO Audit Tool' }],
   }
 };
 
@@ -23,29 +24,26 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
   'name': 'Churchtown Media SEO Auditor',
+  'url': 'https://www.churchtownmedia.co.uk/audit',
   'applicationCategory': 'BusinessApplication',
   'operatingSystem': 'Web',
   'offers': {
     '@type': 'Offer',
-    'price': '0',
+    'price': 0,
     'priceCurrency': 'GBP'
   },
-  // FIX A: Add Rating to the App itself
   'aggregateRating': {
     '@type': 'AggregateRating',
-    'ratingValue': '5.0',
-    'ratingCount': '24'
+    'ratingValue': 5.0,
+    'ratingCount': 24,
+    'bestRating': 5,
+    'worstRating': 1
   },
-  'description': 'Free SEO auditing tool for Southport businesses.',
+  'description': 'Free SEO auditing tool for Southport and North West businesses. Check rankings, page speed, and technical errors instantly.',
   'provider': {
     '@type': 'LocalBusiness',
     'name': 'Churchtown Media',
-    // FIX B: Add Rating to the Business provider
-    'aggregateRating': {
-        '@type': 'AggregateRating',
-        'ratingValue': '5.0',
-        'reviewCount': '24'
-    }
+    'url': 'https://www.churchtownmedia.co.uk'
   }
 };
 
