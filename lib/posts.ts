@@ -5312,5 +5312,369 @@ export const posts: BlogPost[] = [
 
       <p><em>Explore more tourism SEO guides: <a href="/blog/southport-rspb-marshside-seo-guide" class="text-blue-400 hover:text-blue-300 underline">RSPB Marshside</a>, <a href="/blog/southport-beach-tourism-seo-guide" class="text-blue-400 hover:text-blue-300 underline">Beach Tourism</a>, <a href="/blog/southport-bird-prey-sanctuary-seo-guide" class="text-blue-400 hover:text-blue-300 underline">Wildlife Attractions</a>.</em></p>
     `
+  },
+  {
+    slug: "wigan-seo-guide",
+    title: "Wigan SEO: Why Local Businesses Are Still Invisible Online in 2026",
+    date: "Mar 14, 2026",
+    author: "Damian Roche",
+    category: "Local SEO Guides",
+    image: "/images/wigan-seo-guide.jpg",
+    excerpt: "Wigan has 330,000 people, a growing retail and hospitality scene, and a local business community that is almost entirely invisible on Google. Here is why that is happening and what to do about it.",
+    content: `
+      <p>Wigan doesn't get talked about much in the digital marketing world. That's partly why it's an opportunity.</p>
+
+      <p>Most SEO agencies in the North West focus their content on Manchester, Liverpool, and Leeds. The big-population, big-competition cities. Wigan sits in between all of them — 330,000 people, a strong local economy, good transport links — and most of its businesses are effectively invisible online.</p>
+
+      <p>I've worked with businesses across the region for 20 years. The pattern is consistent: the further you get from a major city, the worse the SEO gets. Not because the businesses are less good, but because they've either never been properly advised, or they've been sold something that didn't work and gave up.</p>
+
+      <hr />
+
+      <h2>Why Wigan Businesses Struggle to Rank</h2>
+
+      <p>There are a few consistent reasons.</p>
+
+      <h3>1. The Template Problem</h3>
+      <p>The majority of Wigan business websites were built on WordPress with a purchased theme. Nothing wrong with WordPress in principle, but in practice most of these sites have slow load times, poor Core Web Vitals scores, and a technical structure that Google finds difficult to crawl efficiently. A slow, poorly-structured site is not a foundation you can SEO your way out of. You're filling a bucket with a hole in it.</p>
+
+      <h3>2. Local Pack Invisibility</h3>
+      <p>The three businesses that appear in Google's local pack (the map results) when someone searches "plumber Wigan" or "solicitor Wigan" capture a disproportionate share of clicks. Appearing in the local pack requires a properly optimised Google Business Profile, consistent NAP data across the web, and genuine local content. Most Wigan businesses have none of those things in place.</p>
+
+      <h3>3. Competing Against Manchester</h3>
+      <p>A Manchester agency with domain authority built over a decade of content production can outrank a Wigan local business for "solicitor Wigan" without ever having set foot in the town. This happens constantly. The solution is hyperlocal content that a Manchester agency can't replicate: Wigan-specific case studies, local knowledge, local references. Google increasingly rewards genuine local authority over raw domain strength.</p>
+
+      <h3>4. No Content, No Authority</h3>
+      <p>Most Wigan business websites have a homepage, a services page, and a contact page. That's it. No blog, no case studies, no guides. Google has nothing to index and rank beyond the basic commercial pages. A competitor that publishes consistent, useful content compounds their advantage every month.</p>
+
+      <hr />
+
+      <h2>What the Wigan Search Landscape Looks Like</h2>
+
+      <p>Let me be specific about volumes. These are the kinds of terms Wigan businesses should be targeting:</p>
+
+      <div style="overflow-x: auto; margin: 2rem 0;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem;">
+          <thead>
+            <tr style="background: #1e293b; color: #94a3b8; text-align: left;">
+              <th style="padding: 0.75rem 1rem; border-bottom: 1px solid #334155;">Keyword</th>
+              <th style="padding: 0.75rem 1rem; border-bottom: 1px solid #334155; text-align: center;">Monthly Volume</th>
+              <th style="padding: 0.75rem 1rem; border-bottom: 1px solid #334155; text-align: center;">Difficulty</th>
+              <th style="padding: 0.75rem 1rem; border-bottom: 1px solid #334155;">Opportunity</th>
+            </tr>
+          </thead>
+          <tbody style="color: #cbd5e1;">
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 0.75rem 1rem;">seo wigan</td>
+              <td style="padding: 0.75rem 1rem; text-align: center;">210</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80;">Low</td>
+              <td style="padding: 0.75rem 1rem;">High — few authoritative local competitors</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b; background: #0f172a;">
+              <td style="padding: 0.75rem 1rem;">web design wigan</td>
+              <td style="padding: 0.75rem 1rem; text-align: center;">320</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #fbbf24;">Medium</td>
+              <td style="padding: 0.75rem 1rem;">High — dominated by generic agencies</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 0.75rem 1rem;">seo company wigan</td>
+              <td style="padding: 0.75rem 1rem; text-align: center;">110</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80;">Low</td>
+              <td style="padding: 0.75rem 1rem;">High — most results are weak aggregators</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b; background: #0f172a;">
+              <td style="padding: 0.75rem 1rem;">digital marketing wigan</td>
+              <td style="padding: 0.75rem 1rem; text-align: center;">260</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #fbbf24;">Medium</td>
+              <td style="padding: 0.75rem 1rem;">Good — branded agencies rank but lack depth</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 0.75rem 1rem;">website design wigan</td>
+              <td style="padding: 0.75rem 1rem; text-align: center;">170</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80;">Low</td>
+              <td style="padding: 0.75rem 1rem;">High — thin competition</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>These aren't enormous volumes. But in B2B local services, a single client converted from a search is worth hundreds or thousands of pounds. Volume is not the only metric that matters.</p>
+
+      <hr />
+
+      <h2>The Local Pack: Where the Majority of Clicks Go</h2>
+
+      <p>Before someone even reaches an organic result, they see the map pack. Three businesses. A star rating. A phone number they can click without visiting a website.</p>
+
+      <p>The businesses in those three slots capture somewhere between 40% and 60% of all clicks on a local search. If you're not in the pack, you're competing for the remaining half, split between however many organic results Google shows.</p>
+
+      <p>Getting into the local pack for Wigan searches requires:</p>
+
+      <ul>
+        <li>A fully completed Google Business Profile with consistent business name, address, and phone number</li>
+        <li>A genuine Wigan address — not a virtual office</li>
+        <li>Regular posts, photos, and Q&amp;A activity on the profile</li>
+        <li>A meaningful number of genuine reviews with responses</li>
+        <li>On-site content that references Wigan specifically, not just generic services</li>
+      </ul>
+
+      <p>None of this is technically complex. Most of it just isn't being done.</p>
+
+      <hr />
+
+      <h2>What Good Wigan SEO Actually Looks Like</h2>
+
+      <p>The businesses winning search in Wigan and across the North West in 2026 share a few characteristics.</p>
+
+      <p><strong>They have fast, technically sound websites.</strong> Not WordPress with six plugins slowing every page load, but lean, well-structured sites with clean HTML, proper schema markup, and Core Web Vitals scores that Google actually rewards. For most businesses this means either a properly optimised WordPress build or a modern framework like Next.js.</p>
+
+      <p><strong>They have local content depth.</strong> Not one page about their service. A blog post about a local project. A case study featuring a recognisable Wigan client. A guide to something that people in Wigan actually search for. Google is getting better at distinguishing between genuine local authority and generic content with a postcode bolted on.</p>
+
+      <p><strong>They have structured data.</strong> LocalBusiness schema, review schema, service schema. Most Wigan business sites have none of this. It takes an hour to implement and Google uses it directly in rich results and AI Overviews.</p>
+
+      <p><strong>They treat their Google Business Profile as a channel, not an afterthought.</strong> New photos every week. Responses to every review. Posts about current offers or projects. The algorithm rewards active profiles over dormant ones.</p>
+
+      <hr />
+
+      <h2>The Wigan Opportunity in 2026</h2>
+
+      <p>Here's the honest picture. Wigan has low SEO competition relative to its population and commercial activity. The businesses ranking for most local terms in 2026 are there largely by default — they turned up, others didn't. That changes as more businesses take digital seriously.</p>
+
+      <p>The time to build search authority is before it gets harder, not after. An SEO gap takes months to close once a competitor has established it. A business that starts now is competing against the 2024 version of the market, not the 2027 version.</p>
+
+      <p>We work with businesses across the North West, including the Wigan borough. If you want an honest assessment of where your site stands and what it would take to start ranking properly, the free audit takes two minutes.</p>
+
+      <p><em>Related reading: <a href="/blog/seo-liverpool-local-business-guide-2026" class="text-blue-400 hover:text-blue-300 underline">SEO Liverpool Guide</a>, <a href="/blog/why-new-local-seo-company-is-your-business-best-friend" class="text-blue-400 hover:text-blue-300 underline">Why a New SEO Company Is Your Best Friend</a>, <a href="/blog/invisible-on-lord-street" class="text-blue-400 hover:text-blue-300 underline">Why Local SEO Is Your New Shop Window</a>.</em></p>
+    `
+  },
+  {
+    slug: "google-ai-overviews-2026",
+    title: "Google AI Overviews: How to Get Your Business Featured in 2026",
+    date: "Mar 15, 2026",
+    author: "Damian Roche",
+    category: "SEO Insights",
+    image: "/images/google-ai-overviews-2026.jpg",
+    excerpt: "Google's AI Overviews now appear on millions of searches every day. We got a client featured in every AI Overview for their core commercial terms within 30 days. Here is exactly how it works and what you need to do.",
+    content: `
+      <p>I'm going to start with the data because it makes the point better than any explanation.</p>
+
+      <p>In February 2026, we took on Alotek Shelters as an SEO client. Within 30 days, they were appearing in Google's AI Overview for every core commercial keyword in their sector — bus shelter suppliers, covered walkway manufacturers, outdoor shelter companies. Every term. Not position one in organic results. The AI Overview panel itself, which sits above everything else on the page.</p>
+
+      <p>This wasn't accidental. It was the result of a specific approach to content and technical SEO that we now apply as standard. Here's what we know about how it works.</p>
+
+      <hr />
+
+      <h2>What Are Google AI Overviews?</h2>
+
+      <p>AI Overviews (previously called SGE, or Search Generative Experience) are the AI-generated summary panels that appear at the top of many Google search results. They pull information from multiple sources, synthesise it into a direct answer, and cite the pages they drew from.</p>
+
+      <p>For a user, it means getting an answer without necessarily clicking through to a website. For a business, appearing as one of the cited sources means your name, brand, and link appear prominently above the traditional organic results.</p>
+
+      <p>The click-through rate from AI Overview citations varies, but the visibility and brand authority value is significant. More importantly, AI Overviews are where Google is going. Understanding them now is not optional for businesses that take search seriously.</p>
+
+      <hr />
+
+      <h2>What Google's AI Actually Looks For</h2>
+
+      <p>Based on what we've observed across multiple clients and sectors, Google's AI draws from pages that share certain characteristics. This is not speculation — it's pattern recognition from watching what gets cited and what doesn't.</p>
+
+      <h3>Structured, Direct Answers</h3>
+      <p>AI Overviews pull from content that directly answers the question being searched. This sounds obvious but most business websites don't do it. A page about "bus shelter suppliers" that talks about your company's history and values is not answering the question. A page that explains what bus shelters cost, how long they take to install, what materials are used, and what to look for in a supplier is.</p>
+      <p>Write for the question, not for the brand. The AI will credit you for the answer.</p>
+
+      <h3>Schema Markup</h3>
+      <p>Structured data tells Google what your content is about in machine-readable format. FAQ schema, HowTo schema, Product schema, LocalBusiness schema. Pages with proper schema markup are significantly more likely to appear in AI Overviews because the AI can understand the content structure without having to interpret it.</p>
+      <p>Most business websites have no schema at all. This is a significant gap that takes relatively little time to address.</p>
+
+      <h3>Authority Signals</h3>
+      <p>The AI draws from pages Google already trusts. Trust comes from backlinks, from consistent publishing, from technical quality, and from demonstrable expertise on the topic. A page on a site with strong domain authority, clean technical SEO, and a history of relevant content is more likely to be cited than a page on a new or neglected domain.</p>
+
+      <h3>Content Depth</h3>
+      <p>Thin pages don't get cited. The AI is looking for comprehensive, genuinely useful information. A 300-word service page is not a candidate. A 1,500-word page that covers the topic thoroughly, answers related questions, and provides specific useful information is.</p>
+
+      <hr />
+
+      <h2>The Alotek Result: What We Actually Did</h2>
+
+      <p>For Alotek, the approach was straightforward. We migrated their site from WordPress to Next.js — better performance, better technical foundation. We restructured their service pages to directly answer the questions their target buyers search. We added comprehensive FAQ content with schema markup. We built internal links between related pages to signal topical authority.</p>
+
+      <p>Within 30 days, AI Overviews appeared for every tracked keyword. Not all of them cited Alotek exclusively — AI Overviews typically cite two to four sources — but Alotek appeared in all of them. For a specialist B2B manufacturer, appearing in the AI Overview for your core commercial terms is transformative visibility.</p>
+
+      <p>The full data is in our <a href="/blog/alotek-shelters-month-1-seo-results" class="text-blue-400 hover:text-blue-300 underline">month one case study</a>.</p>
+
+      <hr />
+
+      <h2>The Practical Checklist: What to Do Now</h2>
+
+      <p>If you want to give your site the best chance of appearing in AI Overviews, here is the practical checklist:</p>
+
+      <ul>
+        <li><strong>Audit your core commercial pages</strong> — are they answering questions directly, or describing your business? Rewrite for the question.</li>
+        <li><strong>Add FAQ sections</strong> to every service page, with FAQ schema markup. Minimum 5 questions per page, answering what real buyers actually search.</li>
+        <li><strong>Add LocalBusiness schema</strong> if you serve a local area. This is foundational and most sites don't have it.</li>
+        <li><strong>Improve content depth</strong> on thin pages. A service page under 800 words is almost never cited in an AI Overview. Aim for 1,200 minimum on commercial terms.</li>
+        <li><strong>Fix Core Web Vitals</strong> — slow sites are not trusted sites. Google's technical quality signals feed into AI source selection.</li>
+        <li><strong>Build topical depth</strong> — a single page on a topic is not enough. A cluster of pages around a topic signals genuine expertise.</li>
+      </ul>
+
+      <hr />
+
+      <h2>What This Means for North West Businesses</h2>
+
+      <p>The businesses that will dominate Google in 2027 are the ones building AI Overview presence now. The gap between businesses that have invested in this and those that haven't is already visible in the data. It will widen.</p>
+
+      <p>The good news for North West businesses is that most local competition is not doing this. The SEO landscape in Southport, Wigan, Preston, and across the region is largely untapped at the AI Overview level. The local businesses currently ranking in AI Overviews are there because almost no one else tried.</p>
+
+      <p>That window closes as awareness grows. The time to build this is now, not when everyone else has figured it out.</p>
+
+      <p>If you want to know where your site stands on all of this, the free audit gives you a starting point. No forms, no sales calls — just data.</p>
+
+      <p><em>Related reading: <a href="/blog/alotek-shelters-month-1-seo-results" class="text-blue-400 hover:text-blue-300 underline">The Alotek Month 1 Report</a>, <a href="/blog/nextjs-vs-wordpress-2026" class="text-blue-400 hover:text-blue-300 underline">Next.js vs WordPress in 2026</a>, <a href="/blog/seo-recovery-alotek-shelters" class="text-blue-400 hover:text-blue-300 underline">The SEO Recovery Case Study</a>.</em></p>
+    `
+  },
+  {
+    slug: "google-business-profile-optimisation-2026",
+    title: "Google Business Profile Optimisation: The 2026 Guide for North West Businesses",
+    date: "Mar 16, 2026",
+    author: "Damian Roche",
+    category: "Local SEO Guides",
+    image: "/images/google-business-profile-optimisation-2026.jpg",
+    excerpt: "Your Google Business Profile is probably the most underleveraged asset your business has. Most profiles are incomplete, inactive, or poorly set up. Here is exactly what to fix and in what order.",
+    content: `
+      <p>When someone searches for your type of business in your town, the three results that appear in the map pack get the majority of clicks. Not the website at position one in the organic results. The map pack.</p>
+
+      <p>Those three positions are determined almost entirely by your Google Business Profile. How complete it is. How active it is. How many genuine reviews it has. How well the profile data matches what's on your website. And how relevant and authoritative Google considers your business to be for that specific search.</p>
+
+      <p>Most businesses in the North West have a Google Business Profile that is doing almost none of this well. Here is what to fix.</p>
+
+      <hr />
+
+      <h2>The Fundamentals: What Most Profiles Get Wrong</h2>
+
+      <h3>Incomplete Profile Information</h3>
+      <p>Google gives you a lot of fields to fill in. Most businesses fill in the basics — name, address, phone — and stop there. The profiles that rank fill in everything: business description, services, products, opening hours (including holiday hours), attributes (parking, accessibility, payment methods), primary and secondary categories.</p>
+      <p>Primary category is particularly important. Google uses it heavily in determining which searches you appear for. Most businesses pick a broad category and leave it at that. The businesses dominating local packs have chosen the most specific primary category that accurately describes them, plus several relevant secondary categories.</p>
+
+      <h3>No Photos or Outdated Photos</h3>
+      <p>Profiles with more than 100 photos get significantly more views than profiles with fewer. Businesses that add new photos regularly outperform those with static or outdated imagery. This is not a correlation — Google's algorithm explicitly rewards active profiles.</p>
+      <p>The photos should include: the exterior (so people can find you), the interior, products or services in action, and the team. At minimum, aim for 20 high-quality photos at launch and add new ones every week.</p>
+
+      <h3>Ignoring Reviews</h3>
+      <p>The volume and recency of reviews affects local pack rankings directly. A business with 200 reviews acquired over three years will outperform a business with 200 reviews all from 2021. Recency matters. Consistency matters.</p>
+      <p>More importantly: responding to reviews matters. Google has confirmed that responding to reviews improves rankings. Most businesses don't respond to anything. Every review — positive or negative — should get a response within 48 hours.</p>
+
+      <hr />
+
+      <h2>The Local Pack Algorithm: What Actually Drives Rankings</h2>
+
+      <p>Google's local pack ranking algorithm considers three main factors: relevance, distance, and prominence. Understanding each one tells you where to focus your effort.</p>
+
+      <h3>Relevance</h3>
+      <p>How well does your business match the search query? This comes from your profile categories, your business description, your services, and the content on your website. A plumber who lists "emergency plumber", "boiler repair", and "bathroom fitting" as services will appear for more specific searches than a plumber who just lists "plumbing".</p>
+
+      <h3>Distance</h3>
+      <p>How far is the searcher from your business? You can't control this directly, but you can expand your perceived service area by listing specific locations in your service area settings and creating location-specific content on your website.</p>
+
+      <h3>Prominence</h3>
+      <p>How well-known and trusted is your business? This is the hardest factor to improve quickly, but the highest leverage one. Prominence comes from reviews, from backlinks to your website, from mentions of your business name across the web, and from how established your Google Business Profile is.</p>
+
+      <hr />
+
+      <h2>The Optimisation Checklist: Do These in Order</h2>
+
+      <div style="overflow-x: auto; margin: 2rem 0;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem;">
+          <thead>
+            <tr style="background: #1e293b; color: #94a3b8; text-align: left;">
+              <th style="padding: 0.75rem 1rem; border-bottom: 1px solid #334155;">Task</th>
+              <th style="padding: 0.75rem 1rem; border-bottom: 1px solid #334155; text-align: center;">Impact</th>
+              <th style="padding: 0.75rem 1rem; border-bottom: 1px solid #334155; text-align: center;">Time</th>
+            </tr>
+          </thead>
+          <tbody style="color: #cbd5e1;">
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 0.75rem 1rem;">Verify ownership of the profile</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80;">Critical</td>
+              <td style="padding: 0.75rem 1rem; text-align: center;">30 mins</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b; background: #0f172a;">
+              <td style="padding: 0.75rem 1rem;">Set primary and secondary categories correctly</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80;">High</td>
+              <td style="padding: 0.75rem 1rem; text-align: center;">15 mins</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 0.75rem 1rem;">Write a keyword-rich business description (750 chars)</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80;">High</td>
+              <td style="padding: 0.75rem 1rem; text-align: center;">20 mins</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b; background: #0f172a;">
+              <td style="padding: 0.75rem 1rem;">Add all services with descriptions and prices</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80;">High</td>
+              <td style="padding: 0.75rem 1rem; text-align: center;">1 hour</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 0.75rem 1rem;">Upload 20+ high-quality photos</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #fbbf24;">Medium</td>
+              <td style="padding: 0.75rem 1rem; text-align: center;">2 hours</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b; background: #0f172a;">
+              <td style="padding: 0.75rem 1rem;">Set up Q&amp;A section with common questions</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #fbbf24;">Medium</td>
+              <td style="padding: 0.75rem 1rem; text-align: center;">30 mins</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 0.75rem 1rem;">Create a weekly post schedule</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #fbbf24;">Medium</td>
+              <td style="padding: 0.75rem 1rem; text-align: center;">Ongoing</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b; background: #0f172a;">
+              <td style="padding: 0.75rem 1rem;">Respond to all existing reviews</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80;">High</td>
+              <td style="padding: 0.75rem 1rem; text-align: center;">1 hour</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 0.75rem 1rem;">Build a review request process</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80;">High</td>
+              <td style="padding: 0.75rem 1rem; text-align: center;">Ongoing</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>NAP Consistency: The Silent Ranking Factor</h2>
+
+      <p>NAP stands for Name, Address, Phone. Google cross-references your profile information against every other mention of your business across the web — directories, social profiles, industry listings, press mentions. If your address appears as "24 High Street" on your website, "24 High St" on Yell, and "Unit 24, High Street" on your Facebook page, Google sees inconsistency. Inconsistency reduces trust.</p>
+
+      <p>Do an audit of every place your business is listed online. Standardise the name, address, and phone number exactly. Use exactly the same format everywhere. This is unglamorous work but it has a measurable impact on local rankings.</p>
+
+      <hr />
+
+      <h2>The Website Connection: Why Your GBP and Site Need to Align</h2>
+
+      <p>Google doesn't just look at your Business Profile in isolation. It looks at what your website says about you. If your profile says you offer kitchen fitting in Southport but your website doesn't mention Southport, there's a mismatch. If your website has no LocalBusiness schema, Google has to infer your business information rather than reading it directly.</p>
+
+      <p>The businesses ranking at the top of local packs almost always have websites with:</p>
+      <ul>
+        <li>LocalBusiness schema with address, phone, opening hours, and service area</li>
+        <li>A dedicated contact page with NAP information that matches the profile exactly</li>
+        <li>Location-specific content that references the areas they serve</li>
+        <li>Fast load times and good Core Web Vitals scores</li>
+      </ul>
+
+      <p>The profile and the website need to work together. Optimising one without the other is leaving rankings on the table.</p>
+
+      <hr />
+
+      <h2>How Long Does It Take?</h2>
+
+      <p>After a full profile optimisation, most businesses see movement in the local pack within 4 to 8 weeks. Some see it faster for less competitive terms. The key variables are how competitive your category is locally, how many reviews you have relative to the pack, and how well your website supports the profile.</p>
+
+      <p>In less competitive towns — which includes most of the North West outside Manchester city centre — a properly optimised profile can move into the local pack within a month. In competitive categories like solicitors or accountants in Liverpool, it takes longer but the commercial value of each position is proportionally higher.</p>
+
+      <p>The work is not complex. It is mostly just being thorough about things most businesses haven't bothered with. That's the opportunity.</p>
+
+      <p>If you want us to look at your current profile and tell you exactly what's holding it back, the free audit covers this as part of the local SEO assessment.</p>
+
+      <p><em>Related reading: <a href="/blog/invisible-on-lord-street" class="text-blue-400 hover:text-blue-300 underline">Why Local SEO Is Your New Shop Window</a>, <a href="/blog/wigan-seo-guide" class="text-blue-400 hover:text-blue-300 underline">Wigan SEO Guide</a>, <a href="/blog/seo-liverpool-local-business-guide-2026" class="text-blue-400 hover:text-blue-300 underline">SEO Liverpool Guide</a>.</em></p>
+    `
   }
 ];
