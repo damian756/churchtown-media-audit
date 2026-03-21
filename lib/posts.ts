@@ -5676,5 +5676,274 @@ export const posts: BlogPost[] = [
 
       <p><em>Related reading: <a href="/blog/invisible-on-lord-street" class="text-blue-400 hover:text-blue-300 underline">Why Local SEO Is Your New Shop Window</a>, <a href="/blog/wigan-seo-guide" class="text-blue-400 hover:text-blue-300 underline">Wigan SEO Guide</a>, <a href="/blog/seo-liverpool-local-business-guide-2026" class="text-blue-400 hover:text-blue-300 underline">SEO Liverpool Guide</a>.</em></p>
     `
+  },
+  {
+    slug: "what-is-generative-engine-optimisation",
+    title: "What is Generative Engine Optimisation (GEO)? The Complete Guide for 2026",
+    date: "Mar 19, 2026",
+    author: "Damian Roche",
+    category: "AI & SEO",
+    image: "/images/google-ai-overviews-2026.jpg",
+    excerpt: "Google AI Overviews. ChatGPT search. Perplexity. AI is now the gatekeeper between your business and your customers. GEO is the work that makes AI engines choose you — here's everything you need to know.",
+    content: `
+      <p>Search changed in 2024. Most businesses haven't caught up yet.</p>
+
+      <p>Google rolled out AI Overviews at scale — the synthesised, AI-generated answer that now appears above the traditional blue links on a growing percentage of searches. ChatGPT added web search. Perplexity became a genuine research tool for professionals. And Gemini, Claude, and a dozen other AI systems are crawling the web and generating answers in response to user queries.</p>
+
+      <p>If you're featured in those answers, you get the visibility, the authority, and often the click. If you're not, your competitor does.</p>
+
+      <p>Generative Engine Optimisation — GEO — is the practice of making sure AI engines choose you.</p>
+
+      <hr />
+
+      <h2>What GEO Actually Means</h2>
+
+      <p>The term is new. The underlying signals aren't entirely.</p>
+
+      <p>GEO is the set of technical, content, and authority practices that increase the probability of your website being cited as a source in AI-generated answers. It sits alongside traditional SEO — not replacing it, but extending it to cover a new set of search surfaces.</p>
+
+      <p>To understand why it matters, you need to understand how AI search works at a basic level.</p>
+
+      <p>When you ask Google a question and an AI Overview appears, Google has:</p>
+      <ol>
+        <li>Run the query through its language model</li>
+        <li>Retrieved candidate web pages (using its existing search index)</li>
+        <li>Synthesised the content of those pages into a generated answer</li>
+        <li>Selected the sources it considers most credible to cite</li>
+      </ol>
+
+      <p>Step 4 is where GEO operates. Which pages does the AI consider credible enough to cite? Which content is structured clearly enough to extract from? Which authors and organisations does the AI trust?</p>
+
+      <p>These are answerable questions. And the answers determine whether you're in the overview or invisible beneath it.</p>
+
+      <hr />
+
+      <h2>How GEO Differs from Traditional SEO</h2>
+
+      <p>Traditional SEO gets you ranked in a list of ten links. The user sees your title tag and meta description, decides whether to click, and arrives at your page. You control the first impression.</p>
+
+      <p>GEO gets you cited inside the answer itself. The AI synthesises the key information from your page and presents it as the answer — often without the user needing to click at all. Your page becomes the source; the AI becomes the interface.</p>
+
+      <p>This has two implications that matter commercially.</p>
+
+      <p>First, citation without a click still builds brand authority. If Google's AI Overview for "who are the best SEO agencies in Southport" cites Churchtown Media, that's a trust signal — even if the user doesn't click through immediately. The next time they encounter the name, they recognise it.</p>
+
+      <p>Second, traffic patterns are shifting. AI Overviews on informational queries often reduce clicks — people get the answer they needed and don't proceed. But on commercial queries ("which SEO agency should I hire", "what's the best service for X"), citation drives high-intent traffic. That's where GEO investment pays off.</p>
+
+      <hr />
+
+      <h2>The GEO Signal Framework</h2>
+
+      <p>There are four categories of signals that influence whether AI engines cite you.</p>
+
+      <h3>1. E-E-A-T Signals</h3>
+
+      <p>Experience, Expertise, Authoritativeness, Trustworthiness. Google's own quality rater guidelines describe these as the core quality signals for content. AI engines trained on Google's quality assessments use them too.</p>
+
+      <p>In practice, E-E-A-T means:</p>
+      <ul>
+        <li>Named authors with verifiable credentials and professional profiles</li>
+        <li>Content that demonstrates first-hand experience (case studies, specific data, field knowledge)</li>
+        <li>An organisation with a clear identity, address, and professional presence</li>
+        <li>External references and citations from credible sources</li>
+      </ul>
+
+      <p>Generic AI content written by "the team" and published without attribution is the opposite of E-E-A-T. This is why human expertise and named authorship matter more in 2026 than they did in 2020.</p>
+
+      <h3>2. Structured Data</h3>
+
+      <p>AI engines read structured data the same way traditional search engines do — preferentially. A page with a properly implemented FAQPage schema is easier for an AI to extract an answer from than a page that buries its FAQ in unstructured prose.</p>
+
+      <p>The schemas that matter most for GEO:</p>
+      <ul>
+        <li><strong>FAQPage</strong> — direct question-and-answer format that AI engines parse cleanly</li>
+        <li><strong>HowTo</strong> — step-by-step instructions, easily synthesised</li>
+        <li><strong>Article and BlogPosting</strong> — with proper author attribution</li>
+        <li><strong>Organization</strong> — entity recognition for your brand</li>
+        <li><strong>Service</strong> — for commercial pages, with pricing and offers</li>
+      </ul>
+
+      <h3>3. Content Structure and Clarity</h3>
+
+      <p>AI models extract information from web pages during retrieval. Pages with clear headings, short declarative paragraphs, and specific factual claims are more extractable than long paragraphs of flowing prose.</p>
+
+      <p>This doesn't mean dumbing content down. It means structuring information so the key points are findable. A page that opens with "The postcode for Formby Beach is L37 1YH" answers the query on the first line. A page that answers it in paragraph four — after an introduction about the history of the beach — doesn't.</p>
+
+      <h3>4. Off-Site Authority and Entity Recognition</h3>
+
+      <p>AI engines don't just read your website. They build a model of your entity — your business, your people, your content — across the entire web. Wikipedia pages, industry directories, press mentions, LinkedIn profiles, Companies House records, and external backlinks all contribute to how the AI understands and trusts your entity.</p>
+
+      <p>Businesses with strong off-site entity signals are more likely to be cited as authoritative sources. This is why digital PR — getting your business mentioned in credible external publications — is a GEO signal, not just a traditional SEO signal.</p>
+
+      <hr />
+
+      <h2>AI Crawler Access: The Technical Foundation</h2>
+
+      <p>Before any of the above matters, AI crawlers need to be able to access your site.</p>
+
+      <p>Most AI engines operate their own crawlers:</p>
+      <ul>
+        <li><strong>GPTBot</strong> — OpenAI (ChatGPT)</li>
+        <li><strong>ClaudeBot</strong> — Anthropic</li>
+        <li><strong>PerplexityBot</strong> — Perplexity</li>
+        <li><strong>GoogleOther</strong> — Google AI systems</li>
+        <li><strong>Applebot</strong> — Apple intelligence features</li>
+      </ul>
+
+      <p>Many websites block these crawlers accidentally — either through robots.txt rules that are too broad, or security configurations that block unrecognised user agents. If an AI crawler can't access your site, it can't cite you. That's the baseline technical requirement for GEO.</p>
+
+      <p>A GEO audit always starts by verifying that each major AI crawler has clean access to your pages.</p>
+
+      <hr />
+
+      <h2>The Case for Acting Now</h2>
+
+      <p>In March 2026, most businesses have not started thinking about GEO. Most marketing teams are still focused on traditional organic rankings and paid search. Most agencies don't offer GEO as a distinct service.</p>
+
+      <p>That is an opportunity window. The businesses that establish AI citation authority now — through E-E-A-T content, structured data, and entity building — will be significantly harder to displace once the market catches up.</p>
+
+      <p>This is how the early moves in SEO played out twenty years ago. The businesses that understood PageRank and built authority early held competitive advantages that took years to erode. GEO is following the same pattern.</p>
+
+      <p>We helped Alotek Shelters achieve #1 AI Overview appearances across their core commercial terms within 30 days. That result was possible because their sector is not yet contested at the GEO level. That window will close.</p>
+
+      <hr />
+
+      <h2>What GEO Work Actually Looks Like</h2>
+
+      <p>A GEO engagement starts with an audit: where does the AI currently cite your competitors? Which queries trigger AI Overviews in your sector? Which content types and structures are being selected?</p>
+
+      <p>From there, the work is concrete:</p>
+      <ul>
+        <li>Technical: verify AI crawler access, implement structured data across the site, fix any crawlability issues</li>
+        <li>Content: produce E-E-A-T-compliant content targeting the specific queries that trigger AI answers</li>
+        <li>Authority: build off-site citations and entity signals through digital PR and directory presence</li>
+        <li>Monitoring: track AI Overview appearances and Perplexity/ChatGPT citations monthly</li>
+      </ul>
+
+      <p>It's not a single project. It's an ongoing discipline — because AI search is evolving and the signals that work today will be refined over time.</p>
+
+      <hr />
+
+      <h2>Where to Start</h2>
+
+      <p>If you want to understand your current position before committing to anything, the right first step is a GEO audit. It maps your existing AI citation status, identifies which competitors are currently cited in your sector, and tells you what the gap looks like technically and in terms of content.</p>
+
+      <p>From that baseline, you can decide whether to execute the changes yourself, commission the work from us, or both.</p>
+
+      <p>The one thing I'd caution against is waiting until GEO is mainstream. By then, the early-mover advantage is gone.</p>
+
+      <p><em>Related reading: <a href="/blog/ai-seo-vs-traditional-seo" class="text-blue-400 hover:text-blue-300 underline">AI SEO vs Traditional SEO: What's Actually Changed?</a>, <a href="/blog/alotek-shelters-month-1-seo-results" class="text-blue-400 hover:text-blue-300 underline">30 Days to AI Overview — The Alotek Case Study</a>.</em></p>
+    `
+  },
+  {
+    slug: "ai-seo-vs-traditional-seo",
+    title: "AI SEO vs Traditional SEO: What's Actually Changed in 2026?",
+    date: "Mar 19, 2026",
+    author: "Damian Roche",
+    category: "AI & SEO",
+    image: "/images/seo-robot.jpg",
+    excerpt: "AI Overviews, ChatGPT search, Perplexity — the search landscape shifted faster than most businesses noticed. Here's an honest assessment of what's changed, what hasn't, and what your strategy needs to account for now.",
+    content: `
+      <p>Let me be direct about something before we get into this: a lot of what's written about AI and SEO is either catastrophising (SEO is dead) or dismissing (nothing has changed, keep doing what you were doing). Neither is accurate.</p>
+
+      <p>The honest answer is more nuanced. Some things changed significantly. Some things stayed the same. And some things got more important — not less.</p>
+
+      <p>Here's my current assessment, based on running SEO campaigns for clients and managing my own publishing network across six sites.</p>
+
+      <hr />
+
+      <h2>What Hasn't Changed</h2>
+
+      <p>Let's start here, because it's important context.</p>
+
+      <p><strong>Google's index still matters.</strong> AI Overviews pull from Google's search index. ChatGPT's web search uses Bing. Perplexity uses its own crawler but also draws on established search signals. If you don't rank in traditional search, you're less likely to be retrieved as a candidate for AI answers. Traditional SEO is the foundation. GEO is built on top of it.</p>
+
+      <p><strong>Backlinks still matter.</strong> Off-site authority signals are still one of the strongest ranking factors — and they're also GEO signals, because they contribute to your entity's perceived authority.</p>
+
+      <p><strong>Technical SEO still matters.</strong> Site speed, crawlability, indexation, canonical URLs, structured data. All of these have always mattered for traditional SEO and they matter equally for GEO.</p>
+
+      <p><strong>Content quality still matters.</strong> Possibly more than ever. The proliferation of low-quality AI-generated content has raised the bar for what gets ranked and cited. Thin, generic, unoriginal content is being filtered out more aggressively — by both traditional algorithms and AI citation systems.</p>
+
+      <hr />
+
+      <h2>What Has Changed</h2>
+
+      <h3>The search result page looks different</h3>
+
+      <p>AI Overviews now appear on roughly 15–25% of all Google searches, and that figure is growing. For informational queries — "how to do X", "what is Y", "best Z for W" — the AI answer often occupies the top of the screen before the traditional results.</p>
+
+      <p>This has measurable click-through rate implications. Pages that previously ranked #1 for informational queries are seeing lower CTR because the AI Overview satisfies the query before the user reaches the link. That's not going to reverse.</p>
+
+      <p>The strategic response is two-part: pursue AI Overview citations directly (so you're the source being synthesised) and shift content investment toward commercial-intent queries where AI Overviews are less common and the click still happens.</p>
+
+      <h3>Author identity matters more</h3>
+
+      <p>Google has been pushing E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) for years. In 2026, it matters more than ever — because AI systems are specifically trained to favour content from identifiable, credible sources.</p>
+
+      <p>Anonymous content — "written by the marketing team", no byline, no author page — is at a structural disadvantage. Named authors with verifiable profiles, industry credentials, and external citations are what AI systems are trained to trust.</p>
+
+      <p>This is not a minor adjustment. It means every piece of content on your site should have a named human author with a profile that establishes their expertise in the subject matter.</p>
+
+      <h3>Structured data is more valuable</h3>
+
+      <p>Schema.org structured data was always useful for traditional SEO — it helped search engines understand your content and enabled rich results. For AI systems, it's more than useful: it's how they read your content most cleanly.</p>
+
+      <p>A FAQPage schema with clear question-and-answer pairs is far more extractable for an AI than a FAQ section buried in HTML without markup. An Organization schema with your full entity information tells AI systems exactly who you are. A Service schema with pricing gives AI engines the commercial context they need to recommend you.</p>
+
+      <p>Most sites are significantly under-structured. This is a genuine competitive advantage for businesses that get this right.</p>
+
+      <h3>AI crawler access is a new technical requirement</h3>
+
+      <p>This is new and most businesses haven't thought about it. The major AI systems — OpenAI, Anthropic, Google, Perplexity — all operate their own web crawlers. These crawlers need to be able to access your site to include your content in their training data and retrieval systems.</p>
+
+      <p>Many sites block these crawlers by accident. A robots.txt that says "Disallow: /" blocks everything. Security configurations that only allow known user agents block AI crawlers. Cloudflare bot blocking settings that are set too aggressively can block AI crawlers.</p>
+
+      <p>The first step in any GEO engagement is checking that each major AI crawler has clean access. This is a five-minute technical check that many businesses have never done.</p>
+
+      <h3>The competitive landscape for informational content changed</h3>
+
+      <p>If you were building traffic through high-volume informational blog content — "what is X", "how to Y" — you need to reassess. That traffic is being captured by AI Overviews, and the trend is accelerating.</p>
+
+      <p>That doesn't mean stop producing informational content. It means:</p>
+      <ul>
+        <li>Produce it in a way that earns AI Overview citations (E-E-A-T, structure, depth)</li>
+        <li>Invest proportionally more in commercial and transactional content where AI Overviews appear less</li>
+        <li>Use informational content to build topical authority that supports your commercial pages</li>
+      </ul>
+
+      <hr />
+
+      <h2>The Practical Strategy in 2026</h2>
+
+      <p>Here's how I'd summarise the current approach for a business running a serious SEO programme:</p>
+
+      <p><strong>Maintain the traditional SEO foundation.</strong> Technical health, quality backlinks, properly optimised pages. Nothing about AI changes the importance of this — it only makes it more important, because AI systems retrieve from the search index.</p>
+
+      <p><strong>Add E-E-A-T infrastructure.</strong> Named authors, author pages with credentials, first-person case studies and experience-based content, organisation entity information. This takes time to build and compound value over months.</p>
+
+      <p><strong>Implement structured data comprehensively.</strong> Not just for rich results — for machine readability. Every FAQ as FAQPage schema. Every service page with Service schema. Every article with proper Article schema and author attribution. Organization schema at domain level.</p>
+
+      <p><strong>Check AI crawler access.</strong> Verify that GPTBot, ClaudeBot, PerplexityBot, and GoogleOther can access your site. Fix anything that blocks them.</p>
+
+      <p><strong>Monitor AI Overview appearances.</strong> Know which queries in your sector trigger AI answers. Know which competitors get cited. Know what content type and format is selected. Then produce better versions of what's being cited.</p>
+
+      <p><strong>Build off-site entity signals.</strong> Digital PR, industry directories, Wikipedia where warranted, professional profiles that create a clear web of references around your business entity.</p>
+
+      <hr />
+
+      <h2>My Honest Take</h2>
+
+      <p>Traditional SEO is not dead. It's the prerequisite for GEO. But if you're running an SEO programme in 2026 that doesn't account for AI search at all, you're leaving a meaningful competitive advantage on the table.</p>
+
+      <p>The window to build early AI authority is still open. It won't be in twelve months.</p>
+
+      <p>The businesses I'm most concerned about are the ones doing content marketing at volume without E-E-A-T infrastructure. Their traffic from informational queries is being eroded by AI Overviews and they're publishing more content to compensate — which doesn't solve the underlying problem.</p>
+
+      <p>The fix isn't more content. It's better structured, better attributed, more authoritative content — combined with the technical signals that make AI engines trust and cite you.</p>
+
+      <p>That's GEO. And it works alongside traditional SEO, not instead of it.</p>
+
+      <p><em>Related reading: <a href="/blog/what-is-generative-engine-optimisation" class="text-blue-400 hover:text-blue-300 underline">What is Generative Engine Optimisation (GEO)?</a>, <a href="/blog/alotek-shelters-month-1-seo-results" class="text-blue-400 hover:text-blue-300 underline">The Alotek Case Study — AI Overview in 30 Days</a>.</em></p>
+    `
   }
 ];

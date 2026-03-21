@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Zap, BarChart3, Globe, TrendingUp, Code2, Star, Quote, ExternalLink, BookOpen } from "lucide-react";
+import { ArrowRight, Zap, BarChart3, Globe, TrendingUp, Code2, Star, Quote, ExternalLink, BookOpen, Bot, Sparkles, Workflow } from "lucide-react";
 import type { Metadata } from "next";
 import { posts } from "@/lib/posts";
 
@@ -77,9 +77,15 @@ const jsonLd = {
     '@type': 'OfferCatalog',
     'name': 'Digital Growth Services',
     'itemListElement': [
-      { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'Web Design Southport' } },
-      { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'SEO Services Southport' } },
-      { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'Technical Audits' } }
+      { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'Web Design Southport', 'url': 'https://www.churchtownmedia.co.uk/services/web-design' } },
+      { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'SEO Services Southport', 'url': 'https://www.churchtownmedia.co.uk/services/seo' } },
+      { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'Generative Engine Optimisation (GEO)', 'url': 'https://www.churchtownmedia.co.uk/services/generative-engine-optimisation' } },
+      { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'AI Content Production', 'url': 'https://www.churchtownmedia.co.uk/services/ai-content' } },
+      { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'AI Workflow Implementation', 'url': 'https://www.churchtownmedia.co.uk/services/ai-workflows' } },
+      { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'Content Strategy', 'url': 'https://www.churchtownmedia.co.uk/services/content-strategy' } },
+      { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'SEO Optimisation Sprint', 'url': 'https://www.churchtownmedia.co.uk/services/optimisation-sprint' } },
+      { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'Bespoke Systems & Custom Development', 'url': 'https://www.churchtownmedia.co.uk/services/bespoke-systems' } },
+      { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'Technical Audits', 'url': 'https://www.churchtownmedia.co.uk/audit' } }
     ]
   }
 };
@@ -129,10 +135,13 @@ export default function Home() {
               Southport-based. North West-focused. We combine{" "}
               <Link href="/services/web-design" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2 font-bold">
                 fast Next.js websites
-              </Link>{" "}
-              with{" "}
+              </Link>{", "}
               <Link href="/services/seo" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2 font-bold">
                 local SEO
+              </Link>
+              {", and "}
+              <Link href="/services/generative-engine-optimisation" className="text-purple-400 hover:text-purple-300 underline decoration-1 underline-offset-2 font-bold">
+                AI search optimisation
               </Link>{" "}
               that actually moves the needle.
             </p>
@@ -219,6 +228,55 @@ export default function Home() {
                 </div>
 
             </div>
+        </div>
+      </section>
+
+      {/* 2.5 AI SERVICES CALLOUT */}
+      <section className="py-16 bg-slate-950 border-t border-slate-800/50">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="bg-gradient-to-br from-purple-950/60 to-blue-950/60 border border-purple-500/30 rounded-3xl p-10 md:p-14 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-[400px] h-[300px] bg-purple-600/15 rounded-full blur-[100px] pointer-events-none"></div>
+            <div className="relative z-10">
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+                <div className="flex-1">
+                  <div className="inline-flex items-center gap-2 bg-purple-500/20 border border-purple-500/30 rounded-full px-3 py-1 mb-6">
+                    <Sparkles className="w-4 h-4 text-purple-400" />
+                    <span className="text-xs font-bold text-purple-400 uppercase tracking-wide">New AI Services</span>
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                    AI search is here. <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">Is your business visible?</span>
+                  </h2>
+                  <p className="text-slate-300 text-lg mb-6 max-w-2xl">
+                    Google AI Overviews now appear on 25%+ of searches. We helped Alotek Shelters rank #1 in those answers within 30 days. Three new services to get you there too.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    {[
+                      { icon: Sparkles, label: "GEO — AI Search", href: "/services/generative-engine-optimisation", colour: "text-purple-400" },
+                      { icon: Bot, label: "AI Content", href: "/services/ai-content", colour: "text-blue-400" },
+                      { icon: Workflow, label: "AI Workflows", href: "/services/ai-workflows", colour: "text-emerald-400" },
+                    ].map((item) => {
+                      const Icon = item.icon;
+                      return (
+                        <Link key={item.href} href={item.href} className="flex items-center gap-2 bg-slate-800/60 border border-slate-700 hover:border-purple-500/30 rounded-xl px-4 py-2.5 transition-all group">
+                          <Icon className={`w-4 h-4 ${item.colour} shrink-0`} />
+                          <span className="text-sm font-bold text-white group-hover:text-purple-300 transition-colors">{item.label}</span>
+                          <ArrowRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-purple-400 ml-auto transition-all group-hover:translate-x-0.5" />
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </div>
+                <div className="shrink-0">
+                  <Link
+                    href="/services/ai"
+                    className="inline-flex items-center gap-2 bg-purple-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-purple-500 transition-all shadow-lg hover:shadow-purple-500/25 hover:-translate-y-0.5 whitespace-nowrap"
+                  >
+                    All AI Services <ArrowRight className="w-5 h-5" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
