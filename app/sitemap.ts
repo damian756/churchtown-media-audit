@@ -15,6 +15,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/services/content-scaling',
     '/services/small-business',
     '/services/headless-development',
+    '/services/ai',
+    '/services/generative-engine-optimisation',
+    '/services/ai-content',
+    '/services/ai-workflows',
+    '/services/optimisation-sprint',
+    '/services/content-strategy',
+    '/services/bespoke-systems',
     '/work',
     '/portfolio',
     '/about',
@@ -33,7 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
-    priority: route === '' ? 1 : route === '/industries' ? 0.9 : route === '/portfolio' ? 0.85 : route === '/services/content-scaling' ? 0.85 : 0.8,
+    priority: route === '' ? 1 : ['/industries', '/services/generative-engine-optimisation', '/services/ai', '/services/ai-content', '/services/ai-workflows'].includes(route) ? 0.9 : ['/portfolio', '/services/content-scaling', '/services/optimisation-sprint', '/services/content-strategy', '/services/bespoke-systems'].includes(route) ? 0.85 : 0.8,
   }));
 
   // 2. Dynamic Blog Posts
