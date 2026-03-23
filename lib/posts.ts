@@ -5945,5 +5945,263 @@ export const posts: BlogPost[] = [
 
       <p><em>Related reading: <a href="/blog/what-is-generative-engine-optimisation" class="text-blue-400 hover:text-blue-300 underline">What is Generative Engine Optimisation (GEO)?</a>, <a href="/blog/alotek-shelters-month-1-seo-results" class="text-blue-400 hover:text-blue-300 underline">The Alotek Case Study — AI Overview in 30 Days</a>.</em></p>
     `
+  },
+  {
+    slug: "ai-content-strategy-local-business-2026",
+    title: "AI Content Strategy for Local Businesses in 2026 — What Actually Works",
+    date: "Mar 17, 2026",
+    author: "Damian Roche",
+    category: "AI & SEO",
+    image: "/images/ai-content-strategy.jpg",
+    excerpt: "ChatGPT and Google's AI Overviews are changing how local businesses get found. Most local businesses have no AI content strategy at all. Here's what one looks like — and why building it now matters more than it will in 12 months.",
+    content: `
+      <p>I run six publishing websites across two networks in north-west England. I've watched AI Overviews take chunks of informational search traffic in real time. I've also seen some pages get picked up as sources <em>by</em> those AI Overviews — increasing impressions and driving qualified referral traffic from sources that didn't exist two years ago.</p>
+
+      <p>The difference between the pages that get cited and the pages that don't comes down to a specific set of content signals. And most local businesses are nowhere near them yet. That's both a problem and an opportunity.</p>
+
+      <hr />
+
+      <h2>Why Most Local Business Content Gets Ignored by AI</h2>
+
+      <p>AI search engines — Google's AI Overviews, ChatGPT web search, Perplexity — are essentially asking a question of the internet: <em>which source is authoritative enough to cite?</em> The signals they use are different from traditional ranking signals.</p>
+
+      <p>Traditional SEO rewards keyword targeting, backlinks, and page authority. AI citation rewards:</p>
+
+      <ul>
+        <li><strong>First-hand expertise:</strong> Content written by someone who has actually done the thing, been to the place, or made the product — not generic aggregator copy.</li>
+        <li><strong>Specific, factual claims:</strong> Named locations, exact figures, verifiable details. "Formby Beach car park is L37 1YH and costs £X per day" gets cited. "Formby is a lovely coastal destination" does not.</li>
+        <li><strong>Authoritative attribution:</strong> Clear author information, business credentials, named sources.</li>
+        <li><strong>Structured, answer-first content:</strong> Content that leads with the direct answer to the query rather than building to it slowly.</li>
+      </ul>
+
+      <p>Most local business content fails on all four counts. It's promotional rather than informative. It's generic rather than specific. It has no author identity. And it buries the answer under preamble.</p>
+
+      <hr />
+
+      <h2>The AI Content Stack for Local Businesses</h2>
+
+      <p>An AI-ready content strategy for a local business has three layers:</p>
+
+      <h3>Layer 1 — Structured Factual Content</h3>
+
+      <p>Every core page on your site should lead with structured factual information. Opening hours, prices, location, parking, policies — stated clearly, in text (not images), on the first screen. This is the content AI engines parse first and cite most frequently.</p>
+
+      <p>Example: a hotel page that opens with "We're at [address]. Check-in from 3pm. Rooms from £X. Free parking for guests." ranks and gets cited above a page that opens with "Welcome to our beautiful boutique hotel nestled in the heart of..." The first page answers the question. The second one doesn't.</p>
+
+      <h3>Layer 2 — Expertise Content</h3>
+
+      <p>Content that demonstrates genuine knowledge of your specific area, product or service. Not generic industry advice — specific, local, field-tested knowledge. For a restaurant in Southport, that means content about the specific dishes, the specific suppliers, the specific area. For a B&B near Royal Birkdale, it means content about parking for The Open, shuttle bus routes, which restaurants to book nearby.</p>
+
+      <p>This content needs a named author with visible credentials. Anonymous content has low trust signals for AI engines. Named, verified expertise has high ones.</p>
+
+      <h3>Layer 3 — Question-First Structure</h3>
+
+      <p>Structure your content around the questions your customers actually ask. Use H2 headings that are questions. Answer immediately after the heading. Don't build to the answer — state it first, then explain.</p>
+
+      <p>"Can I bring my dog to [your hotel]? Yes — dogs are welcome in all ground-floor rooms and the garden. We charge £15 per dog per stay." That's AI-citable. "We love dogs at [hotel name]! We have a warm welcome for four-legged guests..." is not.</p>
+
+      <hr />
+
+      <h2>The Open 2026 — a Local AI Content Opportunity Right Now</h2>
+
+      <p>Businesses within 30 miles of Royal Birkdale have a specific, time-limited AI content opportunity. Thousands of people are searching for accommodation, restaurants, transport, and local information for The Open 2026. AI search engines are aggregating answers to these queries right now.</p>
+
+      <p>A Southport restaurant with a page titled "Where to Eat Near Royal Birkdale During The Open 2026" — structured with clear answers to specific questions (how to book, what to order, transport from the course, dog-friendly?) — can get cited by AI engines answering those queries. The window to build that authority is now, while the competition for it is still thin.</p>
+
+      <hr />
+
+      <h2>What to Do First</h2>
+
+      <ol>
+        <li><strong>Audit your existing pages for AI-readiness.</strong> Check: do they answer specific questions? Are they attributed to named authors? Do they lead with facts? This takes an afternoon and costs nothing.</li>
+        <li><strong>Fix your core pages first.</strong> Homepage, key product/service pages, location page. Get the structured factual content right before adding new content.</li>
+        <li><strong>Build a question-first FAQ on every service page.</strong> List the 10 questions your customers most frequently ask. Answer each one directly. Use H3 headings. This alone improves AI retrieval significantly.</li>
+        <li><strong>Add author attribution.</strong> A brief author bio (name, relevant experience, location) on every key piece of content. It doesn't need to be long. It needs to be there.</li>
+      </ol>
+
+      <p>This isn't a six-month project. A focused three-week effort on an existing website can move the needle significantly for AI citation. The work compounds — pages cited by AI engines gain authority that further improves their citation rate.</p>
+
+      <p><em>Related: <a href="/blog/what-is-generative-engine-optimisation" class="text-blue-400 hover:text-blue-300 underline">What is Generative Engine Optimisation?</a> · <a href="/blog/google-ai-overviews-2026" class="text-blue-400 hover:text-blue-300 underline">Google AI Overviews 2026 — What Local Businesses Need to Know</a></em></p>
+    `
+  },
+  {
+    slug: "open-2026-digital-opportunity",
+    title: "The Open 2026: The Digital Opportunity Most Southport Businesses Are Missing",
+    date: "Mar 18, 2026",
+    author: "Damian Roche",
+    category: "Tourism & Events",
+    image: "/images/open-2026-digital-opportunity.jpg",
+    excerpt: "250,000 visitors. International media. Search traffic spikes starting months before the event. The Open Championship at Royal Birkdale in July 2026 is the biggest commercial opportunity Southport businesses have seen in a generation — and most of them aren't digitally prepared for it.",
+    content: `
+      <p>I live three miles from Royal Birkdale. I've been watching Southport prepare for The Open 2026 and I've been watching how local businesses are approaching the digital side of it. The honest assessment: most of them are underprepared. Some of them are doing nothing at all.</p>
+
+      <p>This is not a criticism. Most small business owners are busy running their businesses. But the search traffic patterns around a major championship are predictable and they're already building. The businesses that capture that traffic — and convert it into bookings, walk-ins, and awareness — will look back on Open week as a turning point. The ones that don't will wonder why their competitors were suddenly full.</p>
+
+      <hr />
+
+      <h2>What the Traffic Pattern Actually Looks Like</h2>
+
+      <p>Search interest for accommodation, restaurants, transport, and experiences near Royal Birkdale starts building in January and peaks in the week before the championship (13–19 July 2026). Based on comparable data from previous Opens at Birkdale (2017) and St Andrews, Muirfield, and Hoylake:</p>
+
+      <ul>
+        <li>Accommodation searches peak 3–4 months before the event. If you haven't captured that traffic, the bookings are already gone.</li>
+        <li>Restaurant and experience searches peak in the 2–3 weeks before and during the event.</li>
+        <li>"Things to do near Royal Birkdale," "restaurants near The Open 2026," "parking for The Open" — these queries are live now and building.</li>
+        <li>International traffic is a significant component. American, Australian, Japanese, and European golf visitors search in English for Southport accommodation. Local businesses that rank for those queries get international bookings. Most don't rank for them at all.</li>
+      </ul>
+
+      <hr />
+
+      <h2>What Good Digital Preparation Looks Like</h2>
+
+      <h3>A dedicated Open 2026 page</h3>
+
+      <p>Every accommodation, restaurant, and experience business near the course should have a page specifically about The Open 2026 on their website. Not a mention in a blog post — a proper page, optimised for "accommodation near Royal Birkdale The Open 2026," "restaurant near The Open Southport," and similar queries.</p>
+
+      <p>This page should answer the specific questions visitors have: how far are you from the course? Can you book transportation? What's parking like? Are you open during Open week (and at what times)?</p>
+
+      <h3>Google Business Profile — updated for the event</h3>
+
+      <p>Your Google Business Profile should be updated with Open-specific content: photos from previous Opens if you have them, a post about your Open week offering, updated opening hours for Open week. Google's local search algorithm surfaces recently-updated, active profiles over dormant ones.</p>
+
+      <h3>Review velocity before the event</h3>
+
+      <p>Businesses with 50+ Google reviews significantly outperform those with fewer in local search. If you're under 50, a focused review generation effort in the next three months materially improves your visibility for Open week searches. Ask every customer. Respond to every review.</p>
+
+      <h3>Structured data for accommodation and restaurants</h3>
+
+      <p>Schema markup — specifically <code>Hotel</code>, <code>Restaurant</code>, and <code>LodgingBusiness</code> schema — helps Google understand your business type and increases your chances of appearing in rich results. Most Southport businesses don't have it. The ones that do get more prominent placement.</p>
+
+      <hr />
+
+      <h2>The Accommodation Window Is Closing</h2>
+
+      <p>If you're an accommodation business in the PR8 or PR9 postcode, most of Open week is likely booked. But late cancellations happen. More importantly, the traffic from Open week searches will continue to convert into general awareness and future bookings even if you're sold out for the event itself. A visitor who finds your B&B while searching for Open week accommodation and discovers you're full might book for the Flower Show in August instead.</p>
+
+      <p>Digital presence during a high-traffic event has a long tail. The investment isn't just for this July.</p>
+
+      <hr />
+
+      <h2>What We Can Do for You Before Open Week</h2>
+
+      <p>We're working with a small number of Southport businesses right now on Open 2026 digital preparation. The work is focused and fast:</p>
+
+      <ul>
+        <li>Open-specific landing page — created, optimised and published within two weeks.</li>
+        <li>Google Business Profile audit and update — structured for event search.</li>
+        <li>Schema markup implementation — for the specific business types that benefit most.</li>
+        <li>Review generation strategy — a practical, compliant approach to building review velocity before the event.</li>
+      </ul>
+
+      <p>If you want to talk through what your specific business should be doing, <a href="/contact" class="text-blue-400 hover:text-blue-300 underline">get in touch</a>. The three-month window before the event is when the preparation work has the most impact. After that, the traffic has already been captured by whoever was ready.</p>
+
+      <p><em>Related: <a href="/blog/mlec-effect-southport" class="text-blue-400 hover:text-blue-300 underline">The MLEC Effect — Is Your Business Ready?</a> · <a href="/blog/invisible-on-lord-street" class="text-blue-400 hover:text-blue-300 underline">Invisible on Lord Street — Why Local SEO Is Your New Shop Window</a></em></p>
+    `
+  },
+  {
+    slug: "core-web-vitals-local-business-2026",
+    title: "Core Web Vitals in 2026 — Why Your Local Business Website Is Probably Failing",
+    date: "Mar 19, 2026",
+    author: "Damian Roche",
+    category: "Web Development",
+    image: "/images/core-web-vitals.jpg",
+    excerpt: "Google uses page speed and Core Web Vitals as ranking signals. Most local business websites — especially those on older WordPress installations — fail these metrics badly. Here's what the scores mean, why they matter, and how to fix them.",
+    content: `
+      <p>I ran a Core Web Vitals audit on 40 Southport business websites last quarter. The results were not great. The average Largest Contentful Paint (LCP) was 4.8 seconds. Google's target is under 2.5 seconds. Several sites were above 8 seconds. One took 14 seconds to load on a mobile connection.</p>
+
+      <p>These businesses are losing customers before the page loads. They're also suppressed in search results relative to faster competitors. Neither of these is a small problem.</p>
+
+      <hr />
+
+      <h2>What Core Web Vitals Actually Measure</h2>
+
+      <p>Google's Core Web Vitals are three metrics that measure real-world page experience:</p>
+
+      <div style="background: #1e293b; border-radius: 0.75rem; padding: 1.5rem; margin: 1.5rem 0;">
+        <div style="display: grid; gap: 1rem;">
+          <div style="background: #0f172a; padding: 1.25rem; border-radius: 0.5rem; border-left: 4px solid #22c55e;">
+            <strong style="color: white;">LCP — Largest Contentful Paint</strong>
+            <p style="color: #94a3b8; font-size: 0.875rem; margin: 0.5rem 0 0 0;">How long until the main content of the page is visible. Target: under 2.5 seconds. Most local business sites: 4–10 seconds.</p>
+          </div>
+          <div style="background: #0f172a; padding: 1.25rem; border-radius: 0.5rem; border-left: 4px solid #3b82f6;">
+            <strong style="color: white;">INP — Interaction to Next Paint</strong>
+            <p style="color: #94a3b8; font-size: 0.875rem; margin: 0.5rem 0 0 0;">How fast the page responds when you click something. Target: under 200ms. Replaced FID in March 2024.</p>
+          </div>
+          <div style="background: #0f172a; padding: 1.25rem; border-radius: 0.5rem; border-left: 4px solid #f59e0b;">
+            <strong style="color: white;">CLS — Cumulative Layout Shift</strong>
+            <p style="color: #94a3b8; font-size: 0.875rem; margin: 0.5rem 0 0 0;">How much the page jumps around as it loads. Target: under 0.1. Caused by images without dimensions, ads loading late, fonts swapping.</p>
+          </div>
+        </div>
+      </div>
+
+      <p>Google's PageSpeed Insights gives you a free score for any URL. Run yours now if you haven't.</p>
+
+      <hr />
+
+      <h2>Why Local Business Sites Fail</h2>
+
+      <p>The most common causes of poor Core Web Vitals on local business websites:</p>
+
+      <h3>Unoptimised images</h3>
+
+      <p>A photographer website with 15MB of JPEG images. A restaurant with a 4MB hero image on the homepage. These are the single most common causes of poor LCP scores. Modern web images should be:</p>
+
+      <ul>
+        <li>WebP or AVIF format (not JPEG or PNG for photos)</li>
+        <li>Sized to the actual display dimensions — not a 4000px image displayed at 800px</li>
+        <li>Lazy-loaded below the fold</li>
+        <li>The hero image pre-loaded with <code>fetchpriority="high"</code></li>
+      </ul>
+
+      <p>Image optimisation alone fixes poor LCP on the majority of local business sites I audit.</p>
+
+      <h3>Render-blocking scripts</h3>
+
+      <p>Every third-party script that loads in your page head delays rendering. Google Tag Manager, analytics scripts, chat widgets, social media embeds — all of them add load time. Most of them can be deferred without affecting functionality. Almost none of them are set to defer by default when you install them via a WordPress plugin.</p>
+
+      <h3>Hosting</h3>
+
+      <p>Shared hosting on a server with 200 other websites produces slow Time to First Byte (TTFB). TTFB directly affects LCP. If your hosting is cheap, it's probably the floor constraint on your performance score. Managed WordPress hosting (Kinsta, WP Engine, Cloudways) or a modern stack (Vercel, Netlify) produces materially better scores.</p>
+
+      <h3>WordPress plugin bloat</h3>
+
+      <p>A WordPress site with 40 active plugins is loading 40 separate codebases on every page request. Page builders like Elementor and Divi add significant render-blocking CSS and JavaScript. Every visual customisation you made through a plugin likely added weight you can't easily see but Google absolutely measures.</p>
+
+      <hr />
+
+      <h2>The Business Case</h2>
+
+      <p>Core Web Vitals are a ranking signal — poor scores suppress your position in search results. But the business impact goes beyond rankings.</p>
+
+      <p>Google's own research shows a direct correlation between page load time and bounce rate:</p>
+
+      <ul>
+        <li>1–3 seconds: bounce rate increases 32%</li>
+        <li>1–5 seconds: bounce rate increases 90%</li>
+        <li>1–6 seconds: bounce rate increases 106%</li>
+        <li>1–10 seconds: bounce rate increases 123%</li>
+      </ul>
+
+      <p>A local restaurant website that takes 6 seconds to load on mobile is losing more than half its mobile visitors before the menu appears. Those aren't hypothetical customers — they're people who searched, found you, and left because the page was too slow. They went somewhere else.</p>
+
+      <hr />
+
+      <h2>Quick Wins vs Full Fixes</h2>
+
+      <p>Not every site needs a rebuild. Quick wins that can move scores significantly without touching the platform:</p>
+
+      <ul>
+        <li><strong>Install a caching plugin</strong> (WP Rocket or W3 Total Cache on WordPress) — often moves LCP by 1–2 seconds</li>
+        <li><strong>Run images through Squoosh or ImageOptim</strong> — free, significant size reductions, no quality loss at web resolutions</li>
+        <li><strong>Enable a CDN</strong> — Cloudflare free tier adds meaningful performance improvements for most sites</li>
+        <li><strong>Defer non-critical scripts</strong> — Google Tag Manager can be loaded async; your chat widget doesn't need to block rendering</li>
+      </ul>
+
+      <p>For sites that are fundamentally slow — old WordPress installations with 30+ plugins on shared hosting — a rebuild on a modern stack is the real answer. Next.js on Vercel, Astro on Netlify — platforms that produce consistently high Core Web Vitals scores with less maintenance overhead than a heavily-plugged WordPress setup.</p>
+
+      <p>If you want a free Core Web Vitals audit of your site and a straight assessment of what's causing your scores, <a href="/contact" class="text-blue-400 hover:text-blue-300 underline">get in touch</a>. I'll tell you what I find without trying to sell you a rebuild you don't need.</p>
+
+      <p><em>Related: <a href="/blog/nextjs-vs-wordpress-2026" class="text-blue-400 hover:text-blue-300 underline">Next.js vs WordPress in 2026</a> · <a href="/blog/google-business-profile-optimisation-2026" class="text-blue-400 hover:text-blue-300 underline">Google Business Profile Optimisation 2026</a></em></p>
+    `
   }
 ];
