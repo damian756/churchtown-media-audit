@@ -546,6 +546,34 @@ export default function Home() {
         </article>
       </section>
 
+      {/* 4.5 SOUTHPORT GROWTH CALLOUT */}
+      <section className="py-10 px-4 sm:px-6 bg-slate-950 border-t border-slate-800">
+        <div className="max-w-7xl mx-auto">
+          <Link
+            href="/southport-growth"
+            className="group flex flex-col sm:flex-row items-center justify-between gap-6 bg-gradient-to-r from-amber-950/60 to-slate-900 border border-amber-500/30 hover:border-amber-500/60 rounded-2xl px-8 py-6 transition-all hover:shadow-xl hover:shadow-amber-500/10"
+          >
+            <div className="flex items-start gap-4">
+              <div className="shrink-0 w-10 h-10 bg-amber-500/20 rounded-xl flex items-center justify-center mt-0.5">
+                <TrendingUp className="w-5 h-5 text-amber-400" />
+              </div>
+              <div>
+                <div className="text-xs font-bold text-amber-400 uppercase tracking-widest mb-1">Southport 2026</div>
+                <p className="text-white font-bold text-lg leading-snug">
+                  500,000+ visitors are coming. MLEC, The Open, the £37.5m Town Deal.
+                </p>
+                <p className="text-slate-400 text-sm mt-1">
+                  Read our full analysis of what it means for Southport businesses — and how to position before the traffic arrives.
+                </p>
+              </div>
+            </div>
+            <div className="shrink-0 flex items-center gap-2 text-amber-400 font-bold whitespace-nowrap group-hover:gap-3 transition-all">
+              Read the growth guide <ArrowRight className="w-4 h-4" />
+            </div>
+          </Link>
+        </div>
+      </section>
+
       {/* 5. LATEST INSIGHTS SECTION */}
       <section className="py-20 px-4 sm:px-6 bg-slate-900 border-t border-slate-800">
         <div className="max-w-7xl mx-auto">
