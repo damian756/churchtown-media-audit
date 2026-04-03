@@ -1,4 +1,4 @@
-export interface BlogPost {
+﻿export interface BlogPost {
   slug: string;
   title: string;
   date: string;
@@ -15,7 +15,7 @@ export const posts: BlogPost[] = [
 
   {
     slug: "open-2026-southport-businesses-100-days",
-    title: "The Open 2026 Is 101 Days Away — Are Southport Businesses Ready for the Search Traffic?",
+    title: "The Open 2026 Is 101 Days Away: Are Southport Businesses Ready for the Search Traffic?",
     date: "Apr 3, 2026",
     author: "Damian Roche",
     category: "Local SEO",
@@ -36,7 +36,7 @@ export const posts: BlogPost[] = [
 
       <hr />
 
-      <h2>Your Google Business Profile — Check This Today</h2>
+      <h2>Your Google Business Profile: Check This Today</h2>
 
       <p>If you have a hospitality business in Southport or Birkdale, your Google Business Profile is doing the most work right now. Here's what to audit:</p>
 
@@ -57,10 +57,10 @@ export const posts: BlogPost[] = [
       <p>What the page needs:</p>
       <ul>
         <li>Clear H1 targeting the relevant search terms (e.g., "Stay Near Royal Birkdale for The Open 2026").</li>
-        <li>Your distance and travel time to the course — this is the question everyone has.</li>
-        <li>Availability and booking information — or a direct link to your booking system.</li>
+        <li>Your distance and travel time to the course, this is the question everyone has.</li>
+        <li>Availability and booking information, or a direct link to your booking system.</li>
         <li>Open week pricing if it's different from normal rates (it usually is).</li>
-        <li>Local transport information — the Merseyrail point to Birkdale station is genuinely useful content that earns you the visitor's trust.</li>
+        <li>Local transport information, the Merseyrail point to Birkdale station is genuinely useful content that earns you the visitor's trust.</li>
       </ul>
 
       <p>None of this is complicated. A simple, well-structured page with accurate information outperforms a slick page with no useful content every time in local search.</p>
@@ -73,7 +73,7 @@ export const posts: BlogPost[] = [
 
       <ul>
         <li>Update your Google Business Profile with Open week opening hours if they're different from your standard hours.</li>
-        <li>Add a reservation link if you don't have one — Open week visitors will book ahead rather than walk in.</li>
+        <li>Add a reservation link if you don't have one, Open week visitors will book ahead rather than walk in.</li>
         <li>Consider whether you have a "near Royal Birkdale" landing page or whether you appear in searches for food near the course. If not, this is the window to create the content.</li>
       </ul>
 
@@ -81,17 +81,17 @@ export const posts: BlogPost[] = [
 
       <h2>What I'm Doing for Network Sites</h2>
 
-      <p>For transparency: I run the Sefton Coast Network — SouthportGuide.co.uk, FormbyGuide.co.uk, SeftonLinks.com, and SeftonCoastWildlife.co.uk — as editorial properties that cover the coast. All four sites have Open 2026 content. SeftonLinks.com has full course guides, spectator tips, and transport information. SouthportGuide.co.uk has the accommodation directory and event listings.</p>
+      <p>For transparency: I run the Sefton Coast Network, SouthportGuide.co.uk, FormbyGuide.co.uk, SeftonLinks.com, and SeftonCoastWildlife.co.uk, as editorial properties that cover the coast. All four sites have Open 2026 content. SeftonLinks.com has full course guides, spectator tips, and transport information. SouthportGuide.co.uk has the accommodation directory and event listings.</p>
 
       <p>The network's combined reach means these sites are ranking for a range of Open 2026 search terms. If you want your business featured in the accommodation guide or restaurant listings on any of these sites, that's a listing option. Get in touch via the relevant site.</p>
 
-      <p><em>Related: <a href="/blog/open-2026-digital-opportunity" class="text-blue-400 hover:text-blue-300 underline">The Open 2026 — Digital Opportunity for Southport</a> · <a href="/blog/google-business-profile-optimisation-2026" class="text-blue-400 hover:text-blue-300 underline">Google Business Profile Optimisation 2026</a></em></p>
+      <p><em>Related: <a href="/blog/open-2026-digital-opportunity" class="text-blue-400 hover:text-blue-300 underline">The Open 2026, Digital Opportunity for Southport</a> · <a href="/blog/google-business-profile-optimisation-2026" class="text-blue-400 hover:text-blue-300 underline">Google Business Profile Optimisation 2026</a></em></p>
     `
   },
 
   {
     slug: "google-business-profile-southport-local-seo",
-    title: "Your Google Business Profile Is Your Most Valuable Digital Asset — Are You Using It?",
+    title: "Your Google Business Profile Is Your Most Valuable Digital Asset: Are You Using It?",
     date: "Apr 3, 2026",
     author: "Damian Roche",
     category: "Local SEO",
@@ -109,7 +109,7 @@ export const posts: BlogPost[] = [
       <p>Before we get into strategy, here are the most common issues I see when I audit a local business profile:</p>
 
       <ul>
-        <li><strong>Business name stuffing:</strong> Adding keywords to your business name field (e.g., "Dave's Plumbing — Best Plumber Southport"). This violates Google's guidelines and risks suspension. Your business name should match your trading name.</li>
+        <li><strong>Business name stuffing:</strong> Adding keywords to your business name field (e.g., "Dave's Plumbing, Best Plumber Southport"). This violates Google's guidelines and risks suspension. Your business name should match your trading name.</li>
         <li><strong>Wrong primary category:</strong> The primary category is the most important ranking signal in the profile. A restaurant that's categorised as "Food" rather than "Italian Restaurant" or "Seafood Restaurant" is losing specificity that matters.</li>
         <li><strong>Incomplete description:</strong> Google gives you 750 characters for a business description. Most profiles use fewer than 100. The description influences relevance for searches and also what appears in your Knowledge Panel.</li>
         <li><strong>No posts published:</strong> Google Business Profile posts appear directly in search results. They expire after seven days. Most businesses have never published one.</li>
@@ -126,18 +126,18 @@ export const posts: BlogPost[] = [
 
       <p><strong>Distance</strong> is from the searcher to your business (or, if they've specified a location in the search, from that location). You cannot change where your business is. What you can do is ensure your address is correctly entered and your service area (for service businesses) is accurately defined.</p>
 
-      <p><strong>Prominence</strong> is how well-known and trusted Google considers your business to be. Reviews are the clearest signal: more reviews, higher average rating, and active owner responses all contribute to prominence. Inbound links from other websites also contribute — local press coverage, local directory listings, the Sefton Coast Network sites for Southport businesses.</p>
+      <p><strong>Prominence</strong> is how well-known and trusted Google considers your business to be. Reviews are the clearest signal: more reviews, higher average rating, and active owner responses all contribute to prominence. Inbound links from other websites also contribute, local press coverage, local directory listings, the Sefton Coast Network sites for Southport businesses.</p>
 
       <hr />
 
-      <h2>Reviews — The Practical Approach</h2>
+      <h2>Reviews: The Practical Approach</h2>
 
       <p>Asking customers for reviews is the most direct way to improve prominence. The mechanics of doing this correctly:</p>
 
       <ul>
         <li>Get your review link: in Google Business Profile manager, go to "Ask for Reviews" and copy the direct link. This takes customers straight to the review form without making them find your profile first.</li>
         <li>Send it at the right moment: after a completed job, at the end of a good service experience, after a positive message from a customer. Timing matters.</li>
-        <li>Don't offer incentives for reviews — this violates Google's guidelines and reviews obtained this way are likely to be removed.</li>
+        <li>Don't offer incentives for reviews, this violates Google's guidelines and reviews obtained this way are likely to be removed.</li>
         <li>Respond to every review: positive and negative. Your response to negative reviews is read by potential customers. A well-handled negative review can be as reassuring as a positive one.</li>
       </ul>
 
@@ -149,64 +149,64 @@ export const posts: BlogPost[] = [
 
       <p>If you're not sure how your current profile looks from a customer's perspective, search for your own business name on Google from an incognito window on a mobile device. That's what a customer sees. If you'd find it useful, I'll audit it for you at no charge and tell you specifically what's pulling down your visibility.</p>
 
-      <p><em>Related: <a href="/blog/invisible-on-lord-street" class="text-blue-400 hover:text-blue-300 underline">Invisible on Lord Street — Why Local SEO Is Your New Shop Window</a> · <a href="/blog/seo-liverpool-local-business-guide-2026" class="text-blue-400 hover:text-blue-300 underline">Local SEO for Liverpool Businesses 2026</a></em></p>
+      <p><em>Related: <a href="/blog/invisible-on-lord-street" class="text-blue-400 hover:text-blue-300 underline">Invisible on Lord Street, Why Local SEO Is Your New Shop Window</a> · <a href="/blog/seo-liverpool-local-business-guide-2026" class="text-blue-400 hover:text-blue-300 underline">Local SEO for Liverpool Businesses 2026</a></em></p>
     `
   },
 
   {
     slug: "sefton-coast-network-traffic-report-q1-2026",
-    title: "Sefton Coast Network — Q1 2026 Traffic Report: What Publishing at Scale Actually Looks Like",
+    title: "Sefton Coast Network Q1 2026 Traffic Report: What Publishing at Scale Actually Looks Like",
     date: "Apr 4, 2026",
     author: "Damian Roche",
     category: "Case Studies",
     image: "/images/blog-network-case-study.jpg",
-    excerpt: "Four editorial sites. Three months of data. Here's what happens to organic traffic when you build a topical authority network properly — and what's still not working.",
+    excerpt: "Four editorial sites. Three months of data. Here's what happens to organic traffic when you build a topical authority network properly, and what's still not working.",
     content: `
-      <p>I publish the Sefton Coast Network — SouthportGuide.co.uk, FormbyGuide.co.uk, SeftonLinks.com, and SeftonCoastWildlife.co.uk — as a proof-of-concept for structured content publishing at scale. This is the Q1 2026 honest account: what's growing, what's flat, and what the data shows about how topical authority actually develops.</p>
+      <p>I publish the Sefton Coast Network, SouthportGuide.co.uk, FormbyGuide.co.uk, SeftonLinks.com, and SeftonCoastWildlife.co.uk, as a proof-of-concept for structured content publishing at scale. This is the Q1 2026 honest account: what's growing, what's flat, and what the data shows about how topical authority actually develops.</p>
 
       <p>All data is from Plausible Analytics. These are honest numbers with no manipulation.</p>
 
       <hr />
 
-      <h2>SouthportGuide.co.uk — the anchor site</h2>
+      <h2>SouthportGuide.co.uk: the anchor site</h2>
 
-      <p>SouthportGuide is the oldest and largest site in the network. It has the most pages, the most structured data, the most content depth. Q1 2026 organic traffic is up on Q1 2025 across every category except direct — which is an artifact of seasonality rather than a structural issue.</p>
+      <p>SouthportGuide is the oldest and largest site in the network. It has the most pages, the most structured data, the most content depth. Q1 2026 organic traffic is up on Q1 2025 across every category except direct, which is an artifact of seasonality rather than a structural issue.</p>
 
-      <p>The strongest performing pages in Q1 were: the parking guide (consistently high intent, direct commercial value to visitors), the hotels category page (accommodation searches are building ahead of The Open), and the new area guides — Living in Churchtown, Living in Birkdale, Living in Ainsdale — which are ranking for long-tail residential property searches we weren't previously targeting.</p>
+      <p>The strongest performing pages in Q1 were: the parking guide (consistently high intent, direct commercial value to visitors), the hotels category page (accommodation searches are building ahead of The Open), and the new area guides, Living in Churchtown, Living in Birkdale, Living in Ainsdale, which are ranking for long-tail residential property searches we weren't previously targeting.</p>
 
       <p>What's flat or underperforming: the individual business pages rank well for brand name searches but are not consistently generating category-level traffic. The pSEO approach here requires more citation from editorial content to build relevance at the category level. This is the next piece of structural work.</p>
 
       <hr />
 
-      <h2>SeftonLinks.com — the golf vertical</h2>
+      <h2>SeftonLinks.com: the golf vertical</h2>
 
       <p>SeftonLinks has a very specific audience and a very specific traffic opportunity: The Open Championship 2026 at Royal Birkdale. The site is multilingual (20 languages), with full course guides for all six Sefton Coast championship courses, and a growing blog focused on course reviews and practical golf content.</p>
 
-      <p>The international traffic from non-English language versions started building in Q1. German, French, and American English are the strongest non-GB markets so far. This is consistent with the golf audience demographics for major championships — international visitors who search in their native language before they get to the UK.</p>
+      <p>The international traffic from non-English language versions started building in Q1. German, French, and American English are the strongest non-GB markets so far. This is consistent with the golf audience demographics for major championships, international visitors who search in their native language before they get to the UK.</p>
 
       <p>The Open countdown content and accommodation guides are generating organic traffic three months before the event. This validates the pre-event content strategy: publishing relevant, well-structured content early enough to rank before search demand peaks.</p>
 
       <hr />
 
-      <h2>Sefton Coast Wildlife — the slowest to build and the most interesting</h2>
+      <h2>Sefton Coast Wildlife: the slowest to build and the most interesting</h2>
 
       <p>SeftonCoastWildlife.co.uk is a 257-species database with editorial blog content. It's the site I'm most interested in from an SEO standpoint because it represents a genuine topical authority play: a site that covers a specific topic (wildlife on a specific stretch of coast) more comprehensively than anything else online.</p>
 
-      <p>Organic growth has been the slowest of the four sites because the audience is smaller and the search volume for specific species and wildlife watching content is lower than for "Southport hotels" or "Formby beach." But the traffic quality is high — low bounce rates, long session durations, high return visitor rates — which are the signals of content that's actually useful rather than just ranking.</p>
+      <p>Organic growth has been the slowest of the four sites because the audience is smaller and the search volume for specific species and wildlife watching content is lower than for "Southport hotels" or "Formby beach." But the traffic quality is high, low bounce rates, long session durations, high return visitor rates, which are the signals of content that's actually useful rather than just ranking.</p>
 
-      <p>The species spotlight content is starting to rank for specific species name searches. "Short-eared owl Southport," "Natterjack toad Sefton Coast," "Sand lizard Ainsdale" — these are low-volume but high-intent queries that are now sending consistent traffic. The pattern suggests that as the database grows, the cumulative long-tail traffic will be significant.</p>
-
-      <hr />
-
-      <h2>FormbyGuide.co.uk — the development site</h2>
-
-      <p>FormbyGuide is the newest and smallest site. Q1 2026 was a build phase: new content, improved structure, and the launch of the blog. The red squirrel content was always going to be the high-traffic entry point — "red squirrels Formby" has consistent search volume from visitors planning National Trust visits.</p>
-
-      <p>The day trip guide (Formby as a day trip from Liverpool) is the strongest organic performer in terms of pure traffic — the audience is large, the content is directly useful, and it's ranking page one for "Formby day trip" queries. This is the template for how FormbyGuide builds: high-intent visitor content that answers real questions from people planning a specific trip.</p>
+      <p>The species spotlight content is starting to rank for specific species name searches. "Short-eared owl Southport," "Natterjack toad Sefton Coast," "Sand lizard Ainsdale", these are low-volume but high-intent queries that are now sending consistent traffic. The pattern suggests that as the database grows, the cumulative long-tail traffic will be significant.</p>
 
       <hr />
 
-      <h2>Network effects — what actually cross-links produce</h2>
+      <h2>FormbyGuide.co.uk: the development site</h2>
+
+      <p>FormbyGuide is the newest and smallest site. Q1 2026 was a build phase: new content, improved structure, and the launch of the blog. The red squirrel content was always going to be the high-traffic entry point, "red squirrels Formby" has consistent search volume from visitors planning National Trust visits.</p>
+
+      <p>The day trip guide (Formby as a day trip from Liverpool) is the strongest organic performer in terms of pure traffic, the audience is large, the content is directly useful, and it's ranking page one for "Formby day trip" queries. This is the template for how FormbyGuide builds: high-intent visitor content that answers real questions from people planning a specific trip.</p>
+
+      <hr />
+
+      <h2>Network effects: what actually cross-links produce</h2>
 
       <p>The network cross-links (footer links between all four sites with full PageRank flow) have had a measurable effect on domain authority metrics across all properties. Whether this translates directly into ranking improvements is harder to isolate, but the pattern is consistent with the theory: a group of thematically related, high-quality sites linking to each other with contextual relevance is a different signal from generic link building.</p>
 
@@ -216,13 +216,13 @@ export const posts: BlogPost[] = [
 
       <h2>What Q2 2026 looks like</h2>
 
-      <p>Three months to The Open. The primary focus for SouthportGuide and SeftonLinks is accommodation and transport content — the searches that are live and growing right now. FormbyGuide gets its spring and summer content push (the beach season starts properly in May). SeftonCoastWildlife publishes the orchid and summer wildlife content.</p>
+      <p>Three months to The Open. The primary focus for SouthportGuide and SeftonLinks is accommodation and transport content, the searches that are live and growing right now. FormbyGuide gets its spring and summer content push (the beach season starts properly in May). SeftonCoastWildlife publishes the orchid and summer wildlife content.</p>
 
-      <p>The network is a three-year build. Q1 2026 is the end of Year 1. The data so far is consistent with the thesis: structured, high-quality topical content, properly interlinked, builds sustainable organic traffic that compounds over time. The alternative — paid search with no organic foundation — looks expensive from where I'm standing.</p>
+      <p>The network is a three-year build. Q1 2026 is the end of Year 1. The data so far is consistent with the thesis: structured, high-quality topical content, properly interlinked, builds sustainable organic traffic that compounds over time. The alternative, paid search with no organic foundation, looks expensive from where I'm standing.</p>
 
-      <p>If you want to build something similar for your market — a topical authority site or network in your vertical — <a href="/contact" class="text-blue-400 hover:text-blue-300 underline">get in touch</a>. The methodology is transferable to any local market with underserved content.</p>
+      <p>If you want to build something similar for your market, a topical authority site or network in your vertical, <a href="/contact" class="text-blue-400 hover:text-blue-300 underline">get in touch</a>. The methodology is transferable to any local market with underserved content.</p>
 
-      <p><em>Related: <a href="/blog/sefton-coast-network" class="text-blue-400 hover:text-blue-300 underline">Why We Built the Sefton Coast Network</a> · <a href="/blog/eating-our-own-dog-food" class="text-blue-400 hover:text-blue-300 underline">Eating Our Own Dog Food — How the Network Demonstrates What We Sell</a></em></p>
+      <p><em>Related: <a href="/blog/sefton-coast-network" class="text-blue-400 hover:text-blue-300 underline">Why We Built the Sefton Coast Network</a> · <a href="/blog/eating-our-own-dog-food" class="text-blue-400 hover:text-blue-300 underline">Eating Our Own Dog Food, How the Network Demonstrates What We Sell</a></em></p>
     `
   },
 
