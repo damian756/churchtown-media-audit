@@ -10,6 +10,222 @@ export interface BlogPost {
 }
 
 export const posts: BlogPost[] = [
+
+  // ── April 2026 posts ──────────────────────────────────────────────────────
+
+  {
+    slug: "open-2026-southport-businesses-100-days",
+    title: "The Open 2026 Is 101 Days Away — Are Southport Businesses Ready for the Search Traffic?",
+    date: "Apr 3, 2026",
+    author: "Damian Roche",
+    category: "Local SEO",
+    image: "/images/blog-open-100-days.jpg",
+    excerpt: "Royal Birkdale. July 13–19. 250,000 spectators. The search traffic for Southport accommodation, restaurants, and transport is already building. Here's what local businesses should be doing right now.",
+    content: `
+      <p>Today is Good Friday, 3 April 2026. The Open Championship at Royal Birkdale starts on 13 July. That's 101 days. In digital terms, this is the last window where proactive preparation will make a meaningful difference to your search visibility during Open week.</p>
+
+      <p>I'm going to be direct about what the opportunity actually is and what you need to do with it.</p>
+
+      <hr />
+
+      <h2>The Traffic Pattern for Major Events</h2>
+
+      <p>Search traffic for a major sporting event doesn't just spike during the event. It builds over months. For The Open 2026, we can look at historical data from previous Opens at Birkdale (2017) and other majors: accommodation searches typically start building 3–4 months out. Restaurant and "things to do" searches build 6–8 weeks out. Transport and logistics searches peak in the final two weeks.</p>
+
+      <p>We are currently in the accommodation search phase. Anyone who hasn't booked is searching now. "Hotels near Royal Birkdale July 2026" and "B&B Southport Open week" are live queries with commercial intent. If your accommodation business isn't ranking for these terms and appearing in the local pack, you're invisible to this audience.</p>
+
+      <hr />
+
+      <h2>Your Google Business Profile — Check This Today</h2>
+
+      <p>If you have a hospitality business in Southport or Birkdale, your Google Business Profile is doing the most work right now. Here's what to audit:</p>
+
+      <ul>
+        <li><strong>Description:</strong> Does it mention The Open Championship 2026, Royal Birkdale, July availability? If not, update it. You have 750 characters. Use them.</li>
+        <li><strong>Posts:</strong> Have you published a Google Business Profile post about Open week availability? These appear in the Knowledge Panel and in local searches. A post published this week is visible for seven days and can be re-published.</li>
+        <li><strong>Q&A:</strong> Pre-populate the Q&A section with the questions people are asking: "Do you have rooms available for The Open in July?" "How far are you from Royal Birkdale?" The answers you put there appear before anyone asks.</li>
+        <li><strong>Photos:</strong> Updated within the last 90 days? Profile photos influence click-through rate. If your most recent photo is from 2023, upload new ones today.</li>
+        <li><strong>Categories:</strong> Are your primary and secondary categories correct for what people are searching for? A B&B should be categorised as "Bed &amp; Breakfast" not just "Lodging."</li>
+      </ul>
+
+      <hr />
+
+      <h2>A Landing Page for Open Week</h2>
+
+      <p>If you don't have a specific page on your website for Open Championship 2026, you're missing the organic opportunity. The search volume for terms like "Southport Open 2026 hotel" and "accommodation Royal Birkdale July 2026" is real and growing. A well-optimised landing page, published now, has three months to rank before the event.</p>
+
+      <p>What the page needs:</p>
+      <ul>
+        <li>Clear H1 targeting the relevant search terms (e.g., "Stay Near Royal Birkdale for The Open 2026").</li>
+        <li>Your distance and travel time to the course — this is the question everyone has.</li>
+        <li>Availability and booking information — or a direct link to your booking system.</li>
+        <li>Open week pricing if it's different from normal rates (it usually is).</li>
+        <li>Local transport information — the Merseyrail point to Birkdale station is genuinely useful content that earns you the visitor's trust.</li>
+      </ul>
+
+      <p>None of this is complicated. A simple, well-structured page with accurate information outperforms a slick page with no useful content every time in local search.</p>
+
+      <hr />
+
+      <h2>Restaurants, Bars, and Food Businesses</h2>
+
+      <p>If you're a restaurant or cafe in Southport or Birkdale, your opportunity is slightly different. The accommodation searches are happening now. The "where to eat near Royal Birkdale" searches will peak in June and July. But there's a preparation window now that matters:</p>
+
+      <ul>
+        <li>Update your Google Business Profile with Open week opening hours if they're different from your standard hours.</li>
+        <li>Add a reservation link if you don't have one — Open week visitors will book ahead rather than walk in.</li>
+        <li>Consider whether you have a "near Royal Birkdale" landing page or whether you appear in searches for food near the course. If not, this is the window to create the content.</li>
+      </ul>
+
+      <hr />
+
+      <h2>What I'm Doing for Network Sites</h2>
+
+      <p>For transparency: I run the Sefton Coast Network — SouthportGuide.co.uk, FormbyGuide.co.uk, SeftonLinks.com, and SeftonCoastWildlife.co.uk — as editorial properties that cover the coast. All four sites have Open 2026 content. SeftonLinks.com has full course guides, spectator tips, and transport information. SouthportGuide.co.uk has the accommodation directory and event listings.</p>
+
+      <p>The network's combined reach means these sites are ranking for a range of Open 2026 search terms. If you want your business featured in the accommodation guide or restaurant listings on any of these sites, that's a listing option. Get in touch via the relevant site.</p>
+
+      <p><em>Related: <a href="/blog/open-2026-digital-opportunity" class="text-blue-400 hover:text-blue-300 underline">The Open 2026 — Digital Opportunity for Southport</a> · <a href="/blog/google-business-profile-optimisation-2026" class="text-blue-400 hover:text-blue-300 underline">Google Business Profile Optimisation 2026</a></em></p>
+    `
+  },
+
+  {
+    slug: "google-business-profile-southport-local-seo",
+    title: "Your Google Business Profile Is Your Most Valuable Digital Asset — Are You Using It?",
+    date: "Apr 3, 2026",
+    author: "Damian Roche",
+    category: "Local SEO",
+    image: "/images/blog-google-business-profile.jpg",
+    excerpt: "For most local businesses, a well-optimised Google Business Profile drives more customer enquiries than their website. Most profiles are incomplete, out of date, or both. Here's how to fix it.",
+    content: `
+      <p>When someone searches for "restaurants in Southport" or "hotels near Royal Birkdale," the thing that appears first in Google is not your website. It's the local pack: a map with three business listings. The businesses in that pack are there because their Google Business Profile is optimised and trusted by Google. The ones that aren't there are invisible to this search intent, regardless of how good their website is.</p>
+
+      <p>For most local businesses, the Google Business Profile is the highest-leverage digital marketing channel available. It's also free. And the majority of businesses in the North West are using it badly.</p>
+
+      <hr />
+
+      <h2>The Basics That Most Businesses Get Wrong</h2>
+
+      <p>Before we get into strategy, here are the most common issues I see when I audit a local business profile:</p>
+
+      <ul>
+        <li><strong>Business name stuffing:</strong> Adding keywords to your business name field (e.g., "Dave's Plumbing — Best Plumber Southport"). This violates Google's guidelines and risks suspension. Your business name should match your trading name.</li>
+        <li><strong>Wrong primary category:</strong> The primary category is the most important ranking signal in the profile. A restaurant that's categorised as "Food" rather than "Italian Restaurant" or "Seafood Restaurant" is losing specificity that matters.</li>
+        <li><strong>Incomplete description:</strong> Google gives you 750 characters for a business description. Most profiles use fewer than 100. The description influences relevance for searches and also what appears in your Knowledge Panel.</li>
+        <li><strong>No posts published:</strong> Google Business Profile posts appear directly in search results. They expire after seven days. Most businesses have never published one.</li>
+        <li><strong>Phone number inconsistency:</strong> Your phone number on your GBP, on your website, and in any directory listings should be identical. Inconsistencies create trust signals Google interprets negatively.</li>
+      </ul>
+
+      <hr />
+
+      <h2>What Actually Moves Local Pack Rankings</h2>
+
+      <p>Google's local ranking algorithm has three main factors: Relevance, Distance, and Prominence.</p>
+
+      <p><strong>Relevance</strong> is how well your business matches the search query. This is influenced by your categories, description, services, and the content of your website. If your website doesn't mention the service someone is searching for, you're at a relevance disadvantage regardless of how complete your profile is.</p>
+
+      <p><strong>Distance</strong> is from the searcher to your business (or, if they've specified a location in the search, from that location). You cannot change where your business is. What you can do is ensure your address is correctly entered and your service area (for service businesses) is accurately defined.</p>
+
+      <p><strong>Prominence</strong> is how well-known and trusted Google considers your business to be. Reviews are the clearest signal: more reviews, higher average rating, and active owner responses all contribute to prominence. Inbound links from other websites also contribute — local press coverage, local directory listings, the Sefton Coast Network sites for Southport businesses.</p>
+
+      <hr />
+
+      <h2>Reviews — The Practical Approach</h2>
+
+      <p>Asking customers for reviews is the most direct way to improve prominence. The mechanics of doing this correctly:</p>
+
+      <ul>
+        <li>Get your review link: in Google Business Profile manager, go to "Ask for Reviews" and copy the direct link. This takes customers straight to the review form without making them find your profile first.</li>
+        <li>Send it at the right moment: after a completed job, at the end of a good service experience, after a positive message from a customer. Timing matters.</li>
+        <li>Don't offer incentives for reviews — this violates Google's guidelines and reviews obtained this way are likely to be removed.</li>
+        <li>Respond to every review: positive and negative. Your response to negative reviews is read by potential customers. A well-handled negative review can be as reassuring as a positive one.</li>
+      </ul>
+
+      <hr />
+
+      <h2>The One Thing to Do This Week</h2>
+
+      <p>If you do nothing else: log into your Google Business Profile, click "Edit profile," and complete every section. Hours, categories, description, attributes (e.g., "Wheelchair accessible," "Free Wi-Fi"), photos, services. The completion of these fields is a basic signal Google uses to determine profile quality. An incomplete profile is a statement that the business doesn't care about its digital presence.</p>
+
+      <p>If you're not sure how your current profile looks from a customer's perspective, search for your own business name on Google from an incognito window on a mobile device. That's what a customer sees. If you'd find it useful, I'll audit it for you at no charge and tell you specifically what's pulling down your visibility.</p>
+
+      <p><em>Related: <a href="/blog/invisible-on-lord-street" class="text-blue-400 hover:text-blue-300 underline">Invisible on Lord Street — Why Local SEO Is Your New Shop Window</a> · <a href="/blog/seo-liverpool-local-business-guide-2026" class="text-blue-400 hover:text-blue-300 underline">Local SEO for Liverpool Businesses 2026</a></em></p>
+    `
+  },
+
+  {
+    slug: "sefton-coast-network-traffic-report-q1-2026",
+    title: "Sefton Coast Network — Q1 2026 Traffic Report: What Publishing at Scale Actually Looks Like",
+    date: "Apr 4, 2026",
+    author: "Damian Roche",
+    category: "Case Studies",
+    image: "/images/blog-network-case-study.jpg",
+    excerpt: "Four editorial sites. Three months of data. Here's what happens to organic traffic when you build a topical authority network properly — and what's still not working.",
+    content: `
+      <p>I publish the Sefton Coast Network — SouthportGuide.co.uk, FormbyGuide.co.uk, SeftonLinks.com, and SeftonCoastWildlife.co.uk — as a proof-of-concept for structured content publishing at scale. This is the Q1 2026 honest account: what's growing, what's flat, and what the data shows about how topical authority actually develops.</p>
+
+      <p>All data is from Plausible Analytics. These are honest numbers with no manipulation.</p>
+
+      <hr />
+
+      <h2>SouthportGuide.co.uk — the anchor site</h2>
+
+      <p>SouthportGuide is the oldest and largest site in the network. It has the most pages, the most structured data, the most content depth. Q1 2026 organic traffic is up on Q1 2025 across every category except direct — which is an artifact of seasonality rather than a structural issue.</p>
+
+      <p>The strongest performing pages in Q1 were: the parking guide (consistently high intent, direct commercial value to visitors), the hotels category page (accommodation searches are building ahead of The Open), and the new area guides — Living in Churchtown, Living in Birkdale, Living in Ainsdale — which are ranking for long-tail residential property searches we weren't previously targeting.</p>
+
+      <p>What's flat or underperforming: the individual business pages rank well for brand name searches but are not consistently generating category-level traffic. The pSEO approach here requires more citation from editorial content to build relevance at the category level. This is the next piece of structural work.</p>
+
+      <hr />
+
+      <h2>SeftonLinks.com — the golf vertical</h2>
+
+      <p>SeftonLinks has a very specific audience and a very specific traffic opportunity: The Open Championship 2026 at Royal Birkdale. The site is multilingual (20 languages), with full course guides for all six Sefton Coast championship courses, and a growing blog focused on course reviews and practical golf content.</p>
+
+      <p>The international traffic from non-English language versions started building in Q1. German, French, and American English are the strongest non-GB markets so far. This is consistent with the golf audience demographics for major championships — international visitors who search in their native language before they get to the UK.</p>
+
+      <p>The Open countdown content and accommodation guides are generating organic traffic three months before the event. This validates the pre-event content strategy: publishing relevant, well-structured content early enough to rank before search demand peaks.</p>
+
+      <hr />
+
+      <h2>Sefton Coast Wildlife — the slowest to build and the most interesting</h2>
+
+      <p>SeftonCoastWildlife.co.uk is a 257-species database with editorial blog content. It's the site I'm most interested in from an SEO standpoint because it represents a genuine topical authority play: a site that covers a specific topic (wildlife on a specific stretch of coast) more comprehensively than anything else online.</p>
+
+      <p>Organic growth has been the slowest of the four sites because the audience is smaller and the search volume for specific species and wildlife watching content is lower than for "Southport hotels" or "Formby beach." But the traffic quality is high — low bounce rates, long session durations, high return visitor rates — which are the signals of content that's actually useful rather than just ranking.</p>
+
+      <p>The species spotlight content is starting to rank for specific species name searches. "Short-eared owl Southport," "Natterjack toad Sefton Coast," "Sand lizard Ainsdale" — these are low-volume but high-intent queries that are now sending consistent traffic. The pattern suggests that as the database grows, the cumulative long-tail traffic will be significant.</p>
+
+      <hr />
+
+      <h2>FormbyGuide.co.uk — the development site</h2>
+
+      <p>FormbyGuide is the newest and smallest site. Q1 2026 was a build phase: new content, improved structure, and the launch of the blog. The red squirrel content was always going to be the high-traffic entry point — "red squirrels Formby" has consistent search volume from visitors planning National Trust visits.</p>
+
+      <p>The day trip guide (Formby as a day trip from Liverpool) is the strongest organic performer in terms of pure traffic — the audience is large, the content is directly useful, and it's ranking page one for "Formby day trip" queries. This is the template for how FormbyGuide builds: high-intent visitor content that answers real questions from people planning a specific trip.</p>
+
+      <hr />
+
+      <h2>Network effects — what actually cross-links produce</h2>
+
+      <p>The network cross-links (footer links between all four sites with full PageRank flow) have had a measurable effect on domain authority metrics across all properties. Whether this translates directly into ranking improvements is harder to isolate, but the pattern is consistent with the theory: a group of thematically related, high-quality sites linking to each other with contextual relevance is a different signal from generic link building.</p>
+
+      <p>The more interesting cross-link effects are editorial: when SouthportGuide links to SeftonLinks for golf content, or when SeftonCoastWildlife links to SouthportGuide for beachcombing guides, the links make sense to a human reader. That's the test.</p>
+
+      <hr />
+
+      <h2>What Q2 2026 looks like</h2>
+
+      <p>Three months to The Open. The primary focus for SouthportGuide and SeftonLinks is accommodation and transport content — the searches that are live and growing right now. FormbyGuide gets its spring and summer content push (the beach season starts properly in May). SeftonCoastWildlife publishes the orchid and summer wildlife content.</p>
+
+      <p>The network is a three-year build. Q1 2026 is the end of Year 1. The data so far is consistent with the thesis: structured, high-quality topical content, properly interlinked, builds sustainable organic traffic that compounds over time. The alternative — paid search with no organic foundation — looks expensive from where I'm standing.</p>
+
+      <p>If you want to build something similar for your market — a topical authority site or network in your vertical — <a href="/contact" class="text-blue-400 hover:text-blue-300 underline">get in touch</a>. The methodology is transferable to any local market with underserved content.</p>
+
+      <p><em>Related: <a href="/blog/sefton-coast-network" class="text-blue-400 hover:text-blue-300 underline">Why We Built the Sefton Coast Network</a> · <a href="/blog/eating-our-own-dog-food" class="text-blue-400 hover:text-blue-300 underline">Eating Our Own Dog Food — How the Network Demonstrates What We Sell</a></em></p>
+    `
+  },
+
   {
     slug: "alotek-shelters-month-1-seo-results",
     title: "30 Days. 10 #1 Rankings. AI Overviews on Every Term. The Alotek Month 1 Report.",
