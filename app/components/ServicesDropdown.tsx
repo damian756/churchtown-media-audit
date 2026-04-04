@@ -136,10 +136,7 @@ export default function ServicesDropdown({ isMobile = false, onItemClick }: Serv
                       <div className="flex items-start gap-3">
                         <IconComponent className="w-5 h-5 text-purple-400 flex-shrink-0 mt-1" />
                         <div>
-                          <div className="flex items-center gap-2">
-                            <div className="text-lg font-bold text-white group-hover:text-purple-400 transition-colors">{service.name}</div>
-                            {service.badge && <span className="text-xs bg-purple-600 text-white px-2 py-0.5 rounded-full font-bold">{service.badge}</span>}
-                          </div>
+                          <div className="text-lg font-bold text-white group-hover:text-purple-400 transition-colors">{service.name}</div>
                           <div className="text-sm text-slate-400 mt-1">{service.description}</div>
                         </div>
                       </div>
@@ -159,10 +156,7 @@ export default function ServicesDropdown({ isMobile = false, onItemClick }: Serv
                       <div className="flex items-start gap-3">
                         <IconComponent className="w-5 h-5 text-blue-400 flex-shrink-0 mt-1" />
                         <div>
-                          <div className="flex items-center gap-2">
-                            <div className="text-lg font-bold text-white group-hover:text-blue-400 transition-colors">{service.name}</div>
-                            {service.badge && <span className="text-xs bg-blue-600 text-white px-2 py-0.5 rounded-full font-bold">{service.badge}</span>}
-                          </div>
+                          <div className="text-lg font-bold text-white group-hover:text-blue-400 transition-colors">{service.name}</div>
                           <div className="text-sm text-slate-400 mt-1">{service.description}</div>
                         </div>
                       </div>
@@ -239,10 +233,7 @@ export default function ServicesDropdown({ isMobile = false, onItemClick }: Serv
                           <IconComponent className="w-4 h-4 text-slate-300" />
                         </div>
                         <div className="flex-1 min-w-0">
-                          <div className="flex items-center gap-2">
-                            <div className="text-sm font-bold text-white group-hover:text-blue-400 transition-colors">{service.name}</div>
-                            {service.badge && <span className="text-xs bg-blue-600/80 text-white px-1.5 py-0.5 rounded font-bold shrink-0">New</span>}
-                          </div>
+                          <div className="text-sm font-bold text-white group-hover:text-blue-400 transition-colors">{service.name}</div>
                           <div className="text-xs text-slate-400 leading-relaxed">{service.description}</div>
                         </div>
                       </Link>
@@ -255,7 +246,6 @@ export default function ServicesDropdown({ isMobile = false, onItemClick }: Serv
               <div>
                 <div className="flex items-center gap-2 mb-3 pb-2 border-b border-purple-500/30">
                   <p className="text-xs font-bold text-purple-400 uppercase tracking-wide">AI Services</p>
-                  <span className="text-xs bg-purple-600 text-white px-2 py-0.5 rounded-full font-bold">New</span>
                 </div>
                 <div className="space-y-2 mb-4">
                   {aiServices.map((service) => {
