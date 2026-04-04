@@ -77,7 +77,7 @@ export default function RootLayout({
         {/* eslint-disable-next-line @next/next/no-before-interactive-script-outside-document */}
         <script src="https://analytics.ahrefs.com/analytics.js" data-key="Vjz4nA8LqwXN3ma/wV/sWg" async></script>
       </head>
-        <body className={`${inter.className} bg-stone-950 text-white antialiased selection:bg-amber-400 selection:text-stone-900`}>
+        <body className={`${inter.className} bg-slate-950 text-white antialiased selection:bg-blue-400 selection:text-white`}>
         <Navbar />
         {children}
         <Footer />

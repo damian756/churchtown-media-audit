@@ -108,15 +108,15 @@ export default function AboutPage() {
               <div className="order-2 md:order-1">
                 <figure className="relative">
                   <Image
-                  src="/images/about/damian-blog-bio.jpg"
-                  alt="Damian Roche, founder of Churchtown Media, out on location in Southport."
+                  src="/images/about/damian-rspb-marshside.webp"
+                  alt="Damian Roche, founder of Churchtown Media, at RSPB Marshside nature reserve, Southport."
                     width={600}
                     height={600}
                     className="rounded-2xl border border-slate-800 shadow-2xl w-full"
                     priority
                   />
                   <figcaption className="text-center text-sm text-slate-500 mt-4">
-                    Out on location. This is the job, more or less.
+                    RSPB Marshside, Southport. Five minutes from the office.
                   </figcaption>
                 </figure>
               </div>
