@@ -350,7 +350,7 @@ export default function Home() {
       <section className="py-20 px-4 sm:px-6 bg-slate-900 border-t border-slate-800">
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
-            <p className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-3">Client work</p>
+            <p className="text-xs font-bold text-teal-400 uppercase tracking-widest mb-3">Client work</p>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
               Real results, verifiable.
             </h2>
@@ -359,12 +359,12 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-3 gap-6 mb-6">
             
             {/* Alotek — primary feature */}
             <Link 
               href="/portfolio" 
-              className="group md:col-span-2 relative bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-blue-500/40 transition-all hover:shadow-xl hover:shadow-blue-900/20"
+              className="group md:col-span-2 relative bg-slate-800 rounded-2xl overflow-hidden border-t-2 border-teal-500 border-x border-b border-slate-700 hover:border-teal-400/60 transition-all hover:shadow-xl hover:shadow-teal-900/20"
             >
               <div className="aspect-[16/7] relative overflow-hidden">
                 <Image
@@ -372,22 +372,22 @@ export default function Home() {
                   alt="Alotek Shelters: Bus Shelter Manufacturers"
                   fill
                   sizes="(max-width: 768px) 100vw, 66vw"
-                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-800 via-slate-800/30 to-transparent" />
-                <div className="absolute top-4 left-4 bg-emerald-500 text-white text-xs font-black px-3 py-1.5 rounded-full">
+                <div className="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-slate-900/20 to-transparent" />
+                <div className="absolute top-4 left-4 bg-teal-500 text-white text-xs font-black px-3 py-1.5 rounded-full">
                   #1 for every tracked term
                 </div>
               </div>
               <div className="p-6">
-                <div className="text-xs font-bold text-blue-400/70 uppercase tracking-wide mb-2">Manufacturing · SEO Retainer</div>
-                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-slate-200 transition-colors">
+                <div className="text-xs font-bold text-teal-400/80 uppercase tracking-wide mb-2">Manufacturing · SEO Retainer</div>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-teal-100 transition-colors">
                   Alotek Shelters
                 </h3>
                 <p className="text-sm text-slate-400 mb-4">
                   Previous agency: zero results in 12 months. Month one of our retainer: 10 #1 rankings, every core keyword, AI Overview appearances. "Bus shelter suppliers" moved from position 16 to #1 in 30 days.
                 </p>
-                <div className="flex items-center gap-2 text-slate-300 font-semibold text-sm group-hover:gap-3 transition-all">
+                <div className="flex items-center gap-2 text-teal-400 font-semibold text-sm group-hover:gap-3 transition-all">
                   Read the case study <ArrowRight className="w-3.5 h-3.5" />
                 </div>
               </div>
@@ -396,7 +396,7 @@ export default function Home() {
             {/* SouthportGuide */}
             <Link 
               href="/portfolio" 
-              className="group relative bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-blue-500/40 transition-all hover:shadow-xl hover:shadow-blue-900/20"
+              className="group relative bg-slate-800 rounded-2xl overflow-hidden border-t-2 border-teal-600 border-x border-b border-slate-700 hover:border-teal-400/60 transition-all hover:shadow-xl hover:shadow-teal-900/20"
             >
               <div className="aspect-[4/3] relative overflow-hidden">
                 <Image
@@ -404,22 +404,22 @@ export default function Home() {
                   alt="Southport Guide: Tourism Directory"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-800 via-slate-800/30 to-transparent" />
-                <div className="absolute top-4 left-4 bg-blue-600 text-white text-xs font-black px-3 py-1.5 rounded-full">
+                <div className="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-slate-900/20 to-transparent" />
+                <div className="absolute top-4 left-4 bg-teal-600 text-white text-xs font-black px-3 py-1.5 rounded-full">
                   999+ venues
                 </div>
               </div>
               <div className="p-6">
-                <div className="text-xs font-bold text-blue-400/70 uppercase tracking-wide mb-2">Tourism · Owned project</div>
-                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-slate-200 transition-colors">
+                <div className="text-xs font-bold text-teal-400/80 uppercase tracking-wide mb-2">Tourism · Owned project</div>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-teal-100 transition-colors">
                   SouthportGuide.co.uk
                 </h3>
                 <p className="text-sm text-slate-400 mb-4">
                   Built from scratch, fully owned. The definitive visitor guide to Southport.
                 </p>
-                <div className="flex items-center gap-2 text-slate-300 font-semibold text-sm group-hover:gap-3 transition-all">
+                <div className="flex items-center gap-2 text-teal-400 font-semibold text-sm group-hover:gap-3 transition-all">
                   View project <ArrowRight className="w-3.5 h-3.5" />
                 </div>
               </div>
@@ -430,7 +430,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <Link 
               href="/portfolio" 
-              className="group relative bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-blue-500/40 transition-all hover:shadow-xl hover:shadow-blue-900/20"
+              className="group relative bg-slate-800 rounded-2xl overflow-hidden border-t-2 border-teal-500 border-x border-b border-slate-700 hover:border-teal-400/60 transition-all hover:shadow-xl hover:shadow-teal-900/20"
             >
               <div className="aspect-[16/9] relative overflow-hidden">
                 <Image
@@ -438,25 +438,25 @@ export default function Home() {
                   alt="Sefton Links: Championship Golf Guide"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-800 via-slate-800/20 to-transparent" />
-                <div className="absolute top-4 left-4 bg-sky-500 text-white text-xs font-black px-3 py-1.5 rounded-full">
+                <div className="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-slate-900/20 to-transparent" />
+                <div className="absolute top-4 left-4 bg-teal-500 text-white text-xs font-black px-3 py-1.5 rounded-full">
                   18 languages
                 </div>
               </div>
               <div className="p-6">
-                <div className="text-xs font-bold text-blue-400/70 uppercase tracking-wide mb-2">Golf · Owned project</div>
-                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-slate-200 transition-colors">SeftonLinks.com</h3>
+                <div className="text-xs font-bold text-teal-400/80 uppercase tracking-wide mb-2">Golf · Owned project</div>
+                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-teal-100 transition-colors">SeftonLinks.com</h3>
                 <p className="text-sm text-slate-400 mb-3">Royal Birkdale and 5 championship courses. Course guides, scorecards, tee time info in 18 languages.</p>
-                <div className="flex items-center gap-2 text-slate-300 font-semibold text-sm group-hover:gap-3 transition-all">
+                <div className="flex items-center gap-2 text-teal-400 font-semibold text-sm group-hover:gap-3 transition-all">
                   View project <ArrowRight className="w-3.5 h-3.5" />
                 </div>
               </div>
             </Link>
             <Link 
               href="/portfolio" 
-              className="group relative bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-blue-500/40 transition-all hover:shadow-xl hover:shadow-blue-900/20"
+              className="group relative bg-slate-800 rounded-2xl overflow-hidden border-t-2 border-teal-400 border-x border-b border-slate-700 hover:border-teal-400/60 transition-all hover:shadow-xl hover:shadow-teal-900/20"
             >
               <div className="aspect-[16/9] relative overflow-hidden">
                 <Image
@@ -464,18 +464,18 @@ export default function Home() {
                   alt="Sefton Coast Wildlife: Species Database"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-800 via-slate-800/20 to-transparent" />
-                <div className="absolute top-4 left-4 bg-teal-500 text-white text-xs font-black px-3 py-1.5 rounded-full">
+                <div className="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-slate-900/20 to-transparent" />
+                <div className="absolute top-4 left-4 bg-teal-400 text-slate-900 text-xs font-black px-3 py-1.5 rounded-full">
                   257 species
                 </div>
               </div>
               <div className="p-6">
-                <div className="text-xs font-bold text-blue-400/70 uppercase tracking-wide mb-2">Wildlife · Owned project</div>
-                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-slate-200 transition-colors">SeftonCoastWildlife.co.uk</h3>
+                <div className="text-xs font-bold text-teal-400/80 uppercase tracking-wide mb-2">Wildlife · Owned project</div>
+                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-teal-100 transition-colors">SeftonCoastWildlife.co.uk</h3>
                 <p className="text-sm text-slate-400 mb-3">257-species database covering every bird, mammal, insect and plant found on the Sefton Coast.</p>
-                <div className="flex items-center gap-2 text-slate-300 font-semibold text-sm group-hover:gap-3 transition-all">
+                <div className="flex items-center gap-2 text-teal-400 font-semibold text-sm group-hover:gap-3 transition-all">
                   View project <ArrowRight className="w-3.5 h-3.5" />
                 </div>
               </div>
@@ -485,7 +485,7 @@ export default function Home() {
           <div className="text-center">
             <Link 
               href="/portfolio" 
-              className="inline-flex items-center gap-2 px-6 py-3 bg-slate-800 hover:bg-slate-700 text-white font-bold rounded-xl border border-slate-700 hover:border-slate-600 transition-all group"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-teal-600 hover:bg-teal-500 text-white font-bold rounded-xl transition-all group shadow-lg shadow-teal-900/30"
             >
               View Full Portfolio <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
