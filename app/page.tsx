@@ -228,59 +228,42 @@ export default function Home() {
       </section>
 
       {/* ══════════════════════════════════════════
-          2. THE NETWORK STORY — light breakout
+          2. THE NETWORK — stats, proof, no waffle
       ══════════════════════════════════════════ */}
-      <section className="py-20 px-4 sm:px-6 bg-white border-t border-slate-200">
+      <section className="py-20 px-4 sm:px-6 bg-slate-900 border-t border-slate-800">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            
-            {/* Left: Story */}
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-12">
             <div>
-              <p className="text-xs font-bold text-blue-600 uppercase tracking-widest mb-4">Why it matters</p>
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 leading-snug">
-                We build for our own patch first.
+              <p className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-3">The proof</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-white leading-snug max-w-xl">
+                Four sites. One coastline. All live, all ranking, all ours.
               </h2>
-              <div className="space-y-4 text-slate-600 leading-relaxed">
-                <p>
-                  Most agencies show you a portfolio of client work and ask you to take their word for it. We built four sites for our own area, with no client brief and no guarantee of return, because we thought they should exist.
-                </p>
-                <p>
-                  SouthportGuide covers the restaurants, hotels, and events of a town we know intimately. SeftonLinks covers six championship golf courses in eighteen languages for an international audience. SeftonCoastWildlife is a 257-species database built because there was nowhere pulling it together properly.
-                </p>
-                <p>
-                  They run on the same stack we use for clients. They are real publishing businesses. They rank, they attract visitors, and they demonstrate every technical capability we bring to client projects.
-                </p>
-                <p className="text-slate-800 font-medium">
-                  When a Southport business works with us, they get an agency that genuinely understands this place and has put that understanding to work already.
-                </p>
-              </div>
-              <div className="mt-8 flex flex-wrap gap-4">
-                <Link href="/portfolio" className="inline-flex items-center gap-2 bg-blue-600 text-white font-bold px-5 py-2.5 rounded-xl transition-all hover:bg-blue-700 text-sm shadow-md shadow-blue-600/20">
-                  See the full portfolio <ArrowRight className="w-4 h-4" />
-                </Link>
-                <Link href="/blog/sefton-coast-network" className="inline-flex items-center gap-2 text-slate-500 hover:text-slate-900 font-semibold text-sm transition-colors">
-                  Read the case study <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
             </div>
+            <div className="flex flex-wrap gap-4 shrink-0">
+              <Link href="/portfolio" className="inline-flex items-center gap-2 bg-blue-600 text-white font-bold px-5 py-2.5 rounded-xl transition-all hover:bg-blue-700 text-sm shadow-md shadow-blue-600/20">
+                See the portfolio <ArrowRight className="w-4 h-4" />
+              </Link>
+              <Link href="/blog/sefton-coast-network" className="inline-flex items-center gap-2 text-slate-400 hover:text-white font-semibold text-sm transition-colors">
+                Read the case study <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
 
-            {/* Right: Stats */}
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                { value: "4", label: "Sites built", sub: "All owned, all live" },
-                { value: "18", label: "Languages", sub: "SeftonLinks internationalised" },
-                { value: "257", label: "Species", sub: "Sefton Coast Wildlife database" },
-                { value: "999+", label: "Businesses", sub: "Listed in SouthportGuide" },
-                { value: "10", label: "#1 Rankings", sub: "Alotek Shelters, month one" },
-                { value: "30 days", label: "To results", sub: "First SEO retainer" },
-              ].map((stat) => (
-                <div key={stat.label} className="bg-slate-50 border border-slate-200 rounded-2xl p-5">
-                  <div className="text-2xl font-black text-blue-600 mb-1">{stat.value}</div>
-                  <div className="text-sm font-bold text-slate-800 mb-0.5">{stat.label}</div>
-                  <div className="text-xs text-slate-500">{stat.sub}</div>
-                </div>
-              ))}
-            </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+            {[
+              { value: "4", label: "Sites built", sub: "All owned, all live" },
+              { value: "18", label: "Languages", sub: "SeftonLinks internationalised" },
+              { value: "257", label: "Species", sub: "Coastal wildlife database" },
+              { value: "999+", label: "Businesses", sub: "Listed in SouthportGuide" },
+              { value: "10", label: "#1 Rankings", sub: "Alotek, month one" },
+              { value: "30 days", label: "To results", sub: "First SEO retainer" },
+            ].map((stat) => (
+              <div key={stat.label} className="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-5">
+                <div className="text-2xl font-black text-blue-400 mb-1">{stat.value}</div>
+                <div className="text-sm font-bold text-white mb-0.5">{stat.label}</div>
+                <div className="text-xs text-slate-500 leading-snug">{stat.sub}</div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -447,40 +430,54 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <Link 
               href="/portfolio" 
-              className="group relative bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-blue-500/40 transition-all hover:shadow-xl flex gap-0"
+              className="group relative bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-blue-500/40 transition-all hover:shadow-xl hover:shadow-blue-900/20"
             >
-              <div className="w-40 shrink-0 relative overflow-hidden">
+              <div className="aspect-[16/9] relative overflow-hidden">
                 <Image
                   src="/images/seftonlinks-portfolio.jpg"
                   alt="Sefton Links: Championship Golf Guide"
                   fill
-                  sizes="160px"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-800 via-slate-800/20 to-transparent" />
+                <div className="absolute top-4 left-4 bg-sky-500 text-white text-xs font-black px-3 py-1.5 rounded-full">
+                  18 languages
+                </div>
               </div>
-              <div className="p-5 flex flex-col justify-center">
-                <div className="text-xs font-bold text-blue-400/70 uppercase tracking-wide mb-1">Golf · 18 languages</div>
-                <h3 className="text-base font-bold text-white mb-1 group-hover:text-slate-200 transition-colors">SeftonLinks.com</h3>
-                <p className="text-xs text-slate-400 line-clamp-2">Royal Birkdale and 5 championship courses. International golf tourism for The Open 2026.</p>
+              <div className="p-6">
+                <div className="text-xs font-bold text-blue-400/70 uppercase tracking-wide mb-2">Golf · Owned project</div>
+                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-slate-200 transition-colors">SeftonLinks.com</h3>
+                <p className="text-sm text-slate-400 mb-3">Royal Birkdale and 5 championship courses. Course guides, scorecards, tee time info in 18 languages.</p>
+                <div className="flex items-center gap-2 text-slate-300 font-semibold text-sm group-hover:gap-3 transition-all">
+                  View project <ArrowRight className="w-3.5 h-3.5" />
+                </div>
               </div>
             </Link>
             <Link 
               href="/portfolio" 
-              className="group relative bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-blue-500/40 transition-all hover:shadow-xl flex gap-0"
+              className="group relative bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-blue-500/40 transition-all hover:shadow-xl hover:shadow-blue-900/20"
             >
-              <div className="w-40 shrink-0 relative overflow-hidden bg-slate-700">
+              <div className="aspect-[16/9] relative overflow-hidden">
                 <Image
                   src="/images/southport-marshside-nature-seo.jpg"
                   alt="Sefton Coast Wildlife: Species Database"
                   fill
-                  sizes="160px"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-800 via-slate-800/20 to-transparent" />
+                <div className="absolute top-4 left-4 bg-teal-500 text-white text-xs font-black px-3 py-1.5 rounded-full">
+                  257 species
+                </div>
               </div>
-              <div className="p-5 flex flex-col justify-center">
-                <div className="text-xs font-bold text-blue-400/70 uppercase tracking-wide mb-1">Wildlife · 257 species</div>
-                <h3 className="text-base font-bold text-white mb-1 group-hover:text-slate-200 transition-colors">SeftonCoastWildlife.co.uk</h3>
-                <p className="text-xs text-slate-400 line-clamp-2">Species database covering every bird, mammal, insect and plant found between Southport and Formby.</p>
+              <div className="p-6">
+                <div className="text-xs font-bold text-blue-400/70 uppercase tracking-wide mb-2">Wildlife · Owned project</div>
+                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-slate-200 transition-colors">SeftonCoastWildlife.co.uk</h3>
+                <p className="text-sm text-slate-400 mb-3">257-species database covering every bird, mammal, insect and plant found on the Sefton Coast.</p>
+                <div className="flex items-center gap-2 text-slate-300 font-semibold text-sm group-hover:gap-3 transition-all">
+                  View project <ArrowRight className="w-3.5 h-3.5" />
+                </div>
               </div>
             </Link>
           </div>
