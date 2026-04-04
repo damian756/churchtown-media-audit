@@ -216,11 +216,26 @@ export default async function IndustryPage({ params }: PageProps) {
 
         {/* UNIQUE INTRO SECTION */}
         {industry.introText && (
-          <section className="py-12 px-4 sm:px-6">
+          <section className="py-16 px-4 sm:px-6">
             <div className="max-w-3xl mx-auto">
-              <p className="text-lg text-slate-300 leading-relaxed border-l-4 border-blue-600 pl-6">
-                {industry.introText}
-              </p>
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">
+                Why {industry.name} Need a Stronger Digital Presence
+              </h2>
+              <div className="space-y-5">
+                {industry.introText
+                  .split(/(?<=\.)\s+(?=[A-Z])/)
+                  .reduce<string[]>((acc, sentence, i, arr) => {
+                    const groupIndex = Math.floor(i / 3);
+                    if (!acc[groupIndex]) acc[groupIndex] = sentence;
+                    else acc[groupIndex] += ' ' + sentence;
+                    return acc;
+                  }, [])
+                  .map((para, idx) => (
+                    <p key={idx} className="text-lg text-slate-300 leading-relaxed">
+                      {para}
+                    </p>
+                  ))}
+              </div>
             </div>
           </section>
         )}
