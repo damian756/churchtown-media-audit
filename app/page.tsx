@@ -163,7 +163,7 @@ export default function Home() {
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-[1.05]">
                 We built the<br />
                 <span className="text-slate-300">Sefton Coast.</span><br />
-                <span className="text-slate-500 text-4xl md:text-5xl font-bold">We can build yours.</span>
+                <span className="text-teal-400 text-4xl md:text-5xl font-bold">We can build yours.</span>
               </h1>
 
               <p className="text-lg text-slate-400 max-w-lg mb-8 leading-relaxed">
