@@ -23,27 +23,27 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.churchtownmedia.co.uk'),
   title: {
-    default: 'Churchtown Media | Digital Growth for Southport Businesses',
+    default: 'Churchtown Media | Web Design & SEO, Southport',
     template: '%s',
   },
-  description: 'We build high-performance revenue engines for businesses in Southport, Merseyside, and West Lancashire. Web Design, SEO, and Digital Strategy.',
+  description: 'Churchtown Media builds websites and SEO campaigns for Southport and North West businesses. Creators of the Sefton Coast Network: SouthportGuide, FormbyGuide, SeftonLinks and SeftonCoastWildlife.',
   applicationName: 'Churchtown Media',
-  authors: [{ name: 'Churchtown Media Team', url: 'https://www.churchtownmedia.co.uk' }],
+  authors: [{ name: 'Damian Roche, Churchtown Media', url: 'https://www.churchtownmedia.co.uk' }],
   generator: 'Next.js',
-  keywords: ['Web Design Southport', 'SEO Southport', 'Digital Agency North West', 'Next.js Developer'],
+  keywords: ['Web Design Southport', 'SEO Southport', 'Digital Agency Southport', 'Next.js Developer Southport', 'Sefton Coast'],
   alternates: {
     types: {
       "application/rss+xml": "https://www.churchtownmedia.co.uk/feed",
     },
   },
   openGraph: {
-    title: 'Churchtown Media | Digital Growth Experts',
-    description: 'Stop burning money on ads. Start building a revenue engine.',
+    title: 'Churchtown Media | Web Design & SEO, Southport',
+    description: 'We built the Sefton Coast Network from scratch. Four sites, one coastline. We build the same depth of thing for clients.',
     url: 'https://www.churchtownmedia.co.uk',
     siteName: 'Churchtown Media',
     locale: 'en_GB',
     type: 'website',
-    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Churchtown Media Digital Growth' }],
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Churchtown Media: Web Design & SEO, Southport' }],
   },
   robots: {
     index: true,
