@@ -221,7 +221,7 @@ export default function AboutPage() {
                 ))}
 
                 <Link
-                  href="/blog/sefton-coast-network-case-study"
+                  href="/blog/sefton-coast-network"
                   className="group flex items-center gap-2 text-slate-400 hover:text-white font-semibold text-sm transition-colors pt-2"
                 >
                   Read the full case study <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

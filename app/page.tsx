@@ -258,7 +258,7 @@ export default function Home() {
                 <Link href="/portfolio" className="inline-flex items-center gap-2 bg-blue-600 text-white font-bold px-5 py-2.5 rounded-xl transition-all hover:bg-blue-700 text-sm shadow-md shadow-blue-600/20">
                   See the full portfolio <ArrowRight className="w-4 h-4" />
                 </Link>
-                <Link href="/blog/sefton-coast-network-case-study" className="inline-flex items-center gap-2 text-slate-500 hover:text-slate-900 font-semibold text-sm transition-colors">
+                <Link href="/blog/sefton-coast-network" className="inline-flex items-center gap-2 text-slate-500 hover:text-slate-900 font-semibold text-sm transition-colors">
                   Read the case study <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
