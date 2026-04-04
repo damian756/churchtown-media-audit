@@ -320,16 +320,16 @@ export default function PortfolioPage() {
         
         {/* HERO SECTION */}
         <section className="relative py-20 px-4 sm:px-6 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-slate-950 to-purple-900/10" />
+          <div className="absolute inset-0 bg-gradient-to-br from-teal-900/20 via-slate-950 to-teal-950/30" />
           
           <article className="max-w-6xl mx-auto relative z-10">
             <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-600/30 rounded-full px-4 py-2 mb-6">
-                <Sparkles className="w-4 h-4 text-blue-400" />
-                <span className="text-blue-400 text-sm font-bold">Live Projects</span>
+              <div className="inline-flex items-center gap-2 bg-teal-600/20 border border-teal-600/30 rounded-full px-4 py-2 mb-6">
+                <Sparkles className="w-4 h-4 text-teal-400" />
+                <span className="text-teal-400 text-sm font-bold">Live Projects</span>
               </div>
 
-              <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6 bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent">
+              <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6 bg-gradient-to-r from-white via-teal-200 to-teal-100 bg-clip-text text-transparent">
                 We Don't Just Talk About Next.js.
                 <br />
                 We Build With It.
@@ -343,7 +343,7 @@ export default function PortfolioPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-bold transition-all hover:scale-105 shadow-xl shadow-blue-600/20"
+                  className="inline-flex items-center justify-center gap-2 bg-teal-600 hover:bg-teal-500 text-white px-8 py-4 rounded-full text-lg font-bold transition-all hover:scale-105 shadow-xl shadow-teal-900/30"
                 >
                   Start Your Project <ArrowRight className="w-5 h-5" />
                 </Link>
@@ -387,7 +387,7 @@ export default function PortfolioPage() {
                 >
                   {/* PROJECT IMAGE/SCREENSHOT */}
                   <div className={`${isEven ? 'lg:order-1' : 'lg:order-2'} relative group`}>
-                    <div className="relative bg-slate-900 border border-slate-800 rounded-3xl p-4 hover:border-blue-600/50 transition-all">
+                    <div className="relative bg-slate-900 border border-slate-800 rounded-3xl p-4 hover:border-teal-500/50 transition-all">
                       {/* Status Badge */}
                       <div className="absolute -top-3 -right-3 z-10">
                         {project.status === 'live' ? (
@@ -435,7 +435,7 @@ export default function PortfolioPage() {
                   <div className={`${isEven ? 'lg:order-2' : 'lg:order-1'} space-y-6 pt-8 lg:pt-0`}>
                     {/* Header */}
                     <div>
-                      <div className="text-sm text-blue-400 font-bold mb-2 flex items-center gap-2">
+                      <div className="text-sm text-teal-400 font-bold mb-2 flex items-center gap-2">
                         <Target className="w-4 h-4" />
                         {project.industry}
                       </div>
@@ -481,10 +481,10 @@ export default function PortfolioPage() {
                       {project.results.map((result) => (
                         <div 
                           key={result.label}
-                          className="bg-gradient-to-br from-blue-900/20 to-purple-900/20 border border-blue-600/30 rounded-xl p-4"
+                          className="bg-gradient-to-br from-teal-900/20 to-teal-800/10 border border-teal-600/30 rounded-xl p-4"
                         >
                           <div className="text-3xl font-black text-white mb-1">{result.value}</div>
-                          <div className="text-xs text-blue-400 font-bold mb-1">{result.label}</div>
+                          <div className="text-xs text-teal-400 font-bold mb-1">{result.label}</div>
                           <div className="text-xs text-slate-400">{result.description}</div>
                         </div>
                       ))}
@@ -513,7 +513,7 @@ export default function PortfolioPage() {
                           href={project.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full text-sm font-bold transition-all hover:scale-105 shadow-lg shadow-blue-600/20"
+                          className="inline-flex items-center justify-center gap-2 bg-teal-600 hover:bg-teal-500 text-white px-6 py-3 rounded-full text-sm font-bold transition-all hover:scale-105 shadow-lg shadow-teal-900/30"
                         >
                           View Live Site <ExternalLink className="w-4 h-4" />
                         </a>
@@ -553,9 +553,9 @@ export default function PortfolioPage() {
             </header>
 
             <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-blue-600/50 transition-all">
-                <div className="bg-blue-600/20 rounded-xl p-3 w-fit mb-4">
-                  <Code2 className="w-6 h-6 text-blue-400" />
+              <div className="bg-teal-950/30 border border-teal-900/50 rounded-2xl p-6 hover:border-teal-500/50 transition-all">
+                <div className="bg-teal-600/20 rounded-xl p-3 w-fit mb-4">
+                  <Code2 className="w-6 h-6 text-teal-400" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">B2B Catalogs</h3>
                 <p className="text-slate-300 text-sm leading-relaxed">
@@ -564,7 +564,7 @@ export default function PortfolioPage() {
                 </p>
               </div>
 
-              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-blue-600/50 transition-all">
+              <div className="bg-teal-950/30 border border-teal-900/50 rounded-2xl p-6 hover:border-teal-500/50 transition-all">
                 <div className="bg-green-600/20 rounded-xl p-3 w-fit mb-4">
                   <Gauge className="w-6 h-6 text-green-400" />
                 </div>
@@ -575,7 +575,7 @@ export default function PortfolioPage() {
                 </p>
               </div>
 
-              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-blue-600/50 transition-all">
+              <div className="bg-teal-950/30 border border-teal-900/50 rounded-2xl p-6 hover:border-teal-500/50 transition-all">
                 <div className="bg-purple-600/20 rounded-xl p-3 w-fit mb-4">
                   <TrendingUp className="w-6 h-6 text-purple-400" />
                 </div>
@@ -591,7 +591,7 @@ export default function PortfolioPage() {
 
         {/* FINAL CTA */}
         <section className="py-20 px-4 sm:px-6">
-          <div className="max-w-4xl mx-auto text-center bg-gradient-to-br from-blue-600/20 via-purple-600/20 to-blue-600/20 border border-blue-600/30 rounded-3xl p-12">
+          <div className="max-w-4xl mx-auto text-center bg-gradient-to-br from-teal-600/15 via-teal-900/20 to-teal-600/15 border border-teal-600/30 rounded-3xl p-12">
             <h2 className="text-4xl md:text-5xl font-black mb-6">
               Ready to See Your Project Here?
             </h2>
@@ -602,7 +602,7 @@ export default function PortfolioPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 rounded-full text-lg font-bold transition-all hover:scale-105 shadow-xl shadow-blue-600/30"
+                className="inline-flex items-center justify-center gap-2 bg-teal-600 hover:bg-teal-500 text-white px-10 py-5 rounded-full text-lg font-bold transition-all hover:scale-105 shadow-xl shadow-teal-900/40"
               >
                 Start Your Project <ArrowRight className="w-5 h-5" />
               </Link>

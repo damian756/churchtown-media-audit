@@ -234,16 +234,16 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-12">
             <div>
-              <p className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-3">The proof</p>
+              <p className="text-xs font-bold text-teal-400 uppercase tracking-widest mb-3">The proof</p>
               <h2 className="text-3xl md:text-4xl font-bold text-white leading-snug max-w-xl">
                 Four sites. One coastline. All live, all ranking, all ours.
               </h2>
             </div>
             <div className="flex flex-wrap gap-4 shrink-0">
-              <Link href="/portfolio" className="inline-flex items-center gap-2 bg-blue-600 text-white font-bold px-5 py-2.5 rounded-xl transition-all hover:bg-blue-700 text-sm shadow-md shadow-blue-600/20">
+              <Link href="/portfolio" className="inline-flex items-center gap-2 bg-teal-600 text-white font-bold px-5 py-2.5 rounded-xl transition-all hover:bg-teal-500 text-sm shadow-md shadow-teal-900/30">
                 See the portfolio <ArrowRight className="w-4 h-4" />
               </Link>
-              <Link href="/blog/sefton-coast-network" className="inline-flex items-center gap-2 text-slate-400 hover:text-white font-semibold text-sm transition-colors">
+              <Link href="/blog/sefton-coast-network" className="inline-flex items-center gap-2 text-slate-400 hover:text-teal-300 font-semibold text-sm transition-colors">
                 Read the case study <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
@@ -258,8 +258,8 @@ export default function Home() {
               { value: "10", label: "#1 Rankings", sub: "Alotek, month one" },
               { value: "30 days", label: "To results", sub: "First SEO retainer" },
             ].map((stat) => (
-              <div key={stat.label} className="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-5">
-                <div className="text-2xl font-black text-blue-400 mb-1">{stat.value}</div>
+              <div key={stat.label} className="bg-teal-950/50 border border-teal-800/40 rounded-2xl p-5">
+                <div className="text-2xl font-black text-teal-400 mb-1">{stat.value}</div>
                 <div className="text-sm font-bold text-white mb-0.5">{stat.label}</div>
                 <div className="text-xs text-slate-500 leading-snug">{stat.sub}</div>
               </div>
@@ -274,7 +274,7 @@ export default function Home() {
       <section className="py-20 px-4 sm:px-6 bg-slate-950 border-t border-slate-800">
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
-            <p className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-3">What we build</p>
+            <p className="text-xs font-bold text-teal-400 uppercase tracking-widest mb-3">What we build</p>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
               The same approach, whatever the brief.
             </h2>
@@ -285,44 +285,44 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
             
-            <div className="group p-7 rounded-2xl bg-slate-900 border border-slate-800 hover:border-blue-600/40 transition-all duration-300">
-              <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center mb-5 group-hover:bg-blue-600/10 transition-colors">
-                <Globe className="w-6 h-6 text-blue-400" />
+            <div className="group p-7 rounded-2xl bg-teal-950/30 border border-teal-900/50 hover:border-teal-500/50 transition-all duration-300">
+              <div className="w-12 h-12 bg-teal-900/50 rounded-xl flex items-center justify-center mb-5 group-hover:bg-teal-600/20 transition-colors">
+                <Globe className="w-6 h-6 text-teal-400" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Web Design</h3>
               <p className="text-slate-400 mb-5 leading-relaxed text-sm">
                 Fast Next.js sites built to rank and convert. No WordPress, no plugins, no bloat. Pure code that loads in under a second and gives Google exactly what it needs.
               </p>
-              <div className="text-xs text-blue-500/70 font-semibold mb-4">From £2,500</div>
-              <Link href="/services/web-design" className="inline-flex items-center gap-2 text-slate-300 font-semibold hover:text-white transition-colors text-sm">
+              <div className="text-xs text-teal-400/70 font-semibold mb-4">From £2,500</div>
+              <Link href="/services/web-design" className="inline-flex items-center gap-2 text-teal-400 font-semibold hover:text-teal-300 transition-colors text-sm">
                 Web design services <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>
 
-            <div className="group p-7 rounded-2xl bg-slate-900 border border-slate-800 hover:border-blue-600/40 transition-all duration-300">
-              <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center mb-5 group-hover:bg-blue-600/10 transition-colors">
-                <BarChart3 className="w-6 h-6 text-blue-400" />
+            <div className="group p-7 rounded-2xl bg-teal-950/30 border border-teal-900/50 hover:border-teal-500/50 transition-all duration-300">
+              <div className="w-12 h-12 bg-teal-900/50 rounded-xl flex items-center justify-center mb-5 group-hover:bg-teal-600/20 transition-colors">
+                <BarChart3 className="w-6 h-6 text-teal-400" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">SEO</h3>
               <p className="text-slate-400 mb-5 leading-relaxed text-sm">
                 Local pack rankings, technical SEO, content that earns citations. We helped Alotek Shelters reach #1 on every commercial keyword within 30 days of their first retainer.
               </p>
-              <div className="text-xs text-blue-500/70 font-semibold mb-4">From £500/month</div>
-              <Link href="/services/seo" className="inline-flex items-center gap-2 text-slate-300 font-semibold hover:text-white transition-colors text-sm">
+              <div className="text-xs text-teal-400/70 font-semibold mb-4">From £500/month</div>
+              <Link href="/services/seo" className="inline-flex items-center gap-2 text-teal-400 font-semibold hover:text-teal-300 transition-colors text-sm">
                 SEO services <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>
 
-            <div className="group p-7 rounded-2xl bg-slate-900 border border-slate-800 hover:border-blue-600/40 transition-all duration-300">
-              <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center mb-5 group-hover:bg-blue-600/10 transition-colors">
-                <Sparkles className="w-6 h-6 text-blue-400" />
+            <div className="group p-7 rounded-2xl bg-teal-950/30 border border-teal-900/50 hover:border-teal-500/50 transition-all duration-300">
+              <div className="w-12 h-12 bg-teal-900/50 rounded-xl flex items-center justify-center mb-5 group-hover:bg-teal-600/20 transition-colors">
+                <Sparkles className="w-6 h-6 text-teal-400" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">AI Search</h3>
               <p className="text-slate-400 mb-5 leading-relaxed text-sm">
                 Google AI Overviews appear on 25%+ of searches now. We structure your content and authority signals so AI cites you, not your competitors. GEO, AI content, AI workflows.
               </p>
-              <div className="text-xs text-blue-500/70 font-semibold mb-4">From £800/month</div>
-              <Link href="/services/ai" className="inline-flex items-center gap-2 text-slate-300 font-semibold hover:text-white transition-colors text-sm">
+              <div className="text-xs text-teal-400/70 font-semibold mb-4">From £800/month</div>
+              <Link href="/services/ai" className="inline-flex items-center gap-2 text-teal-400 font-semibold hover:text-teal-300 transition-colors text-sm">
                 AI services <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -336,7 +336,7 @@ export default function Home() {
               { label: "Bespoke Systems", href: "/services/bespoke-systems" },
               { label: "Free SEO Audit", href: "/audit" },
             ].map((item) => (
-              <Link key={item.href} href={item.href} className="group flex items-center justify-between gap-2 bg-slate-900 border border-slate-800 hover:border-blue-600/40 rounded-xl px-4 py-3 transition-all text-sm font-semibold text-slate-400 hover:text-white">
+              <Link key={item.href} href={item.href} className="group flex items-center justify-between gap-2 bg-teal-950/40 border border-teal-900/50 hover:border-teal-500/50 rounded-xl px-4 py-3 transition-all text-sm font-semibold text-slate-400 hover:text-teal-300">
                 {item.label} <ArrowRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
               </Link>
             ))}
@@ -374,7 +374,7 @@ export default function Home() {
                   sizes="(max-width: 768px) 100vw, 66vw"
                   className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-slate-900/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/10 to-transparent" />
                 <div className="absolute top-4 left-4 bg-teal-500 text-white text-xs font-black px-3 py-1.5 rounded-full">
                   #1 for every tracked term
                 </div>
@@ -406,7 +406,7 @@ export default function Home() {
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-slate-900/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/10 to-transparent" />
                 <div className="absolute top-4 left-4 bg-teal-600 text-white text-xs font-black px-3 py-1.5 rounded-full">
                   999+ venues
                 </div>
@@ -440,7 +440,7 @@ export default function Home() {
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-slate-900/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/10 to-transparent" />
                 <div className="absolute top-4 left-4 bg-teal-500 text-white text-xs font-black px-3 py-1.5 rounded-full">
                   18 languages
                 </div>
@@ -466,7 +466,7 @@ export default function Home() {
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-teal-950/90 via-slate-900/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/10 to-transparent" />
                 <div className="absolute top-4 left-4 bg-teal-400 text-slate-900 text-xs font-black px-3 py-1.5 rounded-full">
                   257 species
                 </div>
@@ -524,8 +524,8 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-5 mb-8">
-            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-7 relative group hover:border-slate-700 transition-all">
-              <Quote className="absolute top-5 right-5 w-10 h-10 text-slate-800" />
+            <div className="bg-teal-950/30 border border-teal-900/40 rounded-2xl p-7 relative group hover:border-teal-700/50 transition-all">
+              <Quote className="absolute top-5 right-5 w-10 h-10 text-teal-900/60" />
               <div className="flex gap-1 mb-5">
                 {[1,2,3,4,5].map((s) => (
                   <Star key={s} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
@@ -534,8 +534,8 @@ export default function Home() {
               <p className="text-slate-300 leading-relaxed mb-5 text-sm relative z-10">
                 "I honestly can't recommend Churchtown Media enough for web design. They actually listened and turned it into something way better than I expected. The site looks amazing, but more importantly, <strong className="text-white">it works perfectly.</strong>"
               </p>
-              <div className="flex items-center gap-3 pt-4 border-t border-slate-800">
-                <div className="w-9 h-9 bg-blue-600/20 border border-blue-600/30 rounded-full flex items-center justify-center text-blue-400 font-bold text-sm">M</div>
+              <div className="flex items-center gap-3 pt-4 border-t border-teal-900/40">
+                <div className="w-9 h-9 bg-teal-600/20 border border-teal-600/30 rounded-full flex items-center justify-center text-teal-400 font-bold text-sm">M</div>
                 <div>
                   <div className="font-bold text-white text-sm">Matthew Brown</div>
                   <div className="text-xs text-slate-500 font-medium">Web Design Client</div>
@@ -543,8 +543,8 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-7 relative group hover:border-slate-700 transition-all">
-              <Quote className="absolute top-5 right-5 w-10 h-10 text-slate-800" />
+            <div className="bg-teal-950/30 border border-teal-900/40 rounded-2xl p-7 relative group hover:border-teal-700/50 transition-all">
+              <Quote className="absolute top-5 right-5 w-10 h-10 text-teal-900/60" />
               <div className="flex gap-1 mb-5">
                 {[1,2,3,4,5].map((s) => (
                   <Star key={s} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
@@ -553,8 +553,8 @@ export default function Home() {
               <p className="text-slate-300 leading-relaxed mb-5 text-sm relative z-10">
                 "We hired Churchtown Media to help our Liverpool business gain traction, and I was <strong className="text-white">genuinely shocked by the speed of the results</strong>. We saw significant ranking improvements in less than a month."
               </p>
-              <div className="flex items-center gap-3 pt-4 border-t border-slate-800">
-                <div className="w-9 h-9 bg-blue-600/20 border border-blue-600/30 rounded-full flex items-center justify-center text-blue-400 font-bold text-sm">J</div>
+              <div className="flex items-center gap-3 pt-4 border-t border-teal-900/40">
+                <div className="w-9 h-9 bg-teal-600/20 border border-teal-600/30 rounded-full flex items-center justify-center text-teal-400 font-bold text-sm">J</div>
                 <div>
                   <div className="font-bold text-white text-sm">Jay Hopkins</div>
                   <div className="text-xs text-slate-500 font-medium">Local SEO (Liverpool)</div>
@@ -562,8 +562,8 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-7 relative group hover:border-slate-700 transition-all">
-              <Quote className="absolute top-5 right-5 w-10 h-10 text-slate-800" />
+            <div className="bg-teal-950/30 border border-teal-900/40 rounded-2xl p-7 relative group hover:border-teal-700/50 transition-all">
+              <Quote className="absolute top-5 right-5 w-10 h-10 text-teal-900/60" />
               <div className="flex gap-1 mb-5">
                 {[1,2,3,4,5].map((s) => (
                   <Star key={s} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
@@ -572,8 +572,8 @@ export default function Home() {
               <p className="text-slate-300 leading-relaxed mb-5 text-sm relative z-10">
                 "We had been burnt by website agencies many times in the past, paying astronomical amounts for the bare minimum. Churchtown Media came in and fixed everything. <strong className="text-white">Professional and reliable.</strong>"
               </p>
-              <div className="flex items-center gap-3 pt-4 border-t border-slate-800">
-                <div className="w-9 h-9 bg-blue-600/20 border border-blue-600/30 rounded-full flex items-center justify-center text-blue-400 font-bold text-sm">N</div>
+              <div className="flex items-center gap-3 pt-4 border-t border-teal-900/40">
+                <div className="w-9 h-9 bg-teal-600/20 border border-teal-600/30 rounded-full flex items-center justify-center text-teal-400 font-bold text-sm">N</div>
                 <div>
                   <div className="font-bold text-white text-sm">Nina Thomas</div>
                   <div className="text-xs text-slate-500 font-medium">Website Rebuild</div>
@@ -602,14 +602,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <Link
             href="/southport-growth"
-            className="group flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 bg-blue-950/50 border border-blue-800/30 hover:border-blue-700/60 rounded-2xl px-8 py-7 transition-all"
+            className="group flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 bg-teal-950/50 border border-teal-800/30 hover:border-teal-600/60 rounded-2xl px-8 py-7 transition-all"
           >
             <div className="flex items-start gap-4">
-              <div className="shrink-0 w-10 h-10 bg-blue-900/40 rounded-xl flex items-center justify-center mt-0.5">
-                <TrendingUp className="w-5 h-5 text-blue-400" />
+              <div className="shrink-0 w-10 h-10 bg-teal-900/50 rounded-xl flex items-center justify-center mt-0.5">
+                <TrendingUp className="w-5 h-5 text-teal-400" />
               </div>
               <div>
-                <div className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-1">Southport 2026</div>
+                <div className="text-xs font-bold text-teal-400 uppercase tracking-widest mb-1">Southport 2026</div>
                 <p className="text-white font-bold text-base leading-snug">
                   500,000+ additional visitors. MLEC, The Open, the £37.5m Town Deal.
                 </p>
@@ -618,7 +618,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="shrink-0 flex items-center gap-2 text-blue-400/70 font-semibold whitespace-nowrap group-hover:text-blue-300 group-hover:gap-3 transition-all text-sm">
+            <div className="shrink-0 flex items-center gap-2 text-teal-400/70 font-semibold whitespace-nowrap group-hover:text-teal-300 group-hover:gap-3 transition-all text-sm">
               Read the growth guide <ArrowRight className="w-4 h-4" />
             </div>
           </Link>
@@ -632,7 +632,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="flex items-end justify-between mb-10">
             <div>
-              <p className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-3">From the blog</p>
+              <p className="text-xs font-bold text-teal-400 uppercase tracking-widest mb-3">From the blog</p>
               <h2 className="text-3xl md:text-4xl font-bold text-white">
                 Latest insights
               </h2>
@@ -647,7 +647,7 @@ export default function Home() {
               <Link 
                 key={post.slug} 
                 href={`/blog/${post.slug}`} 
-                className="group block bg-slate-950 rounded-2xl overflow-hidden border border-slate-800 hover:border-blue-600/30 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-900/10"
+                className="group block bg-teal-950/30 rounded-2xl overflow-hidden border border-teal-900/40 hover:border-teal-600/40 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-teal-900/20"
               >
                 <div className="aspect-[16/9] relative overflow-hidden">
                   <Image

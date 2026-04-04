@@ -123,7 +123,7 @@ export default function AboutPage() {
 
               {/* Text */}
               <div className="order-1 md:order-2">
-                <p className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-4">Founder</p>
+                <p className="text-xs font-bold text-teal-400 uppercase tracking-widest mb-4">Founder</p>
                 <h1 className="text-5xl md:text-6xl font-extrabold leading-tight mb-6 text-white">
                   Hi, I'm Damian.
                 </h1>
@@ -143,7 +143,7 @@ export default function AboutPage() {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link
                     href="/contact"
-                    className="inline-flex items-center justify-center gap-2 bg-white text-slate-900 hover:bg-slate-100 px-7 py-3.5 rounded-xl font-bold transition-all text-sm"
+                    className="inline-flex items-center justify-center gap-2 bg-teal-600 text-white hover:bg-teal-500 px-7 py-3.5 rounded-xl font-bold transition-all text-sm shadow-lg shadow-teal-900/30"
                   >
                     Get in Touch <ArrowRight className="w-4 h-4" />
                   </Link>
@@ -166,7 +166,7 @@ export default function AboutPage() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-14 items-start">
               <div>
-                <p className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-4">The proof of concept</p>
+                <p className="text-xs font-bold text-teal-400 uppercase tracking-widest mb-4">The proof of concept</p>
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-snug">
                   The Sefton Coast Network
                 </h2>
@@ -207,7 +207,7 @@ export default function AboutPage() {
                     href={site.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex items-start justify-between gap-4 bg-slate-800 border border-slate-700 hover:border-slate-500 rounded-xl p-5 transition-all"
+                    className="group flex items-start justify-between gap-4 bg-teal-950/40 border border-teal-800/40 hover:border-teal-500/60 rounded-xl p-5 transition-all"
                   >
                     <div className="min-w-0">
                       <div className="flex items-center gap-2 mb-1">
@@ -238,7 +238,7 @@ export default function AboutPage() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-14 items-start">
               <div>
-                <p className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-4">How I work</p>
+                <p className="text-xs font-bold text-teal-400 uppercase tracking-widest mb-4">How I work</p>
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-snug">
                   No fluff. No vanity metrics. Just things that work.
                 </h2>
@@ -262,7 +262,7 @@ export default function AboutPage() {
               </div>
 
               <div>
-                <div className="bg-slate-900 border border-slate-800 rounded-2xl p-8 mb-6">
+                <div className="bg-teal-950/30 border border-teal-800/40 rounded-2xl p-8 mb-6">
                   <h3 className="text-lg font-bold text-white mb-6">The stack I use for everything</h3>
                   <div className="space-y-3">
                     {[
@@ -282,7 +282,7 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-                <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+                <div className="bg-teal-950/30 border border-teal-800/40 rounded-2xl p-6">
                   <h3 className="text-sm font-bold text-white mb-3">Outside work</h3>
                   <p className="text-slate-400 text-sm leading-relaxed">
                     Walking Marshside with the kids. Badly playing golf (I've at least played Royal Birkdale once, which I've documented). The Owl & Bird of Prey Sanctuary is a regular with the family. I have a healthy respect for anyone who can keep a Harris hawk interested in them for more than five minutes.
@@ -310,7 +310,7 @@ export default function AboutPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
               <Link
                 href="/audit"
-                className="inline-flex items-center justify-center gap-2 bg-blue-600 text-white hover:bg-blue-700 px-8 py-4 rounded-xl font-bold transition-all shadow-lg shadow-blue-600/20"
+                className="inline-flex items-center justify-center gap-2 bg-teal-600 text-white hover:bg-teal-500 px-8 py-4 rounded-xl font-bold transition-all shadow-lg shadow-teal-900/30"
               >
                 Get Free Audit <ArrowRight className="w-5 h-5" />
               </Link>

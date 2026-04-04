@@ -111,7 +111,7 @@ export default function TestimonialsPage() {
             </div>
             
             <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">
-                Trusted by <span className="text-blue-400">Local Leaders.</span>
+                Trusted by <span className="text-teal-400">Local Leaders.</span>
             </h1>
             <p className="text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
                 We don't hide behind jargon. We deliver measurable results that Southport and Liverpool business owners love.
@@ -123,7 +123,7 @@ export default function TestimonialsPage() {
       <section className="py-16 px-6">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {reviews.map((review, index) => (
-                <div key={index} className="bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-700 hover:shadow-lg transition-all hover:-translate-y-1 relative group flex flex-col h-full">
+                <div key={index} className="bg-teal-950/40 p-6 rounded-2xl shadow-sm border border-teal-800/40 hover:border-teal-600/50 hover:shadow-lg hover:shadow-teal-900/20 transition-all hover:-translate-y-1 relative group flex flex-col h-full">
                     
                     {/* Google Icon Badge */}
                     <div className="absolute top-6 right-6 pointer-events-none">
@@ -145,7 +145,7 @@ export default function TestimonialsPage() {
                         "{review.text}"
                     </p>
 
-                    <div className="flex items-center gap-4 mt-auto pt-6 border-t border-slate-700">
+                    <div className="flex items-center gap-4 mt-auto pt-6 border-t border-teal-800/40">
                         <div className={`w-10 h-10 ${review.color} rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0`}>
                             {review.initial}
                         </div>
@@ -167,7 +167,7 @@ export default function TestimonialsPage() {
                 Join businesses like Alotek Shelters, Matthew Brown, and Jay Hopkins who trust us to handle their digital growth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Link href="/audit" className="inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-600/20">
+              <Link href="/audit" className="inline-flex items-center justify-center gap-2 bg-teal-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-teal-500 transition-all shadow-lg shadow-teal-900/30">
                   Start with a Free Audit <ArrowRight className="w-4 h-4" />
               </Link>
               <Link href="/portfolio" className="inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 px-8 py-4 rounded-xl font-bold transition-all">
