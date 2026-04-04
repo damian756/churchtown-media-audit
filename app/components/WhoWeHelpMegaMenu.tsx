@@ -54,7 +54,6 @@ export default function WhoWeHelpMegaMenu({ isMobile = false, onItemClick }: Who
                         className="block text-slate-300 hover:text-white transition-colors text-base"
                       >
                         {industry.name}
-                        {industry.isCharity && <span className="ml-2 text-xs text-blue-400">(Discounted)</span>}
                       </Link>
                     ))}
                   </div>
@@ -128,7 +127,6 @@ export default function WhoWeHelpMegaMenu({ isMobile = false, onItemClick }: Who
                         className="block text-slate-300 hover:text-white hover:translate-x-1 transition-all text-sm"
                       >
                         {industry.name}
-                        {industry.isCharity && <span className="ml-2 text-xs text-blue-400">(70% off)</span>}
                       </Link>
                     ))}
                     {groupIndustries.length > 5 && (
@@ -149,7 +147,7 @@ export default function WhoWeHelpMegaMenu({ isMobile = false, onItemClick }: Who
           <div className="pt-4 border-t border-slate-800 flex items-center justify-between">
             <div>
               <p className="text-slate-400 text-sm">
-                <span className="text-blue-400 font-bold">Special:</span> Registered charities receive <span className="text-white font-bold">50-70% discount</span> + free Google Ad Grants setup (£7k/month value).
+                Supporting registered charities with <span className="text-white font-bold">pro-bono digital strategy</span> and Google Ad Grants setup.
               </p>
             </div>
             <Link

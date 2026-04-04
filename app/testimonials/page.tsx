@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description: 'See why businesses across the North West trust us to build their revenue engines.',
     url: 'https://www.churchtownmedia.co.uk/testimonials',
     type: 'website',
-    images: [{ url: 'https://www.churchtownmedia.co.uk/opengraph-image.png', width: 1200, height: 630, alt: 'Client Reviews — Churchtown Media' }],
+    images: [{ url: 'https://www.churchtownmedia.co.uk/opengraph-image.png', width: 1200, height: 630, alt: 'Client Reviews: Churchtown Media' }],
   }
 };
 
@@ -38,7 +38,7 @@ const reviews = [
   {
     name: "Jay Hopkins",
     service: "Local SEO (Liverpool)",
-    text: "We hired Churchtown Media to help our Liverpool business gain traction, and I was genuinely shocked by the speed of the results—we saw significant ranking improvements in less than a month. They completely overhauled our content strategy.",
+    text: "We hired Churchtown Media to help our Liverpool business gain traction, and I was genuinely shocked by the speed of the results-we saw significant ranking improvements in less than a month. They completely overhauled our content strategy.",
     initial: "J",
     color: "bg-purple-600"
   },

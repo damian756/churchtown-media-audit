@@ -91,7 +91,7 @@ export default function ContentScalingPage() {
     {
       number: "03",
       title: "Mass Generation",
-      description: "Our system generates 100+ unique pages automatically. Each page is technically unique—not duplicate content—with real value for users.",
+      description: "Our system generates 100+ unique pages automatically. Each page is technically unique-not duplicate content-with real value for users.",
       deliverables: ["100+ live pages", "Automated sitemap", "Internal linking structure", "Unique meta descriptions"],
       duration: "Week 2 (48 hours)"
     },
@@ -378,7 +378,7 @@ export default function ContentScalingPage() {
                 {
                   icon: BarChart3,
                   title: "Unique Content",
-                  description: "Not duplicate content—each page uses variable data to create genuinely unique value."
+                  description: "Not duplicate content-each page uses variable data to create genuinely unique value."
                 },
                 {
                   icon: TrendingUp,

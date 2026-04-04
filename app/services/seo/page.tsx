@@ -5,7 +5,7 @@ import { ArrowRight, CheckCircle2, Plus, MapPin, TrendingUp, Search, AlertCircle
 
 export const metadata: Metadata = {
   title: 'SEO Agency Southport | Churchtown Media',
-  description: 'SEO agency based in Southport. We rank #1 in the local pack for "seo southport" — and we got a client to #1 in Google\'s AI Overview in 30 days. Honest pricing, real data.',
+  description: 'SEO agency based in Southport. We rank #1 in the local pack for "seo southport": and we got a client to #1 in Google\'s AI Overview in 30 days. Honest pricing, real data.',
   keywords: ['seo southport', 'seo agency southport', 'seo company southport', 'local seo southport', 'technical seo southport', 'seo services merseyside', 'seo north west'],
   alternates: { canonical: 'https://www.churchtownmedia.co.uk/services/seo' },
   openGraph: {
@@ -27,31 +27,31 @@ const faqs = [
   },
   {
     question: "Do you guarantee #1 rankings?",
-    answer: "No — and you should be suspicious of anyone who does. Google's algorithm changes constantly and no agency controls it. What we can control: the quality of the technical foundation, the relevance of the content, and the consistency of the process. We can show you exactly where we rank for our own SEO terms — that's the most honest proof available. If we can rank ourselves, we can rank you."
+    answer: "No: and you should be suspicious of anyone who does. Google's algorithm changes constantly and no agency controls it. What we can control: the quality of the technical foundation, the relevance of the content, and the consistency of the process. We can show you exactly where we rank for our own SEO terms: that's the most honest proof available. If we can rank ourselves, we can rank you."
   },
   {
     question: "Why is my competitor ranking higher than me?",
-    answer: "Almost always one of three things: their site is faster and better-structured, they have more relevant content that directly answers buyer queries, or they've been doing this longer and have accumulated more authority. We do a competitor gap analysis at the start of every engagement to find exactly where they're beating you — and whether it's a gap we can close quickly or one that takes sustained effort."
+    answer: "Almost always one of three things: their site is faster and better-structured, they have more relevant content that directly answers buyer queries, or they've been doing this longer and have accumulated more authority. We do a competitor gap analysis at the start of every engagement to find exactly where they're beating you: and whether it's a gap we can close quickly or one that takes sustained effort."
   },
   {
     question: "Do I need a new website for SEO to work?",
-    answer: "Not always. We can work with most existing sites. But if your site is on a slow, bloated platform with poor structure, SEO work on top of it is like painting a broken wall — it'll look better temporarily but the underlying problem remains. We'll tell you honestly whether your current site is a viable foundation before any money changes hands."
+    answer: "Not always. We can work with most existing sites. But if your site is on a slow, bloated platform with poor structure, SEO work on top of it is like painting a broken wall: it'll look better temporarily but the underlying problem remains. We'll tell you honestly whether your current site is a viable foundation before any money changes hands."
   },
   {
     question: "What do I actually receive each month?",
-    answer: "A plain-English report covering: rankings movement (which terms went up or down and why), traffic and impressions from Google Search Console, what work was done that month and what it was for, and what's planned next. We also flag anything we're seeing in the data that you need to know about — algorithm updates, competitor movements, new opportunities. You'll never have to chase us for an update."
+    answer: "A plain-English report covering: rankings movement (which terms went up or down and why), traffic and impressions from Google Search Console, what work was done that month and what it was for, and what's planned next. We also flag anything we're seeing in the data that you need to know about: algorithm updates, competitor movements, new opportunities. You'll never have to chase us for an update."
   },
   {
     question: "What's the difference between local pack and organic rankings?",
-    answer: "The local pack (the map and three listings that appear at the top of Google for location-based searches) is won through your Google Business Profile, local citations, and reviews. Organic web results are won through content quality, technical SEO, and domain authority. Both matter — local pack gets you calls, organic gets people to your site. We work on both."
+    answer: "The local pack (the map and three listings that appear at the top of Google for location-based searches) is won through your Google Business Profile, local citations, and reviews. Organic web results are won through content quality, technical SEO, and domain authority. Both matter: local pack gets you calls, organic gets people to your site. We work on both."
   },
   {
     question: "Can you fix a Google penalty or a traffic drop?",
-    answer: "Yes. If your site was hit by a core update or has a manual action, we audit the likely causes — thin content, toxic backlinks, technical issues — fix what's fixable, and track recovery. Algorithm recoveries take time (weeks to months depending on severity) and we'll be straight with you about what's realistic."
+    answer: "Yes. If your site was hit by a core update or has a manual action, we audit the likely causes: thin content, toxic backlinks, technical issues: fix what's fixable, and track recovery. Algorithm recoveries take time (weeks to months depending on severity) and we'll be straight with you about what's realistic."
   },
   {
     question: "Do you work with businesses outside Southport?",
-    answer: "Yes — we work across Merseyside, Lancashire and the wider North West. Most of the process works well remotely. But if you're a Southport, Birkdale, Formby or Sefton Coast business, we're your local option and we know this market in detail."
+    answer: "Yes: we work across Merseyside, Lancashire and the wider North West. Most of the process works well remotely. But if you're a Southport, Birkdale, Formby or Sefton Coast business, we're your local option and we know this market in detail."
   }
 ];
 
@@ -126,7 +126,7 @@ export default function SEOPage() {
           </h1>
 
           <p className="text-xl md:text-2xl text-slate-300 mb-4 leading-relaxed max-w-3xl">
-            We rank #1 in the local pack for "seo southport". We got a client to #1 in Google's AI Overview in 30 days. Here's how both of those happened — and what it would look like for your business.
+            We rank #1 in the local pack for "seo southport". We got a client to #1 in Google's AI Overview in 30 days. Here's how both of those happened: and what it would look like for your business.
           </p>
 
           <p className="text-slate-400 mb-10 max-w-2xl">
@@ -163,12 +163,12 @@ export default function SEOPage() {
 
           <div className="grid md:grid-cols-2 gap-4 mb-8">
             {[
-              { keyword: "seo southport", position: "#1", type: "Local Pack", vol: "590/mo", note: "The primary target keyword — we're in the 3-pack" },
+              { keyword: "seo southport", position: "#1", type: "Local Pack", vol: "590/mo", note: "The primary target keyword: we're in the 3-pack" },
               { keyword: "seo company near me", position: "#2", type: "Local Pack", vol: "1,300/mo", note: "Geo-qualified by Google based on searcher location" },
-              { keyword: "technical seo southport", position: "#1", type: "Local Pack", vol: "—", note: "Consistent for the past week" },
-              { keyword: "seo audit southport", position: "#1", type: "Local Pack", vol: "—", note: "Consistent for the past week" },
-              { keyword: "seo services merseyside", position: "#2", type: "Local Pack", vol: "—", note: "Consistent all week" },
-              { keyword: "business growth southport", position: "#1", type: "AI Overview", vol: "—", note: "Featured in Google's AI-generated answer" },
+              { keyword: "technical seo southport", position: "#1", type: "Local Pack", vol: "-", note: "Consistent for the past week" },
+              { keyword: "seo audit southport", position: "#1", type: "Local Pack", vol: "-", note: "Consistent for the past week" },
+              { keyword: "seo services merseyside", position: "#2", type: "Local Pack", vol: "-", note: "Consistent all week" },
+              { keyword: "business growth southport", position: "#1", type: "AI Overview", vol: "-", note: "Featured in Google's AI-generated answer" },
             ].map((row, i) => (
               <div key={i} className="bg-slate-800 border border-slate-700 rounded-xl p-4 flex items-start gap-4">
                 <div className="flex-shrink-0 text-center min-w-[52px]">
@@ -177,7 +177,7 @@ export default function SEOPage() {
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="text-white font-semibold text-sm mb-0.5">"{row.keyword}"</div>
-                  <div className="text-slate-400 text-xs leading-relaxed">{row.note}{row.vol !== "—" ? ` · ${row.vol}` : ""}</div>
+                  <div className="text-slate-400 text-xs leading-relaxed">{row.note}{row.vol !== "-" ? ` · ${row.vol}` : ""}</div>
                 </div>
               </div>
             ))}
@@ -185,7 +185,7 @@ export default function SEOPage() {
 
           <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-5">
             <p className="text-slate-300 text-sm leading-relaxed">
-              The local pack positions mean when a Southport business owner searches "seo southport" right now, we're the first result in the map. Organic web rankings for broader terms are improving — the trajectory is upward. We publish the data here because transparency is the point: if we can do this for ourselves, we can do it for you.
+              The local pack positions mean when a Southport business owner searches "seo southport" right now, we're the first result in the map. Organic web rankings for broader terms are improving: the trajectory is upward. We publish the data here because transparency is the point: if we can do this for ourselves, we can do it for you.
             </p>
           </div>
         </div>
@@ -194,19 +194,19 @@ export default function SEOPage() {
       {/* ── ALOTEK CASE STUDY (SEO RETAINER ANGLE) ───────────────────────── */}
       <section className="py-16 px-4 sm:px-6">
         <div className="max-w-5xl mx-auto">
-          <div className="text-xs font-bold text-green-400 uppercase tracking-widest mb-4">Case Study — Month 1</div>
+          <div className="text-xs font-bold text-green-400 uppercase tracking-widest mb-4">Case Study: Month 1</div>
           <h2 className="text-3xl md:text-4xl font-black mb-3">
             10 #1 rankings in 30 days. AI Overview on every core term.
           </h2>
           <p className="text-slate-400 mb-10 max-w-2xl">
-            Alotek Shelters are a Lancashire manufacturer — bus shelters, covered walkways, outdoor canopies. When we took them on as an SEO retainer client, the site had already been rebuilt on Next.js. Month one was pure SEO work: on-page content restructuring, semantic targeting, and schema. No backlinks purchased. No tricks.
+            Alotek Shelters are a Lancashire manufacturer: bus shelters, covered walkways, outdoor canopies. When we took them on as an SEO retainer client, the site had already been rebuilt on Next.js. Month one was pure SEO work: on-page content restructuring, semantic targeting, and schema. No backlinks purchased. No tricks.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
               <div className="text-xs font-bold text-red-400 uppercase tracking-wider mb-4">Before the retainer</div>
               <ul className="space-y-3 text-sm text-slate-300">
-                <li className="flex items-start gap-2"><span className="text-red-400 mt-0.5">✗</span> Averaging position 50 — page 5 on Google for every core keyword</li>
+                <li className="flex items-start gap-2"><span className="text-red-400 mt-0.5">✗</span> Averaging position 50: page 5 on Google for every core keyword</li>
                 <li className="flex items-start gap-2"><span className="text-red-400 mt-0.5">✗</span> ~200 Google impressions per day across all terms</li>
                 <li className="flex items-start gap-2"><span className="text-red-400 mt-0.5">✗</span> No page was clearly answering any specific buyer query</li>
                 <li className="flex items-start gap-2"><span className="text-red-400 mt-0.5">✗</span> £20,000 spent with a previous agency for a flat line</li>
@@ -226,7 +226,7 @@ export default function SEOPage() {
           <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 mb-6">
             <h3 className="text-white font-bold mb-3">What month 1 actually involved</h3>
             <p className="text-slate-300 text-sm leading-relaxed mb-3">
-              Month one was on-page work: restructuring content around the specific search terms their actual buyers use, tightening the page hierarchy, and making sure every product page was doing a clear job. No smoke and mirrors. The AI Overviews followed from content quality — Google's AI pulls from pages that give clear, structured, authoritative answers. That's what we optimised for.
+              Month one was on-page work: restructuring content around the specific search terms their actual buyers use, tightening the page hierarchy, and making sure every product page was doing a clear job. No smoke and mirrors. The AI Overviews followed from content quality: Google's AI pulls from pages that give clear, structured, authoritative answers. That's what we optimised for.
             </p>
             <p className="text-slate-400 text-sm">
               "Bus shelter suppliers" at volume 210 sounds small. But it's 210 searches a month from procurement officers at parish councils and local authorities looking to place an order. One contract is worth £5,000–£50,000. We're #1 for it. That's the point of B2B SEO.
@@ -234,7 +234,7 @@ export default function SEOPage() {
           </div>
 
           <Link href="/blog/alotek-shelters-month-1-seo-results" className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 text-sm font-semibold group">
-            Read the full month-1 data breakdown — every ranking, every position change <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            Read the full month-1 data breakdown: every ranking, every position change <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
       </section>
@@ -254,7 +254,7 @@ export default function SEOPage() {
               <div className="text-2xl mb-3">🏗️</div>
               <h3 className="text-white font-bold text-lg mb-2">The Marine Lake Events Centre</h3>
               <p className="text-slate-300 text-sm leading-relaxed">
-                The MLEC is projected to bring 500,000 additional visitors to Southport annually. That means a sustained surge in "restaurant near Marine Lake", "hotel Southport", "things to do Southport" searches — starting from opening day. The businesses that rank well before it opens will capture that traffic. The ones that start their SEO after it opens will spend 6 months trying to catch up.
+                The MLEC is projected to bring 500,000 additional visitors to Southport annually. That means a sustained surge in "restaurant near Marine Lake", "hotel Southport", "things to do Southport" searches: starting from opening day. The businesses that rank well before it opens will capture that traffic. The ones that start their SEO after it opens will spend 6 months trying to catch up.
               </p>
               <Link href="/southport-growth" className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 text-xs font-semibold mt-4 group">
                 Read the full Southport growth analysis <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
@@ -264,7 +264,7 @@ export default function SEOPage() {
               <div className="text-2xl mb-3">⛳</div>
               <h3 className="text-white font-bold text-lg mb-2">The Open 2026 at Royal Birkdale</h3>
               <p className="text-slate-300 text-sm leading-relaxed">
-                The Open Championship brings international search volume to Southport that usually doesn't exist. "Hotel near Royal Birkdale", "restaurants Southport", "stay in Southport for the Open" — these terms spike months before the tournament and the bookings go to whoever ranks. Local hotels and restaurants that have decent SEO in place by spring 2026 will take that business. It's a one-off opportunity that won't repeat for years.
+                The Open Championship brings international search volume to Southport that usually doesn't exist. "Hotel near Royal Birkdale", "restaurants Southport", "stay in Southport for the Open": these terms spike months before the tournament and the bookings go to whoever ranks. Local hotels and restaurants that have decent SEO in place by spring 2026 will take that business. It's a one-off opportunity that won't repeat for years.
               </p>
             </div>
           </div>
@@ -289,7 +289,7 @@ export default function SEOPage() {
             {[
               {
                 title: "Technical audit & fixes",
-                desc: "Month one starts with a technical audit — crawlability, site speed, schema markup, canonical tags, mobile usability. We fix what's broken before we build on top of it.",
+                desc: "Month one starts with a technical audit: crawlability, site speed, schema markup, canonical tags, mobile usability. We fix what's broken before we build on top of it.",
               },
               {
                 title: "Content restructuring",
@@ -301,7 +301,7 @@ export default function SEOPage() {
               },
               {
                 title: "Rank tracking & Search Console monitoring",
-                desc: "We watch what's moving, what Google is crawling, and what queries are generating impressions vs. clicks. When something changes — algorithm update, competitor movement, ranking drop — we're on it.",
+                desc: "We watch what's moving, what Google is crawling, and what queries are generating impressions vs. clicks. When something changes: algorithm update, competitor movement, ranking drop: we're on it.",
               },
               {
                 title: "Monthly reporting",
@@ -309,7 +309,7 @@ export default function SEOPage() {
               },
               {
                 title: "Authority building",
-                desc: "Citations, local directory listings, and — on higher-tier retainers — digital PR and backlink outreach. We do this properly: no link farms, no purchased links.",
+                desc: "Citations, local directory listings, and: on higher-tier retainers: digital PR and backlink outreach. We do this properly: no link farms, no purchased links.",
               },
             ].map((item, i) => (
               <div key={i} className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
@@ -326,7 +326,7 @@ export default function SEOPage() {
 
           <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
             <p className="text-slate-400 text-sm leading-relaxed">
-              We also build and run our own local web properties — <a href="https://www.southportguide.co.uk" className="text-green-400 hover:text-green-300" target="_blank" rel="noopener noreferrer">SouthportGuide.co.uk</a> and <a href="https://www.formbyguide.co.uk" className="text-green-400 hover:text-green-300" target="_blank" rel="noopener noreferrer">FormbyGuide.co.uk</a>. Building organic traffic from scratch for our own sites is how we stay sharp on what actually works. You can go look at how they rank right now.
+              We also build and run our own local web properties: <a href="https://www.southportguide.co.uk" className="text-green-400 hover:text-green-300" target="_blank" rel="noopener noreferrer">SouthportGuide.co.uk</a> and <a href="https://www.formbyguide.co.uk" className="text-green-400 hover:text-green-300" target="_blank" rel="noopener noreferrer">FormbyGuide.co.uk</a>. Building organic traffic from scratch for our own sites is how we stay sharp on what actually works. You can go look at how they rank right now.
             </p>
           </div>
         </div>
@@ -363,14 +363,14 @@ export default function SEOPage() {
                 <li className="flex items-start gap-2"><span className="text-red-400">✗</span> You need results within the next 30 days (that's a paid ads conversation)</li>
                 <li className="flex items-start gap-2"><span className="text-red-400">✗</span> You're a brand new business with very limited cash flow</li>
                 <li className="flex items-start gap-2"><span className="text-red-400">✗</span> Your margins are too tight for the retainer to pay for itself within a year</li>
-                <li className="flex items-start gap-2"><span className="text-red-400">✗</span> Your customers don't find you through search — they come through referrals or trade relationships exclusively</li>
+                <li className="flex items-start gap-2"><span className="text-red-400">✗</span> Your customers don't find you through search: they come through referrals or trade relationships exclusively</li>
                 <li className="flex items-start gap-2"><span className="text-red-400">✗</span> Your website is too broken to be worth optimising (in which case, fix the site first)</li>
               </ul>
             </div>
           </div>
 
           <p className="text-slate-400 text-sm">
-            If you're not sure which side you fall on, book a call. We'll give you a straight answer — and if we think SEO isn't the right move right now, we'll tell you that too.
+            If you're not sure which side you fall on, book a call. We'll give you a straight answer: and if we think SEO isn't the right move right now, we'll tell you that too.
           </p>
         </div>
       </section>
@@ -383,7 +383,7 @@ export default function SEOPage() {
             Month-to-month after an initial commitment period. No 12-month lock-ins. Cancel when you want.
           </p>
           <p className="text-slate-500 text-sm mb-12 max-w-2xl">
-            A rough ROI check: at £500/month you're spending £6,000/year. If one extra client per quarter covers that — and for most service businesses it does — the question is whether Google search is a realistic source of enquiries for your sector. If you're not sure, we can tell you before you sign up.
+            A rough ROI check: at £500/month you're spending £6,000/year. If one extra client per quarter covers that: and for most service businesses it does: the question is whether Google search is a realistic source of enquiries for your sector. If you're not sure, we can tell you before you sign up.
           </p>
 
           <div className="grid md:grid-cols-3 gap-6 mb-8">
@@ -394,7 +394,7 @@ export default function SEOPage() {
               <p className="text-slate-400 text-sm mb-8">For single-location Southport businesses competing for local "near me" searches.</p>
               <ul className="space-y-3 mb-8">
                 {[
-                  "Local pack focus — 1 town/area",
+                  "Local pack focus: 1 town/area",
                   "Google Business Profile optimisation",
                   "5 target keywords tracked",
                   "Monthly local citations",
@@ -472,7 +472,7 @@ export default function SEOPage() {
 
           <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-5 text-center">
             <p className="text-slate-300 text-sm">
-              Not sure which fits? <Link href="/contact" className="text-green-400 hover:text-green-300 font-semibold">Book a free call</Link> — we'll be honest about whether SEO makes sense for your business and at what level.
+              Not sure which fits? <Link href="/contact" className="text-green-400 hover:text-green-300 font-semibold">Book a free call</Link>: we'll be honest about whether SEO makes sense for your business and at what level.
             </p>
           </div>
         </div>
@@ -522,7 +522,7 @@ export default function SEOPage() {
             Want to know if SEO would work for your business?
           </h2>
           <p className="text-slate-300 mb-2 leading-relaxed">
-            Book a call and we'll give you a straight answer — including if we think it isn't the right move right now.
+            Book a call and we'll give you a straight answer: including if we think it isn't the right move right now.
           </p>
           <p className="text-slate-400 text-sm mb-8">
             Or run a free automated audit of your site first.

@@ -9,7 +9,7 @@ export const seftonBlogContent = {
   // POST 1: FORMBY
   formby: `
       <p>Walk down Chapel Lane on a Saturday morning. Look at the boutiques, the cafés, the professional services. Then look at the cars in the car park: Range Rovers, Teslas, Porsche Cayennes.</p>
-      <p>This is Formby—one of the wealthiest postcodes in the North West, where the average house costs £450,000+ and Premier League footballers are your neighbors.</p>
+      <p>This is Formby-one of the wealthiest postcodes in the North West, where the average house costs £450,000+ and Premier League footballers are your neighbors.</p>
       <p>If you're a business owner in L37, you face a unique digital challenge: <strong>Your website must signal premium quality, not budget convenience.</strong></p>
       <p>At <a href="/" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Churchtown Media</a>, we're based just 15 minutes away in Southport. We understand Formby's market intimately. This is the exact local SEO strategy we use to help L37 businesses dominate 'near me' searches and justify premium pricing.</p>
 
@@ -50,7 +50,7 @@ export const seftonBlogContent = {
         <li><strong>Premium keywords:</strong> Searches include "luxury", "bespoke", "premium", "private", not "cheap" or "affordable"</li>
       </ul>
 
-      <p><strong>Translation:</strong> Your website isn't just a brochure—it's the first round of due diligence for high-value clients who have the budget to go elsewhere if you don't meet their standards.</p>
+      <p><strong>Translation:</strong> Your website isn't just a brochure-it's the first round of due diligence for high-value clients who have the budget to go elsewhere if you don't meet their standards.</p>
 
       <h2>The 5 Pillars of Formby Local SEO</h2>
 
@@ -63,12 +63,12 @@ export const seftonBlogContent = {
           <li><strong>Load Time:</strong> Under 1.5 seconds on 4G</li>
           <li><strong>Design Quality:</strong> Custom design, not templates</li>
           <li><strong>Photography:</strong> Professional, high-resolution images</li>
-          <li><strong>Mobile UX:</strong> Seamless experience—72% mobile-first</li>
+          <li><strong>Mobile UX:</strong> Seamless experience-72% mobile-first</li>
           <li><strong>Trust Signals:</strong> Credentials prominently displayed</li>
         </ul>
       </div>
 
-      <p>We build Formby websites using <strong>Next.js</strong>—5x faster than WordPress. Read more: <a href="/blog/nextjs-vs-wordpress-2026" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Why Speed Matters</a>.</p>
+      <p>We build Formby websites using <strong>Next.js</strong>-5x faster than WordPress. Read more: <a href="/blog/nextjs-vs-wordpress-2026" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">Why Speed Matters</a>.</p>
 
       <h3>Pillar 2: Hyperlocal Formby SEO</h3>
       <p>Formby residents use specific local terms: "salon Chapel Lane", "dentist Formby village", "personal trainer near Squirrel Reserve".</p>
@@ -165,7 +165,7 @@ export const seftonBlogContent = {
             Week 1: Audit Performance
           </h3>
           <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 3rem; list-style: disc;">
-            <li>Google yourself: "your service + Formby"—top 3 Map Pack?</li>
+            <li>Google yourself: "your service + Formby"-top 3 Map Pack?</li>
             <li>Check site speed: <a href="https://pagespeed.web.dev/" target="_blank" style="color: #60a5fa;">PageSpeed Insights</a></li>
             <li>Review count audit vs competitors</li>
           </ul>

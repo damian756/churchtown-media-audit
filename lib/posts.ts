@@ -237,7 +237,7 @@ export const posts: BlogPost[] = [
     content: `
       <p>I'm going to keep this straightforward. Here's what the data looks like after month one of Alotek's SEO retainer.</p>
 
-      <p>First, some context. Alotek Shelters are a Lancashire manufacturer — bus shelters, covered walkways, outdoor pram storage. They'd spent money with a previous agency and had very little to show for it. When I took them on, we migrated their site from WordPress to Next.js before any retainer was signed. I didn't charge for it. They're a hard-working local family and the old platform was the wrong foundation. There's no point doing SEO on a slow, poorly-structured site — you're filling a bucket with a hole in the bottom.</p>
+      <p>First, some context. Alotek Shelters are a Lancashire manufacturer: bus shelters, covered walkways, outdoor pram storage. They'd spent money with a previous agency and had very little to show for it. When I took them on, we migrated their site from WordPress to Next.js before any retainer was signed. I didn't charge for it. They're a hard-working local family and the old platform was the wrong foundation. There's no point doing SEO on a slow, poorly-structured site: you're filling a bucket with a hole in the bottom.</p>
 
       <p>They then came on as an SEO client. Month one closed on 1st March 2026. Here's what happened.</p>
 
@@ -250,10 +250,10 @@ export const posts: BlogPost[] = [
       <figure style="margin: 2rem 0;">
         <img
           src="/images/alotek-rankings.webp"
-          alt="SEMrush position tracking for alotekshelters.co.uk showing multiple #1 rankings with AI Overview appearances — Jan 31 to Mar 1, 2026"
+          alt="SEMrush position tracking for alotekshelters.co.uk showing multiple #1 rankings with AI Overview appearances: Jan 31 to Mar 1, 2026"
           style="width: 100%; border-radius: 0.75rem; border: 1px solid #1e293b;"
         />
-        <figcaption style="text-align: center; color: #64748b; font-size: 0.875rem; margin-top: 0.75rem;">SEMrush Position Tracking — alotekshelters.co.uk — Jan 31 to Mar 1, 2026</figcaption>
+        <figcaption style="text-align: center; color: #64748b; font-size: 0.875rem; margin-top: 0.75rem;">SEMrush Position Tracking: alotekshelters.co.uk (Jan 31 to Mar 1, 2026</figcaption>
       </figure>
 
       <div style="overflow-x: auto; margin: 2rem 0;">
@@ -298,7 +298,7 @@ export const posts: BlogPost[] = [
             </tr>
             <tr style="border-bottom: 1px solid #1e293b;">
               <td style="padding: 0.75rem 1rem;">parish council bus shelter</td>
-              <td style="padding: 0.75rem 1rem; text-align: center; color: #94a3b8;">—</td>
+              <td style="padding: 0.75rem 1rem; text-align: center; color: #94a3b8;">: </td>
               <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80; font-weight: bold;">1</td>
               <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80;">NEW</td>
               <td style="padding: 0.75rem 1rem; text-align: center;">0</td>
@@ -335,15 +335,15 @@ export const posts: BlogPost[] = [
         </table>
       </div>
 
-      <p>Every tracked keyword is now at position 1. Some were already there from the initial technical work before the retainer started. Others have moved — the biggest shift being "bus shelter suppliers" from 16 to 1 in 30 days. That's the one that matters most commercially.</p>
+      <p>Every tracked keyword is now at position 1. Some were already there from the initial technical work before the retainer started. Others have moved: the biggest shift being "bus shelter suppliers" from 16 to 1 in 30 days. That's the one that matters most commercially.</p>
 
       <hr />
 
       <h2>The AI Overview Point</h2>
 
-      <p>Every keyword in that table is triggering an AI Overview — the box that appears above the traditional blue links when Google's AI pulls a direct answer. You can see the SF (SERP Features) column in the screenshot.</p>
+      <p>Every keyword in that table is triggering an AI Overview: the box that appears above the traditional blue links when Google's AI pulls a direct answer. You can see the SF (SERP Features) column in the screenshot.</p>
 
-      <p>This matters more than it might look. When someone at a parish council or local authority types "bus shelter suppliers" into Google, they're not doing casual research. They're looking for a company to contact. The AI Overview puts Alotek's name at the very top of the page — before the organic results even load. That's the most prominent position on the search results page in 2026.</p>
+      <p>This matters more than it might look. When someone at a parish council or local authority types "bus shelter suppliers" into Google, they're not doing casual research. They're looking for a company to contact. The AI Overview puts Alotek's name at the very top of the page: before the organic results even load. That's the most prominent position on the search results page in 2026.</p>
 
       <p>Ranking #1 in the blue links used to be the goal. Now, ranking #1 with an AI Overview on top is. Alotek has both.</p>
 
@@ -355,7 +355,7 @@ export const posts: BlogPost[] = [
 
       <p>For a consumer brand, those numbers would be meaningless. For a B2B manufacturer selling to local authorities, parish councils, and housing associations, they're not. A single contract for a bus shelter installation can be worth £5,000 to £50,000. One enquiry from a procurement officer who found Alotek at the top of a niche search could pay for twelve months of SEO work.</p>
 
-      <p>The search volumes are low because the buyer pool is small and specific. That's not a weakness in the strategy — it is the strategy. You're not trying to rank for "bus shelter" (vague, no intent). You're ranking for "parish council bus shelter manufacturer" (specific, purchase intent, logged onto a council computer). Those are different searches from different people in very different stages of decision-making.</p>
+      <p>The search volumes are low because the buyer pool is small and specific. That's not a weakness in the strategy. It is the strategy. You're not trying to rank for "bus shelter" (vague, no intent). You're ranking for "parish council bus shelter manufacturer" (specific, purchase intent, logged onto a council computer). Those are different searches from different people in very different stages of decision-making.</p>
 
       <p>"Bus shelter suppliers" at volume 210 might be the most commercially valuable keyword Alotek has. 210 searches a month of people looking to buy. We're #1 for it. That's the point.</p>
 
@@ -365,7 +365,7 @@ export const posts: BlogPost[] = [
 
       <p>The WordPress to Next.js migration came first. Not because Next.js is magic, but because the previous site had structural problems that no amount of SEO work could overcome. Slow load times, poor crawlability, no semantic HTML structure. You can't win a race on flat tyres.</p>
 
-      <p>Month one of the retainer was primarily on-page — restructuring content around the specific search terms buyers actually use, tightening up the page hierarchy, and making sure every product and service page was doing a clear job. No smoke and mirrors, no link schemes. Just content that answers the right question for the right person.</p>
+      <p>Month one of the retainer was primarily on-page: restructuring content around the specific search terms buyers actually use, tightening up the page hierarchy, and making sure every product and service page was doing a clear job. No smoke and mirrors, no link schemes. Just content that answers the right question for the right person.</p>
 
       <p>The AI Overviews followed from the content quality. Google's AI pulls from pages that give clear, structured, authoritative answers. That's what we optimised for.</p>
 
@@ -373,7 +373,7 @@ export const posts: BlogPost[] = [
 
       <h2>What Comes Next</h2>
 
-      <p>Month 2 focus is clicks. Rankings are the lagging indicator — impressions and clicks are the leading indicators of actual enquiries. The ranking data is solid. Now we watch the Search Console data for which terms are converting from impressions to clicks, and we optimise the title tags and meta descriptions to improve CTR.</p>
+      <p>Month 2 focus is clicks. Rankings are the lagging indicator: impressions and clicks are the leading indicators of actual enquiries. The ranking data is solid. Now we watch the Search Console data for which terms are converting from impressions to clicks, and we optimise the title tags and meta descriptions to improve CTR.</p>
 
       <p>There are also two or three additional terms in striking distance that didn't make this month's table. We'll be targeting those next.</p>
 
@@ -405,21 +405,21 @@ export const posts: BlogPost[] = [
 
       <h2>The Four Sites</h2>
 
-      <p><a href="https://www.southportguide.co.uk" target="_blank" rel="noopener noreferrer">SouthportGuide.co.uk</a> is the broadest — a full visitor guide to Southport covering restaurants, hotels, things to do, events, and two significant upcoming moments for the town: The Open Championship returning to Royal Birkdale in July 2026, and the Marine Lake Events Centre opening in 2027. The site has a business directory, a blog, and booking integrations.</p>
+      <p><a href="https://www.southportguide.co.uk" target="_blank" rel="noopener noreferrer">SouthportGuide.co.uk</a> is the broadest: a full visitor guide to Southport covering restaurants, hotels, things to do, events, and two significant upcoming moments for the town: The Open Championship returning to Royal Birkdale in July 2026, and the Marine Lake Events Centre opening in 2027. The site has a business directory, a blog, and booking integrations.</p>
 
-      <p><a href="https://www.formbyguide.co.uk" target="_blank" rel="noopener noreferrer">FormbyGuide.co.uk</a> exists because no dedicated guide to Formby existed anywhere online. The National Trust covers their own estate and stops at the car park gate. TripAdvisor is generic. Formbyevents.co.uk does events only. There was a genuine editorial gap — red squirrels, the beach, the pinewoods, village dining — and nobody was filling it properly.</p>
+      <p><a href="https://www.formbyguide.co.uk" target="_blank" rel="noopener noreferrer">FormbyGuide.co.uk</a> exists because no dedicated guide to Formby existed anywhere online. The National Trust covers their own estate and stops at the car park gate. TripAdvisor is generic. Formbyevents.co.uk does events only. There was a genuine editorial gap: red squirrels, the beach, the pinewoods, village dining: and nobody was filling it properly.</p>
 
-      <p><a href="https://www.seftonlinks.com" target="_blank" rel="noopener noreferrer">SeftonLinks.com</a> covers the links golf corridor — Royal Birkdale, Hillside, Formby Golf Club, West Lancashire, Southport &amp; Ainsdale, Southport Old Links. Seven courses, 18 languages, course conditions, tee time links, scorecards, and an Open 2026 hub. I built it partly because I play golf badly and wanted somewhere better than the club websites to find out what I needed to know before booking.</p>
+      <p><a href="https://www.seftonlinks.com" target="_blank" rel="noopener noreferrer">SeftonLinks.com</a> covers the links golf corridor: Royal Birkdale, Hillside, Formby Golf Club, West Lancashire, Southport &amp; Ainsdale, Southport Old Links. Seven courses, 18 languages, course conditions, tee time links, scorecards, and an Open 2026 hub. I built it partly because I play golf badly and wanted somewhere better than the club websites to find out what I needed to know before booking.</p>
 
-      <p><a href="https://www.seftoncoastwildlife.co.uk" target="_blank" rel="noopener noreferrer">SeftonCoastWildlife.co.uk</a> is the one that surprised me most in the building. It's a 257-species database covering birds, mammals, insects and plants found between Southport and Formby. Species profiles, seasonal guides, a nature guide to Marshside RSPB. The Sefton Coast is a Special Area of Conservation — natterjack toads, little terns, ringed plovers — and there was nowhere pulling it all together into something actually readable.</p>
+      <p><a href="https://www.seftoncoastwildlife.co.uk" target="_blank" rel="noopener noreferrer">SeftonCoastWildlife.co.uk</a> is the one that surprised me most in the building. It's a 257-species database covering birds, mammals, insects and plants found between Southport and Formby. Species profiles, seasonal guides, a nature guide to Marshside RSPB. The Sefton Coast is a Special Area of Conservation: natterjack toads, little terns, ringed plovers: and there was nowhere pulling it all together into something actually readable.</p>
 
       <h2>The Stack</h2>
 
-      <p>All four sites run on the same foundation: Next.js App Router, TypeScript, Tailwind CSS v4, deployed to Vercel. SouthportGuide uses Prisma and PostgreSQL for its business directory. The rest are primarily static — which means they're fast, maintainable, and don't have WordPress's maintenance overhead.</p>
+      <p>All four sites run on the same foundation: Next.js App Router, TypeScript, Tailwind CSS v4, deployed to Vercel. SouthportGuide uses Prisma and PostgreSQL for its business directory. The rest are primarily static: which means they're fast, maintainable, and don't have WordPress's maintenance overhead.</p>
 
-      <p>The shared stack was deliberate. Every pattern I build for one site carries to the others. The cross-linking strategy, the structured data implementation, the component library — it all transfers. Building four sites doesn't take four times the work when the foundation is the same.</p>
+      <p>The shared stack was deliberate. Every pattern I build for one site carries to the others. The cross-linking strategy, the structured data implementation, the component library: it all transfers. Building four sites doesn't take four times the work when the foundation is the same.</p>
 
-      <p>Analytics is Plausible across all four — cookieless, GDPR-compliant, no consent banner required. I'm not interested in surveillance capitalism. I just want to know which pages are working.</p>
+      <p>Analytics is Plausible across all four: cookieless, GDPR-compliant, no consent banner required. I'm not interested in surveillance capitalism. I just want to know which pages are working.</p>
 
       <h2>Why a Network, Not One Site</h2>
 
@@ -427,25 +427,25 @@ export const posts: BlogPost[] = [
 
       <p>But the more honest answer is that the subjects are genuinely distinct. The person searching for "Formby beach parking" is not the same person searching for "Royal Birkdale green fees." They need different things. Trying to serve both on one site would mean serving neither properly.</p>
 
-      <p>The network structure means the four sites can cross-link editorially — not with a generic "see our sister sites" footer bar, but with genuine contextual links placed where a real user would benefit from them. The wildlife site links to SouthportGuide when it makes sense for a visitor to know where to eat after a morning at Marshside. The golf site links to FormbyGuide for dining recommendations near Formby Golf Club. The connections are real, not manufactured.</p>
+      <p>The network structure means the four sites can cross-link editorially: not with a generic "see our sister sites" footer bar, but with genuine contextual links placed where a real user would benefit from them. The wildlife site links to SouthportGuide when it makes sense for a visitor to know where to eat after a morning at Marshside. The golf site links to FormbyGuide for dining recommendations near Formby Golf Club. The connections are real, not manufactured.</p>
 
       <h2>The SEO Architecture</h2>
 
-      <p>Each site has a full structured data implementation built from the ground up — connecting publisher, authors, and content in a way that search engines can actually verify. The technical infrastructure is designed to make the relationships between the four sites explicit and machine-readable, rather than just implied by the cross-links. I've been doing this for fifteen years and it still surprises me how many sites skip this step entirely.</p>
+      <p>Each site has a full structured data implementation built from the ground up: connecting publisher, authors, and content in a way that search engines can actually verify. The technical infrastructure is designed to make the relationships between the four sites explicit and machine-readable, rather than just implied by the cross-links. I've been doing this for fifteen years and it still surprises me how many sites skip this step entirely.</p>
 
       <h2>What's Already Working</h2>
 
-      <p>It's been one week. I'm not going to pretend I have ranking data. What I can say is that the sites are indexing cleanly, the structured data validates without errors, and Core Web Vitals are strong across all four — which is what you'd expect from static Next.js on Vercel but is still worth confirming.</p>
+      <p>It's been one week. I'm not going to pretend I have ranking data. What I can say is that the sites are indexing cleanly, the structured data validates without errors, and Core Web Vitals are strong across all four: which is what you'd expect from static Next.js on Vercel but is still worth confirming.</p>
 
-      <p>The keyword opportunity is real. A SEMrush gap analysis showed that the main competitors on most Sefton Coast queries — the National Trust, TripAdvisor, formbyevents.co.uk — rank weakly and have no editorial depth. Keyword difficulty is low across almost everything I'm targeting. The content just needs to be there and be good.</p>
+      <p>The keyword opportunity is real. A SEMrush gap analysis showed that the main competitors on most Sefton Coast queries: the National Trust, TripAdvisor, formbyevents.co.uk: rank weakly and have no editorial depth. Keyword difficulty is low across almost everything I'm targeting. The content just needs to be there and be good.</p>
 
-      <p>The Open 2026 hub on SouthportGuide is the biggest single bet. The championship is in July. There are five months for the site to establish authority before search demand peaks. If it gets there, the traffic opportunity is significant — and it's not like there are strong competitors for "stay in Southport for The Open" or "Formby accommodation The Open 2026."</p>
+      <p>The Open 2026 hub on SouthportGuide is the biggest single bet. The championship is in July. There are five months for the site to establish authority before search demand peaks. If it gets there, the traffic opportunity is significant: and it's not like there are strong competitors for "stay in Southport for The Open" or "Formby accommodation The Open 2026."</p>
 
       <h2>The Honest Version</h2>
 
       <p>I built this partly as a business, partly as proof of concept for everything I tell clients to do, and partly because I live here and it genuinely irritated me that nobody had done it properly.</p>
 
-      <p>The commercial model is straightforward: businesses pay for featured placement in the directories. That funds the editorial work. There's no sponsored content, no paid reviews, no advertorial dressed up as journalism. That's not a moral position — it's a practical one. The sites only have value if people trust them, and people only trust them if the editorial is honest.</p>
+      <p>The commercial model is straightforward: businesses pay for featured placement in the directories. That funds the editorial work. There's no sponsored content, no paid reviews, no advertorial dressed up as journalism. That's not a moral position: it's a practical one. The sites only have value if people trust them, and people only trust them if the editorial is honest.</p>
 
       <p>Ask me again in six months. I'll have actual numbers by then.</p>
 
@@ -461,7 +461,7 @@ export const posts: BlogPost[] = [
     author: "Damian Roche",
     category: "Case Studies",
     image: "/images/headless-blog-case-study.jpg",
-    excerpt: "How we helped an industrial B2B e-commerce business scale from 10 posts/month to 100+ using Next.js /blog/—while keeping their profitable WooCommerce store untouched. 1.78k pages indexed, 9.26k monthly clicks, 15.8% CTR.",
+    excerpt: "How we helped an industrial B2B e-commerce business scale from 10 posts/month to 100+ using Next.js /blog/: while keeping their profitable WooCommerce store untouched. 1.78k pages indexed, 9.26k monthly clicks, 15.8% CTR.",
     content: `
       <p>Client came to me in early 2025 with a problem I hear constantly: "Our WordPress blog is killing us."</p>
       <p>They ran a profitable industrial e-commerce site. £13k+/month revenue. Hundreds of products. Custom Klaviyo flows. Everything worked. Except the blog.</p>
@@ -501,7 +501,7 @@ export const posts: BlogPost[] = [
       
       <p><strong>WooCommerce for the store:</strong></p>
       <ul>
-        <li>Store already profitable—don't fix what isn't broken</li>
+        <li>Store already profitable: don't fix what isn't broken</li>
         <li>Migration risk avoided entirely</li>
         <li>Klaviyo flows keep running</li>
         <li>Product rankings protected</li>
@@ -560,7 +560,7 @@ export const posts: BlogPost[] = [
         </ul>
       </div>
       
-      <p><strong>Average position: 24.5</strong> (page 3). That's not great—yet. But the trajectory matters more than the snapshot. This is early-stage growth with clear acceleration.</p>
+      <p><strong>Average position: 24.5</strong> (page 3). That's not great: yet. But the trajectory matters more than the snapshot. This is early-stage growth with clear acceleration.</p>
       
       <div style="margin: 2rem 0;">
         <img src="/images/case-study-gsc-indexing.png" alt="Google Search Console indexing chart showing 1.78k pages indexed with growth trajectory" style="width: 100%; height: auto; border-radius: 0.5rem; border: 1px solid #334155;" />
@@ -602,13 +602,13 @@ export const posts: BlogPost[] = [
       <h2>What I'd Do Differently</h2>
       <p>This isn't a perfect case study. Here's what needs work:</p>
       <ul>
-        <li><strong>Average position 24.5 is misleading.</strong> They're tracking 253 keywords—many aren't relevant targets. The 47 keywords on page 1-2 are what actually matter. Need to clean up keyword tracking and focus on high-intent terms.</li>
+        <li><strong>Average position 24.5 is misleading.</strong> They're tracking 253 keywords: many aren't relevant targets. The 47 keywords on page 1-2 are what actually matter. Need to clean up keyword tracking and focus on high-intent terms.</li>
         <li><strong>9.73k pages not indexed.</strong> Need to audit for thin content, duplicates, and indexing issues.</li>
         <li><strong>Internal linking between blog and product pages could be stronger.</strong> Should've built more contextual links from blog posts to products to drive conversions.</li>
       </ul>
       
       <h2>The Takeaway for Your Business</h2>
-      <p>You don't have to migrate your entire site to scale content. If your e-commerce store works, keep it. If your blog doesn't—split them.</p>
+      <p>You don't have to migrate your entire site to scale content. If your e-commerce store works, keep it. If your blog doesn't: split them.</p>
       <p>This hybrid approach works for:</p>
       <ul>
         <li>E-commerce stores (Shopify, WooCommerce, Magento) that need better content velocity</li>
@@ -2394,9 +2394,9 @@ export const posts: BlogPost[] = [
     excerpt: "Southport's gyms, fitness centres, and leisure venues are losing online visibility to national chains. Here's how local leisure businesses can fight back with smart SEO.",
     image: "/images/southport-leisure-center-seo.jpg",
     content: `
-      <p>Here's a frustrating reality for Southport's leisure businesses: someone in PR8 searches <em>"gym near me"</em> and the first three results are PureGym, The Gym Group, and JD Gyms. Your independent fitness centre—the one with actual personal trainers who know their clients' names—is buried on page two.</p>
+      <p>Here's a frustrating reality for Southport's leisure businesses: someone in PR8 searches <em>"gym near me"</em> and the first three results are PureGym, The Gym Group, and JD Gyms. Your independent fitness centre: the one with actual personal trainers who know their clients' names: is buried on page two.</p>
       <p>It's not because national chains offer a better experience. It's because they have dedicated SEO teams working around the clock to dominate every local search in every town in the UK. <strong>Southport's leisure businesses are being outranked by marketing budgets, not by quality.</strong></p>
-      <p>At <a href="/" class="text-blue-400 hover:text-blue-300 underline">Churchtown Media</a>, we work with Southport businesses to level the playing field. The leisure industry—<a href="/industries/gyms-fitness" class="text-blue-400 hover:text-blue-300 underline">gyms, fitness studios</a>, swimming pools, recreation centres, yoga studios—has specific SEO opportunities that national chains simply can't replicate. Let's explore them.</p>
+      <p>At <a href="/" class="text-blue-400 hover:text-blue-300 underline">Churchtown Media</a>, we work with Southport businesses to level the playing field. The leisure industry: <a href="/industries/gyms-fitness" class="text-blue-400 hover:text-blue-300 underline">gyms, fitness studios</a>, swimming pools, recreation centres, yoga studios: has specific SEO opportunities that national chains simply can't replicate. Let's explore them.</p>
 
       <h2>Why National Chains Dominate Leisure Searches (And Their Weakness)</h2>
       <p>National gym chains rank well because they have enormous domain authority, hundreds of location pages, and aggressive Google Ads budgets. But they also have a fundamental weakness: <strong>they can't be local.</strong></p>
@@ -2435,18 +2435,18 @@ export const posts: BlogPost[] = [
       <div style="background: #1e293b; border-left: 4px solid #3b82f6; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
         <h4 style="color: #60a5fa; font-weight: bold; margin-bottom: 1rem;">The Class Page Formula</h4>
         <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
-          <li><strong>Individual page per class type</strong> — "Yoga Classes in Southport" as its own page, not a table row</li>
-          <li><strong>Describe the class</strong> — Who it's for, what to expect, difficulty level, what to bring</li>
-          <li><strong>Include the instructor</strong> — Name, qualifications, a friendly photo. People connect with people</li>
-          <li><strong>Show the schedule</strong> — Days, times, duration in crawlable HTML (not an image or PDF)</li>
-          <li><strong>Add structured data</strong> — Use Event schema so Google can show your classes in rich results</li>
+          <li><strong>Individual page per class type</strong>: "Yoga Classes in Southport" as its own page, not a table row</li>
+          <li><strong>Describe the class</strong>: Who it's for, what to expect, difficulty level, what to bring</li>
+          <li><strong>Include the instructor</strong>: Name, qualifications, a friendly photo. People connect with people</li>
+          <li><strong>Show the schedule</strong>: Days, times, duration in crawlable HTML (not an image or PDF)</li>
+          <li><strong>Add structured data</strong>: Use Event schema so Google can show your classes in rich results</li>
         </ul>
       </div>
 
       <p>A single well-optimised class page can rank for dozens of related long-tail keywords. Multiply that by every class you offer and you've built an <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">SEO</a> moat that no national chain will bother competing with.</p>
 
       <h2>Membership Pages That Actually Convert</h2>
-      <p>Your membership page isn't just a pricing table—it's one of the most important pages on your entire website. It's where search intent meets commercial decision.</p>
+      <p>Your membership page isn't just a pricing table: it's one of the most important pages on your entire website. It's where search intent meets commercial decision.</p>
       <p>Here's what most Southport leisure businesses get wrong:</p>
       <ul>
         <li><strong>No pricing visible:</strong> "Contact us for prices" immediately sends visitors to a competitor who IS transparent</li>
@@ -2454,7 +2454,7 @@ export const posts: BlogPost[] = [
         <li><strong>No social proof:</strong> Member testimonials, transformation stories, and community photos build trust</li>
         <li><strong>No trial offer:</strong> A free class or trial week removes the commitment barrier</li>
       </ul>
-      <p>From an SEO perspective, your membership page should target keywords like <em>"gym membership Southport,"</em> <em>"fitness centre prices PR8,"</em> and <em>"best value gym Southport."</em> These are high-intent, bottom-of-funnel searches—people ready to buy.</p>
+      <p>From an SEO perspective, your membership page should target keywords like <em>"gym membership Southport,"</em> <em>"fitness centre prices PR8,"</em> and <em>"best value gym Southport."</em> These are high-intent, bottom-of-funnel searches: people ready to buy.</p>
 
       <h2>Virtual Tours and Video Content</h2>
       <p>When someone considers joining a gym or leisure centre, they want to see the space before they commit. A virtual tour does two things brilliantly:</p>
@@ -2462,7 +2462,7 @@ export const posts: BlogPost[] = [
         <li><strong>Increases time on page:</strong> Google interprets longer visits as a signal that your content is valuable</li>
         <li><strong>Builds confidence:</strong> Seeing clean, well-equipped facilities removes the anxiety of walking into an unfamiliar place</li>
       </ul>
-      <p>You don't need a professional 360-degree camera setup. A well-shot walkthrough video on your phone, uploaded to YouTube and embedded on your site, works incredibly well. Title it <em>"Tour of [Your Business Name] — Gym and Fitness Centre in Southport"</em> and you've created content that ranks on both Google and YouTube.</p>
+      <p>You don't need a professional 360-degree camera setup. A well-shot walkthrough video on your phone, uploaded to YouTube and embedded on your site, works incredibly well. Title it <em>"Tour of [Your Business Name]: Gym and Fitness Centre in Southport"</em> and you've created content that ranks on both Google and YouTube.</p>
 
       <h3>Local Fitness Searches: The Opportunity</h3>
       <p>Southport has a growing health-conscious community. The promenade is packed with runners. Marine Lake attracts outdoor fitness groups. The town's demographics skew towards people who value wellbeing but also value personal service over budget-chain anonymity.</p>
@@ -2471,7 +2471,7 @@ export const posts: BlogPost[] = [
       <div style="background: #1e293b; border-left: 4px solid #22c55e; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
         <h4 style="color: #22c55e; font-weight: bold; margin-bottom: 1rem;">Quick Wins for Southport Leisure SEO</h4>
         <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
-          <li><strong>Google Business Profile:</strong> Post weekly updates—class highlights, member achievements, facility updates</li>
+          <li><strong>Google Business Profile:</strong> Post weekly updates: class highlights, member achievements, facility updates</li>
           <li><strong>Review strategy:</strong> Ask happy members to leave Google reviews. Respond to every single one</li>
           <li><strong>Local content:</strong> Blog about outdoor fitness spots in Southport, healthy eating guides for locals, seasonal fitness tips</li>
           <li><strong>Schema markup:</strong> Add LocalBusiness, SportsActivityLocation, and Event structured data</li>
@@ -2481,12 +2481,12 @@ export const posts: BlogPost[] = [
 
       <h2>Don't Let the Chains Win by Default</h2>
       <p>National chains don't outrank you because they're better. They outrank you because they've invested in <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">search engine optimisation</a> and most independent leisure businesses haven't. The good news? You have advantages they can never replicate: genuine community connection, personalised service, and authentic local content.</p>
-      <p>The question isn't whether Southport needs more leisure options—it's whether the people searching can actually find yours.</p>
+      <p>The question isn't whether Southport needs more leisure options: it's whether the people searching can actually find yours.</p>
 
       <div style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 1rem; padding: 2.5rem; margin: 3rem 0; text-align: center;">
         <h2 style="color: white; font-size: 1.875rem; font-weight: bold; margin-bottom: 1rem;">Is Your Leisure Business Invisible Online?</h2>
         <p style="color: rgba(255,255,255,0.9); font-size: 1.125rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-          Get a free SEO audit and find out exactly where you're losing to national chains—and how to fix it.
+          Get a free SEO audit and find out exactly where you're losing to national chains: and how to fix it.
         </p>
         <div style="display: flex; flex-direction: column; gap: 1rem; justify-content: center; align-items: center;">
           <a href="/audit" style="display: inline-flex; align-items: center; gap: 0.5rem; background: white; color: #1e293b; padding: 1rem 2rem; border-radius: 9999px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -2515,7 +2515,7 @@ export const posts: BlogPost[] = [
     excerpt: "Families searching 'things to do in Southport' are ready to spend. Here's how attractions and activity centres can capture those high-intent weekend searches.",
     image: "/images/southport-family-days-out-seo.jpg",
     content: `
-      <p>It's Thursday evening. A parent in Bolton, Wigan, or Preston picks up their phone and types: <em>"things to do with kids this weekend near me."</em> Southport—with its pier, beach, parks, and attractions—should be the answer. But is it <strong>your</strong> attraction they find, or your competitor's?</p>
+      <p>It's Thursday evening. A parent in Bolton, Wigan, or Preston picks up their phone and types: <em>"things to do with kids this weekend near me."</em> Southport: with its pier, beach, parks, and attractions: should be the answer. But is it <strong>your</strong> attraction they find, or your competitor's?</p>
       <p>The "days out" search market is enormous, seasonal, and shockingly underserved by most Southport businesses. Families don't plan weeks ahead anymore. They decide on Thursday, search on Friday, and arrive on Saturday. If your website doesn't appear in that 24-hour decision window, you simply don't exist.</p>
       <p>At <a href="/" class="text-blue-400 hover:text-blue-300 underline">Churchtown Media</a>, we help Southport's <a href="/industries/tourism" class="text-blue-400 hover:text-blue-300 underline">tourism and leisure businesses</a> capture these high-intent family searches. Here's the playbook.</p>
 
@@ -2527,20 +2527,20 @@ export const posts: BlogPost[] = [
         <div style="display: grid; gap: 1rem; color: #cbd5e1;">
           <div style="background: #0f172a; padding: 1.25rem; border-radius: 0.5rem; border-left: 4px solid #60a5fa;">
             <strong style="color: white;">Thursday–Friday Evening:</strong>
-            <p style="font-size: 0.875rem; margin: 0.5rem 0 0 0;">"Things to do with kids this weekend" — Broad discovery. They're browsing options.</p>
+            <p style="font-size: 0.875rem; margin: 0.5rem 0 0 0;">"Things to do with kids this weekend": Broad discovery. They're browsing options.</p>
           </div>
           <div style="background: #0f172a; padding: 1.25rem; border-radius: 0.5rem; border-left: 4px solid #a78bfa;">
             <strong style="color: white;">Friday Night–Saturday Morning:</strong>
-            <p style="font-size: 0.875rem; margin: 0.5rem 0 0 0;">"Southport attractions" or "days out Southport kids" — They've chosen the destination. Now they're deciding what to do there.</p>
+            <p style="font-size: 0.875rem; margin: 0.5rem 0 0 0;">"Southport attractions" or "days out Southport kids": They've chosen the destination. Now they're deciding what to do there.</p>
           </div>
           <div style="background: #0f172a; padding: 1.25rem; border-radius: 0.5rem; border-left: 4px solid #34d399;">
             <strong style="color: white;">Saturday Morning (In the Car):</strong>
-            <p style="font-size: 0.875rem; margin: 0.5rem 0 0 0;">"[Attraction name] opening times" or "parking near [attraction]" — They've decided. They need logistics.</p>
+            <p style="font-size: 0.875rem; margin: 0.5rem 0 0 0;">"[Attraction name] opening times" or "parking near [attraction]": They've decided. They need logistics.</p>
           </div>
         </div>
       </div>
 
-      <p>Most Southport businesses only optimise for stage three—when the customer has already chosen them. The real opportunity is stages one and two, where the decision is still being made.</p>
+      <p>Most Southport businesses only optimise for stage three: when the customer has already chosen them. The real opportunity is stages one and two, where the decision is still being made.</p>
 
       <h2>The Power of List Content and Itinerary Guides</h2>
       <p>Search <em>"things to do in Southport with kids"</em> and you'll notice something: the top results are almost always list-based articles. "Top 10 Things to Do in Southport," "Best Family Days Out in Southport," and similar roundups dominate page one.</p>
@@ -2549,11 +2549,11 @@ export const posts: BlogPost[] = [
       <div style="background: #1e293b; border-left: 4px solid #3b82f6; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
         <h4 style="color: #60a5fa; font-weight: bold; margin-bottom: 1rem;">Content Ideas That Capture Family Searches</h4>
         <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
-          <li><strong>"The Perfect Southport Family Day Out: A Complete Itinerary"</strong> — Morning, afternoon, evening plan with your business as the centrepiece</li>
-          <li><strong>"Rainy Day Activities in Southport for Families"</strong> — Hugely searched in the North West. Be the answer</li>
-          <li><strong>"Free Things to Do in Southport with Kids"</strong> — High volume, builds trust even if your attraction isn't free</li>
-          <li><strong>"Southport vs Blackpool: Which Is Better for a Family Day Out?"</strong> — Comparison content captures searchers choosing between destinations</li>
-          <li><strong>"What's On in Southport This Weekend"</strong> — Regularly updated event roundups signal freshness to Google</li>
+          <li><strong>"The Perfect Southport Family Day Out: A Complete Itinerary"</strong>: Morning, afternoon, evening plan with your business as the centrepiece</li>
+          <li><strong>"Rainy Day Activities in Southport for Families"</strong>: Hugely searched in the North West. Be the answer</li>
+          <li><strong>"Free Things to Do in Southport with Kids"</strong>: High volume, builds trust even if your attraction isn't free</li>
+          <li><strong>"Southport vs Blackpool: Which Is Better for a Family Day Out?"</strong>: Comparison content captures searchers choosing between destinations</li>
+          <li><strong>"What's On in Southport This Weekend"</strong>: Regularly updated event roundups signal freshness to Google</li>
         </ul>
       </div>
 
@@ -2561,7 +2561,7 @@ export const posts: BlogPost[] = [
 
       <h3>Itinerary Content: The Secret Weapon</h3>
       <p>Itinerary guides outperform basic list articles because they answer a deeper question: <em>"How do I fill a whole day?"</em></p>
-      <p>A family doesn't just want one activity—they want a plan. A well-written itinerary guide for Southport might include:</p>
+      <p>A family doesn't just want one activity: they want a plan. A well-written itinerary guide for Southport might include:</p>
       <ul>
         <li><strong>10am:</strong> Arrive and explore the beach or Marine Lake</li>
         <li><strong>12pm:</strong> Lunch at a family-friendly restaurant (mention a few, including a link to your own if relevant)</li>
@@ -2572,7 +2572,7 @@ export const posts: BlogPost[] = [
       <p>This kind of content ranks well, gets shared on social media, and positions your business as the local expert. It's a <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">content strategy</a> that compounds over time.</p>
 
       <h2>Review Strategy: Your Most Powerful Ranking Signal</h2>
-      <p>For family attractions, reviews aren't just social proof—they're a critical ranking factor. Parents are cautious spenders. They want reassurance before driving 45 minutes with two kids in the back seat.</p>
+      <p>For family attractions, reviews aren't just social proof: they're a critical ranking factor. Parents are cautious spenders. They want reassurance before driving 45 minutes with two kids in the back seat.</p>
 
       <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
         <h3 style="color: #60a5fa; font-size: 1.25rem; font-weight: bold; margin-bottom: 1rem;">The Review Flywheel for Family Attractions</h3>
@@ -2580,13 +2580,13 @@ export const posts: BlogPost[] = [
           <li><strong>Ask at the right moment:</strong> When kids are smiling, when parents say "that was brilliant." That's when you ask for a Google review</li>
           <li><strong>Make it effortless:</strong> Create a short link or QR code that goes directly to your Google review page. Put it on receipts, exit signs, and follow-up emails</li>
           <li><strong>Respond to every review:</strong> Thank positive reviewers by name. Address negative reviews with empathy and specifics. Future customers read your responses as much as the reviews themselves</li>
-          <li><strong>Encourage detail:</strong> "We'd love to hear what your kids enjoyed most" prompts reviewers to mention specific activities—which become long-tail keywords Google picks up on</li>
+          <li><strong>Encourage detail:</strong> "We'd love to hear what your kids enjoyed most" prompts reviewers to mention specific activities: which become long-tail keywords Google picks up on</li>
           <li><strong>Share the best ones:</strong> Feature standout reviews on your website and social media. It encourages more reviews and builds trust simultaneously</li>
         </ul>
       </div>
 
       <h2>Optimising for "Near Me" and "Things to Do" Searches</h2>
-      <p>The "near me" searches aren't just about proximity—Google weighs relevance and prominence too. Here's how to optimise:</p>
+      <p>The "near me" searches aren't just about proximity: Google weighs relevance and prominence too. Here's how to optimise:</p>
       <ul>
         <li><strong>Google Business Profile:</strong> Complete every field. Add photos weekly. Post updates about upcoming events and special offers</li>
         <li><strong>Categories:</strong> Choose the most specific categories available. "Children's Amusement Centre" beats "Entertainment"</li>
@@ -2639,9 +2639,9 @@ export const posts: BlogPost[] = [
     excerpt: "Southport B&Bs lose up to 18% commission on every OTA booking. Here's how to build a direct booking website that reduces your dependency on Booking.com and Airbnb.",
     image: "/images/southport-bnb-hospitality-seo.jpg",
     content: `
-      <p>Every time a guest books your Southport B&B through Booking.com, you hand over 15–18% of the room rate in commission. For an Airbnb booking, you're giving away 3–5% on your end while the guest pays an additional service fee. Over a year, those commissions can add up to thousands of pounds—money that could be going straight into your business.</p>
-      <p>The uncomfortable truth? <strong>Most Southport B&Bs and guesthouses have become entirely dependent on Online Travel Agents (OTAs).</strong> Some owners tell us that 80% or more of their bookings come through third-party platforms. That's not a business model—it's a vulnerability.</p>
-      <p>At <a href="/" class="text-blue-400 hover:text-blue-300 underline">Churchtown Media</a>, we help Southport <a href="/industries/hotels" class="text-blue-400 hover:text-blue-300 underline">hospitality businesses</a> build direct booking websites that actually compete with the OTAs. It's not about abandoning Booking.com entirely—it's about shifting the balance. Let's talk about how.</p>
+      <p>Every time a guest books your Southport B&B through Booking.com, you hand over 15–18% of the room rate in commission. For an Airbnb booking, you're giving away 3–5% on your end while the guest pays an additional service fee. Over a year, those commissions can add up to thousands of pounds: money that could be going straight into your business.</p>
+      <p>The uncomfortable truth? <strong>Most Southport B&Bs and guesthouses have become entirely dependent on Online Travel Agents (OTAs).</strong> Some owners tell us that 80% or more of their bookings come through third-party platforms. That's not a business model: it's a vulnerability.</p>
+      <p>At <a href="/" class="text-blue-400 hover:text-blue-300 underline">Churchtown Media</a>, we help Southport <a href="/industries/hotels" class="text-blue-400 hover:text-blue-300 underline">hospitality businesses</a> build direct booking websites that actually compete with the OTAs. It's not about abandoning Booking.com entirely: it's about shifting the balance. Let's talk about how.</p>
 
       <h2>Why OTA Dependency Is Dangerous</h2>
       <p>OTAs are brilliant at what they do. They spend billions on marketing so that when someone searches "hotels in Southport," Booking.com dominates the first page. But that convenience comes at a steep cost:</p>
@@ -2662,11 +2662,11 @@ export const posts: BlogPost[] = [
         <div style="display: grid; gap: 1rem; color: #cbd5e1;">
           <div style="background: #0f172a; padding: 1.25rem; border-radius: 0.5rem; border-left: 4px solid #60a5fa;">
             <strong style="color: white;">Real-Time Availability Calendar</strong>
-            <p style="font-size: 0.875rem; margin: 0.5rem 0 0 0;">Guests need to see available dates instantly—no "enquire for availability" forms. Integrate with a channel manager so your OTA and website calendars stay in sync.</p>
+            <p style="font-size: 0.875rem; margin: 0.5rem 0 0 0;">Guests need to see available dates instantly: no "enquire for availability" forms. Integrate with a channel manager so your OTA and website calendars stay in sync.</p>
           </div>
           <div style="background: #0f172a; padding: 1.25rem; border-radius: 0.5rem; border-left: 4px solid #a78bfa;">
             <strong style="color: white;">Seamless Online Booking</strong>
-            <p style="font-size: 0.875rem; margin: 0.5rem 0 0 0;">The booking process must be as frictionless as Booking.com. Select dates, choose room, pay securely—done in under two minutes.</p>
+            <p style="font-size: 0.875rem; margin: 0.5rem 0 0 0;">The booking process must be as frictionless as Booking.com. Select dates, choose room, pay securely: done in under two minutes.</p>
           </div>
           <div style="background: #0f172a; padding: 1.25rem; border-radius: 0.5rem; border-left: 4px solid #34d399;">
             <strong style="color: white;">Best Price Guarantee</strong>
@@ -2674,7 +2674,7 @@ export const posts: BlogPost[] = [
           </div>
           <div style="background: #0f172a; padding: 1.25rem; border-radius: 0.5rem; border-left: 4px solid #fbbf24;">
             <strong style="color: white;">Direct Booking Perks</strong>
-            <p style="font-size: 0.875rem; margin: 0.5rem 0 0 0;">Free parking, early check-in, complimentary cream tea, room upgrade—give people a reason to book on YOUR site.</p>
+            <p style="font-size: 0.875rem; margin: 0.5rem 0 0 0;">Free parking, early check-in, complimentary cream tea, room upgrade: give people a reason to book on YOUR site.</p>
           </div>
         </div>
       </div>
@@ -2692,22 +2692,22 @@ export const posts: BlogPost[] = [
       <p>Google Hotels is one of the most underused tools in hospitality <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">SEO</a>. When someone searches <em>"B&B Southport"</em> or <em>"guesthouses near Southport pier,"</em> Google often shows a hotel pack with prices, photos, and direct booking links.</p>
       <p>To appear in Google Hotels:</p>
       <ul>
-        <li><strong>Claim and optimise your Google Business Profile</strong> — Select the correct category (Bed and Breakfast, Guest House, etc.)</li>
-        <li><strong>Connect your booking engine</strong> — Use a Google-integrated booking system so your rates and availability show directly in search results</li>
-        <li><strong>Add high-quality photos</strong> — Google Hotels displays your photos prominently. Professional shots of rooms, breakfast, and the exterior make a tangible difference</li>
-        <li><strong>Collect Google reviews</strong> — Your star rating appears in the hotel pack. More reviews and higher ratings mean more clicks</li>
+        <li><strong>Claim and optimise your Google Business Profile</strong>: Select the correct category (Bed and Breakfast, Guest House, etc.)</li>
+        <li><strong>Connect your booking engine</strong>: Use a Google-integrated booking system so your rates and availability show directly in search results</li>
+        <li><strong>Add high-quality photos</strong>: Google Hotels displays your photos prominently. Professional shots of rooms, breakfast, and the exterior make a tangible difference</li>
+        <li><strong>Collect Google reviews</strong>: Your star rating appears in the hotel pack. More reviews and higher ratings mean more clicks</li>
       </ul>
-      <p>The beauty of Google Hotels is that your direct booking link appears alongside OTA links—and you pay no commission when guests book through your own website.</p>
+      <p>The beauty of Google Hotels is that your direct booking link appears alongside OTA links: and you pay no commission when guests book through your own website.</p>
 
       <h2>Photography That Converts Browsers to Bookers</h2>
-      <p>In hospitality, photography isn't decoration—it's your most important conversion tool. The difference between a booking and a bounce often comes down to one photo.</p>
+      <p>In hospitality, photography isn't decoration: it's your most important conversion tool. The difference between a booking and a bounce often comes down to one photo.</p>
 
       <div style="background: #1e293b; border-left: 4px solid #3b82f6; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
         <h4 style="color: #60a5fa; font-weight: bold; margin-bottom: 1rem;">Photography That Sells Rooms</h4>
         <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
           <li><strong>Shoot in natural daylight:</strong> Open all curtains, turn on warm lamps. The golden hour (early morning or late afternoon) makes rooms look their best</li>
           <li><strong>Show the bed made properly:</strong> Crisp white linen, plumped pillows, maybe a folded throw. This single image sells more rooms than any other</li>
-          <li><strong>Capture the breakfast:</strong> A beautifully presented full English or continental spread. B&B guests care deeply about breakfast—show it off</li>
+          <li><strong>Capture the breakfast:</strong> A beautifully presented full English or continental spread. B&B guests care deeply about breakfast: show it off</li>
           <li><strong>Include the view:</strong> If you can see the sea, the garden, or Lord Street from a window, photograph it. Southport views are a selling point</li>
           <li><strong>Show the bathroom:</strong> Clean, bright, modern. If you've renovated the bathrooms, lead with these photos</li>
           <li><strong>Lifestyle shots:</strong> A cup of tea on the balcony, a book on the bedside table, guests relaxing in the garden. Sell the experience, not just the room</li>
@@ -2719,11 +2719,11 @@ export const posts: BlogPost[] = [
       <h2>Local SEO for Southport B&Bs</h2>
       <p>Beyond the direct booking strategy, your B&B needs to rank in local organic search. The keywords worth targeting include:</p>
       <ul>
-        <li><em>"B&B Southport"</em> and <em>"guest house Southport"</em> — The bread-and-butter searches</li>
-        <li><em>"Accommodation near Southport pier"</em> — Location-specific, high intent</li>
-        <li><em>"Dog friendly B&B Southport"</em> — Niche but lucrative for B&Bs that allow pets</li>
-        <li><em>"Southport weekend break"</em> — Captures the mini-break market from Manchester, Liverpool, and Leeds</li>
-        <li><em>"Where to stay for [event]"</em> — The Flower Show, Air Show, and golf events drive huge accommodation demand</li>
+        <li><em>"B&B Southport"</em> and <em>"guest house Southport"</em>: The bread-and-butter searches</li>
+        <li><em>"Accommodation near Southport pier"</em>: Location-specific, high intent</li>
+        <li><em>"Dog friendly B&B Southport"</em>: Niche but lucrative for B&Bs that allow pets</li>
+        <li><em>"Southport weekend break"</em>: Captures the mini-break market from Manchester, Liverpool, and Leeds</li>
+        <li><em>"Where to stay for [event]"</em>: The Flower Show, Air Show, and golf events drive huge accommodation demand</li>
       </ul>
       <p>Create dedicated content around these themes. A blog post about <em>"Where to Stay for the Southport Flower Show"</em> published a few months ahead of the event can capture planners early and rank in time for the search surge.</p>
 
@@ -2774,7 +2774,7 @@ export const posts: BlogPost[] = [
       <p>Your website, on the other hand, is yours. It shows up in Google. It can take bookings. It can rank for the keywords that hungry people actually search for.</p>
 
       <h2>Menu SEO: Your Secret Weapon</h2>
-      <p>Your menu is the most commercially valuable page on your restaurant website—and most Southport restaurants get it completely wrong.</p>
+      <p>Your menu is the most commercially valuable page on your restaurant website: and most Southport restaurants get it completely wrong.</p>
 
       <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
         <h3 style="color: #ef4444; font-size: 1.25rem; font-weight: bold; margin-bottom: 1rem;">Common Menu Mistakes</h3>
@@ -2800,7 +2800,7 @@ export const posts: BlogPost[] = [
         <h4 style="color: #22c55e; font-weight: bold; margin-bottom: 1rem;">Menu Page Best Practices</h4>
         <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
           <li><strong>HTML text, not PDFs or images:</strong> Crawlable, searchable, mobile-friendly</li>
-          <li><strong>Structured with headings:</strong> Starters, Mains, Desserts, Drinks—each as an H2 or H3</li>
+          <li><strong>Structured with headings:</strong> Starters, Mains, Desserts, Drinks: each as an H2 or H3</li>
           <li><strong>Dietary labels:</strong> Mark items as GF, VG, V, DF with a clear key. Dietary searches are growing fast</li>
           <li><strong>Prices included:</strong> People want to know what they'll spend before they visit</li>
           <li><strong>Add schema markup:</strong> Use Menu and MenuItem structured data so Google can display your dishes in rich results</li>
@@ -2812,7 +2812,7 @@ export const posts: BlogPost[] = [
       <p>For restaurants, your Google Business Profile (GBP) is arguably more important than your website. It's the first thing people see in search results and on Google Maps. Here's how to optimise it properly:</p>
       <ul>
         <li><strong>Correct primary category:</strong> "Restaurant" is too broad. Choose "Seafood Restaurant," "Italian Restaurant," or whatever fits best. Add secondary categories for additional coverage</li>
-        <li><strong>Complete every attribute:</strong> Outdoor seating, wheelchair accessible, serves alcohol, takes reservations, price range—fill in everything Google offers</li>
+        <li><strong>Complete every attribute:</strong> Outdoor seating, wheelchair accessible, serves alcohol, takes reservations, price range: fill in everything Google offers</li>
         <li><strong>Post weekly:</strong> Share your specials, events, seasonal menu changes. GBP posts appear in your listing and signal to Google that your business is active</li>
         <li><strong>Add your menu:</strong> Google now lets you add a menu directly to your Business Profile. Use it</li>
         <li><strong>Upload photos regularly:</strong> Businesses with more than 100 photos on their GBP get significantly more clicks than those with fewer. Post food shots, interior shots, and happy customers (with permission)</li>
@@ -2829,7 +2829,7 @@ export const posts: BlogPost[] = [
       <p>There are affordable reservation platforms that integrate directly with your <a href="/services/web-design" class="text-blue-400 hover:text-blue-300 underline">website</a>. The investment is minimal compared to the bookings you're currently losing.</p>
 
       <h2>Handling Reviews Like a Professional</h2>
-      <p>Restaurant reviews on Google can make or break you. A 4.5-star restaurant with 200 reviews will always outperform a 5-star restaurant with 3 reviews—both in rankings and in customer trust.</p>
+      <p>Restaurant reviews on Google can make or break you. A 4.5-star restaurant with 200 reviews will always outperform a 5-star restaurant with 3 reviews: both in rankings and in customer trust.</p>
 
       <div style="background: #1e293b; border-left: 4px solid #3b82f6; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
         <h4 style="color: #60a5fa; font-weight: bold; margin-bottom: 1rem;">The Restaurant Review Playbook</h4>
@@ -2845,18 +2845,18 @@ export const posts: BlogPost[] = [
       <h2>Food Photography Tips (Without Hiring a Photographer)</h2>
       <p>Great food photography doesn't require a professional camera. Your smartphone can produce stunning images if you follow a few simple rules:</p>
       <ul>
-        <li><strong>Natural light only:</strong> Shoot near a window. Never use flash—it makes food look flat and unappetising</li>
+        <li><strong>Natural light only:</strong> Shoot near a window. Never use flash: it makes food look flat and unappetising</li>
         <li><strong>Overhead or 45-degree angle:</strong> These two angles work for almost every dish. Overhead for flat dishes (pizza, salads), 45 degrees for plated mains</li>
         <li><strong>Clean the plate edges:</strong> Wipe any sauce drips or crumbs before shooting. The details matter</li>
         <li><strong>Use a plain background:</strong> A wooden table, a slate board, or a simple white plate. Busy backgrounds distract from the food</li>
-        <li><strong>Edit lightly:</strong> Increase brightness slightly, boost warmth a touch, and sharpen. Don't over-filter—the food should look real, not artificial</li>
+        <li><strong>Edit lightly:</strong> Increase brightness slightly, boost warmth a touch, and sharpen. Don't over-filter: the food should look real, not artificial</li>
       </ul>
       <p>Upload these photos to your website, Google Business Profile, and social media. Consistent, appetising photography across all platforms builds a professional brand that makes people want to book.</p>
 
       <div style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 1rem; padding: 2.5rem; margin: 3rem 0; text-align: center;">
         <h2 style="color: white; font-size: 1.875rem; font-weight: bold; margin-bottom: 1rem;">Ready to Fill More Tables?</h2>
         <p style="color: rgba(255,255,255,0.9); font-size: 1.125rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-          Get a free audit of your restaurant's online presence—from Google rankings to review strategy.
+          Get a free audit of your restaurant's online presence: from Google rankings to review strategy.
         </p>
         <div style="display: flex; flex-direction: column; gap: 1rem; justify-content: center; align-items: center;">
           <a href="/audit" style="display: inline-flex; align-items: center; gap: 0.5rem; background: white; color: #1e293b; padding: 1rem 2rem; border-radius: 9999px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -2886,10 +2886,10 @@ export const posts: BlogPost[] = [
     image: "/images/southport-tree-nursery-seo.jpg",
     content: `
       <p>There's something beautifully ironic about tree nurseries. You spend years cultivating root systems, nurturing growth, and planning for every season. Yet when it comes to your online presence, most nurseries near Southport are about as visible as a dormant bare-root whip in January.</p>
-      <p>If you run a tree nursery in the Southport area—whether you're tucked along the lanes near Churchtown, out towards Scarisbrick, or anywhere across the West Lancashire plain—your customers are searching for you online right now. The question is whether they're finding <em>you</em> or someone else.</p>
+      <p>If you run a tree nursery in the Southport area: whether you're tucked along the lanes near Churchtown, out towards Scarisbrick, or anywhere across the West Lancashire plain: your customers are searching for you online right now. The question is whether they're finding <em>you</em> or someone else.</p>
 
       <h2>Why Tree Nurseries Need Digital Visibility</h2>
-      <p>Let's address the elephant in the potting shed: <strong>"Our customers know where we are."</strong> That might have been true a decade ago. Today, even loyal customers Google you before visiting—to check opening hours, stock availability, or to show a friend where to find you.</p>
+      <p>Let's address the elephant in the potting shed: <strong>"Our customers know where we are."</strong> That might have been true a decade ago. Today, even loyal customers Google you before visiting: to check opening hours, stock availability, or to show a friend where to find you.</p>
       <p>But here's the bigger opportunity: the customers who <em>don't</em> know you exist. People moving to Southport, weekend visitors from Liverpool and Manchester, and the growing army of new <a href="/industries/landscapers" class="text-blue-400 hover:text-blue-300 underline">gardeners</a> who picked up a trowel during lockdown and never put it down.</p>
       <p>These people search terms like:</p>
       <ul>
@@ -2899,7 +2899,7 @@ export const posts: BlogPost[] = [
         <li><strong>"native hedging plants Merseyside"</strong></li>
         <li><strong>"ornamental trees Sefton"</strong></li>
       </ul>
-      <p>If your nursery doesn't appear for these searches, you're invisible to a growing market—pun absolutely intended.</p>
+      <p>If your nursery doesn't appear for these searches, you're invisible to a growing market: pun absolutely intended.</p>
 
       <h2>Seasonal Search Trends: Your Secret Weapon</h2>
       <p>Tree nurseries have a massive advantage over most local businesses: <strong>predictable, seasonal search demand</strong>. Understanding these patterns lets you plan content months in advance and capture traffic at exactly the right moment.</p>
@@ -2934,13 +2934,13 @@ export const posts: BlogPost[] = [
       </div>
 
       <h2>Google Business Profile: Your Digital Nursery Gate</h2>
-      <p>For tree nurseries, your <strong>Google Business Profile</strong> is often the first thing people see—and it's free. Yet most nurseries either haven't claimed theirs or set it up in 2018 and forgot about it.</p>
+      <p>For tree nurseries, your <strong>Google Business Profile</strong> is often the first thing people see: and it's free. Yet most nurseries either haven't claimed theirs or set it up in 2018 and forgot about it.</p>
 
       <div style="background: #1e293b; border-left: 4px solid #3b82f6; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
         <h4 style="color: #60a5fa; font-weight: bold; margin-bottom: 1rem;">Tree Nursery GBP Essentials:</h4>
         <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
-          <li><strong>Category:</strong> Select "Tree Farm" or "Plant Nursery"—not just "Garden Centre"</li>
-          <li><strong>Photos:</strong> Upload seasonal stock photos monthly—show what's available <em>now</em></li>
+          <li><strong>Category:</strong> Select "Tree Farm" or "Plant Nursery": not just "Garden Centre"</li>
+          <li><strong>Photos:</strong> Upload seasonal stock photos monthly: show what's available <em>now</em></li>
           <li><strong>Hours:</strong> Update for seasonal changes (many nurseries have winter hours)</li>
           <li><strong>Attributes:</strong> Mark "Wheelchair accessible", "Outdoor seating" if you have a café area</li>
           <li><strong>Posts:</strong> Weekly updates: "Bare-root season starts next week" or "New Japanese maple varieties in stock"</li>
@@ -2958,9 +2958,9 @@ export const posts: BlogPost[] = [
       <ul>
         <li><strong>Seasonal stock highlights:</strong> What's available right now? Update this monthly at minimum</li>
         <li><strong>Species guides:</strong> Help customers choose the right tree for their soil, space, and aspect. This content also ranks brilliantly in search</li>
-        <li><strong>Planting advice:</strong> How-to guides build trust and keep people on your site longer—both great for <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">SEO</a></li>
+        <li><strong>Planting advice:</strong> How-to guides build trust and keep people on your site longer: both great for <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">SEO</a></li>
         <li><strong>Delivery information:</strong> Do you deliver? How far? What sizes? Be crystal clear</li>
-        <li><strong>Clear directions:</strong> Rural nurseries especially—include what3words or specific landmark directions alongside the postcode</li>
+        <li><strong>Clear directions:</strong> Rural nurseries especially: include what3words or specific landmark directions alongside the postcode</li>
         <li><strong>Contact options:</strong> Phone, email, and a simple enquiry form. Some customers want to ask questions before driving out</li>
       </ul>
 
@@ -2972,7 +2972,7 @@ export const posts: BlogPost[] = [
         <li>"Native trees for West Lancashire wildlife gardens" (eco-conscious + local)</li>
         <li>"Fruit tree varieties that thrive in Merseyside's climate" (practical + local)</li>
       </ul>
-      <p>Each of these pages targets a specific search query that your ideal customers are already typing into Google. That's the beauty of <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">local SEO</a>—you're not competing with national chains. You're answering the exact questions your neighbours are asking.</p>
+      <p>Each of these pages targets a specific search query that your ideal customers are already typing into Google. That's the beauty of <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">local SEO</a>: you're not competing with national chains. You're answering the exact questions your neighbours are asking.</p>
 
       <h2>The Local Competition Gap</h2>
       <p>Here's the encouraging news: most tree nurseries in the Southport area have either no website at all, or a website that hasn't been updated since it was built. The bar is genuinely low. A well-structured, fast-loading <a href="/services/web-design" class="text-blue-400 hover:text-blue-300 underline">modern website</a> with seasonal content updates will put you miles ahead of your local competition.</p>
@@ -3009,8 +3009,8 @@ export const posts: BlogPost[] = [
     image: "/images/southport-garden-center-seo.jpg",
     content: `
       <p>Here's a question that should keep every garden centre owner awake at night: <strong>why would someone drive to your garden centre when Amazon delivers compost to their door by Tuesday?</strong></p>
-      <p>The answer, of course, is that a garden centre offers something Amazon never can—expertise, inspiration, the joy of wandering through rows of plants on a Saturday morning, and the ability to actually see and smell what you're buying. But here's the problem: if people can't find you on Google, they'll never discover what makes you special. They'll just order from their sofa.</p>
-      <p>For garden centres across the Southport area—from the <a href="/industries/retail" class="text-blue-400 hover:text-blue-300 underline">retail parks</a> along the A565 to the independent nurseries out towards Ormskirk and Rufford—<a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">local SEO</a> isn't just a marketing tactic. It's survival.</p>
+      <p>The answer, of course, is that a garden centre offers something Amazon never can: expertise, inspiration, the joy of wandering through rows of plants on a Saturday morning, and the ability to actually see and smell what you're buying. But here's the problem: if people can't find you on Google, they'll never discover what makes you special. They'll just order from their sofa.</p>
+      <p>For garden centres across the Southport area: from the <a href="/industries/retail" class="text-blue-400 hover:text-blue-300 underline">retail parks</a> along the A565 to the independent nurseries out towards Ormskirk and Rufford: <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">local SEO</a> isn't just a marketing tactic. It's survival.</p>
 
       <h2>The "Near Me" Revolution</h2>
       <p>Google has confirmed that <strong>"near me" searches</strong> have grown consistently year on year. For garden centres, this translates to searches like:</p>
@@ -3049,7 +3049,7 @@ export const posts: BlogPost[] = [
         <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
           <li><strong>January:</strong> "What to plant in spring" guides, seed previews, garden planning tips</li>
           <li><strong>March–April:</strong> Bedding plant spotlights, Easter events, garden makeover inspiration</li>
-          <li><strong>May–June:</strong> Outdoor living content—furniture, BBQs, planters, hanging baskets</li>
+          <li><strong>May–June:</strong> Outdoor living content: furniture, BBQs, planters, hanging baskets</li>
           <li><strong>August:</strong> Autumn planting previews, bulb guides, lawn care tips</li>
           <li><strong>October:</strong> Christmas preview content, gift guides, wreath workshops</li>
           <li><strong>November–December:</strong> Christmas trees, real wreaths, festive events and Santa visits</li>
@@ -3065,16 +3065,16 @@ export const posts: BlogPost[] = [
       <p>A "What's Looking Good This Week" page or section is incredibly powerful. Update it weekly with photos of what's in stock. This gives people a reason to visit your site repeatedly, and it gives Google fresh content to index.</p>
 
       <h3>2. Highlight Your Experience Offering</h3>
-      <p>If you have a café, farm shop, play area, workshops, or seasonal events—<strong>shout about them</strong>. These are your differentiators. Create dedicated pages for each. "Garden centre café Southport" is a real search term with real intent behind it.</p>
+      <p>If you have a café, farm shop, play area, workshops, or seasonal events: <strong>shout about them</strong>. These are your differentiators. Create dedicated pages for each. "Garden centre café Southport" is a real search term with real intent behind it.</p>
 
       <h3>3. Local Growing Advice</h3>
       <p>Generic gardening advice is everywhere. What people can't find is <em>local</em> gardening advice. What grows well in Southport's sandy, coastal soil? Which plants handle the salt wind off the Irish Sea? This kind of content establishes your authority and ranks for location-specific searches.</p>
 
       <h3>4. Events and Workshops</h3>
-      <p>Plant care workshops, wreath-making classes, children's activities—these drive footfall and generate fantastic <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">local search visibility</a>. Every event page is a new opportunity to rank for a specific search query.</p>
+      <p>Plant care workshops, wreath-making classes, children's activities: these drive footfall and generate fantastic <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">local search visibility</a>. Every event page is a new opportunity to rank for a specific search query.</p>
 
       <h3>5. Speed and Mobile Performance</h3>
-      <p>Most people will find your garden centre on their phone while planning their weekend. If your site takes 5 seconds to load, they'll tap on the next result instead. A <a href="/services/web-design" class="text-blue-400 hover:text-blue-300 underline">fast, modern website</a> isn't optional—it's the price of admission.</p>
+      <p>Most people will find your garden centre on their phone while planning their weekend. If your site takes 5 seconds to load, they'll tap on the next result instead. A <a href="/services/web-design" class="text-blue-400 hover:text-blue-300 underline">fast, modern website</a> isn't optional: it's the price of admission.</p>
 
       <h2>Google Business Profile: Your Digital Shop Window</h2>
       <p>Your Google Business Profile is arguably more important than your website for driving footfall. Here's how to optimise it specifically for a garden centre:</p>
@@ -3082,7 +3082,7 @@ export const posts: BlogPost[] = [
         <li><strong>Primary category:</strong> "Garden Centre" (not "Home & Garden Store")</li>
         <li><strong>Additional categories:</strong> Add "Café", "Plant Nursery", "Christmas Tree Farm" if applicable</li>
         <li><strong>Photos:</strong> Upload fresh photos every week. Show the displays, the café, the seasonal stock. Aim for 100+ total photos</li>
-        <li><strong>Google Posts:</strong> Weekly updates—new stock arrivals, events, seasonal tips</li>
+        <li><strong>Google Posts:</strong> Weekly updates: new stock arrivals, events, seasonal tips</li>
         <li><strong>Reviews:</strong> Actively encourage reviews. Respond to every single one, positive or negative</li>
         <li><strong>Products:</strong> Use Google's product listings to showcase key items with prices</li>
       </ul>
@@ -3094,7 +3094,7 @@ export const posts: BlogPost[] = [
       <div style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 1rem; padding: 2.5rem; margin: 3rem 0; text-align: center;">
         <h2 style="color: white; font-size: 1.875rem; font-weight: bold; margin-bottom: 1rem;">Is Your Garden Centre Visible Online?</h2>
         <p style="color: rgba(255,255,255,0.9); font-size: 1.125rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-          Get a free audit showing where your garden centre ranks for local searches—and where you're losing customers to competitors.
+          Get a free audit showing where your garden centre ranks for local searches: and where you're losing customers to competitors.
         </p>
         <div style="display: flex; flex-direction: column; gap: 1rem; justify-content: center; align-items: center;">
           <a href="/audit" style="display: inline-flex; align-items: center; gap: 0.5rem; background: white; color: #1e293b; padding: 1rem 2rem; border-radius: 9999px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -3106,7 +3106,7 @@ export const posts: BlogPost[] = [
           </a>
         </div>
         <p style="color: rgba(255,255,255,0.8); font-size: 0.875rem; margin-top: 1.5rem;">
-          Based in Southport—we know the local market and we'd love to help.
+          Based in Southport: we know the local market and we'd love to help.
         </p>
       </div>
     `
@@ -3122,7 +3122,7 @@ export const posts: BlogPost[] = [
     image: "/images/southport-caravan-park-seo.jpg",
     content: `
       <p>Southport and the surrounding Lancashire coast have been caravan country for generations. From static holiday homes overlooking the dunes to touring pitches nestled in the West Lancashire countryside, this area has one of the highest concentrations of <a href="/industries/tourism" class="text-blue-400 hover:text-blue-300 underline">holiday parks</a> in the North West.</p>
-      <p>But here's the uncomfortable truth: <strong>most caravan parks in the Southport area are handing a significant chunk of their bookings—and their profit margins—to third-party aggregator websites.</strong></p>
+      <p>But here's the uncomfortable truth: <strong>most caravan parks in the Southport area are handing a significant chunk of their bookings: and their profit margins: to third-party aggregator websites.</strong></p>
       <p>Sites like Pitchup, Haven, and various booking aggregators sit between you and your customer, taking commissions on every booking. The irony? Those sites are ranking for your park's name, your location, and the keywords your customers are actually searching. Time to take that traffic back.</p>
 
       <h2>The Seasonal Booking Pattern</h2>
@@ -3154,7 +3154,7 @@ export const posts: BlogPost[] = [
         </div>
       </div>
 
-      <p>The most important insight? <strong>People book caravan holidays weeks or months in advance.</strong> Your SEO work in January directly affects your August occupancy. If you wait until June to start thinking about online visibility, you've missed the boat—or the caravan.</p>
+      <p>The most important insight? <strong>People book caravan holidays weeks or months in advance.</strong> Your SEO work in January directly affects your August occupancy. If you wait until June to start thinking about online visibility, you've missed the boat: or the caravan.</p>
 
       <h2>How Aggregators Steal Your Bookings</h2>
       <p>Let's be blunt about what's happening. When someone searches "caravan parks near Southport," the top results are typically:</p>
@@ -3163,16 +3163,16 @@ export const posts: BlogPost[] = [
         <li><strong>Position 4–6:</strong> Aggregator sites (Pitchup, UKCampsite, etc.)</li>
         <li><strong>Position 7+:</strong> Maybe your park, if you're lucky</li>
       </ul>
-      <p>Even worse, some aggregators create pages specifically for your park name. So when a customer who's <em>already heard about you</em> Googles your name, they might click the aggregator listing instead of your own site—and you pay commission on a booking that should have been free.</p>
+      <p>Even worse, some aggregators create pages specifically for your park name. So when a customer who's <em>already heard about you</em> Googles your name, they might click the aggregator listing instead of your own site: and you pay commission on a booking that should have been free.</p>
 
       <h3>The Commission Problem</h3>
       <p>Aggregator commissions typically range from 10% to 20% per booking. On a £500 weekly caravan hire, that's £50 to £100 going to a middleman. Multiply that across your entire season, and you might be losing thousands of pounds that could stay in your pocket.</p>
 
       <h2>Direct Booking Website Strategy</h2>
-      <p>The solution isn't to abandon aggregator sites entirely—they do provide reach. The solution is to make your own website the <em>primary</em> booking channel. Here's how:</p>
+      <p>The solution isn't to abandon aggregator sites entirely: they do provide reach. The solution is to make your own website the <em>primary</em> booking channel. Here's how:</p>
 
       <h3>1. Make Direct Booking Easy and Obvious</h3>
-      <p>Your website needs a <strong>prominent booking system</strong> that works flawlessly on mobile. Check availability, select dates, pay securely—all without phoning anyone. If your booking process has more friction than an aggregator site, you'll lose. It needs to be just as slick, if not slicker.</p>
+      <p>Your website needs a <strong>prominent booking system</strong> that works flawlessly on mobile. Check availability, select dates, pay securely: all without phoning anyone. If your booking process has more friction than an aggregator site, you'll lose. It needs to be just as slick, if not slicker.</p>
 
       <h3>2. Offer a Direct Booking Incentive</h3>
       <p>Give customers a reason to book directly: a 5% discount, a welcome hamper, free WiFi upgrade, or early check-in. Make it clear on your website: <strong>"Book direct and save."</strong> This is a proven strategy across the hospitality industry.</p>
@@ -3188,7 +3188,7 @@ export const posts: BlogPost[] = [
       <p>This content does double duty: it helps your <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">SEO rankings</a> and it helps convince visitors to book by showing them everything they can enjoy nearby.</p>
 
       <h3>4. Dominate Your Brand Searches</h3>
-      <p>If aggregators are ranking for your park name, you need to reclaim that space. Ensure your <a href="/services/web-design" class="text-blue-400 hover:text-blue-300 underline">website</a> has your park name in the title tag, meta description, H1, and throughout the content. Run a small Google Ads campaign on your own brand name—it's cheap and prevents aggregators from stealing clicks.</p>
+      <p>If aggregators are ranking for your park name, you need to reclaim that space. Ensure your <a href="/services/web-design" class="text-blue-400 hover:text-blue-300 underline">website</a> has your park name in the title tag, meta description, H1, and throughout the content. Run a small Google Ads campaign on your own brand name: it's cheap and prevents aggregators from stealing clicks.</p>
 
       <h3>5. Leverage Google Business Profile</h3>
       <p>Keep your Google Business Profile immaculate: accurate contact details, up-to-date photos, regular posts, and a direct link to your booking page (not an aggregator). Encourage guests to leave reviews on Google specifically.</p>
@@ -3206,7 +3206,7 @@ export const posts: BlogPost[] = [
       <div style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 1rem; padding: 2.5rem; margin: 3rem 0; text-align: center;">
         <h2 style="color: white; font-size: 1.875rem; font-weight: bold; margin-bottom: 1rem;">Stop Losing Bookings to Aggregator Sites</h2>
         <p style="color: rgba(255,255,255,0.9); font-size: 1.125rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-          Get a free audit showing how your park ranks against aggregators—and how to reclaim your direct bookings.
+          Get a free audit showing how your park ranks against aggregators: and how to reclaim your direct bookings.
         </p>
         <div style="display: flex; flex-direction: column; gap: 1rem; justify-content: center; align-items: center;">
           <a href="/audit" style="display: inline-flex; align-items: center; gap: 0.5rem; background: white; color: #1e293b; padding: 1rem 2rem; border-radius: 9999px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -3218,7 +3218,7 @@ export const posts: BlogPost[] = [
           </a>
         </div>
         <p style="color: rgba(255,255,255,0.8); font-size: 0.875rem; margin-top: 1.5rem;">
-          Based in Southport—we understand the local tourism market.
+          Based in Southport: we understand the local tourism market.
         </p>
       </div>
     `
@@ -3233,9 +3233,9 @@ export const posts: BlogPost[] = [
     excerpt: "Southport's marine leisure scene is growing, but most marina businesses are invisible online. Here's how to change that with practical local SEO.",
     image: "/images/southport-boat-marina-seo.jpg",
     content: `
-      <p>Southport has a deep connection with the sea—even if the tide doesn't always cooperate. The town's marine lake, the coastal waters, and the broader marine leisure scene along the Lancashire and Merseyside coast represent a significant local economy that's largely invisible online.</p>
+      <p>Southport has a deep connection with the sea: even if the tide doesn't always cooperate. The town's marine lake, the coastal waters, and the broader marine leisure scene along the Lancashire and Merseyside coast represent a significant local economy that's largely invisible online.</p>
       <p>If you operate a marina, boat service, chandlery, sailing school, or any marine-related business in the Southport area, here's a question worth pondering: <strong>when was the last time you Googled your own services and checked who actually appears?</strong></p>
-      <p>Chances are, it's not you. And that means potential customers—from day-trippers looking for boat hire to serious sailors seeking berth availability—are finding someone else. Or worse, they're not finding anyone and giving up entirely.</p>
+      <p>Chances are, it's not you. And that means potential customers: from day-trippers looking for boat hire to serious sailors seeking berth availability: are finding someone else. Or worse, they're not finding anyone and giving up entirely.</p>
 
       <h2>Why Marinas Need More Than a Phone Number</h2>
       <p>The marine industry has a reputation for being, let's say, <em>traditional</em> when it comes to digital presence. Many marina businesses still rely on word-of-mouth, a listing in the local directory, and a phone number on a weathered sign by the slipway.</p>
@@ -3243,7 +3243,7 @@ export const posts: BlogPost[] = [
       <ul>
         <li><strong>New boat owners:</strong> Paddleboarding, kayaking, and small boat ownership have surged in popularity</li>
         <li><strong>Visitors:</strong> <a href="/industries/tourism" class="text-blue-400 hover:text-blue-300 underline">Tourists and day-trippers</a> search online before they arrive</li>
-        <li><strong>Younger demographics:</strong> New entrants to sailing and water sports search online first—always</li>
+        <li><strong>Younger demographics:</strong> New entrants to sailing and water sports search online first: always</li>
         <li><strong>Seasonal residents:</strong> People with holiday homes or caravans nearby search for local marine services</li>
       </ul>
       <p>These people don't know your phone number. They don't know you exist. They Google, and if you're not there, you might as well not be.</p>
@@ -3255,9 +3255,9 @@ export const posts: BlogPost[] = [
         <h4 style="color: #60a5fa; font-weight: bold; margin-bottom: 1rem;">Essential Website Content for Marina Businesses:</h4>
         <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
           <li><strong>Berth availability:</strong> Even a simple "contact us for availability" page targets "marina berths Southport"</li>
-          <li><strong>Services offered:</strong> Boat maintenance, winter storage, lifting, antifouling—list every service with its own section</li>
+          <li><strong>Services offered:</strong> Boat maintenance, winter storage, lifting, antifouling: list every service with its own section</li>
           <li><strong>Chandlery stock:</strong> If you sell marine supplies, highlight key product categories</li>
-          <li><strong>Facilities:</strong> Fuel, electricity, water, showers, WiFi, parking—be specific</li>
+          <li><strong>Facilities:</strong> Fuel, electricity, water, showers, WiFi, parking: be specific</li>
           <li><strong>Pricing guidance:</strong> You don't need exact prices, but indicative pricing builds trust</li>
           <li><strong>Location and access:</strong> Tide times, navigation notes, approach details for visiting boats</li>
           <li><strong>Photos and video:</strong> Nothing sells a marina like seeing it. Aerial shots are particularly effective</li>
@@ -3273,14 +3273,14 @@ export const posts: BlogPost[] = [
         <li>"Marine electrician near me"</li>
         <li>"GRP hull repair North West"</li>
       </ul>
-      <p>Each of these searches represents a customer with an immediate need and a willingness to pay. If you offer these services, each one deserves its own page on your website—not just a bullet point on a generic services page. A dedicated page for "boat engine repair" with relevant details will outrank a generic page every time in <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">local search results</a>.</p>
+      <p>Each of these searches represents a customer with an immediate need and a willingness to pay. If you offer these services, each one deserves its own page on your website: not just a bullet point on a generic services page. A dedicated page for "boat engine repair" with relevant details will outrank a generic page every time in <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">local search results</a>.</p>
 
       <h2>Local Search for Marine Businesses</h2>
       <p>Marine businesses have a unique local SEO advantage: <strong>there aren't many of you</strong>. While a plumber in Southport might compete with 50 other plumbers for local search visibility, a chandlery or boat repair service might have only a handful of competitors within a 30-mile radius.</p>
       <p>This means even basic <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">SEO work</a> can yield outsized results. Here's where to start:</p>
 
       <h3>Google Business Profile</h3>
-      <p>Claim and optimise your Google Business Profile. Choose the most specific category available—"Marina" rather than "Boat Dealer," or "Boat Repair Shop" if that's your primary service. Upload quality photos regularly. Post updates about seasonal services, new facilities, or events.</p>
+      <p>Claim and optimise your Google Business Profile. Choose the most specific category available: "Marina" rather than "Boat Dealer," or "Boat Repair Shop" if that's your primary service. Upload quality photos regularly. Post updates about seasonal services, new facilities, or events.</p>
 
       <h3>Marine Directories and Citations</h3>
       <p>Get listed on marine-specific directories. These carry more weight than generic business directories because they signal relevance to Google:</p>
@@ -3319,12 +3319,12 @@ export const posts: BlogPost[] = [
 
       <h2>The Opportunity Is Wide Open</h2>
       <p>The marine leisure industry in the Southport area is growing, particularly with the increase in paddleboarding, kayaking, and other accessible water sports. But the digital presence of most marine businesses hasn't kept pace.</p>
-      <p>This is an opportunity. A well-built <a href="/services/web-design" class="text-blue-400 hover:text-blue-300 underline">modern website</a> with solid local SEO fundamentals will make your marina or boat service significantly more visible to the people actively searching for what you offer. The competition online is thin—which means the rewards for showing up are disproportionately large.</p>
+      <p>This is an opportunity. A well-built <a href="/services/web-design" class="text-blue-400 hover:text-blue-300 underline">modern website</a> with solid local SEO fundamentals will make your marina or boat service significantly more visible to the people actively searching for what you offer. The competition online is thin: which means the rewards for showing up are disproportionately large.</p>
 
       <div style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 1rem; padding: 2.5rem; margin: 3rem 0; text-align: center;">
         <h2 style="color: white; font-size: 1.875rem; font-weight: bold; margin-bottom: 1rem;">Set Sail With Better Online Visibility</h2>
         <p style="color: rgba(255,255,255,0.9); font-size: 1.125rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-          Get a free audit showing how your marine business ranks locally—and the opportunities you're missing.
+          Get a free audit showing how your marine business ranks locally: and the opportunities you're missing.
         </p>
         <div style="display: flex; flex-direction: column; gap: 1rem; justify-content: center; align-items: center;">
           <a href="/audit" style="display: inline-flex; align-items: center; gap: 0.5rem; background: white; color: #1e293b; padding: 1rem 2rem; border-radius: 9999px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -3351,11 +3351,11 @@ export const posts: BlogPost[] = [
     excerpt: "In aesthetics, trust beats price every time. Here's how Southport clinics can build online authority that converts browsers into bookings.",
     image: "/images/southport-aesthetics-clinic-seo.jpg",
     content: `
-      <p>The aesthetics industry in Southport is booming. Lip fillers, Botox, <a href="/industries/beauty-salons" class="text-blue-400 hover:text-blue-300 underline">skin treatments</a>, body contouring—demand for non-surgical cosmetic procedures has grown significantly across the UK, and Southport is no exception. Lord Street alone has seen a noticeable increase in aesthetic clinics over recent years.</p>
-      <p>But here's the challenge: <strong>aesthetics is one of the most trust-dependent industries online.</strong> People aren't choosing a clinic based on who has the cheapest prices. They're choosing based on who they trust to inject things into their face. And that trust is built—or destroyed—by your online presence long before anyone picks up the phone.</p>
+      <p>The aesthetics industry in Southport is booming. Lip fillers, Botox, <a href="/industries/beauty-salons" class="text-blue-400 hover:text-blue-300 underline">skin treatments</a>, body contouring: demand for non-surgical cosmetic procedures has grown significantly across the UK, and Southport is no exception. Lord Street alone has seen a noticeable increase in aesthetic clinics over recent years.</p>
+      <p>But here's the challenge: <strong>aesthetics is one of the most trust-dependent industries online.</strong> People aren't choosing a clinic based on who has the cheapest prices. They're choosing based on who they trust to inject things into their face. And that trust is built: or destroyed: by your online presence long before anyone picks up the phone.</p>
 
       <h2>Google's YMYL Rules: Why Aesthetics SEO Is Different</h2>
-      <p>Before we talk tactics, you need to understand something critical. Google categorises aesthetics content as <strong>YMYL—"Your Money or Your Life."</strong> This means Google applies significantly higher quality standards to health and medical content than it does to, say, a blog about gardening.</p>
+      <p>Before we talk tactics, you need to understand something critical. Google categorises aesthetics content as <strong>YMYL: "Your Money or Your Life."</strong> This means Google applies significantly higher quality standards to health and medical content than it does to, say, a blog about gardening.</p>
       <p>In practical terms, this means:</p>
 
       <div style="background: #1e293b; border-left: 4px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
@@ -3364,7 +3364,7 @@ export const posts: BlogPost[] = [
           <li><strong>Expertise signals matter:</strong> Google wants to see who wrote the content and their qualifications</li>
           <li><strong>Accuracy is essential:</strong> Any medical claims must be factual and ideally referenced</li>
           <li><strong>Trust indicators are heavily weighted:</strong> Reviews, accreditations, professional memberships</li>
-          <li><strong>Thin content is penalised:</strong> Generic "we offer Botox" pages won't rank—you need depth</li>
+          <li><strong>Thin content is penalised:</strong> Generic "we offer Botox" pages won't rank: you need depth</li>
           <li><strong>Author bios are important:</strong> Every treatment page should identify the qualified practitioner behind it</li>
         </ul>
       </div>
@@ -3375,7 +3375,7 @@ export const posts: BlogPost[] = [
       <p>In aesthetics, <strong>trust is your primary conversion factor</strong>. Price sensitivity exists, of course, but research consistently shows that most aesthetics clients will pay more for a practitioner they trust. Your website needs to convey that trust immediately.</p>
 
       <h3>Qualifications and Accreditations</h3>
-      <p>Display these prominently—not buried in a footer link. Your homepage and every treatment page should clearly communicate:</p>
+      <p>Display these prominently: not buried in a footer link. Your homepage and every treatment page should clearly communicate:</p>
       <ul>
         <li><strong>Practitioner qualifications:</strong> Medical degrees, nursing qualifications, specific aesthetics training and certifications</li>
         <li><strong>Regulatory registration:</strong> NMC, GMC, or GDC registration numbers (as applicable)</li>
@@ -3418,22 +3418,22 @@ export const posts: BlogPost[] = [
       <p>Every treatment you offer should have its own dedicated page. Generic "our treatments" pages don't rank well and don't convert. Each treatment page should include:</p>
       <ul>
         <li><strong>What the treatment involves:</strong> Honest, clear explanation in plain language</li>
-        <li><strong>Who it's suitable for:</strong> And importantly, who it's <em>not</em> suitable for—this builds trust</li>
+        <li><strong>Who it's suitable for:</strong> And importantly, who it's <em>not</em> suitable for: this builds trust</li>
         <li><strong>What to expect:</strong> Duration, discomfort level, recovery time</li>
         <li><strong>Results timeline:</strong> When will they see results? How long do they last?</li>
         <li><strong>Pricing:</strong> At least indicative pricing. "Prices from £X" is better than no price information, which can feel evasive</li>
         <li><strong>Practitioner information:</strong> Who performs this treatment and their relevant qualifications</li>
-        <li><strong>FAQ section:</strong> Answer common questions directly on the page—this is excellent for SEO</li>
+        <li><strong>FAQ section:</strong> Answer common questions directly on the page: this is excellent for SEO</li>
       </ul>
       <p>Each of these pages targets specific search queries: "lip filler Southport," "anti-wrinkle treatment Sefton," "skin peel Merseyside." This is the core of your <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">local SEO strategy</a>.</p>
 
       <h2>Why Trust Matters More Than Price</h2>
-      <p>It's tempting to compete on price—especially when you see competitors advertising cheap Botox on Instagram. <strong>Resist this urge.</strong></p>
-      <p>Clients who choose purely on price are the most likely to be dissatisfied, the hardest to retain, and the most likely to leave negative reviews. The clients you want—the ones who become loyal, long-term patients who refer their friends—are choosing based on trust, expertise, and the overall experience.</p>
-      <p>Your <a href="/services/web-design" class="text-blue-400 hover:text-blue-300 underline">website</a> should reflect this. Professional design, clear qualifications, genuine before-and-after results, and thoughtful content all signal that you're a premium, trustworthy clinic. A cheap-looking website sends the opposite signal—and in aesthetics, that disconnect is a dealbreaker.</p>
+      <p>It's tempting to compete on price: especially when you see competitors advertising cheap Botox on Instagram. <strong>Resist this urge.</strong></p>
+      <p>Clients who choose purely on price are the most likely to be dissatisfied, the hardest to retain, and the most likely to leave negative reviews. The clients you want: the ones who become loyal, long-term patients who refer their friends: are choosing based on trust, expertise, and the overall experience.</p>
+      <p>Your <a href="/services/web-design" class="text-blue-400 hover:text-blue-300 underline">website</a> should reflect this. Professional design, clear qualifications, genuine before-and-after results, and thoughtful content all signal that you're a premium, trustworthy clinic. A cheap-looking website sends the opposite signal: and in aesthetics, that disconnect is a dealbreaker.</p>
 
       <h2>Southport's Growing Market</h2>
-      <p>Southport is well-positioned in the aesthetics market. The town draws clients from across Sefton, West Lancashire, and Merseyside—people who might otherwise travel to Liverpool or Manchester for treatments. If you can rank for local aesthetics searches, you're capturing a client base that values quality and convenience over driving to a big city.</p>
+      <p>Southport is well-positioned in the aesthetics market. The town draws clients from across Sefton, West Lancashire, and Merseyside: people who might otherwise travel to Liverpool or Manchester for treatments. If you can rank for local aesthetics searches, you're capturing a client base that values quality and convenience over driving to a big city.</p>
       <p>The key to dominating this market is combining clinical excellence (which you already have) with digital visibility (which is where many clinics fall short). The clinics that get this right will thrive.</p>
 
       <div style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 1rem; padding: 2.5rem; margin: 3rem 0; text-align: center;">
@@ -3466,10 +3466,10 @@ export const posts: BlogPost[] = [
     excerpt: "When The Open comes to Royal Birkdale, the world watches Southport. Here's how local businesses can capture international search traffic.",
     image: "/images/southport-golf-open-seo.jpg",
     content: `
-      <p>Last time The Open came to Royal Birkdale, I watched a Southport restaurant lose £40,000 in potential bookings. Not because they weren't good—they're brilliant. But because when someone in California searched "restaurants near Royal Birkdale," they didn't appear. At all. Page 5\. Buried.</p>
-      <p>Meanwhile, chain restaurants in Manchester—30 miles away—were showing up in position 3.</p>
+      <p>Last time The Open came to Royal Birkdale, I watched a Southport restaurant lose £40,000 in potential bookings. Not because they weren't good: they're brilliant. But because when someone in California searched "restaurants near Royal Birkdale," they didn't appear. At all. Page 5\. Buried.</p>
+      <p>Meanwhile, chain restaurants in Manchester: 30 miles away: were showing up in position 3.</p>
       <p>Here's what nobody tells you about The Open: <strong>the economic impact starts 6 months before the first tee time.</strong> When the event gets announced, searches for "hotels near Royal Birkdale" spike 2,400%. "Things to do Southport" jumps 800%. And if your business isn't ranking when that search volume hits? You're invisible to the wealthiest sporting crowd on the planet.</p>
-      <p>I've lived in Southport my whole life. Watched The Open transform this town three times now. And every single time, I see local businesses—the ones actually here, the ones who know Birkdale inside out—get outranked by SEO teams in London optimizing for "every golf event in the UK."</p>
+      <p>I've lived in Southport my whole life. Watched The Open transform this town three times now. And every single time, I see local businesses: the ones actually here, the ones who know Birkdale inside out: get outranked by SEO teams in London optimizing for "every golf event in the UK."</p>
       <p>Let's fix that.</p>
 
       <h2>The Search Traffic Opportunity</h2>
@@ -3483,7 +3483,7 @@ export const posts: BlogPost[] = [
         <li><strong>"Southport pubs" / "Southport nightlife"</strong></li>
         <li><strong>"Golf shops Southport" / "Golf lessons near Royal Birkdale"</strong></li>
       </ul>
-      <p>This isn't just local traffic. The Open draws an international audience. Searches come from the United States, Europe, Asia, and beyond. People flying in from overseas need accommodation, transport, dining, and entertainment—and they're planning it all through Google.</p>
+      <p>This isn't just local traffic. The Open draws an international audience. Searches come from the United States, Europe, Asia, and beyond. People flying in from overseas need accommodation, transport, dining, and entertainment: and they're planning it all through Google.</p>
 
       <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
         <h3 style="color: #60a5fa; font-size: 1.25rem; font-weight: bold; margin-bottom: 1rem;">Who Benefits From The Open?</h3>
@@ -3494,7 +3494,7 @@ export const posts: BlogPost[] = [
           </div>
           <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
             <div style="color: #22c55e; font-size: 1.125rem; font-weight: bold;">Food & Drink</div>
-            <div style="color: #cbd5e1; font-size: 0.875rem; margin-top: 0.5rem;">Restaurants, pubs, cafés, takeaways—every dining option in the area</div>
+            <div style="color: #cbd5e1; font-size: 0.875rem; margin-top: 0.5rem;">Restaurants, pubs, cafés, takeaways: every dining option in the area</div>
           </div>
           <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
             <div style="color: #22c55e; font-size: 1.125rem; font-weight: bold;">Transport</div>
@@ -3513,7 +3513,7 @@ export const posts: BlogPost[] = [
       <h3>6–12 Months Before The Open</h3>
       <ul>
         <li><strong>Create a dedicated landing page:</strong> "Visiting Southport for The Open" or similar. This becomes your anchor page for all event-related content</li>
-        <li><strong>Write supporting content:</strong> "Where to eat near Royal Birkdale," "Best pubs in Southport for golf fans," "Getting to Royal Birkdale—transport guide"</li>
+        <li><strong>Write supporting content:</strong> "Where to eat near Royal Birkdale," "Best pubs in Southport for golf fans," "Getting to Royal Birkdale: transport guide"</li>
         <li><strong>Optimise your Google Business Profile:</strong> Ensure every detail is current. Add photos that show proximity to the course or golfing atmosphere</li>
         <li><strong>Check your website speed:</strong> Thousands of visitors hitting Southport websites simultaneously will punish slow sites. Make sure your <a href="/services/web-design" class="text-blue-400 hover:text-blue-300 underline">website</a> can handle the traffic</li>
       </ul>
@@ -3541,7 +3541,7 @@ export const posts: BlogPost[] = [
           <li><strong>Target specific keywords:</strong> "Hotel near Royal Birkdale," "B&B Southport Open Championship," "Accommodation Birkdale golf"</li>
           <li><strong>Show proximity:</strong> Exact distance and travel time to the course. Include a map if possible</li>
           <li><strong>Highlight parking:</strong> If you offer parking, say so loudly. Parking near The Open is a major pain point</li>
-          <li><strong>Direct booking incentive:</strong> Early bird rates, complimentary breakfast, free parking—anything to bypass the aggregators</li>
+          <li><strong>Direct booking incentive:</strong> Early bird rates, complimentary breakfast, free parking: anything to bypass the aggregators</li>
           <li><strong>Prepare for international visitors:</strong> Payment options, check-in flexibility, local information in your welcome pack</li>
         </ul>
       </div>
@@ -3555,12 +3555,12 @@ export const posts: BlogPost[] = [
       <div style="background: #1e293b; border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
         <h3 style="color: #60a5fa; font-size: 1.125rem; font-weight: bold; margin-bottom: 1rem;">When should I start optimizing my website for The Open?</h3>
         <p style="color: #cbd5e1; line-height: 1.8; margin-bottom: 1.5rem;">
-          Start 6-12 months before the event if possible. SEO takes time—Google needs to discover, crawl, and rank your content. The businesses that rank during The Open started preparing the year before. If you're reading this 2 months out, you can still make improvements, but paid ads (Google Ads) will be your faster route to visibility.
+          Start 6-12 months before the event if possible. SEO takes time: Google needs to discover, crawl, and rank your content. The businesses that rank during The Open started preparing the year before. If you're reading this 2 months out, you can still make improvements, but paid ads (Google Ads) will be your faster route to visibility.
         </p>
 
         <h3 style="color: #60a5fa; font-size: 1.125rem; font-weight: bold; margin-bottom: 1rem;">How much traffic does The Open actually generate?</h3>
         <p style="color: #cbd5e1; line-height: 1.8; margin-bottom: 1.5rem;">
-          Searches for "hotels near Royal Birkdale" increase 2,400% when The Open is announced. "Restaurants Southport" jumps 800%. "Things to do Southport" goes up 600%. This isn't just UK traffic—it's international. We've seen Southport businesses get bookings from Texas, Japan, and Australia during Open week.
+          Searches for "hotels near Royal Birkdale" increase 2,400% when The Open is announced. "Restaurants Southport" jumps 800%. "Things to do Southport" goes up 600%. This isn't just UK traffic: it's international. We've seen Southport businesses get bookings from Texas, Japan, and Australia during Open week.
         </p>
 
         <h3 style="color: #60a5fa; font-size: 1.125rem; font-weight: bold; margin-bottom: 1rem;">Do I need a separate page for The Open, or can I just update my homepage?</h3>
@@ -3568,7 +3568,7 @@ export const posts: BlogPost[] = [
           Create a dedicated landing page. Your homepage serves year-round visitors. An Open-specific page lets you target keywords like "hotel near Royal Birkdale Open Championship" without diluting your main page's SEO. Plus, you can leave it live after the event to capture future planning searches.
         </p>
 
-        <h3 style="color: #60a5fa; font-size: 1.125rem; font-weight: bold; margin-bottom: 1rem;">What if I'm not near the golf course—can I still benefit?</h3>
+        <h3 style="color: #60a5fa; font-size: 1.125rem; font-weight: bold; margin-bottom: 1rem;">What if I'm not near the golf course: can I still benefit?</h3>
         <p style="color: #cbd5e1; line-height: 1.8; margin-bottom: 1.5rem;">
           Absolutely. Spectators need places to eat, drink, and explore before and after tournament days. If you're in Southport town centre, Lord Street, or near the Promenade, you're still relevant. Target keywords like "Southport restaurants Open Championship" or "things to do Southport golf week."
         </p>
@@ -3580,7 +3580,7 @@ export const posts: BlogPost[] = [
       </div>
 
       <h2>Don't Wait for the Announcement</h2>
-      <p>The best time to prepare for The Open is <em>now</em>—regardless of when the next Birkdale edition is scheduled. Evergreen content about golf in Southport, visiting Royal Birkdale, and the local area will rank and attract traffic year-round. When the next Open at Birkdale is confirmed, you'll already be established in Google's index while your competitors scramble to catch up.</p>
+      <p>The best time to prepare for The Open is <em>now</em>: regardless of when the next Birkdale edition is scheduled. Evergreen content about golf in Southport, visiting Royal Birkdale, and the local area will rank and attract traffic year-round. When the next Open at Birkdale is confirmed, you'll already be established in Google's index while your competitors scramble to catch up.</p>
 
       <div style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 1rem; padding: 2.5rem; margin: 3rem 0; text-align: center;">
         <h2 style="color: white; font-size: 1.875rem; font-weight: bold; margin-bottom: 1rem;">Ready to Tee Up Your Online Presence?</h2>
@@ -3597,7 +3597,7 @@ export const posts: BlogPost[] = [
           </a>
         </div>
         <p style="color: rgba(255,255,255,0.8); font-size: 0.875rem; margin-top: 1.5rem;">
-          We're based in Southport—we know this town and its opportunities inside out.
+          We're based in Southport: we know this town and its opportunities inside out.
         </p>
       </div>
     `
@@ -3612,7 +3612,7 @@ export const posts: BlogPost[] = [
     excerpt: "The Southport Air Show draws huge crowds and massive search spikes. Here's how local businesses can capture event-driven traffic year after year.",
     image: "/images/southport-air-show-seo.jpg",
     content: `
-      <p>My kids dragged me down to the Promenade for the Air Show last year. Spectacular display. Red Arrows, Spitfires, the works. But what really caught my attention? The restaurant we tried to get lunch at—packed out, 45-minute wait, turning people away.</p>
+      <p>My kids dragged me down to the Promenade for the Air Show last year. Spectacular display. Red Arrows, Spitfires, the works. But what really caught my attention? The restaurant we tried to get lunch at: packed out, 45-minute wait, turning people away.</p>
       <p>Curious, I checked their website later that evening. <strong>Zero mention of the Air Show.</strong> No special page. No "book ahead for Air Show weekend" CTA. Nothing. They'd just lost dozens of advance bookings from families who Googled "restaurants near Southport Air Show" the week before and found... their competitors.</p>
       <p>The Southport Air Show pulls 200,000+ visitors. But here's the kicker: <strong>those visitors start searching 4-6 weeks early.</strong> Searches for "hotels near Southport Air Show" spike 1,800% in July. "Things to do Southport" goes up 600%. And most Southport businesses? Not even trying to capture it.</p>
       <p>Let's fix that.</p>
@@ -3653,8 +3653,8 @@ export const posts: BlogPost[] = [
       <h3>1. Create a Dedicated Event Page</h3>
       <p>This is the single most effective thing you can do. Create a page on your website specifically about your business and the Air Show. For example:</p>
       <ul>
-        <li><strong>Restaurants:</strong> "Dining Near the Southport Air Show—Reserve Your Table"</li>
-        <li><strong>Hotels/B&Bs:</strong> "Stay for the Southport Air Show—Book Directly"</li>
+        <li><strong>Restaurants:</strong> "Dining Near the Southport Air Show: Reserve Your Table"</li>
+        <li><strong>Hotels/B&Bs:</strong> "Stay for the Southport Air Show: Book Directly"</li>
         <li><strong>Shops:</strong> "Visit Us During the Southport Air Show Weekend"</li>
         <li><strong>Attractions:</strong> "Combine the Air Show with [Your Attraction]"</li>
       </ul>
@@ -3666,20 +3666,20 @@ export const posts: BlogPost[] = [
         <li>"Where to park for the Southport Air Show"</li>
         <li>"Best viewing spots for the Southport Air Show"</li>
         <li>"What to do in Southport on Air Show weekend"</li>
-        <li>"Southport Air Show with kids—a family guide"</li>
+        <li>"Southport Air Show with kids: a family guide"</li>
       </ul>
-      <p>This content attracts visitors to your site, establishes your local authority, and creates natural opportunities to mention your business. It's the kind of helpful, informative content that Google rewards—and the kind of content that <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">good SEO</a> is built on.</p>
+      <p>This content attracts visitors to your site, establishes your local authority, and creates natural opportunities to mention your business. It's the kind of helpful, informative content that Google rewards: and the kind of content that <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">good SEO</a> is built on.</p>
 
       <h3>3. Update and Reuse Annually</h3>
-      <p>Here's a trick that saves time and compounds results: <strong>don't create new event pages each year—update the existing ones.</strong> A page that's been live for three years and updated annually has far more authority in Google's eyes than a freshly published page. Change the dates, update the details, keep the URL the same.</p>
+      <p>Here's a trick that saves time and compounds results: <strong>don't create new event pages each year: update the existing ones.</strong> A page that's been live for three years and updated annually has far more authority in Google's eyes than a freshly published page. Change the dates, update the details, keep the URL the same.</p>
 
       <div style="background: #1e293b; border-left: 4px solid #22c55e; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
         <h4 style="color: #22c55e; font-weight: bold; margin-bottom: 1rem;">The Annual Update Checklist:</h4>
         <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
           <li><strong>Update the year and dates</strong> in your title tag, meta description, and page content</li>
-          <li><strong>Refresh the information</strong>—new acts, changed road layouts, updated parking info</li>
+          <li><strong>Refresh the information</strong>: new acts, changed road layouts, updated parking info</li>
           <li><strong>Add last year's photos</strong> if you have them (with permission)</li>
-          <li><strong>Keep the URL the same</strong>—don't create /air-show-2025, /air-show-2026. Use /air-show and update it</li>
+          <li><strong>Keep the URL the same</strong>: don't create /air-show-2025, /air-show-2026. Use /air-show and update it</li>
           <li><strong>Internal link</strong> from your homepage and other relevant pages</li>
         </ul>
       </div>
@@ -3695,7 +3695,7 @@ export const posts: BlogPost[] = [
       <p>These posts appear directly in Google search results and Maps. They're free, they're effective, and almost nobody in Southport is using them consistently.</p>
 
       <h2>Temporary Event Pages and Seasonal SEO</h2>
-      <p>The Air Show strategy isn't unique—it's a template you can apply to every major Southport event:</p>
+      <p>The Air Show strategy isn't unique: it's a template you can apply to every major Southport event:</p>
       <ul>
         <li><strong>Southport Flower Show</strong></li>
         <li><strong>Food and drink festivals</strong></li>
@@ -3736,7 +3736,7 @@ export const posts: BlogPost[] = [
       <div style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 1rem; padding: 2.5rem; margin: 3rem 0; text-align: center;">
         <h2 style="color: white; font-size: 1.875rem; font-weight: bold; margin-bottom: 1rem;">Ready to Capture Event Traffic?</h2>
         <p style="color: rgba(255,255,255,0.9); font-size: 1.125rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-          Get a free audit showing how visible your business is for local event searches—and what you're missing.
+          Get a free audit showing how visible your business is for local event searches: and what you're missing.
         </p>
         <div style="display: flex; flex-direction: column; gap: 1rem; justify-content: center; align-items: center;">
           <a href="/audit" style="display: inline-flex; align-items: center; gap: 0.5rem; background: white; color: #1e293b; padding: 1rem 2rem; border-radius: 9999px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -3748,7 +3748,7 @@ export const posts: BlogPost[] = [
           </a>
         </div>
         <p style="color: rgba(255,255,255,0.8); font-size: 0.875rem; margin-top: 1.5rem;">
-          We're based in Southport—we attend the Air Show too. Let's chat.
+          We're based in Southport: we attend the Air Show too. Let's chat.
         </p>
       </div>
     `
@@ -3763,13 +3763,13 @@ export const posts: BlogPost[] = [
     excerpt: "Independent boutiques in Southport offer something the high street chains can't. Here's how to make sure shoppers actually find you online before they visit.",
     image: "/images/southport-eccentric-boutique-seo.jpg",
     content: `
-      <p>Southport has always had a streak of the unconventional. Wander away from the chain stores and you'll find independent boutiques tucked along Lord Street's Victorian arcades and down its side streets — shops selling things you genuinely can't find anywhere else. Vintage fashion. Handmade jewellery. Quirky homeware. Things with <em>personality</em>.</p>
-      <p>Places like Elegantly Eccentric have built loyal followings precisely because they're the antithesis of mass-produced retail. But here's the problem: <strong>Google doesn't automatically reward uniqueness.</strong> If you're an <a href="/industries/retail-shops" class="text-blue-400 hover:text-blue-300 underline">independent retailer</a> in Southport and you're not showing up when someone searches "unique gift shop Southport" or "vintage boutique near me," you're relying entirely on foot traffic — and that's a gamble.</p>
+      <p>Southport has always had a streak of the unconventional. Wander away from the chain stores and you'll find independent boutiques tucked along Lord Street's Victorian arcades and down its side streets: shops selling things you genuinely can't find anywhere else. Vintage fashion. Handmade jewellery. Quirky homeware. Things with <em>personality</em>.</p>
+      <p>Places like Elegantly Eccentric have built loyal followings precisely because they're the antithesis of mass-produced retail. But here's the problem: <strong>Google doesn't automatically reward uniqueness.</strong> If you're an <a href="/industries/retail-shops" class="text-blue-400 hover:text-blue-300 underline">independent retailer</a> in Southport and you're not showing up when someone searches "unique gift shop Southport" or "vintage boutique near me," you're relying entirely on foot traffic: and that's a gamble.</p>
       <p>This guide is for the boutique owners, the vintage curators, and the independent retailers who know their product is brilliant but need help getting it in front of the right people online. Let's talk about <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">retail SEO</a> for businesses that refuse to be boring.</p>
 
       <h2>Why Independent Retail SEO Is Different</h2>
       <p>Big chains have entire marketing departments and six-figure ad budgets. Competing with them on generic terms like "clothing shop" is pointless. But you have something they don't: <strong>specificity</strong>.</p>
-      <p>Independent boutiques win on long-tail keywords — the detailed, specific phrases people type when they know exactly what they want but don't know where to find it.</p>
+      <p>Independent boutiques win on long-tail keywords: the detailed, specific phrases people type when they know exactly what they want but don't know where to find it.</p>
 
       <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
         <h3 style="color: #60a5fa; font-size: 1.25rem; font-weight: bold; margin-bottom: 1rem;">Generic vs. Long-Tail Keywords</h3>
@@ -3794,24 +3794,24 @@ export const posts: BlogPost[] = [
       </div>
 
       <h2>The Instagram-to-Website Pipeline</h2>
-      <p>If you're an independent boutique, chances are you're already active on Instagram. Great — that's your shop window. But here's what most retailers miss: <strong>Instagram followers don't automatically become website visitors.</strong></p>
+      <p>If you're an independent boutique, chances are you're already active on Instagram. Great: that's your shop window. But here's what most retailers miss: <strong>Instagram followers don't automatically become website visitors.</strong></p>
       <p>You need a deliberate pipeline that moves people from scrolling your feed to landing on your website, where Google can track the traffic and reward you with better rankings.</p>
 
       <h3>How to Build the Pipeline</h3>
       <ul>
         <li><strong>Link in bio:</strong> Don't just link to your homepage. Use a landing page that showcases new arrivals, your location, and opening hours. Update it regularly.</li>
         <li><strong>Stories with swipe-up links:</strong> Direct followers to specific product pages or blog posts on your website, not just your Instagram shop.</li>
-        <li><strong>Reels that feature your location:</strong> Film inside your shop. Show Lord Street. Tag Southport. Google picks up social signals and location data — the more Southport content, the stronger your local relevance.</li>
+        <li><strong>Reels that feature your location:</strong> Film inside your shop. Show Lord Street. Tag Southport. Google picks up social signals and location data: the more Southport content, the stronger your local relevance.</li>
         <li><strong>Alt text on website images:</strong> When you upload product photos to your site, write descriptive alt text like "handmade silver ring displayed at Southport boutique." This helps Google Images rank your products.</li>
       </ul>
 
       <div style="background: #1e293b; border-left: 4px solid #3b82f6; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
         <h4 style="color: #60a5fa; font-weight: bold; margin-bottom: 1rem;">Pro Tip: Schema Markup for Products</h4>
-        <p style="color: #cbd5e1; line-height: 1.7;">If you sell products online, adding Product schema to your pages tells Google the price, availability, and review rating of each item. This can earn you rich snippets in search results — those eye-catching listings with star ratings and prices that get significantly more clicks.</p>
+        <p style="color: #cbd5e1; line-height: 1.7;">If you sell products online, adding Product schema to your pages tells Google the price, availability, and review rating of each item. This can earn you rich snippets in search results: those eye-catching listings with star ratings and prices that get significantly more clicks.</p>
       </div>
 
       <h2>Southport's Local Shopping Culture</h2>
-      <p>Southport isn't just another seaside town — it has a genuine independent shopping culture. The Victorian architecture along Lord Street creates a natural draw for visitors who want an experience, not just a transaction. Weekend day-trippers from Liverpool, Manchester, and Preston come specifically for the kind of shopping they can't get at the Trafford Centre.</p>
+      <p>Southport isn't just another seaside town: it has a genuine independent shopping culture. The Victorian architecture along Lord Street creates a natural draw for visitors who want an experience, not just a transaction. Weekend day-trippers from Liverpool, Manchester, and Preston come specifically for the kind of shopping they can't get at the Trafford Centre.</p>
       <p>This is your SEO advantage. Those visitors are searching before they arrive:</p>
       <ul>
         <li><em>"Independent shops Southport"</em></li>
@@ -3835,7 +3835,7 @@ export const posts: BlogPost[] = [
       <ul>
         <li><strong>Categories:</strong> Don't just list "Shop." Use specific categories like "Vintage Clothing Store," "Gift Shop," or "Jewellery Store."</li>
         <li><strong>Photos:</strong> Upload new photos weekly. Show the interior, new stock, and the shopfront. Google favours active profiles.</li>
-        <li><strong>Posts:</strong> GBP has a "Posts" feature — use it to share new arrivals, sales, or events. Each post is another signal to Google that you're an active, relevant business.</li>
+        <li><strong>Posts:</strong> GBP has a "Posts" feature: use it to share new arrivals, sales, or events. Each post is another signal to Google that you're an active, relevant business.</li>
         <li><strong>Reviews:</strong> Encourage every happy customer to leave a Google review. A boutique with 80 five-star reviews will outrank one with 5 reviews, even if the products are identical.</li>
       </ul>
 
@@ -3846,13 +3846,13 @@ export const posts: BlogPost[] = [
         <li>Reach out to local bloggers and offer a behind-the-scenes tour of your shop</li>
         <li>Participate in Southport BID events and get listed on their website</li>
         <li>Submit your business to local directories like VisitSouthport and Sefton Council's business listings</li>
-        <li>Collaborate with other independent shops on joint promotions — and cross-link your websites</li>
+        <li>Collaborate with other independent shops on joint promotions: and cross-link your websites</li>
       </ul>
 
       <div style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 1rem; padding: 2.5rem; margin: 3rem 0; text-align: center;">
         <h2 style="color: white; font-size: 1.875rem; font-weight: bold; margin-bottom: 1rem;">Is Your Boutique Invisible Online?</h2>
         <p style="color: rgba(255,255,255,0.9); font-size: 1.125rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-          Get a free audit showing where you rank for Southport shopping searches — and what's stopping you from reaching the top.
+          Get a free audit showing where you rank for Southport shopping searches: and what's stopping you from reaching the top.
         </p>
         <div style="display: flex; flex-direction: column; gap: 1rem; justify-content: center; align-items: center;">
           <a href="/audit" style="display: inline-flex; align-items: center; gap: 0.5rem; background: white; color: #1e293b; padding: 1rem 2rem; border-radius: 9999px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -3883,7 +3883,7 @@ export const posts: BlogPost[] = [
     content: `
       <p>My neighbor runs a plant nursery just outside Southport. Last August, during Flower Show week, she was slammed. Queue out the door. Best week of the year. Then September hit and she wondered why traffic dropped off a cliff.</p>
       <p>I checked her website. No mention of the Flower Show anywhere. No "Visit us after the show" page. No blog post about "Best local nurseries for show-quality plants." Google had no idea she existed in the context of the event.</p>
-      <p>Meanwhile, a nursery 15 miles away in Preston—who'd written one blog post about "preparing for Southport Flower Show"—was ranking #3 for that search. <strong>They were capturing her customers before they even got to Southport.</strong></p>
+      <p>Meanwhile, a nursery 15 miles away in Preston: who'd written one blog post about "preparing for Southport Flower Show": was ranking #3 for that search. <strong>They were capturing her customers before they even got to Southport.</strong></p>
       <p>The Southport Flower Show pulls 50,000+ visitors every August. Searches for "Southport Flower Show hotels" spike 900% in July. But here's what kills me: most Southport businesses wait until August to think about their website. By then, it's too late. Google's already decided who ranks.</p>
 
       <h2>Understanding the Flower Show Search Cycle</h2>
@@ -3911,15 +3911,15 @@ export const posts: BlogPost[] = [
         </div>
       </div>
 
-      <p>Each phase represents a different type of searcher with different intent. Smart businesses create content for <em>every</em> phase — not just the event itself.</p>
+      <p>Each phase represents a different type of searcher with different intent. Smart businesses create content for <em>every</em> phase: not just the event itself.</p>
 
       <h2>For Exhibitors: Your Stall Needs a Digital Twin</h2>
       <p>If you're exhibiting at the Flower Show, your physical stall is temporary. But your digital presence is permanent. Here's how to make the most of it:</p>
 
       <h3>Before the Show</h3>
       <ul>
-        <li><strong>Create a dedicated landing page:</strong> "Visit Us at Southport Flower Show 2026" — include your stall number, what you're selling, and photos from previous years.</li>
-        <li><strong>Publish a blog post:</strong> "What We're Bringing to Southport Flower Show This Year" — this ranks for long-tail event queries and gives you something to share on social media.</li>
+        <li><strong>Create a dedicated landing page:</strong> "Visit Us at Southport Flower Show 2026": include your stall number, what you're selling, and photos from previous years.</li>
+        <li><strong>Publish a blog post:</strong> "What We're Bringing to Southport Flower Show This Year": this ranks for long-tail event queries and gives you something to share on social media.</li>
         <li><strong>Update your Google Business Profile:</strong> Add a post about your participation. Include event dates and a link to your landing page.</li>
       </ul>
 
@@ -3927,12 +3927,12 @@ export const posts: BlogPost[] = [
       <ul>
         <li><strong>Live social content:</strong> Post Stories and Reels showing your stall, the crowds, and your products in action. Tag the location.</li>
         <li><strong>Collect emails:</strong> Offer a "Show Special" in exchange for email signups. This turns a one-day visitor into a year-round customer.</li>
-        <li><strong>QR codes:</strong> Display a QR code at your stall that links to your website's product page — not your homepage. Make it easy for people to buy later.</li>
+        <li><strong>QR codes:</strong> Display a QR code at your stall that links to your website's product page: not your homepage. Make it easy for people to buy later.</li>
       </ul>
 
       <h3>After the Show</h3>
       <ul>
-        <li><strong>Follow-up blog post:</strong> "Our Highlights from Southport Flower Show 2026" — include photos, customer reactions, and links to products people asked about.</li>
+        <li><strong>Follow-up blog post:</strong> "Our Highlights from Southport Flower Show 2026": include photos, customer reactions, and links to products people asked about.</li>
         <li><strong>Email your new subscribers:</strong> "Thanks for visiting our stall" with a discount code and link to your online shop.</li>
       </ul>
 
@@ -3950,13 +3950,13 @@ export const posts: BlogPost[] = [
         </ul>
       </div>
 
-      <p>Create a page or blog post specifically mentioning the Flower Show and how your business serves visitors. A restaurant could publish: <em>"Visiting Southport Flower Show? We're a 5-minute walk from Victoria Park."</em> A hotel could create: <em>"Southport Flower Show accommodation — book your stay."</em></p>
+      <p>Create a page or blog post specifically mentioning the Flower Show and how your business serves visitors. A restaurant could publish: <em>"Visiting Southport Flower Show? We're a 5-minute walk from Victoria Park."</em> A hotel could create: <em>"Southport Flower Show accommodation: book your stay."</em></p>
 
       <h2>Seasonal Content: The Evergreen Event Strategy</h2>
       <p>The smartest event SEO strategy is to create content that serves two purposes: it ranks for the event <em>this</em> year, and it continues to rank year after year.</p>
       <p>Instead of creating "Southport Flower Show 2026 Guide" (which dies in September), create an evergreen page like "Your Complete Guide to Southport Flower Show" that you update annually. This approach:</p>
       <ul>
-        <li>Builds cumulative authority — Google sees the page getting updated and re-shared each year</li>
+        <li>Builds cumulative authority: Google sees the page getting updated and re-shared each year</li>
         <li>Accumulates backlinks over time rather than starting from zero each year</li>
         <li>Captures early searchers who type "Southport Flower Show" without a year</li>
       </ul>
@@ -3968,7 +3968,7 @@ export const posts: BlogPost[] = [
         <li>Take high-quality original photos at the event and upload them to your website (not just social media)</li>
         <li>Write descriptive file names: <em>southport-flower-show-rose-garden-2026.jpg</em>, not <em>IMG_4582.jpg</em></li>
         <li>Add detailed alt text describing what's in each photo</li>
-        <li>Create a photo gallery page — these rank well and encourage sharing</li>
+        <li>Create a photo gallery page: these rank well and encourage sharing</li>
       </ul>
 
       <h2>The Bigger Picture: Event SEO as a Business Strategy</h2>
@@ -4006,9 +4006,9 @@ export const posts: BlogPost[] = [
     excerpt: "Southport's Oktoberfest draws thousands of revellers each autumn. Here's the event SEO playbook for food, drink, and hospitality businesses looking to cash in.",
     image: "/images/southport-oktoberfest-seo.jpg",
     content: `
-      <p>When Southport's Oktoberfest rolls into town each autumn, it brings with it something every local business dreams of: <strong>thousands of people in a great mood, ready to spend money.</strong> The beer tents, the live music, the lederhosen — it's become one of the most popular events on Southport's calendar.</p>
+      <p>When Southport's Oktoberfest rolls into town each autumn, it brings with it something every local business dreams of: <strong>thousands of people in a great mood, ready to spend money.</strong> The beer tents, the live music, the lederhosen: it's become one of the most popular events on Southport's calendar.</p>
       <p>But here's what's interesting from an <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">SEO perspective</a>: the search demand around Southport Oktoberfest follows a sharp, predictable spike. People start Googling it weeks in advance, the queries explode during the event, and then they vanish almost overnight. If your business isn't positioned to capture that spike, the opportunity passes and you're left waiting for next year.</p>
-      <p>This is your playbook for tapping into that demand — whether you're a pub, a restaurant, a hotel, or any business within walking distance of the festivities.</p>
+      <p>This is your playbook for tapping into that demand: whether you're a pub, a restaurant, a hotel, or any business within walking distance of the festivities.</p>
 
       <h2>The Anatomy of an Event Search Spike</h2>
       <p>Event-based search traffic behaves completely differently from regular local search. Think of it like a wave: it builds gradually, peaks dramatically, and crashes fast. Your job is to be standing on the surfboard <em>before</em> the wave arrives.</p>
@@ -4046,8 +4046,8 @@ export const posts: BlogPost[] = [
 
       <h3>Anticipation Content Ideas</h3>
       <ul>
-        <li><strong>Blog post:</strong> "Your Guide to Southport Oktoberfest: Where to Eat, Drink, and Stay" — naturally mention your own business as a recommendation.</li>
-        <li><strong>Landing page:</strong> "Pre-Oktoberfest Dinner at [Your Restaurant]" — create a special event-themed menu page and optimise it for "restaurant near Southport Oktoberfest."</li>
+        <li><strong>Blog post:</strong> "Your Guide to Southport Oktoberfest: Where to Eat, Drink, and Stay": naturally mention your own business as a recommendation.</li>
+        <li><strong>Landing page:</strong> "Pre-Oktoberfest Dinner at [Your Restaurant]": create a special event-themed menu page and optimise it for "restaurant near Southport Oktoberfest."</li>
         <li><strong>Social media countdown:</strong> Start posting about Oktoberfest 3-4 weeks out, each time linking back to your website. This drives traffic and signals to Google that your site is associated with the event.</li>
         <li><strong>Google Business Profile posts:</strong> Publish GBP posts mentioning Oktoberfest. These show up directly in search results when people look for your business or related queries.</li>
       </ul>
@@ -4058,18 +4058,18 @@ export const posts: BlogPost[] = [
       <div style="background: #1e293b; border-left: 4px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
         <h4 style="color: #f59e0b; font-weight: bold; margin-bottom: 1rem;">Hospitality Quick Wins</h4>
         <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
-          <li><strong>Update your opening hours</strong> on Google Business Profile for the event weekend — include extended hours if applicable.</li>
+          <li><strong>Update your opening hours</strong> on Google Business Profile for the event weekend: include extended hours if applicable.</li>
           <li><strong>Add event-specific photos</strong> from previous Oktoberfests to your GBP gallery. Authenticity matters.</li>
-          <li><strong>Create an event menu page</strong> on your website — "Oktoberfest Specials" ranks for searches you'd never normally capture.</li>
+          <li><strong>Create an event menu page</strong> on your website: "Oktoberfest Specials" ranks for searches you'd never normally capture.</li>
           <li><strong>Respond to every review</strong> left during the event weekend. Fresh review activity is a ranking signal.</li>
         </ul>
       </div>
 
       <h2>Hotels and Accommodation: The Overnight Opportunity</h2>
-      <p>Many Oktoberfest visitors travel from outside Southport — and they need somewhere to stay. If you run a hotel, B&B, or guesthouse, event weekends are prime time.</p>
+      <p>Many Oktoberfest visitors travel from outside Southport: and they need somewhere to stay. If you run a hotel, B&B, or guesthouse, event weekends are prime time.</p>
       <ul>
-        <li><strong>Create a dedicated page:</strong> "Southport Oktoberfest Accommodation" — this captures people searching for places to stay specifically for the event.</li>
-        <li><strong>Offer packages:</strong> "Oktoberfest Weekend Package — Room + Breakfast + Walking Distance to Event" — these convert well because they solve the whole problem in one click.</li>
+        <li><strong>Create a dedicated page:</strong> "Southport Oktoberfest Accommodation": this captures people searching for places to stay specifically for the event.</li>
+        <li><strong>Offer packages:</strong> "Oktoberfest Weekend Package: Room + Breakfast + Walking Distance to Event": these convert well because they solve the whole problem in one click.</li>
         <li><strong>Early booking content:</strong> Publish a "Book Early for Southport Oktoberfest" post 2-3 months out. People who plan ahead are also the ones who spend more.</li>
       </ul>
 
@@ -4083,7 +4083,7 @@ export const posts: BlogPost[] = [
       <p>A quick follow-up blog post with your photos, highlights, and a line like "Can't wait for next year? Here's what to do in Southport year-round" keeps your content working long after the last stein is emptied.</p>
 
       <h2>The Bigger Event Calendar</h2>
-      <p>Oktoberfest doesn't exist in isolation. Southport has a packed events calendar — the <a href="/blog/southport-flower-show-seo-guide" class="text-blue-400 hover:text-blue-300 underline">Flower Show</a>, the <a href="/blog/southport-food-drink-festival-seo-guide" class="text-blue-400 hover:text-blue-300 underline">Food and Drink Festival</a>, the <a href="/blog/southport-music-fireworks-seo-guide" class="text-blue-400 hover:text-blue-300 underline">fireworks displays</a>, and more. Each event is another search spike you can ride.</p>
+      <p>Oktoberfest doesn't exist in isolation. Southport has a packed events calendar: the <a href="/blog/southport-flower-show-seo-guide" class="text-blue-400 hover:text-blue-300 underline">Flower Show</a>, the <a href="/blog/southport-food-drink-festival-seo-guide" class="text-blue-400 hover:text-blue-300 underline">Food and Drink Festival</a>, the <a href="/blog/southport-music-fireworks-seo-guide" class="text-blue-400 hover:text-blue-300 underline">fireworks displays</a>, and more. Each event is another search spike you can ride.</p>
       <p>Build a content calendar that maps to Southport's event season. One event-themed blog post per month keeps your website fresh, signals relevance to Google, and gives you something genuinely useful to share on social media.</p>
 
       <div style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 1rem; padding: 2.5rem; margin: 3rem 0; text-align: center;">
@@ -4118,15 +4118,15 @@ export const posts: BlogPost[] = [
     excerpt: "Southport's food and drink festival scene is thriving. Here's how vendors and restaurants can build an online presence that works before, during, and after every event.",
     image: "/images/southport-food-drink-festival-seo.jpg",
     content: `
-      <p>Southport's food and drink scene has come a long way. The town now hosts vibrant food festivals that draw visitors from across the North West — people who come specifically to eat, drink, and discover something new. For local <a href="/industries/restaurants" class="text-blue-400 hover:text-blue-300 underline">restaurants</a>, street food vendors, and artisan producers, these events are a goldmine.</p>
-      <p>But there's a catch: <strong>most food businesses treat festivals as purely offline events.</strong> They set up their stall, serve their food, pack up, and go home. The online opportunity — the search traffic, the social media buzz, the email signups — goes completely untapped.</p>
+      <p>Southport's food and drink scene has come a long way. The town now hosts vibrant food festivals that draw visitors from across the North West: people who come specifically to eat, drink, and discover something new. For local <a href="/industries/restaurants" class="text-blue-400 hover:text-blue-300 underline">restaurants</a>, street food vendors, and artisan producers, these events are a goldmine.</p>
+      <p>But there's a catch: <strong>most food businesses treat festivals as purely offline events.</strong> They set up their stall, serve their food, pack up, and go home. The online opportunity: the search traffic, the social media buzz, the email signups: goes completely untapped.</p>
       <p>If you're a food or drink business in Southport, this guide will show you how to use <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">SEO and digital strategy</a> to extract maximum value from every festival, market, and food event you participate in.</p>
 
       <h2>The Three Phases of Food Festival SEO</h2>
       <p>Think of every food event in three distinct phases, each with its own search behaviour and content opportunities.</p>
 
       <h3>Phase 1: Before the Festival</h3>
-      <p>This is where most of the SEO value lives — and where most businesses do absolutely nothing.</p>
+      <p>This is where most of the SEO value lives: and where most businesses do absolutely nothing.</p>
       <p>Weeks before a food festival, people search for:</p>
       <ul>
         <li><em>"Southport food festival dates"</em></li>
@@ -4138,7 +4138,7 @@ export const posts: BlogPost[] = [
       <div style="background: #1e293b; border-left: 4px solid #22c55e; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
         <h4 style="color: #22c55e; font-weight: bold; margin-bottom: 1rem;">Pre-Festival Action Plan</h4>
         <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
-          <li>Publish a blog post: "Find Us at Southport Food Festival 2026" — include what you're serving, your stall location, and photos of your food.</li>
+          <li>Publish a blog post: "Find Us at Southport Food Festival 2026": include what you're serving, your stall location, and photos of your food.</li>
           <li>Update your Google Business Profile with a post about the festival.</li>
           <li>Share teaser content on social media, each time linking back to your website.</li>
           <li>If you have an online menu, make sure it's up to date and mobile-friendly.</li>
@@ -4156,7 +4156,7 @@ export const posts: BlogPost[] = [
       <p>At this point, your <strong>Google Business Profile</strong> matters more than your website. Make sure your profile has:</p>
       <ul>
         <li>Current opening hours (including festival hours if different from normal)</li>
-        <li>Recent photos of your food — not stock images, real photos</li>
+        <li>Recent photos of your food: not stock images, real photos</li>
         <li>Accurate menu information</li>
         <li>A phone number that someone actually answers</li>
       </ul>
@@ -4164,9 +4164,9 @@ export const posts: BlogPost[] = [
       <h3>Phase 3: After the Festival</h3>
       <p>This is the phase everyone forgets. After a successful festival, people search for:</p>
       <ul>
-        <li><em>"[Your business name]"</em> — they tried your food and want to find you again</li>
-        <li><em>"Best restaurants Southport"</em> — they discovered the town and want to come back</li>
-        <li><em>"Order [food type] Southport"</em> — they want to recreate the experience at home</li>
+        <li><em>"[Your business name]"</em>: they tried your food and want to find you again</li>
+        <li><em>"Best restaurants Southport"</em>: they discovered the town and want to come back</li>
+        <li><em>"Order [food type] Southport"</em>: they want to recreate the experience at home</li>
       </ul>
       <p>If your website doesn't exist, or doesn't rank for your own business name, these potential repeat customers are lost.</p>
 
@@ -4181,7 +4181,7 @@ export const posts: BlogPost[] = [
             <li><strong style="color: white;">Use real text, not PDF menus.</strong> Google can't read a PDF image of your menu. Type out your dishes as actual HTML text.</li>
             <li><strong style="color: white;">Include descriptions.</strong> "Pan-seared sea bass with samphire and crushed new potatoes" ranks for multiple food-related search terms.</li>
             <li><strong style="color: white;">Add dietary labels.</strong> "Vegan," "Gluten-free," and "Dairy-free" are commonly searched terms. Mark them clearly.</li>
-            <li><strong style="color: white;">Include prices.</strong> People search "affordable restaurant Southport" — having prices on your page signals relevance.</li>
+            <li><strong style="color: white;">Include prices.</strong> People search "affordable restaurant Southport": having prices on your page signals relevance.</li>
             <li><strong style="color: white;">Add schema markup.</strong> Restaurant schema and Menu schema help Google understand your offerings and can generate rich results.</li>
           </ul>
         </div>
@@ -4198,7 +4198,7 @@ export const posts: BlogPost[] = [
       <p>If you're currently relying entirely on third-party platforms like Just Eat or Deliveroo, consider adding ordering to your own <a href="/services/web-design" class="text-blue-400 hover:text-blue-300 underline">website</a> too. You'll keep a larger percentage of each order and build direct relationships with customers.</p>
 
       <h2>Social Media Integration</h2>
-      <p>Food is inherently shareable. People photograph their meals before they eat them — it's just how things work in 2026. Lean into this:</p>
+      <p>Food is inherently shareable. People photograph their meals before they eat them: it's just how things work in 2026. Lean into this:</p>
       <ul>
         <li><strong>Encourage tagging:</strong> Put your Instagram handle on your menu, your stall signage, and your receipts.</li>
         <li><strong>User-generated content:</strong> When customers tag you, reshare their content (with permission). This builds social proof and drives traffic.</li>
@@ -4208,15 +4208,15 @@ export const posts: BlogPost[] = [
       <h2>Building Year-Round Visibility</h2>
       <p>Food festivals are seasonal. But your online presence shouldn't be. The businesses that rank best during festival season are the ones that publish content year-round. A simple content strategy might look like:</p>
       <ul>
-        <li><strong>Monthly:</strong> A blog post about what's new — seasonal menu changes, new suppliers, or a behind-the-scenes look at your kitchen.</li>
-        <li><strong>Quarterly:</strong> A feature post tied to Southport's event calendar — Flower Show, Oktoberfest, Christmas markets.</li>
+        <li><strong>Monthly:</strong> A blog post about what's new: seasonal menu changes, new suppliers, or a behind-the-scenes look at your kitchen.</li>
+        <li><strong>Quarterly:</strong> A feature post tied to Southport's event calendar: Flower Show, Oktoberfest, Christmas markets.</li>
         <li><strong>Ongoing:</strong> Fresh photos on your Google Business Profile, responses to every review, and updated opening hours.</li>
       </ul>
 
       <div style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 1rem; padding: 2.5rem; margin: 3rem 0; text-align: center;">
         <h2 style="color: white; font-size: 1.875rem; font-weight: bold; margin-bottom: 1rem;">Hungry for More Visibility?</h2>
         <p style="color: rgba(255,255,255,0.9); font-size: 1.125rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-          We'll audit your food business's online presence and show you exactly where the customers are searching — and how to reach them.
+          We'll audit your food business's online presence and show you exactly where the customers are searching: and how to reach them.
         </p>
         <div style="display: flex; flex-direction: column; gap: 1rem; justify-content: center; align-items: center;">
           <a href="/audit" style="display: inline-flex; align-items: center; gap: 0.5rem; background: white; color: #1e293b; padding: 1rem 2rem; border-radius: 9999px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -4245,9 +4245,9 @@ export const posts: BlogPost[] = [
     excerpt: "Southport's food markets are a brilliant local institution. Here's how market vendors and artisan food producers can build an online presence that actually works.",
     image: "/images/southport-food-market-seo.jpg",
     content: `
-      <p>There's something about a food market that a supermarket will never replicate. The conversations with producers, the samples, the discovery of something you didn't know you wanted. Southport's regular <a href="/industries/retail" class="text-blue-400 hover:text-blue-300 underline">food markets</a> — whether on the Promenade, in the town centre, or popping up in Victoria Park — are a genuine draw for locals and visitors alike.</p>
+      <p>There's something about a food market that a supermarket will never replicate. The conversations with producers, the samples, the discovery of something you didn't know you wanted. Southport's regular <a href="/industries/retail" class="text-blue-400 hover:text-blue-300 underline">food markets</a>: whether on the Promenade, in the town centre, or popping up in Victoria Park: are a genuine draw for locals and visitors alike.</p>
       <p>But if you're a market vendor or artisan food producer, you face a unique SEO challenge: <strong>you don't have a fixed address.</strong> Your "shop" moves from market to market. Your opening hours change weekly. And your Google Business Profile doesn't quite fit the traditional mould.</p>
-      <p>This guide will show you how to build an <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">online presence</a> that works for market-based businesses — because the people searching "food market Southport" or "artisan bread near me" are exactly the customers you want to reach.</p>
+      <p>This guide will show you how to build an <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">online presence</a> that works for market-based businesses: because the people searching "food market Southport" or "artisan bread near me" are exactly the customers you want to reach.</p>
 
       <h2>The Market Vendor SEO Challenge</h2>
       <p>Traditional local SEO advice assumes you have a shopfront: a fixed address, consistent opening hours, and a Google Business Profile tied to a physical location. Market vendors break all of those assumptions.</p>
@@ -4284,20 +4284,20 @@ export const posts: BlogPost[] = [
       <h3>Setting Up Your GBP</h3>
       <ul>
         <li><strong>Business type:</strong> Choose "Service Area Business" and list the areas you serve (Southport, Sefton, etc.).</li>
-        <li><strong>Category:</strong> Be specific — "Artisan Bakery," "Cheese Shop," "Organic Food Store," or "Farmers' Market" rather than just "Food."</li>
+        <li><strong>Category:</strong> Be specific: "Artisan Bakery," "Cheese Shop," "Organic Food Store," or "Farmers' Market" rather than just "Food."</li>
         <li><strong>Description:</strong> Mention every market you attend regularly. "Find us at Southport Food Market every Saturday and Ormskirk Market every Thursday."</li>
         <li><strong>Posts:</strong> Use GBP posts weekly to announce where you'll be this weekend. This keeps your profile active and signals relevance to Google.</li>
-        <li><strong>Photos:</strong> Upload fresh photos from each market. Your stall setup, your products, the crowd — authenticity matters more than polish.</li>
+        <li><strong>Photos:</strong> Upload fresh photos from each market. Your stall setup, your products, the crowd: authenticity matters more than polish.</li>
       </ul>
 
       <h2>Your Website: The Hub That Ties Everything Together</h2>
-      <p>As a market vendor, your website is even more important than it is for a fixed shop — because it's the one constant in a changing landscape of locations and schedules.</p>
+      <p>As a market vendor, your website is even more important than it is for a fixed shop: because it's the one constant in a changing landscape of locations and schedules.</p>
 
       <div style="background: #1e293b; border-left: 4px solid #3b82f6; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
         <h4 style="color: #60a5fa; font-weight: bold; margin-bottom: 1rem;">Essential Pages for Market Vendors</h4>
         <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
           <li><strong>"Where to Find Us" page:</strong> A regularly updated schedule of which markets you'll attend, with dates, times, and locations. This page will rank for "food market Southport this weekend."</li>
-          <li><strong>Product pages:</strong> Show what you sell with photos and descriptions. "Sourdough bread," "locally smoked salmon," "handmade fudge" — each product is a keyword opportunity.</li>
+          <li><strong>Product pages:</strong> Show what you sell with photos and descriptions. "Sourdough bread," "locally smoked salmon," "handmade fudge": each product is a keyword opportunity.</li>
           <li><strong>"Our Story" page:</strong> Where your ingredients come from, how you started, why you love markets. This builds trust and gives Google content to rank.</li>
           <li><strong>Online ordering page:</strong> If you offer delivery or click-and-collect, this captures searches like "order artisan bread Southport."</li>
         </ul>
@@ -4318,15 +4318,15 @@ export const posts: BlogPost[] = [
       <ul>
         <li><strong>Encourage customers to leave reviews on Google:</strong> Mention that they can find you on Google Maps. More reviews = higher visibility.</li>
         <li><strong>Add your products to your GBP:</strong> Google's "Products" tab lets you showcase individual items with photos and prices.</li>
-        <li><strong>Use Google Posts for market announcements:</strong> "This Saturday at Southport Market — fresh sourdough, new season preserves, and our famous brownies." These show up in Maps and Search.</li>
+        <li><strong>Use Google Posts for market announcements:</strong> "This Saturday at Southport Market: fresh sourdough, new season preserves, and our famous brownies." These show up in Maps and Search.</li>
       </ul>
 
       <h2>Building a Customer Email List</h2>
-      <p>Markets are inherently transient — customers visit once and might not come back for weeks. An email list is your bridge between market days.</p>
+      <p>Markets are inherently transient: customers visit once and might not come back for weeks. An email list is your bridge between market days.</p>
       <ul>
         <li><strong>Signage at your stall:</strong> "Join our mailing list for market updates and exclusive offers" with a QR code linking to your website's signup page.</li>
         <li><strong>Weekly emails:</strong> "This week, find us at [Location]. We're bringing [products]." Simple, useful, and it drives website traffic.</li>
-        <li><strong>Seasonal offers:</strong> Christmas hampers, Easter boxes, summer picnic packs — these work brilliantly for email campaigns and give you content to publish on your website.</li>
+        <li><strong>Seasonal offers:</strong> Christmas hampers, Easter boxes, summer picnic packs: these work brilliantly for email campaigns and give you content to publish on your website.</li>
       </ul>
 
       <h2>Social Media: Your Other Shop Window</h2>
@@ -4334,14 +4334,14 @@ export const posts: BlogPost[] = [
       <p>The ideal flow is:</p>
       <ul>
         <li><strong>Instagram/Facebook:</strong> Daily content showing your products, your stall, and the market atmosphere. Tag the location every time.</li>
-        <li><strong>Link to website:</strong> Every post should ultimately drive people to your website — whether it's your "Where to Find Us" page, your online shop, or a blog post.</li>
+        <li><strong>Link to website:</strong> Every post should ultimately drive people to your website: whether it's your "Where to Find Us" page, your online shop, or a blog post.</li>
         <li><strong>Cross-post to GBP:</strong> Repurpose your best social content as Google Business Profile posts for extra search visibility.</li>
       </ul>
 
       <div style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 1rem; padding: 2.5rem; margin: 3rem 0; text-align: center;">
         <h2 style="color: white; font-size: 1.875rem; font-weight: bold; margin-bottom: 1rem;">Want More Customers at Your Stall?</h2>
         <p style="color: rgba(255,255,255,0.9); font-size: 1.125rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-          Get a free audit showing how visible your food business is online — and how to reach the people searching for exactly what you sell.
+          Get a free audit showing how visible your food business is online: and how to reach the people searching for exactly what you sell.
         </p>
         <div style="display: flex; flex-direction: column; gap: 1rem; justify-content: center; align-items: center;">
           <a href="/audit" style="display: inline-flex; align-items: center; gap: 0.5rem; background: white; color: #1e293b; padding: 1rem 2rem; border-radius: 9999px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -4371,7 +4371,7 @@ export const posts: BlogPost[] = [
     image: "/images/southport-firework-display-seo.jpg",
     content: `
       <p>There are a handful of nights each year when Southport's seafront comes alive in a way that's genuinely spectacular. The crack and shimmer of fireworks over Marine Lake, the thump of a bass line carrying across the Promenade, the glow of a crowd having the time of their lives. Southport's music festivals and firework displays are some of the town's most anticipated events.</p>
-      <p>From an <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">SEO perspective</a>, these events create something remarkable: <strong>a massive, predictable spike in search traffic</strong> that most businesses completely fail to capture. Thousands of people searching for information, accommodation, food, and entertainment — all concentrated into a short window of time.</p>
+      <p>From an <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">SEO perspective</a>, these events create something remarkable: <strong>a massive, predictable spike in search traffic</strong> that most businesses completely fail to capture. Thousands of people searching for information, accommodation, food, and entertainment: all concentrated into a short window of time.</p>
       <p>This guide is for any Southport business that wants to ride that wave rather than watch it pass by.</p>
 
       <h2>Understanding Seasonal Search Spikes</h2>
@@ -4413,15 +4413,15 @@ export const posts: BlogPost[] = [
 
       <h3>Building Your Event Content Calendar</h3>
       <ul>
-        <li><strong>January:</strong> Identify all major Southport events for the year. The Flower Show, Oktoberfest, food festivals, fireworks nights, music events — plot them all on a timeline.</li>
-        <li><strong>4-6 weeks before each event:</strong> Publish your anticipation content. "Your Guide to [Event]" — include practical info, mention your business, and link to your booking/order page.</li>
-        <li><strong>1-2 weeks before:</strong> Publish a follow-up piece or update. "What to Expect at This Year's [Event]" — this catches the second wave of searchers.</li>
+        <li><strong>January:</strong> Identify all major Southport events for the year. The Flower Show, Oktoberfest, food festivals, fireworks nights, music events: plot them all on a timeline.</li>
+        <li><strong>4-6 weeks before each event:</strong> Publish your anticipation content. "Your Guide to [Event]": include practical info, mention your business, and link to your booking/order page.</li>
+        <li><strong>1-2 weeks before:</strong> Publish a follow-up piece or update. "What to Expect at This Year's [Event]": this catches the second wave of searchers.</li>
         <li><strong>During the event:</strong> Live social content, GBP posts, and real-time updates on your website if relevant.</li>
         <li><strong>1 week after:</strong> Publish a recap with photos and highlights. This captures post-event search traffic and gives you content to repurpose next year.</li>
       </ul>
 
       <h2>Photography and Video: The Engagement Multiplier</h2>
-      <p>Fireworks and music festivals are <em>visual events</em>. This makes them perfect for content that earns links, shares, and engagement — all of which fuel your SEO.</p>
+      <p>Fireworks and music festivals are <em>visual events</em>. This makes them perfect for content that earns links, shares, and engagement: all of which fuel your SEO.</p>
 
       <div style="background: #1e293b; border-left: 4px solid #a855f7; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
         <h4 style="color: #a855f7; font-weight: bold; margin-bottom: 1rem;">Visual Content Playbook</h4>
@@ -4430,12 +4430,12 @@ export const posts: BlogPost[] = [
           <li><strong>Short video clips</strong> of fireworks, crowd reactions, and performances. Upload these to your website as well as YouTube and social media.</li>
           <li><strong>Photo gallery pages</strong> on your website rank well for "[event] photos" searches and attract backlinks from local media.</li>
           <li><strong>Optimise every image:</strong> Use descriptive file names like "southport-fireworks-marine-lake-2026.jpg" and write proper alt text.</li>
-          <li><strong>YouTube SEO:</strong> If you upload video, write detailed titles and descriptions. "Southport Fireworks Display 2026 — Full Highlights" will capture video search traffic for months.</li>
+          <li><strong>YouTube SEO:</strong> If you upload video, write detailed titles and descriptions. "Southport Fireworks Display 2026: Full Highlights" will capture video search traffic for months.</li>
         </ul>
       </div>
 
       <h2>Businesses Near the Action: Location Is Your Keyword</h2>
-      <p>If your business is within walking distance of where events take place — Marine Lake, the Promenade, Victoria Park — you have a built-in SEO advantage. The key is to make Google aware of that proximity.</p>
+      <p>If your business is within walking distance of where events take place: Marine Lake, the Promenade, Victoria Park: you have a built-in SEO advantage. The key is to make Google aware of that proximity.</p>
 
       <h3>How to Signal Proximity</h3>
       <ul>
@@ -4449,14 +4449,14 @@ export const posts: BlogPost[] = [
       <p>Fireworks typically end between 9 and 10 PM. Music festivals run even later. This means thousands of people are in Southport town centre <em>after dark</em>, looking for somewhere to eat, drink, or continue the evening.</p>
       <p>Most business websites don't explicitly cater to this. Here's how to capture it:</p>
       <ul>
-        <li><strong>Update your evening hours</strong> on Google Business Profile — especially on event nights.</li>
-        <li><strong>Create "late night" content:</strong> "Late Night Eats in Southport" or "Where to Go After the Fireworks" — these rank for queries that spike on event nights.</li>
-        <li><strong>Specials and offers:</strong> "Show your festival wristband for 10% off" — mention this on your website and GBP to capture event-related searches.</li>
+        <li><strong>Update your evening hours</strong> on Google Business Profile: especially on event nights.</li>
+        <li><strong>Create "late night" content:</strong> "Late Night Eats in Southport" or "Where to Go After the Fireworks": these rank for queries that spike on event nights.</li>
+        <li><strong>Specials and offers:</strong> "Show your festival wristband for 10% off": mention this on your website and GBP to capture event-related searches.</li>
       </ul>
 
       <h2>Turning One Night Into Year-Round Traffic</h2>
-      <p>The real power of event SEO isn't the spike itself — it's the tail. An event page that ranks well this year will continue to attract traffic as people start planning for next year. An evergreen guide like "Your Guide to Southport's Annual Events" can rank year-round and bring in consistent traffic between events.</p>
-      <p>Combine this with coverage of Southport's other major events — the <a href="/blog/southport-flower-show-seo-guide" class="text-blue-400 hover:text-blue-300 underline">Flower Show</a>, <a href="/blog/southport-oktoberfest-seo-guide" class="text-blue-400 hover:text-blue-300 underline">Oktoberfest</a>, and the <a href="/blog/southport-food-drink-festival-seo-guide" class="text-blue-400 hover:text-blue-300 underline">Food and Drink Festival</a> — and you've got a content strategy that covers the entire event season.</p>
+      <p>The real power of event SEO isn't the spike itself: it's the tail. An event page that ranks well this year will continue to attract traffic as people start planning for next year. An evergreen guide like "Your Guide to Southport's Annual Events" can rank year-round and bring in consistent traffic between events.</p>
+      <p>Combine this with coverage of Southport's other major events: the <a href="/blog/southport-flower-show-seo-guide" class="text-blue-400 hover:text-blue-300 underline">Flower Show</a>, <a href="/blog/southport-oktoberfest-seo-guide" class="text-blue-400 hover:text-blue-300 underline">Oktoberfest</a>, and the <a href="/blog/southport-food-drink-festival-seo-guide" class="text-blue-400 hover:text-blue-300 underline">Food and Drink Festival</a>: and you've got a content strategy that covers the entire event season.</p>
 
       <div style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 1rem; padding: 2.5rem; margin: 3rem 0; text-align: center;">
         <h2 style="color: white; font-size: 1.875rem; font-weight: bold; margin-bottom: 1rem;">Ready to Light Up Your Online Presence?</h2>
@@ -4491,12 +4491,12 @@ export const posts: BlogPost[] = [
     image: "/images/southport-pier-development-seo.jpg",
     content: `
       <p>Southport Pier is the second longest pleasure pier in the UK, stretching over a kilometre out into the Irish Sea. It's the town's most photographed landmark, a magnet for tourists, and the centrepiece of Southport's seafront identity. When people think of Southport, they think of the pier.</p>
-      <p>And when they <em>search</em> for Southport, the pier features heavily. "Southport Pier," "things to do Southport," "Southport seafront" — these are some of the most searched terms associated with the town. For businesses located near the pier, this is a significant SEO opportunity. But it's one that surprisingly few businesses are actually capitalising on.</p>
-      <p>This guide covers how to use Southport Pier as a <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">local SEO</a> anchor — turning the pier's physical prominence into digital visibility for your business.</p>
+      <p>And when they <em>search</em> for Southport, the pier features heavily. "Southport Pier," "things to do Southport," "Southport seafront": these are some of the most searched terms associated with the town. For businesses located near the pier, this is a significant SEO opportunity. But it's one that surprisingly few businesses are actually capitalising on.</p>
+      <p>This guide covers how to use Southport Pier as a <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">local SEO</a> anchor: turning the pier's physical prominence into digital visibility for your business.</p>
 
       <h2>Why Landmarks Matter for SEO</h2>
       <p>Google's algorithm understands landmarks. When someone searches "restaurant near Southport Pier" or "coffee near the Promenade," Google knows exactly where those landmarks are and ranks nearby businesses accordingly.</p>
-      <p>This is different from a standard "near me" search. Landmark searches are <strong>intentional</strong> — the person knows where they're going and wants businesses close to that specific place. This makes them extremely high-value searches for conversion.</p>
+      <p>This is different from a standard "near me" search. Landmark searches are <strong>intentional</strong>: the person knows where they're going and wants businesses close to that specific place. This makes them extremely high-value searches for conversion.</p>
 
       <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
         <h3 style="color: #60a5fa; font-size: 1.25rem; font-weight: bold; margin-bottom: 1rem;">Pier-Related Search Queries</h3>
@@ -4534,7 +4534,7 @@ export const posts: BlogPost[] = [
       </ul>
 
       <h2>Pier Regeneration and the Opportunity Ahead</h2>
-      <p>Southport Pier has been the subject of ongoing regeneration discussions and investment. Any development around the pier — whether it's new attractions, refurbishments, or events — creates a fresh wave of search interest.</p>
+      <p>Southport Pier has been the subject of ongoing regeneration discussions and investment. Any development around the pier: whether it's new attractions, refurbishments, or events: creates a fresh wave of search interest.</p>
       <p>When news breaks about pier developments, search queries spike:</p>
       <ul>
         <li><em>"Southport Pier development"</em></li>
@@ -4542,7 +4542,7 @@ export const posts: BlogPost[] = [
         <li><em>"Southport regeneration"</em></li>
         <li><em>"New attractions Southport"</em></li>
       </ul>
-      <p>Businesses that publish content around these developments — a blog post about what the regeneration means for the area, for example — capture that search traffic. This positions you as a local authority and keeps your website fresh with relevant content.</p>
+      <p>Businesses that publish content around these developments: a blog post about what the regeneration means for the area, for example: capture that search traffic. This positions you as a local authority and keeps your website fresh with relevant content.</p>
 
       <div style="background: #1e293b; border-left: 4px solid #3b82f6; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
         <h4 style="color: #60a5fa; font-weight: bold; margin-bottom: 1rem;">Regeneration Content Ideas</h4>
@@ -4555,7 +4555,7 @@ export const posts: BlogPost[] = [
       </div>
 
       <h2>Tourism SEO: Capturing Visitor Intent</h2>
-      <p>The pier is a <a href="/industries/tourism" class="text-blue-400 hover:text-blue-300 underline">tourism</a> magnet, which means the people searching for it are often visitors — not locals. This changes the SEO strategy significantly.</p>
+      <p>The pier is a <a href="/industries/tourism" class="text-blue-400 hover:text-blue-300 underline">tourism</a> magnet, which means the people searching for it are often visitors: not locals. This changes the SEO strategy significantly.</p>
       <p>Visitors don't know the area. They're searching for practical information:</p>
       <ul>
         <li>Where to eat near the pier</li>
@@ -4569,28 +4569,28 @@ export const posts: BlogPost[] = [
       <p>One of the most effective pages a pier-area business can create is a simple visitor guide. Something like: "Visiting Southport Pier? Here's Everything You Need to Know."</p>
       <p>Include:</p>
       <ul>
-        <li>A brief history of the pier (people love this and it keeps them on your page longer — which is a positive ranking signal)</li>
+        <li>A brief history of the pier (people love this and it keeps them on your page longer: which is a positive ranking signal)</li>
         <li>Practical info: parking, accessibility, best times to visit</li>
-        <li>What's nearby — and naturally include your own business</li>
+        <li>What's nearby: and naturally include your own business</li>
         <li>A Google Maps embed showing your location relative to the pier</li>
       </ul>
       <p>This type of content serves the user, ranks for tourism queries, and positions your business as the obvious next stop after the pier.</p>
 
       <h2>Physical Landmarks, Digital Visibility</h2>
-      <p>There's a powerful connection between physical landmarks and digital search behaviour that many businesses overlook. People plan their days around landmarks. "Let's walk the pier, then grab lunch" is a real thought process — and it corresponds directly to a search query.</p>
-      <p>By tying your digital presence to Southport's most iconic landmark, you're not just optimising for search — you're inserting your business into the visitor's day plan.</p>
+      <p>There's a powerful connection between physical landmarks and digital search behaviour that many businesses overlook. People plan their days around landmarks. "Let's walk the pier, then grab lunch" is a real thought process: and it corresponds directly to a search query.</p>
+      <p>By tying your digital presence to Southport's most iconic landmark, you're not just optimising for search: you're inserting your business into the visitor's day plan.</p>
 
       <h2>Photography and the Pier</h2>
-      <p>Southport Pier is one of the most photographed places on the Merseyside coast. Original photography of the pier — especially from unique angles or at interesting times (sunrise, sunset, stormy weather) — ranks well on Google Images and earns engagement on social media.</p>
+      <p>Southport Pier is one of the most photographed places on the Merseyside coast. Original photography of the pier: especially from unique angles or at interesting times (sunrise, sunset, stormy weather): ranks well on Google Images and earns engagement on social media.</p>
       <p>If your business has a view of the pier, or is visible from the pier, photograph that perspective and use it on your website. It creates an immediate visual connection between your business and the landmark.</p>
 
       <h2>Reviews and the Pier Connection</h2>
       <p>Encourage customers to mention the pier in their Google reviews. "Great fish and chips after a walk along the pier" is the kind of review that helps Google associate your business with pier-related searches. You can't dictate what people write, but you can prompt the context: "Enjoyed your visit after walking the pier? We'd love a Google review!"</p>
 
       <div style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 1rem; padding: 2.5rem; margin: 3rem 0; text-align: center;">
-        <h2 style="color: white; font-size: 1.875rem; font-weight: bold; margin-bottom: 1rem;">Is Your Business Visible From the Pier — and On Google?</h2>
+        <h2 style="color: white; font-size: 1.875rem; font-weight: bold; margin-bottom: 1rem;">Is Your Business Visible From the Pier: and On Google?</h2>
         <p style="color: rgba(255,255,255,0.9); font-size: 1.125rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-          Get a free audit showing where you rank for Southport's most-searched landmark — and what you're missing.
+          Get a free audit showing where you rank for Southport's most-searched landmark: and what you're missing.
         </p>
         <div style="display: flex; flex-direction: column; gap: 1rem; justify-content: center; align-items: center;">
           <a href="/audit" style="display: inline-flex; align-items: center; gap: 0.5rem; background: white; color: #1e293b; padding: 1rem 2rem; border-radius: 9999px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -4619,7 +4619,7 @@ export const posts: BlogPost[] = [
     image: "/images/southport-beach-tourism-seo.jpg",
     excerpt: "Southport's coastline draws thousands every summer. Here's how beach kiosks, water sports operators, and equipment hire businesses can capture tourist search traffic year-round.",
     content: `
-      <p>There's something about a British seaside town that runs on hope and weather apps. Southport's coastline—stretching from the Pier to Ainsdale Beach—is one of the most searched-for coastal destinations in the North West. And every summer, thousands of visitors arrive with a single question typed into their phones: <em>"What can we do at Southport beach today?"</em></p>
+      <p>There's something about a British seaside town that runs on hope and weather apps. Southport's coastline: stretching from the Pier to Ainsdale Beach: is one of the most searched-for coastal destinations in the North West. And every summer, thousands of visitors arrive with a single question typed into their phones: <em>"What can we do at Southport beach today?"</em></p>
 
       <p>If you run a beach kiosk, a water sports outfit, an equipment hire business, or any coastal tourism operation in the Southport area, that question is your golden ticket. The problem? Most beach businesses don't have a digital presence that captures those searches. They rely on footfall, word of mouth, and good weather.</p>
 
@@ -4627,14 +4627,14 @@ export const posts: BlogPost[] = [
 
       <h2>The Beach Search Economy</h2>
 
-      <p>Beach-related searches are intensely seasonal—but that doesn't mean they're unpredictable. In fact, coastal search patterns are some of the most reliable in tourism SEO. Every year, the same cycle repeats:</p>
+      <p>Beach-related searches are intensely seasonal: but that doesn't mean they're unpredictable. In fact, coastal search patterns are some of the most reliable in tourism SEO. Every year, the same cycle repeats:</p>
 
       <ul>
         <li><strong>March–April:</strong> "Southport beach things to do" searches start climbing as families plan Easter breaks</li>
         <li><strong>May–June:</strong> "Water sports Southport" and "paddleboard hire Southport" peak as the weather warms</li>
         <li><strong>July–August:</strong> Maximum volume. Everything from "best beach near Liverpool" to "Southport beach parking" surges</li>
         <li><strong>September–October:</strong> A secondary peak around half-term, plus "autumn beach walks Southport" becomes a thing</li>
-        <li><strong>November–February:</strong> The quiet season—but not a dead one. "Winter beach walks" and "dog-friendly beaches Southport" still tick over</li>
+        <li><strong>November–February:</strong> The quiet season: but not a dead one. "Winter beach walks" and "dog-friendly beaches Southport" still tick over</li>
       </ul>
 
       <p>The businesses that win aren't the ones who scramble to update their website in June. They're the ones who have content published and indexed <em>months before</em> the search spike begins.</p>
@@ -4643,19 +4643,19 @@ export const posts: BlogPost[] = [
 
       <p>Here's something most beach businesses overlook entirely: <strong>weather drives search behaviour in real-time.</strong></p>
 
-      <p>When the Met Office forecasts a sunny weekend for the North West, search volumes for "Southport beach" can spike dramatically within hours. People don't plan beach trips weeks in advance—they check the weather on Wednesday evening and search on Thursday morning.</p>
+      <p>When the Met Office forecasts a sunny weekend for the North West, search volumes for "Southport beach" can spike dramatically within hours. People don't plan beach trips weeks in advance: they check the weather on Wednesday evening and search on Thursday morning.</p>
 
       <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
         <h3 style="color: #60a5fa; font-size: 1.25rem; font-weight: bold; margin-bottom: 1rem;">Weather-Driven SEO: The Playbook</h3>
         <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
           <li><strong style="color: white;">Pre-built landing pages:</strong> Have "sunny day at Southport beach" and "rainy day alternatives Southport" pages indexed and ready</li>
-          <li><strong style="color: white;">Google Business Profile posts:</strong> Push a GBP post when good weather is forecast—"Kayak hire available this weekend!"</li>
+          <li><strong style="color: white;">Google Business Profile posts:</strong> Push a GBP post when good weather is forecast: "Kayak hire available this weekend!"</li>
           <li><strong style="color: white;">Real-time content:</strong> A simple "Today at the Beach" page that updates conditions, availability, and tide times</li>
-          <li><strong style="color: white;">Social signals:</strong> Post beach photos on sunny mornings—this drives branded searches which boost your rankings</li>
+          <li><strong style="color: white;">Social signals:</strong> Post beach photos on sunny mornings: this drives branded searches which boost your rankings</li>
         </ul>
       </div>
 
-      <p>The connection between weather and search intent is direct and powerful. Businesses that react to weather patterns digitally—not just operationally—capture the surge traffic that their competitors miss entirely.</p>
+      <p>The connection between weather and search intent is direct and powerful. Businesses that react to weather patterns digitally: not just operationally: capture the surge traffic that their competitors miss entirely.</p>
 
       <h2>Seasonal Content Strategy for Coastal Businesses</h2>
 
@@ -4664,22 +4664,22 @@ export const posts: BlogPost[] = [
       <h3>Winter Content Ideas That Actually Work</h3>
 
       <ul>
-        <li><strong>"Best Winter Beach Walks Near Southport"</strong> — Dog walkers, photographers, and fitness enthusiasts search for this more than you'd think</li>
-        <li><strong>"Southport Beach Sunset Times"</strong> — Simple, practical content that earns clicks and establishes your site as a local resource</li>
-        <li><strong>"Preparing Your Beach Business for Summer"</strong> — Behind-the-scenes content humanises your brand and keeps your site active</li>
-        <li><strong>"Wildlife on Southport Beach in Winter"</strong> — Educational content that links naturally to the broader Sefton Coast ecosystem</li>
+        <li><strong>"Best Winter Beach Walks Near Southport"</strong>: Dog walkers, photographers, and fitness enthusiasts search for this more than you'd think</li>
+        <li><strong>"Southport Beach Sunset Times"</strong>: Simple, practical content that earns clicks and establishes your site as a local resource</li>
+        <li><strong>"Preparing Your Beach Business for Summer"</strong>: Behind-the-scenes content humanises your brand and keeps your site active</li>
+        <li><strong>"Wildlife on Southport Beach in Winter"</strong>: Educational content that links naturally to the broader Sefton Coast ecosystem</li>
       </ul>
 
       <h3>Summer Content That Captures Bookings</h3>
 
       <ul>
-        <li><strong>Activity pages with clear pricing and availability</strong> — "Paddleboard Hire Southport: Prices, Times & What to Bring"</li>
-        <li><strong>Family-focused guides</strong> — "Southport Beach with Kids: Everything You Need to Know"</li>
-        <li><strong>Comparison content</strong> — "Southport Beach vs Formby Beach: Which Is Right for Your Day Out?"</li>
-        <li><strong>Local tips content</strong> — "Where to Park for Southport Beach (Free & Paid Options)"</li>
+        <li><strong>Activity pages with clear pricing and availability</strong>: "Paddleboard Hire Southport: Prices, Times & What to Bring"</li>
+        <li><strong>Family-focused guides</strong>: "Southport Beach with Kids: Everything You Need to Know"</li>
+        <li><strong>Comparison content</strong>: "Southport Beach vs Formby Beach: Which Is Right for Your Day Out?"</li>
+        <li><strong>Local tips content</strong>: "Where to Park for Southport Beach (Free & Paid Options)"</li>
       </ul>
 
-      <p>Each of these pages targets a specific long-tail keyword that tourists are actively searching for. They also answer real questions—which is exactly what Google wants to surface.</p>
+      <p>Each of these pages targets a specific long-tail keyword that tourists are actively searching for. They also answer real questions: which is exactly what Google wants to surface.</p>
 
       <h2>Capturing Tourist Traffic vs. Local Traffic</h2>
 
@@ -4708,19 +4708,19 @@ export const posts: BlogPost[] = [
         </div>
       </div>
 
-      <p>Tourists search with broader terms and discovery intent. Locals search with specificity and immediacy. Your website needs landing pages that serve both—broad guides for tourists, practical real-time info for locals.</p>
+      <p>Tourists search with broader terms and discovery intent. Locals search with specificity and immediacy. Your website needs landing pages that serve both: broad guides for tourists, practical real-time info for locals.</p>
 
       <h2>The Image and Video Advantage</h2>
 
       <p>Beach businesses have a massive advantage that most industries would kill for: <strong>visually stunning content.</strong></p>
 
-      <p>A golden sunset over Southport Pier, kids building sandcastles, a kitesurfer catching wind off the coast—this is content that earns clicks, shares, and backlinks naturally. Yet most beach businesses in Southport have websites with stock photos or no images at all.</p>
+      <p>A golden sunset over Southport Pier, kids building sandcastles, a kitesurfer catching wind off the coast: this is content that earns clicks, shares, and backlinks naturally. Yet most beach businesses in Southport have websites with stock photos or no images at all.</p>
 
       <p>Google Image Search drives significant traffic for beach-related queries. If you're not optimising your images with descriptive alt text, proper file names, and compressed file sizes, you're leaving traffic on the table. A photo named <em>"southport-beach-sunset-pier.jpg"</em> with alt text <em>"Sunset over Southport Pier from the beach"</em> can rank in image search and pull visitors to your site.</p>
 
       <h2>Making the Tide Work for You</h2>
 
-      <p>Southport's famously retreating tide is actually an SEO opportunity in disguise. People search "Southport tide times" constantly during summer. If your business provides a tide times page—even a simple one that links to official data—you become a resource people bookmark and return to. That repeat traffic signals to Google that your site is useful and trustworthy.</p>
+      <p>Southport's famously retreating tide is actually an SEO opportunity in disguise. People search "Southport tide times" constantly during summer. If your business provides a tide times page: even a simple one that links to official data: you become a resource people bookmark and return to. That repeat traffic signals to Google that your site is useful and trustworthy.</p>
 
       <p>Pair tide information with practical advice: <em>"Low tide? Perfect for beach walks and sand sculpting. High tide? Try our indoor activities instead."</em> You're answering the search query and funnelling visitors toward your services simultaneously.</p>
 
@@ -4739,7 +4739,7 @@ export const posts: BlogPost[] = [
           </a>
         </div>
         <p style="color: rgba(255,255,255,0.8); font-size: 0.875rem; margin-top: 1.5rem;">
-          We're based in Churchtown—right on the coast. Let's make your beach business unmissable.
+          We're based in Churchtown: right on the coast. Let's make your beach business unmissable.
         </p>
       </div>
 
@@ -4756,7 +4756,7 @@ export const posts: BlogPost[] = [
     image: "/images/southport-marshside-nature-seo.jpg",
     excerpt: "RSPB Marshside draws nature lovers from across the UK. Here's how eco-tourism businesses near Southport can use content marketing to capture this passionate niche audience.",
     content: `
-      <p>On a crisp autumn morning at RSPB Marshside, you might spot pink-footed geese arriving from Iceland, marsh harriers quartering the reedbeds, or a group of birdwatchers in full camouflage whispering excitedly about a rare sighting. This nature reserve on the edge of Southport is one of the most important wetland habitats in the North West—and it represents a quietly powerful SEO opportunity for local businesses.</p>
+      <p>On a crisp autumn morning at RSPB Marshside, you might spot pink-footed geese arriving from Iceland, marsh harriers quartering the reedbeds, or a group of birdwatchers in full camouflage whispering excitedly about a rare sighting. This nature reserve on the edge of Southport is one of the most important wetland habitats in the North West: and it represents a quietly powerful SEO opportunity for local businesses.</p>
 
       <p>Eco-tourism is one of the fastest-growing travel segments in the UK. Birdwatchers, wildlife photographers, and nature enthusiasts are a dedicated, well-researched audience who plan their trips online with meticulous detail. If you run guided walks, accommodation, a café near the reserve, photography workshops, or any nature-adjacent business in the Southport area, there's a niche search market waiting for you.</p>
 
@@ -4776,7 +4776,7 @@ export const posts: BlogPost[] = [
         <li><em>"Wildlife photography workshops Sefton Coast"</em></li>
       </ul>
 
-      <p>These are long-tail keywords with lower competition and <strong>extremely high intent</strong>. Someone searching for "pink-footed geese Marshside" is coming to Southport. The question is whether your business captures them before, during, or after their visit—or whether you miss them entirely.</p>
+      <p>These are long-tail keywords with lower competition and <strong>extremely high intent</strong>. Someone searching for "pink-footed geese Marshside" is coming to Southport. The question is whether your business captures them before, during, or after their visit: or whether you miss them entirely.</p>
 
       <h2>Educational Content as an SEO Strategy</h2>
 
@@ -4787,29 +4787,29 @@ export const posts: BlogPost[] = [
       <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
         <h3 style="color: #60a5fa; font-size: 1.25rem; font-weight: bold; margin-bottom: 1rem;">Content Ideas That Rank and Engage</h3>
         <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
-          <li><strong style="color: white;">Seasonal species guides:</strong> "What Birds Can You See at Marshside in Winter?" — publish one per season</li>
-          <li><strong style="color: white;">Visitor planning guides:</strong> "How to Plan a Birdwatching Day at RSPB Marshside" — include parking, hides, best times, what to bring</li>
+          <li><strong style="color: white;">Seasonal species guides:</strong> "What Birds Can You See at Marshside in Winter?": publish one per season</li>
+          <li><strong style="color: white;">Visitor planning guides:</strong> "How to Plan a Birdwatching Day at RSPB Marshside": include parking, hides, best times, what to bring</li>
           <li><strong style="color: white;">Photography tips:</strong> "Wildlife Photography at Marshside: Camera Settings, Best Spots & Etiquette"</li>
-          <li><strong style="color: white;">Conservation updates:</strong> "How Southport's Wetlands Support Migratory Birds" — educational content that earns natural backlinks</li>
-          <li><strong style="color: white;">Combined itineraries:</strong> "A Weekend in Southport for Nature Lovers" — link your business into a broader trip plan</li>
+          <li><strong style="color: white;">Conservation updates:</strong> "How Southport's Wetlands Support Migratory Birds": educational content that earns natural backlinks</li>
+          <li><strong style="color: white;">Combined itineraries:</strong> "A Weekend in Southport for Nature Lovers": link your business into a broader trip plan</li>
         </ul>
       </div>
 
-      <p>Each piece of content targets specific searches while positioning your business as a knowledgeable local authority. When a birdwatcher reads your guide to Marshside species and then discovers you also run guided walks or a nearby B&B, the conversion feels natural—not forced.</p>
+      <p>Each piece of content targets specific searches while positioning your business as a knowledgeable local authority. When a birdwatcher reads your guide to Marshside species and then discovers you also run guided walks or a nearby B&B, the conversion feels natural: not forced.</p>
 
       <h2>The Power of Community and Backlinks</h2>
 
       <p>Nature enthusiasts are one of the most community-driven audiences online. They share content in Facebook birding groups, on forums like BirdForum and BirdGuides, through local wildlife trust newsletters, and across specialist photography communities.</p>
 
-      <p>This means quality content about Marshside and the wider Sefton Coast has <strong>natural backlink potential</strong> that most commercial content simply doesn't have. A genuinely useful species guide or photography location post can earn links from wildlife blogs, regional tourism sites, and conservation organisations—all of which are high-authority domains that significantly boost your search rankings.</p>
+      <p>This means quality content about Marshside and the wider Sefton Coast has <strong>natural backlink potential</strong> that most commercial content simply doesn't have. A genuinely useful species guide or photography location post can earn links from wildlife blogs, regional tourism sites, and conservation organisations: all of which are high-authority domains that significantly boost your search rankings.</p>
 
       <h3>How to Earn Nature Tourism Backlinks</h3>
 
       <ul>
-        <li><strong>Partner with local wildlife groups</strong> — Offer to write guest posts or provide guided walk listings for their websites</li>
-        <li><strong>Create shareable resources</strong> — A downloadable Marshside species checklist or a printable walking route map</li>
-        <li><strong>Engage with recording communities</strong> — Share sighting reports (with permission) that reference your location or service</li>
-        <li><strong>Collaborate with photographers</strong> — Feature local wildlife photographers on your blog in exchange for a backlink from their portfolio</li>
+        <li><strong>Partner with local wildlife groups</strong>: Offer to write guest posts or provide guided walk listings for their websites</li>
+        <li><strong>Create shareable resources</strong>: A downloadable Marshside species checklist or a printable walking route map</li>
+        <li><strong>Engage with recording communities</strong>: Share sighting reports (with permission) that reference your location or service</li>
+        <li><strong>Collaborate with photographers</strong>: Feature local wildlife photographers on your blog in exchange for a backlink from their portfolio</li>
       </ul>
 
       <h2>Targeting the Eco-Tourist Journey</h2>
@@ -4820,30 +4820,30 @@ export const posts: BlogPost[] = [
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
           <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
             <h3 style="color: #60a5fa; font-weight: bold; margin-bottom: 0.5rem;">Research Phase</h3>
-            <p style="color: #cbd5e1; font-size: 0.9rem; line-height: 1.6;">"Best birdwatching sites Lancashire" — Your comprehensive area guide captures this</p>
+            <p style="color: #cbd5e1; font-size: 0.9rem; line-height: 1.6;">"Best birdwatching sites Lancashire": Your comprehensive area guide captures this</p>
           </div>
           <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
             <h3 style="color: #60a5fa; font-weight: bold; margin-bottom: 0.5rem;">Planning Phase</h3>
-            <p style="color: #cbd5e1; font-size: 0.9rem; line-height: 1.6;">"Accommodation near RSPB Marshside" — Your booking page or partner listing captures this</p>
+            <p style="color: #cbd5e1; font-size: 0.9rem; line-height: 1.6;">"Accommodation near RSPB Marshside": Your booking page or partner listing captures this</p>
           </div>
           <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
             <h3 style="color: #60a5fa; font-weight: bold; margin-bottom: 0.5rem;">Visit Phase</h3>
-            <p style="color: #cbd5e1; font-size: 0.9rem; line-height: 1.6;">"Café near Marshside Southport" — Your Google Business Profile captures this</p>
+            <p style="color: #cbd5e1; font-size: 0.9rem; line-height: 1.6;">"Café near Marshside Southport": Your Google Business Profile captures this</p>
           </div>
         </div>
       </div>
 
-      <p>If your SEO strategy covers all three phases, you're not just capturing one search—you're present throughout their entire trip planning journey. That's how you build a pipeline of eco-tourist customers.</p>
+      <p>If your SEO strategy covers all three phases, you're not just capturing one search: you're present throughout their entire trip planning journey. That's how you build a pipeline of eco-tourist customers.</p>
 
       <h2>Seasonality Is Your Friend, Not Your Enemy</h2>
 
-      <p>Unlike general tourism, nature tourism has activity year-round—it's just different activity. Spring brings breeding season, summer brings butterflies and wildflowers, autumn brings migration spectacles, and winter brings overwintering wildfowl. Each season is an opportunity for fresh, timely content.</p>
+      <p>Unlike general tourism, nature tourism has activity year-round: it's just different activity. Spring brings breeding season, summer brings butterflies and wildflowers, autumn brings migration spectacles, and winter brings overwintering wildfowl. Each season is an opportunity for fresh, timely content.</p>
 
-      <p>A content calendar aligned to natural seasons gives you twelve months of publishing opportunities. And because these topics are time-sensitive, Google rewards recently published content—giving newer, well-optimised pages an edge over older, stale results.</p>
+      <p>A content calendar aligned to natural seasons gives you twelve months of publishing opportunities. And because these topics are time-sensitive, Google rewards recently published content: giving newer, well-optimised pages an edge over older, stale results.</p>
 
       <h2>Don't Forget the Broader Sefton Coast</h2>
 
-      <p>RSPB Marshside doesn't exist in isolation. It's part of the wider Sefton Coast—one of the most ecologically significant stretches of coastline in England. Content that connects Marshside to the Ainsdale sand dunes, the Formby red squirrel colony, and the broader Lancashire wildlife scene captures even more long-tail searches and positions your business as <em>the</em> local nature tourism authority.</p>
+      <p>RSPB Marshside doesn't exist in isolation. It's part of the wider Sefton Coast: one of the most ecologically significant stretches of coastline in England. Content that connects Marshside to the Ainsdale sand dunes, the Formby red squirrel colony, and the broader Lancashire wildlife scene captures even more long-tail searches and positions your business as <em>the</em> local nature tourism authority.</p>
 
       <div style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 1rem; padding: 2.5rem; margin: 3rem 0; text-align: center;">
         <h2 style="color: white; font-size: 1.875rem; font-weight: bold; margin-bottom: 1rem;">Let Nature Lovers Find You First</h2>
@@ -4860,7 +4860,7 @@ export const posts: BlogPost[] = [
           </a>
         </div>
         <p style="color: rgba(255,255,255,0.8); font-size: 0.875rem; margin-top: 1.5rem;">
-          We're based in Churchtown—minutes from Marshside. We understand this audience.
+          We're based in Churchtown: minutes from Marshside. We understand this audience.
         </p>
       </div>
 
@@ -4877,26 +4877,26 @@ export const posts: BlogPost[] = [
     image: "/images/southport-bird-prey-sanctuary-seo.jpg",
     excerpt: "Bird of prey centres and wildlife sanctuaries near Southport can compete with TripAdvisor for search traffic. Here's how to soar above the listing sites and drive direct bookings.",
     content: `
-      <p>Picture this: a Harris hawk launches from a handler's glove, sweeps low across a field, and returns with perfect precision. A crowd of families watches, phones raised, filming every second. Within an hour, those videos are on Instagram and TikTok—and the searches begin. <em>"Bird of prey experience near Southport," "falconry centre Lancashire," "hawk walk Merseyside."</em></p>
+      <p>Picture this: a Harris hawk launches from a handler's glove, sweeps low across a field, and returns with perfect precision. A crowd of families watches, phones raised, filming every second. Within an hour, those videos are on Instagram and TikTok: and the searches begin. <em>"Bird of prey experience near Southport," "falconry centre Lancashire," "hawk walk Merseyside."</em></p>
 
-      <p>Wildlife attractions near Southport—bird of prey sanctuaries, falconry centres, and animal encounter experiences—are inherently shareable, inherently searchable, and inherently local. Yet many of these businesses are almost invisible online, buried beneath TripAdvisor listings and aggregator sites that take a commission on every booking.</p>
+      <p>Wildlife attractions near Southport: bird of prey sanctuaries, falconry centres, and animal encounter experiences: are inherently shareable, inherently searchable, and inherently local. Yet many of these businesses are almost invisible online, buried beneath TripAdvisor listings and aggregator sites that take a commission on every booking.</p>
 
       <p>At <a href="/" class="text-blue-400 hover:text-blue-300 underline">Churchtown Media</a>, we help local attractions take back control of their online presence. Here's the <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">SEO strategy</a> for wildlife attractions that want to soar above the aggregators.</p>
 
       <h2>The TripAdvisor Problem (And How to Compete)</h2>
 
-      <p>Search for almost any visitor attraction and TripAdvisor dominates the first page. This isn't accidental—TripAdvisor has spent years building domain authority, accumulating reviews, and creating optimised listing pages for every attraction in the country.</p>
+      <p>Search for almost any visitor attraction and TripAdvisor dominates the first page. This isn't accidental: TripAdvisor has spent years building domain authority, accumulating reviews, and creating optimised listing pages for every attraction in the country.</p>
 
-      <p>Here's the uncomfortable truth: <strong>you probably can't outrank TripAdvisor for your own brand name.</strong> But that's not the battle you need to win. The battle you need to win is for the discovery searches—the terms people use <em>before</em> they know your attraction exists.</p>
+      <p>Here's the uncomfortable truth: <strong>you probably can't outrank TripAdvisor for your own brand name.</strong> But that's not the battle you need to win. The battle you need to win is for the discovery searches: the terms people use <em>before</em> they know your attraction exists.</p>
 
       <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
         <h3 style="color: #60a5fa; font-size: 1.25rem; font-weight: bold; margin-bottom: 1rem;">Discovery Searches You Can Win</h3>
         <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
-          <li><strong style="color: white;">"Bird of prey experience near me"</strong> — Google prioritises local businesses for "near me" queries</li>
-          <li><strong style="color: white;">"Things to do with kids Southport rainy day"</strong> — Indoor attractions have a huge advantage here</li>
-          <li><strong style="color: white;">"Hawk walk Lancashire"</strong> — Specific experience-based keywords TripAdvisor doesn't optimise for</li>
-          <li><strong style="color: white;">"Birthday party ideas Southport children"</strong> — Event-based searches aggregators rarely target</li>
-          <li><strong style="color: white;">"Falconry gift experience Merseyside"</strong> — Gift voucher searches are high-value and underserved</li>
+          <li><strong style="color: white;">"Bird of prey experience near me"</strong>: Google prioritises local businesses for "near me" queries</li>
+          <li><strong style="color: white;">"Things to do with kids Southport rainy day"</strong>: Indoor attractions have a huge advantage here</li>
+          <li><strong style="color: white;">"Hawk walk Lancashire"</strong>: Specific experience-based keywords TripAdvisor doesn't optimise for</li>
+          <li><strong style="color: white;">"Birthday party ideas Southport children"</strong>: Event-based searches aggregators rarely target</li>
+          <li><strong style="color: white;">"Falconry gift experience Merseyside"</strong>: Gift voucher searches are high-value and underserved</li>
         </ul>
       </div>
 
@@ -4904,23 +4904,23 @@ export const posts: BlogPost[] = [
 
       <h2>Direct Bookings vs. Third-Party Platforms</h2>
 
-      <p>Every booking through a third-party platform costs you a commission—typically 15-25%. For a wildlife attraction with tight margins, that's the difference between a profitable experience and a loss leader.</p>
+      <p>Every booking through a third-party platform costs you a commission: typically 15-25%. For a wildlife attraction with tight margins, that's the difference between a profitable experience and a loss leader.</p>
 
       <p>SEO is the path to direct bookings. When someone finds your website through organic search and books directly, you keep the full ticket price. But your website needs to make the booking process as seamless as the platforms do.</p>
 
       <h3>What Your Booking Page Needs</h3>
 
       <ul>
-        <li><strong>Clear pricing</strong> — Don't make visitors hunt for how much it costs. Display prices prominently</li>
-        <li><strong>Real-time availability</strong> — If possible, show which dates and times have spaces. Urgency drives bookings</li>
-        <li><strong>Mobile-optimised checkout</strong> — Most family bookings happen on phones during evening planning sessions</li>
-        <li><strong>FAQ section</strong> — "What should I wear?" "Is it suitable for children under 5?" "Can I take photos?" Each FAQ is a potential search query</li>
-        <li><strong>Schema markup</strong> — Structured data tells Google your prices, ratings, and availability, earning rich snippets in search results</li>
+        <li><strong>Clear pricing</strong>: Don't make visitors hunt for how much it costs. Display prices prominently</li>
+        <li><strong>Real-time availability</strong>: If possible, show which dates and times have spaces. Urgency drives bookings</li>
+        <li><strong>Mobile-optimised checkout</strong>: Most family bookings happen on phones during evening planning sessions</li>
+        <li><strong>FAQ section</strong>: "What should I wear?" "Is it suitable for children under 5?" "Can I take photos?" Each FAQ is a potential search query</li>
+        <li><strong>Schema markup</strong>: Structured data tells Google your prices, ratings, and availability, earning rich snippets in search results</li>
       </ul>
 
       <h2>Photography and Video: Your Unfair Advantage</h2>
 
-      <p>Wildlife attractions produce some of the most compelling visual content imaginable. An owl in flight, a falcon diving, a child's face lighting up as a bird lands on their glove—this content practically begs to be shared.</p>
+      <p>Wildlife attractions produce some of the most compelling visual content imaginable. An owl in flight, a falcon diving, a child's face lighting up as a bird lands on their glove: this content practically begs to be shared.</p>
 
       <p>Yet so many wildlife attractions fail to leverage this content for SEO. Here's how to change that:</p>
 
@@ -4931,7 +4931,7 @@ export const posts: BlogPost[] = [
           <li><strong style="color: white;">Write descriptive alt text:</strong> Every image should describe what's happening for both accessibility and Google</li>
           <li><strong style="color: white;">Create a photo gallery page:</strong> Optimised galleries rank in Google Images and drive traffic</li>
           <li><strong style="color: white;">Embed YouTube videos:</strong> A 60-second flying display clip on your homepage increases dwell time and engagement</li>
-          <li><strong style="color: white;">Encourage visitor photos:</strong> Create a branded hashtag and feature visitor photos on your site (with permission)—this is free content and social proof</li>
+          <li><strong style="color: white;">Encourage visitor photos:</strong> Create a branded hashtag and feature visitor photos on your site (with permission): this is free content and social proof</li>
         </ul>
       </div>
 
@@ -4939,7 +4939,7 @@ export const posts: BlogPost[] = [
 
       <h2>The Gift Experience Market</h2>
 
-      <p>One of the most underserved search markets for wildlife attractions is <strong>gift experiences</strong>. "Gift ideas for dad," "unique experience gifts Lancashire," "birthday gift ideas outdoors"—these searches spike before Christmas, Father's Day, and Valentine's Day.</p>
+      <p>One of the most underserved search markets for wildlife attractions is <strong>gift experiences</strong>. "Gift ideas for dad," "unique experience gifts Lancashire," "birthday gift ideas outdoors": these searches spike before Christmas, Father's Day, and Valentine's Day.</p>
 
       <p>A dedicated gift voucher page, optimised for experience-related gift keywords, can generate significant revenue during off-peak months. This is income that arrives before the visitor even sets foot on site, improving cash flow during quieter periods.</p>
 
@@ -4947,19 +4947,19 @@ export const posts: BlogPost[] = [
 
       <p>Wildlife sanctuaries have a unique content advantage: <strong>genuine expertise.</strong> The handlers who work with these birds know their behaviour, their conservation status, their history, and their biology. That knowledge is content gold.</p>
 
-      <p>A blog series profiling individual species—their hunting techniques, their role in British ecosystems, their conservation challenges—does three things simultaneously:</p>
+      <p>A blog series profiling individual species: their hunting techniques, their role in British ecosystems, their conservation challenges: does three things simultaneously:</p>
 
       <ul>
-        <li><strong>Ranks for educational searches</strong> — "Peregrine falcon UK conservation," "barn owl habitat Lancashire"</li>
-        <li><strong>Demonstrates expertise</strong> — Google's E-E-A-T guidelines reward content written by genuine experts</li>
-        <li><strong>Creates emotional connection</strong> — People who learn about a bird online are more likely to visit to see it in person</li>
+        <li><strong>Ranks for educational searches</strong>: "Peregrine falcon UK conservation," "barn owl habitat Lancashire"</li>
+        <li><strong>Demonstrates expertise</strong>: Google's E-E-A-T guidelines reward content written by genuine experts</li>
+        <li><strong>Creates emotional connection</strong>: People who learn about a bird online are more likely to visit to see it in person</li>
       </ul>
 
       <h2>Seasonal and Event-Based SEO</h2>
 
       <p>Wildlife attractions can create seasonal events that generate their own search traffic: owl evening experiences in autumn, Valentine's hawk walks, Easter holiday workshops for children, half-term activities. Each event is a new landing page, a new set of keywords, and a new reason for Google to crawl your site.</p>
 
-      <p>Don't just run events—<strong>publish them online months in advance.</strong> Google needs time to index and rank pages. A summer holiday event page published in March has three months to build authority before the search spike in June.</p>
+      <p>Don't just run events: <strong>publish them online months in advance.</strong> Google needs time to index and rank pages. A summer holiday event page published in March has three months to build authority before the search spike in June.</p>
 
       <div style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 1rem; padding: 2.5rem; margin: 3rem 0; text-align: center;">
         <h2 style="color: white; font-size: 1.875rem; font-weight: bold; margin-bottom: 1rem;">Ready to Soar Above the Aggregators?</h2>
@@ -4993,11 +4993,11 @@ export const posts: BlogPost[] = [
     image: "/images/southport-golf-clubs-seo.jpg",
     excerpt: "Southport sits on England's Golf Coast with world-class courses. Here's how golf clubs can attract members and green-fee visitors through smart SEO and content strategy.",
     content: `
-      <p>Southport doesn't just have golf courses. Southport <em>is</em> golf. The stretch of coastline known as England's Golf Coast is home to some of the finest links courses in the world—Royal Birkdale, Hillside, Southport & Ainsdale, Hesketh, and more. The Open Championship has visited this coast multiple times, putting Southport firmly on the global golfing map.</p>
+      <p>Southport doesn't just have golf courses. Southport <em>is</em> golf. The stretch of coastline known as England's Golf Coast is home to some of the finest links courses in the world: Royal Birkdale, Hillside, Southport & Ainsdale, Hesketh, and more. The Open Championship has visited this coast multiple times, putting Southport firmly on the global golfing map.</p>
 
       <p>But here's the thing: <strong>having a world-class reputation on the course doesn't automatically translate to world-class visibility online.</strong> Many golf clubs in the Southport area have websites that look like they were built in 2012, load slowly on mobile, and contain almost no content beyond a course tour and contact form.</p>
 
-      <p>Meanwhile, golfers are making decisions online. They're searching for green fees, reading course reviews, comparing <a href="/industries/gyms-fitness" class="text-blue-400 hover:text-blue-300 underline">membership packages</a>, and booking tee times—all on their phones. If your club isn't capturing those searches, someone else is.</p>
+      <p>Meanwhile, golfers are making decisions online. They're searching for green fees, reading course reviews, comparing <a href="/industries/gyms-fitness" class="text-blue-400 hover:text-blue-300 underline">membership packages</a>, and booking tee times: all on their phones. If your club isn't capturing those searches, someone else is.</p>
 
       <p>At <a href="/" class="text-blue-400 hover:text-blue-300 underline">Churchtown Media</a>, we're based right here on the Golf Coast. We understand the market, and we know how <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">targeted SEO</a> can fill tee sheets and membership waitlists.</p>
 
@@ -5033,7 +5033,7 @@ export const posts: BlogPost[] = [
 
       <p>Golfers are obsessive researchers. Before they book a round at an unfamiliar course, they want to know what they're in for. This is where <strong>hole-by-hole course guides</strong> become an incredibly powerful SEO asset.</p>
 
-      <p>A detailed course guide—covering each hole's yardage, par, key hazards, local tips, and a photograph—creates a content-rich page that targets dozens of long-tail keywords simultaneously:</p>
+      <p>A detailed course guide: covering each hole's yardage, par, key hazards, local tips, and a photograph: creates a content-rich page that targets dozens of long-tail keywords simultaneously:</p>
 
       <ul>
         <li><em>"Royal Birkdale hole 12 tips"</em></li>
@@ -5042,13 +5042,13 @@ export const posts: BlogPost[] = [
         <li><em>"Links golf strategy advice"</em></li>
       </ul>
 
-      <p>This content also keeps visitors on your site for extended periods—a positive signal to Google that your pages are genuinely useful. A golfer reading through 18 holes of detailed course notes might spend 10-15 minutes on your site. That dwell time matters.</p>
+      <p>This content also keeps visitors on your site for extended periods: a positive signal to Google that your pages are genuinely useful. A golfer reading through 18 holes of detailed course notes might spend 10-15 minutes on your site. That dwell time matters.</p>
 
       <h2>Online Tee-Time Booking: The Non-Negotiable</h2>
 
       <p>If your club doesn't offer online tee-time booking in 2026, you're losing business to clubs that do. It's that simple.</p>
 
-      <p>The modern golfer—especially the visiting green-fee player—expects to check availability and book a tee time at midnight on a Tuesday, not phone the pro shop during office hours. Online booking systems also create SEO advantages:</p>
+      <p>The modern golfer: especially the visiting green-fee player: expects to check availability and book a tee time at midnight on a Tuesday, not phone the pro shop during office hours. Online booking systems also create SEO advantages:</p>
 
       <ul>
         <li><strong>Structured data:</strong> Booking systems can generate schema markup that shows availability directly in Google search results</li>
@@ -5059,23 +5059,23 @@ export const posts: BlogPost[] = [
 
       <h2>Membership Enquiry Optimisation</h2>
 
-      <p>For most clubs, membership is the highest-value conversion. A single new member can be worth thousands of pounds per year for decades. Yet many clubs treat their membership page as an afterthought—a paragraph of text and a phone number.</p>
+      <p>For most clubs, membership is the highest-value conversion. A single new member can be worth thousands of pounds per year for decades. Yet many clubs treat their membership page as an afterthought: a paragraph of text and a phone number.</p>
 
       <h3>What a High-Converting Membership Page Needs</h3>
 
       <ul>
-        <li><strong>Membership categories clearly explained:</strong> Full, five-day, flexible, junior, social—with pricing or "from" pricing</li>
+        <li><strong>Membership categories clearly explained:</strong> Full, five-day, flexible, junior, social: with pricing or "from" pricing</li>
         <li><strong>What's included:</strong> Course access, competitions, clubhouse facilities, social events, reciprocal arrangements</li>
         <li><strong>The club's personality:</strong> Photos of members, quotes, a sense of the community atmosphere</li>
         <li><strong>A low-commitment first step:</strong> "Book a Tour" or "Try Before You Join" is far less intimidating than "Apply for Membership"</li>
-        <li><strong>FAQ section:</strong> "Can I play during a trial period?" "Is there a joining fee?" "What's the waiting list?" — Each FAQ is a search query</li>
+        <li><strong>FAQ section:</strong> "Can I play during a trial period?" "Is there a joining fee?" "What's the waiting list?": Each FAQ is a search query</li>
       </ul>
 
       <p>Optimise this page for "golf club membership Southport," "join golf club Merseyside," and similar terms. These are high-intent searches from people actively considering spending significant money with you.</p>
 
       <h2>Leveraging the Golf Coast Brand</h2>
 
-      <p>Southport's identity as England's Golf Coast is a rising tide that lifts all boats. Content that references the broader Golf Coast—multi-course itineraries, comparisons between local links courses, Open Championship history—positions your club within a prestigious context while targeting valuable search terms.</p>
+      <p>Southport's identity as England's Golf Coast is a rising tide that lifts all boats. Content that references the broader Golf Coast: multi-course itineraries, comparisons between local links courses, Open Championship history: positions your club within a prestigious context while targeting valuable search terms.</p>
 
       <div style="background: #1e293b; border-left: 4px solid #60a5fa; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
         <h3 style="color: #60a5fa; font-weight: bold; margin-bottom: 0.75rem;">Content Ideas for the Golf Coast</h3>
@@ -5087,11 +5087,11 @@ export const posts: BlogPost[] = [
         </ul>
       </div>
 
-      <p>This type of destination content attracts golf tourists who are planning trips—the highest-value visitors outside of membership candidates.</p>
+      <p>This type of destination content attracts golf tourists who are planning trips: the highest-value visitors outside of membership candidates.</p>
 
       <h2>Reviews and Social Proof</h2>
 
-      <p>Golfers trust peer reviews more than marketing copy. Google reviews, course rating sites, and social media recommendations all influence where golfers choose to play. A proactive review strategy—asking satisfied green-fee players and members to leave Google reviews—directly impacts your local search rankings and click-through rates.</p>
+      <p>Golfers trust peer reviews more than marketing copy. Google reviews, course rating sites, and social media recommendations all influence where golfers choose to play. A proactive review strategy: asking satisfied green-fee players and members to leave Google reviews: directly impacts your local search rankings and click-through rates.</p>
 
       <p>Responding to every review, positive or negative, signals to both Google and potential visitors that your club actively engages with its community. A thoughtful response to a critical review can be more persuasive than ten five-star ratings.</p>
 
@@ -5127,9 +5127,9 @@ export const posts: BlogPost[] = [
     image: "/images/southport-fair-seo.jpg",
     excerpt: "Southport's fairground and Pleasureland draw families all year round. Here's how entertainment venues and seasonal attractions can capture family search traffic with smart SEO.",
     content: `
-      <p>The smell of candyfloss, the screech of a rollercoaster, the hopeful cry of a child who's <em>definitely</em> tall enough for that ride this time. Southport's fairground scene—anchored by Pleasureland and the seasonal fairs that pop up along the seafront—is a cornerstone of the town's family entertainment offering.</p>
+      <p>The smell of candyfloss, the screech of a rollercoaster, the hopeful cry of a child who's <em>definitely</em> tall enough for that ride this time. Southport's fairground scene: anchored by Pleasureland and the seasonal fairs that pop up along the seafront: is a cornerstone of the town's family entertainment offering.</p>
 
-      <p>But here's what many entertainment venues don't realise: <strong>the decision to visit a fairground almost always starts with a search.</strong> "What's on in Southport this weekend?" "Southport fair opening times." "Rides for toddlers Southport." These searches happen thousands of times during peak season—and the businesses that capture them fill their queues.</p>
+      <p>But here's what many entertainment venues don't realise: <strong>the decision to visit a fairground almost always starts with a search.</strong> "What's on in Southport this weekend?" "Southport fair opening times." "Rides for toddlers Southport." These searches happen thousands of times during peak season: and the businesses that capture them fill their queues.</p>
 
       <p>At <a href="/" class="text-blue-400 hover:text-blue-300 underline">Churchtown Media</a>, we help Southport's leisure and entertainment businesses get found by the families who are actively looking for fun. Here's how <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">event-driven SEO</a> works for fairgrounds and attractions.</p>
 
@@ -5142,15 +5142,15 @@ export const posts: BlogPost[] = [
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
           <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
             <h4 style="color: #60a5fa; font-weight: bold; margin-bottom: 0.5rem;">Wednesday Evening</h4>
-            <p style="color: #cbd5e1; font-size: 0.875rem; line-height: 1.6;">"Things to do with kids Southport this weekend" — The mid-week planning search. Parents deciding Saturday's activity.</p>
+            <p style="color: #cbd5e1; font-size: 0.875rem; line-height: 1.6;">"Things to do with kids Southport this weekend": The mid-week planning search. Parents deciding Saturday's activity.</p>
           </div>
           <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
             <h4 style="color: #60a5fa; font-weight: bold; margin-bottom: 0.5rem;">Saturday Morning</h4>
-            <p style="color: #cbd5e1; font-size: 0.875rem; line-height: 1.6;">"Southport fair open today" — The confirmation search. They've already decided; they just need details.</p>
+            <p style="color: #cbd5e1; font-size: 0.875rem; line-height: 1.6;">"Southport fair open today": The confirmation search. They've already decided; they just need details.</p>
           </div>
           <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
             <h4 style="color: #60a5fa; font-weight: bold; margin-bottom: 0.5rem;">On Arrival</h4>
-            <p style="color: #cbd5e1; font-size: 0.875rem; line-height: 1.6;">"Southport fair ride prices" — The on-site search. Mobile-only, immediate need for practical information.</p>
+            <p style="color: #cbd5e1; font-size: 0.875rem; line-height: 1.6;">"Southport fair ride prices": The on-site search. Mobile-only, immediate need for practical information.</p>
           </div>
         </div>
       </div>
@@ -5161,7 +5161,7 @@ export const posts: BlogPost[] = [
 
       <p>Let's be blunt: if your entertainment venue's website isn't fast and functional on a phone, you might as well not have one.</p>
 
-      <p>Family entertainment searches are overwhelmingly mobile. Parents search in the car, at the breakfast table, or while walking along the Southport seafront. They need information <em>immediately</em>—and they'll bounce to a competitor if your site takes more than three seconds to load.</p>
+      <p>Family entertainment searches are overwhelmingly mobile. Parents search in the car, at the breakfast table, or while walking along the Southport seafront. They need information <em>immediately</em>: and they'll bounce to a competitor if your site takes more than three seconds to load.</p>
 
       <h3>The Mobile Essentials for Entertainment Venues</h3>
 
@@ -5189,7 +5189,7 @@ export const posts: BlogPost[] = [
       </ul>
 
       <div style="background: #1e293b; border-left: 4px solid #60a5fa; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
-        <p style="color: #cbd5e1; line-height: 1.7;"><strong style="color: white;">Pro tip:</strong> Use Event schema markup on your calendar pages. This structured data tells Google exactly when your events are happening, what they cost, and where they are—making it far more likely your events appear in Google's event search results and rich snippets.</p>
+        <p style="color: #cbd5e1; line-height: 1.7;"><strong style="color: white;">Pro tip:</strong> Use Event schema markup on your calendar pages. This structured data tells Google exactly when your events are happening, what they cost, and where they are: making it far more likely your events appear in Google's event search results and rich snippets.</p>
       </div>
 
       <h2>Competing for "Family Day Out" Searches</h2>
@@ -5197,22 +5197,22 @@ export const posts: BlogPost[] = [
       <p>The search term "family day out Southport" is fiercely competitive. VisitSouthport, TripAdvisor, and national day-out aggregators all target this term. But there are dozens of variations where local businesses can compete:</p>
 
       <ul>
-        <li><em>"Cheap family day out Southport"</em> — Budget-conscious families searching for value</li>
-        <li><em>"Toddler friendly activities Southport"</em> — Age-specific searches that big aggregators don't target well</li>
-        <li><em>"Southport rainy day family activities"</em> — Weather-driven searches with high intent</li>
-        <li><em>"Things to do Southport school holidays"</em> — Seasonal searches that spike predictably</li>
-        <li><em>"Southport Pleasureland reviews"</em> — People seeking social proof before committing</li>
+        <li><em>"Cheap family day out Southport"</em>: Budget-conscious families searching for value</li>
+        <li><em>"Toddler friendly activities Southport"</em>: Age-specific searches that big aggregators don't target well</li>
+        <li><em>"Southport rainy day family activities"</em>: Weather-driven searches with high intent</li>
+        <li><em>"Things to do Southport school holidays"</em>: Seasonal searches that spike predictably</li>
+        <li><em>"Southport Pleasureland reviews"</em>: People seeking social proof before committing</li>
       </ul>
 
       <p>Create a dedicated landing page for each of these themes. "Toddler Rides at Southport Fair: What's Suitable for Under 5s" is a page that answers a real question, targets a specific search, and leads directly to your venue.</p>
 
       <h2>The Power of User-Generated Content</h2>
 
-      <p>Families love sharing photos at fairs. The oversized teddy bear they won, the terrified expression on the log flume, the candyfloss bigger than their child's head. This content is marketing gold—and it's free.</p>
+      <p>Families love sharing photos at fairs. The oversized teddy bear they won, the terrified expression on the log flume, the candyfloss bigger than their child's head. This content is marketing gold: and it's free.</p>
 
       <p>Encourage visitors to tag your venue on social media. Feature the best photos on your website (with permission). Create a "Visitor Gallery" page. User-generated content provides social proof, fresh imagery, and engagement signals that search engines value.</p>
 
-      <p>Even better: a branded photo spot—a fairground-themed backdrop or a giant ride replica—gives visitors a reason to photograph and share. Every tagged post is a micro-endorsement that drives branded searches.</p>
+      <p>Even better: a branded photo spot: a fairground-themed backdrop or a giant ride replica: gives visitors a reason to photograph and share. Every tagged post is a micro-endorsement that drives branded searches.</p>
 
       <h2>Year-Round Strategy, Not Just Summer</h2>
 
@@ -5260,24 +5260,24 @@ export const posts: BlogPost[] = [
     content: `
       <p>It's a grey Tuesday morning in Southport. Rain's battering the windows. A parent opens their phone and types: <em>"Indoor activities Southport today."</em> Another searches <em>"Swimming pool near me."</em> A third goes directly for <em>"Splashworld Southport opening times."</em></p>
 
-      <p>In that moment—the rainy-day-rescue moment—water parks and aquatic leisure facilities have an enormous advantage. While outdoor attractions wilt in the rain, indoor water parks <em>thrive</em>. But only if families can find them online at that exact moment of need.</p>
+      <p>In that moment: the rainy-day-rescue moment: water parks and aquatic leisure facilities have an enormous advantage. While outdoor attractions wilt in the rain, indoor water parks <em>thrive</em>. But only if families can find them online at that exact moment of need.</p>
 
       <p>At <a href="/" class="text-blue-400 hover:text-blue-300 underline">Churchtown Media</a>, we help Southport's leisure businesses capture those high-intent searches. Here's how <a href="/services/seo" class="text-blue-400 hover:text-blue-300 underline">targeted SEO</a> can keep your water park busy whatever the weather.</p>
 
       <h2>The Rainy-Day Search Spike</h2>
 
-      <p>Here's something fascinating about aquatic leisure SEO: <strong>bad weather is your best marketing.</strong> When the forecast turns wet, search traffic for indoor activities doesn't just increase—it surges. And unlike sunny-day searches that build gradually, rainy-day searches spike within hours.</p>
+      <p>Here's something fascinating about aquatic leisure SEO: <strong>bad weather is your best marketing.</strong> When the forecast turns wet, search traffic for indoor activities doesn't just increase: it surges. And unlike sunny-day searches that build gradually, rainy-day searches spike within hours.</p>
 
       <p>This creates a unique SEO challenge and opportunity. You need content that's <em>already indexed and ranking</em> when the rain hits. You can't publish a "rainy day activities" page on a wet Wednesday morning and expect it to rank by lunchtime.</p>
 
       <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
         <h3 style="color: #60a5fa; font-size: 1.25rem; font-weight: bold; margin-bottom: 1rem;">Rainy-Day Keywords to Own</h3>
         <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
-          <li><strong style="color: white;">"Indoor activities Southport"</strong> — The broadest rainy-day search. Extremely competitive but essential to target</li>
-          <li><strong style="color: white;">"Rainy day Southport kids"</strong> — Specific to families. Lower competition, high intent</li>
-          <li><strong style="color: white;">"Swimming pool Southport"</strong> — Year-round volume. People search this in every season</li>
-          <li><strong style="color: white;">"Water park near Liverpool"</strong> — Captures the catchment area beyond Southport itself</li>
-          <li><strong style="color: white;">"Things to do Southport bad weather"</strong> — Conversational search pattern typical of mobile voice search</li>
+          <li><strong style="color: white;">"Indoor activities Southport"</strong>: The broadest rainy-day search. Extremely competitive but essential to target</li>
+          <li><strong style="color: white;">"Rainy day Southport kids"</strong>: Specific to families. Lower competition, high intent</li>
+          <li><strong style="color: white;">"Swimming pool Southport"</strong>: Year-round volume. People search this in every season</li>
+          <li><strong style="color: white;">"Water park near Liverpool"</strong>: Captures the catchment area beyond Southport itself</li>
+          <li><strong style="color: white;">"Things to do Southport bad weather"</strong>: Conversational search pattern typical of mobile voice search</li>
         </ul>
       </div>
 
@@ -5289,13 +5289,13 @@ export const posts: BlogPost[] = [
 
       <h3>1. Pricing Pages</h3>
 
-      <p>People want to know what it costs <em>before</em> they call or visit. A clear, detailed pricing page is one of the highest-traffic pages on any leisure facility's website—yet many facilities either don't publish prices online or bury them in a PDF download.</p>
+      <p>People want to know what it costs <em>before</em> they call or visit. A clear, detailed pricing page is one of the highest-traffic pages on any leisure facility's website: yet many facilities either don't publish prices online or bury them in a PDF download.</p>
 
       <ul>
         <li>Display all pricing clearly on a dedicated page</li>
         <li>Include family tickets, off-peak discounts, and any loyalty offers</li>
         <li>Use <strong>price schema markup</strong> so Google can display pricing directly in search results</li>
-        <li>Update seasonally—an outdated price list erodes trust faster than no price list at all</li>
+        <li>Update seasonally: an outdated price list erodes trust faster than no price list at all</li>
       </ul>
 
       <h3>2. Opening Times</h3>
@@ -5330,15 +5330,15 @@ export const posts: BlogPost[] = [
 
       <h2>Competing for "Family Day Out" Searches</h2>
 
-      <p>The search term "family day out" is one of the most valuable in the leisure industry. Families searching this term are ready to spend money—they just haven't decided where yet.</p>
+      <p>The search term "family day out" is one of the most valuable in the leisure industry. Families searching this term are ready to spend money: they just haven't decided where yet.</p>
 
-      <p>For water parks and aquatic facilities, the key is to position yourself as the <strong>reliable, weather-proof option</strong>. Content that explicitly addresses the weather advantage—"Rain or Shine: Why a Water Park Is the Perfect Family Day Out"—captures a specific decision-making angle that competitors miss.</p>
+      <p>For water parks and aquatic facilities, the key is to position yourself as the <strong>reliable, weather-proof option</strong>. Content that explicitly addresses the weather advantage: "Rain or Shine: Why a Water Park Is the Perfect Family Day Out": captures a specific decision-making angle that competitors miss.</p>
 
       <p>Comparison content also works well: "Water Park vs Beach: Which Is Better for a Family Day Out in Southport?" This type of content targets broad search terms while steering the reader toward your facility as the practical choice.</p>
 
       <h2>Birthday Parties and Group Bookings</h2>
 
-      <p>Party bookings are a high-value revenue stream that starts online. "Birthday party ideas Southport," "swimming party Southport," "kids party venues near me"—these searches spike before every school holiday and represent bookings worth hundreds of pounds each.</p>
+      <p>Party bookings are a high-value revenue stream that starts online. "Birthday party ideas Southport," "swimming party Southport," "kids party venues near me": these searches spike before every school holiday and represent bookings worth hundreds of pounds each.</p>
 
       <p>Create a dedicated party page with:</p>
 
@@ -5346,22 +5346,22 @@ export const posts: BlogPost[] = [
         <li>Party packages clearly described with pricing</li>
         <li>Photos of previous parties (with permission) for social proof</li>
         <li>Age suitability guidance</li>
-        <li>An online enquiry or booking form—not just a phone number</li>
+        <li>An online enquiry or booking form: not just a phone number</li>
         <li>Testimonials from parents who've hosted parties at your venue</li>
       </ul>
 
       <h2>Google Business Profile: Your Secret Weapon</h2>
 
-      <p>For leisure facilities, your Google Business Profile is often the first thing searchers see—before your website, before TripAdvisor, before anything else. It appears in the map pack, in knowledge panels, and in "near me" searches.</p>
+      <p>For leisure facilities, your Google Business Profile is often the first thing searchers see: before your website, before TripAdvisor, before anything else. It appears in the map pack, in knowledge panels, and in "near me" searches.</p>
 
       <p>Optimise it relentlessly:</p>
 
       <ul>
-        <li><strong>Post weekly updates</strong> — Google rewards active profiles with higher visibility</li>
-        <li><strong>Respond to every review</strong> — Show prospective visitors you care about their experience</li>
-        <li><strong>Use all available categories</strong> — "Water Park," "Swimming Pool," "Leisure Centre," "Children's Party Service"</li>
-        <li><strong>Upload fresh photos monthly</strong> — Profiles with recent photos get more clicks</li>
-        <li><strong>Keep hours accurate</strong> — Nothing damages trust like showing up to find a closed venue</li>
+        <li><strong>Post weekly updates</strong>: Google rewards active profiles with higher visibility</li>
+        <li><strong>Respond to every review</strong>: Show prospective visitors you care about their experience</li>
+        <li><strong>Use all available categories</strong>: "Water Park," "Swimming Pool," "Leisure Centre," "Children's Party Service"</li>
+        <li><strong>Upload fresh photos monthly</strong>: Profiles with recent photos get more clicks</li>
+        <li><strong>Keep hours accurate</strong>: Nothing damages trust like showing up to find a closed venue</li>
       </ul>
 
       <div style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 1rem; padding: 2.5rem; margin: 3rem 0; text-align: center;">
@@ -5379,7 +5379,7 @@ export const posts: BlogPost[] = [
           </a>
         </div>
         <p style="color: rgba(255,255,255,0.8); font-size: 0.875rem; margin-top: 1.5rem;">
-          Based in Southport. We know what local families search for—rain or shine.
+          Based in Southport. We know what local families search for: rain or shine.
         </p>
       </div>
 
@@ -5396,7 +5396,7 @@ export const posts: BlogPost[] = [
     image: "/images/southport-canal-barges-seo.jpg",
     excerpt: "Canal barge hire and waterway tourism near Southport is a niche market with huge SEO potential. Here's how to dominate your vertical with long-tail keywords and trip planning content.",
     content: `
-      <p>There's a stretch of the Leeds-Liverpool Canal near Southport where the world slows down. The narrowboats drift past farmland, under stone bridges, past pubs with towpath gardens, and through some of Lancashire's quietest countryside. It's the antithesis of doom-scrolling—and that's exactly why people search for it.</p>
+      <p>There's a stretch of the Leeds-Liverpool Canal near Southport where the world slows down. The narrowboats drift past farmland, under stone bridges, past pubs with towpath gardens, and through some of Lancashire's quietest countryside. It's the antithesis of doom-scrolling: and that's exactly why people search for it.</p>
 
       <p>Canal barge hire, narrowboat holidays, and waterway tourism represent one of the most fascinating niches in travel SEO. The audience is specific, the competition is low, and the long-tail keyword opportunities are enormous. If you operate a canal barge hire business, run towpath-side accommodation, manage a canal-side café, or offer any service connected to the waterways near Southport, you're sitting on an SEO goldmine.</p>
 
@@ -5404,7 +5404,7 @@ export const posts: BlogPost[] = [
 
       <h2>Why Niche Beats Broad in Tourism SEO</h2>
 
-      <p>Big tourism websites—VisitBritain, TripAdvisor, Airbnb—own the broad searches. "Holidays in Lancashire" is a losing battle for a small canal boat operator. But here's the secret: <strong>niche tourism businesses don't need broad traffic. They need the right traffic.</strong></p>
+      <p>Big tourism websites: VisitBritain, TripAdvisor, Airbnb: own the broad searches. "Holidays in Lancashire" is a losing battle for a small canal boat operator. But here's the secret: <strong>niche tourism businesses don't need broad traffic. They need the right traffic.</strong></p>
 
       <p>Consider the difference:</p>
 
@@ -5413,9 +5413,9 @@ export const posts: BlogPost[] = [
           <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
             <h3 style="color: #ef4444; font-weight: bold; margin-bottom: 0.75rem;">Broad Terms (Hard to Win)</h3>
             <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1rem;">
-              <li>"Holiday Lancashire" — millions of results</li>
-              <li>"Things to do near Southport" — owned by aggregators</li>
-              <li>"Boat hire UK" — national competition</li>
+              <li>"Holiday Lancashire": millions of results</li>
+              <li>"Things to do near Southport": owned by aggregators</li>
+              <li>"Boat hire UK": national competition</li>
             </ul>
           </div>
           <div style="background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
@@ -5443,41 +5443,41 @@ export const posts: BlogPost[] = [
       <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
         <h3 style="color: #60a5fa; font-size: 1.25rem; font-weight: bold; margin-bottom: 1rem;">Trip Planning Content Ideas</h3>
         <ul style="color: #cbd5e1; line-height: 1.8; margin-left: 1.5rem;">
-          <li><strong style="color: white;">"Leeds-Liverpool Canal: A Complete Guide"</strong> — The definitive resource. Cover history, route, highlights, and practicalities</li>
-          <li><strong style="color: white;">"A Weekend on the Canal Near Southport"</strong> — A sample itinerary that showcases local stops and attractions</li>
-          <li><strong style="color: white;">"First Time on a Narrowboat? What to Expect"</strong> — Beginner-friendly content that builds confidence and reduces booking hesitation</li>
-          <li><strong style="color: white;">"Best Canal-Side Pubs Between Burscough and Tarleton"</strong> — Local knowledge content that no aggregator can replicate</li>
-          <li><strong style="color: white;">"Dog-Friendly Canal Boating in Lancashire"</strong> — Targeting a surprisingly large search niche</li>
-          <li><strong style="color: white;">"Canal Boat Packing List: What to Bring"</strong> — Practical content that earns bookmarks and repeat visits</li>
+          <li><strong style="color: white;">"Leeds-Liverpool Canal: A Complete Guide"</strong>: The definitive resource. Cover history, route, highlights, and practicalities</li>
+          <li><strong style="color: white;">"A Weekend on the Canal Near Southport"</strong>: A sample itinerary that showcases local stops and attractions</li>
+          <li><strong style="color: white;">"First Time on a Narrowboat? What to Expect"</strong>: Beginner-friendly content that builds confidence and reduces booking hesitation</li>
+          <li><strong style="color: white;">"Best Canal-Side Pubs Between Burscough and Tarleton"</strong>: Local knowledge content that no aggregator can replicate</li>
+          <li><strong style="color: white;">"Dog-Friendly Canal Boating in Lancashire"</strong>: Targeting a surprisingly large search niche</li>
+          <li><strong style="color: white;">"Canal Boat Packing List: What to Bring"</strong>: Practical content that earns bookmarks and repeat visits</li>
         </ul>
       </div>
 
-      <p>This is content that positions you as the expert, answers real questions, and creates a natural pathway from "researching canal holidays" to "booking with you." It's not pushy—it's helpful. And helpful content is exactly what Google rewards.</p>
+      <p>This is content that positions you as the expert, answers real questions, and creates a natural pathway from "researching canal holidays" to "booking with you." It's not pushy: it's helpful. And helpful content is exactly what Google rewards.</p>
 
       <h2>Local Knowledge as a Competitive Moat</h2>
 
       <p>Here's something no national booking platform can replicate: <strong>you know the canal.</strong> You know which stretch is prettiest in autumn. You know which lock is tricky for beginners. You know where to moor for the best sunset. You know the farmer who sells eggs at the towpath gate.</p>
 
-      <p>This local knowledge is an SEO superpower. Content that includes specific, experiential detail—the kind that only someone who's actually been there can write—is exactly what Google's Helpful Content system is designed to reward. Generic content written by someone who's never set foot on a narrowboat simply can't compete with authentic, local expertise.</p>
+      <p>This local knowledge is an SEO superpower. Content that includes specific, experiential detail: the kind that only someone who's actually been there can write: is exactly what Google's Helpful Content system is designed to reward. Generic content written by someone who's never set foot on a narrowboat simply can't compete with authentic, local expertise.</p>
 
       <h3>Examples of Local Knowledge Content</h3>
 
       <ul>
-        <li><strong>"The Rufford Branch: A Hidden Gem on the Leeds-Liverpool Canal"</strong> — Highlight a specific section with insider tips</li>
-        <li><strong>"Wildlife You'll Spot on the Canal Near Southport"</strong> — Kingfishers, herons, water voles—nature-interested boaters will love this</li>
-        <li><strong>"Navigating Tarleton Lock: A Step-by-Step Guide"</strong> — Practical content for nervous first-timers</li>
-        <li><strong>"Seasonal Canal Cruising: What's Different in Autumn vs Summer?"</strong> — Extending your content across all four seasons</li>
+        <li><strong>"The Rufford Branch: A Hidden Gem on the Leeds-Liverpool Canal"</strong>: Highlight a specific section with insider tips</li>
+        <li><strong>"Wildlife You'll Spot on the Canal Near Southport"</strong>: Kingfishers, herons, water voles: nature-interested boaters will love this</li>
+        <li><strong>"Navigating Tarleton Lock: A Step-by-Step Guide"</strong>: Practical content for nervous first-timers</li>
+        <li><strong>"Seasonal Canal Cruising: What's Different in Autumn vs Summer?"</strong>: Extending your content across all four seasons</li>
       </ul>
 
       <h2>Visual Storytelling on the Waterways</h2>
 
-      <p>Canal boats are inherently photogenic. Misty morning moorings, golden hour on the towpath, colourful narrowboats reflected in still water—this imagery sells the experience better than any sales copy could.</p>
+      <p>Canal boats are inherently photogenic. Misty morning moorings, golden hour on the towpath, colourful narrowboats reflected in still water: this imagery sells the experience better than any sales copy could.</p>
 
       <p>Invest in quality photography and video content:</p>
 
       <ul>
         <li><strong>Drone footage</strong> of narrowboats cruising through the Lancashire countryside creates stunning hero content</li>
-        <li><strong>Time-lapse videos</strong> of a day on the canal—sunrise to sunset—perform exceptionally well on YouTube and social media</li>
+        <li><strong>Time-lapse videos</strong> of a day on the canal: sunrise to sunset: perform exceptionally well on YouTube and social media</li>
         <li><strong>Interior photos</strong> that show the comfort of modern narrowboats dispel common misconceptions about canal boating</li>
         <li><strong>Seasonal photography</strong> showcasing the same stretch of canal in different seasons demonstrates year-round appeal</li>
       </ul>
@@ -5486,9 +5486,9 @@ export const posts: BlogPost[] = [
 
       <h2>Capturing the "Slow Travel" Movement</h2>
 
-      <p>Canal boating sits perfectly within the growing <strong>"slow travel" trend</strong>—a movement that values experience over speed, connection over convenience. This trend has its own search vocabulary: "slow travel UK," "digital detox holiday," "screen-free family holiday," "unplugged weekend Lancashire."</p>
+      <p>Canal boating sits perfectly within the growing <strong>"slow travel" trend</strong>: a movement that values experience over speed, connection over convenience. This trend has its own search vocabulary: "slow travel UK," "digital detox holiday," "screen-free family holiday," "unplugged weekend Lancashire."</p>
 
-      <p>Content that positions canal boating as the ultimate slow travel experience taps into this growing search trend. It's not just about selling boat hire—it's about selling an antidote to modern life. And that's a story people actively search for.</p>
+      <p>Content that positions canal boating as the ultimate slow travel experience taps into this growing search trend. It's not just about selling boat hire: it's about selling an antidote to modern life. And that's a story people actively search for.</p>
 
       <div style="background: #1e293b; border-left: 4px solid #60a5fa; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem;">
         <p style="color: #cbd5e1; line-height: 1.7;"><strong style="color: white;">The opportunity:</strong> "Slow travel" and "digital detox" searches have been rising steadily year-on-year. Canal boat businesses that align their content with these trends will capture an audience that's already primed to book a low-tech, nature-focused holiday.</p>
@@ -5501,7 +5501,7 @@ export const posts: BlogPost[] = [
       <ul>
         <li><strong>Spring:</strong> Wildflowers along the towpath, longer daylight hours returning, Easter escapes</li>
         <li><strong>Summer:</strong> Peak season for family trips and holiday bookings</li>
-        <li><strong>Autumn:</strong> Stunning foliage, quieter waterways, cosy evenings on board—arguably the most photogenic season</li>
+        <li><strong>Autumn:</strong> Stunning foliage, quieter waterways, cosy evenings on board: arguably the most photogenic season</li>
         <li><strong>Winter:</strong> Festive canal trips, winter walking holidays, New Year getaways</li>
       </ul>
 
@@ -5522,7 +5522,7 @@ export const posts: BlogPost[] = [
           </a>
         </div>
         <p style="color: rgba(255,255,255,0.8); font-size: 0.875rem; margin-top: 1.5rem;">
-          We're based in Churchtown—right by the canal. We know this waterway and this market.
+          We're based in Churchtown: right by the canal. We know this waterway and this market.
         </p>
       </div>
 
@@ -5540,7 +5540,7 @@ export const posts: BlogPost[] = [
     content: `
       <p>Wigan doesn't get talked about much in the digital marketing world. That's partly why it's an opportunity.</p>
 
-      <p>Most SEO agencies in the North West focus their content on Manchester, Liverpool, and Leeds. The big-population, big-competition cities. Wigan sits in between all of them — 330,000 people, a strong local economy, good transport links — and most of its businesses are effectively invisible online.</p>
+      <p>Most SEO agencies in the North West focus their content on Manchester, Liverpool, and Leeds. The big-population, big-competition cities. Wigan sits in between all of them: 330,000 people, a strong local economy, good transport links: and most of its businesses are effectively invisible online.</p>
 
       <p>I've worked with businesses across the region for 20 years. The pattern is consistent: the further you get from a major city, the worse the SEO gets. Not because the businesses are less good, but because they've either never been properly advised, or they've been sold something that didn't work and gave up.</p>
 
@@ -5583,31 +5583,31 @@ export const posts: BlogPost[] = [
               <td style="padding: 0.75rem 1rem;">seo wigan</td>
               <td style="padding: 0.75rem 1rem; text-align: center;">210</td>
               <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80;">Low</td>
-              <td style="padding: 0.75rem 1rem;">High — few authoritative local competitors</td>
+              <td style="padding: 0.75rem 1rem;">High: few authoritative local competitors</td>
             </tr>
             <tr style="border-bottom: 1px solid #1e293b; background: #0f172a;">
               <td style="padding: 0.75rem 1rem;">web design wigan</td>
               <td style="padding: 0.75rem 1rem; text-align: center;">320</td>
               <td style="padding: 0.75rem 1rem; text-align: center; color: #fbbf24;">Medium</td>
-              <td style="padding: 0.75rem 1rem;">High — dominated by generic agencies</td>
+              <td style="padding: 0.75rem 1rem;">High: dominated by generic agencies</td>
             </tr>
             <tr style="border-bottom: 1px solid #1e293b;">
               <td style="padding: 0.75rem 1rem;">seo company wigan</td>
               <td style="padding: 0.75rem 1rem; text-align: center;">110</td>
               <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80;">Low</td>
-              <td style="padding: 0.75rem 1rem;">High — most results are weak aggregators</td>
+              <td style="padding: 0.75rem 1rem;">High: most results are weak aggregators</td>
             </tr>
             <tr style="border-bottom: 1px solid #1e293b; background: #0f172a;">
               <td style="padding: 0.75rem 1rem;">digital marketing wigan</td>
               <td style="padding: 0.75rem 1rem; text-align: center;">260</td>
               <td style="padding: 0.75rem 1rem; text-align: center; color: #fbbf24;">Medium</td>
-              <td style="padding: 0.75rem 1rem;">Good — branded agencies rank but lack depth</td>
+              <td style="padding: 0.75rem 1rem;">Good: branded agencies rank but lack depth</td>
             </tr>
             <tr style="border-bottom: 1px solid #1e293b;">
               <td style="padding: 0.75rem 1rem;">website design wigan</td>
               <td style="padding: 0.75rem 1rem; text-align: center;">170</td>
               <td style="padding: 0.75rem 1rem; text-align: center; color: #4ade80;">Low</td>
-              <td style="padding: 0.75rem 1rem;">High — thin competition</td>
+              <td style="padding: 0.75rem 1rem;">High: thin competition</td>
             </tr>
           </tbody>
         </table>
@@ -5627,7 +5627,7 @@ export const posts: BlogPost[] = [
 
       <ul>
         <li>A fully completed Google Business Profile with consistent business name, address, and phone number</li>
-        <li>A genuine Wigan address — not a virtual office</li>
+        <li>A genuine Wigan address: not a virtual office</li>
         <li>Regular posts, photos, and Q&amp;A activity on the profile</li>
         <li>A meaningful number of genuine reviews with responses</li>
         <li>On-site content that references Wigan specifically, not just generic services</li>
@@ -5653,7 +5653,7 @@ export const posts: BlogPost[] = [
 
       <h2>The Wigan Opportunity in 2026</h2>
 
-      <p>Here's the honest picture. Wigan has low SEO competition relative to its population and commercial activity. The businesses ranking for most local terms in 2026 are there largely by default — they turned up, others didn't. That changes as more businesses take digital seriously.</p>
+      <p>Here's the honest picture. Wigan has low SEO competition relative to its population and commercial activity. The businesses ranking for most local terms in 2026 are there largely by default: they turned up, others didn't. That changes as more businesses take digital seriously.</p>
 
       <p>The time to build search authority is before it gets harder, not after. An SEO gap takes months to close once a competitor has established it. A business that starts now is competing against the 2024 version of the market, not the 2027 version.</p>
 
@@ -5673,7 +5673,7 @@ export const posts: BlogPost[] = [
     content: `
       <p>I'm going to start with the data because it makes the point better than any explanation.</p>
 
-      <p>In February 2026, we took on Alotek Shelters as an SEO client. Within 30 days, they were appearing in Google's AI Overview for every core commercial keyword in their sector — bus shelter suppliers, covered walkway manufacturers, outdoor shelter companies. Every term. Not position one in organic results. The AI Overview panel itself, which sits above everything else on the page.</p>
+      <p>In February 2026, we took on Alotek Shelters as an SEO client. Within 30 days, they were appearing in Google's AI Overview for every core commercial keyword in their sector: bus shelter suppliers, covered walkway manufacturers, outdoor shelter companies. Every term. Not position one in organic results. The AI Overview panel itself, which sits above everything else on the page.</p>
 
       <p>This wasn't accidental. It was the result of a specific approach to content and technical SEO that we now apply as standard. Here's what we know about how it works.</p>
 
@@ -5691,7 +5691,7 @@ export const posts: BlogPost[] = [
 
       <h2>What Google's AI Actually Looks For</h2>
 
-      <p>Based on what we've observed across multiple clients and sectors, Google's AI draws from pages that share certain characteristics. This is not speculation — it's pattern recognition from watching what gets cited and what doesn't.</p>
+      <p>Based on what we've observed across multiple clients and sectors, Google's AI draws from pages that share certain characteristics. This is not speculation: it's pattern recognition from watching what gets cited and what doesn't.</p>
 
       <h3>Structured, Direct Answers</h3>
       <p>AI Overviews pull from content that directly answers the question being searched. This sounds obvious but most business websites don't do it. A page about "bus shelter suppliers" that talks about your company's history and values is not answering the question. A page that explains what bus shelters cost, how long they take to install, what materials are used, and what to look for in a supplier is.</p>
@@ -5711,9 +5711,9 @@ export const posts: BlogPost[] = [
 
       <h2>The Alotek Result: What We Actually Did</h2>
 
-      <p>For Alotek, the approach was straightforward. We migrated their site from WordPress to Next.js — better performance, better technical foundation. We restructured their service pages to directly answer the questions their target buyers search. We added comprehensive FAQ content with schema markup. We built internal links between related pages to signal topical authority.</p>
+      <p>For Alotek, the approach was straightforward. We migrated their site from WordPress to Next.js: better performance, better technical foundation. We restructured their service pages to directly answer the questions their target buyers search. We added comprehensive FAQ content with schema markup. We built internal links between related pages to signal topical authority.</p>
 
-      <p>Within 30 days, AI Overviews appeared for every tracked keyword. Not all of them cited Alotek exclusively — AI Overviews typically cite two to four sources — but Alotek appeared in all of them. For a specialist B2B manufacturer, appearing in the AI Overview for your core commercial terms is transformative visibility.</p>
+      <p>Within 30 days, AI Overviews appeared for every tracked keyword. Not all of them cited Alotek exclusively: AI Overviews typically cite two to four sources: but Alotek appeared in all of them. For a specialist B2B manufacturer, appearing in the AI Overview for your core commercial terms is transformative visibility.</p>
 
       <p>The full data is in our <a href="/blog/alotek-shelters-month-1-seo-results" class="text-blue-400 hover:text-blue-300 underline">month one case study</a>.</p>
 
@@ -5724,12 +5724,12 @@ export const posts: BlogPost[] = [
       <p>If you want to give your site the best chance of appearing in AI Overviews, here is the practical checklist:</p>
 
       <ul>
-        <li><strong>Audit your core commercial pages</strong> — are they answering questions directly, or describing your business? Rewrite for the question.</li>
+        <li><strong>Audit your core commercial pages</strong>: are they answering questions directly, or describing your business? Rewrite for the question.</li>
         <li><strong>Add FAQ sections</strong> to every service page, with FAQ schema markup. Minimum 5 questions per page, answering what real buyers actually search.</li>
         <li><strong>Add LocalBusiness schema</strong> if you serve a local area. This is foundational and most sites don't have it.</li>
         <li><strong>Improve content depth</strong> on thin pages. A service page under 800 words is almost never cited in an AI Overview. Aim for 1,200 minimum on commercial terms.</li>
-        <li><strong>Fix Core Web Vitals</strong> — slow sites are not trusted sites. Google's technical quality signals feed into AI source selection.</li>
-        <li><strong>Build topical depth</strong> — a single page on a topic is not enough. A cluster of pages around a topic signals genuine expertise.</li>
+        <li><strong>Fix Core Web Vitals</strong>: slow sites are not trusted sites. Google's technical quality signals feed into AI source selection.</li>
+        <li><strong>Build topical depth</strong>: a single page on a topic is not enough. A cluster of pages around a topic signals genuine expertise.</li>
       </ul>
 
       <hr />
@@ -5742,7 +5742,7 @@ export const posts: BlogPost[] = [
 
       <p>That window closes as awareness grows. The time to build this is now, not when everyone else has figured it out.</p>
 
-      <p>If you want to know where your site stands on all of this, the free audit gives you a starting point. No forms, no sales calls — just data.</p>
+      <p>If you want to know where your site stands on all of this, the free audit gives you a starting point. No forms, no sales calls: just data.</p>
 
       <p><em>Related reading: <a href="/blog/alotek-shelters-month-1-seo-results" class="text-blue-400 hover:text-blue-300 underline">The Alotek Month 1 Report</a>, <a href="/blog/nextjs-vs-wordpress-2026" class="text-blue-400 hover:text-blue-300 underline">Next.js vs WordPress in 2026</a>, <a href="/blog/seo-recovery-alotek-shelters" class="text-blue-400 hover:text-blue-300 underline">The SEO Recovery Case Study</a>.</em></p>
     `
@@ -5767,16 +5767,16 @@ export const posts: BlogPost[] = [
       <h2>The Fundamentals: What Most Profiles Get Wrong</h2>
 
       <h3>Incomplete Profile Information</h3>
-      <p>Google gives you a lot of fields to fill in. Most businesses fill in the basics — name, address, phone — and stop there. The profiles that rank fill in everything: business description, services, products, opening hours (including holiday hours), attributes (parking, accessibility, payment methods), primary and secondary categories.</p>
+      <p>Google gives you a lot of fields to fill in. Most businesses fill in the basics: name, address, phone: and stop there. The profiles that rank fill in everything: business description, services, products, opening hours (including holiday hours), attributes (parking, accessibility, payment methods), primary and secondary categories.</p>
       <p>Primary category is particularly important. Google uses it heavily in determining which searches you appear for. Most businesses pick a broad category and leave it at that. The businesses dominating local packs have chosen the most specific primary category that accurately describes them, plus several relevant secondary categories.</p>
 
       <h3>No Photos or Outdated Photos</h3>
-      <p>Profiles with more than 100 photos get significantly more views than profiles with fewer. Businesses that add new photos regularly outperform those with static or outdated imagery. This is not a correlation — Google's algorithm explicitly rewards active profiles.</p>
+      <p>Profiles with more than 100 photos get significantly more views than profiles with fewer. Businesses that add new photos regularly outperform those with static or outdated imagery. This is not a correlation: Google's algorithm explicitly rewards active profiles.</p>
       <p>The photos should include: the exterior (so people can find you), the interior, products or services in action, and the team. At minimum, aim for 20 high-quality photos at launch and add new ones every week.</p>
 
       <h3>Ignoring Reviews</h3>
       <p>The volume and recency of reviews affects local pack rankings directly. A business with 200 reviews acquired over three years will outperform a business with 200 reviews all from 2021. Recency matters. Consistency matters.</p>
-      <p>More importantly: responding to reviews matters. Google has confirmed that responding to reviews improves rankings. Most businesses don't respond to anything. Every review — positive or negative — should get a response within 48 hours.</p>
+      <p>More importantly: responding to reviews matters. Google has confirmed that responding to reviews improves rankings. Most businesses don't respond to anything. Every review: positive or negative: should get a response within 48 hours.</p>
 
       <hr />
 
@@ -5858,7 +5858,7 @@ export const posts: BlogPost[] = [
 
       <h2>NAP Consistency: The Silent Ranking Factor</h2>
 
-      <p>NAP stands for Name, Address, Phone. Google cross-references your profile information against every other mention of your business across the web — directories, social profiles, industry listings, press mentions. If your address appears as "24 High Street" on your website, "24 High St" on Yell, and "Unit 24, High Street" on your Facebook page, Google sees inconsistency. Inconsistency reduces trust.</p>
+      <p>NAP stands for Name, Address, Phone. Google cross-references your profile information against every other mention of your business across the web: directories, social profiles, industry listings, press mentions. If your address appears as "24 High Street" on your website, "24 High St" on Yell, and "Unit 24, High Street" on your Facebook page, Google sees inconsistency. Inconsistency reduces trust.</p>
 
       <p>Do an audit of every place your business is listed online. Standardise the name, address, and phone number exactly. Use exactly the same format everywhere. This is unglamorous work but it has a measurable impact on local rankings.</p>
 
@@ -5884,7 +5884,7 @@ export const posts: BlogPost[] = [
 
       <p>After a full profile optimisation, most businesses see movement in the local pack within 4 to 8 weeks. Some see it faster for less competitive terms. The key variables are how competitive your category is locally, how many reviews you have relative to the pack, and how well your website supports the profile.</p>
 
-      <p>In less competitive towns — which includes most of the North West outside Manchester city centre — a properly optimised profile can move into the local pack within a month. In competitive categories like solicitors or accountants in Liverpool, it takes longer but the commercial value of each position is proportionally higher.</p>
+      <p>In less competitive towns: which includes most of the North West outside Manchester city centre: a properly optimised profile can move into the local pack within a month. In competitive categories like solicitors or accountants in Liverpool, it takes longer but the commercial value of each position is proportionally higher.</p>
 
       <p>The work is not complex. It is mostly just being thorough about things most businesses haven't bothered with. That's the opportunity.</p>
 
@@ -5900,15 +5900,15 @@ export const posts: BlogPost[] = [
     author: "Damian Roche",
     category: "AI & SEO",
     image: "/images/google-ai-overviews-2026.jpg",
-    excerpt: "Google AI Overviews. ChatGPT search. Perplexity. AI is now the gatekeeper between your business and your customers. GEO is the work that makes AI engines choose you — here's everything you need to know.",
+    excerpt: "Google AI Overviews. ChatGPT search. Perplexity. AI is now the gatekeeper between your business and your customers. GEO is the work that makes AI engines choose you: here's everything you need to know.",
     content: `
       <p>Search changed in 2024. Most businesses haven't caught up yet.</p>
 
-      <p>Google rolled out AI Overviews at scale — the synthesised, AI-generated answer that now appears above the traditional blue links on a growing percentage of searches. ChatGPT added web search. Perplexity became a genuine research tool for professionals. And Gemini, Claude, and a dozen other AI systems are crawling the web and generating answers in response to user queries.</p>
+      <p>Google rolled out AI Overviews at scale: the synthesised, AI-generated answer that now appears above the traditional blue links on a growing percentage of searches. ChatGPT added web search. Perplexity became a genuine research tool for professionals. And Gemini, Claude, and a dozen other AI systems are crawling the web and generating answers in response to user queries.</p>
 
       <p>If you're featured in those answers, you get the visibility, the authority, and often the click. If you're not, your competitor does.</p>
 
-      <p>Generative Engine Optimisation — GEO — is the practice of making sure AI engines choose you.</p>
+      <p>Generative Engine Optimisation: GEO: is the practice of making sure AI engines choose you.</p>
 
       <hr />
 
@@ -5916,7 +5916,7 @@ export const posts: BlogPost[] = [
 
       <p>The term is new. The underlying signals aren't entirely.</p>
 
-      <p>GEO is the set of technical, content, and authority practices that increase the probability of your website being cited as a source in AI-generated answers. It sits alongside traditional SEO — not replacing it, but extending it to cover a new set of search surfaces.</p>
+      <p>GEO is the set of technical, content, and authority practices that increase the probability of your website being cited as a source in AI-generated answers. It sits alongside traditional SEO: not replacing it, but extending it to cover a new set of search surfaces.</p>
 
       <p>To understand why it matters, you need to understand how AI search works at a basic level.</p>
 
@@ -5938,13 +5938,13 @@ export const posts: BlogPost[] = [
 
       <p>Traditional SEO gets you ranked in a list of ten links. The user sees your title tag and meta description, decides whether to click, and arrives at your page. You control the first impression.</p>
 
-      <p>GEO gets you cited inside the answer itself. The AI synthesises the key information from your page and presents it as the answer — often without the user needing to click at all. Your page becomes the source; the AI becomes the interface.</p>
+      <p>GEO gets you cited inside the answer itself. The AI synthesises the key information from your page and presents it as the answer: often without the user needing to click at all. Your page becomes the source; the AI becomes the interface.</p>
 
       <p>This has two implications that matter commercially.</p>
 
-      <p>First, citation without a click still builds brand authority. If Google's AI Overview for "who are the best SEO agencies in Southport" cites Churchtown Media, that's a trust signal — even if the user doesn't click through immediately. The next time they encounter the name, they recognise it.</p>
+      <p>First, citation without a click still builds brand authority. If Google's AI Overview for "who are the best SEO agencies in Southport" cites Churchtown Media, that's a trust signal: even if the user doesn't click through immediately. The next time they encounter the name, they recognise it.</p>
 
-      <p>Second, traffic patterns are shifting. AI Overviews on informational queries often reduce clicks — people get the answer they needed and don't proceed. But on commercial queries ("which SEO agency should I hire", "what's the best service for X"), citation drives high-intent traffic. That's where GEO investment pays off.</p>
+      <p>Second, traffic patterns are shifting. AI Overviews on informational queries often reduce clicks: people get the answer they needed and don't proceed. But on commercial queries ("which SEO agency should I hire", "what's the best service for X"), citation drives high-intent traffic. That's where GEO investment pays off.</p>
 
       <hr />
 
@@ -5968,28 +5968,28 @@ export const posts: BlogPost[] = [
 
       <h3>2. Structured Data</h3>
 
-      <p>AI engines read structured data the same way traditional search engines do — preferentially. A page with a properly implemented FAQPage schema is easier for an AI to extract an answer from than a page that buries its FAQ in unstructured prose.</p>
+      <p>AI engines read structured data the same way traditional search engines do: preferentially. A page with a properly implemented FAQPage schema is easier for an AI to extract an answer from than a page that buries its FAQ in unstructured prose.</p>
 
       <p>The schemas that matter most for GEO:</p>
       <ul>
-        <li><strong>FAQPage</strong> — direct question-and-answer format that AI engines parse cleanly</li>
-        <li><strong>HowTo</strong> — step-by-step instructions, easily synthesised</li>
-        <li><strong>Article and BlogPosting</strong> — with proper author attribution</li>
-        <li><strong>Organization</strong> — entity recognition for your brand</li>
-        <li><strong>Service</strong> — for commercial pages, with pricing and offers</li>
+        <li><strong>FAQPage</strong>: direct question-and-answer format that AI engines parse cleanly</li>
+        <li><strong>HowTo</strong>: step-by-step instructions, easily synthesised</li>
+        <li><strong>Article and BlogPosting</strong>: with proper author attribution</li>
+        <li><strong>Organization</strong>: entity recognition for your brand</li>
+        <li><strong>Service</strong>: for commercial pages, with pricing and offers</li>
       </ul>
 
       <h3>3. Content Structure and Clarity</h3>
 
       <p>AI models extract information from web pages during retrieval. Pages with clear headings, short declarative paragraphs, and specific factual claims are more extractable than long paragraphs of flowing prose.</p>
 
-      <p>This doesn't mean dumbing content down. It means structuring information so the key points are findable. A page that opens with "The postcode for Formby Beach is L37 1YH" answers the query on the first line. A page that answers it in paragraph four — after an introduction about the history of the beach — doesn't.</p>
+      <p>This doesn't mean dumbing content down. It means structuring information so the key points are findable. A page that opens with "The postcode for Formby Beach is L37 1YH" answers the query on the first line. A page that answers it in paragraph four: after an introduction about the history of the beach: doesn't.</p>
 
       <h3>4. Off-Site Authority and Entity Recognition</h3>
 
-      <p>AI engines don't just read your website. They build a model of your entity — your business, your people, your content — across the entire web. Wikipedia pages, industry directories, press mentions, LinkedIn profiles, Companies House records, and external backlinks all contribute to how the AI understands and trusts your entity.</p>
+      <p>AI engines don't just read your website. They build a model of your entity: your business, your people, your content: across the entire web. Wikipedia pages, industry directories, press mentions, LinkedIn profiles, Companies House records, and external backlinks all contribute to how the AI understands and trusts your entity.</p>
 
-      <p>Businesses with strong off-site entity signals are more likely to be cited as authoritative sources. This is why digital PR — getting your business mentioned in credible external publications — is a GEO signal, not just a traditional SEO signal.</p>
+      <p>Businesses with strong off-site entity signals are more likely to be cited as authoritative sources. This is why digital PR: getting your business mentioned in credible external publications: is a GEO signal, not just a traditional SEO signal.</p>
 
       <hr />
 
@@ -5999,14 +5999,14 @@ export const posts: BlogPost[] = [
 
       <p>Most AI engines operate their own crawlers:</p>
       <ul>
-        <li><strong>GPTBot</strong> — OpenAI (ChatGPT)</li>
-        <li><strong>ClaudeBot</strong> — Anthropic</li>
-        <li><strong>PerplexityBot</strong> — Perplexity</li>
-        <li><strong>GoogleOther</strong> — Google AI systems</li>
-        <li><strong>Applebot</strong> — Apple intelligence features</li>
+        <li><strong>GPTBot</strong>: OpenAI (ChatGPT)</li>
+        <li><strong>ClaudeBot</strong>: Anthropic</li>
+        <li><strong>PerplexityBot</strong>: Perplexity</li>
+        <li><strong>GoogleOther</strong>: Google AI systems</li>
+        <li><strong>Applebot</strong>: Apple intelligence features</li>
       </ul>
 
-      <p>Many websites block these crawlers accidentally — either through robots.txt rules that are too broad, or security configurations that block unrecognised user agents. If an AI crawler can't access your site, it can't cite you. That's the baseline technical requirement for GEO.</p>
+      <p>Many websites block these crawlers accidentally: either through robots.txt rules that are too broad, or security configurations that block unrecognised user agents. If an AI crawler can't access your site, it can't cite you. That's the baseline technical requirement for GEO.</p>
 
       <p>A GEO audit always starts by verifying that each major AI crawler has clean access to your pages.</p>
 
@@ -6016,7 +6016,7 @@ export const posts: BlogPost[] = [
 
       <p>In March 2026, most businesses have not started thinking about GEO. Most marketing teams are still focused on traditional organic rankings and paid search. Most agencies don't offer GEO as a distinct service.</p>
 
-      <p>That is an opportunity window. The businesses that establish AI citation authority now — through E-E-A-T content, structured data, and entity building — will be significantly harder to displace once the market catches up.</p>
+      <p>That is an opportunity window. The businesses that establish AI citation authority now: through E-E-A-T content, structured data, and entity building: will be significantly harder to displace once the market catches up.</p>
 
       <p>This is how the early moves in SEO played out twenty years ago. The businesses that understood PageRank and built authority early held competitive advantages that took years to erode. GEO is following the same pattern.</p>
 
@@ -6036,7 +6036,7 @@ export const posts: BlogPost[] = [
         <li>Monitoring: track AI Overview appearances and Perplexity/ChatGPT citations monthly</li>
       </ul>
 
-      <p>It's not a single project. It's an ongoing discipline — because AI search is evolving and the signals that work today will be refined over time.</p>
+      <p>It's not a single project. It's an ongoing discipline: because AI search is evolving and the signals that work today will be refined over time.</p>
 
       <hr />
 
@@ -6048,7 +6048,7 @@ export const posts: BlogPost[] = [
 
       <p>The one thing I'd caution against is waiting until GEO is mainstream. By then, the early-mover advantage is gone.</p>
 
-      <p><em>Related reading: <a href="/blog/ai-seo-vs-traditional-seo" class="text-blue-400 hover:text-blue-300 underline">AI SEO vs Traditional SEO: What's Actually Changed?</a>, <a href="/blog/alotek-shelters-month-1-seo-results" class="text-blue-400 hover:text-blue-300 underline">30 Days to AI Overview — The Alotek Case Study</a>.</em></p>
+      <p><em>Related reading: <a href="/blog/ai-seo-vs-traditional-seo" class="text-blue-400 hover:text-blue-300 underline">AI SEO vs Traditional SEO: What's Actually Changed?</a>, <a href="/blog/alotek-shelters-month-1-seo-results" class="text-blue-400 hover:text-blue-300 underline">30 Days to AI Overview: The Alotek Case Study</a>.</em></p>
     `
   },
   {
@@ -6058,11 +6058,11 @@ export const posts: BlogPost[] = [
     author: "Damian Roche",
     category: "AI & SEO",
     image: "/images/seo-robot.jpg",
-    excerpt: "AI Overviews, ChatGPT search, Perplexity — the search landscape shifted faster than most businesses noticed. Here's an honest assessment of what's changed, what hasn't, and what your strategy needs to account for now.",
+    excerpt: "AI Overviews, ChatGPT search, Perplexity: the search landscape shifted faster than most businesses noticed. Here's an honest assessment of what's changed, what hasn't, and what your strategy needs to account for now.",
     content: `
       <p>Let me be direct about something before we get into this: a lot of what's written about AI and SEO is either catastrophising (SEO is dead) or dismissing (nothing has changed, keep doing what you were doing). Neither is accurate.</p>
 
-      <p>The honest answer is more nuanced. Some things changed significantly. Some things stayed the same. And some things got more important — not less.</p>
+      <p>The honest answer is more nuanced. Some things changed significantly. Some things stayed the same. And some things got more important: not less.</p>
 
       <p>Here's my current assessment, based on running SEO campaigns for clients and managing my own publishing network across six sites.</p>
 
@@ -6074,11 +6074,11 @@ export const posts: BlogPost[] = [
 
       <p><strong>Google's index still matters.</strong> AI Overviews pull from Google's search index. ChatGPT's web search uses Bing. Perplexity uses its own crawler but also draws on established search signals. If you don't rank in traditional search, you're less likely to be retrieved as a candidate for AI answers. Traditional SEO is the foundation. GEO is built on top of it.</p>
 
-      <p><strong>Backlinks still matter.</strong> Off-site authority signals are still one of the strongest ranking factors — and they're also GEO signals, because they contribute to your entity's perceived authority.</p>
+      <p><strong>Backlinks still matter.</strong> Off-site authority signals are still one of the strongest ranking factors: and they're also GEO signals, because they contribute to your entity's perceived authority.</p>
 
       <p><strong>Technical SEO still matters.</strong> Site speed, crawlability, indexation, canonical URLs, structured data. All of these have always mattered for traditional SEO and they matter equally for GEO.</p>
 
-      <p><strong>Content quality still matters.</strong> Possibly more than ever. The proliferation of low-quality AI-generated content has raised the bar for what gets ranked and cited. Thin, generic, unoriginal content is being filtered out more aggressively — by both traditional algorithms and AI citation systems.</p>
+      <p><strong>Content quality still matters.</strong> Possibly more than ever. The proliferation of low-quality AI-generated content has raised the bar for what gets ranked and cited. Thin, generic, unoriginal content is being filtered out more aggressively: by both traditional algorithms and AI citation systems.</p>
 
       <hr />
 
@@ -6086,7 +6086,7 @@ export const posts: BlogPost[] = [
 
       <h3>The search result page looks different</h3>
 
-      <p>AI Overviews now appear on roughly 15–25% of all Google searches, and that figure is growing. For informational queries — "how to do X", "what is Y", "best Z for W" — the AI answer often occupies the top of the screen before the traditional results.</p>
+      <p>AI Overviews now appear on roughly 15–25% of all Google searches, and that figure is growing. For informational queries: "how to do X", "what is Y", "best Z for W": the AI answer often occupies the top of the screen before the traditional results.</p>
 
       <p>This has measurable click-through rate implications. Pages that previously ranked #1 for informational queries are seeing lower CTR because the AI Overview satisfies the query before the user reaches the link. That's not going to reverse.</p>
 
@@ -6094,15 +6094,15 @@ export const posts: BlogPost[] = [
 
       <h3>Author identity matters more</h3>
 
-      <p>Google has been pushing E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) for years. In 2026, it matters more than ever — because AI systems are specifically trained to favour content from identifiable, credible sources.</p>
+      <p>Google has been pushing E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) for years. In 2026, it matters more than ever: because AI systems are specifically trained to favour content from identifiable, credible sources.</p>
 
-      <p>Anonymous content — "written by the marketing team", no byline, no author page — is at a structural disadvantage. Named authors with verifiable profiles, industry credentials, and external citations are what AI systems are trained to trust.</p>
+      <p>Anonymous content: "written by the marketing team", no byline, no author page: is at a structural disadvantage. Named authors with verifiable profiles, industry credentials, and external citations are what AI systems are trained to trust.</p>
 
       <p>This is not a minor adjustment. It means every piece of content on your site should have a named human author with a profile that establishes their expertise in the subject matter.</p>
 
       <h3>Structured data is more valuable</h3>
 
-      <p>Schema.org structured data was always useful for traditional SEO — it helped search engines understand your content and enabled rich results. For AI systems, it's more than useful: it's how they read your content most cleanly.</p>
+      <p>Schema.org structured data was always useful for traditional SEO: it helped search engines understand your content and enabled rich results. For AI systems, it's more than useful: it's how they read your content most cleanly.</p>
 
       <p>A FAQPage schema with clear question-and-answer pairs is far more extractable for an AI than a FAQ section buried in HTML without markup. An Organization schema with your full entity information tells AI systems exactly who you are. A Service schema with pricing gives AI engines the commercial context they need to recommend you.</p>
 
@@ -6110,7 +6110,7 @@ export const posts: BlogPost[] = [
 
       <h3>AI crawler access is a new technical requirement</h3>
 
-      <p>This is new and most businesses haven't thought about it. The major AI systems — OpenAI, Anthropic, Google, Perplexity — all operate their own web crawlers. These crawlers need to be able to access your site to include your content in their training data and retrieval systems.</p>
+      <p>This is new and most businesses haven't thought about it. The major AI systems: OpenAI, Anthropic, Google, Perplexity: all operate their own web crawlers. These crawlers need to be able to access your site to include your content in their training data and retrieval systems.</p>
 
       <p>Many sites block these crawlers by accident. A robots.txt that says "Disallow: /" blocks everything. Security configurations that only allow known user agents block AI crawlers. Cloudflare bot blocking settings that are set too aggressively can block AI crawlers.</p>
 
@@ -6118,7 +6118,7 @@ export const posts: BlogPost[] = [
 
       <h3>The competitive landscape for informational content changed</h3>
 
-      <p>If you were building traffic through high-volume informational blog content — "what is X", "how to Y" — you need to reassess. That traffic is being captured by AI Overviews, and the trend is accelerating.</p>
+      <p>If you were building traffic through high-volume informational blog content: "what is X", "how to Y": you need to reassess. That traffic is being captured by AI Overviews, and the trend is accelerating.</p>
 
       <p>That doesn't mean stop producing informational content. It means:</p>
       <ul>
@@ -6133,11 +6133,11 @@ export const posts: BlogPost[] = [
 
       <p>Here's how I'd summarise the current approach for a business running a serious SEO programme:</p>
 
-      <p><strong>Maintain the traditional SEO foundation.</strong> Technical health, quality backlinks, properly optimised pages. Nothing about AI changes the importance of this — it only makes it more important, because AI systems retrieve from the search index.</p>
+      <p><strong>Maintain the traditional SEO foundation.</strong> Technical health, quality backlinks, properly optimised pages. Nothing about AI changes the importance of this: it only makes it more important, because AI systems retrieve from the search index.</p>
 
       <p><strong>Add E-E-A-T infrastructure.</strong> Named authors, author pages with credentials, first-person case studies and experience-based content, organisation entity information. This takes time to build and compound value over months.</p>
 
-      <p><strong>Implement structured data comprehensively.</strong> Not just for rich results — for machine readability. Every FAQ as FAQPage schema. Every service page with Service schema. Every article with proper Article schema and author attribution. Organization schema at domain level.</p>
+      <p><strong>Implement structured data comprehensively.</strong> Not just for rich results: for machine readability. Every FAQ as FAQPage schema. Every service page with Service schema. Every article with proper Article schema and author attribution. Organization schema at domain level.</p>
 
       <p><strong>Check AI crawler access.</strong> Verify that GPTBot, ClaudeBot, PerplexityBot, and GoogleOther can access your site. Fix anything that blocks them.</p>
 
@@ -6153,25 +6153,25 @@ export const posts: BlogPost[] = [
 
       <p>The window to build early AI authority is still open. It won't be in twelve months.</p>
 
-      <p>The businesses I'm most concerned about are the ones doing content marketing at volume without E-E-A-T infrastructure. Their traffic from informational queries is being eroded by AI Overviews and they're publishing more content to compensate — which doesn't solve the underlying problem.</p>
+      <p>The businesses I'm most concerned about are the ones doing content marketing at volume without E-E-A-T infrastructure. Their traffic from informational queries is being eroded by AI Overviews and they're publishing more content to compensate: which doesn't solve the underlying problem.</p>
 
-      <p>The fix isn't more content. It's better structured, better attributed, more authoritative content — combined with the technical signals that make AI engines trust and cite you.</p>
+      <p>The fix isn't more content. It's better structured, better attributed, more authoritative content: combined with the technical signals that make AI engines trust and cite you.</p>
 
       <p>That's GEO. And it works alongside traditional SEO, not instead of it.</p>
 
-      <p><em>Related reading: <a href="/blog/what-is-generative-engine-optimisation" class="text-blue-400 hover:text-blue-300 underline">What is Generative Engine Optimisation (GEO)?</a>, <a href="/blog/alotek-shelters-month-1-seo-results" class="text-blue-400 hover:text-blue-300 underline">The Alotek Case Study — AI Overview in 30 Days</a>.</em></p>
+      <p><em>Related reading: <a href="/blog/what-is-generative-engine-optimisation" class="text-blue-400 hover:text-blue-300 underline">What is Generative Engine Optimisation (GEO)?</a>, <a href="/blog/alotek-shelters-month-1-seo-results" class="text-blue-400 hover:text-blue-300 underline">The Alotek Case Study: AI Overview in 30 Days</a>.</em></p>
     `
   },
   {
     slug: "ai-content-strategy-local-business-2026",
-    title: "AI Content Strategy for Local Businesses in 2026 — What Actually Works",
+    title: "AI Content Strategy for Local Businesses in 2026: What Actually Works",
     date: "Mar 17, 2026",
     author: "Damian Roche",
     category: "AI & SEO",
     image: "/images/ai-content-strategy.jpg",
-    excerpt: "ChatGPT and Google's AI Overviews are changing how local businesses get found. Most local businesses have no AI content strategy at all. Here's what one looks like — and why building it now matters more than it will in 12 months.",
+    excerpt: "ChatGPT and Google's AI Overviews are changing how local businesses get found. Most local businesses have no AI content strategy at all. Here's what one looks like: and why building it now matters more than it will in 12 months.",
     content: `
-      <p>I run six publishing websites across two networks in north-west England. I've watched AI Overviews take chunks of informational search traffic in real time. I've also seen some pages get picked up as sources <em>by</em> those AI Overviews — increasing impressions and driving qualified referral traffic from sources that didn't exist two years ago.</p>
+      <p>I run six publishing websites across two networks in north-west England. I've watched AI Overviews take chunks of informational search traffic in real time. I've also seen some pages get picked up as sources <em>by</em> those AI Overviews: increasing impressions and driving qualified referral traffic from sources that didn't exist two years ago.</p>
 
       <p>The difference between the pages that get cited and the pages that don't comes down to a specific set of content signals. And most local businesses are nowhere near them yet. That's both a problem and an opportunity.</p>
 
@@ -6179,12 +6179,12 @@ export const posts: BlogPost[] = [
 
       <h2>Why Most Local Business Content Gets Ignored by AI</h2>
 
-      <p>AI search engines — Google's AI Overviews, ChatGPT web search, Perplexity — are essentially asking a question of the internet: <em>which source is authoritative enough to cite?</em> The signals they use are different from traditional ranking signals.</p>
+      <p>AI search engines: Google's AI Overviews, ChatGPT web search, Perplexity: are essentially asking a question of the internet: <em>which source is authoritative enough to cite?</em> The signals they use are different from traditional ranking signals.</p>
 
       <p>Traditional SEO rewards keyword targeting, backlinks, and page authority. AI citation rewards:</p>
 
       <ul>
-        <li><strong>First-hand expertise:</strong> Content written by someone who has actually done the thing, been to the place, or made the product — not generic aggregator copy.</li>
+        <li><strong>First-hand expertise:</strong> Content written by someone who has actually done the thing, been to the place, or made the product: not generic aggregator copy.</li>
         <li><strong>Specific, factual claims:</strong> Named locations, exact figures, verifiable details. "Formby Beach car park is L37 1YH and costs £X per day" gets cited. "Formby is a lovely coastal destination" does not.</li>
         <li><strong>Authoritative attribution:</strong> Clear author information, business credentials, named sources.</li>
         <li><strong>Structured, answer-first content:</strong> Content that leads with the direct answer to the query rather than building to it slowly.</li>
@@ -6198,31 +6198,31 @@ export const posts: BlogPost[] = [
 
       <p>An AI-ready content strategy for a local business has three layers:</p>
 
-      <h3>Layer 1 — Structured Factual Content</h3>
+      <h3>Layer 1: Structured Factual Content</h3>
 
-      <p>Every core page on your site should lead with structured factual information. Opening hours, prices, location, parking, policies — stated clearly, in text (not images), on the first screen. This is the content AI engines parse first and cite most frequently.</p>
+      <p>Every core page on your site should lead with structured factual information. Opening hours, prices, location, parking, policies: stated clearly, in text (not images), on the first screen. This is the content AI engines parse first and cite most frequently.</p>
 
       <p>Example: a hotel page that opens with "We're at [address]. Check-in from 3pm. Rooms from £X. Free parking for guests." ranks and gets cited above a page that opens with "Welcome to our beautiful boutique hotel nestled in the heart of..." The first page answers the question. The second one doesn't.</p>
 
-      <h3>Layer 2 — Expertise Content</h3>
+      <h3>Layer 2: Expertise Content</h3>
 
-      <p>Content that demonstrates genuine knowledge of your specific area, product or service. Not generic industry advice — specific, local, field-tested knowledge. For a restaurant in Southport, that means content about the specific dishes, the specific suppliers, the specific area. For a B&B near Royal Birkdale, it means content about parking for The Open, shuttle bus routes, which restaurants to book nearby.</p>
+      <p>Content that demonstrates genuine knowledge of your specific area, product or service. Not generic industry advice: specific, local, field-tested knowledge. For a restaurant in Southport, that means content about the specific dishes, the specific suppliers, the specific area. For a B&B near Royal Birkdale, it means content about parking for The Open, shuttle bus routes, which restaurants to book nearby.</p>
 
       <p>This content needs a named author with visible credentials. Anonymous content has low trust signals for AI engines. Named, verified expertise has high ones.</p>
 
-      <h3>Layer 3 — Question-First Structure</h3>
+      <h3>Layer 3: Question-First Structure</h3>
 
-      <p>Structure your content around the questions your customers actually ask. Use H2 headings that are questions. Answer immediately after the heading. Don't build to the answer — state it first, then explain.</p>
+      <p>Structure your content around the questions your customers actually ask. Use H2 headings that are questions. Answer immediately after the heading. Don't build to the answer: state it first, then explain.</p>
 
-      <p>"Can I bring my dog to [your hotel]? Yes — dogs are welcome in all ground-floor rooms and the garden. We charge £15 per dog per stay." That's AI-citable. "We love dogs at [hotel name]! We have a warm welcome for four-legged guests..." is not.</p>
+      <p>"Can I bring my dog to [your hotel]? Yes: dogs are welcome in all ground-floor rooms and the garden. We charge £15 per dog per stay." That's AI-citable. "We love dogs at [hotel name]! We have a warm welcome for four-legged guests..." is not.</p>
 
       <hr />
 
-      <h2>The Open 2026 — a Local AI Content Opportunity Right Now</h2>
+      <h2>The Open 2026: a Local AI Content Opportunity Right Now</h2>
 
       <p>Businesses within 30 miles of Royal Birkdale have a specific, time-limited AI content opportunity. Thousands of people are searching for accommodation, restaurants, transport, and local information for The Open 2026. AI search engines are aggregating answers to these queries right now.</p>
 
-      <p>A Southport restaurant with a page titled "Where to Eat Near Royal Birkdale During The Open 2026" — structured with clear answers to specific questions (how to book, what to order, transport from the course, dog-friendly?) — can get cited by AI engines answering those queries. The window to build that authority is now, while the competition for it is still thin.</p>
+      <p>A Southport restaurant with a page titled "Where to Eat Near Royal Birkdale During The Open 2026": structured with clear answers to specific questions (how to book, what to order, transport from the course, dog-friendly?): can get cited by AI engines answering those queries. The window to build that authority is now, while the competition for it is still thin.</p>
 
       <hr />
 
@@ -6235,9 +6235,9 @@ export const posts: BlogPost[] = [
         <li><strong>Add author attribution.</strong> A brief author bio (name, relevant experience, location) on every key piece of content. It doesn't need to be long. It needs to be there.</li>
       </ol>
 
-      <p>This isn't a six-month project. A focused three-week effort on an existing website can move the needle significantly for AI citation. The work compounds — pages cited by AI engines gain authority that further improves their citation rate.</p>
+      <p>This isn't a six-month project. A focused three-week effort on an existing website can move the needle significantly for AI citation. The work compounds: pages cited by AI engines gain authority that further improves their citation rate.</p>
 
-      <p><em>Related: <a href="/blog/what-is-generative-engine-optimisation" class="text-blue-400 hover:text-blue-300 underline">What is Generative Engine Optimisation?</a> · <a href="/blog/google-ai-overviews-2026" class="text-blue-400 hover:text-blue-300 underline">Google AI Overviews 2026 — What Local Businesses Need to Know</a></em></p>
+      <p><em>Related: <a href="/blog/what-is-generative-engine-optimisation" class="text-blue-400 hover:text-blue-300 underline">What is Generative Engine Optimisation?</a> · <a href="/blog/google-ai-overviews-2026" class="text-blue-400 hover:text-blue-300 underline">Google AI Overviews 2026: What Local Businesses Need to Know</a></em></p>
     `
   },
   {
@@ -6247,11 +6247,11 @@ export const posts: BlogPost[] = [
     author: "Damian Roche",
     category: "Tourism & Events",
     image: "/images/open-2026-digital-opportunity.jpg",
-    excerpt: "250,000 visitors. International media. Search traffic spikes starting months before the event. The Open Championship at Royal Birkdale in July 2026 is the biggest commercial opportunity Southport businesses have seen in a generation — and most of them aren't digitally prepared for it.",
+    excerpt: "250,000 visitors. International media. Search traffic spikes starting months before the event. The Open Championship at Royal Birkdale in July 2026 is the biggest commercial opportunity Southport businesses have seen in a generation: and most of them aren't digitally prepared for it.",
     content: `
       <p>I live three miles from Royal Birkdale. I've been watching Southport prepare for The Open 2026 and I've been watching how local businesses are approaching the digital side of it. The honest assessment: most of them are underprepared. Some of them are doing nothing at all.</p>
 
-      <p>This is not a criticism. Most small business owners are busy running their businesses. But the search traffic patterns around a major championship are predictable and they're already building. The businesses that capture that traffic — and convert it into bookings, walk-ins, and awareness — will look back on Open week as a turning point. The ones that don't will wonder why their competitors were suddenly full.</p>
+      <p>This is not a criticism. Most small business owners are busy running their businesses. But the search traffic patterns around a major championship are predictable and they're already building. The businesses that capture that traffic: and convert it into bookings, walk-ins, and awareness: will look back on Open week as a turning point. The ones that don't will wonder why their competitors were suddenly full.</p>
 
       <hr />
 
@@ -6262,7 +6262,7 @@ export const posts: BlogPost[] = [
       <ul>
         <li>Accommodation searches peak 3–4 months before the event. If you haven't captured that traffic, the bookings are already gone.</li>
         <li>Restaurant and experience searches peak in the 2–3 weeks before and during the event.</li>
-        <li>"Things to do near Royal Birkdale," "restaurants near The Open 2026," "parking for The Open" — these queries are live now and building.</li>
+        <li>"Things to do near Royal Birkdale," "restaurants near The Open 2026," "parking for The Open": these queries are live now and building.</li>
         <li>International traffic is a significant component. American, Australian, Japanese, and European golf visitors search in English for Southport accommodation. Local businesses that rank for those queries get international bookings. Most don't rank for them at all.</li>
       </ul>
 
@@ -6272,11 +6272,11 @@ export const posts: BlogPost[] = [
 
       <h3>A dedicated Open 2026 page</h3>
 
-      <p>Every accommodation, restaurant, and experience business near the course should have a page specifically about The Open 2026 on their website. Not a mention in a blog post — a proper page, optimised for "accommodation near Royal Birkdale The Open 2026," "restaurant near The Open Southport," and similar queries.</p>
+      <p>Every accommodation, restaurant, and experience business near the course should have a page specifically about The Open 2026 on their website. Not a mention in a blog post: a proper page, optimised for "accommodation near Royal Birkdale The Open 2026," "restaurant near The Open Southport," and similar queries.</p>
 
       <p>This page should answer the specific questions visitors have: how far are you from the course? Can you book transportation? What's parking like? Are you open during Open week (and at what times)?</p>
 
-      <h3>Google Business Profile — updated for the event</h3>
+      <h3>Google Business Profile: updated for the event</h3>
 
       <p>Your Google Business Profile should be updated with Open-specific content: photos from previous Opens if you have them, a post about your Open week offering, updated opening hours for Open week. Google's local search algorithm surfaces recently-updated, active profiles over dormant ones.</p>
 
@@ -6286,7 +6286,7 @@ export const posts: BlogPost[] = [
 
       <h3>Structured data for accommodation and restaurants</h3>
 
-      <p>Schema markup — specifically <code>Hotel</code>, <code>Restaurant</code>, and <code>LodgingBusiness</code> schema — helps Google understand your business type and increases your chances of appearing in rich results. Most Southport businesses don't have it. The ones that do get more prominent placement.</p>
+      <p>Schema markup: specifically <code>Hotel</code>, <code>Restaurant</code>, and <code>LodgingBusiness</code> schema: helps Google understand your business type and increases your chances of appearing in rich results. Most Southport businesses don't have it. The ones that do get more prominent placement.</p>
 
       <hr />
 
@@ -6303,25 +6303,25 @@ export const posts: BlogPost[] = [
       <p>We're working with a small number of Southport businesses right now on Open 2026 digital preparation. The work is focused and fast:</p>
 
       <ul>
-        <li>Open-specific landing page — created, optimised and published within two weeks.</li>
-        <li>Google Business Profile audit and update — structured for event search.</li>
-        <li>Schema markup implementation — for the specific business types that benefit most.</li>
-        <li>Review generation strategy — a practical, compliant approach to building review velocity before the event.</li>
+        <li>Open-specific landing page: created, optimised and published within two weeks.</li>
+        <li>Google Business Profile audit and update: structured for event search.</li>
+        <li>Schema markup implementation: for the specific business types that benefit most.</li>
+        <li>Review generation strategy: a practical, compliant approach to building review velocity before the event.</li>
       </ul>
 
       <p>If you want to talk through what your specific business should be doing, <a href="/contact" class="text-blue-400 hover:text-blue-300 underline">get in touch</a>. The three-month window before the event is when the preparation work has the most impact. After that, the traffic has already been captured by whoever was ready.</p>
 
-      <p><em>Related: <a href="/blog/mlec-effect-southport" class="text-blue-400 hover:text-blue-300 underline">The MLEC Effect — Is Your Business Ready?</a> · <a href="/blog/invisible-on-lord-street" class="text-blue-400 hover:text-blue-300 underline">Invisible on Lord Street — Why Local SEO Is Your New Shop Window</a></em></p>
+      <p><em>Related: <a href="/blog/mlec-effect-southport" class="text-blue-400 hover:text-blue-300 underline">The MLEC Effect: Is Your Business Ready?</a> · <a href="/blog/invisible-on-lord-street" class="text-blue-400 hover:text-blue-300 underline">Invisible on Lord Street: Why Local SEO Is Your New Shop Window</a></em></p>
     `
   },
   {
     slug: "core-web-vitals-local-business-2026",
-    title: "Core Web Vitals in 2026 — Why Your Local Business Website Is Probably Failing",
+    title: "Core Web Vitals in 2026: Why Your Local Business Website Is Probably Failing",
     date: "Mar 19, 2026",
     author: "Damian Roche",
     category: "Web Development",
     image: "/images/core-web-vitals.jpg",
-    excerpt: "Google uses page speed and Core Web Vitals as ranking signals. Most local business websites — especially those on older WordPress installations — fail these metrics badly. Here's what the scores mean, why they matter, and how to fix them.",
+    excerpt: "Google uses page speed and Core Web Vitals as ranking signals. Most local business websites: especially those on older WordPress installations: fail these metrics badly. Here's what the scores mean, why they matter, and how to fix them.",
     content: `
       <p>I ran a Core Web Vitals audit on 40 Southport business websites last quarter. The results were not great. The average Largest Contentful Paint (LCP) was 4.8 seconds. Google's target is under 2.5 seconds. Several sites were above 8 seconds. One took 14 seconds to load on a mobile connection.</p>
 
@@ -6336,15 +6336,15 @@ export const posts: BlogPost[] = [
       <div style="background: #1e293b; border-radius: 0.75rem; padding: 1.5rem; margin: 1.5rem 0;">
         <div style="display: grid; gap: 1rem;">
           <div style="background: #0f172a; padding: 1.25rem; border-radius: 0.5rem; border-left: 4px solid #22c55e;">
-            <strong style="color: white;">LCP — Largest Contentful Paint</strong>
+            <strong style="color: white;">LCP: Largest Contentful Paint</strong>
             <p style="color: #94a3b8; font-size: 0.875rem; margin: 0.5rem 0 0 0;">How long until the main content of the page is visible. Target: under 2.5 seconds. Most local business sites: 4–10 seconds.</p>
           </div>
           <div style="background: #0f172a; padding: 1.25rem; border-radius: 0.5rem; border-left: 4px solid #3b82f6;">
-            <strong style="color: white;">INP — Interaction to Next Paint</strong>
+            <strong style="color: white;">INP: Interaction to Next Paint</strong>
             <p style="color: #94a3b8; font-size: 0.875rem; margin: 0.5rem 0 0 0;">How fast the page responds when you click something. Target: under 200ms. Replaced FID in March 2024.</p>
           </div>
           <div style="background: #0f172a; padding: 1.25rem; border-radius: 0.5rem; border-left: 4px solid #f59e0b;">
-            <strong style="color: white;">CLS — Cumulative Layout Shift</strong>
+            <strong style="color: white;">CLS: Cumulative Layout Shift</strong>
             <p style="color: #94a3b8; font-size: 0.875rem; margin: 0.5rem 0 0 0;">How much the page jumps around as it loads. Target: under 0.1. Caused by images without dimensions, ads loading late, fonts swapping.</p>
           </div>
         </div>
@@ -6364,7 +6364,7 @@ export const posts: BlogPost[] = [
 
       <ul>
         <li>WebP or AVIF format (not JPEG or PNG for photos)</li>
-        <li>Sized to the actual display dimensions — not a 4000px image displayed at 800px</li>
+        <li>Sized to the actual display dimensions: not a 4000px image displayed at 800px</li>
         <li>Lazy-loaded below the fold</li>
         <li>The hero image pre-loaded with <code>fetchpriority="high"</code></li>
       </ul>
@@ -6373,7 +6373,7 @@ export const posts: BlogPost[] = [
 
       <h3>Render-blocking scripts</h3>
 
-      <p>Every third-party script that loads in your page head delays rendering. Google Tag Manager, analytics scripts, chat widgets, social media embeds — all of them add load time. Most of them can be deferred without affecting functionality. Almost none of them are set to defer by default when you install them via a WordPress plugin.</p>
+      <p>Every third-party script that loads in your page head delays rendering. Google Tag Manager, analytics scripts, chat widgets, social media embeds: all of them add load time. Most of them can be deferred without affecting functionality. Almost none of them are set to defer by default when you install them via a WordPress plugin.</p>
 
       <h3>Hosting</h3>
 
@@ -6387,7 +6387,7 @@ export const posts: BlogPost[] = [
 
       <h2>The Business Case</h2>
 
-      <p>Core Web Vitals are a ranking signal — poor scores suppress your position in search results. But the business impact goes beyond rankings.</p>
+      <p>Core Web Vitals are a ranking signal: poor scores suppress your position in search results. But the business impact goes beyond rankings.</p>
 
       <p>Google's own research shows a direct correlation between page load time and bounce rate:</p>
 
@@ -6398,7 +6398,7 @@ export const posts: BlogPost[] = [
         <li>1–10 seconds: bounce rate increases 123%</li>
       </ul>
 
-      <p>A local restaurant website that takes 6 seconds to load on mobile is losing more than half its mobile visitors before the menu appears. Those aren't hypothetical customers — they're people who searched, found you, and left because the page was too slow. They went somewhere else.</p>
+      <p>A local restaurant website that takes 6 seconds to load on mobile is losing more than half its mobile visitors before the menu appears. Those aren't hypothetical customers: they're people who searched, found you, and left because the page was too slow. They went somewhere else.</p>
 
       <hr />
 
@@ -6407,13 +6407,13 @@ export const posts: BlogPost[] = [
       <p>Not every site needs a rebuild. Quick wins that can move scores significantly without touching the platform:</p>
 
       <ul>
-        <li><strong>Install a caching plugin</strong> (WP Rocket or W3 Total Cache on WordPress) — often moves LCP by 1–2 seconds</li>
-        <li><strong>Run images through Squoosh or ImageOptim</strong> — free, significant size reductions, no quality loss at web resolutions</li>
-        <li><strong>Enable a CDN</strong> — Cloudflare free tier adds meaningful performance improvements for most sites</li>
-        <li><strong>Defer non-critical scripts</strong> — Google Tag Manager can be loaded async; your chat widget doesn't need to block rendering</li>
+        <li><strong>Install a caching plugin</strong> (WP Rocket or W3 Total Cache on WordPress): often moves LCP by 1–2 seconds</li>
+        <li><strong>Run images through Squoosh or ImageOptim</strong>: free, significant size reductions, no quality loss at web resolutions</li>
+        <li><strong>Enable a CDN</strong>: Cloudflare free tier adds meaningful performance improvements for most sites</li>
+        <li><strong>Defer non-critical scripts</strong>: Google Tag Manager can be loaded async; your chat widget doesn't need to block rendering</li>
       </ul>
 
-      <p>For sites that are fundamentally slow — old WordPress installations with 30+ plugins on shared hosting — a rebuild on a modern stack is the real answer. Next.js on Vercel, Astro on Netlify — platforms that produce consistently high Core Web Vitals scores with less maintenance overhead than a heavily-plugged WordPress setup.</p>
+      <p>For sites that are fundamentally slow: old WordPress installations with 30+ plugins on shared hosting: a rebuild on a modern stack is the real answer. Next.js on Vercel, Astro on Netlify: platforms that produce consistently high Core Web Vitals scores with less maintenance overhead than a heavily-plugged WordPress setup.</p>
 
       <p>If you want a free Core Web Vitals audit of your site and a straight assessment of what's causing your scores, <a href="/contact" class="text-blue-400 hover:text-blue-300 underline">get in touch</a>. I'll tell you what I find without trying to sell you a rebuild you don't need.</p>
 

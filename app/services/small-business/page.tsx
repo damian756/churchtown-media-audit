@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     question: "How much does it cost?",
-    answer: "Our Small Business Package starts from £1,500 — that gets you a 5-page Next.js site, basic SEO setup, contact form, and first-year hosting included. Payment plans are available if that helps with cash flow. For context: a comparable WordPress build typically costs £2,000–3,000 upfront and then charges £150–300/month to keep it running. We don't do that."
+    answer: "Our Small Business Package starts from £1,500: that gets you a 5-page Next.js site, basic SEO setup, contact form, and first-year hosting included. Payment plans are available if that helps with cash flow. For context: a comparable WordPress build typically costs £2,000–3,000 upfront and then charges £150–300/month to keep it running. We don't do that."
   },
   {
     question: "My current WordPress site is broken. Can you fix it?",
@@ -119,7 +119,7 @@ export default function SmallBusinessPage() {
                     </span>
                 </h1>
                 <p className="text-xl text-slate-300 leading-relaxed mb-6 max-w-xl">
-                    You don't need a corporate budget to beat corporate competitors. We give Southport small businesses the same "Enterprise-Grade" weapons used by the big players—at a fraction of the cost.
+                    You don't need a corporate budget to beat corporate competitors. We give Southport small businesses the same "Enterprise-Grade" weapons used by the big players-at a fraction of the cost.
                 </p>
                 <p className="text-lg text-slate-400 leading-relaxed mb-10 max-w-xl bg-slate-900/50 border border-slate-800 rounded-xl p-6">
                     This package is for businesses that need a professional web presence without the £5k+ price tag. <strong className="text-white">Same standards. Same quality.</strong> Focused scope. Payment plans available.

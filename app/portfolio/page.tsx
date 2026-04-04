@@ -5,7 +5,7 @@ import { ArrowRight, ExternalLink, Zap, Code2, Gauge, TrendingUp, CheckCircle2, 
 
 export const metadata: Metadata = {
   title: "Portfolio | Client Projects & Success Stories",
-  description: "See our live Next.js projects in action. From bus shelter manufacturers with 10 #1 rankings in 30 days to professional video capture equipment—real clients, real results, real performance.",
+  description: "See our live Next.js projects in action. From bus shelter manufacturers with 10 #1 rankings in 30 days to professional video capture equipment-real clients, real results, real performance.",
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk/portfolio',
   },
@@ -132,22 +132,22 @@ export default function PortfolioPage() {
       url: "https://www.alotekshelters.co.uk",
       status: "live",
       image: "/images/alotek-portfolio.jpg",
-      description: "A Lancashire bus shelter manufacturer — previously on WordPress with a costly agency doing nothing. We migrated them to Next.js at no charge, then started an SEO retainer. Month one results are below.",
+      description: "A Lancashire bus shelter manufacturer: previously on WordPress with a costly agency doing nothing. We migrated them to Next.js at no charge, then started an SEO retainer. Month one results are below.",
       challenge: "Previous agency delivered zero traffic growth over 12 months. Site averaged position 50 (Page 5) with 52% of pages not indexed. WordPress was the wrong foundation.",
       solution: "Free Next.js migration to fix the technical foundation, then targeted SEO focused on the exact terms parish councils and local authorities search. Content structured for AI Overviews.",
       results: [
         { label: "#1 Rankings", value: "10", description: "Every core commercial keyword" },
         { label: "AI Overviews", value: "All terms", description: "Above organic results on every target query" },
-        { label: "Biggest climb", value: "↑15", description: "\"Bus shelter suppliers\" — pos. 16 to #1" },
+        { label: "Biggest climb", value: "↑15", description: "\"Bus shelter suppliers\": pos. 16 to #1" },
         { label: "Time to results", value: "30 days", description: "Month 1 of SEO retainer" },
       ],
       techStack: ["Next.js 16", "TypeScript", "Tailwind CSS", "Vercel", "Schema.org"],
       caseStudySlug: "alotek-shelters-month-1-seo-results",
       highlights: [
-        "#1 for 'bus shelter suppliers' (vol. 210) — up from position 16",
+        "#1 for 'bus shelter suppliers' (vol. 210): up from position 16",
         "AI Overview appearances across every tracked keyword",
-        "'Parish council bus shelter' — new entry direct to #1",
-        "WordPress replaced with Next.js before retainer started — at no charge",
+        "'Parish council bus shelter': new entry direct to #1",
+        "WordPress replaced with Next.js before retainer started: at no charge",
       ]
     },
     {
@@ -236,7 +236,7 @@ export default function PortfolioPage() {
       url: "https://www.formbyguide.co.uk",
       status: "live",
       image: "/images/formbyguide-portfolio.jpg",
-      description: "The complete guide to Formby—red squirrels, the National Trust beach, pinewoods walks, and the best places to eat. A local directory built to help visitors and residents discover what makes Formby special.",
+      description: "The complete guide to Formby-red squirrels, the National Trust beach, pinewoods walks, and the best places to eat. A local directory built to help visitors and residents discover what makes Formby special.",
       challenge: "Formby attracts visitors for its red squirrel reserve and stunning National Trust coastline, but lacked a central guide. Tourists needed practical information about squirrel spotting, beach parking, and local dining.",
       solution: "Built a local guide with nature-focused content, practical visitor information, and curated restaurant recommendations. Optimized for mobile discovery.",
       results: [
@@ -262,7 +262,7 @@ export default function PortfolioPage() {
       url: "https://www.seftonlinks.com",
       status: "live",
       image: "/images/seftonlinks-portfolio.jpg",
-      description: "The definitive guide to links golf on the Sefton Coast—Royal Birkdale, Hillside, Formby, and four other championship courses. Built for international golf tourists planning trips to England's premier links golf destination ahead of The Open 2026.",
+      description: "The definitive guide to links golf on the Sefton Coast-Royal Birkdale, Hillside, Formby, and four other championship courses. Built for international golf tourists planning trips to England's premier links golf destination ahead of The Open 2026.",
       challenge: "Golf tourists from US, Germany, Japan, and beyond needed comprehensive information about the Sefton Coast's six championship courses. No single authoritative English-language guide existed, and language barriers limited international reach.",
       solution: "Built a comprehensive golf tourism guide with course comparisons, tee time information, and accommodation. Implemented native translations in 17 languages to reach international golf markets.",
       results: [
@@ -288,8 +288,8 @@ export default function PortfolioPage() {
       url: "https://seftoncoastwildlife.co.uk",
       status: "live",
       image: "/images/seftoncoastwildlife-portfolio.png",
-      description: "An independent species database and editorial field guide to the birds, insects, plants and mammals of the Sefton Coast — from Marshside RSPB to the Formby pinewoods. Built as a genuine public resource, not a scraped aggregator.",
-      challenge: "No dedicated wildlife guide existed for the Sefton Coast despite it being one of England's most significant coastal habitats — home to 80,000+ Pink-footed Geese, nationally rare Natterjack Toads, and one of England's last Red Squirrel populations.",
+      description: "An independent species database and editorial field guide to the birds, insects, plants and mammals of the Sefton Coast: from Marshside RSPB to the Formby pinewoods. Built as a genuine public resource, not a scraped aggregator.",
+      challenge: "No dedicated wildlife guide existed for the Sefton Coast despite it being one of England's most significant coastal habitats: home to 80,000+ Pink-footed Geese, nationally rare Natterjack Toads, and one of England's last Red Squirrel populations.",
       solution: "Built a full species database with 257+ entries across four categories, Wikipedia API image integration, seasonal and habitat filters, an editorial blog, and structured data for every species page.",
       results: [
         { label: "Species Recorded", value: "257+", description: "Birds, insects, plants, mammals" },
@@ -337,7 +337,7 @@ export default function PortfolioPage() {
               
               <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed">
                 Real clients. Real code. Real results. See the live projects that prove performance-first 
-                web design isn't theory—it's revenue.
+                web design isn't theory-it's revenue.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -596,7 +596,7 @@ export default function PortfolioPage() {
               Ready to See Your Project Here?
             </h2>
             <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
-              Whether you're a B2B distributor, manufacturer, or service business—we build sites 
+              Whether you're a B2B distributor, manufacturer, or service business-we build sites 
               that perform. Let's talk about your goals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "AI Services | GEO, AI Content & Workflow Automation | Churchtown Media",
-    description: "GEO, AI content production, and AI workflow automation — three services that prepare your business for the age of AI search and intelligent automation.",
+    description: "GEO, AI content production, and AI workflow automation: three services that prepare your business for the age of AI search and intelligent automation.",
     url: "https://www.churchtownmedia.co.uk/services/ai",
     type: "website",
     siteName: "Churchtown Media",
@@ -86,7 +86,7 @@ export default function AIServicesHubPage() {
       colour: "purple",
       tag: "Rank in AI search",
       description:
-        "Google AI Overviews, ChatGPT search, and Perplexity are changing how people find businesses. We structure your content and authority signals so AI recommends you — not your competitors.",
+        "Google AI Overviews, ChatGPT search, and Perplexity are changing how people find businesses. We structure your content and authority signals so AI recommends you: not your competitors.",
       proof: "Alotek Shelters: #1 AI Overview in 30 days",
       pricing: "from £750/month",
       features: [
@@ -104,7 +104,7 @@ export default function AIServicesHubPage() {
       colour: "blue",
       tag: "Scale your output",
       description:
-        "AI-augmented content workflows with senior editorial oversight. Scale your content output without scaling headcount — authoritative, GEO-ready content that ranks.",
+        "AI-augmented content workflows with senior editorial oversight. Scale your content output without scaling headcount: authoritative, GEO-ready content that ranks.",
       proof: "From 4 to 50+ pieces per month depending on package",
       pricing: "from £500/month",
       features: [
@@ -122,7 +122,7 @@ export default function AIServicesHubPage() {
       colour: "emerald",
       tag: "Automate operations",
       description:
-        "We analyse your operations, identify where AI can replace manual work, and build the systems that do it. Content pipelines, lead qualification, reporting, onboarding — built to spec.",
+        "We analyse your operations, identify where AI can replace manual work, and build the systems that do it. Content pipelines, lead qualification, reporting, onboarding: built to spec.",
       proof: "60–80% reduction in time spent on automated tasks",
       pricing: "from £1,500 (project)",
       features: [
@@ -187,7 +187,7 @@ export default function AIServicesHubPage() {
 
         <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-12">
           We've been building AI-integrated systems since before most agencies knew what to call them. The results are on
-          the page — not in a slide deck.
+          the page: not in a slide deck.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -340,7 +340,7 @@ export default function AIServicesHubPage() {
             <h3 className="text-lg font-bold text-white group-hover:text-purple-400 transition-colors mb-2">
               What is Generative Engine Optimisation?
             </h3>
-            <p className="text-slate-400 text-sm">The complete explainer — what it is, how it works, and why it matters now.</p>
+            <p className="text-slate-400 text-sm">The complete explainer: what it is, how it works, and why it matters now.</p>
           </Link>
           <Link
             href="/blog/ai-seo-vs-traditional-seo"
@@ -350,7 +350,7 @@ export default function AIServicesHubPage() {
             <h3 className="text-lg font-bold text-white group-hover:text-blue-400 transition-colors mb-2">
               AI SEO vs Traditional SEO: What's Actually Changed?
             </h3>
-            <p className="text-slate-400 text-sm">Not everything changed. Here's what did — and how to adapt your strategy.</p>
+            <p className="text-slate-400 text-sm">Not everything changed. Here's what did: and how to adapt your strategy.</p>
           </Link>
         </div>
       </section>

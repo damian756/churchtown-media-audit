@@ -7,7 +7,7 @@ import { posts } from "@/lib/posts";
 // 1. REGIONAL STRATEGY METADATA
 export const metadata: Metadata = {
   title: 'Web Design & SEO Agency Southport | Churchtown Media',
-  description: 'Churchtown Media — web design and SEO for Southport and North West businesses. Fast Next.js sites, local pack rankings, honest pricing. Based in Churchtown, Southport.',
+  description: 'Churchtown Media: web design and SEO for Southport and North West businesses. Fast Next.js sites, local pack rankings, honest pricing. Based in Churchtown, Southport.',
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk',
   },
@@ -107,26 +107,25 @@ export default function Home() {
       <div className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden isolate">
         
         {/* ANIMATED BACKGROUND BLOBS - Heavily delayed for LCP optimization */}
-        <div className="animated-blob-delayed absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-purple-300/20 rounded-full blur-[80px]"></div>
-        <div className="animated-blob-delayed absolute top-0 right-1/4 w-[500px] h-[500px] bg-blue-300/20 rounded-full blur-[80px] animation-delay-2000"></div>
-        <div className="animated-blob-delayed absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-emerald-300/20 rounded-full blur-[80px] animation-delay-4000"></div>
+        <div className="animated-blob-delayed absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-blue-400/5 rounded-full blur-[80px]"></div>
+        <div className="animated-blob-delayed absolute top-0 right-1/4 w-[500px] h-[500px] bg-slate-400/5 rounded-full blur-[80px] animation-delay-2000"></div>
+        <div className="animated-blob-delayed absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-blue-300/5 rounded-full blur-[80px] animation-delay-4000"></div>
 
         {/* Content Container */}
         <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
             
             {/* STATUS BADGE */}
-            <div className="inline-flex items-center gap-2 bg-slate-900 border border-emerald-500/30 rounded-full px-4 py-1.5 mb-8 shadow-sm ring-1 ring-emerald-500/20">
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-                <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wide">
-                  Now accepting clients for 2026
+            <div className="inline-flex items-center gap-2 bg-slate-900 border border-slate-700 rounded-full px-4 py-1.5 mb-8 shadow-sm">
+                <span className="text-[10px] font-bold text-slate-300 uppercase tracking-wide">
+                  Southport Digital Agency
                 </span>
             </div>
 
             {/* HEADLINE */}
             <h1 className="text-6xl md:text-8xl font-extrabold tracking-tight text-white mb-8 leading-[1.1]">
-              We build revenue engines. <br/>
-              <span className="text-blue-400">
-                Not just websites.
+              Digital strategy. <br/>
+              <span className="text-slate-300">
+                Executed.
               </span>
             </h1>
 
@@ -158,9 +157,9 @@ export default function Home() {
 
             {/* TRUST INDICATORS */}
             <div className="mt-12 flex flex-wrap items-center justify-center gap-4 md:gap-6 text-xs font-bold text-slate-500 uppercase tracking-widest">
-                <span className="flex items-center gap-1.5 bg-slate-800/50 px-3 py-1 rounded-full">💰 From £1,500</span>
-                <span className="flex items-center gap-1.5 bg-slate-800/50 px-3 py-1 rounded-full">🤝 No Contracts</span>
-                <span className="flex items-center gap-1.5 bg-slate-800/50 px-3 py-1 rounded-full">⚡ 4-6 Weeks</span>
+                <span className="flex items-center gap-1.5 bg-slate-800/50 px-3 py-1 rounded-full">From £1,500</span>
+                <span className="flex items-center gap-1.5 bg-slate-800/50 px-3 py-1 rounded-full">No Contracts</span>
+                <span className="flex items-center gap-1.5 bg-slate-800/50 px-3 py-1 rounded-full">4-6 Weeks</span>
             </div>
         </div>
       </div>
@@ -186,7 +185,7 @@ export default function Home() {
                         <Link href="/services/web-design" className="text-blue-400 hover:text-blue-300">
                           Next.js websites
                         </Link>
-                        . No plugins, no bloat—just pure code designed to convert.
+                        . No plugins, no bloat. Just pure code designed to convert.
                     </p>
                     <div className="text-sm text-slate-500 font-medium mb-4">From £2,500</div>
                     <Link href="/services/web-design" className="inline-flex items-center gap-2 text-blue-400 font-bold hover:gap-3 transition-all">
@@ -214,15 +213,16 @@ export default function Home() {
                 </div>
 
                 {/* CARD 3: AUDIT LEAD MAGNET */}
-                <div className="group p-6 rounded-[2rem] bg-gradient-to-br from-blue-600 to-blue-700 text-white hover:shadow-2xl hover:shadow-blue-600/30 transition-all duration-300 relative overflow-hidden">
-                    <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center mb-6 relative z-10">
-                        <Zap className="w-7 h-7 text-yellow-400 fill-yellow-400" />
+                <div className="group p-6 rounded-[2rem] bg-slate-800 border border-slate-700 hover:border-blue-500/50 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 relative overflow-hidden">
+                    <div className="w-14 h-14 bg-blue-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform relative z-10">
+                        <Zap className="w-7 h-7 text-blue-400" />
                     </div>
-                    <h3 className="text-2xl font-bold mb-3 relative z-10">AI Website Audit</h3>
-                    <p className="text-blue-100 mb-6 leading-relaxed relative z-10">
+                    <h3 className="text-2xl font-bold text-white mb-3 relative z-10">AI Website Audit</h3>
+                    <p className="text-slate-300 mb-6 leading-relaxed relative z-10">
                         Get a comprehensive report on your site's speed, SEO, and conversion blockers in 2 minutes.
                     </p>
-                    <Link href="/audit" className="inline-flex items-center gap-2 text-white font-bold hover:gap-3 transition-all relative z-10">
+                    <div className="text-sm text-slate-500 font-medium mb-4">Free</div>
+                    <Link href="/audit" className="inline-flex items-center gap-2 text-blue-400 font-bold hover:gap-3 transition-all relative z-10">
                         Start Free Audit <ArrowRight className="w-4 h-4" />
                     </Link>
                 </div>
@@ -234,24 +234,24 @@ export default function Home() {
       {/* 2.5 AI SERVICES CALLOUT */}
       <section className="py-16 bg-slate-950 border-t border-slate-800/50">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="bg-gradient-to-br from-purple-950/60 to-blue-950/60 border border-purple-500/30 rounded-3xl p-10 md:p-14 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-[400px] h-[300px] bg-purple-600/15 rounded-full blur-[100px] pointer-events-none"></div>
+          <div className="bg-slate-900 border border-slate-800 hover:border-slate-700 transition-colors rounded-3xl p-10 md:p-14 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-[400px] h-[300px] bg-blue-600/5 rounded-full blur-[100px] pointer-events-none"></div>
             <div className="relative z-10">
               <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
                 <div className="flex-1">
-                  <div className="inline-flex items-center gap-2 bg-purple-500/20 border border-purple-500/30 rounded-full px-3 py-1 mb-6">
-                    <Sparkles className="w-4 h-4 text-purple-400" />
-                    <span className="text-xs font-bold text-purple-400 uppercase tracking-wide">New AI Services</span>
+                  <div className="inline-flex items-center gap-2 bg-slate-800 border border-slate-700 rounded-full px-3 py-1 mb-6">
+                    <Sparkles className="w-4 h-4 text-blue-400" />
+                    <span className="text-xs font-bold text-slate-300 uppercase tracking-wide">AI Search Solutions</span>
                   </div>
                   <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                    AI search is here. <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">Is your business visible?</span>
+                    AI search is here. <span className="text-slate-400">Is your business visible?</span>
                   </h2>
                   <p className="text-slate-300 text-lg mb-6 max-w-2xl">
                     Google AI Overviews now appear on 25%+ of searches. We helped Alotek Shelters rank #1 in those answers within 30 days. Three new services to get you there too.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3">
                     {[
-                      { icon: Sparkles, label: "GEO — AI Search", href: "/services/generative-engine-optimisation", colour: "text-purple-400" },
+                      { icon: Sparkles, label: "GEO: AI Search", href: "/services/generative-engine-optimisation", colour: "text-purple-400" },
                       { icon: Bot, label: "AI Content", href: "/services/ai-content", colour: "text-blue-400" },
                       { icon: Workflow, label: "AI Workflows", href: "/services/ai-workflows", colour: "text-emerald-400" },
                     ].map((item) => {
@@ -269,7 +269,7 @@ export default function Home() {
                 <div className="shrink-0">
                   <Link
                     href="/services/ai"
-                    className="inline-flex items-center gap-2 bg-purple-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-purple-500 transition-all shadow-lg hover:shadow-purple-500/25 hover:-translate-y-0.5 whitespace-nowrap"
+                    className="inline-flex items-center gap-2 bg-slate-800 text-white border border-slate-700 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-700 transition-all shadow-sm hover:-translate-y-0.5 whitespace-nowrap"
                   >
                     All AI Services <ArrowRight className="w-5 h-5" />
                   </Link>
@@ -293,7 +293,7 @@ export default function Home() {
               Built for Growth. Proven by Results.
             </h2>
             <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-              From bus shelter manufacturers to championship golf guides — real sites built to rank and convert.
+              From bus shelter manufacturers to championship golf guides. Real sites built to rank and convert.
             </p>
           </div>
 
@@ -492,7 +492,7 @@ export default function Home() {
               </div>
               
               <p className="text-slate-300 leading-relaxed mb-6 text-sm relative z-10">
-                "We hired Churchtown Media to help our Liverpool business gain traction, and I was <strong className="text-white">genuinely shocked by the speed of the results</strong>—we saw significant ranking improvements in less than a month."
+                "We hired Churchtown Media to help our Liverpool business gain traction, and I was <strong className="text-white">genuinely shocked by the speed of the results</strong>. We saw significant ranking improvements in less than a month."
               </p>
               
               <div className="flex items-center gap-3 pt-4 border-t border-slate-700">
@@ -563,7 +563,7 @@ export default function Home() {
                   500,000+ visitors are coming. MLEC, The Open, the £37.5m Town Deal.
                 </p>
                 <p className="text-slate-400 text-sm mt-1">
-                  Read our full analysis of what it means for Southport businesses — and how to position before the traffic arrives.
+                  Read our full analysis of what it means for Southport businesses, and how to position before the traffic arrives.
                 </p>
               </div>
             </div>

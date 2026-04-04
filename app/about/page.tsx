@@ -133,7 +133,7 @@ export default function AboutPage() {
                   <figure>
                     <Image
                       src="/images/about/damian-rspb-marshside.webp"
-                      alt="Damian Roche at RSPB Marshside, Southport — Founder of Churchtown Media"
+                      alt="Damian Roche at RSPB Marshside, Southport: Founder of Churchtown Media"
                       width={600}
                       height={600}
                       className="relative rounded-3xl border border-slate-800 shadow-2xl"
@@ -192,19 +192,19 @@ export default function AboutPage() {
                 
                 <div className="space-y-4 text-slate-300 leading-relaxed">
                   <p>
-                    I grew up in the '90s watching my dad—a software engineer—work from home. While other kids were outside playing football, 
+                    I grew up in the '90s watching my dad-a software engineer-work from home. While other kids were outside playing football, 
                     I was next to him, watching code turn into actual working programs. He taught me Dreamweaver when I was probably too young 
                     to understand it properly, but I was hooked anyway.
                   </p>
                   
                   <p>
                     The real fun though? My dad and I playing <strong>Doom on LAN</strong>. We'd play for hours, then I'd start building my own 
-                    levels—<strong>custom WAD files</strong>. That's when I realized: creating something from scratch, testing it, watching people 
+                    levels-<strong>custom WAD files</strong>. That's when I realized: creating something from scratch, testing it, watching people 
                     use it... that's what I wanted to do. That feeling never went away.
                   </p>
                   
                   <p>
-                    Fast forward through <strong>Mambo, PHPNuke, Joomla, Interspire, BigCommerce</strong>—I built e-commerce stores before Shopify 
+                    Fast forward through <strong>Mambo, PHPNuke, Joomla, Interspire, BigCommerce</strong>-I built e-commerce stores before Shopify 
                     was even a thing. I was optimizing sites for Google before anyone cared about Core Web Vitals. Seen it all: table layouts, Flash 
                     sites (don't ask), WordPress everything, and now modern headless architecture.
                   </p>
@@ -256,7 +256,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">I Actually Get Excited About Your Numbers</h3>
                 <p className="text-slate-300 text-sm leading-relaxed">
-                  Genuinely—when a client's organic traffic jumps or their conversion rate improves, I'm checking the graphs 
+                  Genuinely-when a client's organic traffic jumps or their conversion rate improves, I'm checking the graphs 
                   multiple times a day. It's not just work. It's validation that what we're doing actually works.
                 </p>
               </div>
@@ -268,7 +268,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">Speed is Money</h3>
                 <p className="text-slate-300 text-sm leading-relaxed">
-                  A 1-second delay = 7% fewer conversions. That's not theory—that's your money. I obsess over Core Web Vitals 
+                  A 1-second delay = 7% fewer conversions. That's not theory-that's your money. I obsess over Core Web Vitals 
                   and load times because slow sites literally lose you sales.
                 </p>
               </div>
@@ -280,7 +280,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">Zero Bullshit Metrics</h3>
                 <p className="text-slate-300 text-sm leading-relaxed">
-                  "Brand awareness" and "engagement" don't pay your bills. Rankings, traffic, leads, revenue—that's what matters. 
+                  "Brand awareness" and "engagement" don't pay your bills. Rankings, traffic, leads, revenue-that's what matters. 
                   If it doesn't move those numbers, I'm not interested.
                 </p>
               </div>
@@ -305,7 +305,7 @@ export default function AboutPage() {
                 <h3 className="text-xl font-bold text-white mb-3">Family-Run (Actually)</h3>
                 <p className="text-slate-300 text-sm leading-relaxed">
                   Not a corporate agency with account managers you never talk to. Just me and my team, treating your 
-                  business like it matters—because it does.
+                  business like it matters-because it does.
                 </p>
               </div>
             </div>
@@ -340,7 +340,7 @@ export default function AboutPage() {
                 
                 <div className="space-y-4 text-slate-300 leading-relaxed">
                   <p>
-                    I'm based in <strong>Southport</strong>. Love it here—Victorian seafront, decent coffee shops, 
+                    I'm based in <strong>Southport</strong>. Love it here-Victorian seafront, decent coffee shops, 
                     and just far enough from the city that you can actually think clearly.
                   </p>
                   
@@ -352,7 +352,7 @@ export default function AboutPage() {
                   
                   <p>
                     The best part? My kids have picked up the same tech obsession I got from my dad. Watching them mess around 
-                    in Minecraft or start learning to code—that's the good stuff. That's why I got into this in the first place.
+                    in Minecraft or start learning to code-that's the good stuff. That's why I got into this in the first place.
                   </p>
 
                   <p>
@@ -420,7 +420,7 @@ export default function AboutPage() {
                   <h3 className="text-lg font-bold text-white mb-2">Going All-In on SEO</h3>
                   <p className="text-slate-300 text-sm">
                     15 years ago I realized: beautiful sites that nobody finds are useless. Went deep on technical SEO, 
-                    Core Web Vitals, schema markup—everything that makes Google happy.
+                    Core Web Vitals, schema markup-everything that makes Google happy.
                   </p>
                 </div>
               </div>
@@ -447,17 +447,17 @@ export default function AboutPage() {
           <article className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-start">
               <div>
-                <p className="text-green-400 text-xs font-bold uppercase tracking-widest mb-3">Side Projects — or the Main Event</p>
+                <p className="text-green-400 text-xs font-bold uppercase tracking-widest mb-3">Side Projects: or the Main Event</p>
                 <h2 className="text-3xl md:text-4xl font-black mb-6 text-white">The Sefton Coast Network</h2>
                 <div className="space-y-4 text-slate-300 leading-relaxed">
                   <p>
-                    Beyond client work, I own and operate the <strong>Sefton Coast Network</strong> — four independent editorial guides built on the same stack I use for clients. They&apos;re real publishing businesses, not just demo sites.
+                    Beyond client work, I own and operate the <strong>Sefton Coast Network</strong>: four independent editorial guides built on the same stack I use for clients. They&apos;re real publishing businesses, not just demo sites.
                   </p>
                   <p>
                     Each one targets a specific audience and subject area: the visitor guide to Southport, the guide to Formby, championship links golf on the coast, and a 257-species coastal wildlife database. They cross-link, share domain authority, and operate as a network.
                   </p>
                   <p>
-                    It&apos;s both the proof of concept for everything I build for clients, and a commercial project in its own right. If you want to see what a properly engineered content site looks like — technically, structurally, and editorially — this is it.
+                    It&apos;s both the proof of concept for everything I build for clients, and a commercial project in its own right. If you want to see what a properly engineered content site looks like: technically, structurally, and editorially: this is it.
                   </p>
                 </div>
               </div>

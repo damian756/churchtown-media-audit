@@ -57,7 +57,7 @@ export default function TermsPage() {
 
           <h3 className="text-xl font-bold text-white mt-8 mb-4">7. Cancellation and Refunds</h3>
           <p>
-            Either party may terminate a service agreement with 30 days written notice. If a project is cancelled after commencement, the client is responsible for payment of all work completed to date. Deposits are non-refundable once work has begun. We offer a 30-day satisfaction guarantee on completed websites — if you are not satisfied, we will revise the work at no additional cost.
+            Either party may terminate a service agreement with 30 days written notice. If a project is cancelled after commencement, the client is responsible for payment of all work completed to date. Deposits are non-refundable once work has begun. We offer a 30-day satisfaction guarantee on completed websites: if you are not satisfied, we will revise the work at no additional cost.
           </p>
 
           <h3 className="text-xl font-bold text-white mt-8 mb-4">8. Third-Party Links</h3>

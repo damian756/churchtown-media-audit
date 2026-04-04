@@ -4,7 +4,7 @@ import { ArrowRight, FileText, CheckCircle2, Search, TrendingUp, Map, Target, Li
 
 export const metadata: Metadata = {
   title: "Content Strategy | SEO-Led Content Planning | Churchtown Media",
-  description: "A content strategy built around what your audience searches for and what AI engines cite. Keyword research, topical authority mapping, competitor gap analysis, and a 12-month editorial calendar. No filler — just the roadmap.",
+  description: "A content strategy built around what your audience searches for and what AI engines cite. Keyword research, topical authority mapping, competitor gap analysis, and a 12-month editorial calendar. No filler: just the roadmap.",
   keywords: [
     "content strategy service",
     "SEO content strategy",
@@ -81,7 +81,7 @@ export default function ContentStrategyPage() {
         name: "Is this a document or an ongoing service?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The strategy engagement is a one-time project that produces a concrete deliverable: a strategy document, keyword database, and editorial calendar. What you do with it is up to you — you can execute it yourself, have your in-house team follow it, or commission us to produce the content. We also offer optional quarterly strategy reviews for clients who want ongoing strategic guidance.",
+          text: "The strategy engagement is a one-time project that produces a concrete deliverable: a strategy document, keyword database, and editorial calendar. What you do with it is up to you: you can execute it yourself, have your in-house team follow it, or commission us to produce the content. We also offer optional quarterly strategy reviews for clients who want ongoing strategic guidance.",
         },
       },
       {
@@ -89,7 +89,7 @@ export default function ContentStrategyPage() {
         name: "How is your content strategy different from a standard keyword list?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "A keyword list tells you what people search for. A content strategy tells you what to create, in what order, in what format, targeting what intent, with what internal linking structure — and why each decision was made. It's the difference between a shopping list and a business plan. We also factor in GEO signals so the strategy accounts for AI search, not just traditional rankings.",
+          text: "A keyword list tells you what people search for. A content strategy tells you what to create, in what order, in what format, targeting what intent, with what internal linking structure: and why each decision was made. It's the difference between a shopping list and a business plan. We also factor in GEO signals so the strategy accounts for AI search, not just traditional rankings.",
         },
       },
       {
@@ -97,7 +97,7 @@ export default function ContentStrategyPage() {
         name: "How long does the strategy engagement take?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Typically 3–4 weeks from brief to delivery. The process involves a discovery session, competitive landscape analysis, keyword research, topical mapping, and document production. We don't rush it — a good strategy document is the foundation for 12 months of content decisions.",
+          text: "Typically 3–4 weeks from brief to delivery. The process involves a discovery session, competitive landscape analysis, keyword research, topical mapping, and document production. We don't rush it: a good strategy document is the foundation for 12 months of content decisions.",
         },
       },
     ],
@@ -112,7 +112,7 @@ export default function ContentStrategyPage() {
     {
       icon: Map,
       title: "Topical Authority Map",
-      description: "A visual map of the content clusters you need to own to become the recognised authority in your niche — in Google's eyes and in AI engines' citation models.",
+      description: "A visual map of the content clusters you need to own to become the recognised authority in your niche: in Google's eyes and in AI engines' citation models.",
     },
     {
       icon: Target,
@@ -162,12 +162,12 @@ export default function ContentStrategyPage() {
         </h1>
 
         <p className="text-xl text-slate-300 leading-relaxed max-w-3xl mx-auto mb-4">
-          Most businesses publish content reactively — what feels timely, what someone had an idea about, what they
+          Most businesses publish content reactively: what feels timely, what someone had an idea about, what they
           think is interesting. Then wonder why it doesn't rank.
         </p>
 
         <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-12">
-          Content strategy means knowing exactly what to create, for whom, in what order — based on keyword data,
+          Content strategy means knowing exactly what to create, for whom, in what order: based on keyword data,
           competitor gaps, and AI search signals. We build that roadmap. You execute it.
         </p>
 
@@ -303,7 +303,7 @@ export default function ContentStrategyPage() {
       <section className="max-w-4xl mx-auto px-6 mb-24">
         <div className="bg-gradient-to-br from-teal-900/40 to-blue-900/40 border border-teal-500/30 rounded-3xl p-12 text-center">
           <Lightbulb className="w-12 h-12 text-teal-400 mx-auto mb-6" />
-          <h2 className="text-4xl font-bold text-white mb-4">Know what to publish — and why.</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">Know what to publish: and why.</h2>
           <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
             12 months of content direction, backed by data. No guessing. No publishing for the sake of it.
           </p>

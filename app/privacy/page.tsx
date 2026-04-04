@@ -70,12 +70,12 @@ export default function PrivacyPage() {
           <h3 className="text-xl font-bold text-white mt-8 mb-4">7. Your Rights Under UK GDPR</h3>
           <p>Under the UK General Data Protection Regulation, you have the following rights:</p>
           <ul className="list-disc pl-6 mb-4 text-slate-300">
-            <li><strong>Right of access</strong> — request a copy of the personal data we hold about you</li>
-            <li><strong>Right to rectification</strong> — request correction of inaccurate or incomplete data</li>
-            <li><strong>Right to erasure</strong> — request deletion of your personal data</li>
-            <li><strong>Right to restrict processing</strong> — request that we limit how we use your data</li>
-            <li><strong>Right to data portability</strong> — request a copy of your data in a structured format</li>
-            <li><strong>Right to object</strong> — object to our processing of your personal data</li>
+            <li><strong>Right of access</strong>: request a copy of the personal data we hold about you</li>
+            <li><strong>Right to rectification</strong>: request correction of inaccurate or incomplete data</li>
+            <li><strong>Right to erasure</strong>: request deletion of your personal data</li>
+            <li><strong>Right to restrict processing</strong>: request that we limit how we use your data</li>
+            <li><strong>Right to data portability</strong>: request a copy of your data in a structured format</li>
+            <li><strong>Right to object</strong>: object to our processing of your personal data</li>
           </ul>
           <p>To exercise any of these rights, please contact us using the details below. We will respond to your request within 30 days.</p>
 

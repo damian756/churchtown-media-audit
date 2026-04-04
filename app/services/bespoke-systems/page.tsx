@@ -4,7 +4,7 @@ import { ArrowRight, Code2, CheckCircle2, Database, Zap, TrendingUp, BarChart3, 
 
 export const metadata: Metadata = {
   title: "Bespoke Systems & Custom Dashboards | Churchtown Media",
-  description: "When off-the-shelf tools don't fit, we build to spec. Custom lead generation systems, analytics dashboards, AI-powered reporting tools, and data platforms — built on Next.js and PostgreSQL for businesses with complex requirements.",
+  description: "When off-the-shelf tools don't fit, we build to spec. Custom lead generation systems, analytics dashboards, AI-powered reporting tools, and data platforms: built on Next.js and PostgreSQL for businesses with complex requirements.",
   keywords: [
     "bespoke web systems",
     "custom dashboard development",
@@ -45,7 +45,7 @@ export default function BespokeSystemsPage() {
     name: "Bespoke Systems & Custom Development",
     serviceType: "Custom Software Development",
     description:
-      "Bespoke digital systems for businesses with requirements that off-the-shelf tools can't meet. Includes custom dashboards, lead generation platforms, AI-powered reporting tools, data aggregation systems, and client portals — all built on Next.js, TypeScript, and PostgreSQL.",
+      "Bespoke digital systems for businesses with requirements that off-the-shelf tools can't meet. Includes custom dashboards, lead generation platforms, AI-powered reporting tools, data aggregation systems, and client portals: all built on Next.js, TypeScript, and PostgreSQL.",
     provider: {
       "@type": "Organization",
       "@id": "https://www.churchtownmedia.co.uk/#organization",
@@ -81,7 +81,7 @@ export default function BespokeSystemsPage() {
         name: "What technology stack do you use?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Our standard stack is Next.js 15+ (App Router), TypeScript, Tailwind CSS v4, Prisma ORM, PostgreSQL (Neon serverless), NextAuth for authentication, Stripe for payments, and Vercel for deployment. For AI integrations we use OpenAI and Anthropic APIs. For workflow automation we use Make (Integromat) or n8n. We choose the right tools for each project — not just the ones we're comfortable with.",
+          text: "Our standard stack is Next.js 15+ (App Router), TypeScript, Tailwind CSS v4, Prisma ORM, PostgreSQL (Neon serverless), NextAuth for authentication, Stripe for payments, and Vercel for deployment. For AI integrations we use OpenAI and Anthropic APIs. For workflow automation we use Make (Integromat) or n8n. We choose the right tools for each project: not just the ones we're comfortable with.",
         },
       },
       {
@@ -107,7 +107,7 @@ export default function BespokeSystemsPage() {
     {
       icon: TrendingUp,
       title: "Lead Generation Platforms",
-      description: "Multi-step qualification flows, AI lead scoring, CRM integration, automated routing and follow-up sequences. Built to convert — not just capture.",
+      description: "Multi-step qualification flows, AI lead scoring, CRM integration, automated routing and follow-up sequences. Built to convert: not just capture.",
       examples: ["Multi-step quote calculators", "Professional services intake forms", "B2B prospect qualification systems"],
     },
     {
@@ -119,7 +119,7 @@ export default function BespokeSystemsPage() {
     {
       icon: Database,
       title: "Data Aggregation Systems",
-      description: "Systems that collect, clean, and surface data from multiple disparate sources — APIs, databases, spreadsheets, web scraping — into a single coherent view.",
+      description: "Systems that collect, clean, and surface data from multiple disparate sources: APIs, databases, spreadsheets, web scraping: into a single coherent view.",
       examples: ["Property data platforms", "Competitor monitoring systems", "Market intelligence tools"],
     },
     {
@@ -137,7 +137,7 @@ export default function BespokeSystemsPage() {
     {
       icon: Shield,
       title: "Client Portals & Dashboards",
-      description: "Secure, authenticated client-facing dashboards. Reporting, document delivery, project tracking, and communication — all in your brand.",
+      description: "Secure, authenticated client-facing dashboards. Reporting, document delivery, project tracking, and communication: all in your brand.",
       examples: ["Agency client dashboards", "Service delivery portals", "Subscription management platforms"],
     },
   ];
@@ -157,7 +157,7 @@ export default function BespokeSystemsPage() {
       <section className="pt-32 pb-24 px-6 max-w-5xl mx-auto text-center">
         <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/30 rounded-full px-4 py-1.5 mb-8">
           <Code2 className="w-4 h-4 text-blue-400" />
-          <span className="text-xs font-bold text-blue-400 uppercase tracking-wide">Custom Systems — Built to Spec</span>
+          <span className="text-xs font-bold text-blue-400 uppercase tracking-wide">Custom Systems: Built to Spec</span>
         </div>
 
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-8 leading-[1.1]">
@@ -174,7 +174,7 @@ export default function BespokeSystemsPage() {
         </p>
 
         <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-12">
-          We build them. From specification to launch — on a stack that performs, scales, and doesn't create technical
+          We build them. From specification to launch: on a stack that performs, scales, and doesn't create technical
           debt.
         </p>
 
@@ -213,7 +213,7 @@ export default function BespokeSystemsPage() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">What we build</h2>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto">
-            Six categories of custom systems — each built around your specific requirements.
+            Six categories of custom systems: each built around your specific requirements.
           </p>
         </div>
 
@@ -250,7 +250,7 @@ export default function BespokeSystemsPage() {
             <p>
               SouthportGuide.co.uk is a bespoke data platform we built and run. It aggregates Land Registry property
               sales data, Ofsted school ratings, police crime data, EPC records, flood zone information, and broadband
-              coverage into a unified postcode-level database — generating thousands of unique, data-rich landing pages
+              coverage into a unified postcode-level database: generating thousands of unique, data-rich landing pages
               automatically.
             </p>
             <p>
@@ -274,9 +274,9 @@ export default function BespokeSystemsPage() {
             { n: "01", title: "Discovery Call", body: "We understand your requirements, your existing systems, your team, and your constraints. No spec written yet." },
             { n: "02", title: "Technical Specification", body: "A written spec covering system architecture, data models, user flows, integrations, and delivery timeline. You approve before any code is written." },
             { n: "03", title: "Prototype / MVP", body: "Where appropriate, we build a working prototype for you to test against real requirements before committing to full development." },
-            { n: "04", title: "Full Build", body: "Iterative development with regular check-ins and demos. No big bang delivery — you see progress throughout." },
+            { n: "04", title: "Full Build", body: "Iterative development with regular check-ins and demos. No big bang delivery: you see progress throughout." },
             { n: "05", title: "Testing & Launch", body: "Thorough testing, UAT with your team, and a managed launch. Documentation and handover included as standard." },
-            { n: "06", title: "Support & Iteration", body: "Optional maintenance retainer or fixed-price feature additions. The system is yours — fully documented and exportable." },
+            { n: "06", title: "Support & Iteration", body: "Optional maintenance retainer or fixed-price feature additions. The system is yours: fully documented and exportable." },
           ].map((step) => (
             <div key={step.n} className="flex gap-6 bg-slate-900 border border-slate-800 rounded-2xl p-6">
               <div className="text-3xl font-black text-slate-700 shrink-0 w-10">{step.n}</div>
@@ -309,7 +309,7 @@ export default function BespokeSystemsPage() {
           <h2 className="text-4xl font-bold text-white mb-4">Tell us what you need.</h2>
           <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
             We'll tell you if it's buildable, how long it will take, and what it will cost. No commitment, no sales
-            process — just a straight answer.
+            process: just a straight answer.
           </p>
           <Link
             href="/contact"

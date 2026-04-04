@@ -254,7 +254,7 @@ export default async function IndustryPage({ params }: PageProps) {
               What We Build for {industry.name}
             </h2>
             <p className="text-slate-400 text-center mb-12 max-w-3xl mx-auto">
-              Every feature engineered for your industry's specific needs. No generic templates—just purpose-built solutions.
+              Every feature engineered for your industry's specific needs. No generic templates-just purpose-built solutions.
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               {industry.features.map((feature, idx) => (

@@ -159,7 +159,7 @@ export default function WorkPage() {
   const principles = [
     {
       title: "Speed is Non-Negotiable",
-      description: "Every site we build must achieve 90+ Lighthouse performance score. Slow sites lose money—it's that simple.",
+      description: "Every site we build must achieve 90+ Lighthouse performance score. Slow sites lose money-it's that simple.",
       metric: "Target: <2s mobile load on 4G",
       icon: Gauge
     },
@@ -522,7 +522,7 @@ export default function WorkPage() {
                 <h3 className="text-xl font-bold text-blue-400 mb-3">Do you work with my industry?</h3>
                 <p className="text-slate-300 leading-relaxed">
                   We specialize in 35+ industries. Check our <Link href="/industries" className="text-blue-400 hover:text-blue-300 underline">Who We Help</Link> page 
-                  to see if your industry is listed. If not, we can still help—these are just our specializations.
+                  to see if your industry is listed. If not, we can still help-these are just our specializations.
                 </p>
               </div>
 
@@ -538,7 +538,7 @@ export default function WorkPage() {
                 <h3 className="text-xl font-bold text-blue-400 mb-3">What if I need changes after launch?</h3>
                 <p className="text-slate-300 leading-relaxed">
                   All projects include 30 days of post-launch support (bug fixes, minor tweaks). After that, 
-                  we offer monthly retainer packages or hourly support—whatever suits your needs.
+                  we offer monthly retainer packages or hourly support-whatever suits your needs.
                 </p>
               </div>
 

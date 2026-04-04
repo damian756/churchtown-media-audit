@@ -5,7 +5,7 @@ import { ArrowRight, CheckCircle2, Plus, MapPin, Phone, TrendingUp, Zap, Shield,
 
 export const metadata: Metadata = {
   title: 'Web Design Southport | Churchtown Media',
-  description: 'Web design for Southport businesses. Fast Next.js sites that rank on Google. Honest pricing from £2,500. Based in Southport — you can actually come and meet us.',
+  description: 'Web design for Southport businesses. Fast Next.js sites that rank on Google. Honest pricing from £2,500. Based in Southport: you can actually come and meet us.',
   keywords: ['web design southport', 'website design southport', 'web design agency southport', 'next.js development southport', 'web design north west', 'web design liverpool', 'southport web designer'],
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk/services/web-design',
@@ -17,19 +17,19 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: 'Churchtown Media',
     locale: 'en_GB',
-    images: [{ url: 'https://www.churchtownmedia.co.uk/images/web-design-hero.jpg', width: 1200, height: 630, alt: 'Churchtown Media — web design Southport' }],
+    images: [{ url: 'https://www.churchtownmedia.co.uk/images/web-design-hero.jpg', width: 1200, height: 630, alt: 'Churchtown Media: web design Southport' }],
   },
   twitter: { card: 'summary_large_image', title: 'Web Design Southport | Churchtown Media', description: 'Fast, rankable websites for Southport businesses. From £2,500. Based in Southport.' },
 };
 
 const faqs = [
   {
-    question: "I've been let down by a web designer before — how is this different?",
-    answer: "Directly: we're a small local operation and our reputation depends on every project we take on. We don't take on work we can't do properly. Before we quote, we'll tell you honestly whether your existing site is fixable or whether it needs a rebuild — and why. If we're not the right fit, we'll say so. If you want to see how we work, read the Alotek Shelters case study on the blog — that's a real client, real data, nothing dressed up."
+    question: "I've been let down by a web designer before: how is this different?",
+    answer: "Directly: we're a small local operation and our reputation depends on every project we take on. We don't take on work we can't do properly. Before we quote, we'll tell you honestly whether your existing site is fixable or whether it needs a rebuild: and why. If we're not the right fit, we'll say so. If you want to see how we work, read the Alotek Shelters case study on the blog: that's a real client, real data, nothing dressed up."
   },
   {
     question: "How much does a website actually cost?",
-    answer: "Small business sites (5 pages, contact form, basic SEO) start from £2,500. Sites with a blog, CMS so you can edit content yourself, and more advanced SEO start from £5,000. E-commerce or custom functionality starts from £10,000. All prices include first-year hosting and 30 days of post-launch support. We give fixed quotes — no surprises, no ongoing fees you didn't agree to."
+    answer: "Small business sites (5 pages, contact form, basic SEO) start from £2,500. Sites with a blog, CMS so you can edit content yourself, and more advanced SEO start from £5,000. E-commerce or custom functionality starts from £10,000. All prices include first-year hosting and 30 days of post-launch support. We give fixed quotes: no surprises, no ongoing fees you didn't agree to."
   },
   {
     question: "Will I be able to update the site myself?",
@@ -37,15 +37,15 @@ const faqs = [
   },
   {
     question: "Why Next.js and not WordPress?",
-    answer: "WordPress sites are slow by default — the average WordPress site loads in 4–5 seconds. A slow site loses visitors and ranks lower on Google. Our Next.js sites load in under a second. They're also secure by design: there's no admin panel for hackers to find, no plugins to keep updated, no monthly maintenance bill to keep things running. Most of our clients save more on hosting and maintenance in year two than the difference in initial build cost."
+    answer: "WordPress sites are slow by default: the average WordPress site loads in 4–5 seconds. A slow site loses visitors and ranks lower on Google. Our Next.js sites load in under a second. They're also secure by design: there's no admin panel for hackers to find, no plugins to keep updated, no monthly maintenance bill to keep things running. Most of our clients save more on hosting and maintenance in year two than the difference in initial build cost."
   },
   {
     question: "Can I come and meet you in person?",
-    answer: "Yes — we're based in Churchtown, Southport. If you'd rather have a proper conversation in person than a Zoom call, that's fine with us. Most local clients prefer it."
+    answer: "Yes: we're based in Churchtown, Southport. If you'd rather have a proper conversation in person than a Zoom call, that's fine with us. Most local clients prefer it."
   },
   {
     question: "How long does it take to build a site?",
-    answer: "Small business sites typically launch in 3–4 weeks. Larger projects with custom functionality take 6–8 weeks. We don't launch until the site hits our performance benchmarks. Timeline depends partly on how quickly we get content and feedback from you — the more responsive, the faster it goes."
+    answer: "Small business sites typically launch in 3–4 weeks. Larger projects with custom functionality take 6–8 weeks. We don't launch until the site hits our performance benchmarks. Timeline depends partly on how quickly we get content and feedback from you: the more responsive, the faster it goes."
   },
   {
     question: "Do you work with businesses outside Southport?",
@@ -53,7 +53,7 @@ const faqs = [
   },
   {
     question: "What are the ongoing costs after launch?",
-    answer: "Hosting on Vercel is free for most small sites or around £20/month for higher-traffic sites. That's it for the basics. We offer optional monthly maintenance packages (£200–£500/month) covering updates, monitoring and priority support — but these aren't mandatory. Many clients manage updates themselves via the CMS."
+    answer: "Hosting on Vercel is free for most small sites or around £20/month for higher-traffic sites. That's it for the basics. We offer optional monthly maintenance packages (£200–£500/month) covering updates, monitoring and priority support: but these aren't mandatory. Many clients manage updates themselves via the CMS."
   }
 ];
 
@@ -133,7 +133,7 @@ export default function WebDesignPage() {
           </p>
 
           <p className="text-slate-400 mb-10 max-w-2xl">
-            We're a small Southport team. We take on projects we can do properly and we're straightforward about what your site needs — even if that's not what you were expecting to hear.
+            We're a small Southport team. We take on projects we can do properly and we're straightforward about what your site needs: even if that's not what you were expecting to hear.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
@@ -159,7 +159,7 @@ export default function WebDesignPage() {
 
           <div className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-4">Case Study</div>
           <h2 className="text-3xl md:text-4xl font-black mb-3">
-            Page 5 to #1 in the AI Overview — in 6 weeks
+            Page 5 to #1 in the AI Overview: in 6 weeks
           </h2>
           <p className="text-slate-400 mb-10 max-w-2xl">
             Alotek Shelters are a Lancashire manufacturer of bus shelters, covered walkways and outdoor canopies. They came to us after spending significant money with a previous agency and having almost nothing to show for it.
@@ -185,9 +185,9 @@ export default function WebDesignPage() {
               <div>
                 <div className="text-xs font-bold text-red-400 uppercase tracking-wider mb-3">Before</div>
                 <ul className="space-y-2 text-sm text-slate-300">
-                  <li className="flex items-start gap-2"><span className="text-red-400 mt-0.5">✗</span> WordPress site averaging position 50 — effectively invisible</li>
+                  <li className="flex items-start gap-2"><span className="text-red-400 mt-0.5">✗</span> WordPress site averaging position 50: effectively invisible</li>
                   <li className="flex items-start gap-2"><span className="text-red-400 mt-0.5">✗</span> ~200 Google impressions per day across all keywords</li>
-                  <li className="flex items-start gap-2"><span className="text-red-400 mt-0.5">✗</span> Poor page structure — no page was clearly answering any specific buyer query</li>
+                  <li className="flex items-start gap-2"><span className="text-red-400 mt-0.5">✗</span> Poor page structure: no page was clearly answering any specific buyer query</li>
                   <li className="flex items-start gap-2"><span className="text-red-400 mt-0.5">✗</span> Slow load times penalising rankings</li>
                 </ul>
               </div>
@@ -195,7 +195,7 @@ export default function WebDesignPage() {
                 <div className="text-xs font-bold text-green-400 uppercase tracking-wider mb-3">After (6 weeks)</div>
                 <ul className="space-y-2 text-sm text-slate-300">
                   <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">✓</span> #1 in Google's AI Overview for "bus shelter manufacturers" nationally</li>
-                  <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">✓</span> 800+ daily impressions — 4× growth in 3 months</li>
+                  <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">✓</span> 800+ daily impressions: 4× growth in 3 months</li>
                   <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">✓</span> Page 1 rankings across bus shelters, covered walkways, buggy shelters, entrance canopies</li>
                   <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">✓</span> 67 keywords now tracked nationally in a niche B2B sector</li>
                 </ul>
@@ -204,7 +204,7 @@ export default function WebDesignPage() {
           </div>
 
           <p className="text-slate-400 text-sm mb-2">
-            We rebuilt the site on Next.js, restructured the content around specific buyer search terms, and ran month-one SEO. The AI Overviews followed from the content quality — Google's AI pulls from pages that give clear, authoritative answers.
+            We rebuilt the site on Next.js, restructured the content around specific buyer search terms, and ran month-one SEO. The AI Overviews followed from the content quality: Google's AI pulls from pages that give clear, authoritative answers.
           </p>
 
           <Link href="/blog/alotek-shelters-month-1-seo-results" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 text-sm font-semibold group">
@@ -218,12 +218,12 @@ export default function WebDesignPage() {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-black mb-3">What we build</h2>
           <p className="text-slate-400 mb-10 max-w-2xl">
-            You can see our work directly. We also run our own network of local guide sites on the Sefton Coast — built on the same stack, same approach.
+            You can see our work directly. We also run our own network of local guide sites on the Sefton Coast: built on the same stack, same approach.
           </p>
 
           <div className="grid md:grid-cols-3 gap-5 mb-10">
             {[
-              { name: "SouthportGuide.co.uk", desc: "Local directory and visitor guide — restaurants, hotels, golf, attractions. 150+ listings.", href: "https://www.southportguide.co.uk", tag: "Directory & guides" },
+              { name: "SouthportGuide.co.uk", desc: "Local directory and visitor guide: restaurants, hotels, golf, attractions. 150+ listings.", href: "https://www.southportguide.co.uk", tag: "Directory & guides" },
               { name: "FormbyGuide.co.uk", desc: "Nature-first visitor guide covering Formby Beach, red squirrels, pinewoods and local businesses.", href: "https://www.formbyguide.co.uk", tag: "Directory & guides" },
               { name: "SeftonCoast.network", desc: "Umbrella brand and landing page for the Sefton Coast network of sites.", href: "https://www.seftoncoast.network", tag: "Brand site" },
             ].map((site, i) => (
@@ -241,7 +241,7 @@ export default function WebDesignPage() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { icon: Zap, title: "Loads fast", desc: "Under 1 second on mobile. Fast sites rank higher and lose fewer visitors.", stat: "Sub-1s load time" },
-              { icon: TrendingUp, title: "Built to rank", desc: "Semantic structure, schema markup and clean URLs built in from the start — not bolted on later.", stat: "SEO-first architecture" },
+              { icon: TrendingUp, title: "Built to rank", desc: "Semantic structure, schema markup and clean URLs built in from the start: not bolted on later.", stat: "SEO-first architecture" },
               { icon: Shield, title: "No WordPress headaches", desc: "No plugins to break, no admin panel to hack, no monthly maintenance bill to keep things running.", stat: "Zero plugin dependencies" },
             ].map((feature, i) => {
               const Icon = feature.icon;
@@ -270,7 +270,7 @@ export default function WebDesignPage() {
 
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div className="bg-red-950/30 border border-red-900/40 rounded-2xl p-6">
-              <h3 className="text-lg font-bold text-red-400 mb-4">WordPress — what it actually costs</h3>
+              <h3 className="text-lg font-bold text-red-400 mb-4">WordPress: what it actually costs</h3>
               <ul className="space-y-3 text-sm text-slate-300">
                 <li className="flex items-start gap-2"><span className="text-red-400">✗</span> 4–5s average load time (53% of visitors leave before 3s)</li>
                 <li className="flex items-start gap-2"><span className="text-red-400">✗</span> 20+ plugins = slow, vulnerable, and something breaks every update</li>
@@ -279,10 +279,10 @@ export default function WebDesignPage() {
               </ul>
             </div>
             <div className="bg-green-950/30 border border-green-900/40 rounded-2xl p-6">
-              <h3 className="text-lg font-bold text-green-400 mb-4">Next.js — what you actually get</h3>
+              <h3 className="text-lg font-bold text-green-400 mb-4">Next.js: what you actually get</h3>
               <ul className="space-y-3 text-sm text-slate-300">
-                <li className="flex items-start gap-2"><span className="text-green-400">✓</span> Under 1s load time — better rankings, fewer lost visitors</li>
-                <li className="flex items-start gap-2"><span className="text-green-400">✓</span> Zero plugins — nothing to break, nothing to update</li>
+                <li className="flex items-start gap-2"><span className="text-green-400">✓</span> Under 1s load time: better rankings, fewer lost visitors</li>
+                <li className="flex items-start gap-2"><span className="text-green-400">✓</span> Zero plugins: nothing to break, nothing to update</li>
                 <li className="flex items-start gap-2"><span className="text-green-400">✓</span> Hosting from £0–£20/month on Vercel</li>
                 <li className="flex items-start gap-2"><span className="text-green-400">✓</span> No admin panel = nothing to hack</li>
               </ul>
@@ -361,7 +361,7 @@ export default function WebDesignPage() {
 
           <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-5 text-center">
             <p className="text-slate-300 text-sm">
-              Not sure which fits? <Link href="/contact" className="text-blue-400 hover:text-blue-300 font-semibold">Book a free call</Link> — we'll tell you honestly what your site needs and what it'll cost. Payment plans available on all packages.
+              Not sure which fits? <Link href="/contact" className="text-blue-400 hover:text-blue-300 font-semibold">Book a free call</Link>: we'll tell you honestly what your site needs and what it'll cost. Payment plans available on all packages.
             </p>
           </div>
         </div>
@@ -378,10 +378,10 @@ export default function WebDesignPage() {
 
           <div className="space-y-4">
             {[
-              { n: "01", title: "Discovery", time: "Week 1", desc: "We look at your existing site, your competitors and the specific search terms your actual buyers use. We tell you what needs fixing and why — before any money changes hands." },
+              { n: "01", title: "Discovery", time: "Week 1", desc: "We look at your existing site, your competitors and the specific search terms your actual buyers use. We tell you what needs fixing and why: before any money changes hands." },
               { n: "02", title: "Design & Structure", time: "Week 2", desc: "We plan the page structure for SEO first, then design around it. Every page has a clear job. We get your approval before we build anything." },
               { n: "03", title: "Build & Content", time: "Week 3–4", desc: "Next.js development, schema markup, image optimisation, and content either written or migrated from your existing site. We handle all of it." },
-              { n: "04", title: "Launch", time: "Week 5", desc: "We run performance checks before going live. 90+ Lighthouse score is our standard — we don't launch below it. You get a walkthrough and handover documentation." },
+              { n: "04", title: "Launch", time: "Week 5", desc: "We run performance checks before going live. 90+ Lighthouse score is our standard: we don't launch below it. You get a walkthrough and handover documentation." },
             ].map((step) => (
               <div key={step.n} className="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-6 items-start">
                 <div className="bg-gradient-to-br from-blue-600 to-cyan-600 rounded-xl px-4 py-3 flex-shrink-0 text-center min-w-[64px]">
@@ -410,7 +410,7 @@ export default function WebDesignPage() {
                 <span className="text-slate-400 font-normal">You can actually meet us.</span>
               </h2>
               <p className="text-slate-300 leading-relaxed mb-4">
-                We're based in Churchtown, Southport — not a distant agency with a local landing page. We know Lord Street, we know the seasonal pattern of the town, we know what the Marine Lake Events Centre will do to search competition over the next five years.
+                We're based in Churchtown, Southport: not a distant agency with a local landing page. We know Lord Street, we know the seasonal pattern of the town, we know what the Marine Lake Events Centre will do to search competition over the next five years.
               </p>
               <p className="text-slate-300 leading-relaxed mb-6">
                 If you'd rather have a conversation in person than a Zoom call, that's completely fine. Most of our local clients prefer it.
@@ -429,7 +429,7 @@ export default function WebDesignPage() {
             <div className="bg-slate-800 border border-slate-700 rounded-2xl p-6 space-y-4">
               <h3 className="text-white font-bold mb-2">Areas we cover</h3>
               {[
-                "Southport — town centre, Lord Street, Birkdale, Ainsdale, Churchtown",
+                "Southport: town centre, Lord Street, Birkdale, Ainsdale, Churchtown",
                 "Formby, Freshfield, Hightown",
                 "Crosby and the wider Sefton Coast",
                 "Liverpool and Merseyside",
@@ -475,7 +475,7 @@ export default function WebDesignPage() {
             Ready to get started?
           </h2>
           <p className="text-slate-300 mb-2 leading-relaxed">
-            Get in touch and we'll tell you honestly what your site needs. No sales pitch — just a straight answer about what's wrong and what it would take to fix it.
+            Get in touch and we'll tell you honestly what your site needs. No sales pitch: just a straight answer about what's wrong and what it would take to fix it.
           </p>
           <p className="text-slate-400 text-sm mb-8">
             Or get a free automated audit of your current site first.

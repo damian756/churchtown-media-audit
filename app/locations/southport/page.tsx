@@ -8,14 +8,14 @@ import StatCard from "@/app/components/StatCard";
 export const metadata: Metadata = {
   title: "Digital Agency Southport | Web Design & SEO | Churchtown Media",
   description:
-    "Churchtown Media is Southport's local digital agency — web design and SEO for Southport businesses. Based in Churchtown, five minutes from Lord Street. No outsourcing, no city-centre prices.",
+    "Churchtown Media is Southport's local digital agency: web design and SEO for Southport businesses. Based in Churchtown, five minutes from Lord Street. No outsourcing, no city-centre prices.",
   alternates: {
     canonical: "https://www.churchtownmedia.co.uk/locations/southport",
   },
   openGraph: {
     title: "Digital Agency Southport | Churchtown Media",
     description:
-      "Churchtown Media is Southport's local digital agency — web design and SEO for Southport businesses. Based in Churchtown, five minutes from Lord Street.",
+      "Churchtown Media is Southport's local digital agency: web design and SEO for Southport businesses. Based in Churchtown, five minutes from Lord Street.",
     url: "https://www.churchtownmedia.co.uk/locations/southport",
     type: "website",
     siteName: "Churchtown Media",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         url: "https://www.churchtownmedia.co.uk/opengraph-image.png",
         width: 1200,
         height: 630,
-        alt: "Churchtown Media — Web Design & SEO in Southport",
+        alt: "Churchtown Media: Web Design & SEO in Southport",
       },
     ],
   },
@@ -38,7 +38,7 @@ const jsonLd = {
   "name": "Churchtown Media",
   "url": "https://www.churchtownmedia.co.uk",
   "description":
-    "Churchtown Media is Southport's local digital agency — web design and SEO for Southport businesses. Based in Churchtown, five minutes from Lord Street. No outsourcing.",
+    "Churchtown Media is Southport's local digital agency: web design and SEO for Southport businesses. Based in Churchtown, five minutes from Lord Street. No outsourcing.",
   "telephone": "+441704635785",
   "email": "hello@churchtownmedia.co.uk",
   "priceRange": "££",
@@ -133,14 +133,14 @@ export default function SouthportPage() {
           <div className="relative z-10 max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/10 rounded-full px-4 py-1.5 mb-6 text-sm font-medium">
               <MapPin className="w-4 h-4 text-blue-400" />
-              <span>Based in Southport — serving the whole borough</span>
+              <span>Based in Southport: serving the whole borough</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight tracking-tight">
               Southport&apos;s Local<br />
               <span className="text-blue-500">Digital Agency.</span>
             </h1>
             <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
-              Not a city agency that added Southport to a dropdown. We&apos;re a proper local business — based in Churchtown, five minutes from Lord Street. We know the seasonal rhythms, the local market, and which searches actually convert. No outsourcing. No city-centre rates.
+              Not a city agency that added Southport to a dropdown. We&apos;re a proper local business: based in Churchtown, five minutes from Lord Street. We know the seasonal rhythms, the local market, and which searches actually convert. No outsourcing. No city-centre rates.
               <span className="block mt-4 text-sm text-slate-400">
                 Serving: Birkdale • Churchtown • Ainsdale • Marshside • Blowick
               </span>
@@ -216,7 +216,7 @@ export default function SouthportPage() {
               <div>
                 <h3 className="text-lg font-bold text-white mb-2">Key Market Trend</h3>
                 <p className="text-slate-300 leading-relaxed">
-                  Mobile search spikes around the Air Show, The Open, and MLEC events — businesses that are already ranking capture the revenue. Those that aren&apos;t, don&apos;t.
+                  Mobile search spikes around the Air Show, The Open, and MLEC events: businesses that are already ranking capture the revenue. Those that aren&apos;t, don&apos;t.
                 </p>
               </div>
             </div>
@@ -233,7 +233,7 @@ export default function SouthportPage() {
             </h2>
             <div className="text-slate-300 mb-6 text-lg leading-relaxed space-y-4">
               <p>
-                Southport runs on two gears — local year-round businesses and the 8 million visitors who arrive for the beach, the Air Show, The Open, and Lord Street. Both groups search differently, and ranking well for both requires more than a generic North West strategy.
+                Southport runs on two gears: local year-round businesses and the 8 million visitors who arrive for the beach, the Air Show, The Open, and Lord Street. Both groups search differently, and ranking well for both requires more than a generic North West strategy.
               </p>
               <p>
                 Lord Street retail is competing with Liverpool ONE on one side and Amazon on the other. Hospitality businesses need to be visible when visitors are walking the seafront on a Saturday afternoon, phone in hand. With the Marine Lake Events Centre bringing an estimated 500,000 additional visitors, the businesses already ranking when that traffic arrives will take most of the revenue.
@@ -247,7 +247,7 @@ export default function SouthportPage() {
                 <Link href="/services/seo" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">
                   local SEO
                 </Link>{" "}
-                for Southport businesses — from{" "}
+                for Southport businesses: from{" "}
                 <Link href="/services/small-business" className="text-blue-400 hover:text-blue-300 underline decoration-1 underline-offset-2">
                   small independents
                 </Link>{" "}
@@ -267,13 +267,13 @@ export default function SouthportPage() {
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-1" />
                 <span className="text-slate-300 font-medium">
-                  We know the local market — competitors near Lord Street, seasonal search patterns, the lot.
+                  We know the local market: competitors near Lord Street, seasonal search patterns, the lot.
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-1" />
                 <span className="text-slate-300 font-medium">
-                  Face-to-face meetings available — we&apos;re five minutes from Lord Street.
+                  Face-to-face meetings available: we&apos;re five minutes from Lord Street.
                 </span>
               </li>
               <li className="flex items-start gap-3">
@@ -290,7 +290,7 @@ export default function SouthportPage() {
             <div className="relative z-10 text-center p-8 w-full">
               <MapPin className="w-12 h-12 text-blue-400 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-2xl font-bold text-white mb-2">Southport HQ</h3>
-              <p className="text-slate-400 mb-6">Based in Southport — not a satellite office</p>
+              <p className="text-slate-400 mb-6">Based in Southport: not a satellite office</p>
               <div className="space-y-4 pt-6 border-t border-slate-700">
                 <div className="flex items-center justify-center gap-2 text-slate-300 text-sm">
                   <div className="w-8 h-8 bg-blue-500/10 rounded-lg flex items-center justify-center">
@@ -369,7 +369,7 @@ export default function SouthportPage() {
               <li className="flex gap-3 items-start">
                 <span className="text-blue-400 text-xl shrink-0">→</span>
                 <span className="text-slate-300">
-                  Lord Street retail competing with Liverpool ONE and online — local footfall depends on winning digital visibility first
+                  Lord Street retail competing with Liverpool ONE and online: local footfall depends on winning digital visibility first
                 </span>
               </li>
               <li className="flex gap-3 items-start">
@@ -432,7 +432,7 @@ export default function SouthportPage() {
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Local SEO (Southport)</h3>
               <p className="text-slate-300 mb-6 text-sm">
-                Map Pack domination for searches like &quot;service in Southport&quot; or &quot;near Lord Street&quot;. Technical SEO, Google Business Profile, and local citations — all of it.
+                Map Pack domination for searches like &quot;service in Southport&quot; or &quot;near Lord Street&quot;. Technical SEO, Google Business Profile, and local citations: all of it.
               </p>
               <Link
                 href="/services/seo"
@@ -448,7 +448,7 @@ export default function SouthportPage() {
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Small Business Websites</h3>
               <p className="text-slate-300 mb-6 text-sm">
-                Professional, fast websites for Southport independents — Lord Street shops, local trades, hospitality. No templates, no bloated WordPress. Priced for small businesses.
+                Professional, fast websites for Southport independents: Lord Street shops, local trades, hospitality. No templates, no bloated WordPress. Priced for small businesses.
               </p>
               <Link
                 href="/services/small-business"

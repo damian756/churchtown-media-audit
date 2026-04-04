@@ -165,7 +165,7 @@ export default function ServicesPage() {
             <div className="flex items-center gap-3 mb-8">
               <div className="flex items-center gap-2 bg-purple-500/20 border border-purple-500/30 rounded-full px-4 py-1.5">
                 <Sparkles className="w-4 h-4 text-purple-400" />
-                <span className="text-xs font-bold text-purple-400 uppercase tracking-wide">AI Services — New in 2026</span>
+                <span className="text-xs font-bold text-purple-400 uppercase tracking-wide">AI Services: New in 2026</span>
               </div>
             </div>
 

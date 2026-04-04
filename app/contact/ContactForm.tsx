@@ -85,7 +85,7 @@ export default function ContactForm() {
             Get in touch
           </h1>
           <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-            Based in Churchtown, Southport. Happy to meet in person, jump on a call, or reply by email — whatever works for you. No hard sell, just an honest conversation about what you need.
+            Based in Churchtown, Southport. Happy to meet in person, jump on a call, or reply by email: whatever works for you. No hard sell, just an honest conversation about what you need.
           </p>
         </div>
 
@@ -203,7 +203,7 @@ export default function ContactForm() {
                     <option>Website Rebuild / WordPress Migration</option>
                     <option>SEO & Performance Audit</option>
                     <option>E-Commerce</option>
-                    <option>Not sure — just want a chat</option>
+                    <option>Not sure: just want a chat</option>
                   </select>
                 </div>
 
@@ -228,7 +228,7 @@ export default function ContactForm() {
                 </button>
 
                 <p className="text-center text-xs text-slate-500">
-                  No commitment required. We&apos;ll send a clear quote — you decide.
+                  No commitment required. We&apos;ll send a clear quote: you decide.
                 </p>
               </form>
             )}

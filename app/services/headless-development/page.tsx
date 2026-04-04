@@ -40,10 +40,10 @@ export default function HeadlessDev() {
       <section className="mx-auto max-w-4xl px-6 py-16">
         <h2 className="text-3xl font-bold text-white mb-6">What is Headless Development?</h2>
         <p className="text-lg text-slate-300 mb-4">
-          Traditional websites like WordPress bundle everything together — your content, your design, your database, and your plugins all live on one server. Every time someone visits your site, that server has to assemble the page from scratch. It is slow, vulnerable to hackers, and difficult to scale.
+          Traditional websites like WordPress bundle everything together: your content, your design, your database, and your plugins all live on one server. Every time someone visits your site, that server has to assemble the page from scratch. It is slow, vulnerable to hackers, and difficult to scale.
         </p>
         <p className="text-lg text-slate-300 mb-4">
-          Headless development separates the frontend (what visitors see) from the backend (where content is managed). Your website's pages are pre-built as static HTML and served from a global CDN — the same technology used by Netflix, Nike, and Shopify. The content management system runs independently, feeding data to the frontend via APIs.
+          Headless development separates the frontend (what visitors see) from the backend (where content is managed). Your website's pages are pre-built as static HTML and served from a global CDN: the same technology used by Netflix, Nike, and Shopify. The content management system runs independently, feeding data to the frontend via APIs.
         </p>
         <p className="text-lg text-slate-300">
           The result is a website that loads in under 100 milliseconds, scores 90+ on Google's Core Web Vitals, and is virtually impossible to hack. No PHP vulnerabilities. No plugin conflicts. No 3am security patches.
@@ -65,7 +65,7 @@ export default function HeadlessDev() {
                 <ShieldCheck className="h-10 w-10 text-purple-400" />
                 <h3 className="mt-4 text-xl font-bold text-white">Un-Hackable</h3>
                 <p className="mt-2 text-slate-300">
-                    No database to hack. No plugins to update. By decoupling the frontend from the backend, we eliminate 99% of security vulnerabilities. WordPress powers 43% of the web — and is targeted by 90% of all CMS attacks.
+                    No database to hack. No plugins to update. By decoupling the frontend from the backend, we eliminate 99% of security vulnerabilities. WordPress powers 43% of the web: and is targeted by 90% of all CMS attacks.
                 </p>
             </div>
             <div className="rounded-xl border border-slate-700 bg-slate-900 p-6 shadow-sm">
@@ -108,7 +108,7 @@ export default function HeadlessDev() {
               <div className="flex-shrink-0 w-10 h-10 bg-purple-500/20 rounded-full flex items-center justify-center text-purple-400 font-bold">4</div>
               <div>
                 <h3 className="text-lg font-bold text-white">Deploy to the Edge</h3>
-                <p className="text-slate-300 mt-1">Your new site goes live on Vercel's Edge Network — served from data centres worldwide. We monitor performance for 30 days post-launch and handle any issues that arise.</p>
+                <p className="text-slate-300 mt-1">Your new site goes live on Vercel's Edge Network: served from data centres worldwide. We monitor performance for 30 days post-launch and handle any issues that arise.</p>
               </div>
             </div>
           </div>

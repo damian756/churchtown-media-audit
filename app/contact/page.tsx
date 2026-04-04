@@ -3,13 +3,13 @@ import ContactForm from './ContactForm';
 
 export const metadata: Metadata = {
   title: 'Contact Us | Web Design & SEO Southport | Churchtown Media',
-  description: 'Get in touch with Churchtown Media. Based in Churchtown, Southport — available for a call, Zoom, or in-person meeting. No hard sell. Free initial consultation.',
+  description: 'Get in touch with Churchtown Media. Based in Churchtown, Southport: available for a call, Zoom, or in-person meeting. No hard sell. Free initial consultation.',
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk/contact',
   },
   openGraph: {
     title: 'Contact Churchtown Media | Web Design & SEO Southport',
-    description: 'Talk to us about your website or SEO project. Based in Southport — we can meet in person, jump on a call, or reply by email.',
+    description: 'Talk to us about your website or SEO project. Based in Southport: we can meet in person, jump on a call, or reply by email.',
     url: 'https://www.churchtownmedia.co.uk/contact',
     type: 'website',
     siteName: 'Churchtown Media',

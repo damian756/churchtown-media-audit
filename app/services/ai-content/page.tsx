@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "AI Content Production | Human-Edited, SEO-Optimised | Churchtown Media",
-    description: "Scale your content output without scaling headcount. AI-augmented content production with senior editorial oversight — built for Google, GEO, and AI search.",
+    description: "Scale your content output without scaling headcount. AI-augmented content production with senior editorial oversight: built for Google, GEO, and AI search.",
     url: "https://www.churchtownmedia.co.uk/services/ai-content",
     type: "website",
     siteName: "Churchtown Media",
@@ -45,7 +45,7 @@ export default function AIContentPage() {
     name: "AI Content Production",
     serviceType: "Content Marketing",
     description:
-      "AI-augmented content production service with senior editorial oversight. We use AI tools accelerate content workflows while human editors ensure quality, accuracy, and E-E-A-T compliance — producing authoritative content at scale.",
+      "AI-augmented content production service with senior editorial oversight. We use AI tools accelerate content workflows while human editors ensure quality, accuracy, and E-E-A-T compliance: producing authoritative content at scale.",
     provider: {
       "@type": "Organization",
       "@id": "https://www.churchtownmedia.co.uk/#organization",
@@ -72,7 +72,7 @@ export default function AIContentPage() {
         name: "Will AI content get penalised by Google?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Google's guidance is clear: they care about content quality, not how it was produced. AI-generated content that is useful, accurate, and demonstrates real expertise is not penalised. The problem is low-quality AI content — generic, inaccurate, and written without subject matter knowledge. Our process combines AI efficiency with senior editorial oversight to produce content that meets Google's E-E-A-T standards.",
+          text: "Google's guidance is clear: they care about content quality, not how it was produced. AI-generated content that is useful, accurate, and demonstrates real expertise is not penalised. The problem is low-quality AI content: generic, inaccurate, and written without subject matter knowledge. Our process combines AI efficiency with senior editorial oversight to produce content that meets Google's E-E-A-T standards.",
         },
       },
       {
@@ -88,7 +88,7 @@ export default function AIContentPage() {
         name: "What types of content do you produce?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "We produce: landing pages, service pages, location pages, blog articles, long-form guides, FAQ content, case studies, and programmatic content at scale. We focus on content that has a clear search or AI citation purpose — not content produced for its own sake.",
+          text: "We produce: landing pages, service pages, location pages, blog articles, long-form guides, FAQ content, case studies, and programmatic content at scale. We focus on content that has a clear search or AI citation purpose: not content produced for its own sake.",
         },
       },
       {
@@ -96,7 +96,7 @@ export default function AIContentPage() {
         name: "How much content can you produce per month?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Depending on the package, we produce 4 to 50+ pieces of content per month. For programmatic SEO projects, we can generate thousands of templated pages from structured data. For authority content, we prioritise depth over volume — a single comprehensive guide can outperform ten thin articles.",
+          text: "Depending on the package, we produce 4 to 50+ pieces of content per month. For programmatic SEO projects, we can generate thousands of templated pages from structured data. For authority content, we prioritise depth over volume: a single comprehensive guide can outperform ten thin articles.",
         },
       },
     ],
@@ -107,7 +107,7 @@ export default function AIContentPage() {
       step: "01",
       title: "Research & Intent Mapping",
       description:
-        "Every piece of content starts with keyword and search intent data. We map what your audience is actually searching for — including the questions AI engines are answering.",
+        "Every piece of content starts with keyword and search intent data. We map what your audience is actually searching for: including the questions AI engines are answering.",
     },
     {
       step: "02",
@@ -119,7 +119,7 @@ export default function AIContentPage() {
       step: "03",
       title: "AI-Accelerated Production",
       description:
-        "AI tools accelerate the drafting process. We use them strategically — for research, structure, and first drafts — while humans drive the creative and factual direction.",
+        "AI tools accelerate the drafting process. We use them strategically: for research, structure, and first drafts: while humans drive the creative and factual direction.",
     },
     {
       step: "04",
@@ -137,7 +137,7 @@ export default function AIContentPage() {
       step: "06",
       title: "Publish, Track, Improve",
       description:
-        "Published to your CMS with tracking set up. We monitor rankings, AI citations, and engagement — and improve iteratively each month.",
+        "Published to your CMS with tracking set up. We monitor rankings, AI citations, and engagement: and improve iteratively each month.",
     },
   ];
 
@@ -216,7 +216,7 @@ export default function AIContentPage() {
         </div>
 
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-8 leading-[1.1]">
-          Content that ranks —{" "}
+          Content that ranks -{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400">
             produced at scale.
           </span>
@@ -228,7 +228,7 @@ export default function AIContentPage() {
         </p>
 
         <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-12">
-          Not raw AI output. Not human-only production at unsustainable cost. A third way — fast, expert, and built for
+          Not raw AI output. Not human-only production at unsustainable cost. A third way: fast, expert, and built for
           how search works in 2026.
         </p>
 
@@ -265,7 +265,7 @@ export default function AIContentPage() {
             </p>
             <p>
               The result is content that Google trusts, AI engines cite, and audiences actually read. That's the
-              standard we hold ourselves to — not the word count.
+              standard we hold ourselves to: not the word count.
             </p>
           </div>
         </div>

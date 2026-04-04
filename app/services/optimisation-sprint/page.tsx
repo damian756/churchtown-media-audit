@@ -116,7 +116,7 @@ export default function OptimisationSprintPage() {
         name: "How quickly will I see results?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Technical fixes typically show results within 4–8 weeks — sometimes faster for crawl and indexing issues. Content improvements take longer: 8–12 weeks for new page rankings on competitive terms, faster for long-tail. The 90-day action plan is designed to compound the initial sprint results over the quarter after we've finished.",
+          text: "Technical fixes typically show results within 4–8 weeks: sometimes faster for crawl and indexing issues. Content improvements take longer: 8–12 weeks for new page rankings on competitive terms, faster for long-tail. The 90-day action plan is designed to compound the initial sprint results over the quarter after we've finished.",
         },
       },
       {
@@ -124,19 +124,19 @@ export default function OptimisationSprintPage() {
         name: "Do I need developer access for this?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "For most fixes, yes — either we need access to your CMS/codebase, or your developer needs to implement changes we specify. We provide developer-ready implementation notes for every fix so any competent developer can implement them. If your site is on Next.js, WordPress, or Shopify, we can typically implement directly.",
+          text: "For most fixes, yes: either we need access to your CMS/codebase, or your developer needs to implement changes we specify. We provide developer-ready implementation notes for every fix so any competent developer can implement them. If your site is on Next.js, WordPress, or Shopify, we can typically implement directly.",
         },
       },
     ],
   };
 
   const whatWeDeliver = [
-    { icon: Search, title: "Full Technical SEO Audit", description: "Crawl analysis, index coverage, redirect chains, Core Web Vitals, mobile usability — the complete picture." },
-    { icon: FileText, title: "On-Page Optimisation", description: "Title tags, H1 structure, meta descriptions, internal linking, content depth — every page reviewed and improved." },
-    { icon: ShieldCheck, title: "Schema.org Implementation", description: "Organization, Service, FAQPage, BreadcrumbList, Article — structured data done properly so search engines (and AI) read you correctly." },
+    { icon: Search, title: "Full Technical SEO Audit", description: "Crawl analysis, index coverage, redirect chains, Core Web Vitals, mobile usability: the complete picture." },
+    { icon: FileText, title: "On-Page Optimisation", description: "Title tags, H1 structure, meta descriptions, internal linking, content depth: every page reviewed and improved." },
+    { icon: ShieldCheck, title: "Schema.org Implementation", description: "Organization, Service, FAQPage, BreadcrumbList, Article: structured data done properly so search engines (and AI) read you correctly." },
     { icon: TrendingUp, title: "5 Priority Page Rewrites", description: "Your five highest-opportunity pages rewritten for their target keywords, with proper E-E-A-T signals and GEO-compatible structure." },
     { icon: BarChart3, title: "Core Web Vitals Remediation", description: "LCP, CLS, FID/INP issues identified and, where possible, fixed. Recommendations for any requiring developer input." },
-    { icon: Target, title: "90-Day Action Plan", description: "A prioritised roadmap of everything that couldn't be done in 30 days — with clear instructions so you or your team can continue the work." },
+    { icon: Target, title: "90-Day Action Plan", description: "A prioritised roadmap of everything that couldn't be done in 30 days: with clear instructions so you or your team can continue the work." },
   ];
 
   return (
@@ -166,7 +166,7 @@ export default function OptimisationSprintPage() {
 
         <p className="text-xl text-slate-300 leading-relaxed max-w-3xl mx-auto mb-4">
           Not ready for a retainer? Fine. The Optimisation Sprint is a single focused engagement that identifies and
-          fixes your site's biggest SEO problems — then leaves you with a roadmap for the next 90 days.
+          fixes your site's biggest SEO problems: then leaves you with a roadmap for the next 90 days.
         </p>
 
         <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-12">
@@ -195,7 +195,7 @@ export default function OptimisationSprintPage() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">What the Sprint delivers</h2>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto">
-            Six deliverables in 30 days — all substantive, all documented, all yours.
+            Six deliverables in 30 days: all substantive, all documented, all yours.
           </p>
         </div>
 

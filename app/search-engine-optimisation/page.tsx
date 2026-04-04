@@ -37,7 +37,7 @@ export default function SEOPage() {
             </div>
             <h3 className="text-xl font-bold text-white">Defined KPIs</h3>
             <p className="mt-4 text-slate-300">
-              We don’t just "do SEO." We set clear goals tailored to your business—whether that’s increasing organic revenue, capturing local leads, or boosting phone calls.
+              We don’t just "do SEO." We set clear goals tailored to your business-whether that’s increasing organic revenue, capturing local leads, or boosting phone calls.
             </p>
           </div>
           <div className="text-center">
@@ -66,7 +66,7 @@ export default function SEOPage() {
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-bold">Dominate the Local Pack</h2>
           <p className="mt-4 text-slate-400 text-lg">
-            One of the most valuable pieces of digital real estate is the "Map Pack"—the top 3 map results.
+            One of the most valuable pieces of digital real estate is the "Map Pack"-the top 3 map results.
           </p>
           <div className="mt-12 grid gap-8 sm:grid-cols-2 text-left">
             <div className="bg-slate-800 p-6 rounded-xl border border-slate-700">

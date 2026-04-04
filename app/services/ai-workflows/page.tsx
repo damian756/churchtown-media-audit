@@ -4,7 +4,7 @@ import { ArrowRight, Bot, CheckCircle2, Zap, Settings, TrendingUp, Clock, Globe,
 
 export const metadata: Metadata = {
   title: "AI Workflow Implementation | Automate Your Business Operations | Churchtown Media",
-  description: "We build bespoke AI-powered workflows that eliminate repetitive tasks, reduce operational costs, and give your team back hours every week. From lead qualification to content pipelines — built to spec.",
+  description: "We build bespoke AI-powered workflows that eliminate repetitive tasks, reduce operational costs, and give your team back hours every week. From lead qualification to content pipelines: built to spec.",
   keywords: [
     "AI workflow automation",
     "AI business automation",
@@ -81,7 +81,7 @@ export default function AIWorkflowsPage() {
         name: "Do I need technical knowledge to use AI workflows?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "No. We build the system, train your team, and document everything. The workflows we build are designed to be operated by non-technical staff through simple interfaces. You don't need to understand how the AI works — just the inputs and outputs.",
+          text: "No. We build the system, train your team, and document everything. The workflows we build are designed to be operated by non-technical staff through simple interfaces. You don't need to understand how the AI works: just the inputs and outputs.",
         },
       },
       {
@@ -89,7 +89,7 @@ export default function AIWorkflowsPage() {
         name: "What tools and platforms do you use?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "We work with: Make (Integromat), n8n, Zapier, OpenAI API, Claude API, Perplexity API, Airtable, Notion, Google Sheets, CRMs (HubSpot, Pipedrive), and custom Next.js dashboards. We recommend tools based on your requirements and existing tech stack — not what earns us the best referral fees.",
+          text: "We work with: Make (Integromat), n8n, Zapier, OpenAI API, Claude API, Perplexity API, Airtable, Notion, Google Sheets, CRMs (HubSpot, Pipedrive), and custom Next.js dashboards. We recommend tools based on your requirements and existing tech stack: not what earns us the best referral fees.",
         },
       },
       {
@@ -105,7 +105,7 @@ export default function AIWorkflowsPage() {
         name: "What's the typical ROI on AI workflow projects?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "It varies by workflow and business size. A content production pipeline that reduces a 4-hour task to 30 minutes saves 3.5 hours per day — at average agency rates that's £700/day in recovered capacity. Most clients see full project cost payback within 2–4 months. We model the expected ROI before starting any project.",
+          text: "It varies by workflow and business size. A content production pipeline that reduces a 4-hour task to 30 minutes saves 3.5 hours per day: at average agency rates that's £700/day in recovered capacity. Most clients see full project cost payback within 2–4 months. We model the expected ROI before starting any project.",
         },
       },
     ],
@@ -123,14 +123,14 @@ export default function AIWorkflowsPage() {
       icon: TrendingUp,
       title: "Lead Qualification & Routing",
       description:
-        "AI analyses inbound enquiries, scores leads against your criteria, routes them to the right team member, and drafts the initial response — all before your team sees it.",
+        "AI analyses inbound enquiries, scores leads against your criteria, routes them to the right team member, and drafts the initial response: all before your team sees it.",
       saving: "Save 2+ hours per day",
     },
     {
       icon: BarChart3,
       title: "Competitor & Market Monitoring",
       description:
-        "Automated daily monitoring of competitor pricing, content, rankings, and reviews. Weekly AI-generated summaries delivered to your inbox — no manual checking required.",
+        "Automated daily monitoring of competitor pricing, content, rankings, and reviews. Weekly AI-generated summaries delivered to your inbox: no manual checking required.",
       saving: "Save 5+ hours per week",
     },
     {
@@ -144,14 +144,14 @@ export default function AIWorkflowsPage() {
       icon: Globe,
       title: "Customer Support Triage",
       description:
-        "AI classifies inbound enquiries, routes to the right department, generates draft responses for approval, and handles common questions autonomously — with human escalation built in.",
+        "AI classifies inbound enquiries, routes to the right department, generates draft responses for approval, and handles common questions autonomously: with human escalation built in.",
       saving: "Handle 60% of enquiries automatically",
     },
     {
       icon: Settings,
       title: "Onboarding & Process Automation",
       description:
-        "From client onboarding to invoice generation to contract delivery — AI-driven workflows that keep operations running without administrative overhead.",
+        "From client onboarding to invoice generation to contract delivery: AI-driven workflows that keep operations running without administrative overhead.",
       saving: "Save 3+ hours per new client",
     },
   ];
@@ -230,7 +230,7 @@ export default function AIWorkflowsPage() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">What we automate</h2>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto">
-            Real workflows we build for real businesses — with measurable time savings.
+            Real workflows we build for real businesses: with measurable time savings.
           </p>
         </div>
 
@@ -262,7 +262,7 @@ export default function AIWorkflowsPage() {
         <h2 className="text-4xl font-bold text-white mb-12 text-center">How we deliver it</h2>
         <div className="space-y-6">
           {[
-            { n: "01", title: "Operations Audit", body: "We map your current workflows — where time goes, what the bottlenecks are, what's done manually that doesn't need to be. This is the discovery phase. We don't build anything yet." },
+            { n: "01", title: "Operations Audit", body: "We map your current workflows: where time goes, what the bottlenecks are, what's done manually that doesn't need to be. This is the discovery phase. We don't build anything yet." },
             { n: "02", title: "Automation Opportunity Report", body: "A ranked list of automation opportunities with estimated time savings, complexity, and cost for each. You choose what to prioritise. No obligation." },
             { n: "03", title: "Prototype Build", body: "We build a working prototype of the highest-priority workflow. You test it in your environment with real data before we commit to the full build." },
             { n: "04", title: "Full Implementation", body: "Approved workflows are built, integrated with your existing systems, documented, and handed over with full team training." },
@@ -359,7 +359,7 @@ export default function AIWorkflowsPage() {
           <Link href="/services/ai-content" className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-purple-500/30 transition-all group">
             <Bot className="w-8 h-8 text-purple-400 mb-4" />
             <h3 className="text-lg font-bold text-white group-hover:text-purple-400 transition-colors mb-2">AI Content Production</h3>
-            <p className="text-slate-400 text-sm">The content workflow we've built — available to you</p>
+            <p className="text-slate-400 text-sm">The content workflow we've built: available to you</p>
           </Link>
           <Link href="/services/generative-engine-optimisation" className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-emerald-500/30 transition-all group">
             <TrendingUp className="w-8 h-8 text-emerald-400 mb-4" />

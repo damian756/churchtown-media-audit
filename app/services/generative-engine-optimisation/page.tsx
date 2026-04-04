@@ -4,7 +4,7 @@ import { ArrowRight, Bot, CheckCircle2, Search, Zap, TrendingUp, FileText, Globe
 
 export const metadata: Metadata = {
   title: "Generative Engine Optimisation (GEO) | Churchtown Media",
-  description: "Get cited by ChatGPT, Google AI Overviews, and Perplexity. GEO is the new SEO — we optimise your content and authority so AI recommends your business, not your competitors.",
+  description: "Get cited by ChatGPT, Google AI Overviews, and Perplexity. GEO is the new SEO: we optimise your content and authority so AI recommends your business, not your competitors.",
   keywords: [
     "generative engine optimisation",
     "GEO",
@@ -45,7 +45,7 @@ export default function GEOPage() {
     name: "Generative Engine Optimisation (GEO)",
     serviceType: "Search Engine Optimization",
     description:
-      "Generative Engine Optimisation (GEO) is the practice of structuring your content, authority, and technical signals so that AI-powered search engines — Google AI Overviews, ChatGPT, Perplexity, Gemini — cite your business as a trusted source.",
+      "Generative Engine Optimisation (GEO) is the practice of structuring your content, authority, and technical signals so that AI-powered search engines: Google AI Overviews, ChatGPT, Perplexity, Gemini: cite your business as a trusted source.",
     provider: {
       "@type": "Organization",
       "@id": "https://www.churchtownmedia.co.uk/#organization",
@@ -118,7 +118,7 @@ export default function GEOPage() {
         name: "What is Generative Engine Optimisation (GEO)?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Generative Engine Optimisation (GEO) is the process of structuring your website content, technical signals, and brand authority so that AI search engines — including Google AI Overviews, ChatGPT search, Perplexity, and Gemini — cite your business as a source in their generated answers. Unlike traditional SEO where you rank in a list of links, GEO gets your business cited directly inside the AI-generated response.",
+          text: "Generative Engine Optimisation (GEO) is the process of structuring your website content, technical signals, and brand authority so that AI search engines: including Google AI Overviews, ChatGPT search, Perplexity, and Gemini: cite your business as a source in their generated answers. Unlike traditional SEO where you rank in a list of links, GEO gets your business cited directly inside the AI-generated response.",
         },
       },
       {
@@ -126,7 +126,7 @@ export default function GEOPage() {
         name: "How is GEO different from traditional SEO?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Traditional SEO gets you ranked in a list of ten blue links. GEO gets you cited inside the AI-generated answer at the top of the page — before the links. AI Overviews appear on roughly 15-30% of all searches and that number is growing. If your content and authority signals are right, you get cited. If they're not, your competitors do.",
+          text: "Traditional SEO gets you ranked in a list of ten blue links. GEO gets you cited inside the AI-generated answer at the top of the page: before the links. AI Overviews appear on roughly 15-30% of all searches and that number is growing. If your content and authority signals are right, you get cited. If they're not, your competitors do.",
         },
       },
       {
@@ -150,7 +150,7 @@ export default function GEOPage() {
         name: "Can you guarantee AI Overview appearances?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "No ethical agency guarantees AI Overview rankings — AI systems decide what to cite based on signals we influence, not control. What we can guarantee is a rigorous application of the known factors that increase citation probability: E-E-A-T authority, clean structured data, authoritative content depth, and strong off-site trust signals. Our track record speaks for the results.",
+          text: "No ethical agency guarantees AI Overview rankings: AI systems decide what to cite based on signals we influence, not control. What we can guarantee is a rigorous application of the known factors that increase citation probability: E-E-A-T authority, clean structured data, authoritative content depth, and strong off-site trust signals. Our track record speaks for the results.",
         },
       },
     ],
@@ -161,7 +161,7 @@ export default function GEOPage() {
       icon: Search,
       title: "AI Citation Audit",
       description:
-        "We map which AI engines currently cite you (if any), which competitors they cite instead, and exactly why. Data-driven — not guesswork.",
+        "We map which AI engines currently cite you (if any), which competitors they cite instead, and exactly why. Data-driven: not guesswork.",
     },
     {
       icon: FileText,
@@ -173,25 +173,25 @@ export default function GEOPage() {
       icon: Bot,
       title: "Structured Data Overhaul",
       description:
-        "Schema.org implementation done properly. FAQ, HowTo, Article, Organization, Service — the machine-readable signals AI needs to cite you cleanly.",
+        "Schema.org implementation done properly. FAQ, HowTo, Article, Organization, Service: the machine-readable signals AI needs to cite you cleanly.",
     },
     {
       icon: Globe,
       title: "AI Crawler Technical Audit",
       description:
-        "GPTBot, ClaudeBot, PerplexityBot, GoogleOther — we check each crawler can access and interpret your site correctly. Most sites block AI crawlers by accident.",
+        "GPTBot, ClaudeBot, PerplexityBot, GoogleOther: we check each crawler can access and interpret your site correctly. Most sites block AI crawlers by accident.",
     },
     {
       icon: MessageSquare,
       title: "Conversational Content Strategy",
       description:
-        "AI engines answer questions. We structure your content around the exact questions your audience asks — so your answers are the ones cited.",
+        "AI engines answer questions. We structure your content around the exact questions your audience asks: so your answers are the ones cited.",
     },
     {
       icon: TrendingUp,
       title: "Citation Monitoring & Reporting",
       description:
-        "Monthly reporting on your AI Overview appearances, Perplexity citations, and ChatGPT mentions — tracked, measured, improved.",
+        "Monthly reporting on your AI Overview appearances, Perplexity citations, and ChatGPT mentions: tracked, measured, improved.",
     },
   ];
 
@@ -268,7 +268,7 @@ export default function GEOPage() {
         <div className="inline-flex items-center gap-2 bg-purple-500/10 border border-purple-500/30 rounded-full px-4 py-1.5 mb-8">
           <span className="w-2 h-2 rounded-full bg-purple-400 animate-pulse"></span>
           <span className="text-xs font-bold text-purple-400 uppercase tracking-wide">
-            New Service — AI Search Optimisation
+            New Service: AI Search Optimisation
           </span>
         </div>
 
@@ -311,7 +311,7 @@ export default function GEOPage() {
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div>
             <div className="text-4xl font-black text-purple-400 mb-2">30 days</div>
-            <div className="text-slate-300 font-medium">to first AI Overview appearance — Alotek Shelters</div>
+            <div className="text-slate-300 font-medium">to first AI Overview appearance: Alotek Shelters</div>
           </div>
           <div>
             <div className="text-4xl font-black text-blue-400 mb-2">10 terms</div>
@@ -326,16 +326,16 @@ export default function GEOPage() {
 
       {/* WHAT IS GEO */}
       <section className="max-w-4xl mx-auto px-6 mb-24">
-        <h2 className="text-4xl font-bold text-white mb-8 text-center">What is GEO — and why does it matter now?</h2>
+        <h2 className="text-4xl font-bold text-white mb-8 text-center">What is GEO: and why does it matter now?</h2>
         <div className="prose prose-invert prose-slate max-w-none prose-p:text-slate-300 prose-p:leading-relaxed prose-h3:text-white prose-h3:font-bold prose-li:text-slate-300">
           <p>
             Traditional SEO put you in a ranked list of ten links. People scrolled down, clicked a result, visited your
-            site. That model still works — and we still do it — but it's no longer the whole picture.
+            site. That model still works: and we still do it: but it's no longer the whole picture.
           </p>
           <p>
             Google now generates a synthesised answer at the top of the page for an increasing percentage of searches.
             ChatGPT has web search built in. Perplexity cites sources like an AI-powered research assistant. These
-            systems don't show you a list of options — they pick a source, summarise it, and present it as the answer.
+            systems don't show you a list of options: they pick a source, summarise it, and present it as the answer.
           </p>
           <p>
             If you're the source they cite, you get the traffic, the authority, and the conversion. If you're not, your
@@ -347,8 +347,8 @@ export default function GEOPage() {
             authority signals (off-site citations, expert authorship) into a coherent strategy.
           </p>
           <p>
-            We've been building for this since before it had a name. The Alotek Shelters result — #1 AI Overview in 30
-            days — wasn't luck. It was a set of deliberate technical and content decisions made on a well-structured
+            We've been building for this since before it had a name. The Alotek Shelters result: #1 AI Overview in 30
+            days: wasn't luck. It was a set of deliberate technical and content decisions made on a well-structured
             Next.js site. We replicate that process for every GEO client.
           </p>
         </div>
@@ -459,7 +459,7 @@ export default function GEOPage() {
 
       {/* FAQ */}
       <section className="max-w-3xl mx-auto px-6 mb-24">
-        <h2 className="text-4xl font-bold text-white mb-12 text-center">GEO — Common Questions</h2>
+        <h2 className="text-4xl font-bold text-white mb-12 text-center">GEO: Common Questions</h2>
         <div className="space-y-6">
           {faqSchema.mainEntity.map((item) => (
             <div key={item.name} className="bg-slate-900 border border-slate-800 rounded-2xl p-8">

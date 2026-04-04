@@ -137,7 +137,7 @@ export default function GrowthHub() {
                         Southport is changing. With the <strong>Marine Lake Events Centre (MLEC)</strong> development and the <strong>£37.5m Town Deal</strong> reshaping our economy, the opportunity for local businesses has never been greater. But as the town grows, so does the competition.
                     </p>
                     <p>
-                        For decades, business in Southport relied on footfall. In 2026, that conversation hasn't stopped—it has just moved online.
+                        For decades, business in Southport relied on footfall. In 2026, that conversation hasn't stopped-it has just moved online.
                     </p>
                     <p>
                         The reality is that <strong>93% of online experiences begin with a search engine</strong>. When a family in Ainsdale needs a plumber, they check Google. When tourists visiting the MLEC need dinner, they check Maps. If your business doesn’t appear in those micro-moments, you don’t exist.
@@ -170,7 +170,7 @@ export default function GrowthHub() {
             <div className="bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-700 hover:shadow-md transition-shadow">
                 <div className="p-3 bg-red-500/20 w-fit rounded-lg text-red-400 mb-6"><Search className="h-6 w-6"/></div>
                 <h3 className="text-xl font-bold text-white mb-3">The Invisible Competitor</h3>
-                <p className="text-slate-300">Your biggest rival isn't the shop next door—it's the digital-first business that optimized last month. Don't let them steal your leads.</p>
+                <p className="text-slate-300">Your biggest rival isn't the shop next door-it's the digital-first business that optimized last month. Don't let them steal your leads.</p>
             </div>
         </div>
       </section>
@@ -275,7 +275,7 @@ export default function GrowthHub() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Is Your Business Ready?</span>
             </h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-              Southport is transforming into a year-round cultural destination. These aren't just events—they're <strong>search traffic goldmines</strong>. Each one brings thousands of visitors searching for local businesses on mobile. The question is: will they find <em>you</em>?
+              Southport is transforming into a year-round cultural destination. These aren't just events-they're <strong>search traffic goldmines</strong>. Each one brings thousands of visitors searching for local businesses on mobile. The question is: will they find <em>you</em>?
             </p>
           </div>
 
@@ -691,7 +691,7 @@ export default function GrowthHub() {
                         What major events are coming to Southport in 2026?
                     </h3>
                     <p className="mt-4 text-slate-300 leading-relaxed">
-                        <strong>Southport 2026 "Elegantly Eccentric"</strong> brings world-class cultural events year-round: <strong>Lightport</strong> (February light installation), <strong>Cristal Palace</strong> by Transe Express (April street theatre on Lord Street), <strong>Big Top Festival</strong> (May circus), <strong>Southport Originals</strong> (summer classics: Flower Show, Air Show, Food Festival, Fireworks), and <strong>Books Alive!</strong> (October literature festival). Each event creates predictable search traffic spikes—businesses that publish content 6-8 weeks early capture the most visitors. Learn more in our <Link href="/blog/mlec-effect-southport" className="text-blue-400 hover:text-blue-300 underline">MLEC Effect guide</Link>.
+                        <strong>Southport 2026 "Elegantly Eccentric"</strong> brings world-class cultural events year-round: <strong>Lightport</strong> (February light installation), <strong>Cristal Palace</strong> by Transe Express (April street theatre on Lord Street), <strong>Big Top Festival</strong> (May circus), <strong>Southport Originals</strong> (summer classics: Flower Show, Air Show, Food Festival, Fireworks), and <strong>Books Alive!</strong> (October literature festival). Each event creates predictable search traffic spikes-businesses that publish content 6-8 weeks early capture the most visitors. Learn more in our <Link href="/blog/mlec-effect-southport" className="text-blue-400 hover:text-blue-300 underline">MLEC Effect guide</Link>.
                     </p>
                 </div>
             </div>

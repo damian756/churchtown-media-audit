@@ -22,7 +22,7 @@ export default function ServicesDropdown({ isMobile = false, onItemClick }: Serv
     {
       name: "SEO Services",
       href: "/services/seo",
-      description: "Local pack, technical SEO and content — real results",
+      description: "Local pack, technical SEO and content: real results",
       icon: LineChart,
     },
     {
@@ -39,27 +39,24 @@ export default function ServicesDropdown({ isMobile = false, onItemClick }: Serv
     },
   ];
 
-  const aiServices = [
+    const aiServices = [
     {
-      name: "GEO — AI Search",
+      name: "GEO: AI Search",
       href: "/services/generative-engine-optimisation",
       description: "Get cited by ChatGPT, Google AI Overviews & Perplexity",
       icon: Sparkles,
-      badge: "New",
     },
     {
       name: "AI Content Production",
       href: "/services/ai-content",
       description: "Scale your content output with senior editorial oversight",
       icon: Bot,
-      badge: "New",
     },
     {
       name: "AI Workflow Automation",
       href: "/services/ai-workflows",
       description: "Automate repetitive operations with bespoke AI systems",
       icon: Workflow,
-      badge: "New",
     },
   ];
 
@@ -67,23 +64,20 @@ export default function ServicesDropdown({ isMobile = false, onItemClick }: Serv
     {
       name: "Optimisation Sprint",
       href: "/services/optimisation-sprint",
-      description: "Fix your SEO in 30 days — no retainer required",
+      description: "Fix your SEO in 30 days: no retainer required",
       icon: Zap,
-      badge: "New",
     },
     {
       name: "Content Strategy",
       href: "/services/content-strategy",
       description: "12-month editorial roadmap backed by keyword data",
       icon: Map,
-      badge: "New",
     },
     {
       name: "Bespoke Systems",
       href: "/services/bespoke-systems",
       description: "Custom dashboards, lead gen platforms, data tools",
       icon: Settings,
-      badge: "New",
     },
     {
       name: "Free SEO Audit",
@@ -295,7 +289,7 @@ export default function ServicesDropdown({ isMobile = false, onItemClick }: Serv
                     <Sparkles className="w-4 h-4 text-purple-400" />
                     <span className="text-sm font-bold text-white group-hover:text-purple-400 transition-colors">All AI Services →</span>
                   </div>
-                  <p className="text-xs text-slate-400">GEO, AI content, and workflow automation — the full stack explained</p>
+                  <p className="text-xs text-slate-400">GEO, AI content, and workflow automation: the full stack explained</p>
                 </Link>
 
                 {/* Proof point */}
