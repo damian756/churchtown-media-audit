@@ -409,7 +409,7 @@ export default async function LocationPage({ params }: Props) {
             <div className="text-center mb-16">
                 <h2 className="text-3xl font-bold text-white mb-4">Complete Digital Domination</h2>
                 <p className="text-slate-400 max-w-2xl mx-auto">
-                    We don't just build websites; we build revenue engines tailored for the {location.name} economy.
+                    Fast Next.js websites, local SEO, and AI search visibility. Built for the {location.name} market.
                 </p>
             </div>
             
@@ -502,7 +502,7 @@ export default async function LocationPage({ params }: Props) {
         <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">Ready to grow your {location.name} business?</h2>
             <p className="text-slate-400 mb-10 text-lg">
-                Don't settle for a template. Get a custom-built revenue engine from your local experts.
+                A free audit takes two minutes and gives you an honest picture of where you're losing traffic and why.
             </p>
             <Link href="/contact" className="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-700 transition-all inline-flex items-center gap-2 shadow-lg hover:shadow-blue-600/20 hover:-translate-y-1">
                 Book a Strategy Call <ArrowRight className="w-4 h-4" />

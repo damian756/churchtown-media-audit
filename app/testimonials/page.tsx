@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: '5-Star Web Design & SEO Reviews | Churchtown Media',
-    description: 'See why businesses across the North West trust us to build their revenue engines.',
+    description: 'See why businesses across Southport, Liverpool and Manchester rate us 5 stars for web design, SEO, and digital strategy.',
     url: 'https://www.churchtownmedia.co.uk/testimonials',
     type: 'website',
     images: [{ url: 'https://www.churchtownmedia.co.uk/opengraph-image.png', width: 1200, height: 630, alt: 'Client Reviews: Churchtown Media' }],
@@ -163,12 +163,28 @@ export default function TestimonialsPage() {
       <section className="bg-slate-900 border-t border-slate-700 py-16 px-6 text-center">
         <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold text-white mb-6">Ready to become our next success story?</h2>
-            <p className="text-slate-300 mb-8">
-                Join businesses like Alotek, The MLEC Group, and Matthew Brown who trust us to handle their digital growth.
+            <p className="text-slate-400 mb-8">
+                Join businesses like Alotek Shelters, Matthew Brown, and Jay Hopkins who trust us to handle their digital growth.
             </p>
-            <Link href="/audit" className="inline-flex items-center gap-2 bg-blue-500 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-400 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
-                Start with a Free Audit <ArrowRight className="w-4 h-4" />
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+              <Link href="/audit" className="inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-600/20">
+                  Start with a Free Audit <ArrowRight className="w-4 h-4" />
+              </Link>
+              <Link href="/portfolio" className="inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 px-8 py-4 rounded-xl font-bold transition-all">
+                  See the Work <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+            <div className="flex flex-wrap gap-6 justify-center text-sm">
+              <Link href="/work" className="text-slate-500 hover:text-white font-semibold transition-colors flex items-center gap-1.5">
+                How we work <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+              <Link href="/about" className="text-slate-500 hover:text-white font-semibold transition-colors flex items-center gap-1.5">
+                About us <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+              <Link href="/contact" className="text-slate-500 hover:text-white font-semibold transition-colors flex items-center gap-1.5">
+                Get in touch <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
         </div>
       </section>
 

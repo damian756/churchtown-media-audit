@@ -123,7 +123,7 @@ export default function AboutPage() {
 
               {/* Text */}
               <div className="order-1 md:order-2">
-                <p className="text-xs font-bold text-amber-500 uppercase tracking-widest mb-4">Founder</p>
+                <p className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-4">Founder</p>
                 <h1 className="text-5xl md:text-6xl font-extrabold leading-tight mb-6 text-white">
                   Hi, I'm Damian.
                 </h1>
@@ -166,7 +166,7 @@ export default function AboutPage() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-14 items-start">
               <div>
-                <p className="text-xs font-bold text-amber-500 uppercase tracking-widest mb-4">The proof of concept</p>
+                <p className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-4">The proof of concept</p>
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-snug">
                   The Sefton Coast Network
                 </h2>
@@ -238,7 +238,7 @@ export default function AboutPage() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-14 items-start">
               <div>
-                <p className="text-xs font-bold text-amber-500 uppercase tracking-widest mb-4">How I work</p>
+                <p className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-4">How I work</p>
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-snug">
                   No fluff. No vanity metrics. Just things that work.
                 </h2>
@@ -307,10 +307,10 @@ export default function AboutPage() {
             <p className="text-slate-400 text-lg mb-10 leading-relaxed max-w-xl mx-auto">
               A free audit takes two minutes and gives you an honest picture of where you're losing traffic and why. No sales pitch attached.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
               <Link
                 href="/audit"
-                className="inline-flex items-center justify-center gap-2 bg-white text-slate-900 hover:bg-slate-100 px-8 py-4 rounded-xl font-bold transition-all"
+                className="inline-flex items-center justify-center gap-2 bg-blue-600 text-white hover:bg-blue-700 px-8 py-4 rounded-xl font-bold transition-all shadow-lg shadow-blue-600/20"
               >
                 Get Free Audit <ArrowRight className="w-5 h-5" />
               </Link>
@@ -319,6 +319,17 @@ export default function AboutPage() {
                 className="inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 px-8 py-4 rounded-xl font-bold transition-all"
               >
                 Get in Touch
+              </Link>
+            </div>
+            <div className="flex flex-wrap gap-6 justify-center text-sm">
+              <Link href="/portfolio" className="text-slate-500 hover:text-white font-semibold transition-colors flex items-center gap-1.5">
+                See the portfolio <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+              <Link href="/work" className="text-slate-500 hover:text-white font-semibold transition-colors flex items-center gap-1.5">
+                How I work <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+              <Link href="/testimonials" className="text-slate-500 hover:text-white font-semibold transition-colors flex items-center gap-1.5">
+                Client reviews <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>
           </div>

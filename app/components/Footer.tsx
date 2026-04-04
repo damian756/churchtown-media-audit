@@ -31,7 +31,7 @@ export default function Footer() {
                 </span>
             </Link>
             <p className="text-sm leading-relaxed max-w-xs text-slate-500 font-medium">
-                We build revenue engines, not just websites. Data-driven SEO and high-performance development for Southport businesses.
+                Web design and SEO for Southport and North West businesses. Creators of the Sefton Coast Network.
             </p>
             
             {/* SOCIAL ICONS */}

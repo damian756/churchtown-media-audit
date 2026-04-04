@@ -49,7 +49,7 @@ export default async function Image() {
             lineHeight: 1.4,
           }}
         >
-          We build revenue engines. Not just websites.
+          Web design & SEO, Southport. Creators of the Sefton Coast Network.
         </div>
 
         {/* Location Badge */}
