@@ -136,7 +136,7 @@ export default function Home() {
   
   return (
     <>
-      <main className="min-h-screen overflow-x-hidden bg-slate-950 selection:bg-blue-400 selection:text-white">
+      <main className="min-h-screen overflow-x-hidden bg-stone-950 selection:bg-amber-400 selection:text-stone-900">
       
       <script
         type="application/ld+json"
@@ -150,16 +150,16 @@ export default function Home() {
         
         {/* Subtle background grid */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff06_1px,transparent_1px),linear-gradient(to_bottom,#ffffff06_1px,transparent_1px)] bg-[size:64px_64px]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-950" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-stone-950" />
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center min-h-[520px] pb-16">
             
             {/* LEFT: Copy */}
             <div>
-              <div className="inline-flex items-center gap-2 bg-slate-900 border border-slate-700 rounded-full px-3 py-1.5 mb-8">
-                <MapPin className="w-3.5 h-3.5 text-slate-400" />
-                <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wide">Churchtown, Southport</span>
+              <div className="inline-flex items-center gap-2 bg-stone-900 border border-stone-700 rounded-full px-3 py-1.5 mb-8">
+                <MapPin className="w-3.5 h-3.5 text-amber-500" />
+                <span className="text-[11px] font-bold text-stone-400 uppercase tracking-wide">Churchtown, Southport</span>
               </div>
 
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-[1.05]">
@@ -182,13 +182,13 @@ export default function Home() {
                 </Link>
               </div>
 
-              <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs font-semibold text-slate-600 uppercase tracking-widest">
+              <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs font-semibold text-stone-600 uppercase tracking-widest">
                 <span>From £1,500</span>
-                <span className="text-slate-800">·</span>
+                <span className="text-stone-800">·</span>
                 <span>No contracts</span>
-                <span className="text-slate-800">·</span>
+                <span className="text-stone-800">·</span>
                 <span>4-6 weeks</span>
-                <span className="text-slate-800">·</span>
+                <span className="text-stone-800">·</span>
                 <span>5.0 on Google</span>
               </div>
             </div>
@@ -202,7 +202,7 @@ export default function Home() {
                     href={site.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`group block bg-slate-900 border ${site.color} rounded-2xl p-5 transition-all hover:-translate-y-1 hover:bg-slate-800/80`}
+                    className={`group block bg-stone-900 border ${site.color} rounded-2xl p-5 transition-all hover:-translate-y-1 hover:bg-stone-800/80`}
                   >
                     <div className="flex items-center gap-2 mb-3">
                       <span className={`w-2 h-2 rounded-full ${site.dot} shrink-0`} />
@@ -233,17 +233,17 @@ export default function Home() {
       {/* ══════════════════════════════════════════
           2. THE NETWORK STORY — why this matters
       ══════════════════════════════════════════ */}
-      <section className="py-20 px-4 sm:px-6 bg-slate-900 border-t border-slate-800">
+      <section className="py-20 px-4 sm:px-6 bg-stone-50 border-t border-stone-200">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             
             {/* Left: Story */}
             <div>
-              <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4">Why it matters</p>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-snug">
+              <p className="text-xs font-bold text-amber-700 uppercase tracking-widest mb-4">Why it matters</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-6 leading-snug">
                 We build for our own patch first.
               </h2>
-              <div className="space-y-4 text-slate-400 leading-relaxed">
+              <div className="space-y-4 text-stone-600 leading-relaxed">
                 <p>
                   Most agencies show you a portfolio of client work and ask you to take their word for it. We built four sites for our own area, with no client brief and no guarantee of return, because we thought they should exist.
                 </p>
@@ -253,15 +253,15 @@ export default function Home() {
                 <p>
                   They run on the same stack we use for clients. They are real publishing businesses. They rank, they attract visitors, and they demonstrate every technical capability we bring to client projects.
                 </p>
-                <p className="text-slate-300 font-medium">
+                <p className="text-stone-800 font-medium">
                   When a Southport business works with us, they get an agency that genuinely understands this place and has put that understanding to work already.
                 </p>
               </div>
               <div className="mt-8 flex flex-wrap gap-4">
-                <Link href="/portfolio" className="inline-flex items-center gap-2 text-white font-bold border border-slate-700 hover:border-slate-500 px-5 py-2.5 rounded-xl transition-all hover:bg-slate-800 text-sm">
+                <Link href="/portfolio" className="inline-flex items-center gap-2 text-stone-900 font-bold border border-stone-300 hover:border-stone-500 px-5 py-2.5 rounded-xl transition-all hover:bg-stone-100 text-sm">
                   See the full portfolio <ArrowRight className="w-4 h-4" />
                 </Link>
-                <Link href="/blog/sefton-coast-network-case-study" className="inline-flex items-center gap-2 text-slate-400 hover:text-white font-semibold text-sm transition-colors">
+                <Link href="/blog/sefton-coast-network-case-study" className="inline-flex items-center gap-2 text-stone-500 hover:text-stone-900 font-semibold text-sm transition-colors">
                   Read the case study <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -277,10 +277,10 @@ export default function Home() {
                 { value: "10", label: "#1 Rankings", sub: "Alotek Shelters, month one" },
                 { value: "30 days", label: "To results", sub: "First SEO retainer" },
               ].map((stat) => (
-                <div key={stat.label} className="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-5">
-                  <div className="text-2xl font-black text-white mb-1">{stat.value}</div>
-                  <div className="text-sm font-bold text-slate-300 mb-0.5">{stat.label}</div>
-                  <div className="text-xs text-slate-500">{stat.sub}</div>
+                <div key={stat.label} className="bg-white border border-stone-200 shadow-sm rounded-2xl p-5">
+                  <div className="text-2xl font-black text-stone-900 mb-1">{stat.value}</div>
+                  <div className="text-sm font-bold text-stone-700 mb-0.5">{stat.label}</div>
+                  <div className="text-xs text-stone-400">{stat.sub}</div>
                 </div>
               ))}
             </div>
@@ -291,10 +291,10 @@ export default function Home() {
       {/* ══════════════════════════════════════════
           3. SERVICES — grounded, not generic
       ══════════════════════════════════════════ */}
-      <section className="py-20 px-4 sm:px-6 bg-slate-950 border-t border-slate-800">
+      <section className="py-20 px-4 sm:px-6 bg-stone-950 border-t border-stone-900">
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
-            <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">What we build</p>
+            <p className="text-xs font-bold text-amber-500 uppercase tracking-widest mb-3">What we build</p>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
               The same approach, whatever the brief.
             </h2>
@@ -305,44 +305,44 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
             
-            <div className="group p-7 rounded-2xl bg-slate-900 border border-slate-800 hover:border-slate-600 transition-all duration-300">
-              <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center mb-5 group-hover:bg-slate-700 transition-colors">
-                <Globe className="w-6 h-6 text-slate-300" />
+            <div className="group p-7 rounded-2xl bg-stone-900 border border-stone-800 hover:border-amber-800/50 transition-all duration-300">
+              <div className="w-12 h-12 bg-stone-800 rounded-xl flex items-center justify-center mb-5 group-hover:bg-stone-700 transition-colors">
+                <Globe className="w-6 h-6 text-amber-400/80" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Web Design</h3>
-              <p className="text-slate-400 mb-5 leading-relaxed text-sm">
+              <p className="text-stone-400 mb-5 leading-relaxed text-sm">
                 Fast Next.js sites built to rank and convert. No WordPress, no plugins, no bloat. Pure code that loads in under a second and gives Google exactly what it needs.
               </p>
-              <div className="text-xs text-slate-600 font-semibold mb-4">From £2,500</div>
-              <Link href="/services/web-design" className="inline-flex items-center gap-2 text-slate-300 font-semibold hover:text-white transition-colors text-sm">
+              <div className="text-xs text-amber-700 font-semibold mb-4">From £2,500</div>
+              <Link href="/services/web-design" className="inline-flex items-center gap-2 text-stone-300 font-semibold hover:text-white transition-colors text-sm">
                 Web design services <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>
 
-            <div className="group p-7 rounded-2xl bg-slate-900 border border-slate-800 hover:border-slate-600 transition-all duration-300">
-              <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center mb-5 group-hover:bg-slate-700 transition-colors">
-                <BarChart3 className="w-6 h-6 text-slate-300" />
+            <div className="group p-7 rounded-2xl bg-stone-900 border border-stone-800 hover:border-amber-800/50 transition-all duration-300">
+              <div className="w-12 h-12 bg-stone-800 rounded-xl flex items-center justify-center mb-5 group-hover:bg-stone-700 transition-colors">
+                <BarChart3 className="w-6 h-6 text-amber-400/80" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">SEO</h3>
-              <p className="text-slate-400 mb-5 leading-relaxed text-sm">
+              <p className="text-stone-400 mb-5 leading-relaxed text-sm">
                 Local pack rankings, technical SEO, content that earns citations. We helped Alotek Shelters reach #1 on every commercial keyword within 30 days of their first retainer.
               </p>
-              <div className="text-xs text-slate-600 font-semibold mb-4">From £500/month</div>
-              <Link href="/services/seo" className="inline-flex items-center gap-2 text-slate-300 font-semibold hover:text-white transition-colors text-sm">
+              <div className="text-xs text-amber-700 font-semibold mb-4">From £500/month</div>
+              <Link href="/services/seo" className="inline-flex items-center gap-2 text-stone-300 font-semibold hover:text-white transition-colors text-sm">
                 SEO services <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>
 
-            <div className="group p-7 rounded-2xl bg-slate-900 border border-slate-800 hover:border-slate-600 transition-all duration-300">
-              <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center mb-5 group-hover:bg-slate-700 transition-colors">
-                <Sparkles className="w-6 h-6 text-slate-300" />
+            <div className="group p-7 rounded-2xl bg-stone-900 border border-stone-800 hover:border-amber-800/50 transition-all duration-300">
+              <div className="w-12 h-12 bg-stone-800 rounded-xl flex items-center justify-center mb-5 group-hover:bg-stone-700 transition-colors">
+                <Sparkles className="w-6 h-6 text-amber-400/80" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">AI Search</h3>
-              <p className="text-slate-400 mb-5 leading-relaxed text-sm">
+              <p className="text-stone-400 mb-5 leading-relaxed text-sm">
                 Google AI Overviews appear on 25%+ of searches now. We structure your content and authority signals so AI cites you, not your competitors. GEO, AI content, AI workflows.
               </p>
-              <div className="text-xs text-slate-600 font-semibold mb-4">From £800/month</div>
-              <Link href="/services/ai" className="inline-flex items-center gap-2 text-slate-300 font-semibold hover:text-white transition-colors text-sm">
+              <div className="text-xs text-amber-700 font-semibold mb-4">From £800/month</div>
+              <Link href="/services/ai" className="inline-flex items-center gap-2 text-stone-300 font-semibold hover:text-white transition-colors text-sm">
                 AI services <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -356,7 +356,7 @@ export default function Home() {
               { label: "Bespoke Systems", href: "/services/bespoke-systems" },
               { label: "Free SEO Audit", href: "/audit" },
             ].map((item) => (
-              <Link key={item.href} href={item.href} className="group flex items-center justify-between gap-2 bg-slate-900 border border-slate-800 hover:border-slate-600 rounded-xl px-4 py-3 transition-all text-sm font-semibold text-slate-400 hover:text-white">
+              <Link key={item.href} href={item.href} className="group flex items-center justify-between gap-2 bg-stone-900 border border-stone-800 hover:border-amber-700/50 rounded-xl px-4 py-3 transition-all text-sm font-semibold text-stone-400 hover:text-white">
                 {item.label} <ArrowRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
               </Link>
             ))}
@@ -367,14 +367,14 @@ export default function Home() {
       {/* ══════════════════════════════════════════
           4. PORTFOLIO — Alotek case study lead
       ══════════════════════════════════════════ */}
-      <section className="py-20 px-4 sm:px-6 bg-slate-900 border-t border-slate-800">
+      <section className="py-20 px-4 sm:px-6 bg-stone-900 border-t border-stone-800">
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
-            <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">Client work</p>
+            <p className="text-xs font-bold text-amber-500 uppercase tracking-widest mb-3">Client work</p>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
               Real results, verifiable.
             </h2>
-            <p className="text-slate-400 max-w-xl leading-relaxed">
+            <p className="text-stone-400 max-w-xl leading-relaxed">
               Every result below is live and checkable. We do not use projected figures or vanity metrics.
             </p>
           </div>
@@ -384,7 +384,7 @@ export default function Home() {
             {/* Alotek — primary feature */}
             <Link 
               href="/portfolio" 
-              className="group md:col-span-2 relative bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-slate-500 transition-all hover:shadow-xl"
+              className="group md:col-span-2 relative bg-stone-800 rounded-2xl overflow-hidden border border-stone-700 hover:border-stone-500 transition-all hover:shadow-xl"
             >
               <div className="aspect-[16/7] relative overflow-hidden">
                 <Image
@@ -394,20 +394,20 @@ export default function Home() {
                   sizes="(max-width: 768px) 100vw, 66vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-800 via-slate-800/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-stone-800 via-stone-800/30 to-transparent" />
                 <div className="absolute top-4 left-4 bg-emerald-500 text-white text-xs font-black px-3 py-1.5 rounded-full">
                   #1 for every tracked term
                 </div>
               </div>
               <div className="p-6">
-                <div className="text-xs font-bold text-slate-500 uppercase tracking-wide mb-2">Manufacturing · SEO Retainer</div>
-                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-slate-200 transition-colors">
+                <div className="text-xs font-bold text-amber-600/70 uppercase tracking-wide mb-2">Manufacturing · SEO Retainer</div>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-stone-200 transition-colors">
                   Alotek Shelters
                 </h3>
-                <p className="text-sm text-slate-400 mb-4">
+                <p className="text-sm text-stone-400 mb-4">
                   Previous agency: zero results in 12 months. Month one of our retainer: 10 #1 rankings, every core keyword, AI Overview appearances. "Bus shelter suppliers" moved from position 16 to #1 in 30 days.
                 </p>
-                <div className="flex items-center gap-2 text-slate-300 font-semibold text-sm group-hover:gap-3 transition-all">
+                <div className="flex items-center gap-2 text-stone-300 font-semibold text-sm group-hover:gap-3 transition-all">
                   Read the case study <ArrowRight className="w-3.5 h-3.5" />
                 </div>
               </div>
@@ -416,7 +416,7 @@ export default function Home() {
             {/* SouthportGuide — network proof */}
             <Link 
               href="/portfolio" 
-              className="group relative bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-slate-500 transition-all hover:shadow-xl"
+              className="group relative bg-stone-800 rounded-2xl overflow-hidden border border-stone-700 hover:border-stone-500 transition-all hover:shadow-xl"
             >
               <div className="aspect-[4/3] relative overflow-hidden">
                 <Image
@@ -426,20 +426,20 @@ export default function Home() {
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-800 via-slate-800/30 to-transparent" />
-                <div className="absolute top-4 left-4 bg-blue-500 text-white text-xs font-black px-3 py-1.5 rounded-full">
+                <div className="absolute inset-0 bg-gradient-to-t from-stone-800 via-stone-800/30 to-transparent" />
+                <div className="absolute top-4 left-4 bg-amber-500 text-white text-xs font-black px-3 py-1.5 rounded-full">
                   999+ venues
                 </div>
               </div>
               <div className="p-6">
-                <div className="text-xs font-bold text-slate-500 uppercase tracking-wide mb-2">Tourism · Owned project</div>
-                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-slate-200 transition-colors">
+                <div className="text-xs font-bold text-amber-600/70 uppercase tracking-wide mb-2">Tourism · Owned project</div>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-stone-200 transition-colors">
                   SouthportGuide.co.uk
                 </h3>
-                <p className="text-sm text-slate-400 mb-4">
+                <p className="text-sm text-stone-400 mb-4">
                   Built from scratch, fully owned. The definitive visitor guide to Southport.
                 </p>
-                <div className="flex items-center gap-2 text-slate-300 font-semibold text-sm group-hover:gap-3 transition-all">
+                <div className="flex items-center gap-2 text-stone-300 font-semibold text-sm group-hover:gap-3 transition-all">
                   View project <ArrowRight className="w-3.5 h-3.5" />
                 </div>
               </div>
@@ -450,7 +450,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <Link 
               href="/portfolio" 
-              className="group relative bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-slate-500 transition-all hover:shadow-xl flex gap-0"
+              className="group relative bg-stone-800 rounded-2xl overflow-hidden border border-stone-700 hover:border-stone-500 transition-all hover:shadow-xl flex gap-0"
             >
               <div className="w-40 shrink-0 relative overflow-hidden">
                 <Image
@@ -462,16 +462,16 @@ export default function Home() {
                 />
               </div>
               <div className="p-5 flex flex-col justify-center">
-                <div className="text-xs font-bold text-slate-500 uppercase tracking-wide mb-1">Golf · 18 languages</div>
-                <h3 className="text-base font-bold text-white mb-1 group-hover:text-slate-200 transition-colors">SeftonLinks.com</h3>
-                <p className="text-xs text-slate-400 line-clamp-2">Royal Birkdale and 5 championship courses. International golf tourism for The Open 2026.</p>
+                <div className="text-xs font-bold text-amber-600/70 uppercase tracking-wide mb-1">Golf · 18 languages</div>
+                <h3 className="text-base font-bold text-white mb-1 group-hover:text-stone-200 transition-colors">SeftonLinks.com</h3>
+                <p className="text-xs text-stone-400 line-clamp-2">Royal Birkdale and 5 championship courses. International golf tourism for The Open 2026.</p>
               </div>
             </Link>
             <Link 
               href="/portfolio" 
-              className="group relative bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-slate-500 transition-all hover:shadow-xl flex gap-0"
+              className="group relative bg-stone-800 rounded-2xl overflow-hidden border border-stone-700 hover:border-stone-500 transition-all hover:shadow-xl flex gap-0"
             >
-              <div className="w-40 shrink-0 relative overflow-hidden bg-slate-700">
+              <div className="w-40 shrink-0 relative overflow-hidden bg-stone-700">
                 <Image
                   src="/images/southport-marshside-nature-seo.jpg"
                   alt="Sefton Coast Wildlife: Species Database"
@@ -481,9 +481,9 @@ export default function Home() {
                 />
               </div>
               <div className="p-5 flex flex-col justify-center">
-                <div className="text-xs font-bold text-slate-500 uppercase tracking-wide mb-1">Wildlife · 257 species</div>
-                <h3 className="text-base font-bold text-white mb-1 group-hover:text-slate-200 transition-colors">SeftonCoastWildlife.co.uk</h3>
-                <p className="text-xs text-slate-400 line-clamp-2">Species database covering every bird, mammal, insect and plant found between Southport and Formby.</p>
+                <div className="text-xs font-bold text-amber-600/70 uppercase tracking-wide mb-1">Wildlife · 257 species</div>
+                <h3 className="text-base font-bold text-white mb-1 group-hover:text-stone-200 transition-colors">SeftonCoastWildlife.co.uk</h3>
+                <p className="text-xs text-stone-400 line-clamp-2">Species database covering every bird, mammal, insect and plant found between Southport and Formby.</p>
               </div>
             </Link>
           </div>
@@ -491,7 +491,7 @@ export default function Home() {
           <div className="text-center">
             <Link 
               href="/portfolio" 
-              className="inline-flex items-center gap-2 px-6 py-3 bg-slate-800 hover:bg-slate-700 text-white font-bold rounded-xl border border-slate-700 hover:border-slate-600 transition-all group"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-stone-800 hover:bg-stone-700 text-white font-bold rounded-xl border border-stone-700 hover:border-stone-600 transition-all group"
             >
               View Full Portfolio <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
@@ -502,14 +502,14 @@ export default function Home() {
       {/* ══════════════════════════════════════════
           5. TESTIMONIALS
       ══════════════════════════════════════════ */}
-      <section className="py-20 px-4 sm:px-6 bg-slate-950 border-t border-slate-800">
+      <section className="py-20 px-4 sm:px-6 bg-stone-950 border-t border-stone-900">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <Link 
               href="https://share.google/EWApeBLNuBQUP506R"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-slate-900 border border-yellow-600/30 rounded-full px-4 py-2 mb-6 hover:border-yellow-600/50 hover:bg-slate-800 transition-all group"
+              className="inline-flex items-center gap-2 bg-stone-900 border border-yellow-600/30 rounded-full px-4 py-2 mb-6 hover:border-yellow-600/50 hover:bg-stone-800 transition-all group"
             >
               <div className="flex gap-0.5">
                 {[1,2,3,4,5].map((s) => (
@@ -530,59 +530,59 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-5 mb-8">
-            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-7 relative group hover:border-slate-700 transition-all">
-              <Quote className="absolute top-5 right-5 w-10 h-10 text-slate-800" />
+            <div className="bg-stone-900 border border-stone-800 rounded-2xl p-7 relative group hover:border-stone-700 transition-all">
+              <Quote className="absolute top-5 right-5 w-10 h-10 text-stone-800" />
               <div className="flex gap-1 mb-5">
                 {[1,2,3,4,5].map((s) => (
                   <Star key={s} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
                 ))}
               </div>
-              <p className="text-slate-300 leading-relaxed mb-5 text-sm relative z-10">
+              <p className="text-stone-300 leading-relaxed mb-5 text-sm relative z-10">
                 "I honestly can't recommend Churchtown Media enough for web design. They actually listened and turned it into something way better than I expected. The site looks amazing, but more importantly, <strong className="text-white">it works perfectly.</strong>"
               </p>
-              <div className="flex items-center gap-3 pt-4 border-t border-slate-800">
-                <div className="w-9 h-9 bg-slate-700 rounded-full flex items-center justify-center text-white font-bold text-sm">M</div>
+              <div className="flex items-center gap-3 pt-4 border-t border-stone-800">
+                <div className="w-9 h-9 bg-stone-700 rounded-full flex items-center justify-center text-white font-bold text-sm">M</div>
                 <div>
                   <div className="font-bold text-white text-sm">Matthew Brown</div>
-                  <div className="text-xs text-slate-500 font-medium">Web Design Client</div>
+                  <div className="text-xs text-stone-500 font-medium">Web Design Client</div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-7 relative group hover:border-slate-700 transition-all">
-              <Quote className="absolute top-5 right-5 w-10 h-10 text-slate-800" />
+            <div className="bg-stone-900 border border-stone-800 rounded-2xl p-7 relative group hover:border-stone-700 transition-all">
+              <Quote className="absolute top-5 right-5 w-10 h-10 text-stone-800" />
               <div className="flex gap-1 mb-5">
                 {[1,2,3,4,5].map((s) => (
                   <Star key={s} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
                 ))}
               </div>
-              <p className="text-slate-300 leading-relaxed mb-5 text-sm relative z-10">
+              <p className="text-stone-300 leading-relaxed mb-5 text-sm relative z-10">
                 "We hired Churchtown Media to help our Liverpool business gain traction, and I was <strong className="text-white">genuinely shocked by the speed of the results</strong>. We saw significant ranking improvements in less than a month."
               </p>
-              <div className="flex items-center gap-3 pt-4 border-t border-slate-800">
-                <div className="w-9 h-9 bg-slate-700 rounded-full flex items-center justify-center text-white font-bold text-sm">J</div>
+              <div className="flex items-center gap-3 pt-4 border-t border-stone-800">
+                <div className="w-9 h-9 bg-stone-700 rounded-full flex items-center justify-center text-white font-bold text-sm">J</div>
                 <div>
                   <div className="font-bold text-white text-sm">Jay Hopkins</div>
-                  <div className="text-xs text-slate-500 font-medium">Local SEO (Liverpool)</div>
+                  <div className="text-xs text-stone-500 font-medium">Local SEO (Liverpool)</div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-7 relative group hover:border-slate-700 transition-all">
-              <Quote className="absolute top-5 right-5 w-10 h-10 text-slate-800" />
+            <div className="bg-stone-900 border border-stone-800 rounded-2xl p-7 relative group hover:border-stone-700 transition-all">
+              <Quote className="absolute top-5 right-5 w-10 h-10 text-stone-800" />
               <div className="flex gap-1 mb-5">
                 {[1,2,3,4,5].map((s) => (
                   <Star key={s} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
                 ))}
               </div>
-              <p className="text-slate-300 leading-relaxed mb-5 text-sm relative z-10">
+              <p className="text-stone-300 leading-relaxed mb-5 text-sm relative z-10">
                 "We had been burnt by website agencies many times in the past, paying astronomical amounts for the bare minimum. Churchtown Media came in and fixed everything. <strong className="text-white">Professional and reliable.</strong>"
               </p>
-              <div className="flex items-center gap-3 pt-4 border-t border-slate-800">
-                <div className="w-9 h-9 bg-slate-700 rounded-full flex items-center justify-center text-white font-bold text-sm">N</div>
+              <div className="flex items-center gap-3 pt-4 border-t border-stone-800">
+                <div className="w-9 h-9 bg-stone-700 rounded-full flex items-center justify-center text-white font-bold text-sm">N</div>
                 <div>
                   <div className="font-bold text-white text-sm">Nina Thomas</div>
-                  <div className="text-xs text-slate-500 font-medium">Website Rebuild</div>
+                  <div className="text-xs text-stone-500 font-medium">Website Rebuild</div>
                 </div>
               </div>
             </div>
@@ -593,7 +593,7 @@ export default function Home() {
               href="https://share.google/EWApeBLNuBQUP506R"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-slate-400 hover:text-white font-semibold group text-sm transition-colors"
+              className="inline-flex items-center gap-2 text-stone-400 hover:text-white font-semibold group text-sm transition-colors"
             >
               Read all Google reviews <ExternalLink className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
             </Link>
@@ -604,27 +604,27 @@ export default function Home() {
       {/* ══════════════════════════════════════════
           6. SOUTHPORT GROWTH CALLOUT
       ══════════════════════════════════════════ */}
-      <section className="px-4 sm:px-6 py-10 bg-slate-950 border-t border-slate-800">
+      <section className="px-4 sm:px-6 py-10 bg-stone-950 border-t border-stone-900">
         <div className="max-w-7xl mx-auto">
           <Link
             href="/southport-growth"
-            className="group flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 bg-slate-900 border border-slate-800 hover:border-slate-600 rounded-2xl px-8 py-7 transition-all"
+            className="group flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 bg-amber-950/40 border border-amber-800/30 hover:border-amber-700/60 rounded-2xl px-8 py-7 transition-all"
           >
             <div className="flex items-start gap-4">
-              <div className="shrink-0 w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center mt-0.5">
-                <TrendingUp className="w-5 h-5 text-slate-300" />
+              <div className="shrink-0 w-10 h-10 bg-amber-900/40 rounded-xl flex items-center justify-center mt-0.5">
+                <TrendingUp className="w-5 h-5 text-amber-400" />
               </div>
               <div>
-                <div className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Southport 2026</div>
+                <div className="text-xs font-bold text-amber-600 uppercase tracking-widest mb-1">Southport 2026</div>
                 <p className="text-white font-bold text-base leading-snug">
                   500,000+ additional visitors. MLEC, The Open, the £37.5m Town Deal.
                 </p>
-                <p className="text-slate-500 text-sm mt-1">
+                <p className="text-amber-200/40 text-sm mt-1">
                   What it means for local businesses and how to position before the traffic arrives.
                 </p>
               </div>
             </div>
-            <div className="shrink-0 flex items-center gap-2 text-slate-400 font-semibold whitespace-nowrap group-hover:text-white group-hover:gap-3 transition-all text-sm">
+            <div className="shrink-0 flex items-center gap-2 text-amber-500/70 font-semibold whitespace-nowrap group-hover:text-amber-400 group-hover:gap-3 transition-all text-sm">
               Read the growth guide <ArrowRight className="w-4 h-4" />
             </div>
           </Link>
@@ -634,16 +634,16 @@ export default function Home() {
       {/* ══════════════════════════════════════════
           7. LATEST INSIGHTS
       ══════════════════════════════════════════ */}
-      <section className="py-20 px-4 sm:px-6 bg-slate-900 border-t border-slate-800">
+      <section className="py-20 px-4 sm:px-6 bg-stone-900 border-t border-stone-800">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-end justify-between mb-10">
             <div>
-              <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">From the blog</p>
+              <p className="text-xs font-bold text-amber-500 uppercase tracking-widest mb-3">From the blog</p>
               <h2 className="text-3xl md:text-4xl font-bold text-white">
                 Latest insights
               </h2>
             </div>
-            <Link href="/blog" className="hidden sm:inline-flex items-center gap-2 text-slate-400 hover:text-white font-semibold transition-colors text-sm">
+            <Link href="/blog" className="hidden sm:inline-flex items-center gap-2 text-stone-400 hover:text-white font-semibold transition-colors text-sm">
               All posts <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -653,7 +653,7 @@ export default function Home() {
               <Link 
                 key={post.slug} 
                 href={`/blog/${post.slug}`} 
-                className="group block bg-slate-950 rounded-2xl overflow-hidden border border-slate-800 hover:border-slate-600 transition-all hover:-translate-y-1 hover:shadow-xl"
+                className="group block bg-stone-950 rounded-2xl overflow-hidden border border-stone-800 hover:border-stone-600 transition-all hover:-translate-y-1 hover:shadow-xl"
               >
                 <div className="aspect-[16/9] relative overflow-hidden">
                   <Image
@@ -663,18 +663,18 @@ export default function Home() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/20 to-transparent" />
                 </div>
                 <div className="p-5">
-                  <div className="flex items-center gap-3 mb-2 text-xs text-slate-600">
+                  <div className="flex items-center gap-3 mb-2 text-xs text-stone-600">
                     <span>{post.date}</span>
-                    <span className="w-1 h-1 bg-slate-700 rounded-full"></span>
-                    <span className="text-slate-500 font-medium">{post.category}</span>
+                    <span className="w-1 h-1 bg-stone-700 rounded-full"></span>
+                    <span className="text-stone-500 font-medium">{post.category}</span>
                   </div>
-                  <h3 className="text-base font-bold text-white group-hover:text-slate-200 transition-colors mb-2 line-clamp-2">
+                  <h3 className="text-base font-bold text-white group-hover:text-stone-200 transition-colors mb-2 line-clamp-2">
                     {post.title}
                   </h3>
-                  <p className="text-slate-500 text-sm line-clamp-2 leading-relaxed">
+                  <p className="text-stone-500 text-sm line-clamp-2 leading-relaxed">
                     {post.excerpt}
                   </p>
                 </div>
@@ -683,7 +683,7 @@ export default function Home() {
           </div>
 
           <div className="sm:hidden text-center">
-            <Link href="/blog" className="inline-flex items-center gap-2 text-slate-400 hover:text-white font-semibold transition-colors text-sm">
+            <Link href="/blog" className="inline-flex items-center gap-2 text-stone-400 hover:text-white font-semibold transition-colors text-sm">
               All posts <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

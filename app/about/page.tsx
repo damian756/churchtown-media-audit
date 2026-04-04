@@ -108,22 +108,22 @@ export default function AboutPage() {
               <div className="order-2 md:order-1">
                 <figure className="relative">
                   <Image
-                  src="/images/about/damian-headshot.jpg"
-                  alt="Damian Roche, founder of Churchtown Media, Southport."
+                  src="/images/about/damian-blog-bio.jpg"
+                  alt="Damian Roche, founder of Churchtown Media, out on location in Southport."
                     width={600}
                     height={600}
                     className="rounded-2xl border border-slate-800 shadow-2xl w-full"
                     priority
                   />
                   <figcaption className="text-center text-sm text-slate-500 mt-4">
-                    Churchtown, Southport. This is the office, more or less.
+                    Out on location. This is the job, more or less.
                   </figcaption>
                 </figure>
               </div>
 
               {/* Text */}
               <div className="order-1 md:order-2">
-                <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4">Founder</p>
+                <p className="text-xs font-bold text-amber-500 uppercase tracking-widest mb-4">Founder</p>
                 <h1 className="text-5xl md:text-6xl font-extrabold leading-tight mb-6 text-white">
                   Hi, I'm Damian.
                 </h1>
@@ -166,7 +166,7 @@ export default function AboutPage() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-14 items-start">
               <div>
-                <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4">The proof of concept</p>
+                <p className="text-xs font-bold text-amber-500 uppercase tracking-widest mb-4">The proof of concept</p>
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-snug">
                   The Sefton Coast Network
                 </h2>
@@ -238,7 +238,7 @@ export default function AboutPage() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-14 items-start">
               <div>
-                <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4">How I work</p>
+                <p className="text-xs font-bold text-amber-500 uppercase tracking-widest mb-4">How I work</p>
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-snug">
                   No fluff. No vanity metrics. Just things that work.
                 </h2>
