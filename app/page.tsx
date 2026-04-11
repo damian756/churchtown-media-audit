@@ -193,7 +193,7 @@ export default function Home() {
 
             {/* RIGHT: Network cards */}
             <div className="relative">
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {NETWORK_SITES.map((site) => (
                   <a
                     key={site.href}
@@ -208,7 +208,7 @@ export default function Home() {
                         {site.badge}
                       </span>
                     </div>
-                    <div className="font-bold text-white text-sm mb-1 group-hover:text-slate-200 transition-colors">
+                    <div className="font-bold text-white text-sm mb-1 group-hover:text-slate-200 transition-colors break-words">
                       {site.name}
                     </div>
                     <div className="text-slate-500 text-xs mb-2 font-medium">{site.tagline}</div>
