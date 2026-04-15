@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "AI Workflow Implementation | Automate Your Business | Churchtown Media",
-    description: "Bespoke AI-powered workflows that eliminate repetitive tasks and reduce operational costs. Built for North West businesses ready to operate smarter.",
+    description: "Bespoke AI-powered workflows that eliminate repetitive tasks and reduce operational costs. Built for businesses in Southport and Blackpool ready to operate smarter.",
     url: "https://www.churchtownmedia.co.uk/services/ai-workflows",
     type: "website",
     siteName: "Churchtown Media",

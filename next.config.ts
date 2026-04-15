@@ -124,12 +124,13 @@ const nextConfig: NextConfig = {
       },
 
       // ----------------------------------------
-      // 3. REMOVED LOCATION PAGES → homepage
+      // 3. REMOVED LOCATION PAGES → service pages
       // ----------------------------------------
-      { source: '/locations', destination: '/', permanent: true },
-      { source: '/locations/manchester', destination: '/', permanent: true },
-      { source: '/locations/liverpool', destination: '/', permanent: true },
-      { source: '/locations/preston', destination: '/', permanent: true },
+      { source: '/locations', destination: '/services', permanent: true },
+      { source: '/locations/southport', destination: '/services', permanent: true },
+      { source: '/locations/manchester', destination: '/services', permanent: true },
+      { source: '/locations/liverpool', destination: '/services', permanent: true },
+      { source: '/locations/preston', destination: '/services', permanent: true },
       { source: '/locations/blackpool', destination: '/blackpool-growth', permanent: true },
       { source: '/locations/edinburgh', destination: '/', permanent: true },
       { source: '/locations/glasgow', destination: '/', permanent: true },

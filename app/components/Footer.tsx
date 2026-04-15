@@ -66,7 +66,7 @@ export default function Footer() {
                 <li><Link href="/sectors/professional-services" className="hover:text-blue-400 transition-colors">Professional Services</Link></li>
                 <li><Link href="/sectors/property" className="hover:text-blue-400 transition-colors">Property &amp; Development</Link></li>
                 <li className="pt-2 border-t border-white/5 mt-2">
-                    <Link href="/locations/southport" className="hover:text-blue-400 transition-colors">Agency in Southport</Link></li>
+                    <Link href="/southport-growth" className="hover:text-blue-400 transition-colors">Southport Growth Guide</Link></li>
                 <li><Link href="/blackpool-growth" className="text-blue-500 font-bold hover:text-white transition-colors">Blackpool Growth Guide →</Link></li>
             </ul>
         </div>

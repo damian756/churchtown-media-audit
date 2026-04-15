@@ -2,14 +2,14 @@ import Link from "next/link";
 import { Zap, Server, ShieldCheck, LayoutTemplate } from "lucide-react";
 
 export const metadata = {
-  title: "Headless Next.js Development | Churchtown Media",
-  description: "Stop losing customers to loading screens. We migrate slow WordPress sites to the Ferrari Engine of the web: Next.js + Vercel.",
+  title: "Headless Next.js Development | Southport & Blackpool | Churchtown Media",
+  description: "Stop losing customers to loading screens. We build and migrate to headless Next.js for hospitality, property and professional services businesses in Southport and Blackpool. Sub-second load times, built to rank.",
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk/services/headless-development',
   },
   openGraph: {
-    title: 'Headless Next.js Development | Churchtown Media',
-    description: 'We migrate slow WordPress sites to Next.js. Faster, more secure, and built to rank.',
+    title: 'Headless Next.js Development | Southport & Blackpool | Churchtown Media',
+    description: 'We build and migrate to headless Next.js for businesses in Southport and Blackpool. Faster, more secure, and built to rank.',
     url: 'https://www.churchtownmedia.co.uk/services/headless-development',
     type: 'website',
     siteName: 'Churchtown Media',

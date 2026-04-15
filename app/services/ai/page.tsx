@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Our full AI service range: Generative Engine Optimisation (GEO), AI content production at scale, and AI workflow automation. Built for businesses that want to operate smarter and rank in the age of AI search.",
   keywords: [
     "AI services UK",
-    "AI agency North West",
+    "AI agency Southport",
     "generative engine optimisation",
     "AI content production",
     "AI workflow automation",

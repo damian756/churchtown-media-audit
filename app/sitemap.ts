@@ -25,7 +25,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { route: '/sectors/property', priority: 0.9 },
     { route: '/southport-growth', priority: 0.9 },
     { route: '/blackpool-growth', priority: 0.9 },
-    { route: '/locations/southport', priority: 0.85 },
     { route: '/work', priority: 0.8 },
     { route: '/portfolio', priority: 0.85 },
     { route: '/about', priority: 0.8 },

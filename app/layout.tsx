@@ -23,27 +23,27 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.churchtownmedia.co.uk'),
   title: {
-    default: 'Churchtown Media | Web Design & SEO, Southport',
+    default: 'Churchtown Media | Web Design & SEO | Southport & Blackpool',
     template: '%s',
   },
-  description: 'Churchtown Media builds websites and SEO campaigns for Southport and North West businesses. Creators of the Sefton Coast Network: SouthportGuide, FormbyGuide, SeftonLinks and SeftonCoastWildlife.',
+  description: 'Churchtown Media builds websites and SEO campaigns for hospitality, golf, professional services and property businesses in Southport and Blackpool. Creators of the Sefton Coast Network.',
   applicationName: 'Churchtown Media',
   authors: [{ name: 'Damian Roche, Churchtown Media', url: 'https://www.churchtownmedia.co.uk' }],
   generator: 'Next.js',
-  keywords: ['Web Design Southport', 'SEO Southport', 'Digital Agency Southport', 'Next.js Developer Southport', 'Sefton Coast'],
+  keywords: ['Web Design Southport', 'SEO Southport', 'Web Design Blackpool', 'SEO Blackpool', 'Digital Agency Southport', 'Digital Agency Blackpool', 'Next.js Developer Southport'],
   alternates: {
     types: {
       "application/rss+xml": "https://www.churchtownmedia.co.uk/feed",
     },
   },
   openGraph: {
-    title: 'Churchtown Media | Web Design & SEO, Southport',
-    description: 'We built the Sefton Coast Network from scratch. Four sites, one coastline. We build the same depth of thing for clients.',
+    title: 'Churchtown Media | Web Design & SEO | Southport & Blackpool',
+    description: 'We built the Sefton Coast Network from scratch. Four sites, one coastline. We build the same depth of thing for clients in Southport and Blackpool.',
     url: 'https://www.churchtownmedia.co.uk',
     siteName: 'Churchtown Media',
     locale: 'en_GB',
     type: 'website',
-    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Churchtown Media: Web Design & SEO, Southport' }],
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Churchtown Media: Web Design & SEO | Southport & Blackpool' }],
   },
   robots: {
     index: true,

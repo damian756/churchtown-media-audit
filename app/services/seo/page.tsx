@@ -4,20 +4,20 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, Plus, MapPin, TrendingUp, Search, AlertCircle, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: 'SEO Agency Southport | Churchtown Media',
-  description: 'SEO agency based in Southport. We rank #1 in the local pack for "seo southport": and we got a client to #1 in Google\'s AI Overview in 30 days. Honest pricing, real data.',
-  keywords: ['seo southport', 'seo agency southport', 'seo company southport', 'local seo southport', 'technical seo southport', 'seo services merseyside', 'seo north west'],
+  title: 'SEO Agency Southport & Blackpool | Churchtown Media',
+  description: 'SEO agency based in Southport, covering Southport and Blackpool. We rank #1 in the local pack for "seo southport" and got a client to #1 in Google\'s AI Overview in 30 days. Honest pricing, real data.',
+  keywords: ['seo southport', 'seo agency southport', 'seo company southport', 'local seo southport', 'seo blackpool', 'seo agency blackpool', 'seo company blackpool', 'local seo blackpool'],
   alternates: { canonical: 'https://www.churchtownmedia.co.uk/services/seo' },
   openGraph: {
-    title: 'SEO Agency Southport | Churchtown Media',
-    description: 'SEO agency based in Southport. #1 local pack for "seo southport". Real results, real data.',
+    title: 'SEO Agency Southport & Blackpool | Churchtown Media',
+    description: 'SEO agency based in Southport, covering Southport and Blackpool. #1 local pack for "seo southport". Real results, real data.',
     url: 'https://www.churchtownmedia.co.uk/services/seo',
     type: 'website',
     siteName: 'Churchtown Media',
     locale: 'en_GB',
     images: [{ url: 'https://www.churchtownmedia.co.uk/og-default.png', width: 1200, height: 630, alt: 'Churchtown Media SEO Agency Southport' }],
   },
-  twitter: { card: 'summary_large_image', title: 'SEO Agency Southport | Churchtown Media', description: '#1 local pack for "seo southport". Real results, honest pricing.' },
+  twitter: { card: 'summary_large_image', title: 'SEO Agency Southport & Blackpool | Churchtown Media', description: '#1 local pack for "seo southport". Covering Southport and Blackpool. Real results, honest pricing.' },
 };
 
 const faqs = [
@@ -77,19 +77,15 @@ const jsonLd = {
   },
   'areaServed': [
     { '@type': 'City', 'name': 'Southport' },
-    { '@type': 'City', 'name': 'Liverpool' },
-    { '@type': 'City', 'name': 'Preston' },
-    { '@type': 'AdministrativeArea', 'name': 'Merseyside' },
-    { '@type': 'AdministrativeArea', 'name': 'Lancashire' },
-    { '@type': 'AdministrativeArea', 'name': 'North West England' },
+    { '@type': 'City', 'name': 'Blackpool' },
   ],
-  'description': 'SEO agency based in Southport. Local pack, technical SEO, and content strategy for North West businesses.',
+  'description': 'SEO agency based in Southport. Local pack, technical SEO, and content strategy for businesses in Southport and Blackpool.',
   'hasOfferCatalog': {
     '@type': 'OfferCatalog',
     'name': 'SEO Packages',
     'itemListElement': [
       { '@type': 'Offer', 'name': 'Local SEO', 'priceSpecification': { '@type': 'UnitPriceSpecification', 'price': '500', 'priceCurrency': 'GBP', 'unitText': 'MONTH' }, 'availability': 'https://schema.org/InStock', 'itemOffered': { '@type': 'Service', 'name': 'Local SEO', 'description': 'Local pack and Google Business Profile optimisation for Southport businesses' } },
-      { '@type': 'Offer', 'name': 'Regional SEO', 'priceSpecification': { '@type': 'UnitPriceSpecification', 'price': '900', 'priceCurrency': 'GBP', 'unitText': 'MONTH' }, 'availability': 'https://schema.org/InStock', 'itemOffered': { '@type': 'Service', 'name': 'Regional SEO', 'description': 'Multi-city SEO for North West businesses' } },
+      { '@type': 'Offer', 'name': 'Regional SEO', 'priceSpecification': { '@type': 'UnitPriceSpecification', 'price': '900', 'priceCurrency': 'GBP', 'unitText': 'MONTH' }, 'availability': 'https://schema.org/InStock', 'itemOffered': { '@type': 'Service', 'name': 'Regional SEO', 'description': 'Multi-location SEO for businesses in Southport and Blackpool' } },
       { '@type': 'Offer', 'name': 'Full SEO Retainer', 'priceSpecification': { '@type': 'UnitPriceSpecification', 'price': '1500', 'priceCurrency': 'GBP', 'unitText': 'MONTH' }, 'availability': 'https://schema.org/InStock', 'itemOffered': { '@type': 'Service', 'name': 'Full SEO Retainer', 'description': 'National and multi-location SEO with content production and authority building' } },
     ]
   },
@@ -114,7 +110,7 @@ export default function SEOPage() {
 
           <div className="inline-flex items-center gap-2 text-green-400 text-sm font-semibold mb-6">
             <MapPin className="w-4 h-4" />
-            <span>Based in Southport · Serving Merseyside, Lancashire & the North West</span>
+            <span>Based in Southport · Serving Southport &amp; Blackpool</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6">

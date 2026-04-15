@@ -9,7 +9,7 @@ export const metadata = {
   },
   openGraph: {
     title: 'Services | Churchtown Media',
-    description: 'Web development, programmatic SEO, GEO, AI content production, AI workflows, and bespoke systems for North West businesses.',
+    description: 'Web development, programmatic SEO, GEO, AI content production, AI workflows, and bespoke systems for businesses in Southport and Blackpool.',
     url: 'https://www.churchtownmedia.co.uk/services',
     type: 'website',
     siteName: 'Churchtown Media',

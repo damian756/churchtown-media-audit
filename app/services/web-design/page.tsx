@@ -4,15 +4,15 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, Plus, MapPin, Phone, TrendingUp, Zap, Shield, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: 'Web Design Southport | Churchtown Media',
-  description: 'Web design for Southport businesses. Fast Next.js sites that rank on Google. Honest pricing from £2,500. Based in Southport: you can actually come and meet us.',
-  keywords: ['web design southport', 'website design southport', 'web design agency southport', 'next.js development southport', 'web design north west', 'web design liverpool', 'southport web designer'],
+  title: 'Web Design Southport & Blackpool | Churchtown Media',
+  description: 'Web design for businesses in Southport and Blackpool. Fast Next.js sites that rank on Google. Honest pricing from £2,500. Based in Southport, covering both markets.',
+  keywords: ['web design southport', 'website design southport', 'web design blackpool', 'website design blackpool', 'web design agency southport', 'web design agency blackpool', 'next.js development southport', 'southport web designer'],
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk/services/web-design',
   },
   openGraph: {
-    title: 'Web Design Southport | Churchtown Media',
-    description: 'Web design for Southport businesses. Fast Next.js sites that rank on Google. Honest pricing from £2,500. Based in Southport.',
+    title: 'Web Design Southport & Blackpool | Churchtown Media',
+    description: 'Web design for businesses in Southport and Blackpool. Fast Next.js sites that rank on Google. Honest pricing from £2,500. Based in Southport, covering both markets.',
     url: 'https://www.churchtownmedia.co.uk/services/web-design',
     type: 'website',
     siteName: 'Churchtown Media',
@@ -79,13 +79,9 @@ const jsonLd = {
   },
   'areaServed': [
     { '@type': 'City', 'name': 'Southport' },
-    { '@type': 'City', 'name': 'Liverpool' },
-    { '@type': 'City', 'name': 'Preston' },
-    { '@type': 'AdministrativeArea', 'name': 'Merseyside' },
-    { '@type': 'AdministrativeArea', 'name': 'Lancashire' },
-    { '@type': 'AdministrativeArea', 'name': 'North West England' },
+    { '@type': 'City', 'name': 'Blackpool' },
   ],
-  'description': 'Web design for Southport businesses. Fast Next.js sites built to rank on Google and convert visitors into enquiries.',
+  'description': 'Web design for businesses in Southport and Blackpool. Fast Next.js sites built to rank on Google and convert visitors into enquiries.',
   'hasOfferCatalog': {
     '@type': 'OfferCatalog',
     'name': 'Web Design Packages',
@@ -495,7 +491,7 @@ export default function WebDesignPage() {
             </Link>
           </div>
           <p className="text-slate-500 text-xs mt-6">
-            Serving Southport, Formby, Liverpool, Preston and across the North West
+            Based in Southport &amp; serving Southport and Blackpool
           </p>
         </div>
       </section>

@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { posts } from "@/lib/posts";
 
 export const metadata: Metadata = {
-  title: 'Web Design & SEO Agency Southport | Churchtown Media',
+  title: 'Web Design & SEO Agency | Southport & Blackpool | Churchtown Media',
   description: 'Churchtown Media builds websites and SEO strategies for hospitality, golf, professional services and property businesses in Southport and Blackpool. We built the Sefton Coast Network from scratch. Based in Churchtown, Southport.',
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk',
@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_GB',
     url: 'https://www.churchtownmedia.co.uk',
-    title: 'Churchtown Media | Web Design & SEO, Southport',
-    description: 'We built the Sefton Coast Network from scratch. Four sites, one coastline. We build the same depth of thing for clients.',
+    title: 'Churchtown Media | Web Design & SEO | Southport & Blackpool',
+    description: 'We built the Sefton Coast Network from scratch. Four sites, one coastline. We build the same depth of thing for clients in Southport and Blackpool.',
     siteName: 'Churchtown Media',
     images: [{
       url: 'https://www.churchtownmedia.co.uk/opengraph-image.png',
