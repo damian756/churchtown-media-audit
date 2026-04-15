@@ -4,7 +4,7 @@ import Image from "next/image";
 import { ArrowRight, ExternalLink, Zap, Code2, Gauge, TrendingUp, CheckCircle2, Sparkles, Rocket, Target } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Portfolio | Client Projects & Success Stories",
+  title: "Portfolio | Web Design & SEO Projects | Churchtown Media",
   description: "See our live Next.js projects in action. From bus shelter manufacturers with 10 #1 rankings in 30 days to professional video capture equipment-real clients, real results, real performance.",
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk/portfolio',

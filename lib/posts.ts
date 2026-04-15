@@ -14,6 +14,91 @@ export const posts: BlogPost[] = [
   // ── April 2026 posts ──────────────────────────────────────────────────────
 
   {
+    slug: "blackpool-regeneration-web-design-seo-opportunity",
+    title: "Blackpool's £300m Regeneration: Why Local Businesses Need to Get Their Digital House in Order Now",
+    date: "Apr 2, 2026",
+    author: "Damian Roche",
+    category: "Local SEO",
+    image: "/images/blog-blackpool-regeneration.jpg",
+    excerpt: "Blackpool Tower. Winter Gardens. The Enterprise Zone. £300m+ of regeneration capital is flowing into one of the UK's most-searched seaside towns. Businesses in the path of that investment need to be visible online before the competition notices.",
+    content: `
+      <p>I've been watching Blackpool's regeneration pipeline for a while now. The scale of it is often underestimated by people outside the town, and sometimes by people inside it too. When you add up the Blackpool Tower restoration, the Winter Gardens refurbishment, the Enterprise Zone, the new conference offer, and the wider Levelling Up funding, you're looking at a sustained transformation of a major UK visitor destination.</p>
+
+      <p>From a web design and SEO perspective, this creates a specific opportunity for Blackpool businesses. One that closes as the regeneration completes and the competitive landscape catches up.</p>
+
+      <hr />
+
+      <h2>What the Numbers Actually Mean</h2>
+
+      <p>Blackpool already has extraordinary baseline search volume. It's one of the most-searched destinations in the UK. Millions of searches per year for accommodation, restaurants, attractions and "things to do." That volume exists now, before the regeneration completes.</p>
+
+      <p>As the physical product improves, visitor numbers increase, and the mix of visitor shifts toward longer stays and higher spend, search volume follows. Businesses that have established search visibility before that shift lands will be significantly better positioned than those who try to build it afterwards.</p>
+
+      <p>The window is now. Not in 2028 when the Tower restoration is complete. Now, while the competition is still asleep.</p>
+
+      <hr />
+
+      <h2>The Current State of Blackpool Business Websites</h2>
+
+      <p>I've looked at a lot of Blackpool business websites over the past few months. The honest assessment is that the digital quality is significantly below what the town's search volume warrants. Hospitality businesses with slow WordPress sites, no local pack presence, and content that hasn't been updated since 2022 are leaving considerable search traffic on the table.</p>
+
+      <p>The specific problems I keep seeing:</p>
+
+      <ul>
+        <li><strong>Core Web Vitals failures.</strong> A hotel website loading in 4+ seconds on mobile is losing bookings to OTA platforms on every single search. Google's ranking signals penalise slow sites and Booking.com and Expedia are optimised to outperform them.</li>
+        <li><strong>No seasonal content strategy.</strong> Blackpool Illuminations alone generates enormous search volume in September and October. Businesses that have pages targeting "accommodation near Blackpool Illuminations" or "restaurants open during Illuminations" are capturing traffic that businesses with generic homepages are missing entirely.</li>
+        <li><strong>Weak Google Business Profiles.</strong> Incomplete categories, no recent posts, no Q&amp;A pre-population, outdated photos. The local pack is the most important search real estate for local businesses and most Blackpool businesses aren't competing for it seriously.</li>
+        <li><strong>No schema markup.</strong> Structured data for hotels, restaurants and local businesses significantly improves rich snippet eligibility. Very few Blackpool SME websites have it implemented correctly.</li>
+      </ul>
+
+      <hr />
+
+      <h2>The Regeneration Anchor Points and What They Mean for Search</h2>
+
+      <p>Each major regeneration project creates associated search terms that local businesses can position for:</p>
+
+      <p><strong>Blackpool Tower refurbishment:</strong> When restoration completes and the visitor experience improves, searches like "things to do near Blackpool Tower," "restaurants near Blackpool Tower," and "hotels near the tower" will spike. A restaurant with a well-optimised page for Tower proximity is better positioned than one that has nothing.</p>
+
+      <p><strong>Winter Gardens:</strong> The Winter Gardens is a major conference and events venue. Conference delegates search for hotels, restaurants and transport. "Hotels near Winter Gardens Blackpool" is a real commercial query. The businesses that rank for it when the next major conference season arrives are the ones that have the content now.</p>
+
+      <p><strong>Enterprise Zone and business influx:</strong> New businesses relocating to Blackpool need services. Professional services firms, accountants, solicitors and consultants with strong local search presence will capture this demand. Right now, local pack results for professional services in Blackpool are often weak. That changes as new entrants arrive and build their digital presence. Getting there first matters.</p>
+
+      <hr />
+
+      <h2>Illuminations: The Annual Search Spike Nobody Is Fully Capturing</h2>
+
+      <p>The Blackpool Illuminations run from September to November. They attract approximately 3.5 million visitors annually. The search volume associated with the Illuminations is significant and peaks predictably every year.</p>
+
+      <p>The content opportunity for Blackpool businesses is consistent and repeatable: guides to the Illuminations, "where to stay," "what to eat," "best viewing spots," travel logistics. This content earns search traffic every year, not just once. It's evergreen content with a seasonal multiplier.</p>
+
+      <p>Most Blackpool business websites have no Illuminations content at all. It's a straightforward gap to fill.</p>
+
+      <hr />
+
+      <h2>What We're Doing in Blackpool</h2>
+
+      <p>We built <a href="https://www.southportguide.co.uk" target="_blank" rel="noopener noreferrer">SouthportGuide.co.uk</a> into Southport's leading visitor guide and we've watched how search traffic responds to well-structured, editorially credible content in a market with high baseline volume and weak competition.</p>
+
+      <p>We know how to build sites that rank in markets like this. The combination of technical foundations (Next.js, fast load times, proper schema, clean canonical structure) and genuinely useful local content consistently outperforms legacy WordPress sites and generic directory listings.</p>
+
+      <p>For Blackpool businesses specifically, the work involves:</p>
+
+      <ul>
+        <li>Technical audit of your current site against Core Web Vitals benchmarks</li>
+        <li>Google Business Profile optimisation for local pack performance</li>
+        <li>Keyword mapping against the specific search terms Blackpool visitors use</li>
+        <li>Content strategy covering seasonal events (Illuminations, Air Show, conferences)</li>
+        <li>Schema implementation for your business type</li>
+        <li>Internal linking structure to pass authority to your commercial pages</li>
+      </ul>
+
+      <p>We're not a large agency. We work with a small number of clients at a time and we do the work properly. If you have a Blackpool business and you want an honest assessment of what your site needs, get in touch. We'll tell you exactly what we see and what it would take to fix it.</p>
+
+      <p><a href="/contact">Talk to us about your Blackpool business.</a></p>
+    `,
+  },
+
+  {
     slug: "open-2026-southport-businesses-100-days",
     title: "The Open 2026 Is 101 Days Away: Are Southport Businesses Ready for the Search Traffic?",
     date: "Apr 3, 2026",

@@ -78,9 +78,29 @@ const whatWeDeliver = [
   "Monthly retainer SEO for ongoing inventory, market content and local signals",
 ];
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Web Design & SEO for Property & Development',
+  description: 'Churchtown Media builds websites and SEO strategies for property developers and estate agents in Southport and Blackpool.',
+  provider: {
+    '@type': 'ProfessionalService',
+    name: 'Churchtown Media',
+    url: 'https://www.churchtownmedia.co.uk',
+    address: { '@type': 'PostalAddress', addressLocality: 'Southport', addressRegion: 'Merseyside', addressCountry: 'GB' },
+  },
+  areaServed: [
+    { '@type': 'City', name: 'Southport' },
+    { '@type': 'City', name: 'Blackpool' },
+  ],
+  serviceType: 'Web Design and SEO',
+};
+
 export default function PropertySectorPage() {
   return (
     <main className="min-h-screen bg-slate-950 text-white pt-24">
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* HERO */}
       <section className="py-20 px-4 sm:px-6">

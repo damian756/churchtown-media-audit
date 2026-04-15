@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import Link from "next/link";
 import { Star, Quote, ArrowRight, CheckCircle2 } from "lucide-react";
 import type { Metadata } from "next";
@@ -6,13 +6,13 @@ import type { Metadata } from "next";
 // 1. STRATEGIC METADATA (Social Proof Strategy)
 export const metadata: Metadata = {
   title: '5-Star Web Design & SEO Reviews | Churchtown Media',
-  description: 'Don’t just take our word for it. See why Southport & North West businesses rate us 5 stars for Web Design, SEO, and Digital Growth. Read client success stories.',
+  description: 'See why businesses in Southport and Blackpool rate us 5 stars for web design, SEO, and digital growth. Real clients, verified Google reviews.',
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk/testimonials',
   },
   openGraph: {
     title: '5-Star Web Design & SEO Reviews | Churchtown Media',
-    description: 'See why businesses across Southport, Liverpool and Manchester rate us 5 stars for web design, SEO, and digital strategy.',
+    description: 'See why businesses in Southport and Blackpool rate us 5 stars for web design, SEO, and digital growth. Real clients, real results.',
     url: 'https://www.churchtownmedia.co.uk/testimonials',
     type: 'website',
     images: [{ url: 'https://www.churchtownmedia.co.uk/opengraph-image.png', width: 1200, height: 630, alt: 'Client Reviews: Churchtown Media' }],

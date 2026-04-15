@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ArrowRight, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About | Damian Roche, Churchtown Media",
+  title: "About | Damian Roche | Web Design & SEO | Southport & Blackpool",
   description: "Damian Roche built the Sefton Coast Network: SouthportGuide, FormbyGuide, SeftonLinks and SeftonCoastWildlife. 20 years in web development, 15 in SEO. Based in Churchtown, Southport.",
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk/about',

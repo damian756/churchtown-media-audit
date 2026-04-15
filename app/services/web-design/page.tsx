@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     locale: 'en_GB',
     images: [{ url: 'https://www.churchtownmedia.co.uk/images/web-design-hero.jpg', width: 1200, height: 630, alt: 'Churchtown Media: web design Southport' }],
   },
-  twitter: { card: 'summary_large_image', title: 'Web Design Southport | Churchtown Media', description: 'Fast, rankable websites for Southport businesses. From £2,500. Based in Southport.' },
+  twitter: { card: 'summary_large_image', title: 'Web Design Southport & Blackpool | Churchtown Media', description: 'Fast, rankable websites for businesses in Southport and Blackpool. From £2,500. Based in Southport.' },
 };
 
 const faqs = [
@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     question: "Do you work with businesses outside Southport?",
-    answer: "Yes. We work with businesses across Merseyside, Lancashire and the wider North West. Most of the process works just as well over email and video call. But if you're in Southport, Formby, Birkdale, Churchtown or anywhere on the Sefton Coast, we're your local option."
+    answer: "Our primary markets are Southport and Blackpool, but we work with businesses elsewhere too. Most of the process works just as well over email and video call. If you're in Southport, Formby, Birkdale or Churchtown, we're your local option and you can come and meet us in person."
   },
   {
     question: "What are the ongoing costs after launch?",
@@ -119,7 +119,7 @@ export default function WebDesignPage() {
             Web Design
             <br />
             <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-              Southport
+              Southport &amp; Blackpool
             </span>
           </h1>
 
@@ -493,6 +493,25 @@ export default function WebDesignPage() {
           <p className="text-slate-500 text-xs mt-6">
             Based in Southport &amp; serving Southport and Blackpool
           </p>
+        </div>
+      </section>
+
+      {/* ── SECTOR LINKS ─────────────────────────────────────────────────── */}
+      <section className="py-12 px-4 sm:px-6 border-t border-slate-800">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-slate-400 text-sm mb-6">Web design for your sector:</p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              { label: 'Hospitality & Tourism', href: '/sectors/hospitality' },
+              { label: 'Golf Clubs', href: '/sectors/golf' },
+              { label: 'Professional Services', href: '/sectors/professional-services' },
+              { label: 'Property & Development', href: '/sectors/property' },
+            ].map(({ label, href }) => (
+              <Link key={href} href={href} className="text-sm bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white px-4 py-2 rounded-full transition-all">
+                {label}
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

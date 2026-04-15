@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: 'Churchtown Media',
     locale: 'en_GB',
-    images: [{ url: 'https://www.churchtownmedia.co.uk/og-default.png', width: 1200, height: 630, alt: 'Churchtown Media SEO Agency Southport' }],
+    images: [{ url: 'https://www.churchtownmedia.co.uk/opengraph-image.png', width: 1200, height: 630, alt: 'Churchtown Media SEO Agency Southport & Blackpool' }],
   },
   twitter: { card: 'summary_large_image', title: 'SEO Agency Southport & Blackpool | Churchtown Media', description: '#1 local pack for "seo southport". Covering Southport and Blackpool. Real results, honest pricing.' },
 };
@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     question: "Do you work with businesses outside Southport?",
-    answer: "Yes: we work across Merseyside, Lancashire and the wider North West. Most of the process works well remotely. But if you're a Southport, Birkdale, Formby or Sefton Coast business, we're your local option and we know this market in detail."
+    answer: "Our primary markets are Southport and Blackpool, but we work with businesses elsewhere too. Most of the process works well remotely. If you're in Southport, Birkdale, Formby or the Sefton Coast, we're your local option and know this market in detail."
   }
 ];
 
@@ -117,7 +117,7 @@ export default function SEOPage() {
             SEO Agency
             <br />
             <span className="bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">
-              Southport
+              Southport &amp; Blackpool
             </span>
           </h1>
 
@@ -415,7 +415,7 @@ export default function SEOPage() {
               <div className="text-sm font-bold text-green-400 uppercase tracking-wide mb-2">Regional</div>
               <div className="text-5xl font-black text-white mb-1">£900</div>
               <div className="text-slate-300 text-sm mb-6">/month · 6-month minimum</div>
-              <p className="text-slate-300 text-sm mb-8">For businesses serving multiple towns across Merseyside and Lancashire, or with national B2B ambitions.</p>
+              <p className="text-slate-300 text-sm mb-8">For businesses covering Southport and Blackpool, or with multi-location and national B2B ambitions.</p>
               <ul className="space-y-3 mb-8">
                 {[
                   "3–5 city/area coverage",
@@ -538,8 +538,27 @@ export default function SEOPage() {
             </Link>
           </div>
           <p className="text-slate-500 text-xs mt-6">
-            Southport · Birkdale · Formby · Liverpool · Preston · across the North West
+            Southport &amp; Blackpool
           </p>
+        </div>
+      </section>
+
+      {/* ── SECTOR LINKS ─────────────────────────────────────────────────── */}
+      <section className="py-12 px-4 sm:px-6 border-t border-slate-800">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-slate-400 text-sm mb-6">SEO for your sector:</p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              { label: 'Hospitality & Tourism', href: '/sectors/hospitality' },
+              { label: 'Golf Clubs', href: '/sectors/golf' },
+              { label: 'Professional Services', href: '/sectors/professional-services' },
+              { label: 'Property & Development', href: '/sectors/property' },
+            ].map(({ label, href }) => (
+              <Link key={href} href={href} className="text-sm bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white px-4 py-2 rounded-full transition-all">
+                {label}
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
