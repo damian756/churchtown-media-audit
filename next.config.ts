@@ -113,31 +113,41 @@ const nextConfig: NextConfig = {
       // LIVERPOOL
       {
         source: '/seo-liverpool',
-        destination: '/locations/liverpool',
+        destination: '/services/seo',
         permanent: true,
       },
       // PRESTON
       {
         source: '/seo-preston',
-        destination: '/locations/preston',
+        destination: '/services/seo',
         permanent: true,
       },
 
       // ----------------------------------------
-      // 3. REMOVED THIN LOCATION PAGES → /locations
+      // 3. REMOVED LOCATION PAGES → homepage
       // ----------------------------------------
-      { source: '/locations/edinburgh', destination: '/locations', permanent: true },
-      { source: '/locations/glasgow', destination: '/locations', permanent: true },
-      { source: '/locations/cardiff', destination: '/locations', permanent: true },
-      { source: '/locations/belfast', destination: '/locations', permanent: true },
-      { source: '/locations/plymouth', destination: '/locations', permanent: true },
-      { source: '/locations/cambridge', destination: '/locations', permanent: true },
-      { source: '/locations/derby', destination: '/locations', permanent: true },
-      { source: '/locations/brighton', destination: '/locations', permanent: true },
-      { source: '/locations/southampton', destination: '/locations', permanent: true },
-      { source: '/locations/coventry', destination: '/locations', permanent: true },
-      { source: '/locations/bradford', destination: '/locations', permanent: true },
-      { source: '/locations/leicester', destination: '/locations', permanent: true },
+      { source: '/locations', destination: '/', permanent: true },
+      { source: '/locations/manchester', destination: '/', permanent: true },
+      { source: '/locations/liverpool', destination: '/', permanent: true },
+      { source: '/locations/preston', destination: '/', permanent: true },
+      { source: '/locations/blackpool', destination: '/blackpool-growth', permanent: true },
+      { source: '/locations/edinburgh', destination: '/', permanent: true },
+      { source: '/locations/glasgow', destination: '/', permanent: true },
+      { source: '/locations/cardiff', destination: '/', permanent: true },
+      { source: '/locations/belfast', destination: '/', permanent: true },
+      { source: '/locations/plymouth', destination: '/', permanent: true },
+      { source: '/locations/cambridge', destination: '/', permanent: true },
+      { source: '/locations/derby', destination: '/', permanent: true },
+      { source: '/locations/brighton', destination: '/', permanent: true },
+      { source: '/locations/southampton', destination: '/', permanent: true },
+      { source: '/locations/coventry', destination: '/', permanent: true },
+      { source: '/locations/bradford', destination: '/', permanent: true },
+      { source: '/locations/leicester', destination: '/', permanent: true },
+      // Industries → /sectors
+      { source: '/industries', destination: '/sectors', permanent: true },
+      { source: '/industries/:slug*', destination: '/sectors', permanent: true },
+      // Small business page → services
+      { source: '/services/small-business', destination: '/services', permanent: true },
 
       // ----------------------------------------
       // 5. GENERIC SERVICE PAGES

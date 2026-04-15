@@ -8,7 +8,7 @@ import { Menu, X, ArrowRight } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 const ServicesDropdown = dynamic(() => import("./ServicesDropdown"), { ssr: true });
-const WhoWeHelpMegaMenu = dynamic(() => import("./WhoWeHelpMegaMenu"), { ssr: true });
+const SectorsDropdown = dynamic(() => import("./SectorsDropdown"), { ssr: true });
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -81,8 +81,8 @@ export default function Navbar() {
           {/* SERVICES DROPDOWN */}
           <ServicesDropdown />
           
-          {/* WHO WE HELP MEGA MENU */}
-          <WhoWeHelpMegaMenu />
+          {/* SECTORS DROPDOWN */}
+          <SectorsDropdown />
           
           {/* STANDARD LINKS */}
           {links.map((link) => (
@@ -138,9 +138,9 @@ export default function Navbar() {
           <ServicesDropdown isMobile={true} onItemClick={() => setIsOpen(false)} />
         </div>
         
-        {/* WHO WE HELP MOBILE */}
+        {/* SECTORS MOBILE */}
         <div className="w-full">
-          <WhoWeHelpMegaMenu isMobile={true} onItemClick={() => setIsOpen(false)} />
+          <SectorsDropdown isMobile={true} onItemClick={() => setIsOpen(false)} />
         </div>
         
         {/* STANDARD LINKS MOBILE */}

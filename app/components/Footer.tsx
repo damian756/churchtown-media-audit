@@ -31,7 +31,7 @@ export default function Footer() {
                 </span>
             </Link>
             <p className="text-sm leading-relaxed max-w-xs text-slate-500 font-medium">
-                Web design and SEO for Southport and North West businesses. Creators of the Sefton Coast Network.
+                Web design and SEO for Southport &amp; Blackpool businesses. Creators of the Sefton Coast Network.
             </p>
             
             {/* SOCIAL ICONS */}
@@ -48,31 +48,26 @@ export default function Footer() {
         <div>
             <h4 className="text-slate-200 font-bold mb-6 text-sm uppercase tracking-wider">Services</h4>
             <ul className="space-y-4 text-sm font-medium text-slate-500">
-                <li><Link href="/services/web-design" className="hover:text-blue-400 transition-colors">Web Design Southport</Link></li>
+                <li><Link href="/services/web-design" className="hover:text-blue-400 transition-colors">Web Design</Link></li>
                 <li><Link href="/services/seo" className="hover:text-blue-400 transition-colors">SEO Services</Link></li>
-                <li><Link href="/services/small-business" className="hover:text-blue-400 transition-colors">Small Business Websites</Link></li>
-                <li><Link href="/services/content-scaling" className="hover:text-blue-400 transition-colors">Content Scaling</Link></li>
                 <li><Link href="/services/headless-development" className="hover:text-blue-400 transition-colors">Headless Development</Link></li>
-                <li><Link href="/industries" className="hover:text-blue-400 transition-colors">Industries We Serve</Link></li>
+                <li><Link href="/services/content-scaling" className="hover:text-blue-400 transition-colors">Content Scaling</Link></li>
+                <li><Link href="/services/ai" className="hover:text-blue-400 transition-colors">AI Services</Link></li>
                 <li><Link href="/audit" className="hover:text-blue-400 transition-colors">Free SEO Audit</Link></li>
             </ul>
         </div>
 
-        {/* COL 3: AREAS SERVED */}
+        {/* COL 3: SECTORS */}
         <div>
-            <h4 className="text-slate-200 font-bold mb-6 text-sm uppercase tracking-wider">Areas Served</h4>
+            <h4 className="text-slate-200 font-bold mb-6 text-sm uppercase tracking-wider">Sectors</h4>
             <ul className="space-y-4 text-sm font-medium text-slate-500">
-                <li><Link href="/locations/southport" className="hover:text-blue-400 transition-colors">Digital Agency Southport</Link></li>
-                <li><Link href="/locations/manchester" className="hover:text-blue-400 transition-colors">Web Design & SEO Manchester</Link></li>
-                <li><Link href="/locations/liverpool" className="hover:text-blue-400 transition-colors">Web Design & SEO Liverpool</Link></li>
-                <li><Link href="/locations/preston" className="hover:text-blue-400 transition-colors">Web Design & SEO Preston</Link></li>
-                <li><Link href="/locations/blackpool" className="hover:text-blue-400 transition-colors">Web Design & SEO Blackpool</Link></li>
-
+                <li><Link href="/sectors/hospitality" className="hover:text-blue-400 transition-colors">Hospitality &amp; Tourism</Link></li>
+                <li><Link href="/sectors/golf" className="hover:text-blue-400 transition-colors">Golf Clubs</Link></li>
+                <li><Link href="/sectors/professional-services" className="hover:text-blue-400 transition-colors">Professional Services</Link></li>
+                <li><Link href="/sectors/property" className="hover:text-blue-400 transition-colors">Property &amp; Development</Link></li>
                 <li className="pt-2 border-t border-white/5 mt-2">
-                    <Link href="/locations" className="text-blue-500 font-bold hover:text-white transition-colors flex items-center gap-1">
-                        View All Locations →
-                    </Link>
-                </li>
+                    <Link href="/locations/southport" className="hover:text-blue-400 transition-colors">Agency in Southport</Link></li>
+                <li><Link href="/blackpool-growth" className="text-blue-500 font-bold hover:text-white transition-colors">Blackpool Growth Guide →</Link></li>
             </ul>
         </div>
 

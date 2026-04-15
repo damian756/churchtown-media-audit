@@ -50,8 +50,7 @@ export default function AboutPage() {
         },
         "areaServed": [
           { "@type": "City", "name": "Southport" },
-          { "@type": "City", "name": "Liverpool" },
-          { "@type": "City", "name": "Manchester" }
+          { "@type": "City", "name": "Blackpool" }
         ],
         "founder": {
           "@type": "Person",

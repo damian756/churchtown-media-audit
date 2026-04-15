@@ -31,12 +31,6 @@ export default function ServicesDropdown({ isMobile = false, onItemClick }: Serv
       description: "100+ landing pages generated in 48 hours",
       icon: Database,
     },
-    {
-      name: "Small Business Websites",
-      href: "/services/small-business",
-      description: "Professional sites for growing businesses",
-      icon: Briefcase,
-    },
   ];
 
     const aiServices = [

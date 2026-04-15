@@ -1,49 +1,48 @@
 import { MetadataRoute } from 'next';
 import { posts } from '../lib/posts';
-import { industries } from '../lib/industries';
-import { locations } from '../lib/locations';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.churchtownmedia.co.uk';
 
-  // 1. Static Pages (Your main menu links)
   const staticPages = [
-    '',
-    '/services',
-    '/services/web-design',
-    '/services/seo',
-    '/services/content-scaling',
-    '/services/small-business',
-    '/services/headless-development',
-    '/services/ai',
-    '/services/generative-engine-optimisation',
-    '/services/ai-content',
-    '/services/ai-workflows',
-    '/services/optimisation-sprint',
-    '/services/content-strategy',
-    '/services/bespoke-systems',
-    '/work',
-    '/portfolio',
-    '/about',
-    '/contact',
-    '/audit',
-    '/blog',
-    '/industries',
-    '/locations',
-    '/testimonials',
-    '/frequently-asked-questions',
-    '/southport-growth',
-    '/search-engine-optimisation',
-    '/terms',
-    '/privacy',
-  ].map((route) => ({
+    { route: '', priority: 1.0 },
+    { route: '/services', priority: 0.9 },
+    { route: '/services/web-design', priority: 0.9 },
+    { route: '/services/seo', priority: 0.9 },
+    { route: '/services/headless-development', priority: 0.85 },
+    { route: '/services/content-scaling', priority: 0.85 },
+    { route: '/services/ai', priority: 0.9 },
+    { route: '/services/generative-engine-optimisation', priority: 0.9 },
+    { route: '/services/ai-content', priority: 0.85 },
+    { route: '/services/ai-workflows', priority: 0.85 },
+    { route: '/services/optimisation-sprint', priority: 0.85 },
+    { route: '/services/content-strategy', priority: 0.85 },
+    { route: '/services/bespoke-systems', priority: 0.85 },
+    { route: '/sectors', priority: 0.9 },
+    { route: '/sectors/hospitality', priority: 0.9 },
+    { route: '/sectors/golf', priority: 0.9 },
+    { route: '/sectors/professional-services', priority: 0.9 },
+    { route: '/sectors/property', priority: 0.9 },
+    { route: '/southport-growth', priority: 0.9 },
+    { route: '/blackpool-growth', priority: 0.9 },
+    { route: '/locations/southport', priority: 0.85 },
+    { route: '/work', priority: 0.8 },
+    { route: '/portfolio', priority: 0.85 },
+    { route: '/about', priority: 0.8 },
+    { route: '/contact', priority: 0.8 },
+    { route: '/audit', priority: 0.85 },
+    { route: '/blog', priority: 0.8 },
+    { route: '/testimonials', priority: 0.75 },
+    { route: '/frequently-asked-questions', priority: 0.75 },
+    { route: '/terms', priority: 0.4 },
+    { route: '/privacy', priority: 0.4 },
+  ].map(({ route, priority }) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
-    priority: route === '' ? 1 : ['/industries', '/services/generative-engine-optimisation', '/services/ai', '/services/ai-content', '/services/ai-workflows'].includes(route) ? 0.9 : ['/portfolio', '/services/content-scaling', '/services/optimisation-sprint', '/services/content-strategy', '/services/bespoke-systems'].includes(route) ? 0.85 : 0.8,
+    priority,
   }));
 
-  // 2. Dynamic Blog Posts
   const blogPages = posts.map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
     lastModified: new Date(post.date),
@@ -51,21 +50,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  // 3. Industry Pages (35 pages)
-  const industryPages = industries.map((industry) => ({
-    url: `${baseUrl}/industries/${industry.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.85, // High priority - key landing pages
-  }));
-
-  // 4. Location Pages
-  const locationPages = locations.map((location) => ({
-    url: `${baseUrl}/locations/${location.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.75,
-  }));
-
-  return [...staticPages, ...blogPages, ...industryPages, ...locationPages];
+  return [...staticPages, ...blogPages];
 }

@@ -1,12 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, BarChart3, Globe, TrendingUp, Star, Quote, ExternalLink, Sparkles, MapPin } from "lucide-react";
+import { ArrowRight, BarChart3, Globe, TrendingUp, Star, Quote, ExternalLink, Sparkles, MapPin, Hotel, Trophy, Briefcase, Building2 } from "lucide-react";
 import type { Metadata } from "next";
 import { posts } from "@/lib/posts";
 
 export const metadata: Metadata = {
   title: 'Web Design & SEO Agency Southport | Churchtown Media',
-  description: 'Churchtown Media builds websites and SEO strategies for Southport and North West businesses. We built SouthportGuide, FormbyGuide, SeftonLinks and SeftonCoastWildlife. Based in Churchtown, Southport.',
+  description: 'Churchtown Media builds websites and SEO strategies for hospitality, golf, professional services and property businesses in Southport and Blackpool. We built the Sefton Coast Network from scratch. Based in Churchtown, Southport.',
   alternates: {
     canonical: 'https://www.churchtownmedia.co.uk',
   },
@@ -34,7 +34,7 @@ const jsonLd = {
   'url': 'https://www.churchtownmedia.co.uk',
   'logo': 'https://www.churchtownmedia.co.uk/icon.png',
   'image': 'https://www.churchtownmedia.co.uk/opengraph-image.png',
-  'description': 'Churchtown Media is a web design and SEO agency based in Southport, Merseyside. We built the Sefton Coast Network and build fast Next.js websites and local SEO campaigns for North West businesses.',
+  'description': 'Churchtown Media is a web design and SEO agency based in Southport, Merseyside. We built the Sefton Coast Network and build fast Next.js websites and SEO campaigns for hospitality, golf, professional services and property businesses in Southport and Blackpool.',
   'address': {
     '@type': 'PostalAddress',
     'streetAddress': '5 Cambridge Avenue',
@@ -55,11 +55,7 @@ const jsonLd = {
   ],
   'areaServed': [
     { '@type': 'City', 'name': 'Southport' },
-    { '@type': 'City', 'name': 'Liverpool' },
-    { '@type': 'City', 'name': 'Manchester' },
-    { '@type': 'City', 'name': 'Preston' },
-    { '@type': 'City', 'name': 'Merseyside' },
-    { '@type': 'City', 'name': 'Lancashire' }
+    { '@type': 'City', 'name': 'Blackpool' }
   ],
   'priceRange': '££',
   'telephone': '+441704635785',
@@ -157,7 +153,7 @@ export default function Home() {
             <div>
               <div className="inline-flex items-center gap-2 bg-slate-900 border border-slate-700 rounded-full px-3 py-1.5 mb-8">
                 <MapPin className="w-3.5 h-3.5 text-blue-400" />
-                <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wide">Churchtown, Southport</span>
+                <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wide">Southport &amp; Blackpool</span>
               </div>
 
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-[1.05]">
@@ -167,8 +163,7 @@ export default function Home() {
               </h1>
 
               <p className="text-lg text-slate-400 max-w-lg mb-8 leading-relaxed">
-                Four editorial sites. One coastline. Built from scratch, fully owned, ranking in Google. SouthportGuide, FormbyGuide, SeftonLinks and SeftonCoastWildlife.
-                That is what we build for clients.
+                Hospitality, golf, professional services and property businesses in Southport and Blackpool. Fast Next.js sites, technical SEO, and content that actually ranks. No generalist agency waffle.
               </p>
 
               <div className="flex flex-col sm:flex-row items-start gap-4 mb-10">
@@ -345,7 +340,82 @@ export default function Home() {
       </section>
 
       {/* ══════════════════════════════════════════
-          4. PORTFOLIO
+          4. SECTORS
+      ══════════════════════════════════════════ */}
+      <section className="py-20 px-4 sm:px-6 bg-slate-950 border-t border-slate-800">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-12">
+            <p className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-3">Who we work with</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
+              Southport &amp; Blackpool. Four sectors.
+            </h2>
+            <p className="text-slate-400 max-w-2xl leading-relaxed">
+              Two coastal towns with real commercial depth. We know the markets, we know the specific opportunities in each, and we build for them.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {[
+              {
+                icon: Hotel,
+                name: "Hospitality & Tourism",
+                href: "/sectors/hospitality",
+                desc: "Hotels, restaurants, venues. Direct bookings, seasonal SEO, and the specific digital opportunity that MLEC and Blackpool's regeneration create.",
+                colour: "border-blue-500/40 hover:border-blue-400/60",
+                iconBg: "bg-blue-600/20",
+                iconColor: "text-blue-400",
+              },
+              {
+                icon: Trophy,
+                name: "Golf Clubs",
+                href: "/sectors/golf",
+                desc: "SeftonLinks is our proof. Championship clubs from Royal Birkdale to Royal Lytham have websites that don't do them justice. We fix that.",
+                colour: "border-teal-500/40 hover:border-teal-400/60",
+                iconBg: "bg-teal-600/20",
+                iconColor: "text-teal-400",
+              },
+              {
+                icon: Briefcase,
+                name: "Professional Services",
+                href: "/sectors/professional-services",
+                desc: "Solicitors, accountants, financial advisers. High-value clients, long relationships, and websites that often haven't been touched since 2018.",
+                colour: "border-purple-500/40 hover:border-purple-400/60",
+                iconBg: "bg-purple-600/20",
+                iconColor: "text-purple-400",
+              },
+              {
+                icon: Building2,
+                name: "Property & Development",
+                href: "/sectors/property",
+                desc: "Developers and agents in two towns with active pipelines. Project-specific headless sites, search-optimised listings, and content that converts.",
+                colour: "border-orange-500/40 hover:border-orange-400/60",
+                iconBg: "bg-orange-600/20",
+                iconColor: "text-orange-400",
+              },
+            ].map((sector) => {
+              const Icon = sector.icon;
+              return (
+                <Link
+                  key={sector.href}
+                  href={sector.href}
+                  className={`group block bg-slate-900 border ${sector.colour} rounded-2xl p-6 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-900/30`}
+                >
+                  <div className={`w-11 h-11 ${sector.iconBg} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+                    <Icon className={`w-5 h-5 ${sector.iconColor}`} />
+                  </div>
+                  <h3 className="text-base font-bold text-white mb-2">{sector.name}</h3>
+                  <p className="text-slate-400 text-sm leading-relaxed mb-4">{sector.desc}</p>
+                  <div className="flex items-center gap-1.5 text-sm font-semibold text-slate-500 group-hover:text-white transition-colors">
+                    Learn more <ArrowRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-all group-hover:translate-x-0.5" />
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════
+          5. PORTFOLIO
       ══════════════════════════════════════════ */}
       <section className="py-20 px-4 sm:px-6 bg-slate-900 border-t border-slate-800">
         <div className="max-w-7xl mx-auto">
@@ -494,7 +564,7 @@ export default function Home() {
       </section>
 
       {/* ══════════════════════════════════════════
-          5. TESTIMONIALS
+          6. TESTIMONIALS
       ══════════════════════════════════════════ */}
       <section className="py-20 px-4 sm:px-6 bg-slate-950 border-t border-slate-800">
         <div className="max-w-7xl mx-auto">
@@ -596,10 +666,10 @@ export default function Home() {
       </section>
 
       {/* ══════════════════════════════════════════
-          6. SOUTHPORT GROWTH CALLOUT
+          6. GROWTH CALLOUTS (Southport + Blackpool)
       ══════════════════════════════════════════ */}
       <section className="px-4 sm:px-6 py-10 bg-slate-950 border-t border-slate-800">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto grid sm:grid-cols-2 gap-4">
           <Link
             href="/southport-growth"
             className="group flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 bg-teal-950/50 border border-teal-800/30 hover:border-teal-600/60 rounded-2xl px-8 py-7 transition-all"
@@ -611,22 +681,44 @@ export default function Home() {
               <div>
                 <div className="text-xs font-bold text-teal-400 uppercase tracking-widest mb-1">Southport 2026</div>
                 <p className="text-white font-bold text-base leading-snug">
-                  500,000+ additional visitors. MLEC, The Open, the £37.5m Town Deal.
+                  MLEC, The Open, the £37.5m Town Deal.
                 </p>
                 <p className="text-slate-400 text-sm mt-1">
-                  What it means for local businesses and how to position before the traffic arrives.
+                  500,000+ additional visitors. Position before the traffic arrives.
                 </p>
               </div>
             </div>
             <div className="shrink-0 flex items-center gap-2 text-teal-400/70 font-semibold whitespace-nowrap group-hover:text-teal-300 group-hover:gap-3 transition-all text-sm">
-              Read the growth guide <ArrowRight className="w-4 h-4" />
+              Growth guide <ArrowRight className="w-4 h-4" />
+            </div>
+          </Link>
+          <Link
+            href="/blackpool-growth"
+            className="group flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 bg-blue-950/50 border border-blue-800/30 hover:border-blue-600/60 rounded-2xl px-8 py-7 transition-all"
+          >
+            <div className="flex items-start gap-4">
+              <div className="shrink-0 w-10 h-10 bg-blue-900/50 rounded-xl flex items-center justify-center mt-0.5">
+                <TrendingUp className="w-5 h-5 text-blue-400" />
+              </div>
+              <div>
+                <div className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-1">Blackpool 2026</div>
+                <p className="text-white font-bold text-base leading-snug">
+                  £300m+ regeneration. Tower works, Winter Gardens, Enterprise Zone.
+                </p>
+                <p className="text-slate-400 text-sm mt-1">
+                  What the pipeline means for hospitality and venue operators.
+                </p>
+              </div>
+            </div>
+            <div className="shrink-0 flex items-center gap-2 text-blue-400/70 font-semibold whitespace-nowrap group-hover:text-blue-300 group-hover:gap-3 transition-all text-sm">
+              Growth guide <ArrowRight className="w-4 h-4" />
             </div>
           </Link>
         </div>
       </section>
 
       {/* ══════════════════════════════════════════
-          7. LATEST INSIGHTS
+          8. LATEST INSIGHTS
       ══════════════════════════════════════════ */}
       <section className="py-20 px-4 sm:px-6 bg-slate-900 border-t border-slate-800">
         <div className="max-w-7xl mx-auto">

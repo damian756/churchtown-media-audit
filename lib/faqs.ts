@@ -47,7 +47,7 @@ export const faqs: FAQ[] = [
   {
     id: "nextjs-004",
     question: "Is Next.js suitable for small businesses?",
-    answer: "Absolutely! In fact, Next.js is perfect for small businesses because it eliminates ongoing costs. While WordPress requires £150-300/month for hosting, security, and plugin fees, Next.js sites can be hosted free on Vercel's tier or for £10-20/month. Over 3 years, you'll save £5,000-10,000. Plus, the speed advantage helps you compete with larger competitors in local search. For Southport small businesses, this technology levels the playing field. View our <a href='/services/small-business'>small business packages</a>.",
+    answer: "Absolutely! In fact, Next.js is perfect for small businesses because it eliminates ongoing costs. While WordPress requires £150-300/month for hosting, security, and plugin fees, Next.js sites can be hosted free on Vercel's tier or for £10-20/month. Over 3 years, you'll save £5,000-10,000. Plus, the speed advantage helps you compete with larger competitors in local search. For Southport small businesses, this technology levels the playing field. View our <a href='/services/web-design'>small business packages</a>.",
     category: "Next.js & Web Development",
     keywords: ["small business", "affordable", "cost effective", "vercel hosting"]
   },
@@ -1051,7 +1051,7 @@ export const faqs: FAQ[] = [
   {
     id: "price-001",
     question: "How much does a Next.js website cost?",
-    answer: "Our Next.js websites range from £1,500-£5,000 depending on complexity. A 5-page business site with custom design, SEO optimization, and contact forms typically costs £2,500-3,500. E-commerce sites start at £4,000. Yes, that's more than a £800 WordPress template, but you'll save £5,000-10,000 over 3 years in hosting, security, and maintenance fees. Plus, the speed advantage directly impacts your Google rankings and conversion rates. We offer payment plans for small businesses. View our <a href='/services/small-business'>small business packages</a>.",
+    answer: "Our Next.js websites range from £1,500-£5,000 depending on complexity. A 5-page business site with custom design, SEO optimization, and contact forms typically costs £2,500-3,500. E-commerce sites start at £4,000. Yes, that's more than a £800 WordPress template, but you'll save £5,000-10,000 over 3 years in hosting, security, and maintenance fees. Plus, the speed advantage directly impacts your Google rankings and conversion rates. We offer payment plans for small businesses. View our <a href='/services/web-design'>small business packages</a>.",
     category: "Pricing & Packages",
     keywords: ["cost", "price", "how much", "pricing", "packages"]
   },
@@ -1072,7 +1072,7 @@ export const faqs: FAQ[] = [
   {
     id: "price-004",
     question: "What's included in your website pricing?",
-    answer: "Design (custom or adapted), development (Next.js), content setup, SEO foundation (meta tags, schema, sitemap), contact forms, hosting setup, training, 30-day support. We're transparent-no hidden fees. Domain and third-party services (e.g., Sanity CMS) are separate if applicable. E-commerce adds: product setup, payment integration, checkout. See our <a href='/services/small-business'>package breakdown</a> for full details.",
+    answer: "Design (custom or adapted), development (Next.js), content setup, SEO foundation (meta tags, schema, sitemap), contact forms, hosting setup, training, 30-day support. We're transparent-no hidden fees. Domain and third-party services (e.g., Sanity CMS) are separate if applicable. E-commerce adds: product setup, payment integration, checkout. See our <a href='/services/web-design'>package breakdown</a> for full details.",
     category: "Pricing & Packages",
     keywords: ["included", "what's in", "package", "scope"]
   },
@@ -1442,14 +1442,14 @@ export const faqs: FAQ[] = [
   {
     id: "smb-001",
     question: "Do small businesses really need professional web design?",
-    answer: "In 2026, your website IS your business for most customers. 93% of online experiences begin with a search engine. If someone in Ainsdale searches 'plumber near me,' they'll call whoever appears in the Map Pack-not who has the best van signage. A professional website with proper SEO means capturing those high-intent searches. The investment is £2,500-3,500 one-time vs. £200-300/month for traditional advertising. Over a year, the website is cheaper and works 24/7. For Southport small businesses, this isn't optional anymore. View <a href='/services/small-business'>our packages</a>.",
+    answer: "In 2026, your website IS your business for most customers. 93% of online experiences begin with a search engine. If someone in Ainsdale searches 'plumber near me,' they'll call whoever appears in the Map Pack-not who has the best van signage. A professional website with proper SEO means capturing those high-intent searches. The investment is £2,500-3,500 one-time vs. £200-300/month for traditional advertising. Over a year, the website is cheaper and works 24/7. For Southport small businesses, this isn't optional anymore. View <a href='/services/web-design'>our packages</a>.",
     category: "Small Business",
     keywords: ["small business website", "worth it", "investment", "roi"]
   },
   {
     id: "smb-002",
     question: "What's the best website for a small business?",
-    answer: "Fast (under 2 seconds), mobile-friendly, with clear contact info and your key services. No bloat. Next.js delivers this-0.9 second loads, works on every device. Add: Google Business Profile optimization for local search. That combination captures 'near me' searches. Fancy features matter less than speed and findability. We build small business sites that do the essentials brilliantly. See our <a href='/services/small-business'>small business approach</a>.",
+    answer: "Fast (under 2 seconds), mobile-friendly, with clear contact info and your key services. No bloat. Next.js delivers this-0.9 second loads, works on every device. Add: Google Business Profile optimization for local search. That combination captures 'near me' searches. Fancy features matter less than speed and findability. We build small business sites that do the essentials brilliantly. See our <a href='/services/web-design'>small business approach</a>.",
     category: "Small Business",
     keywords: ["best website", "small business", "essential", "simple"]
   },
@@ -1761,3 +1761,4 @@ export const faqs: FAQ[] = [
     keywords: ["crm", "hubspot", "integration", "connection"]
   }
 ];
+
