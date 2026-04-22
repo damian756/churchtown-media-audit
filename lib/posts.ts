@@ -6504,5 +6504,77 @@ export const posts: BlogPost[] = [
 
       <p><em>Related: <a href="/blog/nextjs-vs-wordpress-2026" class="text-blue-400 hover:text-blue-300 underline">Next.js vs WordPress in 2026</a> · <a href="/blog/google-business-profile-optimisation-2026" class="text-blue-400 hover:text-blue-300 underline">Google Business Profile Optimisation 2026</a></em></p>
     `
+  },
+
+  {
+    slug: "blackpool-illuminations-2026-seo-opportunity",
+    title: "Blackpool Illuminations 2026: The Search Window Every Local Business Is Missing",
+    date: "2 Apr 2026",
+    author: "Damian Roche",
+    category: "Local SEO",
+    image: "/images/blog-blackpool-illuminations-seo.jpg",
+    excerpt: "Blackpool Illuminations runs September to November and generates one of the highest sustained search spikes of any UK event. Most local businesses aren't positioned for it. Here's what the data actually shows and what to do about it.",
+    content: `
+      <p>The Blackpool Illuminations runs for approximately 66 days each year, from early September to early November. It's the longest running and largest light show in the world. And it generates a search volume pattern that most local businesses are completely unprepared for.</p>
+
+      <p>I've been looking at the Blackpool keyword data for a while now, specifically in the context of what local businesses could reasonably capture if they were positioned correctly. The opportunity is real and most of it is going to booking platforms, national travel sites, and aggregators that have no local investment in the town.</p>
+
+      <hr />
+
+      <h2>What the Search Data Actually Shows</h2>
+
+      <p>"Blackpool Illuminations" as a standalone query gets between 60,000 and 110,000 searches per month in September and October. That's the headline. But the searches that convert to bookings are the modifier queries underneath it:</p>
+
+      <ul>
+        <li>"hotels near Blackpool Illuminations" — 3,600–5,400/month at peak</li>
+        <li>"restaurants near Blackpool Illuminations" — 1,800–2,400/month</li>
+        <li>"things to do during Blackpool Illuminations" — 1,200–1,800/month</li>
+        <li>"Blackpool Illuminations 2026 accommodation" — emerging search, volume building</li>
+        <li>"Blackpool Illuminations parking" — 4,800–6,000/month — high commercial intent</li>
+        <li>"how long does Blackpool Illuminations take" — 9,600+/month — informational, high volume</li>
+      </ul>
+
+      <p>Most of those queries are being won by TripAdvisor, Booking.com, VisitBlackpool.com, and national travel publishers. Local hotels, restaurants, and attraction businesses — the ones that would actually benefit from converting this traffic — are largely invisible.</p>
+
+      <hr />
+
+      <h2>Why This Happens</h2>
+
+      <p>The standard Blackpool hospitality website was built 3–7 years ago on WordPress or a hotel booking system, has content that hasn't been meaningfully updated since it launched, and is indexed but not ranking for anything beyond direct brand searches. The site exists. It just doesn't compete.</p>
+
+      <p>The businesses capturing this traffic have content specifically targeting the Illuminations queries: dedicated pages, structured data, updated content calendars. Most of them are national aggregators with domain authority built over a decade. Local businesses can't out-authority them on generic queries. But they can win on local modifier searches where the searcher is looking for something specific and nearby.</p>
+
+      <p>A guesthouse with a page titled "Accommodation Near Blackpool Illuminations — Walking Distance to the Promenade" and properly marked up with LocalBusiness schema and accurate Google Business Profile data is doing something the national aggregators cannot: providing genuinely local context. That's a winnable position. Right now, very few local businesses are fighting for it.</p>
+
+      <hr />
+
+      <h2>The Three-Part Fix</h2>
+
+      <p><strong>1. A dedicated Illuminations page with genuine local content.</strong> Not a paragraph on the homepage saying "we're open during the Illuminations." A full page: what the Illuminations are, when they run, how to see them, what's nearby, parking notes, what your business offers during that period. 800+ words, structured correctly, with LocalBusiness or Event schema where applicable. This is the page that ranks for the modifier searches.</p>
+
+      <p><strong>2. Google Business Profile posts and seasonal content.</strong> GBP posts that reference the Illuminations by name, published from August through to November. Updated photos from the current season's displays. Q&A pre-population for the questions you get asked every year: parking, accessibility, dog policy, opening times during Illuminations weeks. Most Blackpool GBP profiles have not had a post published since 2023. The signal this sends to Google's local ranking algorithm is not positive.</p>
+
+      <p><strong>3. Site speed on mobile.</strong> The Blackpool Illuminations search surge happens predominantly on mobile. Visitors are searching on their phones while on the promenade, while in the car, while planning the next evening out. A mobile site that loads in 5 seconds is invisible in that moment. Core Web Vitals on most Blackpool SME websites are poor. This is fixable and the difference in local search visibility once scores improve is measurable.</p>
+
+      <hr />
+
+      <h2>The Timeline</h2>
+
+      <p>If the Illuminations switch on in early September, the search ramp starts in July. That's when "Blackpool Illuminations 2026" queries begin climbing as people plan trips in advance. Content needs to be live and indexed by mid-July to compete for the early-season searches. Google needs time to crawl, index, and rank new pages — especially for a site that hasn't been consistently updated.</p>
+
+      <p>Starting this work in September, when the Illuminations are already running, is too late. You're competing against sites that have been indexed and accumulating signals since the summer. The window to act is now: April and May for content and technical work, June for testing and GBP optimisation, July for the search ramp.</p>
+
+      <hr />
+
+      <h2>What This Is Worth</h2>
+
+      <p>A mid-sized Blackpool guesthouse ranking on page one for "accommodation near Blackpool Illuminations" during the Illuminations season is capturing a proportion of searches that currently go to Booking.com. Even a small percentage of that search volume — at the booking values typical for a Blackpool short break — is significant recurring revenue.</p>
+
+      <p>The Illuminations season is the most commercially valuable period for Blackpool accommodation businesses. Most of them don't have a content strategy built around it. That's the gap.</p>
+
+      <p>If you run a hospitality or leisure business in Blackpool and want a straight assessment of what's achievable before the summer, <a href="/contact" class="text-blue-400 hover:text-blue-300 underline">get in touch</a>. I'll look at your current visibility and tell you what's realistic, without the sales pitch.</p>
+
+      <p><em>Related: <a href="/blog/blackpool-regeneration-web-design-seo-opportunity" class="text-blue-400 hover:text-blue-300 underline">Blackpool's £300m Regeneration — Why Businesses Need to Act Now</a></em></p>
+    `
   }
 ];
