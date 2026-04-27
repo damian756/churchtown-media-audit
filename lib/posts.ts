@@ -19,7 +19,7 @@ export const posts: BlogPost[] = [
     date: "Apr 2, 2026",
     author: "Damian Roche",
     category: "Local SEO",
-    image: "/images/blog-blackpool-regeneration.jpg",
+    image: "/images/blog-blackpool-illuminations-seo.jpg",
     excerpt: "Blackpool Tower. Winter Gardens. The Enterprise Zone. £300m+ of regeneration capital is flowing into one of the UK's most-searched seaside towns. Businesses in the path of that investment need to be visible online before the competition notices.",
     content: `
       <p>I've been watching Blackpool's regeneration pipeline for a while now. The scale of it is often underestimated by people outside the town, and sometimes by people inside it too. When you add up the Blackpool Tower restoration, the Winter Gardens refurbishment, the Enterprise Zone, the new conference offer, and the wider Levelling Up funding, you're looking at a sustained transformation of a major UK visitor destination.</p>
