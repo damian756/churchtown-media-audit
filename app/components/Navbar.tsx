@@ -1,27 +1,15 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import dynamic from "next/dynamic";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X, ArrowRight } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
-
-const ServicesDropdown = dynamic(() => import("./ServicesDropdown"), { ssr: true });
-const SectorsDropdown = dynamic(() => import("./SectorsDropdown"), { ssr: true });
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
-
-  // 1. SMART DARK MODE DETECTION
-  // Site-wide dark theme: all pages use dark background by default
-  // Add any LIGHT background pages here (if you create them in the future)
-  const lightPages: string[] = [
-    // Currently no light pages - entire site is dark theme
-  ];
-  const isLightPage = lightPages.includes(pathname);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -30,140 +18,91 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
-    if (isOpen) { document.body.style.overflow = 'hidden'; } 
+    if (isOpen) { document.body.style.overflow = 'hidden'; }
     else { document.body.style.overflow = 'unset'; }
   }, [isOpen]);
 
   useEffect(() => { setIsOpen(false); }, [pathname]);
 
-  // STREAMLINED LINKS ARRAY
-  // Services and Who We Help are handled by dropdown components
   const links = [
-    { name: "Work", href: "/work" },
-    { name: "Portfolio", href: "/portfolio" },
     { name: "About", href: "/about" },
-    { name: "Reviews", href: "/testimonials" },
-    { name: "Insights", href: "/blog" },
+    { name: "Services", href: "/services" },
+    { name: "Case Studies", href: "/case-studies" },
     { name: "Contact", href: "/contact" },
   ];
 
-  // Logic: Text is white by default (dark theme), dark only on light pages when scrolled
-  const useWhiteText = !isLightPage || (!scrolled && !isOpen);
-
   return (
     <>
-    <nav 
+      <nav
         className={`fixed top-0 w-full z-[100] transition-all duration-300 ${
-            scrolled 
-            ? "bg-slate-900/90 backdrop-blur-md border-b border-slate-800 py-4 shadow-sm" 
+          scrolled
+            ? "bg-slate-900/95 backdrop-blur-md border-b border-slate-800 py-4"
             : "bg-transparent py-6"
         }`}
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
-        
-        {/* LOGO */}
-        <Link href="/" className="relative group flex items-center gap-2 sm:gap-3" onClick={() => setIsOpen(false)}>
-          <Image 
-            src="/logo.png" 
-            alt="Churchtown Media Logo" 
-            width={40}
-            height={40}
-            priority
-            className="w-8 h-8 sm:w-10 sm:h-10 group-hover:scale-110 transition-transform flex-shrink-0"
-          />
-          <span className={`font-bold text-lg sm:text-2xl tracking-tight transition-colors ${useWhiteText ? "text-white" : "text-slate-900"}`}>
-            Churchtown<span className={useWhiteText ? "text-blue-400" : "text-blue-600"}>Media</span>
-          </span>
-        </Link>
+      >
+        <div className="max-w-5xl mx-auto px-6 flex items-center justify-between">
 
-        {/* DESKTOP NAV */}
-        <div className="hidden lg:flex items-center gap-8">
-          {/* SERVICES DROPDOWN */}
-          <ServicesDropdown />
-          
-          {/* SECTORS DROPDOWN */}
-          <SectorsDropdown />
-          
-          {/* STANDARD LINKS */}
-          {links.map((link) => (
-            <Link 
-                key={link.name} 
-                href={link.href} 
-                className={`text-sm font-bold transition-colors hover:-translate-y-0.5 transform duration-200 ${
-                    useWhiteText 
-                    ? "text-slate-200 hover:text-white" 
-                    : pathname.startsWith(link.href) && link.href !== "/" // Active state logic
-                        ? "text-blue-600" 
-                        : "text-slate-600 hover:text-blue-600"
+          <Link href="/" className="flex items-center gap-3 group" onClick={() => setIsOpen(false)}>
+            <Image
+              src="/logo.png"
+              alt="Churchtown Media"
+              width={36}
+              height={36}
+              priority
+              className="w-8 h-8 sm:w-9 sm:h-9 group-hover:opacity-80 transition-opacity"
+            />
+            <span className="font-bold text-lg sm:text-xl tracking-tight text-white">
+              Churchtown<span className="text-blue-400">Media</span>
+            </span>
+          </Link>
+
+          {/* Desktop */}
+          <div className="hidden md:flex items-center gap-8">
+            {links.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                className={`text-sm font-semibold transition-colors ${
+                  pathname === link.href
+                    ? "text-white"
+                    : "text-slate-400 hover:text-white"
                 }`}
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
+
+          {/* Mobile toggle */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
+            className="md:hidden text-white p-2 -mr-2"
+          >
+            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
+      </nav>
+
+      {/* Mobile menu */}
+      <div
+        className={`fixed inset-0 bg-slate-950 z-[90] md:hidden transition-all duration-300 ${
+          isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
+        }`}
+      >
+        <div className="flex flex-col items-start justify-start pt-28 px-8 gap-8">
+          {links.map((link) => (
+            <Link
+              key={link.name}
+              href={link.href}
+              onClick={() => setIsOpen(false)}
+              className="text-3xl font-bold text-white hover:text-blue-400 transition-colors"
             >
               {link.name}
             </Link>
           ))}
-          
-          {/* CTA BUTTON */}
-          <Link 
-            href="/audit" 
-            className={`px-6 py-2.5 rounded-full text-sm font-bold transition-all hover:scale-105 shadow-lg flex items-center gap-2 ${
-                useWhiteText 
-                ? "bg-blue-600 text-white hover:bg-blue-700 shadow-blue-600/20" 
-                : "bg-slate-900 text-white hover:bg-blue-600 shadow-slate-900/20"
-            }`}
-          >
-            Get Audit <ArrowRight className="w-4 h-4" />
-          </Link>
         </div>
-
-        {/* MOBILE MENU TOGGLE */}
-        <button 
-            onClick={() => setIsOpen(!isOpen)} 
-            aria-label="Toggle Menu"
-            className={`lg:hidden relative p-2 -mr-2 transition-colors ${useWhiteText ? "text-white" : "text-slate-900"}`}
-        >
-          {isOpen ? <X className="w-7 h-7 sm:w-8 sm:h-8" /> : <Menu className="w-7 h-7 sm:w-8 sm:h-8" />}
-        </button>
-
       </div>
-    </nav>
-
-    {/* MOBILE MENU OVERLAY - Below nav bar */}
-    <div 
-      className={`fixed inset-0 bg-slate-950 z-[90] lg:hidden transition-all duration-300 ${
-        isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
-      }`}
-    >
-      <div className="flex flex-col items-start justify-start pt-28 sm:pt-32 px-6 gap-6 overflow-y-auto h-full">
-        {/* SERVICES DROPDOWN MOBILE */}
-        <div className="w-full">
-          <ServicesDropdown isMobile={true} onItemClick={() => setIsOpen(false)} />
-        </div>
-        
-        {/* SECTORS MOBILE */}
-        <div className="w-full">
-          <SectorsDropdown isMobile={true} onItemClick={() => setIsOpen(false)} />
-        </div>
-        
-        {/* STANDARD LINKS MOBILE */}
-        {links.map((link) => (
-          <Link 
-              key={link.name} 
-              href={link.href} 
-              onClick={() => setIsOpen(false)}
-              className="text-3xl font-bold text-white hover:text-blue-400 transition-colors w-full"
-          >
-            {link.name}
-          </Link>
-        ))}
-        
-        <Link 
-          href="/audit"
-          onClick={() => setIsOpen(false)}
-          className="mt-4 bg-blue-600 text-white px-8 py-4 rounded-full text-xl font-bold hover:bg-blue-700 transition-all shadow-xl shadow-blue-600/20 flex items-center gap-2 self-center"
-        >
-          Get Free Audit <ArrowRight className="w-5 h-5" />
-        </Link>
-      </div>
-    </div>
     </>
   );
 }

@@ -53,6 +53,32 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       // ----------------------------------------
+      // 0. REPOSITIONING REDIRECTS
+      // ----------------------------------------
+      { source: '/blog', destination: '/case-studies', permanent: true },
+      { source: '/blog/:slug*', destination: '/case-studies', permanent: true },
+      { source: '/sectors', destination: '/services', permanent: true },
+      { source: '/sectors/:slug*', destination: '/services', permanent: true },
+      { source: '/testimonials', destination: '/about', permanent: true },
+      { source: '/portfolio', destination: '/case-studies', permanent: true },
+      { source: '/audit', destination: '/contact', permanent: true },
+      { source: '/work', destination: '/about', permanent: true },
+      { source: '/frequently-asked-questions', destination: '/contact', permanent: true },
+      { source: '/blackpool-growth', destination: '/services', permanent: true },
+      { source: '/southport-growth', destination: '/services', permanent: true },
+      { source: '/services/web-design', destination: '/services', permanent: true },
+      { source: '/services/seo', destination: '/services', permanent: true },
+      { source: '/services/headless-development', destination: '/services', permanent: true },
+      { source: '/services/content-scaling', destination: '/services', permanent: true },
+      { source: '/services/content-strategy', destination: '/services', permanent: true },
+      { source: '/services/ai', destination: '/services', permanent: true },
+      { source: '/services/ai-content', destination: '/services', permanent: true },
+      { source: '/services/ai-workflows', destination: '/services', permanent: true },
+      { source: '/services/bespoke-systems', destination: '/services', permanent: true },
+      { source: '/services/generative-engine-optimisation', destination: '/services', permanent: true },
+      { source: '/services/optimisation-sprint', destination: '/services', permanent: true },
+
+      // ----------------------------------------
       // 1. HIGH-VALUE BLOG POSTS (Exact Match)
       // ----------------------------------------
       {
@@ -192,11 +218,7 @@ const nextConfig: NextConfig = {
       // ----------------------------------------
       // 4. CORE PAGES
       // ----------------------------------------
-      {
-        source: '/case-studies',
-        destination: '/portfolio',
-        permanent: true,
-      },
+      // case-studies is now a real page — no redirect needed
       {
         source: '/contacts',
         destination: '/contact',
