@@ -38,8 +38,12 @@ export const metadata: Metadata = {
   keywords: [
     "digital strategy consultancy",
     "technical SEO advisory",
-    "Next.js architecture",
+    "AI search architecture",
+    "generative engine optimisation",
     "digital footprint intelligence",
+    "AI infrastructure advisory",
+    "Cloudflare consultancy",
+    "Next.js architecture",
     "Churchtown Media",
     "Damian Roche",
   ],

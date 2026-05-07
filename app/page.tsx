@@ -6,7 +6,7 @@ import Reveal from "./components/Reveal";
 export const metadata: Metadata = {
   title: "Churchtown Media | Digital Strategy & Technical Advisory",
   description:
-    "Digital strategy, technical architecture and intelligence for organisations that cannot afford to get it wrong. Specialist advisory practice founded by Damian Roche.",
+    "Digital strategy, technical architecture, AI search visibility and infrastructure advisory for organisations that cannot afford to get it wrong. Founded by Damian Roche.",
   alternates: {
     canonical: "https://www.churchtownmedia.co.uk",
   },
@@ -49,8 +49,8 @@ const jsonLd = {
 const SERVICES = [
   {
     number: "01",
-    title: "Technical SEO & Digital Architecture",
-    desc: "Structural audit and prioritised roadmap for web presence that is underperforming in proportion to its investment.",
+    title: "Technical SEO & AI Search Architecture",
+    desc: "Structural audit and roadmap for web presence that is invisible to both search engines and AI inference systems.",
   },
   {
     number: "02",
@@ -60,7 +60,12 @@ const SERVICES = [
   {
     number: "03",
     title: "Digital Footprint Intelligence",
-    desc: "Systematic mapping of an organisation's public digital exposure before a significant event. The SIBA methodology, applied commercially.",
+    desc: "Mapping an organisation's public exposure before a significant event — including what AI systems currently say about it.",
+  },
+  {
+    number: "04",
+    title: "AI Infrastructure Advisory",
+    desc: "Crawler policy, Cloudflare configuration for AI traffic, and attack surface review. Managing how AI systems access your infrastructure.",
   },
 ];
 
@@ -135,7 +140,7 @@ export default function Home() {
               Services
             </p>
             <h2 className="mb-16">
-              Three service lines. Each with a specific buyer and a specific outcome.
+              Four service lines. Each with a specific buyer and a specific outcome.
             </h2>
           </Reveal>
 

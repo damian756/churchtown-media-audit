@@ -6,12 +6,12 @@ import Reveal from "../components/Reveal";
 export const metadata: Metadata = {
   title: "Services | Churchtown Media",
   description:
-    "Three service lines: Technical SEO and digital architecture, headless development consultancy, and digital footprint intelligence. Specialist advisory, not generalist agency.",
+    "Four service lines: Technical SEO and AI search architecture, headless development consultancy, digital footprint intelligence, and AI infrastructure advisory. Specialist advisory practice.",
   alternates: { canonical: "https://www.churchtownmedia.co.uk/services" },
   openGraph: {
     title: "Services | Churchtown Media",
     description:
-      "Technical SEO advisory, headless development consultancy, and digital footprint intelligence. A small number of clients at any one time.",
+      "Technical SEO and AI search architecture, headless development consultancy, digital footprint intelligence, AI infrastructure advisory. A small number of clients at any one time.",
     url: "https://www.churchtownmedia.co.uk/services",
     type: "website",
     siteName: "Churchtown Media",
@@ -23,16 +23,16 @@ const SERVICES = [
   {
     id: "technical-seo",
     number: "01",
-    title: "Technical SEO & Digital Architecture",
-    tagline: "For organisations with web presence that is underperforming or structurally compromised.",
+    title: "Technical SEO & AI Search Architecture",
+    tagline: "For organisations whose web presence is structurally invisible to both search engines and AI inference systems.",
     buyer:
       "Marketing directors and CTOs at mid-size organisations who need a second opinion they can trust.",
     problem:
-      "The site exists. It may even have had SEO work done. But it is not performing in proportion to the domain authority, the content investment, or the commercial opportunity. Something structural is wrong and previous advisors have not identified or fixed it.",
+      "The site exists. It may even have had SEO work done. But it is not performing. And increasingly, the question is not only whether Google can find it — it is whether ChatGPT, Perplexity, Gemini and Copilot can accurately describe what the organisation does, who runs it, and what it offers. Most cannot. Structured data, entity authority, and content architecture for AI citation are not the same as traditional SEO. The gap between the two is where most sites fail.",
     approach:
-      "An audit that goes beyond surface-level findings. Crawl architecture, structured data implementation, canonicalisation, page speed, content gap analysis relative to search intent, and a clear prioritised roadmap. The deliverable is a document that tells you exactly what to do, in what order, and why.",
+      "Crawl architecture, structured data implementation, entity mapping, content gap analysis relative to both search intent and AI citation signals, canonicalisation, page speed. The deliverable is a document that tells you exactly what to do, in what order, and why — for search and for AI search.",
     deliverable:
-      "Written audit report. Prioritised roadmap. Optional implementation engagement at a separate day rate.",
+      "Written audit report. AI search visibility assessment. Prioritised roadmap. Optional implementation engagement at a separate day rate.",
     rate: "£600–£750/day",
   },
   {
@@ -55,16 +55,31 @@ const SERVICES = [
     id: "footprint-intelligence",
     number: "03",
     title: "Digital Footprint Intelligence",
-    tagline: "Mapping an organisation's public digital exposure before a significant event.",
+    tagline: "Mapping an organisation's public digital exposure before a significant event — including what AI systems currently say about it.",
     buyer:
       "Professional services firms, legal practices, communications consultancies, and PE-backed organisations managing sensitive mandates.",
     problem:
-      "A significant event is approaching. An appointment, a transaction, a merger, a public filing, a regulatory matter, a press inquiry. The organisation needs to know what its public digital exposure looks like before someone else maps it.",
+      "A significant event is approaching. An appointment, a transaction, a merger, a public filing, a regulatory matter, a press inquiry. The organisation needs to know what its public digital exposure looks like before someone else maps it. In 2026, that includes what AI systems — ChatGPT, Gemini, Perplexity, Copilot — will say about your organisation, your principals, and your structure if asked. Most organisations have no idea. Some of what AI systems infer is wrong. Some is accurate but should not be easily findable.",
     approach:
-      "The SIBA methodology applied commercially. Systematic mapping of publicly available digital information: web presence, structured data, corporate registry data, press archive, social footprint, third-party data sources. Written as a defensible report.",
+      "The SIBA methodology applied commercially. Systematic mapping of publicly available digital information: web presence, structured data, corporate registry data, press archive, social footprint, third-party data sources. AI inference audit: what do major AI systems currently describe about your organisation, and is it accurate, incomplete, or a liability? Written as a defensible report.",
     deliverable:
-      "Written digital footprint report. Exposure summary. Risk annotation. Recommendations for remediation where relevant.",
+      "Written digital footprint report. AI inference summary. Exposure annotation. Recommendations for remediation where relevant.",
     rate: "£1,200–£1,500/day",
+  },
+  {
+    id: "ai-infrastructure",
+    number: "04",
+    title: "AI Infrastructure Advisory",
+    tagline: "For organisations that need to understand and manage how AI systems are accessing, consuming, and representing their infrastructure.",
+    buyer:
+      "CTOs and digital directors at organisations with significant web presence, content assets, or proprietary data that AI crawlers are actively indexing.",
+    problem:
+      "There are now more than a dozen identifiable AI crawlers systematically hitting web infrastructure — GPTBot, ClaudeBot, PerplexityBot, Amazonbot, ByteSpider, Google-Extended, and others. Most organisations have no crawler policy, no Cloudflare rules managing this traffic, no understanding of how much bandwidth these systems consume, and no position on whether their content should be used for AI training. Meanwhile, Cloudflare's AI bot management capabilities are largely unconfigured on most deployments, and the attack surface that AI systems create is not being actively managed.",
+    approach:
+      "AI crawler audit and policy design. Cloudflare WAF configuration for AI traffic. robots.txt strategy for AI systems. Bot traffic analysis and separation from legitimate user traffic. Attack surface review through an AI lens — what is your organisation inadvertently exposing to systems that are mapping it? Rate limiting architecture for AI-scale request volumes.",
+    deliverable:
+      "Written AI infrastructure report. Crawler policy document. Cloudflare configuration recommendations. robots.txt revision. Attack surface summary.",
+    rate: "£700–£900/day",
   },
 ];
 
@@ -104,12 +119,12 @@ export default function ServicesPage() {
           </Reveal>
           <Reveal delay={100}>
             <h1 className="mb-8">
-              Three service lines. Each with a specific buyer, a specific problem, and a specific deliverable.
+              Four service lines. Each with a specific buyer, a specific problem, and a specific deliverable.
             </h1>
           </Reveal>
           <Reveal delay={200}>
             <p className="text-[17px] leading-relaxed text-[#3d3d3d] max-w-xl">
-              Churchtown Media is not a generalist agency. We do not offer a menu of everything and execute on volume. We work with a small number of clients at any one time and we are selective about which engagements we take on.
+              Churchtown Media is not a generalist agency. We work with a small number of clients at any one time and we are selective about which engagements we take on.
             </p>
           </Reveal>
         </div>
@@ -126,7 +141,9 @@ export default function ServicesPage() {
                 <div className="flex items-start gap-6 mb-8">
                   <span className="text-[#a0a0a0] font-mono text-xs pt-1 shrink-0">{s.number}</span>
                   <div>
-                    <h2 className="mb-2" style={{ fontSize: "clamp(1.3rem, 1rem + 1vw, 1.75rem)" }}>{s.title}</h2>
+                    <h2 className="mb-2" style={{ fontSize: "clamp(1.3rem, 1rem + 1vw, 1.75rem)" }}>
+                      {s.title}
+                    </h2>
                     <p className="text-[14px] text-[#2c4a52]">{s.tagline}</p>
                   </div>
                 </div>
@@ -159,7 +176,7 @@ export default function ServicesPage() {
                     </h3>
                     <p className="text-[15px] leading-relaxed text-[#3d3d3d]">{s.approach}</p>
                   </div>
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-5 pt-2 pb-0 border-b border-[#e0e0d8] pb-6">
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-5 border-b border-[#e0e0d8] pb-6">
                     <div className="flex-1">
                       <h3
                         className="text-[10px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-1"

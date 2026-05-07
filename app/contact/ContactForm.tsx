@@ -127,9 +127,10 @@ export default function ContactForm() {
                       Service area
                     </label>
                     <select name="service" className="input">
-                      <option>Technical SEO & Digital Architecture</option>
+                      <option>Technical SEO & AI Search Architecture</option>
                       <option>Headless Development Consultancy</option>
                       <option>Digital Footprint Intelligence</option>
+                      <option>AI Infrastructure Advisory</option>
                       <option>Not sure yet</option>
                     </select>
                   </div>
