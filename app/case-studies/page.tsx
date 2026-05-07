@@ -6,12 +6,12 @@ import Reveal from "../components/Reveal";
 export const metadata: Metadata = {
   title: "Case Studies | Churchtown Media",
   description:
-    "SIBA Digital, Alotek Shelters, and the Sefton Coast Network. Three engagements demonstrating technical SEO, Next.js architecture, and digital investigation methodology.",
+    "SIBA Digital and the Sefton Coast Network. Two bodies of work demonstrating Next.js architecture, structured data strategy, OSINT methodology, and publishing at scale.",
   alternates: { canonical: "https://www.churchtownmedia.co.uk/case-studies" },
   openGraph: {
     title: "Case Studies | Churchtown Media",
     description:
-      "SIBA Digital: BBC News, Private Eye. Alotek Shelters: 10 number-one rankings, month one. Sefton Coast Network: five sites, built and operated.",
+      "SIBA Digital: BBC News, Private Eye, nine reports. Sefton Coast Network: five editorial sites, built and operated. Both live. Both verifiable.",
     url: "https://www.churchtownmedia.co.uk/case-studies",
     type: "website",
     siteName: "Churchtown Media",
@@ -31,11 +31,11 @@ export default function CaseStudiesPage() {
             </p>
           </Reveal>
           <Reveal delay={100}>
-            <h1 className="mb-8">Three engagements. Each demonstrates a different capability.</h1>
+            <h1 className="mb-8">Two bodies of work. Both live. Both built from nothing.</h1>
           </Reveal>
           <Reveal delay={200}>
             <p className="text-[17px] leading-relaxed text-[#3d3d3d] max-w-xl">
-              The work below is live and verifiable. No projected figures, no anonymised results that cannot be checked.
+              No anonymised client results, no projected figures. Everything here is owned, operated, and publicly verifiable.
             </p>
           </Reveal>
         </div>
@@ -123,86 +123,12 @@ export default function CaseStudiesPage() {
 
       <hr className="mx-auto max-w-3xl border-[#e0e0d8]" />
 
-      {/* Alotek */}
-      <section id="alotek" className="py-28 px-6 scroll-mt-20">
-        <div className="max-w-3xl mx-auto">
-          <Reveal>
-            <div className="flex items-center gap-3 mb-8">
-              <span className="text-[#a0a0a0] font-mono text-xs">02</span>
-              <span className="text-[10px] font-medium uppercase tracking-widest text-[#2c4a52]">
-                Retained advisory
-              </span>
-            </div>
-            <h2 className="mb-3">Alotek Shelters</h2>
-            <p className="text-[17px] leading-relaxed text-[#3d3d3d] mb-10 max-w-xl">
-              UK bus shelter and canopy manufacturer. Previous agency: zero measurable results in 12 months. Month one of retainer: number-one rankings on every core commercial keyword.
-            </p>
-          </Reveal>
-
-          <Reveal delay={100}>
-            <div className="bg-[#f5f5f0] border border-[#e0e0d8] mb-10">
-              {[
-                ["Sector", "Manufacturing (bus shelters, canopies, walkways)"],
-                ["Previous position", "'Bus shelter suppliers': position 16 on Google"],
-                ["Month one result", "Number one for every tracked commercial keyword"],
-                ["Timeframe", "30 days from retainer start"],
-                ["Status", "Ongoing retained client"],
-              ].map(([label, value]) => (
-                <div
-                  key={label as string}
-                  className="flex justify-between items-start px-6 py-4 border-b border-[#e0e0d8] last:border-0"
-                >
-                  <span className="text-[13px] text-[#6b6b6b]">{label}</span>
-                  <span className="text-[13px] text-[#1c1c1c] font-medium text-right max-w-[55%]">{value}</span>
-                </div>
-              ))}
-            </div>
-          </Reveal>
-
-          <Reveal delay={150}>
-            <div className="space-y-6 text-[15px] leading-relaxed text-[#3d3d3d] mb-10">
-              <div>
-                <p className="text-[10px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-2">The situation</p>
-                <p>
-                  Alotek Shelters had been with a digital agency for 12 months. They were paying a monthly retainer and had zero verifiable improvement in search visibility. Their primary commercial keyword ranked at position 16. Their website was technically sound but structurally unoptimised for the specific search landscape their buyers used.
-                </p>
-              </div>
-              <div>
-                <p className="text-[10px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-2">The approach</p>
-                <p>
-                  Crawl audit. Structured data implementation across product categories, case studies and service pages. Content architecture review. Internal linking restructure. Schema.org markup aligned with commercial intent. No black-hat tactics. Structural work that gave Google exactly what it needed.
-                </p>
-              </div>
-              <div>
-                <p className="text-[10px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-2">The result</p>
-                <p>
-                  Within 30 days: number one for &quot;bus shelter suppliers,&quot; &quot;bus shelter manufacturers,&quot; &quot;bus shelter repairs,&quot; and every other tracked commercial term. AI Overview appearances on primary queries. The client remains on a retained advisory basis.
-                </p>
-              </div>
-            </div>
-          </Reveal>
-
-          <Reveal delay={200}>
-            <a
-              href="https://www.alotekshelters.co.uk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-sm text-[#2c4a52] transition-colors hover:text-[#1c1c1c]"
-            >
-              Visit Alotek Shelters <ExternalLink size={13} />
-            </a>
-          </Reveal>
-        </div>
-      </section>
-
-      <hr className="mx-auto max-w-3xl border-[#e0e0d8]" />
-
       {/* Network */}
       <section id="network" className="py-28 px-6 bg-[#f5f5f0] scroll-mt-20">
         <div className="max-w-3xl mx-auto">
           <Reveal>
             <div className="flex items-center gap-3 mb-8">
-              <span className="text-[#a0a0a0] font-mono text-xs">03</span>
+              <span className="text-[#a0a0a0] font-mono text-xs">02</span>
               <span className="text-[10px] font-medium uppercase tracking-widest text-[#2c4a52]">
                 Owned and operated
               </span>

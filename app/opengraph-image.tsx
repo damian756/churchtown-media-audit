@@ -1,73 +1,60 @@
-import { ImageResponse } from 'next/og';
+import { ImageResponse } from "next/og";
 
-export const alt = 'Churchtown Media - Digital Growth for Southport Businesses';
+export const alt = "Churchtown Media — Digital Strategy & Technical Advisory";
 export const size = {
   width: 1200,
   height: 630,
 };
-export const contentType = 'image/png';
+export const contentType = "image/png";
 
 export default async function Image() {
   return new ImageResponse(
     (
       <div
         style={{
-          height: '100%',
-          width: '100%',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-          backgroundColor: '#0f172a',
-          backgroundImage: 'radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.15) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(147, 51, 234, 0.1) 0%, transparent 50%)',
+          height: "100%",
+          width: "100%",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "flex-start",
+          justifyContent: "center",
+          backgroundColor: "#ffffff",
+          padding: "80px 96px",
+          borderLeft: "6px solid #112d6e",
         }}
       >
-        {/* Brand */}
         <div
           style={{
-            display: 'flex',
-            alignItems: 'center',
-            fontSize: 72,
-            fontWeight: 900,
-            color: 'white',
-            marginBottom: 40,
-            letterSpacing: '-0.05em',
+            fontSize: 22,
+            fontWeight: 400,
+            color: "#a0a0a0",
+            letterSpacing: "0.12em",
+            textTransform: "uppercase",
+            marginBottom: 32,
           }}
         >
-          Churchtown<span style={{ color: '#3b82f6' }}>Media</span>
+          Churchtown Media
         </div>
-
-        {/* Tagline */}
         <div
           style={{
-            display: 'flex',
-            fontSize: 42,
-            fontWeight: 600,
-            color: '#cbd5e1',
-            textAlign: 'center',
+            fontSize: 54,
+            fontWeight: 400,
+            color: "#112d6e",
+            lineHeight: 1.15,
+            letterSpacing: "-0.02em",
             maxWidth: 900,
-            lineHeight: 1.4,
           }}
         >
-          Web design & SEO, Southport. Creators of the Sefton Coast Network.
+          Digital strategy, technical architecture and intelligence.
         </div>
-
-        {/* Location Badge */}
         <div
           style={{
-            display: 'flex',
-            alignItems: 'center',
-            marginTop: 60,
-            padding: '16px 32px',
-            backgroundColor: 'rgba(59, 130, 246, 0.1)',
-            border: '2px solid rgba(59, 130, 246, 0.3)',
-            borderRadius: 999,
-            color: '#60a5fa',
-            fontSize: 24,
-            fontWeight: 700,
+            marginTop: 48,
+            fontSize: 20,
+            color: "#6b6b6b",
           }}
         >
-          🚀 Serving Southport & North West
+          churchtownmedia.co.uk
         </div>
       </div>
     ),

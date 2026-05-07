@@ -212,7 +212,7 @@ export default function AboutPage() {
                   SEO is structured data, crawl architecture, content that answers real questions, and links from places that actually matter. It is not a monthly report of impressions that has no connection to revenue.
                 </p>
                 <p>
-                  I work with a small number of clients because the alternative is being spread thin and average. Alotek Shelters is a retained client. That relationship exists because I delivered what I said I would.
+                  I work with a small number of clients because the alternative is being spread thin and average. Every engagement is the same: agree the scope, deliver the work, measure the result. That is it.
                 </p>
               </div>
             </Reveal>

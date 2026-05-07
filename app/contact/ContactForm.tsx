@@ -11,7 +11,7 @@ const jsonLd = {
   mainEntity: {
     "@type": "ProfessionalService",
     name: "Churchtown Media",
-    email: "hello@churchtownmedia.co.uk",
+                  email: "damian@churchtownmedia.co.uk",
     url: "https://www.churchtownmedia.co.uk",
     founder: {
       "@type": "Person",
@@ -43,7 +43,7 @@ export default function ContactForm() {
         setStatus("idle");
       }
     } catch {
-      alert("Error connecting to server. Please email hello@churchtownmedia.co.uk directly.");
+      alert("Error connecting to server. Please email damian@churchtownmedia.co.uk directly.");
       setStatus("idle");
     }
   };
@@ -166,7 +166,7 @@ export default function ContactForm() {
                     Email
                   </p>
                   <a
-                    href="mailto:hello@churchtownmedia.co.uk"
+                    href="mailto:damian@churchtownmedia.co.uk"
                     className="text-[14px] text-[#1c1c1c] hover:text-[#112d6e] transition-colors"
                   >
                     hello@churchtownmedia.co.uk

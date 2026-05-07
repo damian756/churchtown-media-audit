@@ -34,10 +34,10 @@ export default function Footer() {
                 LinkedIn
               </a>
               <a
-                href="mailto:hello@churchtownmedia.co.uk"
+                href="mailto:damian@churchtownmedia.co.uk"
                 className="text-[#6b6b6b] hover:text-[#112d6e] transition-colors"
               >
-                hello@churchtownmedia.co.uk
+                damian@churchtownmedia.co.uk
               </a>
             </div>
           </div>
@@ -64,16 +64,6 @@ export default function Footer() {
                     className="inline-flex items-center gap-1 hover:text-[#112d6e] transition-colors"
                   >
                     SIBA Digital <ExternalLink size={11} />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.alotekshelters.co.uk"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 hover:text-[#112d6e] transition-colors"
-                  >
-                    Alotek Shelters <ExternalLink size={11} />
                   </a>
                 </li>
                 <li>

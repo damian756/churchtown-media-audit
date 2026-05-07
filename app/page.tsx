@@ -73,25 +73,16 @@ const PROOF = [
     name: "SIBA Digital",
     stat: "9",
     statLabel: "Reports published",
-    desc: "A public interest investigation platform built using Next.js, structured data and OSINT methodology. Nine published reports. Coverage in BBC News, Private Eye and national press.",
+    desc: "A public interest investigation platform built using Next.js, structured data and OSINT methodology. Nine published reports. Coverage in BBC News, Private Eye and national press. Built from a phone over Easter weekend.",
     href: "/case-studies#siba",
     external: "https://www.siba.digital",
   },
   {
-    label: "Retained advisory",
-    name: "Alotek Shelters",
-    stat: "#1",
-    statLabel: "Month-one ranking",
-    desc: "Manufacturing client. Previous agency: zero measurable results in 12 months. Month one of retained technical advisory: number-one rankings on every core commercial keyword.",
-    href: "/case-studies#alotek",
-    external: "https://www.alotekshelters.co.uk",
-  },
-  {
-    label: "Publishing architecture",
+    label: "Publishing network",
     name: "Sefton Coast Network",
     stat: "5",
     statLabel: "Sites operated",
-    desc: "Five editorial sites built and operated simultaneously on the same Next.js architecture. Demonstrates what properly engineered content infrastructure looks like at scale.",
+    desc: "Five editorial sites built and operated simultaneously on the same Next.js architecture. SouthportGuide, FormbyGuide, SeftonLinks, SeftonCoastWildlife. All live. All ranking. All owned.",
     href: "/case-studies#network",
     external: "https://www.southportguide.co.uk",
   },
@@ -199,7 +190,7 @@ export default function Home() {
               The work
             </p>
             <h2 className="mb-12">
-              Three engagements. Each demonstrates a different capability.
+              Both properties are live, owned, and verifiable. No anonymised results.
             </h2>
           </Reveal>
 
