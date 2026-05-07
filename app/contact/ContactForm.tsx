@@ -169,7 +169,7 @@ export default function ContactForm() {
                     href="mailto:damian@churchtownmedia.co.uk"
                     className="text-[14px] text-[#1c1c1c] hover:text-[#112d6e] transition-colors"
                   >
-                    hello@churchtownmedia.co.uk
+                    damian@churchtownmedia.co.uk
                   </a>
                 </div>
                 <div>
