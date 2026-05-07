@@ -31,7 +31,7 @@ export default function AboutPage() {
         "@id": "https://www.churchtownmedia.co.uk/#organization",
         name: "Churchtown Media",
         url: "https://www.churchtownmedia.co.uk",
-        logo: "https://www.churchtownmedia.co.uk/icon.png",
+        logo: "https://www.churchtownmedia.co.uk/opengraph-image.png",
         description:
           "Specialist digital advisory practice. Digital strategy, technical architecture and footprint intelligence.",
         founder: {

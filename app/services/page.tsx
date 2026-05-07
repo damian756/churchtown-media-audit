@@ -28,9 +28,9 @@ const SERVICES = [
     buyer:
       "Marketing directors and CTOs at mid-size organisations who need a second opinion they can trust.",
     problem:
-      "The site exists. It may even have had SEO work done. But it is not performing. And increasingly, the question is not only whether Google can find it — it is whether ChatGPT, Perplexity, Gemini and Copilot can accurately describe what the organisation does, who runs it, and what it offers. Most cannot. Structured data, entity authority, and content architecture for AI citation are not the same as traditional SEO. The gap between the two is where most sites fail.",
+      "The site exists. It may even have had SEO work done. But it is not performing. And increasingly, the question is not only whether Google can find it. It is whether ChatGPT, Perplexity, Gemini and Copilot can accurately describe what the organisation does, who runs it, and what it offers. Most cannot. Structured data, entity authority, and content architecture for AI citation are not the same as traditional SEO. The gap between the two is where most sites fail.",
     approach:
-      "Crawl architecture, structured data implementation, entity mapping, content gap analysis relative to both search intent and AI citation signals, canonicalisation, page speed. The deliverable is a document that tells you exactly what to do, in what order, and why — for search and for AI search.",
+      "Crawl architecture, structured data implementation, entity mapping, content gap analysis relative to both search intent and AI citation signals, canonicalisation, page speed. The deliverable is a document that tells you exactly what to do, in what order, and why. For search and for AI search.",
     deliverable:
       "Written audit report. AI search visibility assessment. Prioritised roadmap. Optional implementation engagement at a separate day rate.",
     rate: "£600–£750/day",
@@ -55,11 +55,11 @@ const SERVICES = [
     id: "footprint-intelligence",
     number: "03",
     title: "Digital Footprint Intelligence",
-    tagline: "Mapping an organisation's public digital exposure before a significant event — including what AI systems currently say about it.",
+    tagline: "Mapping an organisation's public digital exposure before a significant event, including what AI systems currently say about it.",
     buyer:
       "Professional services firms, legal practices, communications consultancies, and PE-backed organisations managing sensitive mandates.",
     problem:
-      "A significant event is approaching. An appointment, a transaction, a merger, a public filing, a regulatory matter, a press inquiry. The organisation needs to know what its public digital exposure looks like before someone else maps it. In 2026, that includes what AI systems — ChatGPT, Gemini, Perplexity, Copilot — will say about your organisation, your principals, and your structure if asked. Most organisations have no idea. Some of what AI systems infer is wrong. Some is accurate but should not be easily findable.",
+      "A significant event is approaching. An appointment, a transaction, a merger, a public filing, a regulatory matter, a press inquiry. The organisation needs to know what its public digital exposure looks like before someone else maps it. In 2026, that includes what AI systems (ChatGPT, Gemini, Perplexity, Copilot) will say about your organisation, your principals, and your structure if asked. Most organisations have no idea. Some of what AI systems infer is wrong. Some is accurate but should not be easily findable.",
     approach:
       "The SIBA methodology applied commercially. Systematic mapping of publicly available digital information: web presence, structured data, corporate registry data, press archive, social footprint, third-party data sources. AI inference audit: what do major AI systems currently describe about your organisation, and is it accurate, incomplete, or a liability? Written as a defensible report.",
     deliverable:
@@ -74,9 +74,9 @@ const SERVICES = [
     buyer:
       "CTOs and digital directors at organisations with significant web presence, content assets, or proprietary data that AI crawlers are actively indexing.",
     problem:
-      "There are now more than a dozen identifiable AI crawlers systematically hitting web infrastructure — GPTBot, ClaudeBot, PerplexityBot, Amazonbot, ByteSpider, Google-Extended, and others. Most organisations have no crawler policy, no Cloudflare rules managing this traffic, no understanding of how much bandwidth these systems consume, and no position on whether their content should be used for AI training. Meanwhile, Cloudflare's AI bot management capabilities are largely unconfigured on most deployments, and the attack surface that AI systems create is not being actively managed.",
+      "There are now more than a dozen identifiable AI crawlers systematically hitting web infrastructure: GPTBot, ClaudeBot, PerplexityBot, Amazonbot, ByteSpider, Google-Extended, and others. Most organisations have no crawler policy, no Cloudflare rules managing this traffic, no understanding of how much bandwidth these systems consume, and no position on whether their content should be used for AI training. Meanwhile, Cloudflare's AI bot management capabilities are largely unconfigured on most deployments, and the attack surface that AI systems create is not being actively managed.",
     approach:
-      "AI crawler audit and policy design. Cloudflare WAF configuration for AI traffic. robots.txt strategy for AI systems. Bot traffic analysis and separation from legitimate user traffic. Attack surface review through an AI lens — what is your organisation inadvertently exposing to systems that are mapping it? Rate limiting architecture for AI-scale request volumes.",
+      "AI crawler audit and policy design. Cloudflare WAF configuration for AI traffic. robots.txt strategy for AI systems. Bot traffic analysis and separation from legitimate user traffic. Attack surface review through an AI lens: what is your organisation inadvertently exposing to systems that are mapping it? Rate limiting architecture for AI-scale request volumes.",
     deliverable:
       "Written AI infrastructure report. Crawler policy document. Cloudflare configuration recommendations. robots.txt revision. Attack surface summary.",
     rate: "£700–£900/day",

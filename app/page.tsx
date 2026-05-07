@@ -35,7 +35,7 @@ const jsonLd = {
   "@id": "https://www.churchtownmedia.co.uk/#organization",
   name: "Churchtown Media",
   url: "https://www.churchtownmedia.co.uk",
-  logo: "https://www.churchtownmedia.co.uk/icon.png",
+  logo: "https://www.churchtownmedia.co.uk/opengraph-image.png",
   description:
     "Churchtown Media is a specialist digital advisory practice. Digital strategy, technical architecture and footprint intelligence. Founded by Damian Roche.",
   founder: {
@@ -60,7 +60,7 @@ const SERVICES = [
   {
     number: "03",
     title: "Digital Footprint Intelligence",
-    desc: "Mapping an organisation's public exposure before a significant event — including what AI systems currently say about it.",
+    desc: "Mapping an organisation's public exposure before a significant event, including what AI systems currently say about it.",
   },
   {
     number: "04",
