@@ -19,6 +19,72 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Churchtown Media Services",
+  description: "Four specialist advisory service lines offered by Churchtown Media.",
+  url: "https://www.churchtownmedia.co.uk/services",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      item: {
+        "@type": "Service",
+        "@id": "https://www.churchtownmedia.co.uk/services#technical-seo",
+        name: "Technical SEO & AI Search Architecture",
+        description:
+          "Structural audit and prioritised roadmap for web presence that is invisible to both search engines and AI inference systems. Covers structured data, entity mapping, crawl architecture, and AI citation signals.",
+        provider: { "@id": "https://www.churchtownmedia.co.uk/#organization" },
+        areaServed: { "@type": "Country", name: "United Kingdom" },
+        offers: { "@type": "Offer", priceSpecification: { "@type": "UnitPriceSpecification", price: "600", priceCurrency: "GBP", unitText: "day" } },
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      item: {
+        "@type": "Service",
+        "@id": "https://www.churchtownmedia.co.uk/services#headless-development",
+        name: "Headless Development Consultancy",
+        description:
+          "Architecture decision-making before any agency is commissioned. CMS selection, hosting infrastructure, data structure, and integration requirements. Produces the scoping document a competent agency needs to price accurately.",
+        provider: { "@id": "https://www.churchtownmedia.co.uk/#organization" },
+        areaServed: { "@type": "Country", name: "United Kingdom" },
+        offers: { "@type": "Offer", priceSpecification: { "@type": "UnitPriceSpecification", price: "700", priceCurrency: "GBP", unitText: "day" } },
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      item: {
+        "@type": "Service",
+        "@id": "https://www.churchtownmedia.co.uk/services#footprint-intelligence",
+        name: "Digital Footprint Intelligence",
+        description:
+          "Systematic mapping of an organisation's public digital exposure before a significant event, including an AI inference audit assessing what ChatGPT, Gemini, Perplexity and Copilot currently say about the organisation.",
+        provider: { "@id": "https://www.churchtownmedia.co.uk/#organization" },
+        areaServed: { "@type": "Country", name: "United Kingdom" },
+        offers: { "@type": "Offer", priceSpecification: { "@type": "UnitPriceSpecification", price: "1200", priceCurrency: "GBP", unitText: "day" } },
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 4,
+      item: {
+        "@type": "Service",
+        "@id": "https://www.churchtownmedia.co.uk/services#ai-infrastructure",
+        name: "AI Infrastructure Advisory",
+        description:
+          "Crawler policy design, Cloudflare WAF configuration for AI traffic, robots.txt strategy, bot traffic analysis, and attack surface review for organisations managing how AI systems access their infrastructure.",
+        provider: { "@id": "https://www.churchtownmedia.co.uk/#organization" },
+        areaServed: { "@type": "Country", name: "United Kingdom" },
+        offers: { "@type": "Offer", priceSpecification: { "@type": "UnitPriceSpecification", price: "700", priceCurrency: "GBP", unitText: "day" } },
+      },
+    },
+  ],
+};
+
 const SERVICES = [
   {
     id: "technical-seo",
@@ -109,6 +175,11 @@ const PROCESS = [
 export default function ServicesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* Header */}
       <section className="pt-20 pb-28 px-6">
         <div className="max-w-3xl mx-auto">

@@ -225,7 +225,7 @@ export default function AboutPage() {
                     {[
                       ["Next.js 16 (App Router)", "Framework"],
                       ["TypeScript", "Type safety"],
-                      ["Tailwind CSS v4", "Styling"],
+                      ["Tailwind CSS v3", "Styling"],
                       ["Vercel", "Deployment"],
                       ["Prisma + PostgreSQL", "Database"],
                       ["Schema.org", "SEO & AI search"],

@@ -83,7 +83,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${serif.variable} ${sans.variable} scroll-smooth`}>
+    <html lang="en-GB" className={`${serif.variable} ${sans.variable} scroll-smooth`}>
       <head>
         <script
           src="https://analytics.ahrefs.com/analytics.js"
