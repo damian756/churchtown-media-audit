@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 
@@ -18,11 +17,12 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
-    if (isOpen) { document.body.style.overflow = 'hidden'; }
-    else { document.body.style.overflow = 'unset'; }
+    document.body.style.overflow = isOpen ? "hidden" : "unset";
   }, [isOpen]);
 
-  useEffect(() => { setIsOpen(false); }, [pathname]);
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
 
   const links = [
     { name: "About", href: "/about" },
@@ -36,24 +36,18 @@ export default function Navbar() {
       <nav
         className={`fixed top-0 w-full z-[100] transition-all duration-300 ${
           scrolled
-            ? "bg-slate-900/95 backdrop-blur-md border-b border-slate-800 py-4"
-            : "bg-transparent py-6"
+            ? "bg-white/95 backdrop-blur-md border-b border-[#e0e0d8] py-4"
+            : "bg-white border-b border-[#e0e0d8] py-4"
         }`}
       >
-        <div className="max-w-5xl mx-auto px-6 flex items-center justify-between">
-
-          <Link href="/" className="flex items-center gap-3 group" onClick={() => setIsOpen(false)}>
-            <Image
-              src="/logo.png"
-              alt="Churchtown Media"
-              width={36}
-              height={36}
-              priority
-              className="w-8 h-8 sm:w-9 sm:h-9 group-hover:opacity-80 transition-opacity"
-            />
-            <span className="font-bold text-lg sm:text-xl tracking-tight text-white">
-              Churchtown<span className="text-blue-400">Media</span>
-            </span>
+        <div className="max-w-3xl mx-auto px-6 flex items-center justify-between">
+          <Link
+            href="/"
+            className="font-semibold text-[15px] tracking-tight text-[#1c1c1c] hover:text-[#112d6e] transition-colors"
+            onClick={() => setIsOpen(false)}
+            style={{ fontFamily: "var(--font-serif), Georgia, serif" }}
+          >
+            Churchtown Media
           </Link>
 
           {/* Desktop */}
@@ -62,10 +56,10 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`text-sm font-semibold transition-colors ${
+                className={`text-sm transition-colors ${
                   pathname === link.href
-                    ? "text-white"
-                    : "text-slate-400 hover:text-white"
+                    ? "text-[#112d6e] font-medium"
+                    : "text-[#6b6b6b] hover:text-[#1c1c1c]"
                 }`}
               >
                 {link.name}
@@ -77,26 +71,27 @@ export default function Navbar() {
           <button
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
-            className="md:hidden text-white p-2 -mr-2"
+            className="md:hidden text-[#3d3d3d] p-2 -mr-2"
           >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
         </div>
       </nav>
 
       {/* Mobile menu */}
       <div
-        className={`fixed inset-0 bg-slate-950 z-[90] md:hidden transition-all duration-300 ${
+        className={`fixed inset-0 bg-white z-[90] md:hidden transition-all duration-300 ${
           isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
         }`}
       >
-        <div className="flex flex-col items-start justify-start pt-28 px-8 gap-8">
+        <div className="flex flex-col items-start justify-start pt-24 px-8 gap-8">
           {links.map((link) => (
             <Link
               key={link.name}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className="text-3xl font-bold text-white hover:text-blue-400 transition-colors"
+              className="text-2xl text-[#1c1c1c] hover:text-[#112d6e] transition-colors"
+              style={{ fontFamily: "var(--font-serif), Georgia, serif" }}
             >
               {link.name}
             </Link>

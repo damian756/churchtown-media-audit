@@ -1,20 +1,29 @@
-import type { Metadata } from 'next';
-import ContactForm from './ContactForm';
+import type { Metadata } from "next";
+import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
-  title: 'Contact Us | Web Design & SEO | Southport & Blackpool | Churchtown Media',
-  description: 'Get in touch with Churchtown Media. Based in Churchtown, Southport, covering Southport and Blackpool. Available for a call, Zoom, or in-person meeting. No hard sell.',
+  title: "Contact | Churchtown Media",
+  description:
+    "Get in touch with Churchtown Media. Specialist digital advisory practice founded by Damian Roche. Tell us about the challenge. If it is the right fit, we will respond directly.",
   alternates: {
-    canonical: 'https://www.churchtownmedia.co.uk/contact',
+    canonical: "https://www.churchtownmedia.co.uk/contact",
   },
   openGraph: {
-    title: 'Contact Churchtown Media | Web Design & SEO | Southport & Blackpool',
-    description: 'Talk to us about your website or SEO project. Based in Southport, covering Southport and Blackpool. We can meet in person, jump on a call, or reply by email.',
-    url: 'https://www.churchtownmedia.co.uk/contact',
-    type: 'website',
-    siteName: 'Churchtown Media',
-    locale: 'en_GB',
-    images: [{ url: 'https://www.churchtownmedia.co.uk/opengraph-image.png', width: 1200, height: 630, alt: 'Contact Churchtown Media' }],
+    title: "Contact | Churchtown Media",
+    description:
+      "Tell us about your organisation and the challenge. We work with a small number of clients at any one time and we are selective about which engagements we take on.",
+    url: "https://www.churchtownmedia.co.uk/contact",
+    type: "website",
+    siteName: "Churchtown Media",
+    locale: "en_GB",
+    images: [
+      {
+        url: "https://www.churchtownmedia.co.uk/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Contact Churchtown Media",
+      },
+    ],
   },
 };
 

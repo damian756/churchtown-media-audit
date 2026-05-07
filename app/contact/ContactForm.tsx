@@ -1,266 +1,219 @@
 "use client";
 
 import React, { useState } from "react";
-import { Mail, MapPin, Phone, Send, CheckCircle2, ArrowRight } from "lucide-react";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 import Script from "next/script";
 import Link from "next/link";
 
 const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'ContactPage',
-  'mainEntity': {
-    '@type': 'LocalBusiness',
-    'name': 'Churchtown Media',
-    'image': 'https://www.churchtownmedia.co.uk/opengraph-image.png',
-    'telephone': '+441704635785',
-    'email': 'hello@churchtownmedia.co.uk',
-    'address': {
-      '@type': 'PostalAddress',
-      'streetAddress': 'Cambridge Avenue',
-      'addressLocality': 'Southport',
-      'addressRegion': 'Merseyside',
-      'postalCode': 'PR9 9SA',
-      'addressCountry': 'UK'
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  mainEntity: {
+    "@type": "ProfessionalService",
+    name: "Churchtown Media",
+    email: "hello@churchtownmedia.co.uk",
+    url: "https://www.churchtownmedia.co.uk",
+    founder: {
+      "@type": "Person",
+      name: "Damian Roche",
     },
-    'openingHoursSpecification': [{
-      '@type': 'OpeningHoursSpecification',
-      'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-      'opens': '09:00',
-      'closes': '17:30'
-    }]
-  }
+  },
 };
 
 export default function ContactForm() {
   const FORMSPREE_ID = "mpqjzyby";
-  const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
+  const [status, setStatus] = useState<"idle" | "submitting" | "success">("idle");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setStatus('submitting');
+    setStatus("submitting");
     const formData = new FormData(e.currentTarget);
     const data = Object.fromEntries(formData.entries());
 
     try {
       const response = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
       if (response.ok) {
-        setStatus('success');
+        setStatus("success");
       } else {
-        alert("Something went wrong. Please try again.");
-        setStatus('idle');
+        alert("Something went wrong. Please try again or email directly.");
+        setStatus("idle");
       }
     } catch {
-      alert("Error connecting to server.");
-      setStatus('idle');
+      alert("Error connecting to server. Please email hello@churchtownmedia.co.uk directly.");
+      setStatus("idle");
     }
   };
 
   return (
-    <main className="min-h-screen h-auto w-full bg-slate-950 pt-24 pb-24 overflow-x-hidden">
-
+    <>
       <Script
         id="contact-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <div className="max-w-6xl mx-auto px-6">
-
-        {/* HEADER */}
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 bg-slate-900 border border-slate-800 rounded-full px-4 py-1.5 mb-5 shadow-lg">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
-            </span>
-            <span className="text-xs font-bold text-slate-300 uppercase tracking-wide">
-              Open for new projects
-            </span>
-          </div>
-          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-4">
-            Get in touch
-          </h1>
-          <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-            Based in Churchtown, Southport. Happy to meet in person, jump on a call, or reply by email: whatever works for you. No hard sell, just an honest conversation about what you need.
+      {/* Header */}
+      <section className="pt-20 pb-20 px-6">
+        <div className="max-w-3xl mx-auto">
+          <p className="text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-8">
+            Contact
+          </p>
+          <h1 className="mb-6">Start a conversation.</h1>
+          <p className="text-[17px] leading-relaxed text-[#3d3d3d] max-w-lg">
+            We work with a small number of clients at any one time. Tell us about your organisation and the challenge. If it is the right fit, we will respond directly.
           </p>
         </div>
+      </section>
 
-        {/* MAIN GRID */}
-        <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-8 items-start">
+      <hr className="mx-auto max-w-3xl border-[#e0e0d8]" />
 
-          {/* LEFT COL: Contact Info & Map */}
-          <div className="flex flex-col gap-8">
+      {/* Main */}
+      <section className="py-20 px-6">
+        <div className="max-w-3xl mx-auto">
+          <div className="grid md:grid-cols-[1fr_320px] gap-16 items-start">
 
-            <div className="bg-slate-900/50 backdrop-blur-xl border border-slate-800 p-8 rounded-[2rem] shadow-xl">
-              <h2 className="text-2xl font-bold text-white mb-6">Contact Details</h2>
-              <div className="space-y-6">
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-blue-400 shrink-0">
-                    <Mail className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <p className="text-sm font-bold text-slate-400 uppercase tracking-wide mb-1">Email</p>
-                    <a href="mailto:hello@churchtownmedia.co.uk" className="text-base md:text-lg font-medium text-white hover:text-blue-400 transition-colors break-all">
-                      hello@churchtownmedia.co.uk
-                    </a>
-                  </div>
+            {/* Form */}
+            <div>
+              {status === "success" ? (
+                <div className="py-16 flex flex-col items-start">
+                  <CheckCircle2 className="w-8 h-8 text-[#2c4a52] mb-6" />
+                  <h2 className="mb-3" style={{ fontSize: "clamp(1.3rem, 1rem + 1vw, 1.75rem)" }}>
+                    Message received.
+                  </h2>
+                  <p className="text-[15px] text-[#3d3d3d] leading-relaxed mb-8 max-w-sm">
+                    We will review your message and respond directly if this is the right fit.
+                  </p>
+                  <button
+                    onClick={() => setStatus("idle")}
+                    className="text-sm text-[#2c4a52] hover:text-[#1c1c1c] transition-colors"
+                  >
+                    Send another message
+                  </button>
                 </div>
+              ) : (
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="space-y-1.5">
+                    <label className="text-[12px] font-medium text-[#6b6b6b] uppercase tracking-wider">
+                      Name
+                    </label>
+                    <input
+                      name="name"
+                      type="text"
+                      required
+                      placeholder="Jane Smith"
+                      className="input"
+                    />
+                  </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-indigo-400 shrink-0">
-                    <Phone className="w-6 h-6" />
+                  <div className="space-y-1.5">
+                    <label className="text-[12px] font-medium text-[#6b6b6b] uppercase tracking-wider">
+                      Email
+                    </label>
+                    <input
+                      name="email"
+                      type="email"
+                      required
+                      placeholder="jane@yourorganisation.co.uk"
+                      className="input"
+                    />
                   </div>
-                  <div>
-                    <p className="text-sm font-bold text-slate-400 uppercase tracking-wide mb-1">Phone</p>
-                    <a href="tel:01704635785" className="text-lg font-medium text-white hover:text-blue-400 transition-colors">
-                      01704 635785
-                    </a>
-                    <p className="text-xs text-slate-400 mt-1">Mon–Fri, 9am – 5:30pm</p>
-                  </div>
-                </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-emerald-400 shrink-0">
-                    <MapPin className="w-6 h-6" />
+                  <div className="space-y-1.5">
+                    <label className="text-[12px] font-medium text-[#6b6b6b] uppercase tracking-wider">
+                      Service area
+                    </label>
+                    <select name="service" className="input">
+                      <option>Technical SEO & Digital Architecture</option>
+                      <option>Headless Development Consultancy</option>
+                      <option>Digital Footprint Intelligence</option>
+                      <option>Not sure yet</option>
+                    </select>
                   </div>
-                  <div>
-                    <p className="text-sm font-bold text-slate-400 uppercase tracking-wide mb-1">Based in</p>
-                    <p className="text-lg font-medium text-white">
-                      Cambridge Avenue<br />
-                      Southport, PR9 9SA
-                    </p>
-                    <p className="text-xs text-slate-400 mt-1">In-person meetings welcome</p>
-                  </div>
-                </div>
 
-              </div>
+                  <div className="space-y-1.5">
+                    <label className="text-[12px] font-medium text-[#6b6b6b] uppercase tracking-wider">
+                      The challenge
+                    </label>
+                    <textarea
+                      name="message"
+                      required
+                      rows={6}
+                      placeholder="Tell us about your organisation and the problem you are trying to solve."
+                      className="input resize-none"
+                    />
+                  </div>
+
+                  <button
+                    type="submit"
+                    disabled={status === "submitting"}
+                    className="inline-flex items-center gap-1.5 text-sm text-[#2c4a52] hover:text-[#1c1c1c] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    {status === "submitting" ? "Sending..." : <>Send message <ArrowRight size={13} /></>}
+                  </button>
+                </form>
+              )}
             </div>
 
-            <div className="bg-slate-900/50 backdrop-blur-xl border border-slate-800 p-2 rounded-[2rem] shadow-xl h-80 overflow-hidden relative group">
-              <iframe
-                title="Churchtown Media HQ Location Map"
-                src="https://maps.google.com/maps?q=Cambridge%20Avenue%20Southport&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                width="100%"
-                height="100%"
-                style={{ border: 0, filter: 'grayscale(100%) opacity(0.8)' }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="rounded-lg group-hover:filter-none transition-all duration-500"
-              ></iframe>
-              <div className="absolute bottom-6 left-6 bg-slate-800/90 backdrop-blur px-4 py-2 rounded-lg text-xs font-bold text-white shadow-lg pointer-events-none border border-slate-700">
-                📍 Based in Southport, Serving the UK
-              </div>
-            </div>
-
-          </div>
-
-          {/* RIGHT COL: Form */}
-          <div className="bg-slate-900/50 backdrop-blur-xl border border-slate-800 p-6 md:p-8 rounded-xl shadow-2xl relative">
-
-            {status === 'success' ? (
-              <div className="h-full min-h-[320px] flex flex-col items-center justify-center text-center animate-in zoom-in duration-300">
-                <div className="w-16 h-16 bg-emerald-900/50 border border-emerald-800 rounded-full flex items-center justify-center text-emerald-400 mb-4">
-                  <CheckCircle2 className="w-8 h-8" />
+            {/* Info */}
+            <div className="space-y-8">
+              <div className="bg-[#f5f5f0] border border-[#e0e0d8] p-6 space-y-5">
+                <div>
+                  <p className="text-[10px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-1">
+                    Email
+                  </p>
+                  <a
+                    href="mailto:hello@churchtownmedia.co.uk"
+                    className="text-[14px] text-[#1c1c1c] hover:text-[#112d6e] transition-colors"
+                  >
+                    hello@churchtownmedia.co.uk
+                  </a>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-2">Message Received</h3>
-                <p className="text-slate-400 mb-6 max-w-xs mx-auto text-sm">
-                  We will review your project and get back to you within 24 hours.
+                <div>
+                  <p className="text-[10px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-1">
+                    LinkedIn
+                  </p>
+                  <a
+                    href="https://www.linkedin.com/in/damian-roche-7ba8293a5/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[14px] text-[#1c1c1c] hover:text-[#112d6e] transition-colors"
+                  >
+                    Damian Roche
+                  </a>
+                </div>
+                <div>
+                  <p className="text-[10px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-1">
+                    Based
+                  </p>
+                  <p className="text-[14px] text-[#3d3d3d]">Churchtown, Southport</p>
+                </div>
+              </div>
+
+              <div className="space-y-3 text-[13px] leading-relaxed text-[#6b6b6b]">
+                <p>We do not take on every enquiry.</p>
+                <p>
+                  If the challenge is a good fit, you will hear back directly. If it is not, we will say so honestly.
                 </p>
-                <button onClick={() => setStatus('idle')} className="text-blue-400 font-bold hover:underline">
-                  Send another message
-                </button>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="space-y-2">
-                  <label className="text-sm font-bold text-white ml-1">Your Name</label>
-                  <input
-                    name="name" type="text" required placeholder="Jane Smith"
-                    className="w-full h-14 px-4 rounded-xl bg-slate-800 border border-slate-700 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 outline-none transition-all text-white font-medium placeholder:text-slate-500"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-sm font-bold text-white ml-1">Email Address</label>
-                  <input
-                    name="email" type="email" required placeholder="jane@yourbusiness.co.uk"
-                    className="w-full h-14 px-4 rounded-xl bg-slate-800 border border-slate-700 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 outline-none transition-all text-white font-medium placeholder:text-slate-500"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-sm font-bold text-white ml-1">What do you need?</label>
-                  <select name="service" className="w-full h-14 px-4 rounded-xl bg-slate-800 border border-slate-700 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 outline-none transition-all text-white font-medium">
-                    <option>New Website</option>
-                    <option>Small Business Website (from £1,500)</option>
-                    <option>SEO Services</option>
-                    <option>Website Rebuild / WordPress Migration</option>
-                    <option>SEO & Performance Audit</option>
-                    <option>E-Commerce</option>
-                    <option>Not sure: just want a chat</option>
-                  </select>
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-sm font-bold text-white ml-1">Tell us about the project</label>
-                  <textarea
-                    name="message" required rows={4} placeholder="What are you working on? What's the problem you're trying to solve?"
-                    className="w-full p-4 rounded-xl bg-slate-800 border border-slate-700 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 outline-none transition-all text-white font-medium placeholder:text-slate-500 resize-none"
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  disabled={status === 'submitting'}
-                  className="w-full h-14 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-500 transition-all shadow-lg flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                  {status === 'submitting' ? (
-                    <>Sending...</>
-                  ) : (
-                    <><Send className="w-4 h-4" /> Send Message</>
-                  )}
-                </button>
-
-                <p className="text-center text-xs text-slate-500">
-                  No commitment required. We&apos;ll send a clear quote: you decide.
+                <p>
+                  For service detail before getting in touch:{" "}
+                  <Link href="/services" className="text-[#2c4a52] hover:text-[#1c1c1c] transition-colors">
+                    Services
+                  </Link>{" "}
+                  or{" "}
+                  <Link href="/case-studies" className="text-[#2c4a52] hover:text-[#1c1c1c] transition-colors">
+                    Case Studies
+                  </Link>
+                  .
                 </p>
-              </form>
-            )}
-          </div>
-
-        </div>
-
-        {/* PRICING GUIDE */}
-        <div className="mt-16">
-          <div className="bg-slate-900/50 backdrop-blur border border-slate-800 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-white mb-6 text-center">Pricing at a Glance</h3>
-            <div className="grid md:grid-cols-3 gap-6 text-center mb-6">
-              <div>
-                <div className="text-sm text-slate-400 mb-2">Small Business Sites</div>
-                <div className="text-2xl font-black text-white">From £1,500</div>
-              </div>
-              <div>
-                <div className="text-sm text-slate-400 mb-2">Full Web Design</div>
-                <div className="text-2xl font-black text-white">From £2,500</div>
-              </div>
-              <div>
-                <div className="text-sm text-slate-400 mb-2">SEO Services</div>
-                <div className="text-2xl font-black text-white">From £500/mo</div>
               </div>
             </div>
-            <p className="text-center text-slate-400 text-sm">
-              <Link href="/services/web-design" className="text-blue-400 hover:text-blue-300 underline font-semibold">Full pricing details</Link> · Payment plans available · Fixed quotes, no surprises
-            </p>
           </div>
         </div>
-
-      </div>
-    </main>
+      </section>
+    </>
   );
 }
