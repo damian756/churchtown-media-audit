@@ -6574,7 +6574,123 @@ export const posts: BlogPost[] = [
 
       <p>If you run a hospitality or leisure business in Blackpool and want a straight assessment of what's achievable before the summer, <a href="/contact" class="text-blue-400 hover:text-blue-300 underline">get in touch</a>. I'll look at your current visibility and tell you what's realistic, without the sales pitch.</p>
 
-      <p><em>Related: <a href="/blog/blackpool-regeneration-web-design-seo-opportunity" class="text-blue-400 hover:text-blue-300 underline">Blackpool's £300m Regeneration — Why Businesses Need to Act Now</a></em></p>
+      <p><em>Related: <a href="/blog/blackpool-regeneration-web-design-seo-opportunity" class="text-blue-400 hover:text-blue-300 underline">Blackpool's £300m Regeneration: Why Businesses Need to Act Now</a></em></p>
+    `
+  },
+
+  {
+    slug: "the-open-2026-southport-business-digital-readiness",
+    title: "The Open 2026 Starts in Ten Weeks: Is Your Southport Business Digitally Ready?",
+    date: "May 7, 2026",
+    author: "Damian Roche",
+    category: "Local SEO",
+    image: "/images/blog-churchtown-media-open-seo.jpg",
+    excerpt: "12-19 July at Royal Birkdale. Global television audience. Hundreds of thousands of visitors. The search volume for Southport businesses is already building. Here's the practical checklist for getting visible before it peaks.",
+    content: `
+      <p>The Open Championship 2026 is at Royal Birkdale from 12 to 19 July. That's ten weeks away. The search traffic for Southport accommodation, restaurants and things to do during Open week is already building and will accelerate significantly from mid-June onwards as people finalise their plans.</p>
+
+      <p>If you run a hospitality, food, retail or experience business in Southport, this is the single biggest commercial event your town will see for the next four years. The question is whether your business is visible when the searches happen.</p>
+
+      <hr />
+
+      <h2>The Search Timeline</h2>
+
+      <p>I've tracked the search volumes around previous Opens. The pattern is consistent. Searches for accommodation and restaurants start building 10-12 weeks before the event. The sharpest increases come from 6 weeks out as people book last-minute stays. Championship week itself sees enormous search volume for things like "restaurants near Royal Birkdale," "parking Open Championship," and "where to eat Southport."</p>
+
+      <p>Content that isn't indexed and building authority by mid-June won't be in competitive position for the championship week searches. Google's crawl schedule and ranking timelines mean that work done in May and June is what you're competing with from July onwards. Work done in July is too late.</p>
+
+      <hr />
+
+      <h2>The Practical Checklist</h2>
+
+      <p><strong>Google Business Profile.</strong> Is it fully complete? Photos updated in 2026, not 2023? Category set correctly? Q&A pre-populated with the questions Open visitors will actually ask ("are you open during Open week," "do you have parking," "how far from Royal Birkdale")? If you haven't updated your GBP in the last three months, do it now.</p>
+
+      <p><strong>Open-specific content on your website.</strong> A page or blog post that explicitly addresses The Open 2026 and your business. "Staying near Royal Birkdale," "restaurants open during Open week," "golf week accommodation in Southport." These are real searches. If you don't have content that answers them, a competitor does.</p>
+
+      <p><strong>Core Web Vitals.</strong> Run your website through PageSpeed Insights. If your mobile score is below 60, you are being outranked by competitors with faster sites on mobile searches. Fix the biggest issues now. Oversized images and render-blocking scripts are the usual culprits on small business sites.</p>
+
+      <p><strong>Booking and availability clear.</strong> If you have accommodation availability for Open week, it needs to be obvious on your website and GBP. Searchers are making quick decisions. A site that requires three clicks to determine whether rooms are available will lose to one that shows it immediately.</p>
+
+      <p><strong>Schema markup.</strong> Hotel, restaurant and local business schema increases the likelihood of rich snippets and local pack visibility. If your site doesn't have structured data, this is a straightforward implementation that can be done in a day.</p>
+
+      <hr />
+
+      <h2>What Most Southport Businesses Are Missing</h2>
+
+      <p>I've audited a significant number of Southport business websites in the last six months. The patterns are consistent. Slow mobile performance. GBP profiles that haven't been updated since 2024. No content targeting Open-specific searches. Schema markup absent.</p>
+
+      <p>This is not criticism. It's a realistic assessment of where most small businesses are without a dedicated digital resource. The businesses that will capture disproportionate Open traffic are the ones that fix these issues in the next six weeks rather than in July when it's too late.</p>
+
+      <p>The good news: most of these issues are fixable in days rather than weeks. The GBP update is a morning's work. A properly written Open-specific page is a day's work. A site speed audit and the most significant fixes are 2-3 days. None of this is complicated. It's just work that has to be done before the traffic arrives.</p>
+
+      <hr />
+
+      <h2>What We're Offering</h2>
+
+      <p>Churchtown Media is offering a straightforward Open readiness audit for Southport businesses in May and June 2026. We look at your current search visibility, GBP profile, site performance and content against the specific search terms that will drive traffic during championship week. We give you a clear priority list and can implement the fixes if you need us to.</p>
+
+      <p>No jargon. No retainer pitch. Just a practical assessment of where you are and what to do about it before July.</p>
+
+      <p>If you want to know whether your business is in a position to benefit from The Open's search traffic, <a href="/contact" class="text-blue-400 hover:text-blue-300 underline">get in touch</a>. We'll give you an honest answer.</p>
+
+      <p><em>Related: <a href="/blog/where-to-watch-the-open-2026-southport-pubs" class="text-blue-400 hover:text-blue-300 underline">Where to Watch The Open 2026 in Southport</a></em></p>
+    `
+  },
+
+  {
+    slug: "google-may-2026-core-update-north-west-businesses",
+    title: "Google's May 2026 Core Update: What North West Businesses Need to Know",
+    date: "May 7, 2026",
+    author: "Damian Roche",
+    category: "SEO",
+    image: "/images/blog-churchtown-media-core-update.jpg",
+    excerpt: "Google's May 2026 core update is rolling out now. Some sites are seeing significant ranking changes. Here's what the update targets, what typically recovers and what doesn't, and what to do if your traffic has dropped.",
+    content: `
+      <p>Google confirmed the May 2026 core update began rolling out in the first week of May. Core updates typically take 2-3 weeks to fully deploy. Ranking volatility during this period is normal. Sites that see significant drops during a core update rollout shouldn't immediately conclude they've been penalised. Some of that volatility resolves as the update completes.</p>
+
+      <p>That said, core updates do cause lasting ranking changes for sites with genuine quality issues. Understanding what the update targets is useful context for any business assessing what's happening to their search visibility right now.</p>
+
+      <hr />
+
+      <h2>What Core Updates Actually Do</h2>
+
+      <p>Google's core updates are adjustments to the core ranking algorithm. They're not targeted at specific tactics or penalties in the way that, say, a manual action is. They recalibrate how the algorithm evaluates quality, relevance and authority across all searches.</p>
+
+      <p>The practical effect is that pages that were previously ranked highly may drop if the updated algorithm assesses them as less useful or authoritative than their competitors. Pages that were previously underranked relative to their quality may gain. The direction of change tells you something about where your site sits on Google's quality assessment relative to competitors.</p>
+
+      <p>For most North West businesses, the questions to ask are simple: Is my content genuinely useful to someone searching for what I offer? Does it answer questions better than my competitors? Is my site technically clean and fast? Is my backlink profile legitimate? If the answer to all four is yes, core updates tend not to be a significant problem.</p>
+
+      <hr />
+
+      <h2>What This Update Appears to Target</h2>
+
+      <p>Based on early analysis from the SEO community, the May 2026 update appears to continue the directional focus Google has maintained since the September 2023 helpful content update: rewarding content that demonstrates genuine expertise, experience and usefulness over content produced primarily to rank.</p>
+
+      <p>Sites that appear to be losing visibility in early data include: thin local pages with minimal unique content, directory-style aggregators with little editorial value, and sites that rebuilt content using AI generation without substantive editorial review. Sites gaining include: independent publishers with genuine depth on specific topics, local authority sites with real geographic expertise, and e-commerce sites with useful product information beyond manufacturer specs.</p>
+
+      <p>For North West businesses, the specific risk area is local landing pages. A Blackpool hotel with a single paragraph about "being conveniently located near Blackpool Tower" is not providing content that genuinely helps someone decide where to stay. A hotel with a page that addresses parking, accessibility, what's nearby by walking distance, seasonal considerations and honest room descriptions is providing something actually useful.</p>
+
+      <hr />
+
+      <h2>If Your Traffic Has Dropped</h2>
+
+      <p>Check your Google Search Console data for the specific pages that have lost impressions or position. Core updates tend to affect whole sections of a site rather than individual pages, which tells you something about the nature of the issue.</p>
+
+      <p>If it's a single page or a small set of pages, the issue is more likely to be local to those pages. Thin content, keyword stuffing, or a specific technical problem are the usual candidates.</p>
+
+      <p>If it's site-wide, you're looking at a broader quality assessment. The fix is genuine content improvement over time, not technical tricks. Core update recoveries typically take one to two full update cycles to confirm. Google has published guidance on this: don't make hasty changes immediately after a core update. Assess, plan and implement over months, then assess again at the next core update.</p>
+
+      <hr />
+
+      <h2>The Practical Southport and Blackpool Context</h2>
+
+      <p>For businesses in Southport and Blackpool specifically, the timing of this update matters. The Open 2026 search traffic is building. Blackpool Illuminations searches will build from July. If your site has been affected by this update and your visibility drops during peak search season, you're losing revenue you can't recover from that specific window.</p>
+
+      <p>The priority is to assess your position now, identify genuine quality issues rather than chasing algorithm speculation, and improve the pages that are underperforming on quality grounds. The businesses that do this in May and June will be better positioned for July and August than those who wait to see how the update settles.</p>
+
+      <p>If you want a straightforward assessment of your site's current position relative to this update and what to do about it, <a href="/contact" class="text-blue-400 hover:text-blue-300 underline">get in touch</a>. We'll look at your Search Console data and give you an honest read of what's happening.</p>
+
+      <p><em>Related: <a href="/blog/the-open-2026-southport-business-digital-readiness" class="text-blue-400 hover:text-blue-300 underline">The Open 2026: Is Your Southport Business Digitally Ready?</a></em></p>
     `
   }
 ];
