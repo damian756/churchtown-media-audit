@@ -6,12 +6,12 @@ import Reveal from "../components/Reveal";
 export const metadata: Metadata = {
   title: "Case Studies | Churchtown Media",
   description:
-    "SIBA Digital and the Sefton Coast Network. Two bodies of work demonstrating Next.js architecture, structured data strategy, OSINT methodology, and publishing at scale.",
+    "SIBA Digital and the Sefton Coast Network. Two bodies of work demonstrating Next.js architecture, structured data strategy, OSINT methodology, and four-site publishing at scale.",
   alternates: { canonical: "https://www.churchtownmedia.co.uk/case-studies" },
   openGraph: {
     title: "Case Studies | Churchtown Media",
     description:
-      "SIBA Digital: nine published reports, formal regulatory complaints, solicitor contact. Sefton Coast Network: five editorial sites, built and operated. Both live. Both verifiable.",
+      "SIBA Digital: nine published reports, formal regulatory complaints, solicitor contact. Sefton Coast Network: four editorial sites, built and operated. Both live. Both verifiable.",
     url: "https://www.churchtownmedia.co.uk/case-studies",
     type: "website",
     siteName: "Churchtown Media",
@@ -135,7 +135,7 @@ export default function CaseStudiesPage() {
             </div>
             <h2 className="mb-3">Sefton Coast Network</h2>
             <p className="text-[17px] leading-relaxed text-[#3d3d3d] mb-10 max-w-xl">
-              Five editorial sites built and operated simultaneously on the same Next.js architecture. All live, all ranking, all owned.
+              Four editorial sites built and operated simultaneously on the same Next.js architecture. All live, all ranking, all owned.
             </p>
           </Reveal>
 
@@ -188,7 +188,7 @@ export default function CaseStudiesPage() {
                 What this demonstrates
               </p>
               <p>
-                Five distinct editorial sites, cross-linked contextually, each with its own audience, SEO strategy, and technical requirements. Built on the same foundation and maintained by one person alongside client work. This is what properly engineered content infrastructure looks like when it is built to compound rather than to be rebuilt every two years.
+                Four distinct editorial sites, cross-linked contextually, each with its own audience, SEO strategy, and technical requirements. Built on the same foundation and maintained by one person alongside client work. This is what properly engineered content infrastructure looks like when it is built to compound rather than to be rebuilt every two years.
               </p>
               <p className="text-[#1c1c1c] font-medium">
                 The network is the proof of concept for everything Churchtown Media builds for clients.

@@ -82,9 +82,9 @@ const PROOF = [
   {
     label: "Publishing network",
     name: "Sefton Coast Network",
-    stat: "5",
+    stat: "4",
     statLabel: "Sites operated",
-    desc: "Five editorial sites built and operated simultaneously on the same Next.js architecture. SouthportGuide, FormbyGuide, SeftonLinks, SeftonCoastWildlife. All live. All ranking. All owned.",
+    desc: "Four editorial sites built and operated simultaneously on the same Next.js architecture. SouthportGuide, FormbyGuide, SeftonLinks, SeftonCoastWildlife. All live. All ranking. All owned.",
     href: "/case-studies#network",
     external: "https://www.southportguide.co.uk",
   },
