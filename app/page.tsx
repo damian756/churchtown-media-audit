@@ -50,20 +50,17 @@ const SERVICES = [
   {
     number: "01",
     title: "Technical SEO & Digital Architecture",
-    desc: "For organisations with web presence that is underperforming or structurally compromised. Audits, crawl architecture, structured data strategy, and a clear roadmap.",
-    buyer: "Marketing directors and CTOs who need a second opinion they can trust.",
+    desc: "Structural audit and prioritised roadmap for web presence that is underperforming in proportion to its investment.",
   },
   {
     number: "02",
     title: "Headless Development Consultancy",
-    desc: "For organisations that have been told they need a rebuild and want someone who understands both the technical and commercial layer before they commission an agency.",
-    buyer: "The person who has had three agency quotes and does not trust any of them.",
+    desc: "Architecture decision-making before any agency is commissioned. The scoping document they need to price accurately.",
   },
   {
     number: "03",
     title: "Digital Footprint Intelligence",
-    desc: "Mapping an organisation's public digital exposure before a significant event. The SIBA methodology applied commercially. Written report. Defensible methodology.",
-    buyer: "Professional services, legal, and communications firms handling sensitive mandates.",
+    desc: "Systematic mapping of an organisation's public digital exposure before a significant event. The SIBA methodology, applied commercially.",
   },
 ];
 
@@ -73,7 +70,7 @@ const PROOF = [
     name: "SIBA Digital",
     stat: "9",
     statLabel: "Reports published",
-    desc: "A public interest investigation platform built using Next.js, structured data and OSINT methodology. Nine published reports. Coverage in BBC News, Private Eye and national press. Built from a phone over Easter weekend.",
+    desc: "A public interest investigation platform built using Next.js, structured data and OSINT methodology. Nine published reports. Formal regulatory complaints citing SIBA findings. Solicitors acting for named parties made contact.",
     href: "/case-studies#siba",
     external: "https://www.siba.digital",
   },
@@ -100,21 +97,13 @@ export default function Home() {
       <section className="pt-20 pb-28 px-6">
         <div className="max-w-3xl mx-auto">
           <Reveal>
-            <p className="text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-8">
-              Churchtown Media
-            </p>
-          </Reveal>
-          <Reveal delay={100}>
             <h1 className="mb-10">
               Digital strategy, technical architecture and intelligence for organisations that cannot afford to get it wrong.
             </h1>
           </Reveal>
-          <Reveal delay={200}>
-            <p className="text-[17px] leading-relaxed text-[#3d3d3d] mb-4 max-w-xl">
-              Churchtown Media is a specialist advisory practice. We work with a small number of clients at any one time.
-            </p>
-            <p className="text-[15px] leading-relaxed text-[#6b6b6b] mb-10 max-w-xl">
-              Founded by Damian Roche. Ex-British Army. Twenty years building for the web. Creator of SIBA Digital, the public interest investigation platform covered by BBC News and Private Eye.
+          <Reveal delay={100}>
+            <p className="text-[17px] leading-relaxed text-[#3d3d3d] mb-10 max-w-xl">
+              A specialist advisory practice. Founded by Damian Roche. Ex-British Army. Twenty years building for the web. Creator of SIBA Digital.
             </p>
           </Reveal>
           <Reveal delay={300}>
@@ -159,8 +148,7 @@ export default function Home() {
                     <h3 className="text-[15px] font-medium text-[#1c1c1c] mb-2" style={{ fontFamily: "inherit", fontSize: "inherit" }}>
                       {s.title}
                     </h3>
-                    <p className="text-[15px] leading-relaxed text-[#3d3d3d] mb-3">{s.desc}</p>
-                    <p className="text-[13px] text-[#6b6b6b] italic">{s.buyer}</p>
+                    <p className="text-[15px] leading-relaxed text-[#3d3d3d]">{s.desc}</p>
                   </div>
                 </div>
               </Reveal>
@@ -189,9 +177,12 @@ export default function Home() {
             <p className="text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-4">
               The work
             </p>
-            <h2 className="mb-12">
-              Both properties are live, owned, and verifiable. No anonymised results.
+            <h2 className="mb-4">
+              Both properties are live, owned, and verifiable.
             </h2>
+            <p className="text-[15px] leading-relaxed text-[#6b6b6b] mb-12 max-w-xl">
+              No anonymised results. No projected figures. Everything below can be examined directly.
+            </p>
           </Reveal>
 
           <div className="space-y-4">
@@ -233,6 +224,14 @@ export default function Home() {
               </Reveal>
             ))}
           </div>
+
+          <Reveal>
+            <div className="mt-10 pt-8 border-t border-[#e0e0d8]">
+              <p className="text-[13px] leading-relaxed text-[#6b6b6b] max-w-xl">
+                A single SIBA analysis with no paid promotion reached professionals from the House of Commons, MHCLG, Transport for London, and Savills. Over 55% of the audience held senior, director, or executive positions.
+              </p>
+            </div>
+          </Reveal>
         </div>
       </section>
 

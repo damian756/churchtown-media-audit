@@ -150,7 +150,7 @@ export default function ContactForm() {
                   <button
                     type="submit"
                     disabled={status === "submitting"}
-                    className="inline-flex items-center gap-1.5 text-sm text-[#2c4a52] hover:text-[#1c1c1c] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="inline-flex items-center gap-2 bg-[#112d6e] text-white text-sm px-6 py-3 hover:bg-[#0d2358] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {status === "submitting" ? "Sending..." : <>Send message <ArrowRight size={13} /></>}
                   </button>

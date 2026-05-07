@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About | Damian Roche | Churchtown Media",
     description:
-      "Ex-British Army. Twenty years building for the web. Creator of SIBA Digital, covered by BBC News and Private Eye. Founder of Churchtown Media.",
+    "Ex-British Army. Twenty years in web development. Founder of Churchtown Media and creator of SIBA Digital, a public interest investigation platform operating across the UK.",
     url: "https://www.churchtownmedia.co.uk/about",
     type: "website",
     siteName: "Churchtown Media",
@@ -137,7 +137,7 @@ export default function AboutPage() {
                   SIBA Digital is a public interest investigation platform I built and operate. It uses structured data, OSINT methodology and Next.js architecture to publish accountability investigations from public records.
                 </p>
                 <p>
-                  The first investigation series produced nine published reports. Coverage followed in BBC News, Private Eye, and national press. The investigation was cited in formal complaints to regulatory bodies.
+                  The first investigation series produced nine published reports. Formal complaints to regulatory bodies cited the findings. Solicitors acting for named parties made contact.
                 </p>
                 <p>
                   The significance for Churchtown Media is this: SIBA demonstrates the intersection of technical architecture, structured data, investigative methodology and publication strategy simultaneously. No agency in the north-west has a comparable credential.
@@ -168,7 +168,7 @@ export default function AboutPage() {
               <div className="bg-white border border-[#e0e0d8] divide-y divide-[#e0e0d8] min-w-[200px]">
                 {[
                   { label: "Reports published", value: "9" },
-                  { label: "Coverage", value: "BBC News, Private Eye" },
+                  { label: "Regulatory impact", value: "Formal complaints. Solicitor contact." },
                   { label: "Technology", value: "Next.js, OSINT" },
                   { label: "Built in", value: "One Easter weekend" },
                 ].map((item) => (

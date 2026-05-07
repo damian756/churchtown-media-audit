@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Case Studies | Churchtown Media",
     description:
-      "SIBA Digital: BBC News, Private Eye, nine reports. Sefton Coast Network: five editorial sites, built and operated. Both live. Both verifiable.",
+      "SIBA Digital: nine published reports, formal regulatory complaints, solicitor contact. Sefton Coast Network: five editorial sites, built and operated. Both live. Both verifiable.",
     url: "https://www.churchtownmedia.co.uk/case-studies",
     type: "website",
     siteName: "Churchtown Media",
@@ -55,7 +55,7 @@ export default function CaseStudiesPage() {
             </div>
             <h2 className="mb-3">SIBA Digital</h2>
             <p className="text-[17px] leading-relaxed text-[#3d3d3d] mb-10 max-w-xl">
-              A public interest investigation platform built using Next.js, structured data and OSINT methodology. Nine reports. BBC News, Private Eye, national press.
+              A public interest investigation platform built using Next.js, structured data and OSINT methodology. Nine published reports. Formal regulatory complaints. Solicitor contact from named parties.
             </p>
           </Reveal>
 
@@ -63,7 +63,7 @@ export default function CaseStudiesPage() {
             <div className="bg-white border border-[#e0e0d8] divide-x divide-[#e0e0d8] grid grid-cols-3 mb-10">
               {[
                 { value: "9", label: "Reports" },
-                { value: "3+", label: "Press outlets" },
+                { value: "55%+", label: "Senior audience" },
                 { value: "1", label: "Easter weekend" },
               ].map((s) => (
                 <div key={s.label} className="px-6 py-6 text-center">
@@ -91,7 +91,7 @@ export default function CaseStudiesPage() {
               <div>
                 <p className="text-[10px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-2">The result</p>
                 <p>
-                  BBC News coverage. Private Eye. National press. Formal complaints to regulatory bodies citing the SIBA reports. The investigation reached the audiences it was designed to reach because the platform was built to be credible, indexed, and navigable by journalists who needed to verify quickly.
+                  Formal complaints to regulatory bodies citing the SIBA reports. Solicitors acting for named parties made contact. A single published analysis reached professionals from the House of Commons, MHCLG, Transport for London, and Savills, with over 55% of the audience holding senior, director, or executive positions. The platform was built to be credible, indexed, and navigable. It is.
                 </p>
                 <p className="mt-3 text-[#1c1c1c] font-medium">
                   The commercial application: the same methodology applied to an organisation&apos;s own public digital footprint. That is the Digital Footprint Intelligence service.
