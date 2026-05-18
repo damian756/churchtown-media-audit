@@ -43,7 +43,7 @@ export default function Navbar() {
         <div className="max-w-3xl mx-auto px-6 flex items-center justify-between">
           <Link
             href="/"
-            className="font-semibold text-[18px] tracking-tight text-[#1c1c1c] hover:text-[#112d6e] transition-colors"
+            className="font-semibold text-[12px] uppercase tracking-widest text-[#1c1c1c] hover:text-[#112d6e] transition-colors"
             onClick={() => setIsOpen(false)}
             style={{ fontFamily: "var(--font-serif), Georgia, serif" }}
           >
