@@ -76,6 +76,16 @@ export default function Footer() {
                     Sefton Coast Network <ExternalLink size={11} />
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="https://www.thesandgrounder.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 hover:text-[#112d6e] transition-colors"
+                  >
+                    The Sandgrounder <ExternalLink size={11} />
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

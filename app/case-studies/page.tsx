@@ -200,6 +200,39 @@ export default function CaseStudiesPage() {
 
       <hr className="mx-auto max-w-3xl border-[#e0e0d8]" />
 
+      {/* The Sandgrounder */}
+      <section id="sandgrounder" className="py-28 px-6 bg-[#f5f5f0] scroll-mt-20">
+        <div className="max-w-3xl mx-auto">
+          <Reveal>
+            <p className="text-xs uppercase tracking-widest text-[#6b6b6b] mb-4">Independent publication</p>
+            <h2 className="mb-3">The Sandgrounder</h2>
+            <p className="text-[15px] text-[#3d3d3d] mb-8 max-w-xl leading-relaxed">
+              A standalone editorial publication covering Southport. Independent opinion, satire, and reporting for a general audience. Companion to SIBA Digital&apos;s investigation work, built on the same Next.js architecture.
+            </p>
+            <div className="space-y-4 text-[15px] text-[#3d3d3d] leading-relaxed max-w-xl">
+              <p>
+                Where SIBA Digital publishes structured reports for a professional and regulatory audience, The Sandgrounder publishes the same underlying material in a form that Southport residents can read, share, and act on. Satire, opinion, and factual reporting. All sourced. All legally reviewed.
+              </p>
+              <p>
+                Built and launched in a single session. Full SEO architecture, share buttons, newsletter integration, contact form, sitemap, legal and privacy pages. Live from day one.
+              </p>
+            </div>
+            <div className="mt-8">
+              <a
+                href="https://www.thesandgrounder.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-sm text-[#2c4a52] transition-colors hover:text-[#1c1c1c]"
+              >
+                Visit The Sandgrounder <ExternalLink size={13} />
+              </a>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      <hr className="mx-auto max-w-3xl border-[#e0e0d8]" />
+
       {/* CTA */}
       <section className="py-28 px-6">
         <div className="max-w-3xl mx-auto">
