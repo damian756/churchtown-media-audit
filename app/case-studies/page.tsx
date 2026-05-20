@@ -19,6 +19,31 @@ export const metadata: Metadata = {
   },
 };
 
+const sibaStats = [
+  { value: "9", label: "Reports published" },
+  { value: "16", label: "FOI requests filed" },
+  { value: "55%+", label: "Senior audience" },
+];
+
+const networkStats = [
+  { value: "4", label: "Sites operated" },
+  { value: "999+", label: "Venues indexed" },
+  { value: "257", label: "Wildlife species" },
+];
+
+const sandgrounderStats = [
+  { value: "7", label: "Pieces published" },
+  { value: "3", label: "Content categories" },
+  { value: "1", label: "Day to launch" },
+];
+
+const sibaMilestones = [
+  { date: "Apr 2026", event: "River Law Limited sent letter before action. SIBA filed SRA report 30 April 2026." },
+  { date: "May 2026", event: "Formal complaint CL-006 filed with Sefton Council Chief Executive. Acknowledged within 30 minutes." },
+  { date: "May 2026", event: "Separate formal complaint filed with the Council Monitoring Officer." },
+  { date: "May 2026", event: "SP-14 response issued by Information Governance Team, not by the subject officer. First of 16 FOI responses not signed by Mark Catherall." },
+];
+
 export default function CaseStudiesPage() {
   return (
     <>
@@ -50,22 +75,18 @@ export default function CaseStudiesPage() {
             <div className="flex items-center gap-3 mb-8">
               <span className="text-[#a0a0a0] font-mono text-xs">01</span>
               <span className="text-[10px] font-medium uppercase tracking-widest text-[#2c4a52]">
-                Primary case study
+                Investigation platform
               </span>
             </div>
             <h2 className="mb-3">SIBA Digital</h2>
             <p className="text-[17px] leading-relaxed text-[#3d3d3d] mb-10 max-w-xl">
-              A public interest investigation platform built using Next.js, structured data and OSINT methodology. Nine published reports. Formal regulatory complaints. Solicitor contact from named parties.
+              A public interest investigation platform covering governance failures in Southport and the wider BID sector. Built on Next.js with structured data throughout. Every claim sourced to a primary public record.
             </p>
           </Reveal>
 
           <Reveal delay={100}>
             <div className="bg-white border border-[#e0e0d8] divide-x divide-[#e0e0d8] grid grid-cols-3 mb-10">
-              {[
-                { value: "9", label: "Reports" },
-                { value: "55%+", label: "Senior audience" },
-                { value: "1", label: "Easter weekend" },
-              ].map((s) => (
+              {sibaStats.map((s) => (
                 <div key={s.label} className="px-6 py-6 text-center">
                   <p className="text-[32px] font-semibold text-[#112d6e] leading-none">{s.value}</p>
                   <p className="mt-1.5 text-[10px] uppercase tracking-widest text-[#a0a0a0]">{s.label}</p>
@@ -77,30 +98,50 @@ export default function CaseStudiesPage() {
           <Reveal delay={150}>
             <div className="space-y-6 text-[15px] leading-relaxed text-[#3d3d3d] mb-10">
               <div>
-                <p className="text-[10px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-2">The situation</p>
+                <p className="text-[10px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-2">The approach</p>
                 <p>
-                  SIBA Digital was not a client engagement. It is a platform I built and operate. The investigation methodology came first. The technical architecture was designed to support structured, verifiable publication of public records investigations at a quality level that would withstand press scrutiny.
+                  Companies House filings. Land Registry title registers. Published supplier spend data. Freedom of Information disclosures. Planning applications. Filed accounts. All public. All cross-referenced. The structured data layer means every entity, every relationship, every source is machine-readable as well as human-readable. Nothing is alleged that is not sourced.
                 </p>
               </div>
               <div>
-                <p className="text-[10px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-2">The methodology</p>
+                <p className="text-[10px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-2">The scope</p>
                 <p>
-                  Company House data, land registry, planning applications, Companies House beneficial ownership registers, press archive, structured web data. All public. All cross-referenced. The structured data layer means every entity, every relationship, every source is machine-readable as well as human-readable.
+                  Central investigation: one Sefton Council officer accumulating unreviewed authority across every relevant function in Southport's visitor economy, with no governance control designed to manage it. Adjacent threads: a council-owned hospitality company with £1.945 million in accumulated losses, a land deal executed without published valuations, a media contractor with undisclosed commercial relationships to the bodies it covers, and a property company owning the body that accredits the BID it advises.
                 </p>
               </div>
               <div>
-                <p className="text-[10px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-2">The result</p>
+                <p className="text-[10px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-2">The results</p>
                 <p>
-                  Formal complaints to regulatory bodies citing the SIBA reports. Solicitors acting for named parties made contact. A single published analysis reached professionals from the House of Commons, MHCLG, Transport for London, and Savills, with over 55% of the audience holding senior, director, or executive positions. The platform was built to be credible, indexed, and navigable. It is.
-                </p>
-                <p className="mt-3 text-[#1c1c1c] font-medium">
-                  The commercial application: the same methodology applied to an organisation&apos;s own public digital footprint. That is the Digital Footprint Intelligence service.
+                  A single published analysis reached professionals from the House of Commons, MHCLG, Transport for London, and Savills, with over 55% of the audience holding senior, director, or executive positions. Formal regulatory complaints filed. Solicitors acting for named parties made contact. The platform was built to be credible, indexed, and navigable under scrutiny. It is.
                 </p>
               </div>
             </div>
           </Reveal>
 
+          <Reveal delay={175}>
+            <div className="mb-10">
+              <p className="text-[10px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-5">Recent milestones</p>
+              <div className="space-y-0 border-l border-[#e0e0d8]">
+                {sibaMilestones.map((m, i) => (
+                  <div key={i} className="relative pl-6 pb-5">
+                    <div className="absolute left-[-4.5px] top-[5px] w-2 h-2 rounded-full bg-[#112d6e]" />
+                    <p className="text-[10px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-0.5">{m.date}</p>
+                    <p className="text-[14px] text-[#3d3d3d] leading-relaxed">{m.event}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </Reveal>
+
           <Reveal delay={200}>
+            <div className="bg-white border border-[#e0e0d8] px-6 py-5 mb-10">
+              <p className="text-[13px] text-[#3d3d3d] leading-relaxed">
+                <span className="font-medium text-[#1c1c1c]">The commercial application:</span> the same methodology applied to an organisation&apos;s own public digital footprint. What is visible, to whom, and what it implies. That is the Digital Footprint Intelligence service.
+              </p>
+            </div>
+          </Reveal>
+
+          <Reveal delay={225}>
             <div className="flex gap-6">
               <a
                 href="https://www.siba.digital"
@@ -130,13 +171,24 @@ export default function CaseStudiesPage() {
             <div className="flex items-center gap-3 mb-8">
               <span className="text-[#a0a0a0] font-mono text-xs">02</span>
               <span className="text-[10px] font-medium uppercase tracking-widest text-[#2c4a52]">
-                Owned and operated
+                Publishing network
               </span>
             </div>
             <h2 className="mb-3">Sefton Coast Network</h2>
             <p className="text-[17px] leading-relaxed text-[#3d3d3d] mb-10 max-w-xl">
               Four editorial sites built and operated simultaneously on the same Next.js architecture. All live, all ranking, all owned.
             </p>
+          </Reveal>
+
+          <Reveal delay={100}>
+            <div className="bg-white border border-[#e0e0d8] divide-x divide-[#e0e0d8] grid grid-cols-3 mb-10">
+              {networkStats.map((s) => (
+                <div key={s.label} className="px-6 py-6 text-center">
+                  <p className="text-[32px] font-semibold text-[#112d6e] leading-none">{s.value}</p>
+                  <p className="mt-1.5 text-[10px] uppercase tracking-widest text-[#a0a0a0]">{s.label}</p>
+                </div>
+              ))}
+            </div>
           </Reveal>
 
           <Reveal delay={100}>
@@ -204,29 +256,55 @@ export default function CaseStudiesPage() {
       <section id="sandgrounder" className="py-28 px-6 bg-[#f5f5f0] scroll-mt-20">
         <div className="max-w-3xl mx-auto">
           <Reveal>
-            <p className="text-xs uppercase tracking-widest text-[#6b6b6b] mb-4">Independent publication</p>
+            <div className="flex items-center gap-3 mb-8">
+              <span className="text-[#a0a0a0] font-mono text-xs">03</span>
+              <span className="text-[10px] font-medium uppercase tracking-widest text-[#2c4a52]">
+                Independent publication
+              </span>
+            </div>
             <h2 className="mb-3">The Sandgrounder</h2>
-            <p className="text-[15px] text-[#3d3d3d] mb-8 max-w-xl leading-relaxed">
-              A standalone editorial publication covering Southport. Independent opinion, satire, and reporting for a general audience. Companion to SIBA Digital&apos;s investigation work, built on the same Next.js architecture.
+            <p className="text-[17px] leading-relaxed text-[#3d3d3d] mb-10 max-w-xl">
+              Independent opinion, satire, and reporting from Southport. The public-facing companion to SIBA Digital, built for a general audience rather than a professional one.
             </p>
-            <div className="space-y-4 text-[15px] text-[#3d3d3d] leading-relaxed max-w-xl">
-              <p>
-                Where SIBA Digital publishes structured reports for a professional and regulatory audience, The Sandgrounder publishes the same underlying material in a form that Southport residents can read, share, and act on. Satire, opinion, and factual reporting. All sourced. All legally reviewed.
-              </p>
-              <p>
-                Built and launched in a single session. Full SEO architecture, share buttons, newsletter integration, contact form, sitemap, legal and privacy pages. Live from day one.
-              </p>
+          </Reveal>
+
+          <Reveal delay={100}>
+            <div className="bg-white border border-[#e0e0d8] divide-x divide-[#e0e0d8] grid grid-cols-3 mb-10">
+              {sandgrounderStats.map((s) => (
+                <div key={s.label} className="px-6 py-6 text-center">
+                  <p className="text-[32px] font-semibold text-[#112d6e] leading-none">{s.value}</p>
+                  <p className="mt-1.5 text-[10px] uppercase tracking-widest text-[#a0a0a0]">{s.label}</p>
+                </div>
+              ))}
             </div>
-            <div className="mt-8">
-              <a
-                href="https://www.thesandgrounder.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-sm text-[#2c4a52] transition-colors hover:text-[#1c1c1c]"
-              >
-                Visit The Sandgrounder <ExternalLink size={13} />
-              </a>
+          </Reveal>
+
+          <Reveal delay={150}>
+            <div className="space-y-6 text-[15px] leading-relaxed text-[#3d3d3d] mb-10">
+              <div>
+                <p className="text-[10px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-2">The rationale</p>
+                <p>
+                  SIBA Digital publishes structured reports for a professional and regulatory audience. The Sandgrounder publishes the same underlying material in a form that Southport residents can read, share, and act on. Satire, opinion, and factual reporting. All sourced. All legally reviewed. The FOI tracker, the conflicts of interest, the governance failures — told without the register of a compliance document.
+                </p>
+              </div>
+              <div>
+                <p className="text-[10px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-2">The build</p>
+                <p>
+                  Full Next.js App Router architecture. Dynamic sitemap. robots.txt. Per-article Open Graph and Twitter card metadata. JSON-LD Article schema on every piece. Newsletter integration via Resend. Share buttons across all platforms including Web Share API. Contact form with Resend delivery. Privacy and legal pages. Ahrefs and Bing Webmaster verification. Built and fully live in a single session.
+                </p>
+              </div>
             </div>
+          </Reveal>
+
+          <Reveal delay={200}>
+            <a
+              href="https://www.thesandgrounder.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-sm text-[#2c4a52] transition-colors hover:text-[#1c1c1c]"
+            >
+              Visit The Sandgrounder <ExternalLink size={13} />
+            </a>
           </Reveal>
         </div>
       </section>
