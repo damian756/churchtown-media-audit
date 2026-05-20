@@ -88,6 +88,15 @@ const PROOF = [
     href: "/case-studies#network",
     external: "https://www.southportguide.co.uk",
   },
+  {
+    label: "Independent publication",
+    name: "The Sandgrounder",
+    stat: "6",
+    statLabel: "Pieces published",
+    desc: "Independent opinion, satire, and reporting from Southport. Companion to SIBA Digital for a general audience. Full SEO architecture, newsletter, share buttons, contact form. Built and live from day one.",
+    href: "/case-studies#sandgrounder",
+    external: "https://www.thesandgrounder.com",
+  },
 ];
 
 export default function Home() {
@@ -108,7 +117,7 @@ export default function Home() {
           </Reveal>
           <Reveal delay={100}>
             <p className="text-[17px] leading-relaxed text-[#3d3d3d] mb-10 max-w-xl">
-              A specialist advisory practice. Founded by Damian Roche. Ex-British Army. Twenty years building for the web. Creator of SIBA Digital.
+              A specialist advisory practice. Founded by Damian Roche. Ex-British Army. Twenty years building for the web. Creator of SIBA Digital, the Sefton Coast Network, and The Sandgrounder.
             </p>
           </Reveal>
           <Reveal delay={300}>
@@ -183,7 +192,7 @@ export default function Home() {
               The work
             </p>
             <h2 className="mb-4">
-              Both properties are live, owned, and verifiable.
+              All three properties are live, owned, and verifiable.
             </h2>
             <p className="text-[15px] leading-relaxed text-[#6b6b6b] mb-12 max-w-xl">
               No anonymised results. No projected figures. Everything below can be examined directly.

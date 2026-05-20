@@ -7,14 +7,14 @@ import Reveal from "../components/Reveal";
 export const metadata: Metadata = {
   title: "About | Damian Roche | Churchtown Media",
   description:
-    "Damian Roche. Ex-British Army. Twenty years in web development, fifteen in SEO. Founder of SIBA Digital and the Sefton Coast Network. Based in Churchtown, Southport.",
+    "Damian Roche. Ex-British Army. Twenty years in web development, fifteen in SEO. Founder of SIBA Digital, the Sefton Coast Network, and The Sandgrounder. Based in Churchtown, Southport.",
   alternates: {
     canonical: "https://www.churchtownmedia.co.uk/about",
   },
   openGraph: {
     title: "About | Damian Roche | Churchtown Media",
     description:
-    "Ex-British Army. Twenty years in web development. Founder of Churchtown Media and creator of SIBA Digital, a public interest investigation platform operating across the UK.",
+    "Ex-British Army. Twenty years in web development. Founder of Churchtown Media and creator of SIBA Digital, the Sefton Coast Network, and The Sandgrounder.",
     url: "https://www.churchtownmedia.co.uk/about",
     type: "website",
     siteName: "Churchtown Media",

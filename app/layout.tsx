@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     template: "%s | Churchtown Media",
   },
   description:
-    "Churchtown Media is a specialist digital advisory practice. Technical SEO, web architecture, and digital footprint intelligence. Founded by Damian Roche. Creator of SIBA Digital.",
+    "Churchtown Media is a specialist digital advisory practice. Technical SEO, web architecture, and digital footprint intelligence. Founded by Damian Roche. Creator of SIBA Digital, the Sefton Coast Network, and The Sandgrounder.",
   applicationName: "Churchtown Media",
   authors: [{ name: "Damian Roche", url: "https://www.churchtownmedia.co.uk" }],
   generator: "Next.js",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Churchtown Media | Digital Strategy & Technical Advisory",
     description:
-      "Digital strategy, technical architecture and intelligence for organisations that cannot afford to get it wrong. Founded by Damian Roche, creator of SIBA Digital.",
+      "Digital strategy, technical architecture and intelligence for organisations that cannot afford to get it wrong. Founded by Damian Roche, creator of SIBA Digital, the Sefton Coast Network, and The Sandgrounder.",
     url: "https://www.churchtownmedia.co.uk",
     siteName: "Churchtown Media",
     locale: "en_GB",

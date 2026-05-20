@@ -6,12 +6,12 @@ import Reveal from "../components/Reveal";
 export const metadata: Metadata = {
   title: "Case Studies | Churchtown Media",
   description:
-    "SIBA Digital and the Sefton Coast Network. Two bodies of work demonstrating Next.js architecture, structured data strategy, OSINT methodology, and four-site publishing at scale.",
+    "SIBA Digital, the Sefton Coast Network, and The Sandgrounder. Three bodies of work demonstrating Next.js architecture, structured data strategy, OSINT methodology, four-site publishing at scale, and independent editorial publication.",
   alternates: { canonical: "https://www.churchtownmedia.co.uk/case-studies" },
   openGraph: {
     title: "Case Studies | Churchtown Media",
     description:
-      "SIBA Digital: nine published reports, formal regulatory complaints, solicitor contact. Sefton Coast Network: four editorial sites, built and operated. Both live. Both verifiable.",
+      "SIBA Digital: nine published reports, formal regulatory complaints, solicitor contact. Sefton Coast Network: four editorial sites, built and operated. The Sandgrounder: independent Southport editorial publication. All three live. All three verifiable.",
     url: "https://www.churchtownmedia.co.uk/case-studies",
     type: "website",
     siteName: "Churchtown Media",
@@ -31,7 +31,7 @@ export default function CaseStudiesPage() {
             </p>
           </Reveal>
           <Reveal delay={100}>
-            <h1 className="mb-8">Two bodies of work. Both live. Both built from nothing.</h1>
+            <h1 className="mb-8">Three bodies of work. All three live. All three built from nothing.</h1>
           </Reveal>
           <Reveal delay={200}>
             <p className="text-[17px] leading-relaxed text-[#3d3d3d] max-w-xl">
