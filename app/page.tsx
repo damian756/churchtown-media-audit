@@ -111,7 +111,10 @@ export default function Home() {
       <section className="pt-20 pb-28 px-6">
         <div className="max-w-3xl mx-auto">
           <Reveal>
-            <h1 className="mb-10">
+            <p className="text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-6">
+              Advisory Practice
+            </p>
+            <h1 className="mb-10 text-[#1c1c1c]">
               Digital strategy, technical architecture and intelligence for organisations that cannot afford to get it wrong.
             </h1>
           </Reveal>
