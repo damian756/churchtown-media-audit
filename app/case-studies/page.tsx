@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Case Studies | Churchtown Media",
     description:
-      "SIBA Digital: nine published reports, formal regulatory complaints, solicitor contact. Sefton Coast Network: four editorial sites, built and operated. The Sandgrounder: independent Southport editorial publication. All three live. All three verifiable.",
+      "SIBA Digital: twelve published reports across four active investigations, formal regulatory complaints, solicitor contact. Sefton Coast Network: four editorial sites, built and operated. The Sandgrounder: independent Southport editorial publication. All three live. All three verifiable.",
     url: "https://www.churchtownmedia.co.uk/case-studies",
     type: "website",
     siteName: "Churchtown Media",
@@ -20,8 +20,8 @@ export const metadata: Metadata = {
 };
 
 const sibaStats = [
-  { value: "9", label: "Reports published" },
-  { value: "16", label: "FOI requests filed" },
+  { value: "12", label: "Reports published" },
+  { value: "26", label: "FOI requests filed" },
   { value: "55%+", label: "Senior audience" },
 ];
 
@@ -39,9 +39,10 @@ const sandgrounderStats = [
 
 const sibaMilestones = [
   { date: "Apr 2026", event: "River Law Limited sent letter before action. SIBA filed SRA report 30 April 2026." },
-  { date: "May 2026", event: "Formal complaint CL-006 filed with Sefton Council Chief Executive. Acknowledged within 30 minutes." },
-  { date: "May 2026", event: "Separate formal complaint filed with the Council Monitoring Officer." },
-  { date: "May 2026", event: "SP-14 response issued by Information Governance Team, not by the subject officer. First of 16 FOI responses not signed by Mark Catherall." },
+  { date: "May 2026", event: "Formal complaint filed with Sefton Council Chief Executive. Acknowledged within 30 minutes. Separate complaint filed with the Monitoring Officer." },
+  { date: "May 2026", event: "Report 12 published: King of Southport. Full structural map across VisitSouthport, BID, MLEC, the Airshow, and Salt and Tar. National journalists engaged within hours." },
+  { date: "Jun 2026", event: "Stage 2 formal complaint filed directly with Phil Porter. 11 internal review decisions received. Active investigations expanded: Rochdale, Leicester, and Ripon." },
+  { date: "Jun 2026", event: "BID Governance in the UK: The Complete Independent Guide published at siba.digital/resources/bid-governance. Reached House of Commons and MHCLG professionals." },
 ];
 
 export default function CaseStudiesPage() {
@@ -80,7 +81,7 @@ export default function CaseStudiesPage() {
             </div>
             <h2 className="mb-3">SIBA Digital</h2>
             <p className="text-[17px] leading-relaxed text-[#3d3d3d] mb-10 max-w-xl">
-              A public interest investigation platform covering governance failures in Southport and the wider BID sector. Built on Next.js with structured data throughout. Every claim sourced to a primary public record.
+              A public interest investigation platform covering governance failures in Business Improvement Districts and local public bodies across the UK. Active investigations in Southport, Rochdale, Leicester, and Ripon. Built on Next.js with structured data throughout. Every claim sourced to a primary public record.
             </p>
           </Reveal>
 
@@ -106,13 +107,13 @@ export default function CaseStudiesPage() {
               <div>
                 <p className="text-[10px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-2">The scope</p>
                 <p>
-                  Central investigation: one Sefton Council officer accumulating unreviewed authority across every relevant function in Southport's visitor economy, with no governance control designed to manage it. Adjacent threads: a council-owned hospitality company with £1.945 million in accumulated losses, a land deal executed without published valuations, a media contractor with undisclosed commercial relationships to the bodies it covers, and a property company owning the body that accredits the BID it advises.
+                  Founding investigation in Southport: one Sefton Council officer accumulating unreviewed authority across every relevant function in the town's visitor economy. Adjacent threads: a council-owned hospitality company with £1.945 million in accumulated losses, a land deal executed without published valuations, a media contractor with undisclosed commercial relationships to the bodies it covers, and a property company owning the body that accredits the BID it advises. Active investigations now running in Rochdale (undeclared BID directorship by an Audit Committee chair), Leicester (director network and operating agreement), and Ripon (benchmark for compliant governance).
                 </p>
               </div>
               <div>
                 <p className="text-[10px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-2">The results</p>
                 <p>
-                  A single published analysis reached professionals from the House of Commons, MHCLG, Transport for London, and Savills, with over 55% of the audience holding senior, director, or executive positions. Formal regulatory complaints filed. Solicitors acting for named parties made contact. The platform was built to be credible, indexed, and navigable under scrutiny. It is.
+                  A single published analysis reached professionals from the House of Commons, MHCLG, Savills, and AtkinsRéalis, and drew direct interest from national journalists within hours of publication. Over 55% of the audience held senior, director, or executive positions. Formal regulatory complaints filed. Solicitors acting for named parties made contact. The platform was built to be credible, indexed, and navigable under scrutiny. It is.
                 </p>
               </div>
             </div>

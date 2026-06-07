@@ -137,7 +137,7 @@ export default function AboutPage() {
                   SIBA Digital is a public interest investigation platform I built and operate. It uses structured data, OSINT methodology and Next.js architecture to publish accountability investigations from public records.
                 </p>
                 <p>
-                  The first investigation series produced nine published reports. Formal complaints to regulatory bodies cited the findings. Solicitors acting for named parties made contact.
+                  Twelve reports published across four active investigations: Southport, Rochdale, Leicester, and Ripon. Formal complaints to regulatory bodies cited the findings. Solicitors acting for named parties made contact.
                 </p>
                 <p>
                   The significance for Churchtown Media is this: SIBA demonstrates the intersection of technical architecture, structured data, investigative methodology and publication strategy simultaneously. No agency in the north-west has a comparable credential.
@@ -167,7 +167,7 @@ export default function AboutPage() {
             <Reveal delay={200}>
               <div className="bg-white border border-[#e0e0d8] divide-y divide-[#e0e0d8] min-w-[200px]">
                 {[
-                  { label: "Reports published", value: "9" },
+                  { label: "Reports published", value: "12" },
                   { label: "Regulatory impact", value: "Formal complaints. Solicitor contact." },
                   { label: "Technology", value: "Next.js, OSINT" },
                   { label: "Built in", value: "One Easter weekend" },

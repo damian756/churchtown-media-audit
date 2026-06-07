@@ -75,7 +75,7 @@ const PROOF = [
     name: "SIBA Digital",
     stat: "9",
     statLabel: "Reports published",
-    desc: "A public interest investigation platform built using Next.js, structured data and OSINT methodology. Nine published reports. Formal regulatory complaints citing SIBA findings. Solicitors acting for named parties made contact.",
+    desc: "A public interest investigation platform built using Next.js, structured data and OSINT methodology. Twelve published reports across four active investigations. Formal regulatory complaints citing SIBA findings. Solicitors acting for named parties made contact.",
     href: "/case-studies#siba",
     external: "https://www.siba.digital",
   },
@@ -245,7 +245,7 @@ export default function Home() {
           <Reveal>
             <div className="mt-10 pt-8 border-t border-[#e0e0d8]">
               <p className="text-[13px] leading-relaxed text-[#6b6b6b] max-w-xl">
-                A single SIBA analysis with no paid promotion reached professionals from the House of Commons, MHCLG, Transport for London, and Savills. Over 55% of the audience held senior, director, or executive positions.
+                A single SIBA analysis with no paid promotion reached professionals from the House of Commons, MHCLG, Savills, and AtkinsRéalis, and drew direct interest from national journalists within hours of publication. Over 55% of the audience held senior, director, or executive positions.
               </p>
             </div>
           </Reveal>
