@@ -96,6 +96,7 @@ export default function Footer() {
           <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-[#6b6b6b] transition-colors">Privacy</Link>
             <Link href="/terms" className="hover:text-[#6b6b6b] transition-colors">Terms</Link>
+            <Link href="https://www.siba.digital/disclosure" className="hover:text-[#6b6b6b] transition-colors">Disclosure</Link>
           </div>
         </div>
       </div>
