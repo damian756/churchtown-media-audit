@@ -102,7 +102,7 @@ export default function Home() {
       />
 
       {/* HERO */}
-      <section className="pt-20 pb-28 px-6">
+      <section className="pt-16 pb-20 px-6">
         <div className="max-w-3xl mx-auto">
           <Reveal>
             <p className="text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-6">

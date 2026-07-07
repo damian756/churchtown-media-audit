@@ -9,10 +9,10 @@
   --ink-faint: #a0a0a0;
   --brand: #112d6e;
   --teal: #2c4a52;
-  --surface: #ffffff;
-  --surface-alt: #f5f5f0;
-  --rule: #e0e0d8;
-  --rule-strong: #c8c8c0;
+  --surface: #faf8f4;
+  --surface-alt: #f0ede7;
+  --rule: #e0dcd6;
+  --rule-strong: #c4bfb8;
 }
 
 @layer base {
@@ -35,14 +35,14 @@
   h2,
   h3 {
     font-family: var(--font-serif), Georgia, "Times New Roman", serif;
-    font-weight: 400;
-    letter-spacing: -0.015em;
-    line-height: 1.15;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.12;
     color: var(--brand);
   }
 
   h1 {
-    font-size: clamp(1.75rem, 1.3rem + 1.8vw, 2.75rem);
+    font-size: clamp(1.85rem, 1.4rem + 1.9vw, 2.9rem);
   }
 
   h2 {

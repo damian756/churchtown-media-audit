@@ -34,10 +34,10 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-0 w-full z-[100] transition-all duration-300 ${
+        className={`fixed top-0 w-full z-[100] transition-all duration-300 border-t-2 border-t-[#112d6e] ${
           scrolled
-            ? "bg-white/95 backdrop-blur-md border-b border-[#e0e0d8] py-4"
-            : "bg-white border-b border-[#e0e0d8] py-4"
+            ? "bg-[#faf8f4]/95 backdrop-blur-md border-b border-[#e0dcd6] py-4"
+            : "bg-[#faf8f4] border-b border-[#e0dcd6] py-4"
         }`}
       >
         <div className="max-w-3xl mx-auto px-6 flex items-center justify-between">
@@ -80,7 +80,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div
-        className={`fixed inset-0 bg-white z-[90] md:hidden transition-all duration-300 ${
+        className={`fixed inset-0 bg-[#faf8f4] z-[90] md:hidden transition-all duration-300 ${
           isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
         }`}
       >
