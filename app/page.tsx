@@ -73,8 +73,6 @@ const PROOF = [
   {
     label: "Investigation platform",
     name: "SIBA Digital",
-    stat: "9",
-    statLabel: "Reports published",
     desc: "A public interest investigation platform built using Next.js, structured data and OSINT methodology. Twelve published reports across four active investigations. Formal regulatory complaints citing SIBA findings. Solicitors acting for named parties made contact.",
     href: "/case-studies#siba",
     external: "https://www.siba.digital",
@@ -82,8 +80,6 @@ const PROOF = [
   {
     label: "Publishing network",
     name: "Sefton Coast Network",
-    stat: "4",
-    statLabel: "Sites operated",
     desc: "Four editorial sites built and operated simultaneously on the same Next.js architecture. SouthportGuide, FormbyGuide, SeftonLinks, SeftonCoastWildlife. All live. All ranking. All owned.",
     href: "/case-studies#network",
     external: "https://www.southportguide.co.uk",
@@ -91,9 +87,7 @@ const PROOF = [
   {
     label: "Independent publication",
     name: "The Sandgrounder",
-    stat: "6",
-    statLabel: "Pieces published",
-    desc: "Independent opinion, satire, and reporting from Southport. Companion to SIBA Digital for a general audience. Full SEO architecture, newsletter, share buttons, contact form. Built and live from day one.",
+    desc: "Independent opinion, satire, and public record reporting from Southport. Companion to SIBA Digital for a general audience. Full SEO architecture, newsletter, structured data. Built and live from day one.",
     href: "/case-studies#sandgrounder",
     external: "https://www.thesandgrounder.com",
   },
@@ -202,40 +196,30 @@ export default function Home() {
             </p>
           </Reveal>
 
-          <div className="space-y-4">
+          <div className="space-y-px">
             {PROOF.map((p, i) => (
               <Reveal key={p.name} delay={i * 80}>
-                <div className="bg-white border border-[#e0e0d8] card-hover">
-                  <div className="flex flex-col sm:flex-row">
-                    <div className="border-b sm:border-b-0 sm:border-r border-[#e0e0d8] px-8 py-7 flex flex-col justify-center shrink-0 sm:w-40 text-center sm:text-left">
-                      <p className="text-[38px] font-semibold text-[#112d6e] leading-none">{p.stat}</p>
-                      <p className="mt-1.5 text-[10px] font-medium uppercase tracking-widest text-[#a0a0a0]">
-                        {p.statLabel}
-                      </p>
-                    </div>
-                    <div className="px-8 py-7 flex flex-col justify-center">
-                      <p className="text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-1">
-                        {p.label}
-                      </p>
-                      <p className="text-[15px] text-[#1c1c1c] font-medium leading-snug mb-2">{p.name}</p>
-                      <p className="text-[14px] text-[#6b6b6b] leading-relaxed mb-3">{p.desc}</p>
-                      <div className="flex items-center gap-5">
-                        <Link
-                          href={p.href}
-                          className="inline-flex items-center gap-1 text-xs text-[#2c4a52] hover:text-[#112d6e] transition-colors"
-                        >
-                          Case study <ArrowRight size={11} />
-                        </Link>
-                        <a
-                          href={p.external}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1 text-xs text-[#a0a0a0] hover:text-[#6b6b6b] transition-colors"
-                        >
-                          Live site <ExternalLink size={11} />
-                        </a>
-                      </div>
-                    </div>
+                <div className="bg-white border border-[#e0e0d8] px-8 py-7 card-hover">
+                  <p className="text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-1">
+                    {p.label}
+                  </p>
+                  <p className="text-[16px] text-[#1c1c1c] font-medium leading-snug mb-2">{p.name}</p>
+                  <p className="text-[14px] text-[#6b6b6b] leading-relaxed mb-4 max-w-xl">{p.desc}</p>
+                  <div className="flex items-center gap-5">
+                    <Link
+                      href={p.href}
+                      className="inline-flex items-center gap-1 text-xs text-[#2c4a52] hover:text-[#112d6e] transition-colors"
+                    >
+                      Case study <ArrowRight size={11} />
+                    </Link>
+                    <a
+                      href={p.external}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-xs text-[#a0a0a0] hover:text-[#6b6b6b] transition-colors"
+                    >
+                      Live site <ExternalLink size={11} />
+                    </a>
                   </div>
                 </div>
               </Reveal>
