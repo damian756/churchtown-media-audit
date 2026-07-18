@@ -72,8 +72,8 @@ const SERVICES = [
 const PROOF = [
   {
     label: "Investigation platform",
-    name: "SIBA Digital",
-    desc: "A public interest investigation platform built using Next.js, structured data and OSINT methodology. Twelve published reports across four active investigations. Formal regulatory complaints citing SIBA findings. Solicitors acting for named parties made contact.",
+    name: "SIBA",
+    desc: "Strategic Intelligence and Business Audits. An OSINT-led governance audit practice built on Next.js with structured data and public records methodology. Twelve published reports. Formal regulatory complaints citing SIBA findings. Solicitors acting for named parties made contact.",
     href: "/case-studies#siba",
     external: "https://www.siba.digital",
   },
