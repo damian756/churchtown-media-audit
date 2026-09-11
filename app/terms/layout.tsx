@@ -1,18 +1,10 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | Churchtown Media',
-  description: 'Terms of service for Churchtown Media web design and SEO services.',
+  title: "Terms",
+  description: "Terms for Churchtown Media Ltd, the advisory practice behind SIBA Digital and Institrace.",
   alternates: {
-    canonical: 'https://www.churchtownmedia.co.uk/terms',
-  },
-  openGraph: {
-    title: 'Terms of Service | Churchtown Media',
-    description: 'Terms of service for Churchtown Media web design and SEO services.',
-    url: 'https://www.churchtownmedia.co.uk/terms',
-    type: 'website',
-    siteName: 'Churchtown Media',
-    images: [{ url: 'https://www.churchtownmedia.co.uk/opengraph-image.png', width: 1200, height: 630, alt: 'Churchtown Media' }],
+    canonical: "https://www.churchtownmedia.co.uk/terms",
   },
 };
 

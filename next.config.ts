@@ -62,7 +62,7 @@ const nextConfig: NextConfig = {
       { source: '/testimonials', destination: '/about', permanent: true },
       { source: '/portfolio', destination: '/case-studies', permanent: true },
       { source: '/audit', destination: '/contact', permanent: true },
-      { source: '/work', destination: '/about', permanent: true },
+      { source: '/work', destination: '/case-studies', permanent: true },
       { source: '/frequently-asked-questions', destination: '/contact', permanent: true },
       { source: '/blackpool-growth', destination: '/services', permanent: true },
       { source: '/southport-growth', destination: '/services', permanent: true },

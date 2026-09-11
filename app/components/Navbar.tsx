@@ -1,103 +1,103 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
+
+const links = [
+  { name: "About", href: "/about" },
+  { name: "Consultation", href: "/services" },
+  { name: "Work", href: "/case-studies" },
+  { name: "Contact", href: "/contact" },
+];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  useEffect(() => {
-    document.body.style.overflow = isOpen ? "hidden" : "unset";
+    document.body.style.overflow = isOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, [isOpen]);
 
   useEffect(() => {
     setIsOpen(false);
   }, [pathname]);
 
-  const links = [
-    { name: "About", href: "/about" },
-    { name: "Services", href: "/services" },
-    { name: "Case Studies", href: "/case-studies" },
-    { name: "Contact", href: "/contact" },
-  ];
-
   return (
     <>
-      <nav
-        className={`fixed top-0 w-full z-[100] transition-all duration-300 border-t-2 border-t-[#112d6e] ${
-          scrolled
-            ? "bg-[#faf8f4]/95 backdrop-blur-md border-b border-[#e0dcd6] py-4"
-            : "bg-[#faf8f4] border-b border-[#e0dcd6] py-4"
-        }`}
-      >
-        <div className="max-w-3xl mx-auto px-6 flex items-center justify-between">
-          <Link
-            href="/"
-            className="font-semibold text-[12px] uppercase tracking-widest text-[#1c1c1c] hover:text-[#112d6e] transition-colors"
-            onClick={() => setIsOpen(false)}
-            style={{ fontFamily: "var(--font-serif), Georgia, serif" }}
-          >
-            Churchtown Media
+      <header className="sticky top-0 z-[100] bg-[var(--paper)]/95 backdrop-blur-[2px]">
+        <div className="page flex items-end justify-between gap-6 pt-5 pb-3">
+          <Link href="/" onClick={() => setIsOpen(false)} className="group block no-underline">
+            <span
+              className="block text-[1.05rem] text-[var(--navy)] leading-none"
+              style={{ fontFamily: "var(--font-display), Georgia, serif" }}
+            >
+              Churchtown Media
+            </span>
+            <span className="mt-1 block text-[0.72rem] tracking-[0.14em] uppercase text-[var(--ink-faint)]">
+              A practice
+            </span>
           </Link>
 
-          {/* Desktop */}
-          <div className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-baseline gap-7 pb-0.5">
             {links.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
-                className={`text-sm transition-colors ${
+                className={`text-[0.95rem] no-underline ${
                   pathname === link.href
-                    ? "text-[#112d6e] font-medium"
-                    : "text-[#6b6b6b] hover:text-[#1c1c1c]"
+                    ? "text-[var(--ink)] border-b border-[var(--navy)]"
+                    : "text-[var(--ink-muted)] hover:text-[var(--ink)]"
                 }`}
               >
                 {link.name}
               </Link>
             ))}
-          </div>
+          </nav>
 
-          {/* Mobile toggle */}
           <button
+            type="button"
             onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
-            className="md:hidden text-[#3d3d3d] p-2 -mr-2"
+            aria-label={isOpen ? "Close menu" : "Open menu"}
+            className="md:hidden text-[0.95rem] text-[var(--navy)] pb-0.5 border-b border-[var(--rule)]"
           >
-            {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            {isOpen ? "Close" : "Menu"}
           </button>
         </div>
-      </nav>
-
-      {/* Mobile menu */}
-      <div
-        className={`fixed inset-0 bg-[#faf8f4] z-[90] md:hidden transition-all duration-300 ${
-          isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
-        }`}
-      >
-        <div className="flex flex-col items-start justify-start pt-24 px-8 gap-8">
-          {links.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              onClick={() => setIsOpen(false)}
-              className="text-2xl text-[#1c1c1c] hover:text-[#112d6e] transition-colors"
-              style={{ fontFamily: "var(--font-serif), Georgia, serif" }}
-            >
-              {link.name}
-            </Link>
-          ))}
+        <div className="page">
+          <div className="h-px bg-[var(--rule)]" />
+          <div className="mt-[3px] h-px bg-[var(--rule)]" />
         </div>
-      </div>
+      </header>
+
+      {isOpen && (
+        <div className="fixed inset-0 z-[110] bg-[var(--paper)] md:hidden">
+          <div className="page flex flex-col gap-6 pt-28">
+            {links.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                onClick={() => setIsOpen(false)}
+                className="text-[1.7rem] text-[var(--ink)] no-underline"
+                style={{ fontFamily: "var(--font-display), Georgia, serif" }}
+              >
+                {link.name}
+              </Link>
+            ))}
+            <div className="mt-6 flex flex-col gap-3 text-[1.05rem]">
+              <a href="https://www.siba.digital" target="_blank" rel="noopener noreferrer" className="out">
+                SIBA Digital
+              </a>
+              <a href="https://www.institrace.co.uk" target="_blank" rel="noopener noreferrer" className="out">
+                Institrace
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }

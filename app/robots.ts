@@ -30,7 +30,7 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: 'Claude-Web',
         disallow: '/',
       },
-      // AI search indexers (allow these — they drive GEO visibility)
+      // AI search indexers (allow these: they drive GEO visibility)
       {
         userAgent: 'PerplexityBot',
         allow: '/',

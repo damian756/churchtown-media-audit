@@ -3,16 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --ink: #1c1c1c;
-  --ink-secondary: #3d3d3d;
-  --ink-muted: #6b6b6b;
-  --ink-faint: #a0a0a0;
-  --brand: #112d6e;
-  --teal: #2c4a52;
-  --surface: #faf8f4;
-  --surface-alt: #f0ede7;
-  --rule: #e0dcd6;
-  --rule-strong: #c4bfb8;
+  --ink: #1a1916;
+  --ink-secondary: #3c3a36;
+  --ink-muted: #6a6760;
+  --ink-faint: #8f8b83;
+  --navy: #1a2744;
+  --paper: #f3eee4;
+  --paper-deep: #ebe4d6;
+  --rule: #cfc6b6;
+  --rule-strong: #b4aa98;
 }
 
 @layer base {
@@ -22,10 +21,13 @@
   }
 
   body {
-    background: var(--surface);
+    background-color: var(--paper);
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
     color: var(--ink);
-    font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+    font-family: var(--font-body), "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-size: 1.125rem;
     font-weight: 400;
+    line-height: 1.7;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
@@ -34,88 +36,170 @@
   h1,
   h2,
   h3 {
-    font-family: var(--font-serif), Georgia, "Times New Roman", serif;
+    font-family: var(--font-display), "Iowan Old Style", Georgia, serif;
     font-weight: 500;
-    letter-spacing: -0.02em;
-    line-height: 1.12;
-    color: var(--brand);
+    letter-spacing: -0.018em;
+    line-height: 1.18;
+    color: var(--ink);
   }
 
   h1 {
-    font-size: clamp(1.85rem, 1.4rem + 1.9vw, 2.9rem);
+    font-size: clamp(2rem, 1.45rem + 2.2vw, 3.15rem);
   }
 
   h2 {
-    font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.25rem);
+    font-size: clamp(1.45rem, 1.15rem + 1.1vw, 2rem);
   }
 
   h3 {
-    font-size: clamp(1.2rem, 1.05rem + 0.6vw, 1.5rem);
+    font-size: clamp(1.15rem, 1.05rem + 0.4vw, 1.35rem);
+  }
+
+  a {
+    color: var(--navy);
   }
 }
 
-@layer components {
-  .reveal {
-    opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
-      transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-  }
-
-  .reveal.revealed {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  .card {
-    background: #ffffff;
-    border: 1px solid var(--rule);
-  }
-
-  .card-hover {
-    transition: border-color 0.15s ease;
-  }
-  .card-hover:hover {
-    border-color: var(--rule-strong);
-  }
-
-  .input {
-    width: 100%;
-    background: #ffffff;
-    border: 1px solid var(--rule);
-    padding: 0.625rem 0.875rem;
-    font-size: 0.875rem;
-    color: var(--ink);
-    outline: none;
-    transition: border-color 0.15s ease;
-    display: block;
-  }
-  .input::placeholder {
-    color: var(--ink-faint);
-  }
-  .input:focus {
-    border-color: var(--ink);
-  }
+/* Reveal: transition only. Hidden state is applied in JS so SSR stays visible. */
+.reveal {
+  transition: opacity 0.55s ease, transform 0.55s ease;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .reveal {
-    opacity: 1;
-    transform: none;
     transition: none;
   }
 }
 
-::-webkit-scrollbar {
-  width: 6px;
+.page {
+  width: 100%;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
-::-webkit-scrollbar-track {
-  background: var(--rule);
+
+.kicker {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--navy);
 }
-::-webkit-scrollbar-thumb {
-  background: var(--ink-faint);
-  border-radius: 3px;
+
+.lede {
+  font-size: 1.2rem;
+  line-height: 1.65;
+  color: var(--ink-secondary);
 }
-::-webkit-scrollbar-thumb:hover {
-  background: var(--ink-muted);
+
+.rule {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.out {
+  color: var(--navy);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+}
+
+.out:hover {
+  color: var(--ink);
+}
+
+.quiet {
+  color: var(--ink-muted);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+}
+
+.quiet:hover {
+  color: var(--ink);
+}
+
+.legal {
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: var(--ink-secondary);
+}
+
+.legal h2,
+.legal h3 {
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.legal p + p {
+  margin-top: 0.9rem;
+}
+
+.legal ul {
+  margin: 0.75rem 0 1rem 1.15rem;
+  list-style: disc;
+}
+
+.legal li + li {
+  margin-top: 0.35rem;
+}
+
+.input {
+  width: 100%;
+  display: block;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--rule-strong);
+  border-radius: 0;
+  padding: 0.45rem 0 0.5rem;
+  font-family: inherit;
+  font-size: 1.05rem;
+  color: var(--ink);
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--ink-faint);
+  font-style: italic;
+}
+
+.input:focus {
+  border-bottom-color: var(--navy);
+}
+
+select.input {
+  font-style: normal;
+}
+
+textarea.input {
+  resize: vertical;
+  min-height: 8rem;
+}
+
+.submit {
+  appearance: none;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--navy);
+  padding: 0 0 0.15rem;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.05rem;
+  color: var(--navy);
+  cursor: pointer;
+}
+
+.submit:hover {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+}
+
+.submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }

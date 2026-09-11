@@ -1,31 +1,14 @@
-import Link from "next/link";
-import { ArrowRight, ExternalLink } from "lucide-react";
 import type { Metadata } from "next";
+import Link from "next/link";
 import Reveal from "./components/Reveal";
+import OutLink from "./components/OutLink";
 
 export const metadata: Metadata = {
-  title: "Churchtown Media | Digital Strategy & Technical Advisory",
+  title: "Churchtown Media | Public-records consultation",
   description:
-    "Digital strategy, technical architecture, AI search visibility and infrastructure advisory for organisations that cannot afford to get it wrong. Founded by Damian Roche.",
+    "Advisory practice of Damian Roche. Consultation on the UK public record, using Institrace and the method developed in public at SIBA Digital.",
   alternates: {
     canonical: "https://www.churchtownmedia.co.uk",
-  },
-  openGraph: {
-    type: "website",
-    locale: "en_GB",
-    url: "https://www.churchtownmedia.co.uk",
-    title: "Churchtown Media | Digital Strategy & Technical Advisory",
-    description:
-      "Digital strategy, technical architecture and intelligence for organisations that cannot afford to get it wrong.",
-    siteName: "Churchtown Media",
-    images: [
-      {
-        url: "https://www.churchtownmedia.co.uk/opengraph-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Churchtown Media",
-      },
-    ],
   },
 };
 
@@ -37,61 +20,18 @@ const jsonLd = {
   url: "https://www.churchtownmedia.co.uk",
   logo: "https://www.churchtownmedia.co.uk/opengraph-image.png",
   description:
-    "Churchtown Media is a specialist digital advisory practice. Digital strategy, technical architecture and footprint intelligence. Founded by Damian Roche.",
+    "Advisory practice of Damian Roche. Public-records consultation using Institrace and the SIBA method.",
   founder: {
     "@type": "Person",
     name: "Damian Roche",
     url: "https://www.linkedin.com/in/damian-roche-7ba8293a5/",
   },
-  sameAs: ["https://www.linkedin.com/in/damian-roche-7ba8293a5/"],
+  sameAs: [
+    "https://www.linkedin.com/in/damian-roche-7ba8293a5/",
+    "https://www.siba.digital",
+    "https://www.institrace.co.uk",
+  ],
 };
-
-const SERVICES = [
-  {
-    number: "01",
-    title: "Technical SEO & AI Search Architecture",
-    desc: "Structural audit and roadmap for web presence that is invisible to both search engines and AI inference systems.",
-  },
-  {
-    number: "02",
-    title: "Headless Development Consultancy",
-    desc: "Architecture decision-making before any agency is commissioned. The scoping document they need to price accurately.",
-  },
-  {
-    number: "03",
-    title: "Digital Footprint Intelligence",
-    desc: "Mapping an organisation's public exposure before a significant event, including what AI systems currently say about it.",
-  },
-  {
-    number: "04",
-    title: "AI Infrastructure Advisory",
-    desc: "Crawler policy, Cloudflare configuration for AI traffic, and attack surface review. Managing how AI systems access your infrastructure.",
-  },
-];
-
-const PROOF = [
-  {
-    label: "Investigation platform",
-    name: "SIBA",
-    desc: "Strategic Intelligence and Business Audits. An OSINT-led governance audit practice built on Next.js with structured data and public records methodology. Twelve published reports. Formal regulatory complaints citing SIBA findings. Solicitors acting for named parties made contact.",
-    href: "/case-studies#siba",
-    external: "https://www.siba.digital",
-  },
-  {
-    label: "Publishing network",
-    name: "Sefton Coast Network",
-    desc: "Four editorial sites built and operated simultaneously on the same Next.js architecture. SouthportGuide, FormbyGuide, SeftonLinks, SeftonCoastWildlife. All live. All ranking. All owned.",
-    href: "/case-studies#network",
-    external: "https://www.southportguide.co.uk",
-  },
-  {
-    label: "Independent publication",
-    name: "The Sandgrounder",
-    desc: "Independent opinion, satire, and public record reporting from Southport. Companion to SIBA Digital for a general audience. Full SEO architecture, newsletter, structured data. Built and live from day one.",
-    href: "/case-studies#sandgrounder",
-    external: "https://www.thesandgrounder.com",
-  },
-];
 
 export default function Home() {
   return (
@@ -101,174 +41,114 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* HERO */}
-      <section className="pt-16 pb-20 px-6">
-        <div className="max-w-3xl mx-auto">
-          <Reveal>
-            <p className="text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-6">
-              Advisory Practice
-            </p>
-            <h1 className="mb-10 text-[#1c1c1c]">
-              Digital strategy, technical architecture and intelligence for organisations that cannot afford to get it wrong.
-            </h1>
-          </Reveal>
-          <Reveal delay={100}>
-            <p className="text-[17px] leading-relaxed text-[#3d3d3d] mb-10 max-w-xl">
-              A specialist advisory practice. Founded by Damian Roche. Ex-British Army. Twenty years building for the web. Creator of SIBA Digital, the Sefton Coast Network, and The Sandgrounder.
-            </p>
-          </Reveal>
-          <Reveal delay={300}>
-            <div className="flex items-center gap-8">
-              <Link
-                href="/contact"
-                className="border-b border-[#112d6e]/40 pb-0.5 text-sm text-[#112d6e] transition-colors hover:border-[#112d6e]"
-              >
-                Start a conversation
-              </Link>
-              <Link
-                href="/case-studies"
-                className="text-sm text-[#a0a0a0] transition-colors hover:text-[#3d3d3d]"
-              >
-                See the work
-              </Link>
-            </div>
-          </Reveal>
-        </div>
+      <section className="page pt-16 pb-4">
+        <Reveal>
+          <p className="kicker mb-6">A practice</p>
+          <h1 className="mb-8">Know what the public record already shows.</h1>
+        </Reveal>
+        <Reveal delay={80}>
+          <p className="lede mb-6">
+            Churchtown Media is the advisory practice of Damian Roche. The work is consultation
+            on a real question, using a joined UK public-records index and a method that has
+            already been tested in public.
+          </p>
+          <p className="text-[var(--ink-secondary)] mb-10">
+            The index is{" "}
+            <OutLink href="https://www.institrace.co.uk">Institrace</OutLink>. The public
+            method is{" "}
+            <OutLink href="https://www.siba.digital">SIBA Digital</OutLink>. This site is
+            the firm: scoped time, a written note, and a straight answer about whether the
+            work belongs here at all.
+          </p>
+          <p>
+            <Link href="/contact" className="out">
+              Write to Damian
+            </Link>
+            <span className="mx-3 text-[var(--rule-strong)]">/</span>
+            <Link href="/services" className="quiet">
+              How consultation works
+            </Link>
+          </p>
+        </Reveal>
       </section>
 
-      <hr className="mx-auto max-w-3xl border-[#e0e0d8]" />
+      <hr className="rule my-16" />
 
-      {/* SERVICES */}
-      <section className="py-28 px-6">
-        <div className="max-w-3xl mx-auto">
-          <Reveal>
-            <p className="text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-4">
-              Services
+      <section className="page pb-4">
+        <Reveal>
+          <p className="kicker mb-8">Two properties</p>
+        </Reveal>
+
+        <Reveal delay={40}>
+          <article className="pb-12">
+            <h2 className="mb-4">Institrace</h2>
+            <p className="text-[var(--ink-secondary)] mb-4">
+              A joined index of UK public records. Committee papers, land titles, contract
+              awards, company filings, and the people who appear across them. Published is
+              not the same as findable. Institrace is the infrastructure that makes a
+              question askable of the whole.
             </p>
-            <h2 className="mb-16">
-              Four service lines. Each with a specific buyer and a specific outcome.
-            </h2>
-          </Reveal>
+            <p className="text-[var(--ink-secondary)] mb-5">
+              Consultation uses it in the room. Teams that want to work the corpus themselves
+              go to the product.
+            </p>
+            <p>
+              <OutLink href="https://www.institrace.co.uk">institrace.co.uk</OutLink>
+              <span className="mx-3 text-[var(--rule-strong)]">/</span>
+              <OutLink href="https://www.institrace.co.uk/methodology" className="quiet">
+                Methodology
+              </OutLink>
+            </p>
+          </article>
+        </Reveal>
 
-          <div className="space-y-0">
-            {SERVICES.map((s, i) => (
-              <Reveal key={i} delay={i * 80}>
-                <div className="flex gap-8 py-10 border-b border-[#e0e0d8] last:border-0">
-                  <span className="text-[#a0a0a0] font-mono text-xs pt-1 shrink-0 w-6">{s.number}</span>
-                  <div>
-                    <h3 className="text-[15px] font-medium text-[#1c1c1c] mb-2" style={{ fontFamily: "inherit", fontSize: "inherit" }}>
-                      {s.title}
-                    </h3>
-                    <p className="text-[15px] leading-relaxed text-[#3d3d3d]">{s.desc}</p>
-                  </div>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-
-          <Reveal>
-            <div className="mt-8">
-              <Link
-                href="/services"
-                className="inline-flex items-center gap-1.5 text-sm text-[#2c4a52] transition-colors hover:text-[#1c1c1c]"
-              >
-                Full service detail <ArrowRight size={13} />
-              </Link>
-            </div>
-          </Reveal>
-        </div>
+        <Reveal delay={80}>
+          <article>
+            <h2 className="mb-4">SIBA Digital</h2>
+            <p className="text-[var(--ink-secondary)] mb-4">
+              Strategic Intelligence and Business Audits. Governance investigations and
+              commissioned audits built from the same public records. The journalism is
+              public. The commercial work is confidential. The two are not linked.
+            </p>
+            <p className="text-[var(--ink-secondary)] mb-5">
+              A full forensic audit is commissioned on SIBA, not here. This practice will
+              say so if that is the right engagement.
+            </p>
+            <p>
+              <OutLink href="https://www.siba.digital">siba.digital</OutLink>
+              <span className="mx-3 text-[var(--rule-strong)]">/</span>
+              <OutLink href="https://www.siba.digital/services" className="quiet">
+                Commission an audit
+              </OutLink>
+            </p>
+          </article>
+        </Reveal>
       </section>
 
-      <hr className="mx-auto max-w-3xl border-[#e0e0d8]" />
+      <hr className="rule my-16" />
 
-      {/* PROOF */}
-      <section className="py-28 px-6 bg-[#f5f5f0]">
-        <div className="max-w-3xl mx-auto">
-          <Reveal>
-            <p className="text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-4">
-              The work
-            </p>
-            <h2 className="mb-4">
-              All three properties are live, owned, and verifiable.
-            </h2>
-            <p className="text-[15px] leading-relaxed text-[#6b6b6b] mb-12 max-w-xl">
-              No anonymised results. No projected figures. Everything below can be examined directly.
-            </p>
-          </Reveal>
-
-          <div className="space-y-px">
-            {PROOF.map((p, i) => (
-              <Reveal key={p.name} delay={i * 80}>
-                <div className="bg-white border border-[#e0e0d8] px-8 py-7 card-hover">
-                  <p className="text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-1">
-                    {p.label}
-                  </p>
-                  <p className="text-[16px] text-[#1c1c1c] font-medium leading-snug mb-2">{p.name}</p>
-                  <p className="text-[14px] text-[#6b6b6b] leading-relaxed mb-4 max-w-xl">{p.desc}</p>
-                  <div className="flex items-center gap-5">
-                    <Link
-                      href={p.href}
-                      className="inline-flex items-center gap-1 text-xs text-[#2c4a52] hover:text-[#112d6e] transition-colors"
-                    >
-                      Case study <ArrowRight size={11} />
-                    </Link>
-                    <a
-                      href={p.external}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 text-xs text-[#a0a0a0] hover:text-[#6b6b6b] transition-colors"
-                    >
-                      Live site <ExternalLink size={11} />
-                    </a>
-                  </div>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-
-          <Reveal>
-            <div className="mt-10 pt-8 border-t border-[#e0e0d8]">
-              <p className="text-[13px] leading-relaxed text-[#6b6b6b] max-w-xl">
-                A single SIBA analysis with no paid promotion reached professionals from the House of Commons, MHCLG, Savills, and AtkinsRéalis, and drew direct interest from national journalists within hours of publication. Over 55% of the audience held senior, director, or executive positions.
-              </p>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      <hr className="mx-auto max-w-3xl border-[#e0e0d8]" />
-
-      {/* CTA */}
-      <section className="py-28 px-6">
-        <div className="max-w-3xl mx-auto">
-          <Reveal>
-            <div className="bg-[#112d6e] p-10 sm:p-14 text-center">
-              <p className="text-[11px] font-medium uppercase tracking-widest text-white/50 mb-4">
-                Get in touch
-              </p>
-              <h2 className="text-white text-[26px] sm:text-[30px] leading-snug mb-5 max-w-md mx-auto" style={{ fontFamily: "var(--font-serif), Georgia, serif", fontWeight: 400 }}>
-                If you have a challenge that fits, we should talk.
-              </h2>
-              <p className="mx-auto mb-10 max-w-md text-[15px] leading-relaxed text-white/70">
-                We do not take on every enquiry. Tell us about your organisation and the challenge. If it is the right fit, we will respond directly.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center justify-center gap-1.5 bg-white px-6 py-3 text-sm font-semibold text-[#112d6e] hover:bg-white/90 transition-colors"
-                >
-                  Start a conversation <ArrowRight size={13} />
-                </Link>
-                <Link
-                  href="/case-studies"
-                  className="inline-flex items-center justify-center gap-1.5 border border-white/30 px-6 py-3 text-sm font-semibold text-white/80 hover:text-white hover:border-white/60 transition-colors"
-                >
-                  See case studies
-                </Link>
-              </div>
-            </div>
-          </Reveal>
-        </div>
+      <section className="page pb-8">
+        <Reveal>
+          <h2 className="mb-5">What you are buying</h2>
+          <p className="text-[var(--ink-secondary)] mb-4">
+            Time. A scoped working session or a short engagement. I sit with the
+            organisation, work the question through Institrace, and write down what the
+            record shows. That is the consultation.
+          </p>
+          <p className="text-[var(--ink-secondary)] mb-8">
+            It is not an SEO retainer, not a website rebuild, and not a subscription to
+            Institrace. Those are different doors.
+          </p>
+          <p>
+            <Link href="/contact" className="out">
+              Start a conversation
+            </Link>
+            <span className="mx-3 text-[var(--rule-strong)]">/</span>
+            <Link href="/case-studies" className="quiet">
+              Read the work
+            </Link>
+          </p>
+        </Reveal>
       </section>
     </>
   );

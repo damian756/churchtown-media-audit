@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Churchtown Media — Digital Strategy & Technical Advisory";
+export const alt = "Churchtown Media";
 export const size = {
   width: 1200,
   height: 630,
@@ -18,43 +18,41 @@ export default async function Image() {
           flexDirection: "column",
           alignItems: "flex-start",
           justifyContent: "center",
-          backgroundColor: "#ffffff",
+          backgroundColor: "#f3eee4",
           padding: "80px 96px",
-          borderLeft: "6px solid #112d6e",
         }}
       >
         <div
           style={{
             fontSize: 22,
-            fontWeight: 400,
-            color: "#a0a0a0",
-            letterSpacing: "0.12em",
+            color: "#1a2744",
+            letterSpacing: "0.16em",
             textTransform: "uppercase",
-            marginBottom: 32,
+            marginBottom: 28,
           }}
         >
           Churchtown Media
         </div>
         <div
           style={{
-            fontSize: 54,
+            fontSize: 52,
             fontWeight: 400,
-            color: "#112d6e",
+            color: "#1a1916",
             lineHeight: 1.15,
             letterSpacing: "-0.02em",
-            maxWidth: 900,
+            maxWidth: 920,
           }}
         >
-          Digital strategy, technical architecture and intelligence.
+          Know what the public record already shows.
         </div>
         <div
           style={{
-            marginTop: 48,
+            marginTop: 40,
             fontSize: 20,
-            color: "#6b6b6b",
+            color: "#6a6760",
           }}
         >
-          churchtownmedia.co.uk
+          Institrace · SIBA Digital
         </div>
       </div>
     ),

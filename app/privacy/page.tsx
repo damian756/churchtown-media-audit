@@ -1,108 +1,93 @@
-"use client";
-
-import React from "react";
-
 export default function PrivacyPage() {
   return (
-    <main className="min-h-screen pt-32 pb-20 bg-slate-950">
-      <div className="max-w-3xl mx-auto px-6">
-        <h1 className="text-4xl font-extrabold text-white mb-8">Privacy Policy</h1>
-        <div className="prose prose-slate prose-lg prose-invert">
-          <p className="text-slate-300 mb-6">Last updated: February 2026</p>
-          
-          <h3 className="text-xl font-bold text-white mt-8 mb-4">1. Introduction</h3>
-          <p>
-            Churchtown Media ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website at churchtownmedia.co.uk, use our services, or interact with us in any way.
-          </p>
-          <p>
-            We comply with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018. By using our website, you consent to the data practices described in this policy.
-          </p>
+    <article className="page pt-16 pb-8 legal">
+      <p className="kicker mb-6">Legal</p>
+      <h1 className="mb-6">Privacy</h1>
+      <p>Last updated: September 2026.</p>
 
-          <h3 className="text-xl font-bold text-white mt-8 mb-4">2. Information We Collect</h3>
-          <p>We collect information that you provide directly to us, such as when you fill out a contact form, request a free SEO audit, subscribe to updates, or communicate with us by phone or email. This may include:</p>
-          <ul className="list-disc pl-6 mb-4 text-slate-300">
-            <li>Name and contact information (email address, phone number)</li>
-            <li>Business details (website URL, company name, industry)</li>
-            <li>Project requirements and budget information shared during consultations</li>
-            <li>Any other information you choose to provide</li>
-          </ul>
-          <p>We also automatically collect certain technical information when you visit our website:</p>
-          <ul className="list-disc pl-6 mb-4 text-slate-300">
-            <li>IP address, browser type, and operating system</li>
-            <li>Pages visited, time spent on pages, and referring URLs</li>
-            <li>Device information (screen size, device type)</li>
-            <li>Cookie data and similar tracking technologies</li>
-          </ul>
+      <h2>1. Introduction</h2>
+      <p>
+        Churchtown Media Ltd (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) is committed to protecting your
+        privacy. This notice explains how we collect, use, and safeguard information when
+        you visit churchtownmedia.co.uk, write to us, or engage the practice.
+      </p>
+      <p>
+        We comply with the UK General Data Protection Regulation and the Data Protection
+        Act 2018. The data controller is Churchtown Media Ltd, company number 16960442.
+      </p>
 
-          <h3 className="text-xl font-bold text-white mt-8 mb-4">3. How We Use Your Information</h3>
-          <p>We use the information we collect for the following purposes:</p>
-          <ul className="list-disc pl-6 mb-4 text-slate-300">
-            <li>To provide, maintain, and improve our web design and SEO services</li>
-            <li>To respond to your enquiries, comments, and requests</li>
-            <li>To send you project updates, technical notices, and support messages</li>
-            <li>To prepare proposals, quotes, and service agreements</li>
-            <li>To monitor and analyse website traffic, usage patterns, and trends</li>
-            <li>To detect, prevent, and address technical issues or security threats</li>
-          </ul>
+      <h2>2. Information we collect</h2>
+      <p>
+        We collect information you provide directly, such as when you fill out the contact
+        form or write by email. This may include name, email address, organisation, the
+        nature of the enquiry, and anything else you choose to send.
+      </p>
+      <p>We also collect limited technical information when you visit the site:</p>
+      <ul>
+        <li>IP address, browser type, and operating system</li>
+        <li>Pages visited and referring URLs</li>
+        <li>Device information</li>
+      </ul>
 
-          <h3 className="text-xl font-bold text-white mt-8 mb-4">4. Cookies</h3>
-          <p>
-            Our website uses cookies and similar tracking technologies to improve your browsing experience and analyse site traffic. We use Google Analytics to understand how visitors interact with our website. Google Analytics uses cookies to collect anonymous data about page views, session duration, and user behaviour.
-          </p>
-          <p>
-            You can control cookies through your browser settings. Most browsers allow you to refuse cookies or alert you when a cookie is being sent. However, disabling cookies may affect the functionality of certain parts of our website.
-          </p>
+      <h2>3. How we use it</h2>
+      <ul>
+        <li>To respond to enquiries and decide whether an engagement fits</li>
+        <li>To deliver consultation and related professional services</li>
+        <li>To prepare proposals and keep records we are required to keep</li>
+        <li>To understand how the site is used and to keep it secure</li>
+      </ul>
 
-          <h3 className="text-xl font-bold text-white mt-8 mb-4">5. Data Sharing and Third Parties</h3>
-          <p>We do not sell, trade, or rent your personal information to third parties. We may share your data with trusted service providers who assist us in operating our website and conducting our business, including:</p>
-          <ul className="list-disc pl-6 mb-4 text-slate-300">
-            <li>Vercel (website hosting and deployment)</li>
-            <li>Formspree (contact form processing)</li>
-            <li>Google Analytics (website analytics)</li>
-          </ul>
-          <p>These third parties are obligated to keep your information confidential and use it only for the purposes we specify.</p>
+      <h2>4. Cookies and analytics</h2>
+      <p>
+        The site uses Ahrefs analytics. You can control cookies through your browser. Blocking
+        them may affect some site functions.
+      </p>
 
-          <h3 className="text-xl font-bold text-white mt-8 mb-4">6. Data Retention</h3>
-          <p>
-            We retain your personal information only for as long as necessary to fulfil the purposes outlined in this Privacy Policy. Contact form submissions are retained for up to 24 months. Analytics data is retained in accordance with Google Analytics' default retention settings. Client project data is retained for the duration of our business relationship and for up to 6 years thereafter for legal and accounting purposes.
-          </p>
+      <h2>5. Sharing</h2>
+      <p>
+        We do not sell personal information. We may share data with providers who help us
+        operate the site and the practice, including Vercel (hosting) and Formspree (the
+        contact form). They may use the information only for those purposes.
+      </p>
+      <p>
+        Related properties operated by Churchtown Media Ltd include{" "}
+        <a href="https://www.siba.digital" target="_blank" rel="noopener noreferrer" className="out">
+          SIBA Digital
+        </a>{" "}
+        and{" "}
+        <a href="https://www.institrace.co.uk" target="_blank" rel="noopener noreferrer" className="out">
+          Institrace
+        </a>
+        . Each has its own privacy notice for use of those sites.
+      </p>
 
-          <h3 className="text-xl font-bold text-white mt-8 mb-4">7. Your Rights Under UK GDPR</h3>
-          <p>Under the UK General Data Protection Regulation, you have the following rights:</p>
-          <ul className="list-disc pl-6 mb-4 text-slate-300">
-            <li><strong>Right of access</strong>: request a copy of the personal data we hold about you</li>
-            <li><strong>Right to rectification</strong>: request correction of inaccurate or incomplete data</li>
-            <li><strong>Right to erasure</strong>: request deletion of your personal data</li>
-            <li><strong>Right to restrict processing</strong>: request that we limit how we use your data</li>
-            <li><strong>Right to data portability</strong>: request a copy of your data in a structured format</li>
-            <li><strong>Right to object</strong>: object to our processing of your personal data</li>
-          </ul>
-          <p>To exercise any of these rights, please contact us using the details below. We will respond to your request within 30 days.</p>
+      <h2>6. Retention</h2>
+      <p>
+        Contact form submissions are kept for up to 24 months. Client records are kept for
+        the duration of the engagement and for up to six years afterwards where required
+        for legal or accounting purposes.
+      </p>
 
-          <h3 className="text-xl font-bold text-white mt-8 mb-4">8. Data Security</h3>
-          <p>
-            We implement appropriate technical and organisational measures to protect your personal information against unauthorised access, alteration, disclosure, or destruction. Our website is served over HTTPS with TLS encryption. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.
-          </p>
+      <h2>7. Your rights</h2>
+      <p>Under UK GDPR you may request access, correction, deletion, restriction, portability, or object to processing. Write to the address below. We will respond within 30 days. You may also complain to the Information Commissioner&apos;s Office at ico.org.uk.</p>
 
-          <h3 className="text-xl font-bold text-white mt-8 mb-4">9. Changes to This Policy</h3>
-          <p>
-            We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date. We encourage you to review this policy periodically.
-          </p>
+      <h2>8. Security</h2>
+      <p>
+        The site is served over HTTPS. No method of transmission over the internet is
+        completely secure.
+      </p>
 
-          <h3 className="text-xl font-bold text-white mt-8 mb-4">10. Contact Us</h3>
-          <p>
-            If you have any questions about this Privacy Policy or wish to exercise your data protection rights, please contact us at:
-          </p>
-          <ul className="list-none pl-0 text-slate-300">
-            <li><strong>Email:</strong> hello@churchtownmedia.co.uk</li>
-            <li><strong>Phone:</strong> 01704 635785</li>
-            <li><strong>Address:</strong> Cambridge Avenue, Southport, Merseyside, PR9 9SA</li>
-          </ul>
-          <p>
-            You also have the right to lodge a complaint with the Information Commissioner's Office (ICO) at <strong>ico.org.uk</strong> if you believe your data protection rights have been violated.
-          </p>
-        </div>
-      </div>
-    </main>
+      <h2>9. Changes</h2>
+      <p>Updates will be posted on this page with a revised date.</p>
+
+      <h2>10. Contact</h2>
+      <p>
+        Email:{" "}
+        <a href="mailto:damian@churchtownmedia.co.uk" className="out">
+          damian@churchtownmedia.co.uk
+        </a>
+        . Telephone: 01704 635785. Address: 5 Cambridge Avenue, Southport, PR9 9SA.
+      </p>
+    </article>
   );
 }

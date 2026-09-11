@@ -1,104 +1,109 @@
-"use client";
-
-import React from "react";
 import Link from "next/link";
-import { ExternalLink } from "lucide-react";
+import OutLink from "./OutLink";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
+  const year = new Date().getFullYear();
 
   return (
-    <footer className="w-full border-t border-[#e0e0d8] bg-[#f5f5f0] mt-auto">
-      <div className="max-w-3xl mx-auto px-6 py-16">
-        <div className="flex flex-col md:flex-row justify-between gap-12 mb-12">
+    <footer className="mt-24 pb-16">
+      <div className="page">
+        <div className="h-px bg-[var(--rule)]" />
+        <div className="mt-[3px] h-px bg-[var(--rule)]" />
+      </div>
 
-          {/* Brand */}
-          <div className="space-y-3 max-w-xs">
-            <Link
-              href="/"
-              className="block text-[15px] font-medium text-[#1c1c1c] hover:text-[#112d6e] transition-colors"
-              style={{ fontFamily: "var(--font-serif), Georgia, serif" }}
-            >
-              Churchtown Media
-            </Link>
-            <p className="text-sm leading-relaxed text-[#6b6b6b]">
-              Digital strategy, technical architecture and intelligence.
+      <div className="page pt-12">
+        <p
+          className="text-[1.15rem] text-[var(--navy)]"
+          style={{ fontFamily: "var(--font-display), Georgia, serif" }}
+        >
+          Churchtown Media
+        </p>
+        <p className="mt-3 max-w-md text-[1.02rem] leading-relaxed text-[var(--ink-secondary)]">
+          Advisory practice of Damian Roche. Consultation on the public record, using{" "}
+          <OutLink href="https://www.institrace.co.uk">Institrace</OutLink> and the method
+          developed in public at{" "}
+          <OutLink href="https://www.siba.digital">SIBA Digital</OutLink>.
+        </p>
+
+        <div className="mt-10 grid gap-10 sm:grid-cols-3">
+          <div>
+            <p className="kicker mb-3">Practice</p>
+            <ul className="space-y-2 text-[0.98rem]">
+              <li>
+                <Link href="/about" className="quiet">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link href="/services" className="quiet">
+                  Consultation
+                </Link>
+              </li>
+              <li>
+                <Link href="/case-studies" className="quiet">
+                  Work
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="quiet">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p className="kicker mb-3">Properties</p>
+            <ul className="space-y-2 text-[0.98rem]">
+              <li>
+                <OutLink href="https://www.siba.digital">SIBA Digital</OutLink>
+              </li>
+              <li>
+                <OutLink href="https://www.siba.digital/services">SIBA audits</OutLink>
+              </li>
+              <li>
+                <OutLink href="https://www.institrace.co.uk">Institrace</OutLink>
+              </li>
+              <li>
+                <OutLink href="https://www.institrace.co.uk/methodology">
+                  Institrace methodology
+                </OutLink>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p className="kicker mb-3">Write</p>
+            <p className="text-[0.98rem]">
+              <a href="mailto:damian@churchtownmedia.co.uk" className="out">
+                damian@churchtownmedia.co.uk
+              </a>
             </p>
-            <div className="flex gap-5 pt-1 text-sm">
+            <p className="mt-2 text-[0.98rem]">
               <a
                 href="https://www.linkedin.com/in/damian-roche-7ba8293a5/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#6b6b6b] hover:text-[#112d6e] transition-colors"
+                className="quiet"
               >
                 LinkedIn
               </a>
-              <a
-                href="mailto:damian@churchtownmedia.co.uk"
-                className="text-[#6b6b6b] hover:text-[#112d6e] transition-colors"
-              >
-                damian@churchtownmedia.co.uk
-              </a>
-            </div>
-          </div>
-
-          {/* Nav */}
-          <div className="flex flex-wrap gap-x-16 gap-y-8">
-            <div>
-              <h4 className="text-[#1c1c1c] font-medium mb-4 text-xs uppercase tracking-widest">Practice</h4>
-              <ul className="space-y-3 text-sm text-[#6b6b6b]">
-                <li><Link href="/about" className="hover:text-[#112d6e] transition-colors">About</Link></li>
-                <li><Link href="/services" className="hover:text-[#112d6e] transition-colors">Services</Link></li>
-                <li><Link href="/case-studies" className="hover:text-[#112d6e] transition-colors">Case Studies</Link></li>
-                <li><Link href="/contact" className="hover:text-[#112d6e] transition-colors">Contact</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-[#1c1c1c] font-medium mb-4 text-xs uppercase tracking-widest">Work</h4>
-              <ul className="space-y-3 text-sm text-[#6b6b6b]">
-                <li>
-                  <a
-                    href="https://www.siba.digital"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 hover:text-[#112d6e] transition-colors"
-                  >
-                    SIBA Digital <ExternalLink size={11} />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.southportguide.co.uk"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 hover:text-[#112d6e] transition-colors"
-                  >
-                    Sefton Coast Network <ExternalLink size={11} />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.thesandgrounder.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 hover:text-[#112d6e] transition-colors"
-                  >
-                    The Sandgrounder <ExternalLink size={11} />
-                  </a>
-                </li>
-              </ul>
-            </div>
+            </p>
           </div>
         </div>
 
-        <div className="border-t border-[#e0e0d8] pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-[#a0a0a0]">
-          <p>&copy; {currentYear} Churchtown Media Ltd. Co. No. 16960442. VAT No. 511024262.</p>
-          <div className="flex gap-6">
-            <Link href="/privacy" className="hover:text-[#6b6b6b] transition-colors">Privacy</Link>
-            <Link href="/terms" className="hover:text-[#6b6b6b] transition-colors">Terms</Link>
-            <Link href="https://www.siba.digital/disclosure" className="hover:text-[#6b6b6b] transition-colors">Disclosure</Link>
-          </div>
-        </div>
+        <p className="mt-12 text-[0.82rem] leading-relaxed text-[var(--ink-faint)]">
+          © {year} Churchtown Media Ltd. Co. No. 16960442. VAT No. 511024262.{" "}
+          <Link href="/privacy" className="quiet">
+            Privacy
+          </Link>
+          {" · "}
+          <Link href="/terms" className="quiet">
+            Terms
+          </Link>
+          {" · "}
+          <OutLink href="https://www.siba.digital/disclosure" className="quiet">
+            Disclosure
+          </OutLink>
+        </p>
       </div>
     </footer>
   );

@@ -1,24 +1,25 @@
 import type { Metadata, Viewport } from "next";
-import { EB_Garamond, Inter } from "next/font/google";
+import { EB_Garamond, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-const serif = EB_Garamond({
+const display = EB_Garamond({
   subsets: ["latin"],
-  variable: "--font-serif",
+  variable: "--font-display",
   display: "swap",
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600"],
 });
 
-const sans = Inter({
+const body = Source_Serif_4({
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-body",
   display: "swap",
+  weight: ["400", "500", "600"],
 });
 
 export const viewport: Viewport = {
-  themeColor: "#ffffff",
+  themeColor: "#f3eee4",
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
@@ -27,30 +28,26 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.churchtownmedia.co.uk"),
   title: {
-    default: "Churchtown Media | Digital Strategy & Technical Advisory",
+    default: "Churchtown Media | Public-records consultation",
     template: "%s | Churchtown Media",
   },
   description:
-    "Churchtown Media is a specialist digital advisory practice. Technical SEO, web architecture, and digital footprint intelligence. Founded by Damian Roche. Creator of SIBA Digital, the Sefton Coast Network, and The Sandgrounder.",
+    "Advisory practice of Damian Roche. Consultation on the UK public record, using Institrace and the method developed in public at SIBA Digital.",
   applicationName: "Churchtown Media",
   authors: [{ name: "Damian Roche", url: "https://www.churchtownmedia.co.uk" }],
-  generator: "Next.js",
   keywords: [
-    "digital strategy consultancy",
-    "technical SEO advisory",
-    "AI search architecture",
-    "generative engine optimisation",
-    "digital footprint intelligence",
-    "AI infrastructure advisory",
-    "Cloudflare consultancy",
-    "Next.js architecture",
+    "public records consultation",
+    "governance advisory",
+    "Institrace",
+    "SIBA Digital",
     "Churchtown Media",
     "Damian Roche",
+    "OSINT advisory",
   ],
   openGraph: {
-    title: "Churchtown Media | Digital Strategy & Technical Advisory",
+    title: "Churchtown Media | Public-records consultation",
     description:
-      "Digital strategy, technical architecture and intelligence for organisations that cannot afford to get it wrong. Founded by Damian Roche, creator of SIBA Digital, the Sefton Coast Network, and The Sandgrounder.",
+      "Advisory practice of Damian Roche. Consultation on the UK public record, using Institrace and the method developed in public at SIBA Digital.",
     url: "https://www.churchtownmedia.co.uk",
     siteName: "Churchtown Media",
     locale: "en_GB",
@@ -60,7 +57,7 @@ export const metadata: Metadata = {
         url: "/opengraph-image.png",
         width: 1200,
         height: 630,
-        alt: "Churchtown Media: Digital Strategy & Technical Advisory",
+        alt: "Churchtown Media",
       },
     ],
   },
@@ -83,7 +80,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-GB" className={`${serif.variable} ${sans.variable} scroll-smooth`}>
+    <html lang="en-GB" className={`${display.variable} ${body.variable} scroll-smooth`}>
       <head>
         <script
           src="https://analytics.ahrefs.com/analytics.js"
@@ -91,9 +88,9 @@ export default function RootLayout({
           async
         />
       </head>
-      <body className="antialiased">
+      <body>
         <Navbar />
-        <main className="pt-[62px]">{children}</main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

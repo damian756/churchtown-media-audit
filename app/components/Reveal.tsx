@@ -14,7 +14,10 @@ export default function Reveal({ children, className = "", delay = 0 }: RevealPr
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
+    el.style.opacity = "0";
+    el.style.transform = "translateY(16px)";
     if (delay > 0) {
       el.style.transitionDelay = `${delay}ms`;
     }
@@ -22,14 +25,21 @@ export default function Reveal({ children, className = "", delay = 0 }: RevealPr
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          el.classList.add("revealed");
+          el.style.opacity = "";
+          el.style.transform = "";
+          el.style.transitionDelay = "";
           observer.unobserve(el);
         }
       },
-      { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.12, rootMargin: "0px 0px -24px 0px" }
     );
 
-    observer.observe(el);
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        observer.observe(el);
+      });
+    });
+
     return () => observer.disconnect();
   }, [delay]);
 
