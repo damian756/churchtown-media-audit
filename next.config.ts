@@ -66,8 +66,8 @@ const nextConfig: NextConfig = {
       { source: '/blackpool-growth', destination: '/services', permanent: true },
       { source: '/southport-growth', destination: '/services', permanent: true },
 
-      // Old service subpages and any leftover agency slug
-      { source: '/services/:slug*', destination: '/services', permanent: true },
+      // Old service subpages. Use + so /services itself is not matched.
+      { source: '/services/:slug+', destination: '/services', permanent: true },
 
       // Old vanity blog URLs. Direct to Work, not via /blog/...
       { source: '/seo-recovery-alotek-shelters', destination: '/case-studies', permanent: true },
