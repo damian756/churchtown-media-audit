@@ -1,6 +1,17 @@
+import JsonLd from "../components/JsonLd";
+import { webPageGraph } from "@/lib/schema";
+
 export default function PrivacyPage() {
   return (
     <article className="pt-16 pb-8 legal">
+      <JsonLd
+        data={webPageGraph({
+          path: "/privacy",
+          name: "Privacy",
+          description:
+            "Privacy notice for Churchtown Media Ltd. How we collect, use, and safeguard information.",
+        })}
+      />
       <p className="kicker mb-6">Legal</p>
       <h1 className="mb-6">Privacy</h1>
       <p>Last updated: September 2026.</p>
@@ -39,8 +50,11 @@ export default function PrivacyPage() {
 
       <h2>4. Cookies and analytics</h2>
       <p>
-        The site uses Ahrefs analytics. You can control cookies through your browser. Blocking
-        them may affect some site functions.
+        The site uses Ahrefs Web Analytics. That product does not set advertising or
+        tracking cookies. We do not run marketing pixels and we do not show a cookie
+        banner because we do not set optional cookies. The host (Vercel) may set a
+        strictly necessary cookie for security or load balancing. The contact form is
+        processed by Formspree.
       </p>
 
       <h2>5. Sharing</h2>
@@ -83,10 +97,14 @@ export default function PrivacyPage() {
       <h2>10. Contact</h2>
       <p>
         Email:{" "}
+        <a href="mailto:hello@churchtownmedia.co.uk" className="out">
+          hello@churchtownmedia.co.uk
+        </a>
+        {" or "}
         <a href="mailto:damian@churchtownmedia.co.uk" className="out">
           damian@churchtownmedia.co.uk
         </a>
-        . Telephone: 01704 635785. Address: 5 Cambridge Avenue, Southport, PR9 9SA.
+        . Telephone: 01704 635785. Address: 5 Cambridge Avenue, Churchtown, Southport, PR9 9SA.
       </p>
     </article>
   );

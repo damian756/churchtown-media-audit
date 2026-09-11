@@ -1,23 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import Script from "next/script";
 import Link from "next/link";
-
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "ContactPage",
-  mainEntity: {
-    "@type": "ProfessionalService",
-    name: "Churchtown Media",
-    email: ["hello@churchtownmedia.co.uk", "damian@churchtownmedia.co.uk"],
-    url: "https://www.churchtownmedia.co.uk",
-    founder: {
-      "@type": "Person",
-      name: "Damian Roche",
-    },
-  },
-};
+import { NAP } from "@/lib/site";
 
 export default function ContactForm() {
   const FORMSPREE_ID = "mpqjzyby";
@@ -42,22 +27,16 @@ export default function ContactForm() {
         setStatus("idle");
       }
     } catch {
-      alert("Error connecting to server. Please email damian@churchtownmedia.co.uk directly.");
+      alert(`Error connecting to server. Please email ${NAP.emailDamian} directly.`);
       setStatus("idle");
     }
   };
 
   return (
     <>
-      <Script
-        id="contact-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-
       <section className="pt-16 pb-2">
         <p className="kicker mb-6">Contact</p>
-        <h1 className="mb-6">Write.</h1>
+        <h1 className="mb-6">Write to Damian.</h1>
         <p className="lede">
           Say who you are, the question, and the timescale. If it is the right fit, I
           will respond. If it is not, I will say so.
@@ -82,22 +61,38 @@ export default function ContactForm() {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-8">
                 <div>
-                  <label className="kicker block mb-2">Name</label>
-                  <input name="name" type="text" required placeholder="Your name" className="input" />
+                  <label htmlFor="name" className="kicker block mb-2">
+                    Name
+                  </label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    required
+                    autoComplete="name"
+                    placeholder="Your name"
+                    className="input"
+                  />
                 </div>
                 <div>
-                  <label className="kicker block mb-2">Email</label>
+                  <label htmlFor="email" className="kicker block mb-2">
+                    Email
+                  </label>
                   <input
+                    id="email"
                     name="email"
                     type="email"
                     required
+                    autoComplete="email"
                     placeholder="you@organisation.co.uk"
                     className="input"
                   />
                 </div>
                 <div>
-                  <label className="kicker block mb-2">This is about</label>
-                  <select name="service" className="input">
+                  <label htmlFor="service" className="kicker block mb-2">
+                    This is about
+                  </label>
+                  <select id="service" name="service" className="input">
                     <option>A consultation</option>
                     <option>Institrace for a team</option>
                     <option>A SIBA audit (I will point you there)</option>
@@ -105,8 +100,11 @@ export default function ContactForm() {
                   </select>
                 </div>
                 <div>
-                  <label className="kicker block mb-2">The question</label>
+                  <label htmlFor="message" className="kicker block mb-2">
+                    The question
+                  </label>
                   <textarea
+                    id="message"
                     name="message"
                     required
                     rows={7}
@@ -124,17 +122,27 @@ export default function ContactForm() {
           <aside className="space-y-6 text-[0.98rem] text-[var(--ink-secondary)]">
             <p>
               <span className="kicker block mb-2">Email</span>
-              <a href="mailto:hello@churchtownmedia.co.uk" className="out">
-                hello@churchtownmedia.co.uk
+              <a href={`mailto:${NAP.emailHello}`} className="out">
+                {NAP.emailHello}
               </a>
               <br />
-              <a href="mailto:damian@churchtownmedia.co.uk" className="out">
-                damian@churchtownmedia.co.uk
+              <a href={`mailto:${NAP.emailDamian}`} className="out">
+                {NAP.emailDamian}
               </a>
             </p>
             <p>
-              <span className="kicker block mb-2">Based</span>
-              Churchtown, Southport
+              <span className="kicker block mb-2">Telephone</span>
+              <a href={`tel:${NAP.telephone}`} className="out">
+                {NAP.telephoneDisplay}
+              </a>
+            </p>
+            <p>
+              <span className="kicker block mb-2">Address</span>
+              {NAP.streetAddress}
+              <br />
+              Churchtown, {NAP.addressLocality}
+              <br />
+              {NAP.postalCode}
             </p>
             <p>
               Before you write, it may help to read{" "}

@@ -1,6 +1,17 @@
+import JsonLd from "../components/JsonLd";
+import { webPageGraph } from "@/lib/schema";
+
 export default function TermsPage() {
   return (
     <article className="pt-16 pb-8 legal">
+      <JsonLd
+        data={webPageGraph({
+          path: "/terms",
+          name: "Terms",
+          description:
+            "Terms for Churchtown Media Ltd, the advisory practice behind SIBA Digital and Institrace.",
+        })}
+      />
       <p className="kicker mb-6">Legal</p>
       <h1 className="mb-6">Terms</h1>
       <p>Last updated: September 2026.</p>
@@ -73,10 +84,14 @@ export default function TermsPage() {
 
       <h2>10. Contact</h2>
       <p>
+        <a href="mailto:hello@churchtownmedia.co.uk" className="out">
+          hello@churchtownmedia.co.uk
+        </a>
+        {" or "}
         <a href="mailto:damian@churchtownmedia.co.uk" className="out">
           damian@churchtownmedia.co.uk
         </a>
-        . 01704 635785. 5 Cambridge Avenue, Southport, PR9 9SA.
+        . 01704 635785. 5 Cambridge Avenue, Churchtown, Southport, PR9 9SA.
       </p>
     </article>
   );

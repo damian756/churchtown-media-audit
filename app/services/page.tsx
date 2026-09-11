@@ -1,42 +1,21 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import Reveal from "../components/Reveal";
 import OutLink from "../components/OutLink";
+import JsonLd from "../components/JsonLd";
+import { pageMeta } from "@/lib/seo";
+import { consultationGraph } from "@/lib/schema";
 
-export const metadata: Metadata = {
+export const metadata = pageMeta({
   title: "Consultation",
   description:
     "Scoped public-records consultation from Churchtown Media. Working sessions that use Institrace. Full governance audits are commissioned at SIBA Digital.",
-  alternates: { canonical: "https://www.churchtownmedia.co.uk/services" },
-  openGraph: {
-    title: "Consultation | Churchtown Media",
-    description:
-      "Scoped public-records consultation. Institrace in the room. Full audits live on SIBA Digital.",
-    url: "https://www.churchtownmedia.co.uk/services",
-    type: "website",
-    siteName: "Churchtown Media",
-    locale: "en_GB",
-  },
-};
-
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  name: "Public-records consultation",
-  provider: { "@id": "https://www.churchtownmedia.co.uk/#organization" },
-  url: "https://www.churchtownmedia.co.uk/services",
-  areaServed: { "@type": "Country", name: "United Kingdom" },
-  description:
-    "Scoped working sessions and short engagements using Institrace and the SIBA method. Written note. Not a subscription and not a forensic audit.",
-};
+  path: "/services",
+});
 
 export default function ServicesPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <JsonLd data={consultationGraph()} />
 
       <section className="pt-16 pb-2">
         <Reveal>

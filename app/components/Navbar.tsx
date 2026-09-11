@@ -61,6 +61,8 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setIsOpen(!isOpen)}
+            aria-expanded={isOpen}
+            aria-controls="mobile-menu"
             aria-label={isOpen ? "Close menu" : "Open menu"}
             className="md:hidden text-[0.95rem] text-[var(--navy)] pb-0.5 border-b border-[var(--rule)]"
           >
@@ -74,7 +76,7 @@ export default function Navbar() {
       </header>
 
       {isOpen && (
-        <div className="fixed inset-0 z-[110] bg-[var(--paper)] md:hidden">
+        <div id="mobile-menu" className="fixed inset-0 z-[110] bg-[var(--paper)] md:hidden">
           <div className="page flex flex-col gap-6 pt-28">
             {links.map((link) => (
               <Link

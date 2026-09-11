@@ -1,24 +1,20 @@
-import type { Metadata } from "next";
+import JsonLd from "../components/JsonLd";
+import { pageMeta } from "@/lib/seo";
+import { contactGraph } from "@/lib/schema";
 import ContactForm from "./ContactForm";
 
-export const metadata: Metadata = {
+export const metadata = pageMeta({
   title: "Contact",
   description:
     "Write to Damian Roche at Churchtown Media about public-records consultation, Institrace for a team, or a SIBA audit.",
-  alternates: {
-    canonical: "https://www.churchtownmedia.co.uk/contact",
-  },
-  openGraph: {
-    title: "Contact | Churchtown Media",
-    description:
-      "Say who you are, the question, and the timescale. If it is the right fit, Damian will respond.",
-    url: "https://www.churchtownmedia.co.uk/contact",
-    type: "website",
-    siteName: "Churchtown Media",
-    locale: "en_GB",
-  },
-};
+  path: "/contact",
+});
 
 export default function ContactPage() {
-  return <ContactForm />;
+  return (
+    <>
+      <JsonLd data={contactGraph()} />
+      <ContactForm />
+    </>
+  );
 }

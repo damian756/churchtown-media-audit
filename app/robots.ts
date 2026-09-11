@@ -1,49 +1,43 @@
-import { MetadataRoute } from 'next';
+import { MetadataRoute } from "next";
+import { SITE_URL } from "@/lib/site";
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
-        userAgent: '*',
-        allow: '/',
-        disallow: ['/api/'],
-      },
-      // AI training crawlers: allow crawling but disallow training use
-      // This signals intent without blocking legitimate AI search indexing
-      {
-        userAgent: 'GPTBot',
-        disallow: '/',
+        userAgent: "*",
+        allow: "/",
+        disallow: ["/api/"],
       },
       {
-        userAgent: 'ChatGPT-User',
-        allow: '/',
+        userAgent: "GPTBot",
+        disallow: "/",
       },
       {
-        userAgent: 'CCBot',
-        disallow: '/',
+        userAgent: "ChatGPT-User",
+        allow: "/",
       },
       {
-        userAgent: 'anthropic-ai',
-        disallow: '/',
+        userAgent: "CCBot",
+        disallow: "/",
       },
       {
-        userAgent: 'Claude-Web',
-        disallow: '/',
-      },
-      // AI search indexers (allow these: they drive GEO visibility)
-      {
-        userAgent: 'PerplexityBot',
-        allow: '/',
+        userAgent: "ClaudeBot",
+        disallow: "/",
       },
       {
-        userAgent: 'Google-Extended',
-        allow: '/',
+        userAgent: "Google-Extended",
+        allow: "/",
       },
       {
-        userAgent: 'Amazonbot',
-        allow: '/',
+        userAgent: "PerplexityBot",
+        allow: "/",
+      },
+      {
+        userAgent: "Amazonbot",
+        allow: "/",
       },
     ],
-    sitemap: 'https://www.churchtownmedia.co.uk/sitemap.xml',
+    sitemap: `${SITE_URL}/sitemap.xml`,
   };
 }

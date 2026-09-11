@@ -1,5 +1,6 @@
 import Link from "next/link";
 import OutLink from "./OutLink";
+import { NAP } from "@/lib/site";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -73,9 +74,22 @@ export default function Footer() {
           <div>
             <p className="kicker mb-3">Write</p>
             <p className="text-[0.98rem]">
-              <a href="mailto:damian@churchtownmedia.co.uk" className="out">
-                damian@churchtownmedia.co.uk
+              <a href={`mailto:${NAP.emailHello}`} className="out">
+                {NAP.emailHello}
               </a>
+            </p>
+            <p className="mt-2 text-[0.98rem]">
+              <a href={`mailto:${NAP.emailDamian}`} className="out">
+                {NAP.emailDamian}
+              </a>
+            </p>
+            <p className="mt-2 text-[0.98rem]">
+              <a href={`tel:${NAP.telephone}`} className="quiet">
+                {NAP.telephoneDisplay}
+              </a>
+            </p>
+            <p className="mt-2 text-[0.98rem] text-[var(--ink-muted)]">
+              {NAP.streetAddress}, Churchtown, {NAP.addressLocality} {NAP.postalCode}
             </p>
             <p className="mt-2 text-[0.98rem]">
               <a
@@ -91,7 +105,7 @@ export default function Footer() {
         </div>
 
         <p className="mt-12 text-[0.82rem] leading-relaxed text-[var(--ink-faint)]">
-          © {year} Churchtown Media Ltd. Co. No. 16960442. VAT No. 511024262.{" "}
+          © {year} {NAP.legalName}. Co. No. {NAP.companyNumber}. VAT No. 511024262.{" "}
           <Link href="/privacy" className="quiet">
             Privacy
           </Link>

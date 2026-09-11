@@ -1,44 +1,26 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import Reveal from "./components/Reveal";
 import OutLink from "./components/OutLink";
+import JsonLd from "./components/JsonLd";
+import { pageMeta } from "@/lib/seo";
+import { SITE_DESCRIPTION, SITE_TITLE } from "@/lib/site";
+import { webPageGraph } from "@/lib/schema";
 
-export const metadata: Metadata = {
-  title: "Churchtown Media | Public-records consultation",
-  description:
-    "Advisory practice of Damian Roche. Consultation on the UK public record, using Institrace and the method developed in public at SIBA Digital.",
-  alternates: {
-    canonical: "https://www.churchtownmedia.co.uk",
-  },
-};
-
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "@id": "https://www.churchtownmedia.co.uk/#organization",
-  name: "Churchtown Media",
-  url: "https://www.churchtownmedia.co.uk",
-  logo: "https://www.churchtownmedia.co.uk/opengraph-image.png",
-  description:
-    "Advisory practice of Damian Roche. Public-records consultation using Institrace and the SIBA method.",
-  founder: {
-    "@type": "Person",
-    name: "Damian Roche",
-    url: "https://www.linkedin.com/in/damian-roche-7ba8293a5/",
-  },
-  sameAs: [
-    "https://www.linkedin.com/in/damian-roche-7ba8293a5/",
-    "https://www.siba.digital",
-    "https://www.institrace.co.uk",
-  ],
-};
+export const metadata = pageMeta({
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
+  path: "/",
+});
 
 export default function Home() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      <JsonLd
+        data={webPageGraph({
+          path: "/",
+          name: SITE_TITLE,
+          description: SITE_DESCRIPTION,
+        })}
       />
 
       <section className="pt-16 pb-2">

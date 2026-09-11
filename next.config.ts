@@ -10,7 +10,19 @@ const nextConfig: NextConfig = {
   },
 
   async headers() {
+    const security = [
+      { key: "X-Content-Type-Options", value: "nosniff" },
+      { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+      { key: "X-Frame-Options", value: "SAMEORIGIN" },
+      {
+        key: "Permissions-Policy",
+        value: "camera=(), microphone=(), geolocation=()",
+      },
+    ];
+
     return [
+      { source: "/", headers: security },
+      { source: "/:path*", headers: security },
       {
         source: "/images/:path*",
         headers: [
@@ -52,6 +64,20 @@ const nextConfig: NextConfig = {
 
   async redirects() {
     return [
+      {
+        source: "/",
+        has: [{ type: "host", value: "churchtownmedia.co.uk" }],
+        destination: "https://www.churchtownmedia.co.uk/",
+        permanent: true,
+      },
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "churchtownmedia.co.uk" }],
+        destination: "https://www.churchtownmedia.co.uk/:path*",
+        permanent: true,
+      },
+      { source: "/opengraph-image.png", destination: "/opengraph-image", permanent: true },
+
       // Old agency URLs. One hop to the practice. /case-studies stays as Work.
       { source: '/blog', destination: '/case-studies', permanent: true },
       { source: '/blog/:slug*', destination: '/case-studies', permanent: true },

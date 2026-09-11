@@ -1,12 +1,11 @@
-import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMeta({
   title: "Terms",
-  description: "Terms for Churchtown Media Ltd, the advisory practice behind SIBA Digital and Institrace.",
-  alternates: {
-    canonical: "https://www.churchtownmedia.co.uk/terms",
-  },
-};
+  description:
+    "Terms for Churchtown Media Ltd, the advisory practice behind SIBA Digital and Institrace.",
+  path: "/terms",
+});
 
 export default function TermsLayout({
   children,

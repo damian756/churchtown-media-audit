@@ -1,23 +1,16 @@
-import { Metadata } from "next";
 import Link from "next/link";
 import Reveal from "../components/Reveal";
 import OutLink from "../components/OutLink";
+import JsonLd from "../components/JsonLd";
+import { pageMeta } from "@/lib/seo";
+import { workGraph } from "@/lib/schema";
 
-export const metadata: Metadata = {
+export const metadata = pageMeta({
   title: "Work",
   description:
     "SIBA Digital and Institrace. The public method and the joined public-records index behind Churchtown Media consultation.",
-  alternates: { canonical: "https://www.churchtownmedia.co.uk/case-studies" },
-  openGraph: {
-    title: "Work | Churchtown Media",
-    description:
-      "SIBA Digital and Institrace. Live, owned, and verifiable.",
-    url: "https://www.churchtownmedia.co.uk/case-studies",
-    type: "website",
-    siteName: "Churchtown Media",
-    locale: "en_GB",
-  },
-};
+  path: "/case-studies",
+});
 
 const milestones = [
   {
@@ -50,6 +43,7 @@ const milestones = [
 export default function CaseStudiesPage() {
   return (
     <>
+      <JsonLd data={workGraph()} />
       <section className="pt-16 pb-2">
         <Reveal>
           <p className="kicker mb-6">Work</p>

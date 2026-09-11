@@ -1,62 +1,22 @@
-import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "../components/Reveal";
 import OutLink from "../components/OutLink";
+import JsonLd from "../components/JsonLd";
+import { pageMeta } from "@/lib/seo";
+import { aboutGraph } from "@/lib/schema";
 
-export const metadata: Metadata = {
+export const metadata = pageMeta({
   title: "About Damian Roche",
   description:
     "Damian Roche. Ex-British Army. Founder of Churchtown Media, SIBA Digital, and Institrace. Based in Churchtown, Southport.",
-  alternates: {
-    canonical: "https://www.churchtownmedia.co.uk/about",
-  },
-  openGraph: {
-    title: "About Damian Roche | Churchtown Media",
-    description:
-      "Ex-British Army. Founder of Churchtown Media, SIBA Digital, and Institrace.",
-    url: "https://www.churchtownmedia.co.uk/about",
-    type: "website",
-    siteName: "Churchtown Media",
-    locale: "en_GB",
-  },
-};
+  path: "/about",
+});
 
 export default function AboutPage() {
-  const schemaData = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://www.churchtownmedia.co.uk/#organization",
-        name: "Churchtown Media",
-        url: "https://www.churchtownmedia.co.uk",
-        sameAs: ["https://www.siba.digital", "https://www.institrace.co.uk"],
-        founder: { "@id": "https://www.churchtownmedia.co.uk/about#founder" },
-      },
-      {
-        "@type": "Person",
-        "@id": "https://www.churchtownmedia.co.uk/about#founder",
-        name: "Damian Roche",
-        jobTitle: "Founder",
-        worksFor: { "@id": "https://www.churchtownmedia.co.uk/#organization" },
-        url: "https://www.linkedin.com/in/damian-roche-7ba8293a5/",
-        sameAs: [
-          "https://www.linkedin.com/in/damian-roche-7ba8293a5/",
-          "https://github.com/damian756",
-          "https://www.siba.digital",
-          "https://www.institrace.co.uk",
-        ],
-      },
-    ],
-  };
-
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      />
+      <JsonLd data={aboutGraph()} />
 
       <section className="pt-16 pb-2">
         <Reveal>
