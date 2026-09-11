@@ -7,10 +7,10 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
   return (
-    <section className="page pt-20 pb-24">
+    <section className="pt-20 pb-24">
       <p className="kicker mb-6">404</p>
       <h1 className="mb-6">This page is not here.</h1>
-      <p className="text-[var(--ink-secondary)] mb-8 max-w-md">
+      <p className="text-[var(--ink-secondary)] mb-8">
         It may have moved when the practice site was refocused. The work still lives
         on the pages below.
       </p>

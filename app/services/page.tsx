@@ -38,7 +38,7 @@ export default function ServicesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <section className="page pt-16 pb-4">
+      <section className="pt-16 pb-2">
         <Reveal>
           <p className="kicker mb-6">Consultation</p>
           <h1 className="mb-8">A working session on a real question.</h1>
@@ -51,9 +51,9 @@ export default function ServicesPage() {
         </Reveal>
       </section>
 
-      <hr className="rule my-16" />
+      <hr className="rule" />
 
-      <section className="page space-y-8">
+      <section className="space-y-8">
         <Reveal>
           <h2>What it is</h2>
           <p className="mt-4 text-[var(--ink-secondary)]">

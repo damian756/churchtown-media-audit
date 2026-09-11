@@ -50,7 +50,7 @@ const milestones = [
 export default function CaseStudiesPage() {
   return (
     <>
-      <section className="page pt-16 pb-4">
+      <section className="pt-16 pb-2">
         <Reveal>
           <p className="kicker mb-6">Work</p>
           <h1 className="mb-8">Two bodies of work. Both live. Both mine.</h1>
@@ -65,9 +65,9 @@ export default function CaseStudiesPage() {
         </Reveal>
       </section>
 
-      <hr className="rule my-16" />
+      <hr className="rule" />
 
-      <section id="siba" className="page scroll-mt-28">
+      <section id="siba" className="scroll-mt-28">
         <Reveal>
           <p className="kicker mb-4">The method</p>
           <h2 className="mb-5">SIBA Digital</h2>
@@ -114,9 +114,9 @@ export default function CaseStudiesPage() {
         </Reveal>
       </section>
 
-      <hr className="rule my-16" />
+      <hr className="rule" />
 
-      <section id="institrace" className="page scroll-mt-28 pb-8">
+      <section id="institrace" className="scroll-mt-28 pb-8">
         <Reveal>
           <p className="kicker mb-4">The infrastructure</p>
           <h2 className="mb-5">Institrace</h2>

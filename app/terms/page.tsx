@@ -1,6 +1,6 @@
 export default function TermsPage() {
   return (
-    <article className="page pt-16 pb-8 legal">
+    <article className="pt-16 pb-8 legal">
       <p className="kicker mb-6">Legal</p>
       <h1 className="mb-6">Terms</h1>
       <p>Last updated: September 2026.</p>

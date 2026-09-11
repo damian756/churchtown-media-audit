@@ -90,7 +90,7 @@ export default function RootLayout({
       </head>
       <body>
         <Navbar />
-        <main>{children}</main>
+        <main className="page">{children}</main>
         <Footer />
       </body>
     </html>

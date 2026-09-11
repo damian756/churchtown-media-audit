@@ -55,18 +55,18 @@ export default function ContactForm() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <section className="page pt-16 pb-4">
+      <section className="pt-16 pb-2">
         <p className="kicker mb-6">Contact</p>
         <h1 className="mb-6">Write.</h1>
-        <p className="lede max-w-lg">
+        <p className="lede">
           Say who you are, the question, and the timescale. If it is the right fit, I
           will respond. If it is not, I will say so.
         </p>
       </section>
 
-      <hr className="rule my-14" />
+      <hr className="rule" />
 
-      <section className="page pb-8">
+      <section className="pb-8">
         <div className="grid gap-16 md:grid-cols-[1fr_240px] items-start">
           <div>
             {status === "success" ? (

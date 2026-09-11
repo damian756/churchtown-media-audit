@@ -58,7 +58,7 @@ export default function AboutPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
 
-      <section className="page pt-16 pb-4">
+      <section className="pt-16 pb-2">
         <Reveal>
           <p className="kicker mb-6">Damian Roche</p>
           <h1 className="mb-10">The biography is the qualification.</h1>
@@ -111,9 +111,9 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <hr className="rule my-16" />
+      <hr className="rule" />
 
-      <section className="page pb-8">
+      <section className="pb-8">
         <Reveal>
           <h2 className="mb-5">How I work</h2>
           <p className="text-[var(--ink-secondary)] mb-4">

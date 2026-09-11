@@ -41,7 +41,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <section className="page pt-16 pb-4">
+      <section className="pt-16 pb-2">
         <Reveal>
           <p className="kicker mb-6">A practice</p>
           <h1 className="mb-8">Know what the public record already shows.</h1>
@@ -72,9 +72,9 @@ export default function Home() {
         </Reveal>
       </section>
 
-      <hr className="rule my-16" />
+      <hr className="rule" />
 
-      <section className="page pb-4">
+      <section>
         <Reveal>
           <p className="kicker mb-8">Two properties</p>
         </Reveal>
@@ -125,9 +125,9 @@ export default function Home() {
         </Reveal>
       </section>
 
-      <hr className="rule my-16" />
+      <hr className="rule" />
 
-      <section className="page pb-8">
+      <section className="pb-8">
         <Reveal>
           <h2 className="mb-5">What you are buying</h2>
           <p className="text-[var(--ink-secondary)] mb-4">
