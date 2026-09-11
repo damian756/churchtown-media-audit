@@ -1,35 +1,46 @@
 # Churchtown Media
 
-> North West digital growth agency specializing in Next.js web design and data-driven SEO. Based in Southport, serving Liverpool, Manchester, Preston, and the wider UK.
+> Advisory practice of Damian Roche. Consultation on the UK public record, using Institrace and the method developed in public at SIBA Digital. Based in Churchtown, Southport.
 
 ## About
 
-Churchtown Media builds high-performance websites and SEO strategies for businesses across the North West. We use Next.js, React, and Vercel to deliver sub-second page loads, 90+ Lighthouse scores, and measurable traffic growth. Family-run agency with 15+ years in SEO and 20+ years in web development.
+Churchtown Media is a consultation practice, not a web design or SEO agency. Damian Roche founded the firm. The public method is SIBA Digital. The joined public-records index is Institrace. Time on a question is what is sold here.
 
-## Services
+Local editorial sites on the Sefton Coast are separate from this practice.
 
-- [Web Design](https://www.churchtownmedia.co.uk/services/web-design): Enterprise Next.js websites from £2,500
-- [SEO](https://www.churchtownmedia.co.uk/services/seo): Data-driven SEO packages from £500/month
-- [Small Business](https://www.churchtownmedia.co.uk/services/small-business): Professional websites from £1,500
-- [Content Scaling](https://www.churchtownmedia.co.uk/services/content-scaling): 100+ programmatic SEO pages in 48 hours
-- [Headless Development](https://www.churchtownmedia.co.uk/services/headless-development): WordPress to Next.js migration
+## What this site is
 
-## Key Pages
+- Consultation: time on a defined question, using the public record
+- A door to commissioned audits at SIBA Digital
+- A door to self-serve login at Institrace
 
-- [Homepage](https://www.churchtownmedia.co.uk/)
-- [Portfolio](https://www.churchtownmedia.co.uk/portfolio)
-- [Industries](https://www.churchtownmedia.co.uk/industries): 35+ industry-specific solutions
-- [Locations](https://www.churchtownmedia.co.uk/locations): Service areas across the North West
-- [Blog](https://www.churchtownmedia.co.uk/blog): SEO insights and market intelligence
+## What this site is not
+
+- Web design, SEO retainers, or small-business website packages
+- A free audit offer
+- Case studies of agency client work
+
+## Pages
+
+- [Home](https://www.churchtownmedia.co.uk/)
+- [Consultation](https://www.churchtownmedia.co.uk/services)
+- [Work](https://www.churchtownmedia.co.uk/case-studies): SIBA Digital and Institrace
 - [About](https://www.churchtownmedia.co.uk/about)
 - [Contact](https://www.churchtownmedia.co.uk/contact)
-- [Free SEO Audit](https://www.churchtownmedia.co.uk/audit)
-- [Testimonials](https://www.churchtownmedia.co.uk/testimonials)
-- [FAQs](https://www.churchtownmedia.co.uk/frequently-asked-questions)
+- [Privacy](https://www.churchtownmedia.co.uk/privacy)
+- [Terms](https://www.churchtownmedia.co.uk/terms)
+
+## Related sites
+
+- [SIBA Digital](https://www.siba.digital)
+- [SIBA services](https://www.siba.digital/services)
+- [Institrace](https://www.institrace.co.uk)
+- [Institrace methodology](https://www.institrace.co.uk/methodology)
 
 ## Contact
 
 - Email: hello@churchtownmedia.co.uk
+- Email: damian@churchtownmedia.co.uk
 - Phone: 01704 635785
-- Address: Cambridge Avenue, Southport, Merseyside, PR9 9SA
+- Address: 5 Cambridge Avenue, Southport, Merseyside, PR9 9SA
 - Website: https://www.churchtownmedia.co.uk

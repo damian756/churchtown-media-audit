@@ -10,7 +10,7 @@ const jsonLd = {
   mainEntity: {
     "@type": "ProfessionalService",
     name: "Churchtown Media",
-    email: "damian@churchtownmedia.co.uk",
+    email: ["hello@churchtownmedia.co.uk", "damian@churchtownmedia.co.uk"],
     url: "https://www.churchtownmedia.co.uk",
     founder: {
       "@type": "Person",
@@ -124,6 +124,10 @@ export default function ContactForm() {
           <aside className="space-y-6 text-[0.98rem] text-[var(--ink-secondary)]">
             <p>
               <span className="kicker block mb-2">Email</span>
+              <a href="mailto:hello@churchtownmedia.co.uk" className="out">
+                hello@churchtownmedia.co.uk
+              </a>
+              <br />
               <a href="mailto:damian@churchtownmedia.co.uk" className="out">
                 damian@churchtownmedia.co.uk
               </a>
