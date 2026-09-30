@@ -24,37 +24,10 @@ export default function AboutPage() {
           <h1 className="mb-10">About Damian</h1>
         </Reveal>
 
-        <div className="grid gap-10 md:grid-cols-[1fr_200px] items-start">
-          <Reveal delay={60}>
-            <div className="space-y-5 text-[var(--ink-secondary)]">
-              <p>
-                Hello, I&apos;m Damian. I founded Churchtown Media, and I spend most of my
-                days building{" "}
-                <OutLink href="https://www.institrace.co.uk">Institrace</OutLink>, a
-                joined index of UK public records.
-              </p>
-              <p>
-                Before all of this I served in the British Army with the Queen&apos;s
-                Guards. I still carry a lot from those years: a love of clear plans,
-                careful work, and looking after the people around me.
-              </p>
-              <p>
-                Since then I&apos;ve spent twenty years working with information,
-                publishing and search. I&apos;m self-taught, and I&apos;ve always enjoyed
-                understanding how things fit together from the ground up. Public records
-                turned out to be the most rewarding puzzle of all.
-              </p>
-              <p>
-                The company takes its name from Churchtown in Southport, where I&apos;ve
-                lived most of my life and where this all began. I also publish a few
-                local editorial sites about the Sefton Coast, which I look after
-                separately and very much enjoy.
-              </p>
-            </div>
-          </Reveal>
-
-          <Reveal delay={100} className="order-first md:order-none">
-            <figure className="mx-auto md:mx-0 w-[140px] md:w-[200px]">
+        <Reveal delay={60}>
+          <div className="space-y-5 text-[var(--ink-secondary)] after:content-[''] after:table after:clear-both">
+            {/* The portrait floats right beside the opening paragraphs; the text below it runs the full width. */}
+            <figure className="mx-auto mb-6 w-[140px] md:float-right md:mx-0 md:mb-4 md:ml-10 md:mt-1 md:w-[200px]">
               <Image
                 src="/images/damian-roche.webp"
                 alt="Damian Roche"
@@ -64,8 +37,32 @@ export default function AboutPage() {
                 priority
               />
             </figure>
-          </Reveal>
-        </div>
+            <p>
+              Hello, I&apos;m Damian. I founded Churchtown Media, and I spend
+              most of my days building{" "}
+              <OutLink href="https://www.institrace.co.uk">Institrace</OutLink>,
+              a joined index of UK public records.
+            </p>
+            <p>
+              Before all of this I served in the British Army with the
+              Queen&apos;s Guards. I still carry a lot from those years: a love
+              of clear plans, careful work, and looking after the people around
+              me.
+            </p>
+            <p>
+              Since then I&apos;ve spent twenty years working with information,
+              publishing and search. I&apos;m self-taught, and I&apos;ve always
+              enjoyed understanding how things fit together from the ground up.
+              Public records turned out to be the most rewarding puzzle of all.
+            </p>
+            <p>
+              The company takes its name from Churchtown in Southport, where
+              I&apos;ve lived most of my life and where this all began. I also
+              publish a few local editorial sites about the Sefton Coast, which
+              I look after separately and very much enjoy.
+            </p>
+          </div>
+        </Reveal>
       </section>
 
       <hr className="rule" />
@@ -74,14 +71,14 @@ export default function AboutPage() {
         <Reveal>
           <h2 className="mb-5">How I like to work</h2>
           <p className="text-[var(--ink-secondary)] mb-4">
-            I keep things simple and friendly. We start with a conversation about what
-            you&apos;d like to understand. Then we look at the record together, and I
-            write up what it shows in plain language.
+            I keep things simple and friendly. We start with a conversation
+            about what you&apos;d like to understand. Then we look at the record
+            together, and I write up what it shows in plain language.
           </p>
           <p className="text-[var(--ink-secondary)] mb-8">
-            I take on a small number of consultations at a time, so each one gets proper
-            care. If someone else is better placed to help, I&apos;ll happily point you
-            their way.
+            I take on a small number of consultations at a time, so each one
+            gets proper care. If someone else is better placed to help,
+            I&apos;ll happily point you their way.
           </p>
           <p>
             <Link href="/contact" className="out">
