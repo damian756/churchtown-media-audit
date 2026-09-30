@@ -43,7 +43,7 @@ export default function ContactForm() {
             alt="Damian Roche"
             width={144}
             height={144}
-            className="w-16 h-16 md:w-[72px] md:h-[72px] rounded-full border border-[var(--rule)]"
+            className="w-16 h-16 md:w-[72px] md:h-[72px] rounded-full object-cover object-top border border-[var(--rule)]"
           />
           <h1 className="m-0">Let&apos;s talk</h1>
         </div>

@@ -31,9 +31,9 @@ export default function AboutPage() {
               <Image
                 src="/images/damian-roche.webp"
                 alt="Damian Roche"
-                width={400}
-                height={400}
-                className="w-full rounded-md border border-[var(--rule)]"
+                width={690}
+                height={744}
+                className="w-full h-auto rounded-md border border-[var(--rule)]"
                 priority
               />
             </figure>
