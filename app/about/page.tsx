@@ -4,12 +4,12 @@ import Reveal from "../components/Reveal";
 import OutLink from "../components/OutLink";
 import JsonLd from "../components/JsonLd";
 import { pageMeta } from "@/lib/seo";
+import { ABOUT_DESCRIPTION } from "@/lib/site";
 import { aboutGraph } from "@/lib/schema";
 
 export const metadata = pageMeta({
   title: "About Damian Roche",
-  description:
-    "Damian Roche. Ex-British Army. Founder of Churchtown Media, SIBA Digital, and Institrace. Based in Churchtown, Southport.",
+  description: ABOUT_DESCRIPTION,
   path: "/about",
 });
 
@@ -21,34 +21,34 @@ export default function AboutPage() {
       <section className="pt-16 pb-2">
         <Reveal>
           <p className="kicker mb-6">Damian Roche</p>
-          <h1 className="mb-10">The biography is the qualification.</h1>
+          <h1 className="mb-10">About Damian</h1>
         </Reveal>
 
         <div className="grid gap-12 md:grid-cols-[1fr_240px] items-start">
           <Reveal delay={60}>
             <div className="space-y-5 text-[var(--ink-secondary)]">
               <p>
-                Ex-British Army, Queen&apos;s Guards. The discipline from that career
-                is still how this one runs. Clear objective. No waffle. Accountable
-                outcome.
+                Hello, I&apos;m Damian. I founded Churchtown Media, and I spend most of my
+                days building{" "}
+                <OutLink href="https://www.institrace.co.uk">Institrace</OutLink>, a
+                joined index of UK public records.
               </p>
               <p>
-                Twenty years building for the web. Fifteen of those on how records,
-                search, and publication actually compound. Self-taught. That is how I
-                understand a stack from first principles rather than from someone
-                else&apos;s curriculum.
+                Before all of this I served in the British Army with the Queen&apos;s
+                Guards. I still carry a lot from those years: a love of clear plans,
+                careful work, and looking after the people around me.
               </p>
               <p>
-                I founded Churchtown Media as the firm. The public method is{" "}
-                <OutLink href="https://www.siba.digital">SIBA Digital</OutLink>. The
-                infrastructure is{" "}
-                <OutLink href="https://www.institrace.co.uk">Institrace</OutLink>.
-                Consultation is what I sell here: time on a question, using both.
+                Since then I&apos;ve spent twenty years working with information,
+                publishing and search. I&apos;m self-taught, and I&apos;ve always enjoyed
+                understanding how things fit together from the ground up. Public records
+                turned out to be the most rewarding puzzle of all.
               </p>
               <p>
-                The name comes from Churchtown in Southport, where this started. I have
-                lived here most of my life. I also publish a handful of local editorial
-                sites on the Sefton Coast. That work is separate from this practice.
+                The company takes its name from Churchtown in Southport, where I&apos;ve
+                lived most of my life and where this all began. I also publish a few
+                local editorial sites about the Sefton Coast, which I look after
+                separately and very much enjoy.
               </p>
             </div>
           </Reveal>
@@ -75,27 +75,24 @@ export default function AboutPage() {
 
       <section className="pb-8">
         <Reveal>
-          <h2 className="mb-5">How I work</h2>
+          <h2 className="mb-5">How I like to work</h2>
           <p className="text-[var(--ink-secondary)] mb-4">
-            Every engagement starts with one question: what does this organisation
-            need to know that it cannot see clearly now? The answer determines the
-            scope. If the right answer is a{" "}
-            <OutLink href="https://www.siba.digital/services">SIBA audit</OutLink> or
-            an{" "}
-            <OutLink href="https://www.institrace.co.uk">Institrace</OutLink> login,
-            that is where I send you.
+            I keep things simple and friendly. We start with a conversation about what
+            you&apos;d like to understand. Then we look at the record together, and I
+            write up what it shows in plain language.
           </p>
           <p className="text-[var(--ink-secondary)] mb-8">
-            I take a small number of consultations at a time. Agree the scope, do the
-            work, write it down. That is it.
+            I take on a small number of consultations at a time, so each one gets proper
+            care. If someone else is better placed to help, I&apos;ll happily point you
+            their way.
           </p>
           <p>
             <Link href="/contact" className="out">
-              Write to Damian
+              Get in touch
             </Link>
             <span className="mx-3 text-[var(--rule-strong)]">/</span>
             <Link href="/case-studies" className="quiet">
-              The work
+              What we&apos;ve built
             </Link>
           </p>
         </Reveal>

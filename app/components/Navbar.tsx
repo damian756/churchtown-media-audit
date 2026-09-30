@@ -12,8 +12,11 @@ const links = [
 ];
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  // The menu is open only on the path where it was opened, so navigating closes it.
+  const [openOn, setOpenOn] = useState<string | null>(null);
+  const isOpen = openOn === pathname;
+  const setIsOpen = (open: boolean) => setOpenOn(open ? pathname : null);
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
@@ -21,10 +24,6 @@ export default function Navbar() {
       document.body.style.overflow = "";
     };
   }, [isOpen]);
-
-  useEffect(() => {
-    setIsOpen(false);
-  }, [pathname]);
 
   return (
     <>
@@ -38,7 +37,7 @@ export default function Navbar() {
               Churchtown Media
             </span>
             <span className="mt-1 block text-[0.72rem] tracking-[0.14em] uppercase text-[var(--ink-faint)]">
-              A practice
+              Southport
             </span>
           </Link>
 
@@ -90,9 +89,6 @@ export default function Navbar() {
               </Link>
             ))}
             <div className="mt-6 flex flex-col gap-3 text-[1.05rem]">
-              <a href="https://www.siba.digital" target="_blank" rel="noopener noreferrer" className="out">
-                SIBA Digital
-              </a>
               <a href="https://www.institrace.co.uk" target="_blank" rel="noopener noreferrer" className="out">
                 Institrace
               </a>

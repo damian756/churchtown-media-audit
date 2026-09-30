@@ -9,7 +9,7 @@ export default function TermsPage() {
           path: "/terms",
           name: "Terms",
           description:
-            "Terms for Churchtown Media Ltd, the advisory practice behind SIBA Digital and Institrace.",
+            "Terms for Churchtown Media Ltd, the Southport company behind Institrace.",
         })}
       />
       <p className="kicker mb-6">Legal</p>
@@ -23,18 +23,13 @@ export default function TermsPage() {
         begins.
       </p>
 
-      <h2>2. The practice</h2>
+      <h2>2. Our work</h2>
       <p>
-        Churchtown Media Ltd provides public-records consultation and related advisory
-        work. The joined index used in that work is{" "}
+        Churchtown Media Ltd offers public-records consultation and builds{" "}
         <a href="https://www.institrace.co.uk" target="_blank" rel="noopener noreferrer" className="out">
           Institrace
         </a>
-        . Commissioned governance audits are offered at{" "}
-        <a href="https://www.siba.digital" target="_blank" rel="noopener noreferrer" className="out">
-          SIBA Digital
-        </a>
-        . Verbal agreements are not binding until confirmed in writing.
+        , the joined index used in that work. Verbal agreements are not binding until confirmed in writing.
       </p>
 
       <h2>3. Fees</h2>
@@ -72,7 +67,7 @@ export default function TermsPage() {
 
       <h2>8. Other sites</h2>
       <p>
-        Links to SIBA Digital, Institrace, and other sites are provided for reference.
+        Links to Institrace and other sites are provided for reference.
         Those sites have their own terms.
       </p>
 

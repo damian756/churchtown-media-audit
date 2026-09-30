@@ -13,7 +13,7 @@ export const ogImage = {
   url: OG_IMAGE_PATH,
   width: 1200,
   height: 630,
-  alt: "Churchtown Media. Know what the public record already shows.",
+  alt: "Churchtown Media. Making the public record easier to read.",
 };
 
 export function pageMeta(opts: {
@@ -57,13 +57,12 @@ export const rootMetadata: Metadata = {
   applicationName: SITE_NAME,
   authors: [{ name: "Damian Roche", url: SITE_URL }],
   keywords: [
+    "UK public records",
     "public records consultation",
-    "governance advisory",
     "Institrace",
-    "SIBA Digital",
     "Churchtown Media",
     "Damian Roche",
-    "OSINT advisory",
+    "Southport",
   ],
   openGraph: {
     title: SITE_TITLE,

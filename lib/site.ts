@@ -3,9 +3,18 @@ export const OG_IMAGE_PATH = "/opengraph-image";
 export const OG_IMAGE = `${SITE_URL}${OG_IMAGE_PATH}`;
 
 export const SITE_NAME = "Churchtown Media";
-export const SITE_TITLE = "Churchtown Media | Public-records consultation";
+export const SITE_TITLE = "Churchtown Media | The public record, made easier to read";
 export const SITE_DESCRIPTION =
-  "Advisory practice of Damian Roche. Consultation on the UK public record, using Institrace and the method developed in public at SIBA Digital.";
+  "Churchtown Media is a small company in Southport, founded by Damian Roche. We build Institrace, a joined index of UK public records, and offer friendly one-to-one help with questions about the record.";
+
+export const ABOUT_DESCRIPTION =
+  "Damian Roche founded Churchtown Media in Southport. Army veteran, twenty years working with information, publishing and search, and the builder of Institrace.";
+export const CONSULTATION_DESCRIPTION =
+  "Friendly one-to-one help with a question about the UK public record. A relaxed working session with Damian Roche, followed by a short, clear written note.";
+export const WORK_DESCRIPTION =
+  "Institrace, the joined index of UK public records built by Churchtown Media: what it brings together, and who it is for.";
+export const CONTACT_DESCRIPTION =
+  "Get in touch with Damian Roche at Churchtown Media about a consultation, Institrace for your team, or anything else.";
 
 export const ORG_ID = `${SITE_URL}/#organization`;
 export const PERSON_ID = `${SITE_URL}/about#founder`;

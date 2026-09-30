@@ -3,7 +3,7 @@ import { pageMeta } from "@/lib/seo";
 export const metadata = pageMeta({
   title: "Terms",
   description:
-    "Terms for Churchtown Media Ltd, the advisory practice behind SIBA Digital and Institrace.",
+    "Terms for Churchtown Media Ltd, the Southport company behind Institrace.",
   path: "/terms",
 });
 

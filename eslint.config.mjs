@@ -12,7 +12,14 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Legacy one-off Node scripts, not part of the site.
+    "scripts/**",
   ]),
+  {
+    // CommonJS config file.
+    files: ["tailwind.config.js"],
+    rules: { "@typescript-eslint/no-require-imports": "off" },
+  },
 ]);
 
 export default eslintConfig;

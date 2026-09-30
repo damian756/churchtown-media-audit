@@ -25,30 +25,27 @@ export default function Home() {
 
       <section className="pt-16 pb-2">
         <Reveal>
-          <p className="kicker mb-6">A practice</p>
-          <h1 className="mb-8">Know what the public record already shows.</h1>
+          <p className="kicker mb-6">Welcome</p>
+          <h1 className="mb-8">Making the public record easier to read.</h1>
         </Reveal>
         <Reveal delay={80}>
           <p className="lede mb-6">
-            Churchtown Media is the advisory practice of Damian Roche. The work is consultation
-            on a real question, using a joined UK public-records index and a method that has
-            already been tested in public.
+            Churchtown Media is a small company in Southport, founded by Damian Roche. We
+            build Institrace, a joined index of UK public records, and we offer friendly,
+            one-to-one help for anyone trying to understand what the record shows.
           </p>
           <p className="text-[var(--ink-secondary)] mb-10">
-            The index is{" "}
-            <OutLink href="https://www.institrace.co.uk">Institrace</OutLink>. The public
-            method is{" "}
-            <OutLink href="https://www.siba.digital">SIBA Digital</OutLink>. This site is
-            the firm: scoped time, a written note, and a straight answer about whether the
-            work belongs here at all.
+            Public records are published in many places, by many bodies, in many formats.
+            We think they should be easier for everyone to find and to understand. That
+            simple idea sits behind everything we do.
           </p>
           <p>
             <Link href="/contact" className="out">
-              Write to Damian
+              Get in touch
             </Link>
             <span className="mx-3 text-[var(--rule-strong)]">/</span>
             <Link href="/services" className="quiet">
-              How consultation works
+              How a consultation works
             </Link>
           </p>
         </Reveal>
@@ -58,27 +55,27 @@ export default function Home() {
 
       <section>
         <Reveal>
-          <p className="kicker mb-8">Two properties</p>
+          <p className="kicker mb-8">What we do</p>
         </Reveal>
 
         <Reveal delay={40}>
           <article className="pb-12">
             <h2 className="mb-4">Institrace</h2>
             <p className="text-[var(--ink-secondary)] mb-4">
-              A joined index of UK public records. Committee papers, land titles, contract
-              awards, company filings, and the people who appear across them. Published is
-              not the same as findable. Institrace is the infrastructure that makes a
-              question askable of the whole.
+              Institrace is a joined index of UK public records. Council and committee
+              papers, company records, land titles, contract awards and court judgments
+              are brought together, so a person, a company or a public body can be read
+              in one place.
             </p>
             <p className="text-[var(--ink-secondary)] mb-5">
-              Consultation uses it in the room. Teams that want to work the corpus themselves
-              go to the product.
+              It is for anyone who works with the record: newsrooms, researchers, boards,
+              firms and community groups.
             </p>
             <p>
               <OutLink href="https://www.institrace.co.uk">institrace.co.uk</OutLink>
               <span className="mx-3 text-[var(--rule-strong)]">/</span>
               <OutLink href="https://www.institrace.co.uk/methodology" className="quiet">
-                Methodology
+                How it works
               </OutLink>
             </p>
           </article>
@@ -86,22 +83,16 @@ export default function Home() {
 
         <Reveal delay={80}>
           <article>
-            <h2 className="mb-4">SIBA Digital</h2>
+            <h2 className="mb-4">One-to-one consultation</h2>
             <p className="text-[var(--ink-secondary)] mb-4">
-              Strategic Intelligence and Business Audits. Governance investigations and
-              commissioned audits built from the same public records. The journalism is
-              public. The commercial work is confidential. The two are not linked.
-            </p>
-            <p className="text-[var(--ink-secondary)] mb-5">
-              A full forensic audit is commissioned on SIBA, not here. This practice will
-              say so if that is the right engagement.
+              Sometimes it helps to talk a question through with someone who knows the
+              record well. Damian offers friendly one-to-one sessions. We look at your
+              question together, and you come away with a short, clear written note.
             </p>
             <p>
-              <OutLink href="https://www.siba.digital">siba.digital</OutLink>
-              <span className="mx-3 text-[var(--rule-strong)]">/</span>
-              <OutLink href="https://www.siba.digital/services" className="quiet">
-                Commission an audit
-              </OutLink>
+              <Link href="/services" className="out">
+                About consultation
+              </Link>
             </p>
           </article>
         </Reveal>
@@ -111,15 +102,12 @@ export default function Home() {
 
       <section className="pb-8">
         <Reveal>
-          <h2 className="mb-5">What you are buying</h2>
-          <p className="text-[var(--ink-secondary)] mb-4">
-            Time. A scoped working session or a short engagement. I sit with the
-            organisation, work the question through Institrace, and write down what the
-            record shows. That is the consultation.
-          </p>
+          <h2 className="mb-5">We&apos;d love to hear from you</h2>
           <p className="text-[var(--ink-secondary)] mb-8">
-            It is not an SEO retainer, not a website rebuild, and not a subscription to
-            Institrace. Those are different doors.
+            If you have a question about the public record, or you&apos;d like to know
+            whether Institrace could help your team, please get in touch. No question is
+            too small, and if we&apos;re not the right people to help, we&apos;ll gladly
+            point you to someone who is.
           </p>
           <p>
             <Link href="/contact" className="out">
@@ -127,7 +115,7 @@ export default function Home() {
             </Link>
             <span className="mx-3 text-[var(--rule-strong)]">/</span>
             <Link href="/case-studies" className="quiet">
-              Read the work
+              What we&apos;ve built
             </Link>
           </p>
         </Reveal>

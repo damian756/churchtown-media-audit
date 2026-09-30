@@ -1,30 +1,24 @@
 # Churchtown Media
 
-> Advisory practice of Damian Roche. Consultation on the UK public record, using Institrace and the method developed in public at SIBA Digital. Based in Churchtown, Southport.
+> Churchtown Media is a small company in Southport, founded by Damian Roche. We build Institrace, a joined index of UK public records, and offer friendly one-to-one help with questions about the record.
 
 ## About
 
-Churchtown Media is a consultation practice, not a web design or SEO agency. Damian Roche founded the firm. The public method is SIBA Digital. The joined public-records index is Institrace. Time on a question is what is sold here.
+Churchtown Media Ltd is based in Churchtown, Southport. Damian Roche founded the company. Its main work is Institrace, a joined index of UK public records. It also offers one-to-one consultation for anyone trying to understand what the public record shows.
 
-Local editorial sites on the Sefton Coast are separate from this practice.
+Damian also publishes a few local editorial sites about the Sefton Coast, which are run separately.
 
-## What this site is
+## What we offer
 
-- Consultation: time on a defined question, using the public record
-- A door to commissioned audits at SIBA Digital
-- A door to self-serve login at Institrace
-
-## What this site is not
-
-- Web design, SEO retainers, or small-business website packages
-- A free audit offer
-- Case studies of agency client work
+- Institrace: a joined index of UK public records, for newsrooms, researchers, boards, firms and community groups
+- Consultation: a relaxed working session on a question about the public record, followed by a short, clear written note
+- Institrace for a team: help getting started with Institrace
 
 ## Pages
 
 - [Home](https://www.churchtownmedia.co.uk/)
 - [Consultation](https://www.churchtownmedia.co.uk/services)
-- [Work](https://www.churchtownmedia.co.uk/case-studies): SIBA Digital and Institrace
+- [What we've built](https://www.churchtownmedia.co.uk/case-studies): Institrace
 - [About](https://www.churchtownmedia.co.uk/about)
 - [Contact](https://www.churchtownmedia.co.uk/contact)
 - [Privacy](https://www.churchtownmedia.co.uk/privacy)
@@ -32,8 +26,6 @@ Local editorial sites on the Sefton Coast are separate from this practice.
 
 ## Related sites
 
-- [SIBA Digital](https://www.siba.digital)
-- [SIBA services](https://www.siba.digital/services)
 - [Institrace](https://www.institrace.co.uk)
 - [Institrace methodology](https://www.institrace.co.uk/methodology)
 

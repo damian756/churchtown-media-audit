@@ -20,7 +20,7 @@ export default function PrivacyPage() {
       <p>
         Churchtown Media Ltd (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) is committed to protecting your
         privacy. This notice explains how we collect, use, and safeguard information when
-        you visit churchtownmedia.co.uk, write to us, or engage the practice.
+        you visit churchtownmedia.co.uk, write to us, or work with us.
       </p>
       <p>
         We comply with the UK General Data Protection Regulation and the Data Protection
@@ -42,7 +42,7 @@ export default function PrivacyPage() {
 
       <h2>3. How we use it</h2>
       <ul>
-        <li>To respond to enquiries and decide whether an engagement fits</li>
+        <li>To respond to enquiries and arrange any work you ask us to do</li>
         <li>To deliver consultation and related professional services</li>
         <li>To prepare proposals and keep records we are required to keep</li>
         <li>To understand how the site is used and to keep it secure</li>
@@ -60,19 +60,15 @@ export default function PrivacyPage() {
       <h2>5. Sharing</h2>
       <p>
         We do not sell personal information. We may share data with providers who help us
-        operate the site and the practice, including Vercel (hosting) and Formspree (the
+        operate the site and the company, including Vercel (hosting) and Formspree (the
         contact form). They may use the information only for those purposes.
       </p>
       <p>
-        Related properties operated by Churchtown Media Ltd include{" "}
-        <a href="https://www.siba.digital" target="_blank" rel="noopener noreferrer" className="out">
-          SIBA Digital
-        </a>{" "}
-        and{" "}
+        Churchtown Media Ltd also operates{" "}
         <a href="https://www.institrace.co.uk" target="_blank" rel="noopener noreferrer" className="out">
           Institrace
         </a>
-        . Each has its own privacy notice for use of those sites.
+        , which has its own privacy notice for use of that site.
       </p>
 
       <h2>6. Retention</h2>

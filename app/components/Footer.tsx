@@ -20,15 +20,14 @@ export default function Footer() {
           Churchtown Media
         </p>
         <p className="mt-3 max-w-md text-[1.02rem] leading-relaxed text-[var(--ink-secondary)]">
-          Advisory practice of Damian Roche. Consultation on the public record, using{" "}
-          <OutLink href="https://www.institrace.co.uk">Institrace</OutLink> and the method
-          developed in public at{" "}
-          <OutLink href="https://www.siba.digital">SIBA Digital</OutLink>.
+          A small company in Southport, founded by Damian Roche. We build{" "}
+          <OutLink href="https://www.institrace.co.uk">Institrace</OutLink> and offer
+          friendly, one-to-one help with the public record.
         </p>
 
         <div className="mt-10 grid gap-10 sm:grid-cols-3">
           <div>
-            <p className="kicker mb-3">Practice</p>
+            <p className="kicker mb-3">Pages</p>
             <ul className="space-y-2 text-[0.98rem]">
               <li>
                 <Link href="/about" className="quiet">
@@ -53,14 +52,8 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <p className="kicker mb-3">Properties</p>
+            <p className="kicker mb-3">Institrace</p>
             <ul className="space-y-2 text-[0.98rem]">
-              <li>
-                <OutLink href="https://www.siba.digital">SIBA Digital</OutLink>
-              </li>
-              <li>
-                <OutLink href="https://www.siba.digital/services">SIBA audits</OutLink>
-              </li>
               <li>
                 <OutLink href="https://www.institrace.co.uk">Institrace</OutLink>
               </li>
@@ -72,7 +65,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <p className="kicker mb-3">Write</p>
+            <p className="kicker mb-3">Get in touch</p>
             <p className="text-[0.98rem]">
               <a href={`mailto:${NAP.emailHello}`} className="out">
                 {NAP.emailHello}
@@ -113,10 +106,6 @@ export default function Footer() {
           <Link href="/terms" className="quiet">
             Terms
           </Link>
-          {" · "}
-          <OutLink href="https://www.siba.digital/disclosure" className="quiet">
-            Disclosure
-          </OutLink>
         </p>
       </div>
     </footer>

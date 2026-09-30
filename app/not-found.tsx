@@ -9,10 +9,10 @@ export default function NotFound() {
   return (
     <section className="pt-20 pb-24">
       <p className="kicker mb-6">404</p>
-      <h1 className="mb-6">This page is not here.</h1>
+      <h1 className="mb-6">Sorry, we can&apos;t find that page.</h1>
       <p className="text-[var(--ink-secondary)] mb-8">
-        It may have moved when the practice site was refocused. The work still lives
-        on the pages below.
+        It may have moved when the site was updated. These links should help you find
+        your way.
       </p>
       <p>
         <Link href="/" className="out">

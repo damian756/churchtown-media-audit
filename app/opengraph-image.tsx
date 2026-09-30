@@ -43,7 +43,7 @@ export default async function Image() {
             maxWidth: 920,
           }}
         >
-          Know what the public record already shows.
+          Making the public record easier to read.
         </div>
         <div
           style={{
@@ -52,7 +52,7 @@ export default async function Image() {
             color: "#6a6760",
           }}
         >
-          Institrace · SIBA Digital
+          Southport · Home of Institrace
         </div>
       </div>
     ),

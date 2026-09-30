@@ -23,11 +23,11 @@ export default function ContactForm() {
       if (response.ok) {
         setStatus("success");
       } else {
-        alert("Something went wrong. Please try again or email directly.");
+        alert(`Sorry, something went wrong. Please try again, or email ${NAP.emailDamian} directly.`);
         setStatus("idle");
       }
     } catch {
-      alert(`Error connecting to server. Please email ${NAP.emailDamian} directly.`);
+      alert(`Sorry, the message could not be sent. Please email ${NAP.emailDamian} directly.`);
       setStatus("idle");
     }
   };
@@ -36,10 +36,10 @@ export default function ContactForm() {
     <>
       <section className="pt-16 pb-2">
         <p className="kicker mb-6">Contact</p>
-        <h1 className="mb-6">Write to Damian.</h1>
+        <h1 className="mb-6">Let&apos;s talk</h1>
         <p className="lede">
-          Say who you are, the question, and the timescale. If it is the right fit, I
-          will respond. If it is not, I will say so.
+          Tell me a little about your question and I&apos;ll get back to you. If I&apos;m
+          not the right person, I&apos;ll happily point you to someone who is.
         </p>
       </section>
 
@@ -50,12 +50,13 @@ export default function ContactForm() {
           <div>
             {status === "success" ? (
               <div className="py-8">
-                <h2 className="mb-4">Received.</h2>
+                <h2 className="mb-4">Thank you</h2>
                 <p className="text-[var(--ink-secondary)] mb-6">
-                  I will read it and reply if the work belongs here.
+                  Thanks for getting in touch. I&apos;ll read your message and reply as
+                  soon as I can.
                 </p>
                 <button type="button" onClick={() => setStatus("idle")} className="submit">
-                  Send another
+                  Send another message
                 </button>
               </div>
             ) : (
@@ -95,20 +96,19 @@ export default function ContactForm() {
                   <select id="service" name="service" className="input">
                     <option>A consultation</option>
                     <option>Institrace for a team</option>
-                    <option>A SIBA audit (I will point you there)</option>
                     <option>Something else</option>
                   </select>
                 </div>
                 <div>
                   <label htmlFor="message" className="kicker block mb-2">
-                    The question
+                    Your question
                   </label>
                   <textarea
                     id="message"
                     name="message"
                     required
                     rows={7}
-                    placeholder="Who you are, what you need to know, and when."
+                    placeholder="A little about you, your question, and any timings that matter."
                     className="input"
                   />
                 </div>
@@ -145,19 +145,15 @@ export default function ContactForm() {
               {NAP.postalCode}
             </p>
             <p>
-              Before you write, it may help to read{" "}
+              You&apos;re welcome to read more about{" "}
               <Link href="/services" className="out">
-                consultation
-              </Link>
-              ,{" "}
-              <a href="https://www.siba.digital" target="_blank" rel="noopener noreferrer" className="out">
-                SIBA Digital
-              </a>
-              , or{" "}
+                a consultation
+              </Link>{" "}
+              or{" "}
               <a href="https://www.institrace.co.uk" target="_blank" rel="noopener noreferrer" className="out">
                 Institrace
-              </a>
-              .
+              </a>{" "}
+              first, but there&apos;s no need.
             </p>
           </aside>
         </div>

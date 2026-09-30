@@ -1,4 +1,7 @@
 import {
+  ABOUT_DESCRIPTION,
+  CONSULTATION_DESCRIPTION,
+  CONTACT_DESCRIPTION,
   NAP,
   OG_IMAGE,
   ORG_ID,
@@ -7,6 +10,7 @@ import {
   SITE_NAME,
   SITE_URL,
   WEBSITE_ID,
+  WORK_DESCRIPTION,
   pageUrl,
 } from "./site";
 
@@ -45,16 +49,13 @@ export function organizationNode() {
     taxID: NAP.companyNumber,
     sameAs: [
       "https://www.linkedin.com/in/damian-roche-7ba8293a5/",
-      "https://www.siba.digital",
       "https://www.institrace.co.uk",
       "https://find-and-update.company-information.service.gov.uk/company/16960442",
     ],
     knowsAbout: [
       "UK public records",
       "Public-records consultation",
-      "Governance advisory",
       "Institrace",
-      "SIBA Digital",
     ],
   };
 }
@@ -74,7 +75,6 @@ export function personNode() {
     sameAs: [
       "https://www.linkedin.com/in/damian-roche-7ba8293a5/",
       "https://github.com/damian756",
-      "https://www.siba.digital",
       "https://www.institrace.co.uk",
     ],
   };
@@ -136,8 +136,7 @@ export function consultationGraph() {
         "@id": `${url}#webpage`,
         url,
         name: "Consultation",
-        description:
-          "Scoped public-records consultation from Churchtown Media. Working sessions that use Institrace. Full governance audits are commissioned at SIBA Digital.",
+        description: CONSULTATION_DESCRIPTION,
         isPartOf: { "@id": WEBSITE_ID },
         about: { "@id": `${url}#service` },
         inLanguage: "en-GB",
@@ -151,7 +150,7 @@ export function consultationGraph() {
         url,
         areaServed: { "@type": "Country", name: "United Kingdom" },
         description:
-          "Scoped working sessions and short engagements using Institrace and the SIBA method. Written note. Not a subscription and not a forensic audit.",
+          "Friendly one-to-one sessions on a question about the UK public record, using Institrace, followed by a short, clear written note.",
       },
     ],
   };
@@ -166,9 +165,8 @@ export function workGraph() {
         "@type": "CollectionPage",
         "@id": `${url}#webpage`,
         url,
-        name: "Work",
-        description:
-          "SIBA Digital and Institrace. The public method and the joined public-records index behind Churchtown Media consultation.",
+        name: "What we've built",
+        description: WORK_DESCRIPTION,
         isPartOf: { "@id": WEBSITE_ID },
         about: { "@id": ORG_ID },
         inLanguage: "en-GB",
@@ -182,12 +180,6 @@ export function workGraph() {
           {
             "@type": "ListItem",
             position: 1,
-            name: "SIBA Digital",
-            url: "https://www.siba.digital",
-          },
-          {
-            "@type": "ListItem",
-            position: 2,
             name: "Institrace",
             url: "https://www.institrace.co.uk",
           },
@@ -202,8 +194,7 @@ export function aboutGraph() {
   return webPageGraph({
     path: "/about",
     name: "About Damian Roche",
-    description:
-      "Damian Roche. Ex-British Army. Founder of Churchtown Media, SIBA Digital, and Institrace. Based in Churchtown, Southport.",
+    description: ABOUT_DESCRIPTION,
     type: "ProfilePage",
     extra: { mainEntity: { "@id": PERSON_ID }, url },
   });
@@ -213,8 +204,7 @@ export function contactGraph() {
   return webPageGraph({
     path: "/contact",
     name: "Contact",
-    description:
-      "Write to Damian Roche at Churchtown Media about public-records consultation, Institrace for a team, or a SIBA audit.",
+    description: CONTACT_DESCRIPTION,
     type: "ContactPage",
     extra: { mainEntity: { "@id": ORG_ID } },
   });
