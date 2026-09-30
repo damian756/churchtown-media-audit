@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { NAP } from "@/lib/site";
 
 export default function ContactForm() {
@@ -36,7 +37,16 @@ export default function ContactForm() {
     <>
       <section className="pt-16 pb-2">
         <p className="kicker mb-6">Contact</p>
-        <h1 className="mb-6">Let&apos;s talk</h1>
+        <div className="flex items-center gap-4 mb-6">
+          <Image
+            src="/images/damian-roche.webp"
+            alt="Damian Roche"
+            width={144}
+            height={144}
+            className="w-16 h-16 md:w-[72px] md:h-[72px] rounded-full border border-[var(--rule)]"
+          />
+          <h1 className="m-0">Let&apos;s talk</h1>
+        </div>
         <p className="lede">
           Tell me a little about your question and I&apos;ll get back to you. If I&apos;m
           not the right person, I&apos;ll happily point you to someone who is.

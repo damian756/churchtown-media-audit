@@ -24,7 +24,7 @@ export default function AboutPage() {
           <h1 className="mb-10">About Damian</h1>
         </Reveal>
 
-        <div className="grid gap-12 md:grid-cols-[1fr_240px] items-start">
+        <div className="grid gap-10 md:grid-cols-[1fr_200px] items-start">
           <Reveal delay={60}>
             <div className="space-y-5 text-[var(--ink-secondary)]">
               <p>
@@ -53,19 +53,16 @@ export default function AboutPage() {
             </div>
           </Reveal>
 
-          <Reveal delay={100}>
-            <figure>
+          <Reveal delay={100} className="order-first md:order-none">
+            <figure className="mx-auto md:mx-0 w-[140px] md:w-[200px]">
               <Image
-                src="/images/about/damian-rspb-marshside.webp"
-                alt="Damian Roche at RSPB Marshside, Southport"
-                width={480}
-                height={480}
-                className="w-full border border-[var(--rule)]"
+                src="/images/damian-roche.webp"
+                alt="Damian Roche"
+                width={400}
+                height={400}
+                className="w-full rounded-md border border-[var(--rule)]"
                 priority
               />
-              <figcaption className="mt-2 text-center text-[0.78rem] text-[var(--ink-faint)]">
-                RSPB Marshside, Southport.
-              </figcaption>
             </figure>
           </Reveal>
         </div>
@@ -95,6 +92,23 @@ export default function AboutPage() {
               What we&apos;ve built
             </Link>
           </p>
+        </Reveal>
+      </section>
+
+      <section className="pt-2 pb-8">
+        <Reveal>
+          <figure className="max-w-[480px]">
+            <Image
+              src="/images/about/damian-rspb-marshside.webp"
+              alt="Damian Roche at RSPB Marshside, Southport"
+              width={480}
+              height={480}
+              className="w-full border border-[var(--rule)]"
+            />
+            <figcaption className="mt-2 text-[0.78rem] text-[var(--ink-faint)]">
+              RSPB Marshside, Southport.
+            </figcaption>
+          </figure>
         </Reveal>
       </section>
     </>
