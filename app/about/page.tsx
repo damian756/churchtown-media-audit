@@ -59,7 +59,12 @@ export default function AboutPage() {
               The company takes its name from Churchtown in Southport, where
               I&apos;ve lived most of my life and where this all began. I also
               publish a few local editorial sites about the Sefton Coast, which
-              I look after separately and very much enjoy.
+              I look after separately and very much enjoy. My interests, past
+              and present, are listed on the{" "}
+              <Link href="/disclosure" className="out">
+                disclosure page
+              </Link>
+              .
             </p>
           </div>
         </Reveal>
