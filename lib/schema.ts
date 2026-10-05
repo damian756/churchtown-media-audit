@@ -19,7 +19,6 @@ function postalAddress() {
     "@type": "PostalAddress",
     streetAddress: NAP.streetAddress,
     addressLocality: NAP.addressLocality,
-    addressRegion: NAP.addressRegion,
     postalCode: NAP.postalCode,
     addressCountry: NAP.addressCountry,
   };

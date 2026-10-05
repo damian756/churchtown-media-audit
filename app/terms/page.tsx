@@ -86,7 +86,7 @@ export default function TermsPage() {
         <a href="mailto:damian@churchtownmedia.co.uk" className="out">
           damian@churchtownmedia.co.uk
         </a>
-        . 01704 635785. 5 Cambridge Avenue, Churchtown, Southport, PR9 9SA.
+        . 01704 635785. Suite RA01, 195-197 Wood Street, London, E17 3NU.
       </p>
     </article>
   );

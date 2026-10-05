@@ -150,7 +150,7 @@ export default function ContactForm() {
               <span className="kicker block mb-2">Address</span>
               {NAP.streetAddress}
               <br />
-              Churchtown, {NAP.addressLocality}
+              {NAP.addressLocality}
               <br />
               {NAP.postalCode}
             </p>

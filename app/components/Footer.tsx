@@ -82,7 +82,7 @@ export default function Footer() {
               </a>
             </p>
             <p className="mt-2 text-[0.98rem] text-[var(--ink-muted)]">
-              {NAP.streetAddress}, Churchtown, {NAP.addressLocality} {NAP.postalCode}
+              {NAP.streetAddress}, {NAP.addressLocality}, {NAP.postalCode}
             </p>
             <p className="mt-2 text-[0.98rem]">
               <a

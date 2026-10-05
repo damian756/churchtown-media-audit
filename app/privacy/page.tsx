@@ -100,7 +100,7 @@ export default function PrivacyPage() {
         <a href="mailto:damian@churchtownmedia.co.uk" className="out">
           damian@churchtownmedia.co.uk
         </a>
-        . Telephone: 01704 635785. Address: 5 Cambridge Avenue, Churchtown, Southport, PR9 9SA.
+        . Telephone: 01704 635785. Registered office: Suite RA01, 195-197 Wood Street, London, E17 3NU.
       </p>
     </article>
   );
