@@ -86,7 +86,7 @@ export default function Footer() {
             </p>
             <p className="mt-2 text-[0.98rem]">
               <a
-                href="https://www.linkedin.com/in/damian-roche-7ba8293a5/"
+                href="https://www.linkedin.com/in/damian-roche/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="quiet"

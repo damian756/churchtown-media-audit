@@ -38,4 +38,4 @@ Beyond client work, Churchtown Media owns and operates four independent editoria
 ## Developer
 
 **Damian Roche** — Founder & Lead Developer  
-[LinkedIn](https://www.linkedin.com/in/damian-roche-7ba8293a5/) · [churchtownmedia.co.uk](https://www.churchtownmedia.co.uk)
+[LinkedIn](https://www.linkedin.com/in/damian-roche/) · [churchtownmedia.co.uk](https://www.churchtownmedia.co.uk)

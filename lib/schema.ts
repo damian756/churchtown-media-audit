@@ -47,7 +47,7 @@ export function organizationNode() {
     vatID: NAP.vatId,
     taxID: NAP.companyNumber,
     sameAs: [
-      "https://www.linkedin.com/in/damian-roche-7ba8293a5/",
+      "https://www.linkedin.com/in/damian-roche/",
       "https://www.institrace.co.uk",
       "https://find-and-update.company-information.service.gov.uk/company/16960442",
     ],
@@ -72,7 +72,7 @@ export function personNode() {
     telephone: NAP.telephone,
     address: postalAddress(),
     sameAs: [
-      "https://www.linkedin.com/in/damian-roche-7ba8293a5/",
+      "https://www.linkedin.com/in/damian-roche/",
       "https://github.com/damian756",
       "https://www.institrace.co.uk",
     ],
