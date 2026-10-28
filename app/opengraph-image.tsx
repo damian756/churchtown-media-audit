@@ -43,7 +43,7 @@ export default async function Image() {
             maxWidth: 920,
           }}
         >
-          Making the public record easier to read.
+          Public sector intelligence, cited to the source.
         </div>
         <div
           style={{
@@ -52,7 +52,7 @@ export default async function Image() {
             color: "#6a6760",
           }}
         >
-          Southport · Home of Institrace
+          Southport · Runs Institrace
         </div>
       </div>
     ),

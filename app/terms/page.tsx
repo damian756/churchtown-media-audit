@@ -3,7 +3,9 @@ import { webPageGraph } from "@/lib/schema";
 
 export default function TermsPage() {
   return (
-    <article className="pt-16 pb-8 legal">
+    <section className="band-hero">
+    <div className="page">
+    <article className="legal">
       <JsonLd
         data={webPageGraph({
           path: "/terms",
@@ -14,7 +16,7 @@ export default function TermsPage() {
       />
       <p className="kicker mb-6">Legal</p>
       <h1 className="mb-6">Terms</h1>
-      <p>Last updated: September 2026.</p>
+      <p>Last updated: October 2026.</p>
 
       <h2>1. Acceptance</h2>
       <p>
@@ -25,11 +27,11 @@ export default function TermsPage() {
 
       <h2>2. Our work</h2>
       <p>
-        Churchtown Media Ltd offers public-records consultation and builds{" "}
+        Churchtown Media Ltd offers consultation on the public record and runs{" "}
         <a href="https://www.institrace.co.uk" target="_blank" rel="noopener noreferrer" className="out">
           Institrace
         </a>
-        , the joined index used in that work. Verbal agreements are not binding until confirmed in writing.
+        , the public sector intelligence service that work draws on. Verbal agreements are not binding until confirmed in writing.
       </p>
 
       <h2>3. Fees</h2>
@@ -68,7 +70,7 @@ export default function TermsPage() {
       <h2>8. Other sites</h2>
       <p>
         Links to Institrace and other sites are provided for reference.
-        Those sites have their own terms.
+        Those sites have <span className="whitespace-nowrap">their own terms.</span>
       </p>
 
       <h2>9. Governing law</h2>
@@ -86,8 +88,10 @@ export default function TermsPage() {
         <a href="mailto:damian@churchtownmedia.co.uk" className="out">
           damian@churchtownmedia.co.uk
         </a>
-        . 01704 635785. Suite RA01, 195-197 Wood Street, London, E17 3NU.
+        . 01704 635785. Suite RA01, 195-197 Wood Street, <span className="whitespace-nowrap">London, E17 3NU.</span>
       </p>
     </article>
+    </div>
+    </section>
   );
 }

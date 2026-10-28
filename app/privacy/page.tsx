@@ -3,7 +3,9 @@ import { webPageGraph } from "@/lib/schema";
 
 export default function PrivacyPage() {
   return (
-    <article className="pt-16 pb-8 legal">
+    <section className="band-hero">
+    <div className="page">
+    <article className="legal">
       <JsonLd
         data={webPageGraph({
           path: "/privacy",
@@ -20,7 +22,7 @@ export default function PrivacyPage() {
       <p>
         Churchtown Media Ltd (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) is committed to protecting your
         privacy. This notice explains how we collect, use, and safeguard information when
-        you visit churchtownmedia.co.uk, write to us, or work with us.
+        you visit churchtownmedia.co.uk, write to us, or <span className="whitespace-nowrap">work with us.</span>
       </p>
       <p>
         We comply with the UK General Data Protection Regulation and the Data Protection
@@ -31,7 +33,7 @@ export default function PrivacyPage() {
       <p>
         We collect information you provide directly, such as when you fill out the contact
         form or write by email. This may include name, email address, organisation, the
-        nature of the enquiry, and anything else you choose to send.
+        nature of the enquiry, and anything else you <span className="whitespace-nowrap">choose to send.</span>
       </p>
       <p>We also collect limited technical information when you visit the site:</p>
       <ul>
@@ -68,7 +70,7 @@ export default function PrivacyPage() {
         <a href="https://www.institrace.co.uk" target="_blank" rel="noopener noreferrer" className="out">
           Institrace
         </a>
-        , which has its own privacy notice for use of that site.
+        , which has its own privacy notice for use <span className="whitespace-nowrap">of that site.</span>
       </p>
 
       <h2>6. Retention</h2>
@@ -100,8 +102,10 @@ export default function PrivacyPage() {
         <a href="mailto:damian@churchtownmedia.co.uk" className="out">
           damian@churchtownmedia.co.uk
         </a>
-        . Telephone: 01704 635785. Registered office: Suite RA01, 195-197 Wood Street, London, E17 3NU.
+        . Telephone: 01704 635785. Registered office: Suite RA01, 195-197 Wood Street, <span className="whitespace-nowrap">London, E17 3NU.</span>
       </p>
     </article>
+    </div>
+    </section>
   );
 }

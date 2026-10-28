@@ -1,5 +1,6 @@
-import Link from "next/link";
 import type { Metadata } from "next";
+import ButtonLink from "./components/ButtonLink";
+import Tail from "./components/Tail";
 
 export const metadata: Metadata = {
   title: "Page not found",
@@ -7,22 +8,23 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
   return (
-    <section className="pt-20 pb-24">
-      <p className="kicker mb-6">404</p>
-      <h1 className="mb-6">Sorry, we can&apos;t find that page.</h1>
-      <p className="text-[var(--ink-secondary)] mb-8">
-        It may have moved when the site was updated. These links should help you find
-        your way.
-      </p>
-      <p>
-        <Link href="/" className="out">
-          Home
-        </Link>
-        <span className="mx-3 text-[var(--rule-strong)]">/</span>
-        <Link href="/contact" className="quiet">
-          Contact
-        </Link>
-      </p>
+    <section className="band-hero">
+      <div className="page">
+        <p className="kicker mb-4">404</p>
+        <h1 className="mb-5">Sorry, we can&apos;t find that page.</h1>
+        <p className="body-copy mb-7 max-w-xl">
+          <Tail>
+            It may have moved when the site was updated. These links should help you find your
+            way.
+          </Tail>
+        </p>
+        <div className="btn-row">
+          <ButtonLink href="/">Home</ButtonLink>
+          <ButtonLink href="/contact" variant="secondary">
+            Contact
+          </ButtonLink>
+        </div>
+      </div>
     </section>
   );
 }

@@ -13,7 +13,7 @@ export const ogImage = {
   url: OG_IMAGE_PATH,
   width: 1200,
   height: 630,
-  alt: "Churchtown Media. Making the public record easier to read.",
+  alt: "Churchtown Media. Public sector intelligence, cited to the source.",
 };
 
 export function pageMeta(opts: {
@@ -57,8 +57,10 @@ export const rootMetadata: Metadata = {
   applicationName: SITE_NAME,
   authors: [{ name: "Damian Roche", url: SITE_URL }],
   keywords: [
-    "UK public records",
-    "public records consultation",
+    "UK public sector intelligence",
+    "UK council tenders",
+    "contracts ending",
+    "council and NHS papers",
     "Institrace",
     "Churchtown Media",
     "Damian Roche",

@@ -14,7 +14,9 @@ export const metadata = pageMeta({
 
 export default function DisclosurePage() {
   return (
-    <article className="pt-16 pb-8 legal">
+    <section className="band-hero">
+    <div className="page">
+    <article className="legal">
       <JsonLd
         data={webPageGraph({
           path: "/disclosure",
@@ -56,7 +58,7 @@ export default function DisclosurePage() {
       <h2>BID levy</h2>
       <p>
         Churchtown Media Ltd does not occupy rateable premises inside a Business Improvement
-        District and does not pay a BID levy.
+        District and does not pay <span className="whitespace-nowrap">a BID levy.</span>
       </p>
 
       <h2>Politics</h2>
@@ -71,5 +73,7 @@ export default function DisclosurePage() {
         last update.
       </p>
     </article>
+    </div>
+    </section>
   );
 }

@@ -1,3 +1,4 @@
+import { INSTITRACE_URL, TAGLINE } from "./institrace";
 import {
   ABOUT_DESCRIPTION,
   CONSULTATION_DESCRIPTION,
@@ -48,12 +49,16 @@ export function organizationNode() {
     taxID: NAP.companyNumber,
     sameAs: [
       "https://www.linkedin.com/in/damian-roche/",
-      "https://www.institrace.co.uk",
+      INSTITRACE_URL,
       "https://find-and-update.company-information.service.gov.uk/company/16960442",
     ],
+    slogan: TAGLINE,
     knowsAbout: [
-      "UK public records",
-      "Public-records consultation",
+      "UK public sector intelligence",
+      "UK council and NHS papers",
+      "Public sector tenders and contracts",
+      "Buyer spend",
+      "Supplier checks",
       "Institrace",
     ],
   };
@@ -65,6 +70,9 @@ export function personNode() {
     "@id": PERSON_ID,
     name: "Damian Roche",
     jobTitle: "Founder",
+    description:
+      "Founder of Churchtown Media Ltd, which runs Institrace. Army veteran with twenty years in information, publishing and search.",
+    knowsAbout: ["UK public sector intelligence", "Public sector tenders and contracts", "Search"],
     worksFor: { "@id": ORG_ID },
     url: pageUrl("/about"),
     image: `${SITE_URL}/images/about/damian-rspb-marshside.webp`,
@@ -74,7 +82,7 @@ export function personNode() {
     sameAs: [
       "https://www.linkedin.com/in/damian-roche/",
       "https://github.com/damian756",
-      "https://www.institrace.co.uk",
+      INSTITRACE_URL,
     ],
   };
 }
@@ -134,7 +142,7 @@ export function consultationGraph() {
         "@type": "WebPage",
         "@id": `${url}#webpage`,
         url,
-        name: "Consultation",
+        name: "Consultation and services",
         description: CONSULTATION_DESCRIPTION,
         isPartOf: { "@id": WEBSITE_ID },
         about: { "@id": `${url}#service` },
@@ -144,12 +152,13 @@ export function consultationGraph() {
       {
         "@type": "Service",
         "@id": `${url}#service`,
-        name: "Public-records consultation",
+        name: "Consultation on UK public bodies",
+        serviceType: "Consultation",
         provider: { "@id": ORG_ID },
         url,
         areaServed: { "@type": "Country", name: "United Kingdom" },
         description:
-          "Friendly one-to-one sessions on a question about the UK public record, using Institrace, followed by a short, clear written note.",
+          "One-to-one working sessions on a question about UK public bodies, using Institrace, followed by a short, clear written note.",
       },
     ],
   };
@@ -179,8 +188,15 @@ export function workGraph() {
           {
             "@type": "ListItem",
             position: 1,
-            name: "Institrace",
-            url: "https://www.institrace.co.uk",
+            item: {
+              "@type": "WebApplication",
+              name: "Institrace",
+              url: INSTITRACE_URL,
+              description: TAGLINE,
+              applicationCategory: "BusinessApplication",
+              operatingSystem: "Any",
+              provider: { "@id": ORG_ID },
+            },
           },
         ],
       },

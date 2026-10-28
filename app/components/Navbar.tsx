@@ -3,10 +3,12 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import ButtonLink from "./ButtonLink";
+import { INSTITRACE_URL } from "@/lib/institrace";
 
 const links = [
   { name: "About", href: "/about" },
-  { name: "Consultation", href: "/services" },
+  { name: "Services", href: "/services" },
   { name: "Work", href: "/case-studies" },
   { name: "Contact", href: "/contact" },
 ];
@@ -28,10 +30,10 @@ export default function Navbar() {
   return (
     <>
       <header className="sticky top-0 z-[100] bg-[var(--paper)]/95 backdrop-blur-[2px]">
-        <div className="page flex items-end justify-between gap-6 pt-5 pb-3">
-          <Link href="/" onClick={() => setIsOpen(false)} className="group block no-underline">
+        <div className="page flex items-center justify-between gap-6 pt-4 pb-3">
+          <Link href="/" onClick={() => setIsOpen(false)} className="block no-underline">
             <span
-              className="block text-[1.05rem] text-[var(--navy)] leading-none"
+              className="block whitespace-nowrap text-[1.1rem] text-[var(--navy)] leading-none"
               style={{ fontFamily: "var(--font-display), Georgia, serif" }}
             >
               Churchtown Media
@@ -41,12 +43,13 @@ export default function Navbar() {
             </span>
           </Link>
 
-          <nav className="hidden md:flex items-baseline gap-7 pb-0.5">
+          <nav className="hidden md:flex items-center gap-8" aria-label="Main">
             {links.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
-                className={`text-[0.95rem] no-underline ${
+                aria-current={pathname === link.href ? "page" : undefined}
+                className={`whitespace-nowrap text-[1rem] no-underline pb-0.5 ${
                   pathname === link.href
                     ? "text-[var(--ink)] border-b border-[var(--navy)]"
                     : "text-[var(--ink-muted)] hover:text-[var(--ink)]"
@@ -55,6 +58,9 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
+            <ButtonLink href={INSTITRACE_URL} external size="sm">
+              Institrace
+            </ButtonLink>
           </nav>
 
           <button
@@ -63,7 +69,7 @@ export default function Navbar() {
             aria-expanded={isOpen}
             aria-controls="mobile-menu"
             aria-label={isOpen ? "Close menu" : "Open menu"}
-            className="md:hidden text-[0.95rem] text-[var(--navy)] pb-0.5 border-b border-[var(--rule)]"
+            className="md:hidden text-[1rem] text-[var(--navy)] pb-0.5 border-b border-[var(--rule-strong)]"
           >
             {isOpen ? "Close" : "Menu"}
           </button>
@@ -75,8 +81,8 @@ export default function Navbar() {
       </header>
 
       {isOpen && (
-        <div id="mobile-menu" className="fixed inset-0 z-[110] bg-[var(--paper)] md:hidden">
-          <div className="page flex flex-col gap-6 pt-28">
+        <div id="mobile-menu" className="fixed inset-0 z-[90] bg-[var(--paper)] md:hidden">
+          <div className="page flex flex-col gap-5 pt-28">
             {links.map((link) => (
               <Link
                 key={link.name}
@@ -88,10 +94,10 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <div className="mt-6 flex flex-col gap-3 text-[1.05rem]">
-              <a href="https://www.institrace.co.uk" target="_blank" rel="noopener noreferrer" className="out">
-                Institrace
-              </a>
+            <div className="mt-4">
+              <ButtonLink href={INSTITRACE_URL} external className="w-full">
+                Open Institrace
+              </ButtonLink>
             </div>
           </div>
         </div>

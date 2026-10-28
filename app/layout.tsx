@@ -50,7 +50,7 @@ export default function RootLayout({
         </a>
         <JsonLd data={siteGraph()} />
         <Navbar />
-        <main id="main" className="page">
+        <main id="main">
           {children}
         </main>
         <Footer />

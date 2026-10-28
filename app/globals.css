@@ -6,10 +6,12 @@
   --ink: #1a1916;
   --ink-secondary: #3c3a36;
   --ink-muted: #6a6760;
-  --ink-faint: #8f8b83;
+  --ink-faint: #85817a;
   --navy: #1a2744;
+  --navy-deep: #111a30;
   --paper: #f3eee4;
   --paper-deep: #ebe4d6;
+  --card: #f9f6ef;
   --rule: #cfc6b6;
   --rule-strong: #b4aa98;
 }
@@ -57,7 +59,9 @@
   }
 
   p,
-  li {
+  li,
+  dd,
+  figcaption {
     text-wrap: pretty;
   }
 
@@ -66,41 +70,82 @@
   }
 }
 
-/* Reveal: transition only. Hidden state is applied in JS so SSR stays visible. */
-.reveal {
-  display: block;
-  width: 100%;
-  transition: opacity 0.55s ease, transform 0.55s ease;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .reveal {
-    transition: none;
-  }
-}
-
+/* The content column: wide on desktop, a 20px gutter on a phone. */
 .page {
   width: 100%;
-  max-width: 40rem;
+  max-width: 72rem;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: clamp(1.25rem, 4vw, 2rem);
+  padding-right: clamp(1.25rem, 4vw, 2rem);
+}
+
+/* Full-width bands. A band holds one .page and sets the vertical rhythm. */
+.band {
+  padding-top: clamp(2.25rem, 4.5vw, 3.75rem);
+  padding-bottom: clamp(2.25rem, 4.5vw, 3.75rem);
+}
+
+.band-tint {
+  background-color: rgba(235, 228, 214, 0.65);
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+
+.band-navy {
+  background-color: var(--navy);
+  color: #ddd8cb;
+}
+
+.band-navy h2,
+.band-navy h3 {
+  color: var(--paper);
+}
+
+.band-navy a:not(.btn) {
+  color: var(--paper);
+}
+
+.band-ruled {
+  border-top: 1px solid var(--rule);
+}
+
+.band-hero {
+  padding-top: clamp(2rem, 4vw, 3.25rem);
+  padding-bottom: clamp(2.25rem, 4.5vw, 3.5rem);
 }
 
 .kicker {
   font-family: var(--font-display), Georgia, serif;
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--navy);
 }
 
+.band-navy .kicker {
+  color: #c9c3b4;
+}
+
 .lede {
   font-size: 1.2rem;
   line-height: 1.65;
   color: var(--ink-secondary);
+}
+
+.body-copy {
+  color: var(--ink-secondary);
+}
+
+/* A short line or two under a heading: even lines, no stray last word. */
+.intro {
+  max-width: 44rem;
+  color: var(--ink-secondary);
+}
+
+.body-copy p + p {
+  margin-top: 1rem;
 }
 
 .rule {
@@ -111,6 +156,7 @@
   margin: 3rem 0;
 }
 
+/* Links in running text */
 .out {
   color: var(--navy);
   text-decoration: underline;
@@ -133,7 +179,208 @@
   color: var(--ink);
 }
 
+/* Buttons: one height, one line. Primary plus secondary. */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.9rem;
+  padding: 0 1.4rem;
+  border: 1px solid var(--navy);
+  border-radius: 6px;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.12rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.005em;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.btn-primary {
+  background-color: var(--navy);
+  color: var(--paper);
+}
+
+.btn-primary:hover {
+  background-color: var(--navy-deep);
+  border-color: var(--navy-deep);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--navy);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(26, 39, 68, 0.07);
+}
+
+.btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--navy);
+  outline-offset: 3px;
+}
+
+.btn-sm {
+  min-height: 2.35rem;
+  padding: 0 1rem;
+  font-size: 1.02rem;
+}
+
+.band-navy .btn-primary {
+  background-color: var(--paper);
+  border-color: var(--paper);
+  color: var(--navy);
+}
+
+.band-navy .btn-primary:hover {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.band-navy .btn-secondary {
+  border-color: rgba(243, 238, 228, 0.55);
+  color: var(--paper);
+}
+
+.band-navy .btn-secondary:hover {
+  background-color: rgba(243, 238, 228, 0.1);
+}
+
+.band-navy .btn:focus-visible {
+  outline-color: var(--paper);
+}
+
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+@media (max-width: 40rem) {
+  .card {
+    padding: 1.05rem 1.15rem 1.2rem;
+  }
+}
+
+@media (max-width: 34rem) {
+  .btn-row {
+    flex-direction: column;
+  }
+
+  .btn-row .btn {
+    width: 100%;
+  }
+}
+
+/* Cards: the things Churchtown does, the things Institrace shows. */
+.card {
+  background-color: var(--card);
+  border: 1px solid var(--rule);
+  border-top: 2px solid var(--navy);
+  border-radius: 4px;
+  padding: 1.35rem 1.4rem 1.5rem;
+}
+
+.card h3 {
+  margin-bottom: 0.55rem;
+}
+
+.card p,
+.card dd {
+  font-size: 1.02rem;
+  line-height: 1.6;
+  color: var(--ink-secondary);
+}
+
+.card > span.kicker {
+  display: block;
+  margin-bottom: 0.7rem;
+  color: var(--ink-muted);
+}
+
+a.card-stretch {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.card-stretch::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.card:has(a.card-stretch:hover) {
+  border-color: var(--rule-strong);
+  border-top-color: var(--navy);
+  background-color: #fcfaf5;
+}
+
+.card:has(a.card-stretch:hover) h3 {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 0.9rem;
+  font-size: 1rem;
+}
+
+.price {
+  font-size: 0.95rem;
+  color: var(--ink-muted);
+  text-wrap: balance;
+}
+
+.card p.price-line {
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.45;
+  color: var(--ink);
+  text-wrap: balance;
+}
+
+.card p.price-line + p.price-line {
+  margin-top: 0.2rem;
+}
+
+.band-hero + .band:not(.band-tint):not(.band-navy):not(.band-ruled) {
+  padding-top: clamp(1rem, 2vw, 1.75rem);
+}
+
+/* A product screen: framed, restrained. */
+.shot {
+  margin: 0;
+}
+
+.shot img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rule-strong);
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 1px 0 rgba(26, 25, 22, 0.04), 0 14px 34px -18px rgba(26, 25, 22, 0.35);
+}
+
+.shot figcaption {
+  margin-top: 0.7rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--ink-muted);
+  text-wrap: balance;
+}
+
 .legal {
+  max-width: 46rem;
   font-size: 1.02rem;
   line-height: 1.7;
   color: var(--ink-secondary);
@@ -158,6 +405,7 @@
   margin-top: 0.35rem;
 }
 
+/* Form */
 .input {
   width: 100%;
   display: block;
@@ -179,6 +427,7 @@
 
 .input:focus {
   border-bottom-color: var(--navy);
+  box-shadow: 0 1px 0 var(--navy);
 }
 
 select.input {
@@ -188,26 +437,4 @@ select.input {
 textarea.input {
   resize: vertical;
   min-height: 8rem;
-}
-
-.submit {
-  appearance: none;
-  background: none;
-  border: 0;
-  border-bottom: 1px solid var(--navy);
-  padding: 0 0 0.15rem;
-  font-family: var(--font-display), Georgia, serif;
-  font-size: 1.05rem;
-  color: var(--navy);
-  cursor: pointer;
-}
-
-.submit:hover {
-  color: var(--ink);
-  border-bottom-color: var(--ink);
-}
-
-.submit:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
 }

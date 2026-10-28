@@ -3,18 +3,18 @@ export const OG_IMAGE_PATH = "/opengraph-image";
 export const OG_IMAGE = `${SITE_URL}${OG_IMAGE_PATH}`;
 
 export const SITE_NAME = "Churchtown Media";
-export const SITE_TITLE = "Churchtown Media | The public record, made easier to read";
+export const SITE_TITLE = "Churchtown Media | UK public sector intelligence";
 export const SITE_DESCRIPTION =
-  "Churchtown Media is a small company in Southport, founded by Damian Roche. We build Institrace, a joined index of UK public records, and offer friendly one-to-one help with questions about the record.";
+  "Churchtown Media runs Institrace: what UK public bodies decide, buy and spend, cited to the source. Founded by Damian Roche in Southport.";
 
 export const ABOUT_DESCRIPTION =
-  "Damian Roche founded Churchtown Media in Southport. Army veteran, twenty years working with information, publishing and search, and the builder of Institrace.";
+  "Damian Roche founded Churchtown Media in Southport. Army veteran, twenty years in information, publishing and search, and the builder of Institrace.";
 export const CONSULTATION_DESCRIPTION =
-  "Friendly one-to-one help with a question about the UK public record. A relaxed working session with Damian Roche, followed by a short, clear written note.";
+  "One-to-one consultations on a question about UK public bodies, with a short written note. Plus Institrace reports, data feeds and dashboards.";
 export const WORK_DESCRIPTION =
-  "Institrace, the joined index of UK public records built by Churchtown Media: what it brings together, and who it is for.";
+  "Institrace: new tenders, approvals before tender, contracts ending, buyer spend and supplier checks, from UK council and NHS papers.";
 export const CONTACT_DESCRIPTION =
-  "Get in touch with Damian Roche at Churchtown Media about a consultation, Institrace for your team, or anything else.";
+  "Write to Damian Roche at Churchtown Media about a consultation, Institrace for your team, or a report, data feed or dashboard.";
 
 export const ORG_ID = `${SITE_URL}/#organization`;
 export const PERSON_ID = `${SITE_URL}/about#founder`;

@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import Reveal from "../components/Reveal";
+import ButtonLink from "../components/ButtonLink";
 import OutLink from "../components/OutLink";
+import Tail from "../components/Tail";
 import JsonLd from "../components/JsonLd";
 import { pageMeta } from "@/lib/seo";
 import { ABOUT_DESCRIPTION } from "@/lib/site";
 import { aboutGraph } from "@/lib/schema";
+import { INSTITRACE_URL } from "@/lib/institrace";
 
 export const metadata = pageMeta({
   title: "About Damian Roche",
@@ -13,105 +15,122 @@ export const metadata = pageMeta({
   path: "/about",
 });
 
+const FACTS: { label: string; text: string }[] = [
+  { label: "Based", text: "Southport, in Churchtown" },
+  { label: "Before", text: "British Army, the Queen's Guards" },
+  { label: "Since", text: "Twenty years in information, publishing and search" },
+  { label: "Now", text: "Founder of Churchtown Media Ltd, which runs Institrace" },
+];
+
 export default function AboutPage() {
   return (
     <>
       <JsonLd data={aboutGraph()} />
 
-      <section className="pt-16 pb-2">
-        <Reveal>
-          <p className="kicker mb-6">Damian Roche</p>
-          <h1 className="mb-10">About Damian</h1>
-        </Reveal>
-
-        <Reveal delay={60}>
-          <div className="space-y-5 text-[var(--ink-secondary)] after:content-[''] after:table after:clear-both">
-            {/* The portrait floats right beside the opening paragraphs; the text below it runs the full width. */}
-            <figure className="mx-auto mb-6 w-[140px] md:float-right md:mx-0 md:mb-4 md:ml-10 md:mt-1 md:w-[200px]">
+      <section className="band-hero">
+        <div className="page grid gap-8 lg:grid-cols-[1fr_19rem] lg:gap-16">
+          <aside className="lg:order-2">
+            <figure className="mx-auto w-36 lg:mx-0 lg:w-full">
               <Image
                 src="/images/damian-roche.webp"
                 alt="Damian Roche"
                 width={690}
                 height={744}
-                className="w-full h-auto rounded-md border border-[var(--rule)]"
+                sizes="(min-width: 1024px) 304px, 144px"
+                className="h-auto w-full rounded-md border border-[var(--rule)]"
                 priority
               />
             </figure>
-            <p>
-              Hello, I&apos;m Damian. I founded Churchtown Media, and I spend
-              most of my days building{" "}
-              <OutLink href="https://www.institrace.co.uk">Institrace</OutLink>,
-              a joined index of UK public records.
-            </p>
-            <p>
-              Before all of this I served in the British Army with the
-              Queen&apos;s Guards. I still carry a lot from those years: a love
-              of clear plans, careful work, and looking after the people around
-              me.
-            </p>
-            <p>
-              Since then I&apos;ve spent twenty years working with information,
-              publishing and search. I&apos;m self-taught, and I&apos;ve always
-              enjoyed understanding how things fit together from the ground up.
-              Public records turned out to be the most rewarding puzzle of all.
-            </p>
-            <p>
-              The company takes its name from Churchtown in Southport, where
-              I&apos;ve lived most of my life and where this all began. I also
-              publish a few local editorial sites about the Sefton Coast, which
-              I look after separately and very much enjoy. My interests, past
-              and present, are listed on the{" "}
-              <Link href="/disclosure" className="out">
-                disclosure page
-              </Link>
-              .
-            </p>
+            <dl className="card mt-5 hidden space-y-3 text-[0.98rem] leading-snug lg:block">
+              {FACTS.map((f) => (
+                <div key={f.label}>
+                  <dt className="kicker mb-0.5 text-[var(--ink-muted)]">{f.label}</dt>
+                  <dd className="text-[var(--ink-secondary)]">{f.text}</dd>
+                </div>
+              ))}
+            </dl>
+          </aside>
+
+          <div className="max-w-[41rem] lg:order-1">
+            <p className="kicker mb-4">Damian Roche</p>
+            <h1 className="mb-6">About Damian</h1>
+            <div className="body-copy">
+              <p>
+                I&apos;m Damian. I founded Churchtown Media in Southport, and I spend most of
+                my days building <OutLink href={INSTITRACE_URL}>Institrace</OutLink>
+                <Tail>: public sector intelligence, cited to the source.</Tail>
+              </p>
+              <p>
+                <Tail>
+                  Before all of this I served in the British Army with the Queen&apos;s Guards. I
+                  still carry a lot from those years: a love of clear plans, careful work, and
+                  looking after the people around me.
+                </Tail>
+              </p>
+              <p>
+                <Tail>
+                  Since then I&apos;ve spent twenty years in information, publishing and search.
+                  I&apos;m self-taught, and I like finding out how things fit together from the
+                  ground up. Public sector records turned out to be the most rewarding puzzle
+                  of all. Councils and the NHS publish what they decide, buy and spend. It is
+                  spread across a great many websites. Institrace puts it in one place and
+                  cites every record.
+                </Tail>
+              </p>
+              <p>
+                The company takes its name from Churchtown in Southport, where I&apos;ve lived
+                most of my life and where this all began. I also publish a few local
+                editorial sites about the Sefton Coast, which I look after separately and
+                very much enjoy. My interests, past and present, are listed on the{" "}
+                <Link href="/disclosure" className="out whitespace-nowrap">
+                  disclosure page
+                </Link>
+                .
+              </p>
+            </div>
           </div>
-        </Reveal>
+        </div>
       </section>
 
-      <hr className="rule" />
+      <section className="band band-ruled">
+        <div className="page grid items-center gap-8 lg:grid-cols-[1fr_19rem] lg:gap-16">
+          <div className="max-w-[41rem]">
+            <h2 className="mb-4">How I like to work</h2>
+            <div className="body-copy">
+              <p>
+                <Tail>
+                  I keep it simple. We start with what you want to know. Then I go through the
+                  record, and I write up what it shows in plain words, with the source for each
+                  fact.
+                </Tail>
+              </p>
+              <p>
+                <Tail>
+                  I take on a small number of consultations at a time, so each one gets proper
+                  care. If someone else is better placed to help, I&apos;ll say so and point you
+                  their way.
+                </Tail>
+              </p>
+            </div>
+            <div className="btn-row mt-7">
+              <ButtonLink href="/contact">Get in touch</ButtonLink>
+              <ButtonLink href="/case-studies" variant="secondary">
+                What we&apos;ve built
+              </ButtonLink>
+            </div>
+          </div>
 
-      <section className="pb-8">
-        <Reveal>
-          <h2 className="mb-5">How I like to work</h2>
-          <p className="text-[var(--ink-secondary)] mb-4">
-            I keep things simple and friendly. We start with a conversation
-            about what you&apos;d like to understand. Then we look at the record
-            together, and I write up what it shows in plain language.
-          </p>
-          <p className="text-[var(--ink-secondary)] mb-8">
-            I take on a small number of consultations at a time, so each one
-            gets proper care. If someone else is better placed to help,
-            I&apos;ll happily point you their way.
-          </p>
-          <p>
-            <Link href="/contact" className="out">
-              Get in touch
-            </Link>
-            <span className="mx-3 text-[var(--rule-strong)]">/</span>
-            <Link href="/case-studies" className="quiet">
-              What we&apos;ve built
-            </Link>
-          </p>
-        </Reveal>
-      </section>
-
-      <section className="pt-2 pb-8">
-        <Reveal>
-          <figure className="max-w-[480px]">
+          <figure className="shot mx-auto w-full max-w-[19rem] lg:mx-0">
             <Image
               src="/images/about/damian-rspb-marshside.webp"
               alt="Damian Roche at RSPB Marshside, Southport"
               width={480}
               height={480}
-              className="w-full border border-[var(--rule)]"
+              sizes="304px"
             />
-            <figcaption className="mt-2 text-[0.78rem] text-[var(--ink-faint)]">
-              RSPB Marshside, Southport.
-            </figcaption>
+            <figcaption>RSPB Marshside, Southport.</figcaption>
           </figure>
-        </Reveal>
+        </div>
       </section>
     </>
   );
