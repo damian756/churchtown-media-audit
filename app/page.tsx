@@ -13,7 +13,7 @@ import {
   INSTITRACE_URL,
   PRICE_ROWS,
   SETUP,
-  SLOUGH_RECORD as R,
+  HOME_RECORD as R,
   seatTerms,
 } from "@/lib/institrace";
 
@@ -79,8 +79,10 @@ export default function Home() {
 
       <figure className="record" aria-label="One record from Institrace">
         <p className="record-kind">From Institrace: an approval to procure, in a council paper</p>
-        <p className="record-title">{R.paper.title}</p>
-        <p className="record-where">{R.body.name}, up to £640,000 over 3+1+1 years</p>
+        <p className="record-title">{R.title}</p>
+        <p className="record-where">
+          {R.body.name}, {R.summary}
+        </p>
         <div className="tl">
           <p className="tl-d">
             {R.decided.short}
@@ -100,7 +102,7 @@ export default function Home() {
         <p className="record-src">
           Sources: <OutLink href={R.body.href}>{R.body.name}</OutLink>,{" "}
           <OutLink href={R.paper.href}>{R.paper.title}</OutLink>, page {R.paper.page}; the tender
-          notice, <OutLink href={R.tender.href}>SBC - 039154</OutLink>, on{" "}
+          notice, <OutLink href={R.tender.href}>{R.tender.ref}</OutLink>, on{" "}
           <span className="nw">Find a Tender.</span>
         </p>
         <p className="record-finding">

@@ -1,7 +1,7 @@
 /**
  * What Churchtown Media says about Institrace, in one place. The words follow Institrace's own copy
  * (lib/public-copy.ts, lib/audiences.ts, lib/services.ts, lib/pricing.ts in the institrace repo, 28 Oct 2026).
- * No live counts here: they date. The one record (SLOUGH_RECORD) is dated and quoted as Institrace showed it. The prices are the ones on institrace.co.uk/services, plus VAT; if Institrace
+ * No live counts here: they date. The one record (HOME_RECORD) is dated and quoted as Institrace shows it. The prices are the ones on institrace.co.uk/services, plus VAT; if Institrace
  * changes a price, change it here too. Everything in this file renders on the site: no em dashes.
  */
 
@@ -15,27 +15,39 @@ export const INSTITRACE_CONTACT_URL = `${INSTITRACE_URL}/contact`;
 export const INSTITRACE_LAUNCHED = "October 2026";
 
 /**
- * One record, as Institrace's own home page showed it on 11 Nov 2026 (its "The tender came 86 days later" band,
- * app/components/home/RealRecord.tsx in the institrace repo), with its sources: the council's words, the paper they are
- * in, the tender that followed, and the finding of the report it belongs to. Damian chose to show it here (11 Nov 2026).
- * It is a dated record, so it does not need refreshing.
+ * One record, the one Institrace's own home page shows from 11 Nov 2026 (its "The tender came 55 days later" band,
+ * app/components/home/RealRecord.tsx in the institrace repo, which since that day takes a works or technology
+ * procurement first), with its sources: the council's words, the paper they are in, the tender that followed, and the
+ * finding of the report it belongs to. Read and checked on 11 Nov 2026: the words are on page 170 of the paper's stored
+ * text (Blackburn with Darwen's Executive Board reports pack, 12 March 2026), and Find a Tender's notice 041621-2026 of
+ * 6 May 2026 is the same framework (the same title, four lots, £50,000,000). Damian chose to show a record here, and on
+ * 11 Nov 2026 asked for construction or IT ("can we stick with construction or IT or tech for these please"); it
+ * replaced Slough's stray dog service. It is a dated record, so it does not need refreshing.
+ *
+ * The council's name is written as the council writes it; Institrace's band prints its stored name.
  */
-export const SLOUGH_RECORD = {
-  leadDays: 86,
+export const HOME_RECORD = {
+  leadDays: 55,
+  /** The card's title: what the paper approves, in its own words. */
+  title: "Surfacing and Civils Framework Agreement",
+  /** After the council's name under the title: the value and the term, as the quote states them. */
+  summary: "an estimated £50 million over up to 4 years",
   quote:
-    "Approve the procurement of a new end-to-end stray dog collection and kennelling service, via a formal competitive tender process, for a contract term of 3+1+1 years commencing in June 2026 with a total maximum contract value of £640,000",
-  body: { name: "Slough Council", href: `${INSTITRACE_URL}/sources/slough-council` },
+    "Approve the procurement strategy to establish a new Surfacing and Civils Framework Agreement for a period of 2 years with options to extend for a further 2 x 12 months (maximum total term of 4 years), with an estimated total value of £50 million",
+  body: { name: "Blackburn with Darwen Council", href: `${INSTITRACE_URL}/sources/blackburn-with-darwen-council` },
   paper: {
-    title: "Stray dog collection and kennelling service",
-    href: `${INSTITRACE_URL}/papers/stray-dog-collection-kennelling-service-cmswc95n000cg106878msw4pc`,
-    page: 1,
+    title: "Agenda reports pack",
+    href: `${INSTITRACE_URL}/papers/agenda-reports-pack-cmsvx9tnt00srpo68a6he6vxt`,
+    page: 170,
   },
-  decided: { short: "20 Apr 2026", long: "20 April 2026" },
+  decided: { short: "12 Mar 2026", long: "12 March 2026" },
   tender: {
-    short: "15 Jul 2026",
-    long: "15 July 2026",
-    title: "SBC - 039154 - Stray Dogs Collection and Kennelling Service Tender",
-    href: "https://www.find-tender.service.gov.uk/Notice/066919-2026",
+    short: "6 May 2026",
+    long: "6 May 2026",
+    title: "BwDBC Surfacing and Civils Framework 2026",
+    /** The notice's number on Find a Tender, as the card's sources name it. */
+    ref: "041621-2026",
+    href: "https://www.find-tender.service.gov.uk/Notice/041621-2026",
   },
   report: { title: "Approved before tender", href: `${INSTITRACE_URL}/reports/approved-before-tender` },
   finding:
