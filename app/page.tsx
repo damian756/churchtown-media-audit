@@ -38,22 +38,43 @@ export default function Home() {
     <>
       <JsonLd data={homeGraph()} />
 
-      <section className="open">
+      <section className="open has-fig">
         <h1>Churchtown Media builds and runs Institrace.</h1>
-        <p className="say">
-          Institrace, launched in {INSTITRACE_LAUNCHED}, shows what UK councils and NHS bodies plan
-          to buy, who holds each contract and when it ends, and what each body pays, read from their
-          own papers and linked to the source. The company is based in Southport. Damian Roche
-          founded it and <span className="nw">runs it.</span>
-        </p>
-        <div className="btns">
-          <a className="btn" href={INSTITRACE_URL} target="_blank" rel="noopener noreferrer">
-            Open Institrace
-          </a>
-          <Link className="btn btn-2" href="/contact">
-            Write to Damian
-          </Link>
+        <div className="open-words">
+          <p className="say">
+            Institrace, launched in {INSTITRACE_LAUNCHED}, shows what UK councils and NHS bodies
+            plan to buy, who holds each contract and when it ends, and what each body pays, read
+            from their own papers and linked to the source. The company is based in Southport.
+            Damian Roche founded it and <span className="nw">runs it.</span>
+          </p>
+          <div className="btns">
+            <a className="btn" href={INSTITRACE_URL} target="_blank" rel="noopener noreferrer">
+              Open Institrace
+            </a>
+            <Link className="btn btn-2" href="/contact">
+              Write to Damian
+            </Link>
+          </div>
         </div>
+        {/* Damian marked this space, 11 Nov 2026: "put an image here, something nice". Beside the words on a
+            desk, as tall as they are (the record card does not move); under the buttons at 900px and below.
+            The photograph is Damian Roche's own: he confirmed on 11 Nov 2026 that it is his and that it goes on
+            the Churchtown Media home page. */}
+        <figure className="open-fig">
+          <div className="open-ph">
+            <Image
+              src="/images/churchtown-village-evening.jpg"
+              alt="The Hesketh Arms in Churchtown village, Southport, on a winter evening."
+              width={2000}
+              height={896}
+              sizes="(min-width: 901px) 320px, 100vw"
+              preload
+            />
+          </div>
+          <figcaption>
+            Churchtown, Southport: the village the company is <span className="nw">named after.</span>
+          </figcaption>
+        </figure>
       </section>
 
       <figure className="record" aria-label="One record from Institrace">

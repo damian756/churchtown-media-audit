@@ -238,6 +238,82 @@
   margin-top: 28px;
 }
 
+/* The opening's photograph (Damian, 11 Nov 2026: "put an image here, something nice"). On a desk it sits beside the
+   words and is exactly as tall as they are, so the record card stays where it was; at 900px and below it sits under
+   the buttons at its own shape. */
+.open-fig {
+  margin: 0;
+}
+
+.open-ph img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: var(--rule-soft);
+}
+
+.open-fig figcaption {
+  margin-top: 6px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--muted);
+  text-wrap: balance;
+}
+
+@media (min-width: 901px) {
+  .open.has-fig {
+    display: grid;
+    grid-template-columns: minmax(0, 44rem) minmax(0, 1fr);
+    column-gap: 32px;
+  }
+
+  .open.has-fig h1 {
+    grid-column: 1 / -1;
+  }
+
+  .open-words {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .open-fig {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    margin-top: 16px;
+  }
+
+  .open-ph {
+    position: relative;
+    flex: 1 1 0;
+    min-height: 0;
+  }
+
+  .open-ph img {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: 88% 55%;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+  .open.has-fig {
+    grid-template-columns: minmax(0, 36rem) minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .open-fig {
+    margin-top: 26px;
+  }
+}
+
 /* One record from Institrace, as its home page shows it: a card under a brass rule. */
 .record {
   margin: 0 0 44px;
