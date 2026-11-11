@@ -9,9 +9,9 @@ import {
   PERSON_ID,
   SITE_DESCRIPTION,
   SITE_NAME,
+  SITE_TITLE,
   SITE_URL,
   WEBSITE_ID,
-  WORK_DESCRIPTION,
   pageUrl,
 } from "./site";
 
@@ -133,72 +133,45 @@ export function webPageGraph(opts: {
   };
 }
 
-export function consultationGraph() {
-  const url = pageUrl("/services");
+/**
+ * The home page: the page itself, the consultation (its Services row, which replaced /services on 11 Nov 2026) and
+ * Institrace (its Institrace row, which replaced /case-studies).
+ */
+export function homeGraph() {
+  const url = SITE_URL;
   return {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "WebPage",
-        "@id": `${url}#webpage`,
+        "@id": `${url}/#webpage`,
         url,
-        name: "Consultation and services",
-        description: CONSULTATION_DESCRIPTION,
+        name: SITE_TITLE,
+        description: SITE_DESCRIPTION,
         isPartOf: { "@id": WEBSITE_ID },
-        about: { "@id": `${url}#service` },
+        about: { "@id": ORG_ID },
         inLanguage: "en-GB",
         publisher: { "@id": ORG_ID },
       },
       {
         "@type": "Service",
-        "@id": `${url}#service`,
+        "@id": `${url}/#consultation`,
         name: "Consultation on UK public bodies",
         serviceType: "Consultation",
         provider: { "@id": ORG_ID },
-        url,
+        url: `${url}/#services`,
         areaServed: { "@type": "Country", name: "United Kingdom" },
-        description:
-          "One-to-one working sessions on a question about UK public bodies, using Institrace, followed by a short, clear written note.",
-      },
-    ],
-  };
-}
-
-export function workGraph() {
-  const url = pageUrl("/case-studies");
-  return {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "CollectionPage",
-        "@id": `${url}#webpage`,
-        url,
-        name: "What we've built",
-        description: WORK_DESCRIPTION,
-        isPartOf: { "@id": WEBSITE_ID },
-        about: { "@id": ORG_ID },
-        inLanguage: "en-GB",
-        publisher: { "@id": ORG_ID },
-        mainEntity: { "@id": `${url}#list` },
+        description: CONSULTATION_DESCRIPTION,
       },
       {
-        "@type": "ItemList",
-        "@id": `${url}#list`,
-        itemListElement: [
-          {
-            "@type": "ListItem",
-            position: 1,
-            item: {
-              "@type": "WebApplication",
-              name: "Institrace",
-              url: INSTITRACE_URL,
-              description: TAGLINE,
-              applicationCategory: "BusinessApplication",
-              operatingSystem: "Any",
-              provider: { "@id": ORG_ID },
-            },
-          },
-        ],
+        "@type": "WebApplication",
+        "@id": `${url}/#institrace`,
+        name: "Institrace",
+        url: INSTITRACE_URL,
+        description: TAGLINE,
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Any",
+        provider: { "@id": ORG_ID },
       },
     ],
   };

@@ -14,9 +14,7 @@ export const metadata = pageMeta({
 
 export default function DisclosurePage() {
   return (
-    <section className="band-hero">
-    <div className="page">
-    <article className="legal">
+    <article className="doc legal">
       <JsonLd
         data={webPageGraph({
           path: "/disclosure",
@@ -24,8 +22,7 @@ export default function DisclosurePage() {
           description: DESCRIPTION,
         })}
       />
-      <p className="kicker mb-6">Transparency</p>
-      <h1 className="mb-6">Disclosure</h1>
+      <h1>Disclosure</h1>
       <p>Last updated: 5 October 2026.</p>
 
       <h2>The company</h2>
@@ -73,7 +70,5 @@ export default function DisclosurePage() {
         last update.
       </p>
     </article>
-    </div>
-    </section>
   );
 }

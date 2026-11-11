@@ -10,9 +10,7 @@ export const SITE_DESCRIPTION =
 export const ABOUT_DESCRIPTION =
   "Damian Roche founded Churchtown Media in Southport. Army veteran, twenty years in information, publishing and search, and the builder of Institrace.";
 export const CONSULTATION_DESCRIPTION =
-  "One-to-one consultations on a question about UK public bodies, with a short written note. Plus Institrace reports, data feeds and dashboards.";
-export const WORK_DESCRIPTION =
-  "Institrace: new tenders, approvals before tender, contracts ending, buyer spend and supplier checks, from UK council and NHS papers.";
+  "One-to-one consultation with Damian Roche on a question about UK public bodies, using Institrace, followed by a short written note. The fee is agreed in writing first.";
 export const CONTACT_DESCRIPTION =
   "Write to Damian Roche at Churchtown Media about a consultation, Institrace for your team, or a report, data feed or dashboard.";
 

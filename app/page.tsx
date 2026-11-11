@@ -1,13 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
-import ButtonLink from "./components/ButtonLink";
 import JsonLd from "./components/JsonLd";
 import OutLink from "./components/OutLink";
 import Tail from "./components/Tail";
 import { pageMeta } from "@/lib/seo";
-import { SITE_DESCRIPTION, SITE_TITLE } from "@/lib/site";
-import { webPageGraph } from "@/lib/schema";
-import { AUDIENCES, INSTITRACE_PRICING_URL, INSTITRACE_URL } from "@/lib/institrace";
+import { NAP, SITE_DESCRIPTION, SITE_TITLE } from "@/lib/site";
+import { homeGraph } from "@/lib/schema";
+import {
+  INSTITRACE_LAUNCHED,
+  INSTITRACE_PRICING_URL,
+  INSTITRACE_SERVICES_URL,
+  INSTITRACE_URL,
+  PRICE_ROWS,
+  SLOUGH_RECORD as R,
+} from "@/lib/institrace";
 
 export const metadata = pageMeta({
   title: SITE_TITLE,
@@ -15,170 +21,170 @@ export const metadata = pageMeta({
   path: "/",
 });
 
-const DASHBOARD_ALT =
-  "The Institrace dashboard: counts of new tenders, approvals with no tender yet, contracts ending and meetings, with tabs for opportunities, buyers and suppliers, papers, checks and data.";
-
+/**
+ * The home page, set as a letterhead (Damian's pick, 11 Nov 2026): a heading and a paragraph, then rows with hanging
+ * labels. The services page is folded in as the Services row (/services redirects to /#services); the company's
+ * details are the footer's row on every page.
+ */
 export default function Home() {
   return (
     <>
-      <JsonLd
-        data={webPageGraph({
-          path: "/",
-          name: SITE_TITLE,
-          description: SITE_DESCRIPTION,
-        })}
-      />
+      <JsonLd data={homeGraph()} />
 
-      <section className="band-hero">
-        <div className="page grid items-center gap-10 lg:grid-cols-[0.95fr_1.2fr] lg:gap-14">
-          <div>
-            <p className="kicker mb-4">Churchtown Media, Southport</p>
-            <h1 className="mb-5">Public sector intelligence.</h1>
-            <p className="lede">
-              <Tail>
-                Churchtown Media runs Institrace. It shows what UK public bodies decide, buy and
-                spend, and every record is cited to the source.
-              </Tail>
-            </p>
-            <p className="body-copy mt-4">
-              <Tail>
-                A council approves a project in its committee papers. The tender notice often
-                follows weeks or months later. Institrace reads those papers, so a bid team can
-                see the approval, its value and its timetable early.
-              </Tail>
-            </p>
-            <div className="btn-row mt-7">
-              <ButtonLink href={INSTITRACE_URL} external>
-                See Institrace
-              </ButtonLink>
-              <ButtonLink href="/contact" variant="secondary">
-                Get in touch
-              </ButtonLink>
-            </div>
-          </div>
-
-          <figure className="shot">
-            <Image
-              src="/images/institrace/dashboard-wide.webp"
-              alt={DASHBOARD_ALT}
-              width={2064}
-              height={1260}
-              sizes="(min-width: 1024px) 560px, 704px"
-              className="hidden md:block"
-            />
-            <Image
-              src="/images/institrace/dashboard-narrow.webp"
-              alt={DASHBOARD_ALT}
-              width={1290}
-              height={1308}
-              sizes="358px"
-              className="md:hidden"
-            />
-            <figcaption>The Institrace dashboard, set to a trade and a region.</figcaption>
-          </figure>
-        </div>
+      <section className="lead">
+        <h1>Churchtown Media builds and runs Institrace.</h1>
+        <p>
+          <Tail>
+            The company is based in Southport. Damian Roche founded it and runs it. Institrace is a
+            searchable record of what UK councils and NHS bodies decide, buy and spend, with every
+            record linked to the paper it came from.
+          </Tail>
+        </p>
       </section>
 
-      <section className="band">
-        <div className="page">
-          <h2 className="mb-6">What Churchtown Media does</h2>
-          <div className="grid gap-4 sm:gap-5 md:grid-cols-2 lg:grid-cols-3">
-            <article className="card flex flex-col">
-              <span className="kicker">Product</span>
-              <h3>Institrace</h3>
-              <p>
-                <Tail>
-                  New tenders, approvals before tender, contracts ending, buyer spend and
-                  supplier checks, from council and NHS papers and the registers. Alerts by
-                  email, daily or weekly.
-                </Tail>
-              </p>
-              <p className="mt-auto pt-4">
-                <OutLink href={INSTITRACE_URL}>Visit Institrace</OutLink>
-              </p>
-            </article>
-            <article className="card flex flex-col">
-              <span className="kicker">Services</span>
-              <h3>Reports, feeds and dashboards</h3>
-              <p>
-                <Tail>
-                  Market snapshots, custom reports, data feeds and BI dashboards, built on the
-                  same records. Prices are on the Institrace services page.
-                </Tail>
-              </p>
-              <p className="mt-auto pt-4">
-                <Link href="/services#institrace-services" className="out">
-                  See the services
-                </Link>
-              </p>
-            </article>
-            <article className="card flex flex-col md:col-span-2 lg:col-span-1">
-              <span className="kicker">Consultation</span>
-              <h3>One-to-one help</h3>
-              <p>
-                <Tail>
-                  Talk a question through with me. We look at the record together, and you get a
-                  short, clear written note.
-                </Tail>
-              </p>
-              <p className="mt-auto pt-4">
-                <Link href="/services#consultation" className="out">
-                  How a consultation works
-                </Link>
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section className="band band-tint">
-        <div className="page">
-          <h2 className="mb-3">Who Institrace is for</h2>
-          <p className="intro mb-6">
+      <section className="row" id="institrace">
+        <h2>Institrace</h2>
+        <div className="body">
+          <p>
             <Tail>
-              Built mainly for suppliers and bid teams. Also for public affairs teams,
-              researchers, newsrooms and due diligence.
+              {`Institrace launched in ${INSTITRACE_LAUNCHED}. It reads council and NHS committee papers, contract notices, spend files and the public registers. It is built mainly for suppliers and bid teams, who want to see what a council plans to buy before the tender notice goes out, and also for public affairs teams, researchers, newsrooms and due diligence.`}
             </Tail>
           </p>
-          <div className="grid gap-4 sm:grid-cols-2 sm:gap-5 xl:grid-cols-4">
-            {AUDIENCES.map((a) => (
-              <article key={a.title} className="card relative">
-                <h3>
-                  <a
-                    href={a.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="card-stretch"
-                  >
-                    {a.title}
-                  </a>
-                </h3>
-                <p>
-                  <Tail>{a.text}</Tail>
-                </p>
-              </article>
-            ))}
-          </div>
+
+          <figure className="record">
+            <p className="record-title">The tender came {R.leadDays} days later</p>
+            <p>
+              {R.body.name}&apos;s papers recorded this on{" "}
+              <span className="nw">{R.decided.long}.</span> The tender notice went out on{" "}
+              <span className="nw">{R.tender.long}.</span>
+            </p>
+            <blockquote>
+              <p>
+                <Tail>{`“${R.quote}”`}</Tail>
+              </p>
+            </blockquote>
+            <figcaption>
+              <OutLink href={R.body.href}>{R.body.name}</OutLink>,{" "}
+              <OutLink href={R.paper.href}>{R.paper.title}</OutLink>,{" "}
+              <span className="nw">page {R.paper.page}</span>
+            </figcaption>
+            <ol className="record-steps" aria-label="From the paper to the tender notice">
+              <li>
+                <span className="when">{R.decided.short}</span>
+                <span className="what">In the papers</span>
+              </li>
+              <li>
+                <span className="when">{R.tender.short}</span>
+                <span className="what">
+                  <OutLink href={R.tender.href}>{R.tender.title}</OutLink>
+                  <small>
+                    , tender notice on <span className="nw">Find a Tender</span>
+                  </small>
+                </span>
+              </li>
+            </ol>
+            <p className="small">
+              In Institrace&apos;s report <OutLink href={R.report.href}>{R.report.title}</OutLink>,{" "}
+              <Tail>{R.finding}</Tail>
+            </p>
+          </figure>
+
+          <p>
+            Alerts by email, daily or weekly. 14 days free, no card.{" "}
+            <OutLink href={INSTITRACE_URL}>institrace.co.uk</OutLink>,{" "}
+            <OutLink href={INSTITRACE_PRICING_URL}>plans and pricing</OutLink>.
+          </p>
         </div>
       </section>
 
-      <section className="band band-navy">
-        <div className="page grid items-center gap-8 lg:grid-cols-[1fr_auto] lg:gap-14">
-          <div>
-            <h2 className="mb-3">A question? Write to me.</h2>
-            <p className="max-w-2xl">
-              <Tail>
-                About Institrace, or one of your own. If I&apos;m not the right person to help,
-                I&apos;ll say so and point you to someone who is.
-              </Tail>
-            </p>
-          </div>
-          <div className="btn-row">
-            <ButtonLink href="/contact">Get in touch</ButtonLink>
-            <ButtonLink href={INSTITRACE_PRICING_URL} external variant="secondary">
-              Plans and pricing
-            </ButtonLink>
-          </div>
+      <section className="row" id="services">
+        <h2>Services</h2>
+        <div className="body">
+          <table className="prices">
+            <tbody>
+              {PRICE_ROWS.map((r) => (
+                <tr key={r.title}>
+                  <th scope="row">{r.title}</th>
+                  <td className="desc">{r.text}</td>
+                  <td className="price">{r.price}</td>
+                </tr>
+              ))}
+              <tr id="consultation">
+                <th scope="row">Consultation</th>
+                <td className="desc">
+                  One to one with Damian on a question about the public record, with a <span className="nw">written note</span>
+                </td>
+                <td className="price">Agreed in writing first</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            <Tail>
+              A consultation starts with your question: a company, a public body, a contract, a piece of land or a decision made in committee. Damian goes through the record with you in Institrace, then sends a short note that sets out what the record shows and the file each fact comes from.
+            </Tail>
+          </p>
+          <p>
+            <Tail>
+              For a team that wants to use Institrace day to day, he can set up the dashboard and alerts for your trades and regions.
+            </Tail>
+          </p>
+          <p className="small">
+            Prices are plus VAT. Invoiced on order; builds over £2,000 are paid half up front and half
+            on delivery. Data is licensed for your own organisation&apos;s use. The detail is on{" "}
+            <OutLink href={INSTITRACE_SERVICES_URL}>
+              <span className="nw">Institrace&apos;s services page</span>
+            </OutLink>
+            .
+          </p>
+        </div>
+      </section>
+
+      <section className="row">
+        <h2>Who runs it</h2>
+        <div className="body person">
+          <Image
+            src="/images/damian-roche.webp"
+            alt="Damian Roche"
+            width={690}
+            height={744}
+            sizes="112px"
+          />
+          <p>
+            <Tail>
+              Damian Roche founded the company and is its director. He served in the British Army with the Queen&apos;s Guards, then spent twenty years in information, publishing and search. He lives in Churchtown, the part of Southport the company is named after.
+            </Tail>
+          </p>
+          <p>
+            <Link href="/about">About Damian</Link>. His interests, past and present, are on the{" "}
+            <Link href="/disclosure" className="nw">
+              disclosure page
+            </Link>
+            .
+          </p>
+        </div>
+      </section>
+
+      <section className="row" id="contact">
+        <h2>Contact</h2>
+        <div className="body">
+          <dl className="dl">
+            <dt>Damian Roche</dt>
+            <dd>
+              <a href={`mailto:${NAP.emailDamian}`}>{NAP.emailDamian}</a>
+            </dd>
+            <dt>General</dt>
+            <dd>
+              <a href={`mailto:${NAP.emailHello}`}>{NAP.emailHello}</a>
+            </dd>
+            <dt>Telephone</dt>
+            <dd>
+              <a href={`tel:${NAP.telephone}`}>{NAP.telephoneDisplay}</a>
+            </dd>
+            <dt>Online</dt>
+            <dd>
+              <Link href="/contact">The contact form</Link>
+            </dd>
+          </dl>
         </div>
       </section>
     </>

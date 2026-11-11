@@ -1,12 +1,13 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Churchtown Media";
+export const alt = "Churchtown Media builds and runs Institrace.";
 export const size = {
   width: 1200,
   height: 630,
 };
 export const contentType = "image/png";
 
+/** The shared-link card, set like the site's letterhead: the wordmark, an ink rule, one sentence, the company line. */
 export default async function Image() {
   return new ImageResponse(
     (
@@ -16,43 +17,33 @@ export default async function Image() {
           width: "100%",
           display: "flex",
           flexDirection: "column",
-          alignItems: "flex-start",
-          justifyContent: "center",
-          backgroundColor: "#f3eee4",
-          padding: "80px 96px",
+          justifyContent: "space-between",
+          backgroundColor: "#ffffff",
+          padding: "72px 88px",
+          color: "#1a1a18",
         }}
       >
-        <div
-          style={{
-            fontSize: 22,
-            color: "#1a2744",
-            letterSpacing: "0.16em",
-            textTransform: "uppercase",
-            marginBottom: 28,
-          }}
-        >
-          Churchtown Media
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              fontSize: 30,
+              letterSpacing: "0.16em",
+              textTransform: "uppercase",
+            }}
+          >
+            <span>Churchtown</span>
+            <span style={{ width: 3, height: 32, backgroundColor: "#277370", margin: "0 18px" }} />
+            <span>Media</span>
+          </div>
+          <div style={{ marginTop: 24, height: 2, backgroundColor: "#1a1a18" }} />
         </div>
-        <div
-          style={{
-            fontSize: 52,
-            fontWeight: 400,
-            color: "#1a1916",
-            lineHeight: 1.15,
-            letterSpacing: "-0.02em",
-            maxWidth: 920,
-          }}
-        >
-          Public sector intelligence, cited to the source.
+        <div style={{ fontSize: 64, fontWeight: 600, lineHeight: 1.15, letterSpacing: "-0.02em", maxWidth: 980 }}>
+          Churchtown Media builds and runs Institrace.
         </div>
-        <div
-          style={{
-            marginTop: 40,
-            fontSize: 20,
-            color: "#6a6760",
-          }}
-        >
-          Southport · Runs Institrace
+        <div style={{ fontSize: 24, color: "#615f59" }}>
+          Southport. Churchtown Media Ltd, company number 16960442.
         </div>
       </div>
     ),

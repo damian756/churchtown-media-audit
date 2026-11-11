@@ -1,13 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import ButtonLink from "../components/ButtonLink";
 import OutLink from "../components/OutLink";
 import Tail from "../components/Tail";
 import JsonLd from "../components/JsonLd";
 import { pageMeta } from "@/lib/seo";
-import { ABOUT_DESCRIPTION } from "@/lib/site";
+import { ABOUT_DESCRIPTION, NAP } from "@/lib/site";
 import { aboutGraph } from "@/lib/schema";
-import { INSTITRACE_URL } from "@/lib/institrace";
+import { INSTITRACE_LAUNCHED, INSTITRACE_URL } from "@/lib/institrace";
 
 export const metadata = pageMeta({
   title: "About Damian Roche",
@@ -16,10 +15,34 @@ export const metadata = pageMeta({
 });
 
 const FACTS: { label: string; text: string }[] = [
-  { label: "Based", text: "Southport, in Churchtown" },
+  { label: "Based", text: "Churchtown, Southport" },
   { label: "Before", text: "British Army, the Queen's Guards" },
   { label: "Since", text: "Twenty years in information, publishing and search" },
-  { label: "Now", text: "Founder of Churchtown Media Ltd, which runs Institrace" },
+  { label: "Now", text: "Director, Churchtown Media Ltd" },
+];
+
+/** The Sefton Coast sites (disclosure page; Damian, 11 Nov 2026: named here, not on the home page). */
+const SITES: { name: string; href: string; text: string }[] = [
+  {
+    name: "SouthportGuide.co.uk",
+    href: "https://www.southportguide.co.uk",
+    text: "a visitor guide and business directory for Southport. It carries paid listings; its editorial does not depend on them.",
+  },
+  {
+    name: "FormbyGuide.co.uk",
+    href: "https://www.formbyguide.co.uk",
+    text: "Formby Beach, the National Trust pinewoods and the red squirrels.",
+  },
+  {
+    name: "SeftonLinks.com",
+    href: "https://www.seftonlinks.com",
+    text: "the links golf courses of the Sefton Coast.",
+  },
+  {
+    name: "SeftonCoastWildlife.co.uk",
+    href: "https://www.seftoncoastwildlife.co.uk",
+    text: "the coast's birds, plants and animals.",
+  },
 ];
 
 export default function AboutPage() {
@@ -27,106 +50,92 @@ export default function AboutPage() {
     <>
       <JsonLd data={aboutGraph()} />
 
-      <section className="band-hero">
-        <div className="page grid gap-8 lg:grid-cols-[1fr_19rem] lg:gap-16">
-          <aside className="lg:order-2">
-            <figure className="mx-auto w-36 lg:mx-0 lg:w-full">
-              <Image
-                src="/images/damian-roche.webp"
-                alt="Damian Roche"
-                width={690}
-                height={744}
-                sizes="(min-width: 1024px) 304px, 144px"
-                className="h-auto w-full rounded-md border border-[var(--rule)]"
-                priority
-              />
-            </figure>
-            <dl className="card mt-5 hidden space-y-3 text-[0.98rem] leading-snug lg:block">
-              {FACTS.map((f) => (
-                <div key={f.label}>
-                  <dt className="kicker mb-0.5 text-[var(--ink-muted)]">{f.label}</dt>
-                  <dd className="text-[var(--ink-secondary)]">{f.text}</dd>
-                </div>
-              ))}
-            </dl>
-          </aside>
-
-          <div className="max-w-[41rem] lg:order-1">
-            <p className="kicker mb-4">Damian Roche</p>
-            <h1 className="mb-6">About Damian</h1>
-            <div className="body-copy">
-              <p>
-                I&apos;m Damian. I founded Churchtown Media in Southport, and I spend most of
-                my days building <OutLink href={INSTITRACE_URL}>Institrace</OutLink>
-                <Tail>: public sector intelligence, cited to the source.</Tail>
-              </p>
-              <p>
-                <Tail>
-                  Before all of this I served in the British Army with the Queen&apos;s Guards. I
-                  still carry a lot from those years: a love of clear plans, careful work, and
-                  looking after the people around me.
-                </Tail>
-              </p>
-              <p>
-                <Tail>
-                  Since then I&apos;ve spent twenty years in information, publishing and search.
-                  I&apos;m self-taught, and I like finding out how things fit together from the
-                  ground up. Public sector records turned out to be the most rewarding puzzle
-                  of all. Councils and the NHS publish what they decide, buy and spend. It is
-                  spread across a great many websites. Institrace puts it in one place and
-                  cites every record.
-                </Tail>
-              </p>
-              <p>
-                The company takes its name from Churchtown in Southport, where I&apos;ve lived
-                most of my life and where this all began. I also publish a few local
-                editorial sites about the Sefton Coast, which I look after separately and
-                very much enjoy. My interests, past and present, are listed on the{" "}
-                <Link href="/disclosure" className="out whitespace-nowrap">
-                  disclosure page
-                </Link>
-                .
-              </p>
-            </div>
-          </div>
+      <section className="about-top">
+        <div className="side">
+          <Image
+            src="/images/damian-roche.webp"
+            alt="Damian Roche"
+            width={690}
+            height={744}
+            sizes="(min-width: 1101px) 240px, (min-width: 901px) 208px, 150px"
+            priority
+          />
+          <dl className="facts">
+            {FACTS.map((f) => (
+              <div key={f.label}>
+                <dt>{f.label}</dt>
+                <dd>
+                  <Tail>{f.text}</Tail>
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+        <div className="text">
+          <h1>Damian Roche</h1>
+          <p className="role">
+            Founder and director of Churchtown <span className="nw">Media Ltd</span>
+          </p>
+          <p>
+            I started Churchtown Media in Southport. Most of my working week goes on{" "}
+            <OutLink href={INSTITRACE_URL}>Institrace</OutLink>, which the{" "}
+            <span className="nw">company runs.</span>
+          </p>
+          <p>
+            <Tail>
+              Before this I served in the British Army with the Queen&apos;s Guards. Since then I have spent twenty years in information, publishing and search, most of it self-taught.
+            </Tail>
+          </p>
+          <p>
+            <Tail>
+              {`Councils and NHS bodies publish what they decide, buy and spend, each on its own website and in its own format. Institrace, which launched in ${INSTITRACE_LAUNCHED}, reads those papers, notices and spend files, joins them up, and names the file every record came from.`}
+            </Tail>
+          </p>
+          <p>
+            The company is named after Churchtown, the part of Southport where I have lived most of
+            my life. I also publish four local sites about the Sefton Coast, listed below. My
+            interests, past and present, are on the{" "}
+            <Link href="/disclosure" className="nw">
+              disclosure page
+            </Link>
+            .
+          </p>
+          <p>
+            Write to me at <a href={`mailto:${NAP.emailDamian}`}>{NAP.emailDamian}</a>, call{" "}
+            <a href={`tel:${NAP.telephone}`} className="nw">
+              {NAP.telephoneDisplay}
+            </a>
+            , or find me{" "}
+            <span className="nw">
+              on <OutLink href="https://www.linkedin.com/in/damian-roche/">LinkedIn</OutLink>.
+            </span>
+          </p>
         </div>
       </section>
 
-      <section className="band band-ruled">
-        <div className="page grid items-center gap-8 lg:grid-cols-[1fr_19rem] lg:gap-16">
-          <div className="max-w-[41rem]">
-            <h2 className="mb-4">How I like to work</h2>
-            <div className="body-copy">
-              <p>
-                <Tail>
-                  I keep it simple. We start with what you want to know. Then I go through the
-                  record, and I write up what it shows in plain words, with the source for each
-                  fact.
-                </Tail>
-              </p>
-              <p>
-                <Tail>
-                  I take on a small number of consultations at a time, so each one gets proper
-                  care. If someone else is better placed to help, I&apos;ll say so and point you
-                  their way.
-                </Tail>
-              </p>
-            </div>
-            <div className="btn-row mt-7">
-              <ButtonLink href="/contact">Get in touch</ButtonLink>
-              <ButtonLink href="/case-studies" variant="secondary">
-                What we&apos;ve built
-              </ButtonLink>
-            </div>
-          </div>
+      <section className="row">
+        <h2>Also published</h2>
+        <div className="body">
+          <ul className="sites">
+            {SITES.map((s) => (
+              <li key={s.name}>
+                <OutLink href={s.href}>{s.name}</OutLink>: <Tail>{s.text}</Tail>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
 
-          <figure className="shot mx-auto w-full max-w-[19rem] lg:mx-0">
+      <section className="row">
+        <h2>Outside work</h2>
+        <div className="body">
+          <figure className="photo">
             <Image
               src="/images/about/damian-rspb-marshside.webp"
               alt="Damian Roche at RSPB Marshside, Southport"
               width={480}
               height={480}
-              sizes="304px"
+              sizes="320px"
             />
             <figcaption>RSPB Marshside, Southport.</figcaption>
           </figure>

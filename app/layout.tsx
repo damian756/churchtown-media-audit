@@ -1,5 +1,5 @@
 import type { Viewport } from "next";
-import { EB_Garamond, Source_Serif_4 } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -7,22 +7,16 @@ import JsonLd from "./components/JsonLd";
 import { rootMetadata } from "@/lib/seo";
 import { siteGraph } from "@/lib/schema";
 
-const display = EB_Garamond({
+/** One face for everything, as Institrace uses: Inter. */
+const sans = Inter({
   subsets: ["latin"],
-  variable: "--font-display",
-  display: "swap",
-  weight: ["400", "500", "600"],
-});
-
-const body = Source_Serif_4({
-  subsets: ["latin"],
-  variable: "--font-body",
+  variable: "--font-sans",
   display: "swap",
   weight: ["400", "500", "600"],
 });
 
 export const viewport: Viewport = {
-  themeColor: "#f3eee4",
+  themeColor: "#ffffff",
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
@@ -36,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-GB" className={`${display.variable} ${body.variable} scroll-smooth`}>
+    <html lang="en-GB" className={`${sans.variable} scroll-smooth`}>
       <head>
         <script
           src="https://analytics.ahrefs.com/analytics.js"
@@ -45,15 +39,15 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[200] focus:bg-[var(--paper)] focus:px-3 focus:py-2">
+        <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[200] focus:bg-white focus:px-3 focus:py-2">
           Skip to content
         </a>
         <JsonLd data={siteGraph()} />
-        <Navbar />
-        <main id="main">
-          {children}
-        </main>
-        <Footer />
+        <div className="sheet">
+          <Navbar />
+          <main id="main">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

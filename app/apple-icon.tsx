@@ -3,6 +3,7 @@ import { ImageResponse } from "next/og";
 export const size = { width: 180, height: 180 };
 export const contentType = "image/png";
 
+/** The home-screen icon: C and M joined by the wordmark's teal bar, on white. */
 export default function AppleIcon() {
   return new ImageResponse(
     (
@@ -13,20 +14,15 @@ export default function AppleIcon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: "#f3eee4",
+          background: "#ffffff",
+          color: "#1a1a18",
+          fontSize: 76,
+          fontWeight: 600,
         }}
       >
-        <span
-          style={{
-            fontFamily: "Georgia, serif",
-            fontSize: 72,
-            fontWeight: 400,
-            color: "#1a2744",
-            letterSpacing: "-1px",
-          }}
-        >
-          cm
-        </span>
+        <span>C</span>
+        <span style={{ width: 6, height: 80, backgroundColor: "#277370", margin: "0 14px" }} />
+        <span>M</span>
       </div>
     ),
     { ...size }

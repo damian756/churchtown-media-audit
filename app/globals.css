@@ -2,394 +2,460 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+ * The letterhead (Damian's pick, 11 Nov 2026: direction A of mocks/REPORT-2026-11-11.md, with the CHURCHTOWN | MEDIA
+ * wordmark drawn the way INSTI | TRACE is). Inter on white, ink rules, Institrace's teal for links, one brass mark.
+ * No cards, no bands, no small capitals over headings. Pages are rows with a hanging label on the left.
+ */
 :root {
-  --ink: #1a1916;
-  --ink-secondary: #3c3a36;
-  --ink-muted: #6a6760;
-  --ink-faint: #85817a;
-  --navy: #1a2744;
-  --navy-deep: #111a30;
-  --paper: #f3eee4;
-  --paper-deep: #ebe4d6;
-  --card: #f9f6ef;
-  --rule: #cfc6b6;
-  --rule-strong: #b4aa98;
+  --ink: #1a1a18;
+  --ink-2: #3f3f3b;
+  --muted: #615f59;
+  --rule: #d9d6cf;
+  --rule-soft: #ebe8e2;
+  --teal: #277370;
+  --teal-deep: #143f3b;
+  --teal-line: #9cc3bf;
+  --brass: #a9782b;
+  --label: 12rem;
+  --label-gap: 3rem;
 }
 
 @layer base {
   html {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
   }
 
   body {
-    background-color: var(--paper);
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+    background-color: #fff;
     color: var(--ink);
-    font-family: var(--font-body), "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-    font-size: 1.125rem;
+    font-family: var(--font-sans), "Segoe UI", system-ui, sans-serif;
+    font-size: 17px;
     font-weight: 400;
-    line-height: 1.7;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
   }
 
   h1,
   h2,
   h3 {
-    font-family: var(--font-display), "Iowan Old Style", Georgia, serif;
-    font-weight: 500;
-    letter-spacing: -0.018em;
-    line-height: 1.18;
     color: var(--ink);
+    font-weight: 600;
     text-wrap: balance;
-  }
-
-  h1 {
-    font-size: clamp(1.6rem, 1.3rem + 1.1vw, 2.2rem);
-  }
-
-  h2 {
-    font-size: clamp(1.3rem, 1.15rem + 0.55vw, 1.55rem);
-  }
-
-  h3 {
-    font-size: clamp(1.1rem, 1.05rem + 0.2vw, 1.2rem);
   }
 
   p,
   li,
   dd,
+  td,
   figcaption {
     text-wrap: pretty;
   }
 
   a {
-    color: var(--navy);
+    color: var(--teal-deep);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+    text-decoration-color: var(--teal-line);
+  }
+
+  a:hover {
+    text-decoration-color: currentColor;
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid var(--teal);
+    outline-offset: 3px;
   }
 }
 
-/* The content column: wide on desktop, a 20px gutter on a phone. */
-.page {
-  width: 100%;
-  max-width: 72rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: clamp(1.25rem, 4vw, 2rem);
-  padding-right: clamp(1.25rem, 4vw, 2rem);
+.nw {
+  white-space: nowrap;
 }
 
-/* Full-width bands. A band holds one .page and sets the vertical rhythm. */
-.band {
-  padding-top: clamp(2.25rem, 4.5vw, 3.75rem);
-  padding-bottom: clamp(2.25rem, 4.5vw, 3.75rem);
+/* The sheet: one column of type, 20px gutters on a phone. */
+.sheet {
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 4vw, 40px);
 }
 
-.band-tint {
-  background-color: rgba(235, 228, 214, 0.65);
-  border-top: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule);
+/* The masthead: the wordmark, the town, four plain links, an ink rule. */
+.mast {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 32px;
+  padding: 26px 0 14px;
+  border-bottom: 1px solid var(--ink);
 }
 
-.band-navy {
-  background-color: var(--navy);
-  color: #ddd8cb;
-}
-
-.band-navy h2,
-.band-navy h3 {
-  color: var(--paper);
-}
-
-.band-navy a:not(.btn) {
-  color: var(--paper);
-}
-
-.band-ruled {
-  border-top: 1px solid var(--rule);
-}
-
-.band-hero {
-  padding-top: clamp(2rem, 4vw, 3.25rem);
-  padding-bottom: clamp(2.25rem, 4.5vw, 3.5rem);
-}
-
-.kicker {
-  font-family: var(--font-display), Georgia, serif;
-  font-size: 0.8rem;
-  font-weight: 500;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--navy);
-}
-
-.band-navy .kicker {
-  color: #c9c3b4;
-}
-
-.lede {
-  font-size: 1.2rem;
-  line-height: 1.65;
-  color: var(--ink-secondary);
-}
-
-.body-copy {
-  color: var(--ink-secondary);
-}
-
-/* A short line or two under a heading: even lines, no stray last word. */
-.intro {
-  max-width: 44rem;
-  color: var(--ink-secondary);
-}
-
-.body-copy p + p {
-  margin-top: 1rem;
-}
-
-.rule {
-  display: block;
-  border: 0;
-  border-top: 1px solid var(--rule);
-  width: 100%;
-  margin: 3rem 0;
-}
-
-/* Links in running text */
-.out {
-  color: var(--navy);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.22em;
-}
-
-.out:hover {
-  color: var(--ink);
-}
-
-.quiet {
-  color: var(--ink-muted);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.22em;
-}
-
-.quiet:hover {
-  color: var(--ink);
-}
-
-/* Buttons: one height, one line. Primary plus secondary. */
-.btn {
+.mast-name {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  min-height: 2.9rem;
-  padding: 0 1.4rem;
-  border: 1px solid var(--navy);
-  border-radius: 6px;
-  font-family: var(--font-display), Georgia, serif;
-  font-size: 1.12rem;
-  font-weight: 500;
-  line-height: 1;
-  letter-spacing: 0.005em;
-  white-space: nowrap;
+  min-height: 44px;
+  color: var(--ink);
   text-decoration: none;
-  cursor: pointer;
-  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 }
 
-.btn-primary {
-  background-color: var(--navy);
-  color: var(--paper);
+.wm {
+  display: inline-flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
-.btn-primary:hover {
-  background-color: var(--navy-deep);
-  border-color: var(--navy-deep);
+/* The join, as on Institrace's wordmark: a 1.5px teal bar a little taller than the capitals. */
+.wm-bar {
+  display: block;
+  flex: none;
+  width: 1.5px;
+  height: 1.05em;
+  margin: 0 0.5em;
+  background: var(--teal);
 }
 
-.btn-secondary {
-  background-color: transparent;
-  color: var(--navy);
+.mast-name:hover .wm-bar {
+  background: var(--brass);
 }
 
-.btn-secondary:hover {
-  background-color: rgba(26, 39, 68, 0.07);
+.mast-place {
+  margin-left: 16px;
+  font-size: 15px;
+  color: var(--muted);
+  white-space: nowrap;
 }
 
-.btn:disabled {
-  opacity: 0.55;
-  cursor: not-allowed;
+.mast nav {
+  display: flex;
+  gap: 26px;
+  font-size: 15px;
 }
 
-.btn:focus-visible {
-  outline: 2px solid var(--navy);
-  outline-offset: 3px;
+.mast nav a {
+  color: var(--ink-2);
+  text-decoration: none;
+  white-space: nowrap;
 }
 
-.btn-sm {
-  min-height: 2.35rem;
-  padding: 0 1rem;
-  font-size: 1.02rem;
+.mast nav a:hover,
+.mast nav a[aria-current="page"] {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--ink);
 }
 
-.band-navy .btn-primary {
-  background-color: var(--paper);
-  border-color: var(--paper);
-  color: var(--navy);
+/* The opening: one heading, one paragraph. */
+.lead {
+  padding: 44px 0 40px;
 }
 
-.band-navy .btn-primary:hover {
-  background-color: #fff;
-  border-color: #fff;
+.lead h1,
+.doc h1 {
+  font-size: 30px;
+  line-height: 1.25;
+  letter-spacing: -0.012em;
 }
 
-.band-navy .btn-secondary {
-  border-color: rgba(243, 238, 228, 0.55);
-  color: var(--paper);
+.lead h1 {
+  margin-bottom: 14px;
 }
 
-.band-navy .btn-secondary:hover {
-  background-color: rgba(243, 238, 228, 0.1);
+.lead p {
+  max-width: 46rem;
+  font-size: 20px;
+  line-height: 1.55;
+  color: var(--ink-2);
 }
 
-.band-navy .btn:focus-visible {
-  outline-color: var(--paper);
+/* Rows with hanging labels, the way a well-set letter or report sets its heads. */
+.row {
+  display: grid;
+  grid-template-columns: var(--label) minmax(0, 1fr);
+  gap: 0 var(--label-gap);
+  padding: 30px 0 32px;
+  border-top: 1px solid var(--rule);
 }
 
-.btn-row {
+.row > h2 {
+  font-size: 15px;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+}
+
+.row .body {
+  max-width: 48rem;
+}
+
+.row .body > * + * {
+  margin-top: 14px;
+}
+
+.small {
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+/* One record from Institrace, as its home page shows it, set off by a brass rule. */
+.record {
+  margin: 0;
+  padding: 2px 0 2px 18px;
+  border-left: 2px solid var(--brass);
+}
+
+.record > * + * {
+  margin-top: 10px;
+}
+
+.record-title {
+  font-weight: 600;
+}
+
+.record blockquote {
+  margin: 10px 0 0;
+  color: var(--ink-2);
+}
+
+.record figcaption {
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.record-steps {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 4px 16px;
+  font-size: 15px;
+  list-style: none;
+}
+
+.record-steps li {
+  display: contents;
+}
+
+.record-steps .when {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.record-steps .what small {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+/* Prices: a plain table. */
+.prices {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.prices th,
+.prices td {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--rule-soft);
+  text-align: left;
+  vertical-align: top;
+}
+
+.prices tr:first-child th,
+.prices tr:first-child td {
+  padding-top: 0;
+}
+
+.prices th {
+  width: 10rem;
+  padding-right: 20px;
+  font-weight: 600;
+}
+
+.prices td.desc {
+  padding-right: 24px;
+  color: var(--ink-2);
+}
+
+.prices td.price {
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* The person: a small portrait the text runs round. */
+.person {
+  display: flow-root;
+}
+
+.row .body.person > img + * {
+  margin-top: 0;
+}
+
+.person img {
+  float: left;
+  width: 112px;
+  height: auto;
+  margin: 5px 22px 6px 0;
+  border: 1px solid var(--rule);
+}
+
+/* Contact details: a definition list. */
+.dl {
+  display: grid;
+  grid-template-columns: 10rem minmax(0, 1fr);
+  gap: 6px 20px;
+}
+
+.dl dt {
+  color: var(--muted);
+}
+
+/* The foot of every page: the company, as a letterhead prints it, then the legal links. */
+.foot {
+  margin-top: 8px;
+  border-top: 1px solid var(--ink);
+}
+
+.foot .row {
+  border-top: 0;
+  padding-bottom: 18px;
+  font-size: 15px;
+  color: var(--ink-2);
+}
+
+.foot .lines > span {
+  display: block;
+}
+
+.foot .row .body.lines > * + * {
+  margin-top: 0;
+}
+
+.foot-base {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px 28px;
+  padding: 16px 0 36px;
+  border-top: 1px solid var(--rule-soft);
+  font-size: 15px;
+  color: var(--muted);
 }
 
-@media (max-width: 40rem) {
-  .card {
-    padding: 1.05rem 1.15rem 1.2rem;
-  }
+.foot-base nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
 }
 
-@media (max-width: 34rem) {
-  .btn-row {
-    flex-direction: column;
-  }
-
-  .btn-row .btn {
-    width: 100%;
-  }
+.foot-base a {
+  color: var(--ink-2);
 }
 
-/* Cards: the things Churchtown does, the things Institrace shows. */
-.card {
-  background-color: var(--card);
+/* About: the portrait and the facts in the label column. */
+.about-top {
+  display: grid;
+  grid-template-columns: 15rem minmax(0, 1fr);
+  gap: 0 var(--label-gap);
+  padding: 44px 0 36px;
+}
+
+.about-top .side img {
+  width: 100%;
+  height: auto;
   border: 1px solid var(--rule);
-  border-top: 2px solid var(--navy);
-  border-radius: 4px;
-  padding: 1.35rem 1.4rem 1.5rem;
 }
 
-.card h3 {
-  margin-bottom: 0.55rem;
+.facts {
+  margin-top: 22px;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
-.card p,
-.card dd {
-  font-size: 1.02rem;
-  line-height: 1.6;
-  color: var(--ink-secondary);
+.facts dt {
+  color: var(--muted);
 }
 
-.card > span.kicker {
-  display: block;
-  margin-bottom: 0.7rem;
-  color: var(--ink-muted);
+.facts > div + div {
+  margin-top: 14px;
 }
 
-a.card-stretch {
-  color: inherit;
-  text-decoration: none;
+.about-top h1 {
+  font-size: 30px;
+  line-height: 1.25;
+  letter-spacing: -0.012em;
 }
 
-a.card-stretch::after {
-  content: "";
-  position: absolute;
-  inset: 0;
+.about-top .role {
+  margin: 4px 0 22px;
+  font-size: 18px;
+  color: var(--muted);
 }
 
-.card:has(a.card-stretch:hover) {
-  border-color: var(--rule-strong);
-  border-top-color: var(--navy);
-  background-color: #fcfaf5;
+.about-top .text p:not(.role) {
+  max-width: 44rem;
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--ink-2);
 }
 
-.card:has(a.card-stretch:hover) h3 {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.2em;
+.about-top .text p + p {
+  margin-top: 14px;
 }
 
-.card-link {
-  display: inline-block;
-  margin-top: 0.9rem;
-  font-size: 1rem;
+.sites {
+  list-style: none;
 }
 
-.price {
-  font-size: 0.95rem;
-  color: var(--ink-muted);
-  text-wrap: balance;
+.sites li + li {
+  margin-top: 8px;
 }
 
-.card p.price-line {
-  font-size: 0.95rem;
-  font-weight: 500;
-  line-height: 1.45;
-  color: var(--ink);
-  text-wrap: balance;
-}
-
-.card p.price-line + p.price-line {
-  margin-top: 0.2rem;
-}
-
-.band-hero + .band:not(.band-tint):not(.band-navy):not(.band-ruled) {
-  padding-top: clamp(1rem, 2vw, 1.75rem);
-}
-
-/* A product screen: framed, restrained. */
-.shot {
+.photo {
   margin: 0;
 }
 
-.shot img {
-  width: 100%;
+.photo img {
+  width: 20rem;
+  max-width: 100%;
   height: auto;
-  border: 1px solid var(--rule-strong);
-  border-radius: 8px;
-  background-color: #fff;
-  box-shadow: 0 1px 0 rgba(26, 25, 22, 0.04), 0 14px 34px -18px rgba(26, 25, 22, 0.35);
 }
 
-.shot figcaption {
-  margin-top: 0.7rem;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  color: var(--ink-muted);
-  text-wrap: balance;
+.photo figcaption {
+  margin-top: 8px;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+/* Legal pages and the 404: one column of text. */
+.doc {
+  padding: 44px 0 48px;
 }
 
 .legal {
   max-width: 46rem;
-  font-size: 1.02rem;
+  font-size: 17px;
   line-height: 1.7;
-  color: var(--ink-secondary);
+  color: var(--ink-2);
 }
 
-.legal h2,
-.legal h3 {
-  margin-top: 2.25rem;
-  margin-bottom: 0.75rem;
+.legal h1 {
+  margin-bottom: 8px;
+}
+
+.legal h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+  font-size: 18px;
+  line-height: 1.4;
 }
 
 .legal p + p {
@@ -405,36 +471,279 @@ a.card-stretch::after {
   margin-top: 0.35rem;
 }
 
-/* Form */
-.input {
-  width: 100%;
+/* The form: plain boxes, one button. */
+.form > * + * {
+  margin-top: 20px;
+}
+
+.form .pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.form label {
   display: block;
-  background: transparent;
-  border: 0;
-  border-bottom: 1px solid var(--rule-strong);
-  border-radius: 0;
-  padding: 0.45rem 0 0.5rem;
-  font-family: inherit;
-  font-size: 1.05rem;
+  margin-bottom: 6px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: #fff;
   color: var(--ink);
-  outline: none;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .input::placeholder {
-  color: var(--ink-faint);
-  font-style: italic;
+  color: #8a867e;
 }
 
 .input:focus {
-  border-bottom-color: var(--navy);
-  box-shadow: 0 1px 0 var(--navy);
-}
-
-select.input {
-  font-style: normal;
+  border-color: var(--teal);
+  outline: 2px solid var(--teal-line);
+  outline-offset: 0;
 }
 
 textarea.input {
+  min-height: 9rem;
   resize: vertical;
-  min-height: 8rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  min-width: 12.5rem;
+  padding: 0 22px;
+  border: 1px solid var(--teal);
+  border-radius: 6px;
+  background: var(--teal);
+  color: #fff;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--teal-deep);
+  border-color: var(--teal-deep);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1100px) {
+  :root {
+    --label: 10rem;
+    --label-gap: 2rem;
+  }
+
+  .about-top {
+    grid-template-columns: 13rem minmax(0, 1fr);
+  }
+}
+
+/* Under 900px the About page reads name, role, photo, text, then the facts. */
+@media (max-width: 900px) {
+  .about-top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-top .side,
+  .about-top .text {
+    display: contents;
+  }
+
+  .about-top h1 {
+    order: 1;
+  }
+
+  .about-top .role {
+    order: 2;
+    margin-bottom: 18px;
+  }
+
+  .about-top .side img {
+    order: 3;
+    width: 150px;
+    margin-bottom: 22px;
+  }
+
+  .about-top .text p:not(.role) {
+    order: 4;
+  }
+
+  .about-top .text .role + p {
+    margin-top: 0;
+  }
+
+  .about-top .facts {
+    order: 5;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px 28px;
+    margin-top: 24px;
+    padding-top: 18px;
+    border-top: 1px solid var(--rule);
+  }
+
+  .about-top .facts > div + div {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 860px) {
+  .prices th {
+    width: auto;
+  }
+
+  .prices tr {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 2px 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+
+  .prices tr:first-child {
+    padding-top: 0;
+  }
+
+  .prices th,
+  .prices td {
+    padding: 0;
+    border: 0;
+  }
+
+  .prices td.desc {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    padding: 0;
+  }
+
+  .prices td.price {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
+@media (max-width: 720px) {
+  body {
+    font-size: 16px;
+  }
+
+  .mast {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    padding-top: 16px;
+  }
+
+  .mast-place {
+    display: none;
+  }
+
+  .mast nav {
+    gap: 22px;
+  }
+
+  .lead,
+  .doc {
+    padding: 30px 0 28px;
+  }
+
+  .lead h1,
+  .doc h1 {
+    font-size: 25px;
+  }
+
+  .lead p {
+    font-size: 18px;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+    padding: 24px 0 26px;
+  }
+
+  .row > h2 {
+    margin-bottom: 8px;
+  }
+
+  .dl {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .dl dd {
+    margin-bottom: 8px;
+  }
+
+  .person img {
+    width: 88px;
+    margin-right: 16px;
+  }
+
+  .about-top {
+    padding: 28px 0;
+  }
+
+  .about-top h1 {
+    font-size: 25px;
+  }
+
+  .about-top .text p:not(.role) {
+    font-size: 17px;
+  }
+
+  .form .pair {
+    grid-template-columns: 1fr;
+  }
+
+  .form .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-top .facts {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .prices tr {
+    grid-template-columns: 1fr;
+  }
+
+  .prices td.price {
+    grid-column: 1;
+    grid-row: 3;
+    text-align: left;
+    color: var(--ink);
+    font-weight: 500;
+  }
+
+  .record-steps {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .record-steps .what {
+    margin-bottom: 8px;
+  }
 }

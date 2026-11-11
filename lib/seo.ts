@@ -13,7 +13,7 @@ export const ogImage = {
   url: OG_IMAGE_PATH,
   width: 1200,
   height: 630,
-  alt: "Churchtown Media. Public sector intelligence, cited to the source.",
+  alt: "Churchtown Media builds and runs Institrace.",
 };
 
 export function pageMeta(opts: {

@@ -3,9 +3,7 @@ import { webPageGraph } from "@/lib/schema";
 
 export default function PrivacyPage() {
   return (
-    <section className="band-hero">
-    <div className="page">
-    <article className="legal">
+    <article className="doc legal">
       <JsonLd
         data={webPageGraph({
           path: "/privacy",
@@ -14,8 +12,7 @@ export default function PrivacyPage() {
             "Privacy notice for Churchtown Media Ltd. How we collect, use, and safeguard information.",
         })}
       />
-      <p className="kicker mb-6">Legal</p>
-      <h1 className="mb-6">Privacy</h1>
+      <h1>Privacy</h1>
       <p>Last updated: November 2026.</p>
 
       <h2>1. Introduction</h2>
@@ -107,7 +104,5 @@ export default function PrivacyPage() {
         . Telephone: 01704 635785. Registered office: Suite RA01, 195-197 Wood Street, <span className="whitespace-nowrap">London, E17 3NU.</span>
       </p>
     </article>
-    </div>
-    </section>
   );
 }

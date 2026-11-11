@@ -3,6 +3,7 @@ import { ImageResponse } from "next/og";
 export const size = { width: 32, height: 32 };
 export const contentType = "image/png";
 
+/** The tab icon: C and M joined by the wordmark's teal bar, on white. */
 export default function Icon() {
   return new ImageResponse(
     (
@@ -14,20 +15,14 @@ export default function Icon() {
           alignItems: "center",
           justifyContent: "center",
           background: "#ffffff",
-          border: "1px solid #e0e0d8",
+          color: "#1a1a18",
+          fontSize: 15,
+          fontWeight: 600,
         }}
       >
-        <span
-          style={{
-            fontFamily: "Georgia, serif",
-            fontSize: 14,
-            fontWeight: 400,
-            color: "#112d6e",
-            letterSpacing: "-0.5px",
-          }}
-        >
-          cm
-        </span>
+        <span>C</span>
+        <span style={{ width: 2, height: 16, backgroundColor: "#277370", margin: "0 3px" }} />
+        <span>M</span>
       </div>
     ),
     { ...size }

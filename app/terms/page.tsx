@@ -3,9 +3,7 @@ import { webPageGraph } from "@/lib/schema";
 
 export default function TermsPage() {
   return (
-    <section className="band-hero">
-    <div className="page">
-    <article className="legal">
+    <article className="doc legal">
       <JsonLd
         data={webPageGraph({
           path: "/terms",
@@ -14,8 +12,7 @@ export default function TermsPage() {
             "Terms for Churchtown Media Ltd, the Southport company behind Institrace.",
         })}
       />
-      <p className="kicker mb-6">Legal</p>
-      <h1 className="mb-6">Terms</h1>
+      <h1>Terms</h1>
       <p>Last updated: October 2026.</p>
 
       <h2>1. Acceptance</h2>
@@ -91,7 +88,5 @@ export default function TermsPage() {
         . 01704 635785. Suite RA01, 195-197 Wood Street, <span className="whitespace-nowrap">London, E17 3NU.</span>
       </p>
     </article>
-    </div>
-    </section>
   );
 }
