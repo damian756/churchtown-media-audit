@@ -58,7 +58,7 @@ export default function ContactForm() {
             type="email"
             required
             autoComplete="email"
-            placeholder="you@organisation.co.uk"
+            placeholder="Your email address"
             className="input"
           />
         </div>

@@ -35,10 +35,6 @@ export default function ContactPage() {
             <dd>
               <a href={`mailto:${NAP.emailDamian}`}>{NAP.emailDamian}</a>
             </dd>
-            <dt>General</dt>
-            <dd>
-              <a href={`mailto:${NAP.emailHello}`}>{NAP.emailHello}</a>
-            </dd>
             <dt>Telephone</dt>
             <dd>
               <a href={`tel:${NAP.telephone}`}>{NAP.telephoneDisplay}</a>

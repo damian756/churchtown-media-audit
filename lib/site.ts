@@ -21,7 +21,6 @@ export const WEBSITE_ID = `${SITE_URL}/#website`;
 export const NAP = {
   name: SITE_NAME,
   legalName: "Churchtown Media Ltd",
-  emailHello: "hello@churchtownmedia.co.uk",
   emailDamian: "damian@churchtownmedia.co.uk",
   telephoneDisplay: "01704 635785",
   telephone: "+441704635785",

@@ -40,7 +40,7 @@ export function organizationNode() {
       height: 630,
     },
     image: OG_IMAGE,
-    email: [NAP.emailHello, NAP.emailDamian],
+    email: NAP.emailDamian,
     telephone: NAP.telephone,
     address: postalAddress(),
     areaServed: { "@type": "Country", name: "United Kingdom" },

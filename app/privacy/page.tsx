@@ -94,10 +94,6 @@ export default function PrivacyPage() {
       <h2>10. Contact</h2>
       <p>
         Email:{" "}
-        <a href="mailto:hello@churchtownmedia.co.uk" className="out">
-          hello@churchtownmedia.co.uk
-        </a>
-        {" or "}
         <a href="mailto:damian@churchtownmedia.co.uk" className="out">
           damian@churchtownmedia.co.uk
         </a>
