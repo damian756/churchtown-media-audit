@@ -17,6 +17,8 @@
   --teal-deep: #143f3b;
   --teal-line: #9cc3bf;
   --brass: #a9782b;
+  --brass-text: #8a6120;
+  --teal-pale: #e4f0ef;
   --label: 12rem;
   --label-gap: 3rem;
 }
@@ -51,6 +53,13 @@
   td,
   figcaption {
     text-wrap: pretty;
+  }
+
+  main p,
+  main li,
+  main dd,
+  main blockquote {
+    text-wrap: balance;
   }
 
   a {
@@ -204,119 +213,310 @@
   color: var(--muted);
 }
 
-/* One record from Institrace, as its home page shows it, set off by a brass rule. */
-.record {
-  margin: 0;
-  padding: 2px 0 2px 18px;
-  border-left: 2px solid var(--brass);
+/* ---- The home page (version 1, Damian's pick, 11 Nov 2026) ---- */
+
+/* The opening: one strong line, what the company makes, two buttons. */
+.open {
+  padding: 46px 0 34px;
 }
 
-.record > * + * {
-  margin-top: 10px;
+.open h1 {
+  font-size: 42px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
 }
 
-.record-title {
-  font-weight: 600;
-}
-
-.record blockquote {
-  margin: 10px 0 0;
+.open .say {
+  max-width: 44rem;
+  margin-top: 16px;
+  font-size: 20px;
+  line-height: 1.55;
   color: var(--ink-2);
 }
 
-.record figcaption {
-  font-size: 15px;
+.open .btns {
+  margin-top: 28px;
+}
+
+/* One record from Institrace, as its home page shows it: a card under a brass rule. */
+.record {
+  margin: 0 0 44px;
+  padding: 22px 26px 20px;
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--brass);
+  border-radius: 0 0 8px 8px;
+  background: #fff;
+}
+
+.record-kind {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--brass-text);
+}
+
+.record-title {
+  margin-top: 4px;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.record-where {
+  margin-top: 2px;
+  font-size: 16px;
   color: var(--muted);
 }
 
-.record-steps {
+.tl {
   display: grid;
-  grid-template-columns: max-content minmax(0, 1fr);
-  gap: 4px 16px;
-  font-size: 15px;
-  list-style: none;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 4px 18px;
+  margin-top: 20px;
 }
 
-.record-steps li {
-  display: contents;
-}
-
-.record-steps .when {
+.tl-d {
+  font-size: 16px;
   font-weight: 600;
   font-variant-numeric: tabular-nums;
 }
 
-.record-steps .what small {
+.tl-d small {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
   color: var(--muted);
-  font-size: 15px;
 }
 
-/* Prices: a plain list in a table. Each row: the service and its price on one line, what it is underneath at the
-   full width of the column (coordinating chat, 11 Nov 2026: let the description take the room). */
-.prices {
-  display: block;
-  width: 100%;
-  font-size: 16px;
-  line-height: 1.5;
+.tl-end {
+  text-align: right;
 }
 
-.prices tbody {
-  display: block;
+.tl-gap {
+  position: relative;
+  text-align: center;
 }
 
-.prices tr {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 2px 16px;
-  padding: 10px 0;
-  border-bottom: 1px solid var(--rule-soft);
+.tl-gap::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  border-top: 2px dashed var(--teal-line);
 }
 
-.prices tr:first-child {
-  padding-top: 0;
-}
-
-.prices th,
-.prices td {
-  padding: 0;
-  text-align: left;
-}
-
-.prices th {
-  grid-column: 1;
-  grid-row: 1;
+.tl-gap b {
+  position: relative;
+  display: inline-block;
+  padding: 0 12px;
+  background: #fff;
+  font-size: 30px;
   font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--brass-text);
+  white-space: nowrap;
 }
 
-.prices td.desc {
-  grid-column: 1 / -1;
-  grid-row: 2;
+.tl-gap b small {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: var(--muted);
+}
+
+.record blockquote {
+  margin: 18px 0 0;
+  padding-left: 14px;
+  border-left: 2px solid var(--rule);
+  font-size: 16px;
   color: var(--ink-2);
 }
 
-.prices td.price {
-  grid-column: 2;
-  grid-row: 1;
+.record-src {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.record-finding {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--rule-soft);
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* Sections with heads that read as heads. */
+.sec {
+  padding: 40px 0 44px;
+  border-top: 1px solid var(--rule);
+}
+
+.sec > h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+/* What sells first: two offers, the same shape, ending level. */
+.offers {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.offer {
+  display: flex;
+  flex-direction: column;
+  padding: 22px 24px 24px;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+}
+
+.offer h3 {
+  font-size: 19px;
+  line-height: 1.3;
+}
+
+.offer-price {
+  margin-top: 10px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+}
+
+.offer-price small {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--muted);
+}
+
+.offer-terms {
+  margin-top: 6px;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.offer-what {
+  margin-top: 14px;
+  font-size: 16px;
+  color: var(--ink-2);
+  list-style: none;
+}
+
+.offer-what li {
+  position: relative;
+  padding-left: 16px;
+}
+
+.offer-what li + li {
+  margin-top: 6px;
+}
+
+.offer-what li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+
+.offer .btns {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+/* The other services: a compact list. */
+.more {
+  margin-top: 28px;
+}
+
+.more h3 {
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+.more ul {
+  list-style: none;
+  border-top: 1px solid var(--rule-soft);
+}
+
+.more li {
+  display: grid;
+  grid-template-columns: 11rem minmax(0, 1fr) auto;
+  gap: 2px 20px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--rule-soft);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.more li b {
+  font-weight: 600;
+}
+
+.more li span {
+  color: var(--ink-2);
+  text-wrap: balance;
+}
+
+.more li em {
+  font-style: normal;
   text-align: right;
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
 }
 
-/* The person: a small portrait the text runs round. */
-.person {
-  display: flow-root;
+.more-note {
+  margin-top: 12px;
+  font-size: 15px;
+  color: var(--muted);
 }
 
-.row .body.person > img + * {
-  margin-top: 0;
+/* Who runs it: the portrait takes the height of the words beside it, so both columns end level. */
+.who {
+  display: grid;
+  grid-template-columns: 11rem minmax(0, 1fr);
+  gap: 0 32px;
+  align-items: stretch;
 }
 
-.person img {
-  float: left;
-  width: 112px;
-  height: auto;
-  margin: 5px 22px 6px 0;
+.who-ph {
+  position: relative;
+  min-height: 10rem;
+}
+
+.who-ph img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
   border: 1px solid var(--rule);
+}
+
+.who p {
+  max-width: 46rem;
+  font-size: 17px;
+  color: var(--ink-2);
+}
+
+.who p + p {
+  margin-top: 12px;
+}
+
+.who-reach {
+  color: var(--ink);
 }
 
 /* Contact details: a definition list. */
@@ -530,12 +730,18 @@ textarea.input {
   resize: vertical;
 }
 
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 46px;
-  min-width: 12.5rem;
+  min-height: 48px;
+  min-width: 13rem;
   padding: 0 22px;
   border: 1px solid var(--teal);
   border-radius: 6px;
@@ -546,12 +752,25 @@ textarea.input {
   font-weight: 600;
   line-height: 1;
   white-space: nowrap;
+  text-decoration: none;
   cursor: pointer;
 }
 
 .btn:hover {
   background: var(--teal-deep);
   border-color: var(--teal-deep);
+  color: #fff;
+}
+
+.btn-2 {
+  background: #fff;
+  color: var(--teal-deep);
+}
+
+.btn-2:hover {
+  background: var(--teal-pale);
+  border-color: var(--teal);
+  color: var(--teal-deep);
 }
 
 .btn:disabled {
@@ -620,6 +839,32 @@ textarea.input {
   }
 }
 
+@media (max-width: 900px) {
+  .more li {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .more li span {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .more li em {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
+@media (max-width: 760px) {
+  .offers {
+    grid-template-columns: 1fr;
+  }
+
+  .offer .btns {
+    margin-top: 0;
+  }
+}
+
 @media (max-width: 720px) {
   body {
     font-size: 16px;
@@ -672,9 +917,55 @@ textarea.input {
     margin-bottom: 8px;
   }
 
-  .person img {
-    width: 88px;
-    margin-right: 16px;
+  .open {
+    padding-top: 30px;
+  }
+
+  .open h1 {
+    font-size: 27px;
+  }
+
+  .open .say {
+    font-size: 18px;
+  }
+
+  .btns {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .record {
+    padding: 18px 18px 16px;
+  }
+
+  .record-title {
+    font-size: 19px;
+  }
+
+  .sec {
+    padding: 32px 0 36px;
+  }
+
+  .sec > h2 {
+    font-size: 23px;
+  }
+
+  .who {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .who-ph {
+    width: 9rem;
+    min-height: 0;
+  }
+
+  .who-ph img {
+    position: static;
+    height: auto;
   }
 
   .about-top {
@@ -704,24 +995,37 @@ textarea.input {
     gap: 10px;
   }
 
-  .prices tr {
+  .tl {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 12px;
+  }
+
+  .tl-gap {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .tl-end {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .more li {
     grid-template-columns: 1fr;
   }
 
-  .prices td.price {
+  .more li em {
     grid-column: 1;
     grid-row: 3;
     text-align: left;
-    color: var(--ink);
     font-weight: 500;
   }
 
-  .record-steps {
-    grid-template-columns: 1fr;
-    gap: 2px;
+  .offer {
+    padding: 18px 18px 20px;
   }
 
-  .record-steps .what {
-    margin-bottom: 8px;
+  .offer-price {
+    font-size: 28px;
   }
 }

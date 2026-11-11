@@ -45,34 +45,89 @@ export const SLOUGH_RECORD = {
 /** The line Institrace uses in place of "premium". */
 export const TAGLINE = "Public sector intelligence, cited to the source.";
 
+export const INSTITRACE_SIGNUP_URL = `${INSTITRACE_URL}/signup?plan=researcher`;
+export const INSTITRACE_SETUP_URL = `${INSTITRACE_URL}/setup`;
+
 /**
- * Institrace's services, as rows of the home page's price table: lib/services.ts in the institrace repo, the CRM and BI
- * feeds on rows of their own. Prices are plus VAT; if Institrace changes a price, change it here too.
+ * The Institrace seat, as institrace.co.uk/pricing states it (read 11 Nov 2026; lib/pricing.ts in the institrace repo).
+ * Founding prices for sign-ups before 31 December 2026, kept while subscribed; the standard prices from 1 January 2027.
+ * seatTerms() picks by the UK day, so the home page changes over by itself (it is regenerated hourly).
+ */
+export const SEAT = {
+  trialDays: 14,
+  foundingUntil: "2026-12-31",
+  founding: { individual: 29, team: 25 },
+  standard: { individual: 99, team: 85 },
+  standardFromWords: "1 January 2027",
+  foundingUntilWords: "31 December 2026",
+} as const;
+
+/** Today in the UK, as YYYY-MM-DD. */
+export function ukToday(now: Date = new Date()): string {
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Europe/London",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(now);
+}
+
+/** The seat's price and terms for the day: the founding price to 31 December 2026, the standard price after. */
+export function seatTerms(now: Date = new Date()): {
+  founding: boolean;
+  individual: number;
+  team: number;
+  terms: string;
+} {
+  const founding = ukToday(now) <= SEAT.foundingUntil;
+  const p = founding ? SEAT.founding : SEAT.standard;
+  return {
+    founding,
+    individual: p.individual,
+    team: p.team,
+    terms: founding
+      ? `${SEAT.trialDays} days free, no card. These are founding prices for sign-ups before ${SEAT.foundingUntilWords}, kept while you stay subscribed; £${SEAT.standard.individual} a month from ${SEAT.standardFromWords}.`
+      : `${SEAT.trialDays} days free, no card. Cancel at any time.`,
+  };
+}
+
+/**
+ * Set-up by hand, as institrace.co.uk/setup and /pricing state it (read 11 Nov 2026): £295 once, plus VAT, free for the
+ * first ten firms that pay three months or more up front. The count of places left is not printed here: it changes.
+ */
+export const SETUP = {
+  price: 295,
+  freeTerms: "Free for the first ten firms that pay three months or more up front.",
+} as const;
+
+/**
+ * Institrace's other services, as the compact list under the two offers: the words and prices of institrace.co.uk/pricing
+ * (read 11 Nov 2026; lib/services.ts in the institrace repo). Prices are plus VAT; if Institrace changes one, change it here.
  */
 export const PRICE_ROWS: { title: string; text: string; price: string }[] = [
   {
     title: "Market snapshot",
-    text: "One region and trade, or one buyer: approvals, contracts ending and who is paid, in five working days",
+    text: "One region and trade, or one buyer, in five working days",
     price: "£295, fixed",
   },
   {
     title: "Custom reports",
-    text: "A question answered from the papers, contracts and spend, with every figure cited",
+    text: "A question about your market, answered from the papers, contracts and spend",
     price: "From £1,500",
   },
   {
-    title: "CRM data feed",
-    text: "Your regions and trades, synced into Salesforce, HubSpot or Dynamics",
+    title: "CRM feed",
+    text: "Approvals, contracts and buyer spend, synced into Salesforce, HubSpot or Dynamics",
     price: "£1,500 setup, then £250 a month",
   },
   {
-    title: "BI data feed",
-    text: "Your regions and trades, sent daily to Power BI or Looker Studio",
+    title: "BI feed",
+    text: "The same records as a daily feed for Power BI, Looker Studio or your own warehouse",
     price: "From £250 a month",
   },
   {
     title: "BI dashboards",
-    text: "A dashboard built in your own Power BI or Looker Studio, on a feed that refreshes daily",
+    text: "Built in your own Power BI or Looker Studio, on a feed that refreshes daily",
     price: "£2,500 setup, then £250 a month",
   },
 ];

@@ -17,7 +17,7 @@ Damian Roche is the founder and director. He served in the British Army with the
   - Data feeds: your regions and trades, synced into Salesforce, HubSpot or Dynamics (£1,500 setup, then £250 a month), or sent daily to Power BI or Looker Studio (from £250 a month).
   - BI dashboards: a dashboard built in your own Power BI or Looker Studio, on a feed that refreshes daily. £2,500 setup, then £250 a month.
 - Consultation: a one-to-one session with Damian on a question about a company, a public body, a contract, a piece of land or a decision, followed by a short written note. The fee is agreed in writing before any work begins.
-- Institrace for a team: help setting up the dashboard and alerts for your trades and regions.
+- Set up by hand: Damian sets up every Institrace customer himself. A free count of what your words would have caught in 12 months, then the full year run through your words and your alerts set up. £295 once, plus VAT; free for the first ten firms that pay three months or more up front. https://www.institrace.co.uk/setup
 
 ## Pages
 

@@ -54,8 +54,8 @@ export default function PrivacyPage() {
         The site uses Ahrefs Web Analytics. That product does not set advertising or
         tracking cookies. We do not run marketing pixels and we do not show a cookie
         banner because we do not set optional cookies. The host (Vercel) may set a
-        strictly necessary cookie for security or load balancing. The contact form is
-        processed by Formspree.
+        strictly necessary cookie for security or load balancing. The contact form is{" "}
+        <span className="whitespace-nowrap">processed by Formspree.</span>
       </p>
 
       <h2>5. Sharing</h2>
@@ -80,7 +80,7 @@ export default function PrivacyPage() {
       </p>
 
       <h2>7. Your rights</h2>
-      <p>Under UK GDPR you may request access, correction, deletion, restriction, portability, or object to processing. Write to the address below. We will respond within 30 days. You may also complain to the Information Commissioner&apos;s Office at ico.org.uk.</p>
+      <p>Under UK GDPR you may request access, correction, deletion, restriction, portability, or object to processing. Write to the address below. We will respond within 30 days. You may also complain to the Information Commissioner&apos;s <span className="whitespace-nowrap">Office at ico.org.uk.</span></p>
 
       <h2>8. Security</h2>
       <p>
