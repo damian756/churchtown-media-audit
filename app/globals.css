@@ -251,39 +251,52 @@
   font-size: 15px;
 }
 
-/* Prices: a plain table. */
+/* Prices: a plain list in a table. Each row: the service and its price on one line, what it is underneath at the
+   full width of the column (coordinating chat, 11 Nov 2026: let the description take the room). */
 .prices {
+  display: block;
   width: 100%;
-  border-collapse: collapse;
   font-size: 16px;
   line-height: 1.5;
 }
 
-.prices th,
-.prices td {
-  padding: 10px 0;
-  border-bottom: 1px solid var(--rule-soft);
-  text-align: left;
-  vertical-align: top;
+.prices tbody {
+  display: block;
 }
 
-.prices tr:first-child th,
-.prices tr:first-child td {
+.prices tr {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2px 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--rule-soft);
+}
+
+.prices tr:first-child {
   padding-top: 0;
 }
 
+.prices th,
+.prices td {
+  padding: 0;
+  text-align: left;
+}
+
 .prices th {
-  width: 10rem;
-  padding-right: 20px;
+  grid-column: 1;
+  grid-row: 1;
   font-weight: 600;
 }
 
 .prices td.desc {
-  padding-right: 24px;
+  grid-column: 1 / -1;
+  grid-row: 2;
   color: var(--ink-2);
 }
 
 .prices td.price {
+  grid-column: 2;
+  grid-row: 1;
   text-align: right;
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
@@ -604,41 +617,6 @@ textarea.input {
 
   .about-top .facts > div + div {
     margin-top: 0;
-  }
-}
-
-@media (max-width: 860px) {
-  .prices th {
-    width: auto;
-  }
-
-  .prices tr {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 2px 16px;
-    padding: 10px 0;
-    border-bottom: 1px solid var(--rule-soft);
-  }
-
-  .prices tr:first-child {
-    padding-top: 0;
-  }
-
-  .prices th,
-  .prices td {
-    padding: 0;
-    border: 0;
-  }
-
-  .prices td.desc {
-    grid-column: 1 / -1;
-    grid-row: 2;
-    padding: 0;
-  }
-
-  .prices td.price {
-    grid-column: 2;
-    grid-row: 1;
   }
 }
 
