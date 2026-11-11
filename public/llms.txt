@@ -4,9 +4,9 @@
 
 ## About
 
-Churchtown Media Ltd is a small company founded by Damian Roche in Southport. Its main work is Institrace, which reads council and NHS papers, contract notices, spend files and the public registers, and links every record to the file it came from. The company also offers one-to-one consultation on a question about UK public bodies.
+Churchtown Media Ltd is a small company founded by Damian Roche in Southport. Its main work is Institrace, which launched in October 2026. Institrace reads council and NHS papers, contract notices, spend files and the public registers, and links every record to the file it came from. The company also offers one-to-one consultation on a question about UK public bodies.
 
-Damian Roche is the founder and director. He served in the British Army with the Queen's Guards, then spent twenty years in information, publishing and search. He also publishes a few local editorial sites about the Sefton Coast, which are listed on the disclosure page.
+Damian Roche is the founder and director. He served in the British Army with the Queen's Guards, then spent twenty years in information, publishing and search. He also publishes four local sites about the Sefton Coast: SouthportGuide.co.uk, FormbyGuide.co.uk, SeftonLinks.com and SeftonCoastWildlife.co.uk. They are named on the about page, and the company's interests are on the disclosure page.
 
 ## What the company offers
 
@@ -21,9 +21,8 @@ Damian Roche is the founder and director. He served in the British Army with the
 
 ## Pages
 
-- [Home](https://www.churchtownmedia.co.uk/)
-- [Consultation and services](https://www.churchtownmedia.co.uk/services)
-- [What we've built](https://www.churchtownmedia.co.uk/case-studies): Institrace
+- [Home](https://www.churchtownmedia.co.uk/): Institrace, with one record from it; services and prices; who runs the company; contact
+- [Services and prices](https://www.churchtownmedia.co.uk/#services): a row of the home page
 - [About Damian Roche](https://www.churchtownmedia.co.uk/about)
 - [Contact](https://www.churchtownmedia.co.uk/contact)
 - [Disclosure](https://www.churchtownmedia.co.uk/disclosure)
