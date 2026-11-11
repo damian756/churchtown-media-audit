@@ -136,8 +136,8 @@ export default function Home() {
           <h2 className="mb-3">Who Institrace is for</h2>
           <p className="intro mb-6">
             <Tail>
-              Mainly suppliers and bid teams. Public affairs teams, researchers, newsrooms and
-              due diligence work use it too.
+              Built mainly for suppliers and bid teams. Also for public affairs teams,
+              researchers, newsrooms and due diligence.
             </Tail>
           </p>
           <div className="grid gap-4 sm:grid-cols-2 sm:gap-5 xl:grid-cols-4">

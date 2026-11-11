@@ -33,6 +33,7 @@ export const NAP = {
   addressCountry: "GB",
   companyNumber: "16960442",
   vatId: "GB511024262",
+  icoNumber: "ZC124220",
 } as const;
 
 export function pageUrl(path: string): string {

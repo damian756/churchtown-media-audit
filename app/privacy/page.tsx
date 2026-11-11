@@ -16,7 +16,7 @@ export default function PrivacyPage() {
       />
       <p className="kicker mb-6">Legal</p>
       <h1 className="mb-6">Privacy</h1>
-      <p>Last updated: September 2026.</p>
+      <p>Last updated: November 2026.</p>
 
       <h2>1. Introduction</h2>
       <p>
@@ -26,7 +26,9 @@ export default function PrivacyPage() {
       </p>
       <p>
         We comply with the UK General Data Protection Regulation and the Data Protection
-        Act 2018. The data controller is Churchtown Media Ltd, company number 16960442.
+        Act 2018. The data controller is Churchtown Media Ltd, company number 16960442,
+        registered with the Information Commissioner&apos;s Office under registration
+        number <span className="whitespace-nowrap">ZC124220.</span>
       </p>
 
       <h2>2. Information we collect</h2>

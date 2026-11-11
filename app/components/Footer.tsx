@@ -123,7 +123,8 @@ export default function Footer() {
             </span>{" "}
             <span className="whitespace-nowrap">Registered in England and Wales,</span>{" "}
             <span className="whitespace-nowrap">company number {NAP.companyNumber}.</span>{" "}
-            <span className="whitespace-nowrap">VAT number {NAP.vatId}.</span>
+            <span className="whitespace-nowrap">VAT number {NAP.vatId}.</span>{" "}
+            <span className="whitespace-nowrap">ICO registration {NAP.icoNumber}.</span>
           </p>
           <nav aria-label="Legal" className="flex shrink-0 gap-x-5 whitespace-nowrap">
             <Link href="/privacy" className="quiet">

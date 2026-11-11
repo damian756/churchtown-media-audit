@@ -1,38 +1,52 @@
 # Churchtown Media
 
-> Churchtown Media is a small company in Southport, founded by Damian Roche. We build Institrace, a joined index of UK public records, and offer friendly one-to-one help with questions about the record.
+> Churchtown Media Ltd runs Institrace: public sector intelligence, cited to the source. Institrace shows what UK public bodies decide, buy and spend. The company was founded by Damian Roche in Southport.
 
 ## About
 
-Churchtown Media Ltd is based in Churchtown, Southport. Damian Roche founded the company. Its main work is Institrace, a joined index of UK public records. It also offers one-to-one consultation for anyone trying to understand what the public record shows.
+Churchtown Media Ltd is a small company founded by Damian Roche in Southport. Its main work is Institrace, which reads council and NHS papers, contract notices, spend files and the public registers, and links every record to the file it came from. The company also offers one-to-one consultation on a question about UK public bodies.
 
-Damian also publishes a few local editorial sites about the Sefton Coast, which are run separately.
+Damian Roche is the founder and director. He served in the British Army with the Queen's Guards, then spent twenty years in information, publishing and search. He also publishes a few local editorial sites about the Sefton Coast, which are listed on the disclosure page.
 
-## What we offer
+## What the company offers
 
-- Institrace: a joined index of UK public records, for newsrooms, researchers, boards, firms and community groups
-- Consultation: a relaxed working session on a question about the public record, followed by a short, clear written note
-- Institrace for a team: help getting started with Institrace
+- Institrace: new tenders, approvals before tender, contracts ending, buyer spend and supplier checks, from council and NHS papers and the registers. Alerts by email, daily or weekly. Built mainly for suppliers and bid teams; also for public affairs teams, researchers, newsrooms and due diligence. A 14-day trial, no card.
+- Institrace services, built on the same records. Prices are plus VAT:
+  - Market snapshot: one region and trade, or one buyer, in five working days. £295, fixed.
+  - Custom reports: a question answered from the papers, contracts and spend, with every figure cited. From £1,500.
+  - Data feeds: your regions and trades, synced into Salesforce, HubSpot or Dynamics (£1,500 setup, then £250 a month), or sent daily to Power BI or Looker Studio (from £250 a month).
+  - BI dashboards: a dashboard built in your own Power BI or Looker Studio, on a feed that refreshes daily. £2,500 setup, then £250 a month.
+- Consultation: a one-to-one session with Damian on a question about a company, a public body, a contract, a piece of land or a decision, followed by a short written note. The fee is agreed in writing before any work begins.
+- Institrace for a team: help setting up the dashboard and alerts for your trades and regions.
 
 ## Pages
 
 - [Home](https://www.churchtownmedia.co.uk/)
-- [Consultation](https://www.churchtownmedia.co.uk/services)
+- [Consultation and services](https://www.churchtownmedia.co.uk/services)
 - [What we've built](https://www.churchtownmedia.co.uk/case-studies): Institrace
-- [About](https://www.churchtownmedia.co.uk/about)
+- [About Damian Roche](https://www.churchtownmedia.co.uk/about)
 - [Contact](https://www.churchtownmedia.co.uk/contact)
+- [Disclosure](https://www.churchtownmedia.co.uk/disclosure)
 - [Privacy](https://www.churchtownmedia.co.uk/privacy)
 - [Terms](https://www.churchtownmedia.co.uk/terms)
 
 ## Related sites
 
 - [Institrace](https://www.institrace.co.uk)
+- [Institrace pricing](https://www.institrace.co.uk/pricing)
+- [Institrace services](https://www.institrace.co.uk/services)
 - [Institrace methodology](https://www.institrace.co.uk/methodology)
+
+## Company
+
+- Churchtown Media Ltd, registered in England and Wales, company number 16960442
+- Registered office: Suite RA01, 195-197 Wood Street, London, E17 3NU
+- VAT number GB511024262
+- ICO registration ZC124220
 
 ## Contact
 
 - Email: hello@churchtownmedia.co.uk
 - Email: damian@churchtownmedia.co.uk
 - Phone: 01704 635785
-- Address: Suite RA01, 195-197 Wood Street, London, E17 3NU
 - Website: https://www.churchtownmedia.co.uk
